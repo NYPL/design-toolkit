@@ -1,0 +1,40 @@
+@import "css3";
+// Buttons stylings
+//TODO: move button style in _forms.scss to this partial
+//      add in styles for request button
+
+@warn "use 'default' in default names (from colors.scss i suppose)";
+@warn "some magic numbers";
+
+@mixin basic-button ($button-text-color: $buttonTextColor, $button-border-color: $buttonTextColor, $button-background-color: $buttonBackgroundColor, $border-radius: 0) {
+  background-color: $button-background-color;
+  border: $button-border-color solid (1/8 * 1rem); // assuming 16px rem
+  border-radius: $border-radius;
+  color: $button-text-color;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 700; // equivalent of a medium weight
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+
+  &:focus {
+    @warn "reconcile with the universal :focus";
+    @include box-shadow(0 0 0 4px $focuscolor);
+    outline: none;
+  }
+
+  &:hover {
+    background: invert($button-background-color);
+    color: invert($button-text-color);
+  }
+}
+
+@mixin request-button {
+  @include basic-button ($button-text-color: $buttonBackgroundColor, $button-border-color: $nyplbluedark, $button-background-color: $nyplbluedark, $border-radius: 0.25rem);
+
+  &:hover {
+    background: $buttonBackgroundColor;
+    border-color: $nyplbluedark;
+    color: $nyplbluedark;
+  }
+}
