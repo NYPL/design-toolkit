@@ -2,7 +2,7 @@
 
 @warn "lots of magic numbers here";
 
-@each $tag in a, input, select {
+@each $tag in a, input, select, button {
   #{$tag} {
     border-radius: 0;
   }
@@ -46,7 +46,7 @@
   padding: 0 1rem;
 
   &:focus {
-    box-shadow: inset 0 0 0 4px $focuscolor;
+    @include box-shadow(inset 0 0 0 4px $focuscolor);
     outline: none;
   }
 }
@@ -54,7 +54,7 @@
 @mixin textfield {
   @include input;
 
-  box-shadow: inset 0 0 0 2px $nyplsearchcolorlight;
+  @include box-shadow(inset 0 0 0 2px $nyplsearchcolorlight);
   height: 2rem;
   margin-right: 1px;
   padding: 1.5em 0 0;
@@ -68,7 +68,7 @@
 
   &:focus {
     background-color: white;
-    box-shadow: inset 0 0 0 4px $focuscolor !important;
+    @include box-shadow(inset 0 0 0 4px $focuscolor !important);
     color: $nyplsearchcolordark;
     outline: none;
   }

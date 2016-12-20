@@ -398,6 +398,14 @@ select:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
+button {
+  border-radius: 0; }
+
+button:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.1875rem; }
+
 button.collapsible {
   border: none;
   cursor: pointer; }
@@ -466,6 +474,8 @@ input[type=button], input[type=submit] {
   height: 2rem;
   padding: 0 1rem; }
   input[type=button]:focus, input[type=submit]:focus {
+    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
     box-shadow: inset 0 0 0 4px #ffb81d;
     outline: none; }
 

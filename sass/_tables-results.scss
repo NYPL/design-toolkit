@@ -71,7 +71,8 @@
       display: block;
       fill: $linkcolor;
       float: right;
-      width: 2.6rem;
+      height: 2em;
+      width: 2em;
     }
 
     @include media($mobile-breakpoint) {
