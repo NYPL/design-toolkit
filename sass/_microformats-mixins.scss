@@ -1,0 +1,150 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@warn "remove magic numbers";
+
+@mixin page-header {
+  background-color: $pagecolorlight;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+@mixin secondary-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@mixin location-info {
+  border-left: 1rem solid $nypllightgray;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+
+  p {
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .room {
+    font-weight: bold;
+  }
+
+  .access {
+    color: $highlightcolor;
+    font-weight: bold;
+  }
+}
+
+@mixin location-hours {
+  position: relative;
+  width: 100%;
+
+  th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: (100% / 7);
+  }
+
+  td {
+    padding-bottom: 1rem;
+  }
+
+  @include media($mobile-breakpoint) {
+    tr:first-child {
+      display: none;
+    }
+
+    tr {
+      border: none;
+    }
+
+    td {
+      display: block;
+      position: relative;
+      width: 100%;
+
+      &::before {
+        display: block;
+        float: left;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        width: 40%;
+      }
+
+      &:nth-of-type(1)::before {
+        content: "Monday";
+      }
+
+      &:nth-of-type(2)::before {
+        content: "Tuesday";
+      }
+
+      &:nth-of-type(3)::before {
+        content: "Wednesday";
+      }
+
+      &:nth-of-type(4)::before {
+        content: "Thursday";
+      }
+
+      &:nth-of-type(5)::before {
+        content: "Friday";
+      }
+
+      &:nth-of-type(6)::before {
+        content: "Saturday";
+      }
+
+      &:nth-of-type(7)::before {
+        content: "Sunday";
+      }
+    }
+
+  }
+}
+@warn "Move these mixins out of the microformats partial since they effect the entire style guide...";
+@mixin related-links {
+  border-top: $related-links-border-width solid $nyplgray;
+  padding-top: 2rem;
+}
+
+@mixin toolkit-example {
+  border: $simple-border solid $nypllightgray;
+  padding: ($general-padding * 3) $general-padding ($general-padding * 0.5);
+  position: relative;
+
+  &:before {
+    border: $simple-border solid $nypllightgray;
+    border-left: none;
+    border-top: none;
+    color: $nyplgray;
+    content: "EXAMPLE";
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+    left: 0;
+    padding: 0.3em $general-padding;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+  }
+}
+
+@mixin toolkit-example-dark {
+  background: $footercolor;
+
+  &:before {
+    background-color: $invertedlinkcolor;
+  }
+}

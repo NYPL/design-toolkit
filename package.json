@@ -1,0 +1,17 @@
+{
+  "name": "@nypl/design-toolkit",
+  "description": "NYPl Design Toolkit",
+  "author": "NYPL Digital",
+  "contributors": [
+    {
+      "name": "Mauricio Giraldo",
+      "email": "mauriciogiraldo@nypl.org "
+    }
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYPL/design.git"
+  }
+}

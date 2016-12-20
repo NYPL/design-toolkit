@@ -1,0 +1,188 @@
+@font-face {
+  font-family:nypl-moon;
+  src:url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85");
+  src:url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85#iefix") format("embedded-opentype"),url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff2?viik85") format("woff2"),url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.ttf?viik85") format("truetype"),url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff?viik85") format("woff"),url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.svg?viik85#nypl-moon") format("svg");
+  font-weight:400;
+  font-style:normal
+}
+
+@mixin nypl-icon($fill: $pagetextcolor, $background-color: white, $inverted-color: $invertedlinkcolor, $as-font: false, $font-content: "") {
+  @if ($as-font == false) {
+    background-color: $background-color;
+    display: inline-block;
+    fill: $fill;
+    height: 1em;
+    width: 1em;
+    speak:none;
+
+    &.reversed {
+      background-color: inherit;
+      fill: $inverted-color;
+    }
+  } @else {
+    content: $font-content;
+    font-family: nypl-moon;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+%nypl-icon-arrow-meganav-large:after {
+  @include nypl-icon($as-font: true, $font-content: " \E801");
+}
+%nypl-icon-arrow-meganav:after {
+  @include nypl-icon($as-font: true, $font-content: " \E800");
+}
+%nypl-icon-card:after {
+  @include nypl-icon($as-font: true, $font-content: " \E623");
+}
+%nypl-icon-book:after {
+  @include nypl-icon($as-font: true, $font-content: " \E624");
+}
+%nypl-icon-play-large:after {
+  @include nypl-icon($as-font: true, $font-content: " \E625");
+}
+%nypl-icon-play-med:after {
+  @include nypl-icon($as-font: true, $font-content: " \E626");
+}
+%nypl-icon-play-small:after {
+  @include nypl-icon($as-font: true, $font-content: " \E603");
+}
+%nypl-icon-headphones:after {
+  @include nypl-icon($as-font: true, $font-content: " \E627");
+}
+%nypl-icon-solo-x:after {
+  @include nypl-icon($as-font: true, $font-content: " \E611");
+}
+%nypl-icon-mail:after {
+  @include nypl-icon($as-font: true, $font-content: " \E61C");
+}
+%nypl-icon-login:after {
+  @include nypl-icon($as-font: true, $font-content: " \E61D");
+}
+%nypl-icon-logo-mark:after {
+  @include nypl-icon($as-font: true, $font-content: " \E61E");
+}
+%nypl-icon-logo-type:after {
+  @include nypl-icon($as-font: true, $font-content: " \E61F");
+}
+%nypl-icon-locator-no-dot:after {
+  @include nypl-icon($as-font: true, $font-content: " \E620");
+}
+%nypl-icon-locator-small:after {
+  @include nypl-icon($as-font: true, $font-content: " \E616");
+}
+%nypl-icon-locator-large:after {
+  @include nypl-icon($as-font: true, $font-content: " \E615");
+}
+%nypl-icon-burger-nav:after {
+  @include nypl-icon($as-font: true, $font-content: " \E614");
+}
+%nypl-icon-wedge-right:after {
+  @include nypl-icon($as-font: true, $font-content: " \E621");
+}
+%nypl-icon-wedge-left:after {
+  @include nypl-icon($as-font: true, $font-content: " \E622");
+}
+%nypl-icon-wedge-up:after {
+  @include nypl-icon($as-font: true, $font-content: " \E601");
+}
+%nypl-icon-magnifier-thin:after {
+  @include nypl-icon($as-font: true, $font-content: " \E617");
+}
+%nypl-icon-magnifier-fat:after {
+  @include nypl-icon($as-font: true, $font-content: " \E609");
+}
+%nypl-icon-magnifier-circle:after {
+  @include nypl-icon($as-font: true, $font-content: " \E602");
+}
+%nypl-icon-facebook-circle:after {
+  @include nypl-icon($as-font: true, $font-content: " \E62E");
+}
+%nypl-icon-facebook-circle-large:after {
+  @include nypl-icon($as-font: true, $font-content: " \E62C");
+}
+%nypl-icon-facebook-circle-hover:after {
+  @include nypl-icon($as-font: true, $font-content: " \E630");
+}
+%nypl-icon-twitter-circle:after {
+  @include nypl-icon($as-font: true, $font-content: " \E62F");
+}
+%nypl-icon-twitter-circle-large:after {
+  @include nypl-icon($as-font: true, $font-content: " \E62D");
+}
+%nypl-icon-twitter-circle-hover:after {
+  @include nypl-icon($as-font: true, $font-content: " \E631");
+}
+%nypl-icon-facebook:after {
+  @include nypl-icon($as-font: true, $font-content: " \E604");
+}
+%nypl-icon-twitter:after {
+  @include nypl-icon($as-font: true, $font-content: " \E605");
+}
+%nypl-icon-tumblr:after {
+  @include nypl-icon($as-font: true, $font-content: " \E606");
+}
+%nypl-icon-instagram:after {
+  @include nypl-icon($as-font: true, $font-content: " \E618");
+}
+%nypl-icon-soundcloud:after {
+  @include nypl-icon($as-font: true, $font-content: " \E619");
+}
+%nypl-icon-itunes:after {
+  @include nypl-icon($as-font: true, $font-content: " \E61A");
+}
+%nypl-icon-youtube:after {
+  @include nypl-icon($as-font: true, $font-content: " \E61B");
+}
+%nypl-icon-bldg:after {
+  @include nypl-icon($as-font: true, $font-content: " \E607");
+}
+%nypl-icon-equals-small:after {
+  @include nypl-icon($as-font: true, $font-content: " \E608");
+}
+%nypl-icon-arrow-up:after {
+  @include nypl-icon($as-font: true, $font-content: " \E60A");
+}
+%nypl-icon-arrow-down:after {
+  @include nypl-icon($as-font: true, $font-content: " \E629");
+}
+%nypl-icon-arrow-left:after {
+  @include nypl-icon($as-font: true, $font-content: " \E62A");
+}
+%nypl-icon-arrow-right:after {
+  @include nypl-icon($as-font: true, $font-content: " \E62B");
+}
+%nypl-icon-circle-arrow-left:after {
+  @include nypl-icon($as-font: true, $font-content: " \E60B");
+}
+%nypl-icon-circle-arrow-right:after {
+  @include nypl-icon($as-font: true, $font-content: " \E60C");
+}
+%nypl-icon-circle-wedge-left:after {
+  @include nypl-icon($as-font: true, $font-content: " \E60D");
+}
+%nypl-icon-circle-wedge-right:after {
+  @include nypl-icon($as-font: true, $font-content: " \E60E");
+}
+%nypl-icon-circle-more:after {
+  @include nypl-icon($as-font: true, $font-content: " \E60F");
+}
+%nypl-icon-more-dots:after {
+  @include nypl-icon($as-font: true, $font-content: " \E610");
+}
+%nypl-icon-circle-x:after {
+  @include nypl-icon($as-font: true, $font-content: " \E612");
+}
+%nypl-icon-circle-check:after {
+  @include nypl-icon($as-font: true, $font-content: " \E613");
+}
+%nypl-icon-check-solo:after {
+  @include nypl-icon($as-font: true, $font-content: " \E628");
+}

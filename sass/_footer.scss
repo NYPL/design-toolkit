@@ -1,0 +1,50 @@
+@import "measurements";
+@import "microformats-mixins";
+@import "media-queries";
+
+footer {
+  background-color: $footercolor;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 5rem;
+  // font-weight: bold;
+  // @include Kievit-Bold;
+}
+
+footer ul {
+  list-style: none;
+  margin: 1rem 0 1rem 0;
+  padding: 0;
+  @include clearfix;
+}
+
+.copyright {
+  background: url("../img/nypl-rev.svg") no-repeat scroll 0px 0px/#{$logo-width} auto transparent;
+  border: none;
+  display: block;
+  height: $logo-height;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  white-space: nowrap;
+
+  p {
+    padding-top: calc(#{$logo-height} + 1em);
+  }
+}
+
+.footerLinks {
+
+  li {
+      margin-left: 0;
+  }
+
+  > li {
+    float: left;
+    width: 25%;
+
+    @include media($mobile-breakpoint) {
+      float: none;
+      width: auto;
+    }
+  }
+}

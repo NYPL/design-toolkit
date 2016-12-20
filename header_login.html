@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log in | NYPL</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script
+          src="https://code.jquery.com/jquery-3.1.0.min.js"
+          integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+          crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../proto/js/header.js"></script>
+
+</head>
+<body>
+
+<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+
+<div class="alert"><div class="content-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day. <a href="https://www.nypl.org/collections/articles-databases">Original page</a></div></div>
+
+<header>
+  <div class="service">
+    <div class="content-wrapper">
+      <ul class="service-buttons horizontal">
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Get a library card</a></li>
+        <li class="email-toggle"><button class="collapsible">Get email updates</button>
+          <form action="" id="email-updates" class="hidden">
+            <p class="email-toggle-title">Get the best of<br>NYPL in your inbox</p>
+            <fieldset>
+              <label for="email-text">Email address</label>
+              <input type="text" id="email-text" class="form-text" value="">
+            </fieldset>
+            <input type="button" class="subscribe-button" name="Sign up" value="Sign up">
+            <div class="links">
+              <a class="inverted" href="#">Subscription center</a><br>
+              <a class="inverted" href="#">Privacy policy</a>
+            </div>
+          </form>
+        </li>
+        <li><a href="#" class="donate">Donate</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="logo"><a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a></div>
+
+    <div class="content">
+
+      <div class="login-toggle"><button class="collapsible">Log in</button>
+        <div id="login-links" class="hidden">
+          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Catalog</strong></a>
+          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Research catalog</strong></a>
+        </div>
+      </div>
+
+      <ul class="nav-buttons horizontal">
+        <li><a href="#">Books/Music/DVDs</a></li>
+        <li class="active"><a href="#">Research</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Give</a></li>
+        <li><a href="#">Get help</a></li>
+        <li class="search">
+          <form action="" id="main-search" class="">
+            <div class="search-query-content">
+              <input type="submit" class="search-button" name="Search" value="Search"><input type="text" class="form-text" id="search-query-text" name="search-query-text" aria-labelledby="search-query-text" value=""><div class="search-select hidden">
+              <label class="search-radio-label selected" for="books-type"><input type="radio" id="books-type" name="search-type" class="search-type" value="books-type" checked="checked">Books/Music/DVDs</label>
+              <label class="search-radio-label" for="nypl-type"><input type="radio" id="nypl-type" name="search-type" class="search-type" value="nypl-type">NYPL.org</label>
+            </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#" class="main-menu-toggle nypl-icon-wedge-down menu">Show menu</a>
+    <a href="#" class="collapsed-menu-toggle nypl-icon-wedge-down">Login and more </a>
+  </div>
+</header>
+
+</body>
+</html>

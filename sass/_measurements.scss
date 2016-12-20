@@ -1,0 +1,26 @@
+// font base values
+$basefontraw: 16;
+$basefont: $basefontraw * 1px;
+
+// page measures
+$maxwidthraw: 1312;
+$max-width: ($maxwidthraw/$basefontraw) * 1rem; // in rems
+
+// breakpoints
+$intermediate-breakpoint: 1120px;
+$mobile-breakpoint: 965px;
+
+// borders
+$focus-width: (3/$basefontraw) * 1rem;
+$related-links-border-width: 0.25rem;
+$simple-border: (1/$basefontraw) * 1rem;
+
+// grid measures
+$full-width: 100%;
+$one-quarter: $full-width / 4;
+$one-third: $full-width / 3;
+$half: $full-width / 2;
+$two-thirds: ($full-width) - ($one-third);
+$three-quarters: ($full-width) - ($one-quarter);
+$gutter: 0.5rem;
+$general-padding: 1rem;

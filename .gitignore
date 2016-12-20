@@ -1,0 +1,13 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+#InDesign Temp Files
+*.idlk
+
+#ignore the sass cache...
+.sass-cache
+
+#ignore .map files too...
+*.map

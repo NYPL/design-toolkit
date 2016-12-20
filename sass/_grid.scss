@@ -1,0 +1,69 @@
+@import "measurements";
+@import "css3";
+@import "microformats-mixins";
+@import "media-queries";
+
+@warn "remove magic numbers";
+
+@mixin banner-alert() {
+  background-color: $alertcolor;
+  padding: 0.8rem 0;
+  -webkit-animation: alert 2s linear;
+  animation: alert 2s linear;
+}
+
+@mixin full-width-wrapper {
+  margin: 0 auto;
+  max-width: calc(#{$max-width - $general-padding} - (#{$logo-width + $general-padding}));
+  padding: $general-padding $general-padding $general-padding ($logo-width + $general-padding);
+  position: relative;
+  @include clearfix;
+
+  @include media($mobile-breakpoint) {
+    padding-left: $general-padding;
+  }
+}
+
+@mixin column-type($float: left, $width: auto) {
+  float: $float;
+  margin-bottom: 2rem;
+  min-height: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
+  width: $width;
+  @include clearfix;
+  @include box-sizing(border-box);
+
+  @include media($mobile-breakpoint) {
+    float: none;
+    padding: 0;
+    width: auto;
+  }
+}
+
+@mixin column-full {
+  @include column-type($float: none);
+}
+
+@mixin column-half {
+  @include column-type($width: $half);
+}
+
+@mixin column-one-quarter {
+  @include column-type($width: $one-quarter);
+}
+
+@mixin column-one-third {
+  @include column-type($width: $one-third);
+}
+
+@mixin column-two-thirds {
+  @include column-type($width: $two-thirds);
+}
+
+@mixin column-three-quarters {
+  @include column-type($width: $three-quarters);
+}
+
+@mixin inner-block {
+  @warn "deprecated. use row-column pattern instead.";
+}
