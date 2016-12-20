@@ -46,6 +46,7 @@
       <li><a href="#forms">Forms</a></li>
       <li><a href="#results">Tables and Data</a></li>
       <li><a href="#general">General Microformats</a></li>
+      <li><a href="#buttons">Buttons</a></li>
     </ul>
 
     <a name="grid"></a>
@@ -411,28 +412,28 @@
     <p><strong>NOTE:</strong> Mobile support for english only for now.</p>
 
     <div class="toolkit-example">
-    <table class="location-hours">
-      <tbody>
-        <tr>
-    <th>Monday</th>
-    <th class="current">Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
-    <th>Sunday</th>
-        </tr>
-        <tr>
-    <td>10:00 AM - <br>5:45 PM</td>
-    <td>10:00 AM - <br>7:45 PM</td>
-    <td>10:00 AM - <br>7:45 PM</td>
-    <td>10:00 AM - <br>5:45 PM</td>
-    <td>10:00 AM - <br>5:45 PM</td>
-    <td>10:00 AM - <br>5:45 PM</td>
-    <td>1:00 PM - <br>4:45 PM</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="location-hours">
+        <tbody>
+          <tr>
+      <th>Monday</th>
+      <th class="current">Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+          </tr>
+          <tr>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>10:00 AM - <br>7:45 PM</td>
+      <td>10:00 AM - <br>7:45 PM</td>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>1:00 PM - <br>4:45 PM</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <pre><code class="scss">
     .location-hours {
@@ -464,6 +465,41 @@
     &lt;/table&gt;
     </code></pre>
 
+
+    <h2 id="buttons">General Button Styles</h2>
+
+    <h3>Square Button</h3>
+    <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
+    </p>
+      <div class="toolkit-example">
+        <button class="your-button-class">Button</button>
+        <button class="request-button">Request a Button</button>
+      </div>
+      <pre><code class="scss">
+        .your-button-class {
+          @include basic-button;
+        }
+        .request-button {
+          @include request-button;
+        }
+      </code></pre>
+      <pre><code class="html">
+      &lt;button class=&quot;your-button-class&quot;&gt;Button&lt;/button&gt;
+      &lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
+    </code></pre>
+    <h3>Rounded Button</h3>
+    <p>A very simple version of the existent rounded button style.</p>
+      <div class="toolkit-example">
+        <button class="your-rounded-button">Button</button>
+      </div>
+      <pre><code class="scss">
+        .your-rounded-button {
+          @include basic-button($border-radius: 1rem);
+        }
+      </code></pre>
+      <pre><code class="html">
+      &lt;button class=&quot;your-rounded-button&quot;&gt;Button&lt;/button&gt;
+    </code></pre>
     </div>
 
   </div>

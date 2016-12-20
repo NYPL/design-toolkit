@@ -1,3 +1,4 @@
+@warn '_colors.scss TODO: employ NYPL color set from marketing... can i get an ugh?';
 // colors
 $nyplgray: #7B756F;
 $nypldarkgray: darken($nyplgray, 40%);
@@ -29,3 +30,8 @@ $linkvisitedcolor: darken($linkcolor, 20%);
 $linkhovercolor: lighten($linkcolor, 10%);
 $invertedlinkcolor: white;
 $invertedlinkvisitedcolor: darken($invertedlinkcolor, 10%);
+
+// button colors not already defined above.
+$buttonTextColor: $nypldarkgray;
+
+$buttonBackgroundColor: $backgroundcolor;

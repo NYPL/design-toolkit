@@ -2,6 +2,7 @@
 @import "grid";
 @import "header";
 @import "tables-results";
+@import "buttons";
 @import "footer";
 
 // using the system
@@ -84,4 +85,17 @@ fieldset.alphabetical {
 
 fieldset.radiogroup {
   @include radiobutton-fieldset;
+}
+
+// buttons
+.your-button-class {
+  @include basic-button;
+}
+
+.request-button {
+  @include request-button;
+}
+
+.your-rounded-button {
+  @include basic-button($border-radius: 1rem);
 }
