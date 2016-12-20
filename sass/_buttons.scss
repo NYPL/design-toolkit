@@ -17,6 +17,8 @@
   padding: 0.5rem 1rem;
   text-transform: uppercase;
 
+  @include transition(all, 0.2s, ease-in);
+
   &:focus {
     @warn "reconcile with the universal :focus";
     @include box-shadow(0 0 0 4px $focuscolor);

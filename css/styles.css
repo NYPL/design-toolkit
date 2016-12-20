@@ -1452,7 +1452,11 @@ fieldset.radiogroup {
   font-size: .8rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
   .your-button-class:focus {
     -webkit-box-shadow: 0 0 0 4px #ffb81d;
     -moz-box-shadow: 0 0 0 4px #ffb81d;
@@ -1471,7 +1475,11 @@ fieldset.radiogroup {
   font-size: .8rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
   .request-button:focus {
     -webkit-box-shadow: 0 0 0 4px #ffb81d;
     -moz-box-shadow: 0 0 0 4px #ffb81d;
@@ -1494,7 +1502,11 @@ fieldset.radiogroup {
   font-size: .8rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
   .your-rounded-button:focus {
     -webkit-box-shadow: 0 0 0 4px #ffb81d;
     -moz-box-shadow: 0 0 0 4px #ffb81d;
