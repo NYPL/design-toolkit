@@ -1522,4 +1522,24 @@ fieldset.radiogroup {
     background: black;
     color: #eff0f1; }
 
+.row {
+  float: none;
+  margin-bottom: 2rem;
+  min-height: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
+  width: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .row:before, .row:after {
+    content: "";
+    display: table; }
+  .row:after {
+    clear: both; }
+  @media (max-width: 965px) {
+    .row {
+      float: none;
+      padding: 0;
+      width: auto; } }
+
 /*# sourceMappingURL=styles.css.map */

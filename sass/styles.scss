@@ -99,3 +99,7 @@ fieldset.radiogroup {
 .your-rounded-button {
   @include basic-button($border-radius: 1rem);
 }
+
+.row {
+  @include column-full;
+}
