@@ -51,48 +51,285 @@
 
     <h2 id="grid">Layout</h2>
 
-    <h3>General page layout</h3>
+    <h3>Header and footer</h3>
 
-    <p>Coming soon.</p>
+    <p>Header and footer are separate applications that contain some of the styles in this toolkit and are not documented here. This documentation covers anything else within them:</p>
 
-    <div class="toolkit-example">
+    <pre><code>
++-header----------------------------------------------+
+|/////////////////////////////////////////////////////|
++-----------------------------------------------------+
++-main_page_area--------------------------------------+
+|                                                     |
+|  this-documentation                                 |
+|                                                     |
++-----------------------------------------------------+
++-footer----------------------------------------------+
+|/////////////////////////////////////////////////////|
++-----------------------------------------------------+
+    </code></pre>
 
-    </div>
+    <p>The main page area is split in two <strong>sibling</strong> sections (elements): <strong>page header</strong> and <strong>page content</strong>:</p>
+
+    <pre><code>
++-page_header-----------------------------------------+
+|                                                     |
++-----------------------------------------------------+
++-page_content----------------------------------------+
+|                                                     |
++-----------------------------------------------------+
+    </code></pre>
+
+    <h3>The content wrapper</h3>
+
+    <p>The general page layout has some special margins and paddings for branding purposes. A <code>full-width-wrapper</code> mixin is provided to take care of this:</p>
+
     <pre><code class="scss">
-
+.some-content-wrapper {
+  @include full-width-wrapper;
+}
     </code></pre>
-    <pre><code class="html">
 
-    </code></pre>
+    <p>The <code>full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
 
-    <h3>Page header (breadcrumbs)</h3>
+    <h3>Page header (and breadcrumbs)</h3>
 
-    <p>Should be nested inside <code>content-wrapper</code> element (see <a href="#grid">Layout</a>). Breadcrumbs appear in their own <code>div</code> tag.</p>
+    <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
     <div class="toolkit-example">
-    <div class="page-header">
-      <div class="content-wrapper">
-        <div><a href="#">Home</a> > <a href="#">Research</a> > Articles &amp; databases</div>
-        <h1>Articles &amp; databases</h1>
+      <div class="my-page-header">
+        <div class="my-content-wrapper">
+          <div class="my-breadcrumb"><a href="#">Home</a> > <a href="#">Research</a> > Articles &amp; databases</div>
+          <h1>Articles &amp; databases</h1>
+        </div>
       </div>
     </div>
-    </div>
     <pre><code class="scss">
-    .page-header {
-      @include page-header;
-    }
+.my-page-header {
+  @include page-header;
+}
+
+.my-breadcrumb {
+  @include breadcrumbs;
+}
+
+.my-content-wrapper {
+  @include full-width-wrapper;
+}
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;page-header&quot;&gt;
-  &lt;div class=&quot;content-wrapper&quot;&gt;
-    &lt;div&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &gt; &lt;a href=&quot;#&quot;&gt;Research&lt;/a&gt; &gt; Articles &amp;amp; databases&lt;/div&gt;
+&lt;div class=&quot;my-page-header&quot;&gt;
+  &lt;div class=&quot;my-content-wrapper&quot;&gt;
+    &lt;div class=&quot;my-breadcrumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &gt; &lt;a href=&quot;#&quot;&gt;Research&lt;/a&gt; &gt; Articles &amp;amp; databases&lt;/div&gt;
     &lt;h1&gt;Articles &amp;amp; databases&lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;
     </code></pre>
 
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <h3>Page content</h3>
+
+    <p>Is wrapped by a <code>full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
+
+    <pre><code>
++-wrapper---------------------------------------------+
+| +-row_and_cols------------------------------------+ |
+| |                                                 | |
+| |                                                 | |
+| +-------------------------------------------------+ |
+| +-row_and_cols------------------------------------+ |
+| |                                                 | |
+| |                                                 | |
+| +-------------------------------------------------+ |
+| +-row_and_cols------------------------------------+ |
+| |                                                 | |
+| |                                                 | |
+| +-------------------------------------------------+ |
++-----------------------------------------------------+
+    </code></pre>
+
+    <p>The rows and columns themselves are based on a simple, mobile-ready row-4-column pattern that can be combined as needed. Existing column size mixins are <code>column-full</code>, <code>column-half</code>, <code>column-one-quarter</code>, and <code>column-three-quarters</code>.</p>
+
+    <p><strong>NOTE:</strong> avoid nesting rows inside columns as the system does not support it for the time being. It is preferred to use multiple rows if you require a more elaborate layout.</p>
+
+    <h3>Full width</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-full">
+    <p>full width</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-full {
+  @include column-full;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-full&quot;&gt;
+    &lt;p&gt;full width&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3>Half width</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-half">
+    <p>half</p>
+  </div>
+  <div class="my-col-half">
+    <p>half</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-half {
+  @include column-half;
+
+  p {
+    background-color: yellow;
+    color: black;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-half&quot;&gt;
+    &lt;p&gt;half&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-half&quot;&gt;
+    &lt;p&gt;half&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3>Quarter width</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-quarter">
+    <p>one</p>
+  </div>
+  <div class="my-col-quarter">
+    <p>two</p>
+  </div>
+  <div class="my-col-quarter">
+    <p>three</p>
+  </div>
+  <div class="my-col-quarter">
+    <p>four</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-quarter {
+  @include column-one-quarter;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;one&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;two&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;three&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;four&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3>One quarter / three quarters width</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-quarter">
+    <p>one</p>
+  </div>
+  <div class="my-col-three-quarters">
+    <p>three</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-quarter {
+  @include column-one-quarter;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+
+.my-col-three-quarters {
+  @include column-three-quarters;
+
+  p {
+    background-color: green;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;one&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-three-quarters&quot;&gt;
+    &lt;p&gt;three&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <div class="toolkit-example">
+
+    </div>
+    <pre><code class="scss">
+
+    </code></pre>
+    <pre><code class="html">
+
+    </code></pre>
+
     <h2 id="forms">Forms</h2>
+    <p><a href="#toc">Go to Table of contents</a></p>
 
     <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
 
@@ -228,8 +465,8 @@
     </code></pre>
 
 
-    <p><a href="#toc">Go to Table of contents</a></p>
     <h2 id="results">Tables and Data</h2>
+    <p><a href="#toc">Go to Table of contents</a></p>
 
     <h3>General tables</h3>
 
@@ -359,8 +596,8 @@
 &lt;/div&gt;
     </code></pre>
 
-    <p><a href="#toc">Go to Table of contents</a></p>
     <h2 id="general">General Microformats</h2>
+    <p><a href="#toc">Go to Table of contents</a></p>
 
     <h3>Alert banner</h3>
 
@@ -464,8 +701,8 @@
     </code></pre>
 
 
-    <p><a href="#toc">Go to Table of contents</a></p>
     <h2 id="buttons">General Button Styles</h2>
+    <p><a href="#toc">Go to Table of contents</a></p>
 
     <h3>Square Button</h3>
     <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.

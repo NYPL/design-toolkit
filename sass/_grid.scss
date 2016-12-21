@@ -12,6 +12,18 @@
   animation: alert 2s linear;
 }
 
+@mixin page-header {
+  background-color: $pagecolorlight;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+@mixin breadcrumbs {
+  // empty for now
+}
+
 @mixin full-width-wrapper {
   margin: 0 auto;
   max-width: calc(#{$max-width - $general-padding} - (#{$logo-width + $general-padding}));
@@ -22,6 +34,12 @@
   @include media($mobile-breakpoint) {
     padding-left: $general-padding;
   }
+}
+
+@mixin grid-row {
+  margin: 0 -0.5rem;
+  min-height: 1rem;
+  @include clearfix;
 }
 
 @mixin column-type($float: left, $width: auto) {

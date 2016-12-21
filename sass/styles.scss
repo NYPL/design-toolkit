@@ -11,8 +11,57 @@
   @include full-width-wrapper;
 }
 
-.page-header {
+.my-page-header {
   @include page-header;
+}
+
+.my-breadcrumb {
+  @include breadcrumbs;
+}
+
+.my-content-wrapper {
+  @include full-width-wrapper;
+}
+
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-full {
+  @include column-full;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+
+.my-col-half {
+  @include column-half;
+
+  p {
+    background-color: yellow;
+    color: black;
+  }
+}
+
+.my-col-three-quarters {
+  @include column-three-quarters;
+
+  p {
+    background-color: green;
+    color: white;
+  }
+}
+
+.my-col-quarter {
+  @include column-one-quarter;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
 }
 
 #filter-search {

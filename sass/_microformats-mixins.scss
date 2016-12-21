@@ -11,14 +11,6 @@
 
 @warn "remove magic numbers";
 
-@mixin page-header {
-  background-color: $pagecolorlight;
-
-  h1 {
-    margin: 0;
-  }
-}
-
 @mixin secondary-title {
   font-size: 1.2rem;
   font-weight: bold;
