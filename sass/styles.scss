@@ -137,7 +137,7 @@ fieldset.radiogroup {
 }
 
 // buttons
-.your-button-class {
+.my-button-class {
   @include basic-button;
 }
 
@@ -145,7 +145,7 @@ fieldset.radiogroup {
   @include request-button;
 }
 
-.your-rounded-button {
+.my-rounded-button {
   @include basic-button($border-radius: 1rem);
 }
 

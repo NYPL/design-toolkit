@@ -340,7 +340,7 @@
     </code></pre>
 
     <h2 id="forms">Forms</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
     <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
 
@@ -477,7 +477,7 @@
 
 
     <h2 id="results">Tables and Data</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
     <h3>General tables</h3>
 
@@ -510,9 +510,9 @@
     </div>
     </div>
     <pre><code class="scss">
-    .results-summary {
-      @include results-summary;
-    }
+.results-summary {
+  @include results-summary;
+}
     </code></pre>
 
     <p><strong>NOTE:</strong> Maybe replace <code>a</code> tag with <code>button</code>?</p>
@@ -583,9 +583,9 @@
     </div>
     </div>
     <pre><code class="scss">
-    .results-pagination {
-      @include results-pagination;
-    }
+.results-pagination {
+  @include results-pagination;
+}
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;results-pagination&quot;&gt;
@@ -608,7 +608,7 @@
     </code></pre>
 
     <h2 id="general">General Microformats</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
     <h3>Alert banner</h3>
 
@@ -639,9 +639,9 @@
     </div>
     </div>
     <pre><code class="scss">
-    #location-info {
-      @include location-info;
-    }
+#location-info {
+  @include location-info;
+}
     </code></pre>
     <pre><code class="html">
 &lt;div id=&quot;location-info&quot;&gt;
@@ -682,30 +682,30 @@
       </table>
     </div>
     <pre><code class="scss">
-    .location-hours {
-      @include location-hours;
-    }
+.location-hours {
+  @include location-hours;
+}
     </code></pre>
     <pre><code class="html">
 &lt;table class=&quot;location-hours&quot;&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-&lt;th&gt;Monday&lt;/th&gt;
-&lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
-&lt;th&gt;Wednesday&lt;/th&gt;
-&lt;th&gt;Thursday&lt;/th&gt;
-&lt;th&gt;Friday&lt;/th&gt;
-&lt;th&gt;Saturday&lt;/th&gt;
-&lt;th&gt;Sunday&lt;/th&gt;
+      &lt;th&gt;Monday&lt;/th&gt;
+      &lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
+      &lt;th&gt;Wednesday&lt;/th&gt;
+      &lt;th&gt;Thursday&lt;/th&gt;
+      &lt;th&gt;Friday&lt;/th&gt;
+      &lt;th&gt;Saturday&lt;/th&gt;
+      &lt;th&gt;Sunday&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;1:00 PM - &lt;br&gt;4:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;1:00 PM - &lt;br&gt;4:45 PM&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -713,39 +713,39 @@
 
 
     <h2 id="buttons">General Button Styles</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
     <h3>Square Button</h3>
     <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
     </p>
       <div class="toolkit-example">
-        <button class="your-button-class">Button</button>
+        <button class="my-button-class">Button</button>
         <button class="request-button">Request a Button</button>
       </div>
       <pre><code class="scss">
-        .your-button-class {
-          @include basic-button;
-        }
-        .request-button {
-          @include request-button;
-        }
+.my-button-class {
+  @include basic-button;
+}
+.request-button {
+  @include request-button;
+}
       </code></pre>
       <pre><code class="html">
-&lt;button class=&quot;your-button-class&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
     </code></pre>
     <h3>Rounded Button</h3>
     <p>A very simple version of the existent rounded button style.</p>
       <div class="toolkit-example">
-        <button class="your-rounded-button">Button</button>
+        <button class="my-rounded-button">Button</button>
       </div>
       <pre><code class="scss">
-        .your-rounded-button {
-          @include basic-button($border-radius: 1rem);
-        }
+.my-rounded-button {
+  @include basic-button($border-radius: 1rem);
+}
       </code></pre>
       <pre><code class="html">
-&lt;button class=&quot;your-rounded-button&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
     </code></pre>
     </div>
 
