@@ -24,7 +24,7 @@
 }
 
 @mixin location-info {
-  border-left: 1rem solid $nypllightgray;
+  border-left: 1rem solid $nypl-light-gray;
   padding-left: 1rem;
   margin-bottom: 2rem;
 
@@ -112,20 +112,20 @@
 }
 @warn "Move these mixins out of the microformats partial since they effect the entire style guide...";
 @mixin related-links {
-  border-top: $related-links-border-width solid $nyplgray;
+  border-top: $related-links-border-width solid $nypl-gray;
   padding-top: 2rem;
 }
 
 @mixin toolkit-example {
-  border: $simple-border solid $nypllightgray;
+  border: $simple-border solid $nypl-light-gray;
   padding: ($general-padding * 3) $general-padding ($general-padding * 0.5);
   position: relative;
 
   &:before {
-    border: $simple-border solid $nypllightgray;
+    border: $simple-border solid $nypl-light-gray;
     border-left: none;
     border-top: none;
-    color: $nyplgray;
+    color: $nypl-gray;
     content: "EXAMPLE";
     display: inline-block;
     font-size: 1em;
@@ -142,6 +142,6 @@
   background: $footercolor;
 
   &:before {
-    background-color: $invertedlinkcolor;
+    background-color: $inverted-link-color;
   }
 }

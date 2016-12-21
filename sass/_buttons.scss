@@ -27,11 +27,11 @@
 }
 
 @mixin request-button {
-  @include basic-button ($button-text-color: $buttonBackgroundColor, $button-border-color: $nyplbluedark, $button-background-color: $nyplbluedark, $border-radius: 0.25rem);
+  @include basic-button ($button-text-color: $buttonBackgroundColor, $button-border-color: $nypl-blue-dark, $button-background-color: $nypl-blue-dark, $border-radius: 0.25rem);
 
   &:hover {
     background: $buttonBackgroundColor;
-    border-color: $nyplbluedark;
-    color: $nyplbluedark;
+    border-color: $nypl-blue-dark;
+    color: $nypl-blue-dark;
   }
 }

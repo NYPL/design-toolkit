@@ -411,7 +411,7 @@ button.collapsible {
   cursor: pointer; }
 
 body {
-  color: #100f0e; }
+  color: #080807; }
 
 html {
   background-color: #fff;
@@ -425,7 +425,12 @@ html {
   -webkit-filter: none;
   filter: none; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.5;
   margin-bottom: 1.5rem;
   margin-top: 0; }
@@ -455,7 +460,7 @@ li {
   margin-left: 1.5rem; }
 
 code, pre {
-  background-color: #dddbd9;
+  background-color: #d7d4d0;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
 
 code {
@@ -466,10 +471,10 @@ legend {
   display: table; }
 
 input[type=button], input[type=submit] {
-  background-color: #c5c2be;
+  background-color: #c0bab4;
   border: none;
   padding: 0;
-  background-color: #605c57;
+  background-color: #5b544d;
   color: white;
   height: 2rem;
   padding: 0 1rem; }
@@ -482,24 +487,24 @@ input[type=button], input[type=submit] {
 a {
   text-decoration: underline; }
   a:link {
-    color: #1980a9; }
+    color: #2799c5; }
   a:visited {
-    color: #125e7d; }
+    color: #1f789a; }
   a:hover, a:visited:hover {
-    color: #20a2d5;
+    color: #45b1da;
     text-decoration: underline; }
 
 a.inverted:link {
-  color: white; }
+  color: #fff; }
 a.inverted:visited {
   color: #e6e6e6; }
 a.inverted:hover, a.inverted:visited:hover {
-  color: white; }
+  color: #fff; }
 
 #skip a {
   background-color: white;
   border: none;
-  color: #1980a9;
+  color: #2799c5;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -512,7 +517,7 @@ a.inverted:hover, a.inverted:visited:hover {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #1980a9;
+    border: 5px solid #2799c5;
     height: auto;
     left: 7px;
     outline: 0;

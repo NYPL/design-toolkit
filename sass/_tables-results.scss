@@ -21,7 +21,7 @@
   }
 
   a {
-    color: $nyplgray;
+    color: $nypl-gray;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@
     vertical-align: super;
 
     &:hover {
-      color: $linkcolor;
+      color: $link-color;
     }
   }
 }
@@ -69,7 +69,7 @@
     svg {
       @include nypl-icon;
       display: block;
-      fill: $linkcolor;
+      fill: $link-color;
       float: right;
       height: 2em;
       width: 2em;
@@ -94,7 +94,7 @@
   border-collapse: collapse;
 
   tr, .views-table-row {
-    border-bottom: 1px solid $nypllightgray;
+    border-bottom: 1px solid $nypl-light-gray;
     display: table-row;
   }
 
@@ -136,7 +136,7 @@
   }
 
   td, .views-table-cell {
-    border-bottom: 1px solid $nypllightgray;
+    border-bottom: 1px solid $nypl-light-gray;
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top;
   }
@@ -168,7 +168,7 @@
       }
 
       tr:first-child, .views-table-row:first-child {
-        border-top: 1px solid $nypllightgray;
+        border-top: 1px solid $nypl-light-gray;
       }
 
       .event-time, .event-audience, .event-title {

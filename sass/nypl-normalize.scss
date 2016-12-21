@@ -13,7 +13,7 @@ body {
 }
 
 html {
-  background-color: #fff;
+  background-color: $background-color;
   font-family: $sans-serif-stack;
   font-size: $basefont;
   line-height: 1.65;
@@ -27,7 +27,12 @@ html {
   filter: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.5;
   margin-bottom: 1.5rem;
   margin-top: 0;
@@ -64,7 +69,7 @@ li {
 }
 
 code, pre {
-  background-color: $nypllightgray;
+  background-color: $nypl-light-gray;
   font-family: $monospace-stack;
 }
 
@@ -85,7 +90,7 @@ a {
   text-decoration: underline;
 
   &:link {
-    color: $linkcolor;
+    color: $link-color;
   }
 
   &:visited {
@@ -100,7 +105,7 @@ a {
 
 a.inverted {
   &:link {
-    color: $invertedlinkcolor;
+    color: $inverted-link-color;
   }
 
   &:visited {
@@ -108,14 +113,14 @@ a.inverted {
   }
 
   &:hover, &:visited:hover {
-    color: $invertedlinkcolor;
+    color: $inverted-link-color;
   }
 }
 
 #skip a {
   background-color: white;
   border: none;
-  color: $linkcolor;
+  color: $link-color;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -129,7 +134,7 @@ a.inverted {
   z-index: 1000;
 
   &:focus {
-    border: 5px solid $linkcolor;
+    border: 5px solid $link-color;
     height: auto;
     left: 7px;
     outline: 0;
