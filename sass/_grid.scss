@@ -5,11 +5,6 @@
 
 @warn "remove magic numbers";
 
-@mixin banner-alert() {
-  background-color: $alertcolor;
-  padding: 0.8rem 0;
-}
-
 @mixin page-header {
   background-color: $pagecolorlight;
 

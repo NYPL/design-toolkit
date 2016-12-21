@@ -3,8 +3,8 @@ $basefontraw: 16;
 $basefont: $basefontraw * 1px;
 
 // page measures
-$maxwidthraw: 1312;
-$max-width: ($maxwidthraw/$basefontraw) * 1rem; // in rems
+$max-width-raw: 1312;
+$max-width: ($max-width-raw/$basefontraw) * 1rem; // in rems
 
 // breakpoints
 $intermediate-breakpoint: 1120px;
