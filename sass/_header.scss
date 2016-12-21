@@ -217,12 +217,12 @@ header {
       text-decoration: none;
       text-overflow: ellipsis;
       text-transform: uppercase;
-      transition: all 0.2s;
+      transition: all $hover-time;
       white-space: nowrap;
 
       .nypl-icon {
         @include nypl-icon(white, $nyplred);
-        transition: all 0.2s;
+        transition: all $hover-time;
       }
 
       &:hover, &.active {
@@ -257,7 +257,7 @@ header {
     position: relative;
 
     a:after {
-      transition: all 0.2s;
+      transition: all $hover-time;
     }
 
     a.active:after {
@@ -310,11 +310,11 @@ header {
       display: inline-block;
       font-weight: bold;
       padding: 0 0.5em;
-      transition: all 0.2s;
+      transition: all $hover-time;
 
       .nypl-icon {
         @include nypl-icon(white, $nyplgray);
-        transition: all 0.2s;
+        transition: all $hover-time;
       }
 
       &:link {
@@ -453,7 +453,7 @@ header {
       padding: 0.2em 0.4em 0.2em;
       text-decoration: none;
       text-overflow: ellipsis;
-      transition: all 0.2s;
+      transition: all $hover-time;
       white-space: nowrap;
 
       &:hover {
@@ -545,7 +545,7 @@ header {
         margin-right: 1px;
         padding: 0;
         text-indent: 0.5rem;
-        transition: all 0.2s ease-out;
+        transition: all $hover-time ease-out;
         width: 10rem;
 
         &.active {
