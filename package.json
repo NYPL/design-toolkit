@@ -27,7 +27,7 @@
     "node-sass": "3.4"
   },
   "eyeglass": {
-    "name": "design-toolkit",
+    "name": "toolkit",
     "needs": "*",
     "exports": "eyeglassConfig.js"
   }
