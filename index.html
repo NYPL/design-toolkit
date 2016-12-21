@@ -42,7 +42,18 @@
     <h2>Table of contents</h2>
 
     <ul>
-      <li><a href="#grid">Layout</a></li>
+      <li><a href="#grid">Layout</a>
+        <ul>
+          <li><a href="#mainHeader">Main header and footer</a></li>
+          <li><a href="#contentWrapper">The content wrapper</a></li>
+          <li><a href="#peageHeader">Page header (and breadcrumbs)</a></li>
+          <li><a href="#pageContent">Page content</a></li>
+          <li><a href="#fullWidth">Full width column</a></li>
+          <li><a href="#halfWidth">Half width columns</a></li>
+          <li><a href="#quarterWidth">Quarter width columns</a></li>
+          <li><a href="#mixedColumns">One quartes / three quarters width columns</a></li>
+        </ul>
+      </li>
       <li><a href="#forms">Forms</a></li>
       <li><a href="#results">Tables and Data</a></li>
       <li><a href="#general">General Microformats</a></li>
@@ -51,7 +62,7 @@
 
     <h2 id="grid">Layout</h2>
 
-    <h3>Header and footer</h3>
+    <h3 id="mainHeader">Main header and footer</h3>
 
     <p>Header and footer are separate applications that contain some of the styles in this toolkit and are not documented here. This documentation covers anything else within them:</p>
 
@@ -80,7 +91,7 @@
 +-----------------------------------------------------+
     </code></pre>
 
-    <h3>The content wrapper</h3>
+    <h3 id="contentWrapper">The content wrapper</h3>
 
     <p>The general page layout has some special margins and paddings for branding purposes. A <code>full-width-wrapper</code> mixin is provided to take care of this:</p>
 
@@ -92,7 +103,7 @@
 
     <p>The <code>full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
 
-    <h3>Page header (and breadcrumbs)</h3>
+    <h3 id="peageHeader">Page header (and breadcrumbs)</h3>
 
     <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
@@ -126,7 +137,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Page content</h3>
+    <h3 id="pageContent">Page content</h3>
 
     <p>Is wrapped by a <code>full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
 
@@ -151,7 +162,7 @@
 
     <p><strong>NOTE:</strong> avoid nesting rows inside columns as the system does not support it for the time being. It is preferred to use multiple rows if you require a more elaborate layout.</p>
 
-    <h3>Full width</h3>
+    <h3 id="fullWidth">Full width column</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -183,7 +194,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Half width</h3>
+    <h3 id="halfWidth">Half width columns</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -221,7 +232,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Quarter width</h3>
+    <h3 id="quarterWidth">Quarter width columns</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -271,7 +282,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>One quarter / three quarters width</h3>
+    <h3 id="mixedColumns">One quarter / three quarters width columns</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
