@@ -480,13 +480,13 @@ input[type=button], input[type=submit] {
     outline: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: underline; }
   a:link {
-    color: #e32b31; }
+    color: #1980a9; }
   a:visited {
-    color: #941418; }
+    color: #125e7d; }
   a:hover, a:visited:hover {
-    color: #e9585d;
+    color: #20a2d5;
     text-decoration: underline; }
 
 a.inverted:link {
@@ -499,7 +499,7 @@ a.inverted:hover, a.inverted:visited:hover {
 #skip a {
   background-color: white;
   border: none;
-  color: #e32b31;
+  color: #1980a9;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -512,7 +512,7 @@ a.inverted:hover, a.inverted:visited:hover {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #e32b31;
+    border: 5px solid #1980a9;
     height: auto;
     left: 7px;
     outline: 0;

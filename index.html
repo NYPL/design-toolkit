@@ -54,9 +54,23 @@
           <li><a href="#mixedColumns">One quartes / three quarters width columns</a></li>
         </ul>
       </li>
-      <li><a href="#forms">Forms</a></li>
+      <li><a href="#forms">Forms</a>
+        <ul>
+          <li><a href="#textFields">Text fields</a></li>
+          <li><a href="#selectBoxes">Select boxes</a></li>
+          <li><a href="#alphaFilters">Alphabetical filters</a></li>
+          <li><a href="#radioButtons">Radiobutton/checkbox groups</a></li>
+          <li><a href="#sorting">Sorting</a></li>
+        </ul>
+      </li>
       <li><a href="#results">Tables and Data</a></li>
-      <li><a href="#general">General Microformats</a></li>
+      <li><a href="#general">General Microformats</a>
+        <ul>
+          <li><a href="#alertBanner">Alert banner</a></li>
+          <li><a href="#locationCard">Location card</a></li>
+          <li><a href="#locationHours">Location hours</a></li>
+        </ul>
+      </li>
       <li><a href="#buttons">Buttons</a></li>
     </ul>
 
@@ -344,7 +358,7 @@
 
     <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
 
-    <h3>Text fields</h3>
+    <h3 id="textFields">Text fields</h3>
 
     <div class="toolkit-example">
     <fieldset class="my-text-field">
@@ -365,7 +379,7 @@
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3>Select boxes</h3>
+    <h3 id="selectBoxes">Select boxes</h3>
 
     <div class="toolkit-example">
     <fieldset class="my-select-box">
@@ -396,7 +410,7 @@
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3>Alphabetical filters</h3>
+    <h3 id="alphaFilters">Alphabetical filters</h3>
 
     <p>Not a form element per se but still used within search forms. Selected element is replaced with <code>span</code>. The "Any" selection has a <code>long</code> class.
     </p>
@@ -433,7 +447,7 @@
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3>Radiobutton/checkbox groups</h3>
+    <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
 
     <p>For multiple browser-compatibility reasons we avoid the <code>legend</code> tag and use a <code>span</code> tag with a nested <code>strong</code> tag.</p>
 
@@ -475,11 +489,26 @@
 &lt;/fieldset&gt;
     </code></pre>
 
+    <h3 id="sorting">Sorting</h3>
+
+    <p>coming soon</p>
+
+
+    <div class="toolkit-example">
+    </div>
+    <pre><code class="scss">
+
+    </code></pre>
+
+    <pre><code class="html">
+
+    </code></pre>
+
 
     <h2 id="results">Tables and Data</h2>
     <a href="#toc">Go to top</a>
 
-    <h3>General tables</h3>
+    <h3 id="">General tables</h3>
 
     <div class="toolkit-example">
 
@@ -491,7 +520,7 @@
 
     </code></pre>
 
-    <h3>Search results summary</h3>
+    <h3 id="">Search results summary</h3>
 
     <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has an anchor element to remove the facet and refresh the search results.
     </p>
@@ -529,7 +558,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Search results (table)</h3>
+    <h3 id="">Search results (table)</h3>
 
     <p>Coming soon.</p>
 
@@ -543,7 +572,7 @@
 
     </code></pre>
 
-    <h3>Search results (non-table)</h3>
+    <h3 id="">Search results (non-table)</h3>
 
     <p>Coming soon.</p>
 
@@ -557,7 +586,7 @@
 
     </code></pre>
 
-    <h3>Search results pagination</h3>
+    <h3 id="">Search results pagination</h3>
 
     <p>This widget is presented <strong>only in the bottom</strong> of the results (pagination will never appear on top). Page count appears in its own <code>span</code> tag.</p>
 
@@ -610,7 +639,7 @@
     <h2 id="general">General Microformats</h2>
     <a href="#toc">Go to top</a>
 
-    <h3>Alert banner</h3>
+    <h3 id="alertBanner">Alert banner</h3>
 
     <p>Requires a <code>content-wrapper</code> for proper margin and padding.</p>
 
@@ -627,7 +656,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Location card</h3>
+    <h3 id="locationCard">Location card</h3>
 
     <p>Note the special classes for each property.</p>
 
@@ -651,7 +680,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Location hours</h3>
+    <h3 id="locationHours">Location hours</h3>
 
     <p><strong>Always starts on Monday.</strong> Note the special class for the current day (Tuesday in this case) and the line breaks.</p>
 
@@ -715,7 +744,7 @@
     <h2 id="buttons">General Button Styles</h2>
     <a href="#toc">Go to top</a>
 
-    <h3>Square Button</h3>
+    <h3 id="">Square Button</h3>
     <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
     </p>
       <div class="toolkit-example">
@@ -734,7 +763,7 @@
 &lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
     </code></pre>
-    <h3>Rounded Button</h3>
+    <h3 id="">Rounded Button</h3>
     <p>A very simple version of the existent rounded button style.</p>
       <div class="toolkit-example">
         <button class="my-rounded-button">Button</button>

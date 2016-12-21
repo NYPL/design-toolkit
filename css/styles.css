@@ -480,13 +480,13 @@ input[type=button], input[type=submit] {
     outline: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: underline; }
   a:link {
-    color: #e32b31; }
+    color: #1980a9; }
   a:visited {
-    color: #941418; }
+    color: #125e7d; }
   a:hover, a:visited:hover {
-    color: #e9585d;
+    color: #20a2d5;
     text-decoration: underline; }
 
 a.inverted:link {
@@ -499,7 +499,7 @@ a.inverted:hover, a.inverted:visited:hover {
 #skip a {
   background-color: white;
   border: none;
-  color: #e32b31;
+  color: #1980a9;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -512,7 +512,7 @@ a.inverted:hover, a.inverted:visited:hover {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #e32b31;
+    border: 5px solid #1980a9;
     height: auto;
     left: 7px;
     outline: 0;
@@ -706,7 +706,7 @@ header .service-buttons {
         fill: white; }
     header .service-buttons li > a:hover, header .service-buttons li > a.active, header .service-buttons button.collapsible:hover, header .service-buttons button.collapsible.active {
       background-color: white;
-      color: #e32b31; }
+      color: #1980a9; }
       header .service-buttons li > a:hover .nypl-icon, header .service-buttons li > a.active .nypl-icon, header .service-buttons button.collapsible:hover .nypl-icon, header .service-buttons button.collapsible.active .nypl-icon {
         background-color: white;
         fill: #e32b31; }
@@ -889,12 +889,12 @@ header .nav-buttons {
     transition: all 0.2s;
     white-space: nowrap; }
     header .nav-buttons a:hover {
-      color: #e32b31; }
+      color: #1980a9; }
   header .nav-buttons li {
-    box-shadow: inset 0 0 0 #e32b31;
+    box-shadow: inset 0 0 0 #1980a9;
     transition: box-shadow 0.2s; }
   header .nav-buttons li:hover, header .nav-buttons li.active {
-    box-shadow: inset 0 -4px 0 #e32b31; }
+    box-shadow: inset 0 -4px 0 #1980a9; }
 header li.search #main-search {
   background-color: #7B756F;
   margin: 0;
@@ -1284,7 +1284,7 @@ footer ul {
     text-decoration: none;
     vertical-align: super; }
     .results-summary a:hover {
-      color: #e32b31; }
+      color: #1980a9; }
 
 .results-pagination {
   font-size: 1.5rem;
@@ -1323,7 +1323,7 @@ footer ul {
     width: 1em;
     speak: none;
     display: block;
-    fill: #e32b31;
+    fill: #1980a9;
     float: right;
     height: 2em;
     width: 2em; }
@@ -1368,10 +1368,10 @@ table, .views-table {
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top; }
   table .channel-title, .views-table .channel-title {
-    color: #1980a9;
+    color: #e32b31;
     text-transform: uppercase; }
   table .signup-method, .views-table .signup-method {
-    color: #1980a9; }
+    color: #e32b31; }
   table .resource-title, .views-table .resource-title {
     font-weight: bold; }
   @media (max-width: 965px) {
@@ -1417,7 +1417,7 @@ table, .views-table {
   #location-info .room {
     font-weight: bold; }
   #location-info .access {
-    color: #1980a9;
+    color: #e32b31;
     font-weight: bold; }
 
 .location-hours {

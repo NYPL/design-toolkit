@@ -20,13 +20,13 @@ $pagecolor: $nypldarkgray;
 $pagecolorlight: $nypllightgray;
 $pagetextcolor: $nypldarkgray;
 $footercolor: #54514A;
-$highlightcolor: $nyplbluedark;
+$highlightcolor: $nyplred;
 $alertcolor: $nyplyellow;
 $backgroundcolor: #fff;
 
 // link colors
-$linkcolor: $nyplred;
-$linkvisitedcolor: darken($linkcolor, 20%);
+$linkcolor: $nyplbluedark;
+$linkvisitedcolor: darken($linkcolor, 10%);
 $linkhovercolor: lighten($linkcolor, 10%);
 $invertedlinkcolor: white;
 $invertedlinkvisitedcolor: darken($invertedlinkcolor, 10%);
