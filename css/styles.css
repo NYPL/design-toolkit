@@ -1036,9 +1036,9 @@ footer ul {
     .content-wrapper {
       padding-left: 1rem; } }
 
-.my-page-header {
+.page-header, .my-page-header {
   background-color: #dddbd9; }
-  .my-page-header h1 {
+  .page-header h1, .my-page-header h1 {
     margin: 0; }
 
 .my-content-wrapper {

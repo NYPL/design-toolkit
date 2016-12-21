@@ -11,7 +11,7 @@
   @include full-width-wrapper;
 }
 
-.my-page-header {
+.page-header, .my-page-header {
   @include page-header;
 }
 
