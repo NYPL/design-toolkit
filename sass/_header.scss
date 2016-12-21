@@ -227,7 +227,7 @@ header {
 
       &:hover, &.active {
         background-color: white;
-        color: $linkcolor;
+        color: $nyplred;
 
         .nypl-icon {
           background-color: white;
@@ -457,18 +457,18 @@ header {
       white-space: nowrap;
 
       &:hover {
-        color: $linkcolor;
+        color: $nyplred;
       }
 
     }
 
     li {
-      box-shadow: inset 0 0 0 $linkcolor;
+      box-shadow: inset 0 0 0 $nyplred;
       transition: box-shadow 0.2s;
     }
 
     li:hover, li.active {
-      box-shadow: inset 0 -4px 0 $linkcolor;
+      box-shadow: inset 0 -4px 0 $nyplred;
     }
 
   }

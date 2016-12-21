@@ -706,7 +706,7 @@ header .service-buttons {
         fill: white; }
     header .service-buttons li > a:hover, header .service-buttons li > a.active, header .service-buttons button.collapsible:hover, header .service-buttons button.collapsible.active {
       background-color: white;
-      color: #1980a9; }
+      color: #e32b31; }
       header .service-buttons li > a:hover .nypl-icon, header .service-buttons li > a.active .nypl-icon, header .service-buttons button.collapsible:hover .nypl-icon, header .service-buttons button.collapsible.active .nypl-icon {
         background-color: white;
         fill: #e32b31; }
@@ -889,12 +889,12 @@ header .nav-buttons {
     transition: all 0.2s;
     white-space: nowrap; }
     header .nav-buttons a:hover {
-      color: #1980a9; }
+      color: #e32b31; }
   header .nav-buttons li {
-    box-shadow: inset 0 0 0 #1980a9;
+    box-shadow: inset 0 0 0 #e32b31;
     transition: box-shadow 0.2s; }
   header .nav-buttons li:hover, header .nav-buttons li.active {
-    box-shadow: inset 0 -4px 0 #1980a9; }
+    box-shadow: inset 0 -4px 0 #e32b31; }
 header li.search #main-search {
   background-color: #7B756F;
   margin: 0;
