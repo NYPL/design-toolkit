@@ -480,13 +480,13 @@ input[type=button], input[type=submit] {
     outline: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: underline; }
   a:link {
-    color: #e32b31; }
+    color: #1980a9; }
   a:visited {
-    color: #941418; }
+    color: #125e7d; }
   a:hover, a:visited:hover {
-    color: #e9585d;
+    color: #20a2d5;
     text-decoration: underline; }
 
 a.inverted:link {
@@ -499,7 +499,7 @@ a.inverted:hover, a.inverted:visited:hover {
 #skip a {
   background-color: white;
   border: none;
-  color: #e32b31;
+  color: #1980a9;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -512,7 +512,7 @@ a.inverted:hover, a.inverted:visited:hover {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #e32b31;
+    border: 5px solid #1980a9;
     height: auto;
     left: 7px;
     outline: 0;
@@ -524,9 +524,7 @@ a.inverted:hover, a.inverted:visited:hover {
 
 .alert {
   background-color: #FEE24A;
-  padding: 0.8rem 0;
-  -webkit-animation: alert 2s linear;
-  animation: alert 2s linear; }
+  padding: 0.8rem 0; }
 
 .horizontal {
   display: table-cell;
@@ -1038,9 +1036,9 @@ footer ul {
     .content-wrapper {
       padding-left: 1rem; } }
 
-.my-page-header {
+.page-header, .my-page-header {
   background-color: #dddbd9; }
-  .my-page-header h1 {
+  .page-header h1, .my-page-header h1 {
     margin: 0; }
 
 .my-content-wrapper {
@@ -1286,7 +1284,7 @@ footer ul {
     text-decoration: none;
     vertical-align: super; }
     .results-summary a:hover {
-      color: #e32b31; }
+      color: #1980a9; }
 
 .results-pagination {
   font-size: 1.5rem;
@@ -1325,7 +1323,7 @@ footer ul {
     width: 1em;
     speak: none;
     display: block;
-    fill: #e32b31;
+    fill: #1980a9;
     float: right;
     height: 2em;
     width: 2em; }
@@ -1370,10 +1368,10 @@ table, .views-table {
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top; }
   table .channel-title, .views-table .channel-title {
-    color: #1980a9;
+    color: #e32b31;
     text-transform: uppercase; }
   table .signup-method, .views-table .signup-method {
-    color: #1980a9; }
+    color: #e32b31; }
   table .resource-title, .views-table .resource-title {
     font-weight: bold; }
   @media (max-width: 965px) {
@@ -1419,7 +1417,7 @@ table, .views-table {
   #location-info .room {
     font-weight: bold; }
   #location-info .access {
-    color: #1980a9;
+    color: #e32b31;
     font-weight: bold; }
 
 .location-hours {
@@ -1580,7 +1578,7 @@ fieldset.radiogroup {
     height: initial;
     margin-right: 0.25rem; }
 
-.your-button-class {
+.my-button-class {
   background-color: #fff;
   border: #100f0e solid 0.125rem;
   border-radius: 0;
@@ -1594,7 +1592,7 @@ fieldset.radiogroup {
   -moz-transition: all 0.2s ease-in 0s;
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s; }
-  .your-button-class:hover {
+  .my-button-class:hover {
     background: black;
     color: #eff0f1; }
 
@@ -1620,7 +1618,7 @@ fieldset.radiogroup {
     border-color: #1980a9;
     color: #1980a9; }
 
-.your-rounded-button {
+.my-rounded-button {
   background-color: #fff;
   border: #100f0e solid 0.125rem;
   border-radius: 1rem;
@@ -1634,7 +1632,7 @@ fieldset.radiogroup {
   -moz-transition: all 0.2s ease-in 0s;
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s; }
-  .your-rounded-button:hover {
+  .my-rounded-button:hover {
     background: black;
     color: #eff0f1; }
 

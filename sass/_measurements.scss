@@ -3,8 +3,8 @@ $basefontraw: 16;
 $basefont: $basefontraw * 1px;
 
 // page measures
-$maxwidthraw: 1312;
-$max-width: ($maxwidthraw/$basefontraw) * 1rem; // in rems
+$max-width-raw: 1312;
+$max-width: ($max-width-raw/$basefontraw) * 1rem; // in rems
 
 // breakpoints
 $intermediate-breakpoint: 1120px;
@@ -24,3 +24,6 @@ $two-thirds: ($full-width) - ($one-third);
 $three-quarters: ($full-width) - ($one-quarter);
 $gutter: 0.5rem;
 $general-padding: 1rem;
+
+// animation timing
+$hover-time: 0.2s;

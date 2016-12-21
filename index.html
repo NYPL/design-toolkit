@@ -7,8 +7,8 @@
   <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
   <link href="css/docs.css" media="screen" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="./hljs/atom-one-light.css">
-<script src="./hljs/highlight.pack.js"></script>
+<link rel="stylesheet" href="js/atom-one-light.css">
+<script src="js/highlight.pack.js"></script>
 
 </head>
 <body>
@@ -42,16 +42,41 @@
     <h2>Table of contents</h2>
 
     <ul>
-      <li><a href="#grid">Layout</a></li>
-      <li><a href="#forms">Forms</a></li>
+      <li><a href="#grid">Layout</a>
+        <ul>
+          <li><a href="#mainHeader">Main header and footer</a></li>
+          <li><a href="#contentWrapper">The content wrapper</a></li>
+          <li><a href="#peageHeader">Page header (and breadcrumbs)</a></li>
+          <li><a href="#pageContent">Page content</a></li>
+          <li><a href="#fullWidth">Full width column</a></li>
+          <li><a href="#halfWidth">Half width columns</a></li>
+          <li><a href="#quarterWidth">Quarter width columns</a></li>
+          <li><a href="#mixedColumns">One quartes / three quarters width columns</a></li>
+        </ul>
+      </li>
+      <li><a href="#forms">Forms</a>
+        <ul>
+          <li><a href="#textFields">Text fields</a></li>
+          <li><a href="#selectBoxes">Select boxes</a></li>
+          <li><a href="#alphaFilters">Alphabetical filters</a></li>
+          <li><a href="#radioButtons">Radiobutton/checkbox groups</a></li>
+          <li><a href="#sorting">Sorting</a></li>
+        </ul>
+      </li>
       <li><a href="#results">Tables and Data</a></li>
-      <li><a href="#general">General Microformats</a></li>
+      <li><a href="#general">General Microformats</a>
+        <ul>
+          <li><a href="#alertBanner">Alert banner</a></li>
+          <li><a href="#locationCard">Location card</a></li>
+          <li><a href="#locationHours">Location hours</a></li>
+        </ul>
+      </li>
       <li><a href="#buttons">Buttons</a></li>
     </ul>
 
     <h2 id="grid">Layout</h2>
 
-    <h3>Header and footer</h3>
+    <h3 id="mainHeader">Main header and footer</h3>
 
     <p>Header and footer are separate applications that contain some of the styles in this toolkit and are not documented here. This documentation covers anything else within them:</p>
 
@@ -80,7 +105,7 @@
 +-----------------------------------------------------+
     </code></pre>
 
-    <h3>The content wrapper</h3>
+    <h3 id="contentWrapper">The content wrapper</h3>
 
     <p>The general page layout has some special margins and paddings for branding purposes. A <code>full-width-wrapper</code> mixin is provided to take care of this:</p>
 
@@ -92,7 +117,7 @@
 
     <p>The <code>full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
 
-    <h3>Page header (and breadcrumbs)</h3>
+    <h3 id="peageHeader">Page header (and breadcrumbs)</h3>
 
     <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
@@ -126,7 +151,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Page content</h3>
+    <h3 id="pageContent">Page content</h3>
 
     <p>Is wrapped by a <code>full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
 
@@ -151,7 +176,7 @@
 
     <p><strong>NOTE:</strong> avoid nesting rows inside columns as the system does not support it for the time being. It is preferred to use multiple rows if you require a more elaborate layout.</p>
 
-    <h3>Full width</h3>
+    <h3 id="fullWidth">Full width column</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -183,7 +208,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Half width</h3>
+    <h3 id="halfWidth">Half width columns</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -221,7 +246,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Quarter width</h3>
+    <h3 id="quarterWidth">Quarter width columns</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -271,7 +296,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>One quarter / three quarters width</h3>
+    <h3 id="mixedColumns">One quarter / three quarters width columns</h3>
 
     <div class="toolkit-example">
 <div class="my-row">
@@ -329,11 +354,11 @@
     </code></pre>
 
     <h2 id="forms">Forms</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
     <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
 
-    <h3>Text fields</h3>
+    <h3 id="textFields">Text fields</h3>
 
     <div class="toolkit-example">
     <fieldset class="my-text-field">
@@ -343,9 +368,9 @@
     </div>
 
     <pre><code class="scss">
-    .my-text-field {
-      @include text-fieldset;
-    }
+.my-text-field {
+  @include text-fieldset;
+}
     </code></pre>
     <pre><code class="html">
 &lt;fieldset class=&quot;my-text-field&quot;&gt;
@@ -354,7 +379,7 @@
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3>Select boxes</h3>
+    <h3 id="selectBoxes">Select boxes</h3>
 
     <div class="toolkit-example">
     <fieldset class="my-select-box">
@@ -369,9 +394,9 @@
     </div>
 
     <pre><code class="scss">
-    .my-select-box {
-      @include select-fieldset;
-    }
+.my-select-box {
+  @include select-fieldset;
+}
     </code></pre>
     <pre><code class="html">
 &lt;fieldset class=&quot;my-select-box&quot;&gt;
@@ -385,7 +410,7 @@
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3>Alphabetical filters</h3>
+    <h3 id="alphaFilters">Alphabetical filters</h3>
 
     <p>Not a form element per se but still used within search forms. Selected element is replaced with <code>span</code>. The "Any" selection has a <code>long</code> class.
     </p>
@@ -403,9 +428,9 @@
     </div>
 
     <pre><code class="scss">
-    .alphabetical {
-      @include alphabetical-filter;
-    }
+.alphabetical {
+  @include alphabetical-filter;
+}
     </code></pre>
 
     <p><strong>NOTE:</strong> Maybe replace <code>a</code> tag with <code>button</code>?</p>
@@ -422,7 +447,7 @@
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3>Radiobutton/checkbox groups</h3>
+    <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
 
     <p>For multiple browser-compatibility reasons we avoid the <code>legend</code> tag and use a <code>span</code> tag with a nested <code>strong</code> tag.</p>
 
@@ -442,9 +467,9 @@
     </fieldset>
     </div>
     <pre><code class="scss">
-    .radiogroup {
-      @include radiobutton-fieldset;
-    }
+.radiogroup {
+  @include radiobutton-fieldset;
+}
     </code></pre>
 
     <p><strong>NOTE:</strong> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
@@ -464,11 +489,26 @@
 &lt;/fieldset&gt;
     </code></pre>
 
+    <h3 id="sorting">Sorting</h3>
+
+    <p>coming soon</p>
+
+
+    <div class="toolkit-example">
+    </div>
+    <pre><code class="scss">
+
+    </code></pre>
+
+    <pre><code class="html">
+
+    </code></pre>
+
 
     <h2 id="results">Tables and Data</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
-    <h3>General tables</h3>
+    <h3 id="">General tables</h3>
 
     <div class="toolkit-example">
 
@@ -480,7 +520,7 @@
 
     </code></pre>
 
-    <h3>Search results summary</h3>
+    <h3 id="">Search results summary</h3>
 
     <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has an anchor element to remove the facet and refresh the search results.
     </p>
@@ -499,9 +539,9 @@
     </div>
     </div>
     <pre><code class="scss">
-    .results-summary {
-      @include results-summary;
-    }
+.results-summary {
+  @include results-summary;
+}
     </code></pre>
 
     <p><strong>NOTE:</strong> Maybe replace <code>a</code> tag with <code>button</code>?</p>
@@ -518,7 +558,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Search results (table)</h3>
+    <h3 id="">Search results (table)</h3>
 
     <p>Coming soon.</p>
 
@@ -532,7 +572,7 @@
 
     </code></pre>
 
-    <h3>Search results (non-table)</h3>
+    <h3 id="">Search results (non-table)</h3>
 
     <p>Coming soon.</p>
 
@@ -546,7 +586,7 @@
 
     </code></pre>
 
-    <h3>Search results pagination</h3>
+    <h3 id="">Search results pagination</h3>
 
     <p>This widget is presented <strong>only in the bottom</strong> of the results (pagination will never appear on top). Page count appears in its own <code>span</code> tag.</p>
 
@@ -572,9 +612,9 @@
     </div>
     </div>
     <pre><code class="scss">
-    .results-pagination {
-      @include results-pagination;
-    }
+.results-pagination {
+  @include results-pagination;
+}
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;results-pagination&quot;&gt;
@@ -597,9 +637,9 @@
     </code></pre>
 
     <h2 id="general">General Microformats</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
-    <h3>Alert banner</h3>
+    <h3 id="alertBanner">Alert banner</h3>
 
     <p>Requires a <code>content-wrapper</code> for proper margin and padding.</p>
 
@@ -616,7 +656,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Location card</h3>
+    <h3 id="locationCard">Location card</h3>
 
     <p>Note the special classes for each property.</p>
 
@@ -628,9 +668,9 @@
     </div>
     </div>
     <pre><code class="scss">
-    #location-info {
-      @include location-info;
-    }
+#location-info {
+  @include location-info;
+}
     </code></pre>
     <pre><code class="html">
 &lt;div id=&quot;location-info&quot;&gt;
@@ -640,7 +680,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3>Location hours</h3>
+    <h3 id="locationHours">Location hours</h3>
 
     <p><strong>Always starts on Monday.</strong> Note the special class for the current day (Tuesday in this case) and the line breaks.</p>
 
@@ -671,30 +711,30 @@
       </table>
     </div>
     <pre><code class="scss">
-    .location-hours {
-      @include location-hours;
-    }
+.location-hours {
+  @include location-hours;
+}
     </code></pre>
     <pre><code class="html">
 &lt;table class=&quot;location-hours&quot;&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-&lt;th&gt;Monday&lt;/th&gt;
-&lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
-&lt;th&gt;Wednesday&lt;/th&gt;
-&lt;th&gt;Thursday&lt;/th&gt;
-&lt;th&gt;Friday&lt;/th&gt;
-&lt;th&gt;Saturday&lt;/th&gt;
-&lt;th&gt;Sunday&lt;/th&gt;
+      &lt;th&gt;Monday&lt;/th&gt;
+      &lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
+      &lt;th&gt;Wednesday&lt;/th&gt;
+      &lt;th&gt;Thursday&lt;/th&gt;
+      &lt;th&gt;Friday&lt;/th&gt;
+      &lt;th&gt;Saturday&lt;/th&gt;
+      &lt;th&gt;Sunday&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-&lt;td&gt;1:00 PM - &lt;br&gt;4:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;1:00 PM - &lt;br&gt;4:45 PM&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -702,39 +742,39 @@
 
 
     <h2 id="buttons">General Button Styles</h2>
-    <p><a href="#toc">Go to Table of contents</a></p>
+    <a href="#toc">Go to top</a>
 
-    <h3>Square Button</h3>
+    <h3 id="">Square Button</h3>
     <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
     </p>
       <div class="toolkit-example">
-        <button class="your-button-class">Button</button>
+        <button class="my-button-class">Button</button>
         <button class="request-button">Request a Button</button>
       </div>
       <pre><code class="scss">
-        .your-button-class {
-          @include basic-button;
-        }
-        .request-button {
-          @include request-button;
-        }
+.my-button-class {
+  @include basic-button;
+}
+.request-button {
+  @include request-button;
+}
       </code></pre>
       <pre><code class="html">
-&lt;button class=&quot;your-button-class&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
     </code></pre>
-    <h3>Rounded Button</h3>
+    <h3 id="">Rounded Button</h3>
     <p>A very simple version of the existent rounded button style.</p>
       <div class="toolkit-example">
-        <button class="your-rounded-button">Button</button>
+        <button class="my-rounded-button">Button</button>
       </div>
       <pre><code class="scss">
-        .your-rounded-button {
-          @include basic-button($border-radius: 1rem);
-        }
+.my-rounded-button {
+  @include basic-button($border-radius: 1rem);
+}
       </code></pre>
       <pre><code class="html">
-&lt;button class=&quot;your-rounded-button&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
     </code></pre>
     </div>
 
