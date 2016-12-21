@@ -1,4 +1,5 @@
 @import "css3";
+@import "measurements";
 // Buttons stylings
 //TODO: move button style in _forms.scss to this partial
 //      add in styles for request button
@@ -17,7 +18,7 @@
   padding: 0.5rem 1rem;
   text-transform: uppercase;
 
-  @include transition(all, 0.2s, ease-in);
+  @include transition(all, $hover-time, ease-in);
 
   &:hover {
     background: invert($button-background-color);
