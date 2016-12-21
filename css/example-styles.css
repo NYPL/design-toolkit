@@ -1977,7 +1977,9 @@ fieldset.alphabetical {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  fieldset.alphabetical a, fieldset.alphabetical span {
+  fieldset.alphabetical button {
+    background-color: #c5c2be;
+    border: none;
     color: #100f0e;
     display: inline-block !important;
     font-weight: normal !important;
@@ -1985,15 +1987,13 @@ fieldset.alphabetical {
     padding: 0.2rem 0.25em;
     text-align: center;
     text-decoration: none;
-    width: 1em; }
-  fieldset.alphabetical a {
-    background-color: #c5c2be; }
-    fieldset.alphabetical a:hover {
+    width: 2em; }
+    fieldset.alphabetical button:hover {
       background-color: white; }
-  fieldset.alphabetical span {
+  fieldset.alphabetical button[disabled=true] {
     background-color: #dddbd9; }
-  fieldset.alphabetical span.long {
-    min-width: calc(2em + 14px); }
+  fieldset.alphabetical button.long {
+    min-width: 4.75em; }
 
 fieldset.radiogroup {
   background-color: #c5c2be;
