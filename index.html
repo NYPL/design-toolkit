@@ -121,6 +121,8 @@
 
     <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
+    <p>Page header content <strong>is not</strong> the nested inside a <code>grid-row</code> type element.</p>
+
     <div class="toolkit-example">
       <div class="my-page-header">
         <div class="my-content-wrapper">
@@ -129,6 +131,7 @@
         </div>
       </div>
     </div>
+
     <pre><code class="scss">
 .my-page-header {
   @include page-header;

@@ -1,376 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Example | NYPL design toolkit</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
-
-  <script
-          src="https://code.jquery.com/jquery-3.1.0.min.js"
-          integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-          crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
-
 </head>
+
 <body>
-
-<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
-
-<div class="alert"><div class="content-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div></div>
-
-<header>
-  <div class="service">
-    <div class="content-wrapper">
-      <ul class="service-buttons horizontal">
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">Get a library card</a></li>
-        <li class="email-toggle"><button class="collapsible">Get email updates <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-          <title>down.wedge.sm</title>
-          <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0"/>
-        </svg>
-        </button>
-          <form action="" id="email-updates" class="hidden">
-            <p class="email-toggle-title">Get the best of<br>NYPL in your inbox</p>
-            <fieldset>
-              <label for="email-text">Email address</label>
-              <input type="text" id="email-text" class="form-text" value="">
-            </fieldset>
-            <input type="button" class="subscribe-button" name="Sign up" value="Sign up">
-            <div class="links">
-              <a class="inverted" href="#">Subscription center</a><br>
-              <a class="inverted" href="#">Privacy policy</a>
-            </div>
-          </form>
-        </li>
-        <li><a href="#" class="donate">Donate</a></li>
-        <li><a href="#">Shop</a></li>
-      </ul>
-    </div>
+  <div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+  <div class="alert">
+    <div class="content-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div>
   </div>
-
-  <div class="content-wrapper">
-
-    <div class="logo"><a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a></div>
-
-    <div class="content">
-
-      <div class="login-toggle"><button class="collapsible">Log in <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-          <title>down.wedge.sm</title>
-          <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0"/>
-        </svg></button>
-        <div id="login-links" class="hidden">
-          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Catalog</strong></a>
-          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Research catalog</strong></a>
-        </div>
+  <header>
+    <div class="service">
+      <div class="content-wrapper">
+        <ul class="service-buttons horizontal">
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Get a library card</a></li>
+          <li class="email-toggle">
+            <button class="collapsible">Get email updates
+              <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+                <title>down.wedge.sm</title>
+                <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+              </svg>
+            </button>
+            <form action="" id="email-updates" class="hidden">
+              <p class="email-toggle-title">Get the best of
+                <br>NYPL in your inbox</p>
+              <fieldset>
+                <label for="email-text">Email address</label>
+                <input type="text" id="email-text" class="form-text" value="">
+              </fieldset>
+              <input type="button" class="subscribe-button" name="Sign up" value="Sign up">
+              <div class="links">
+                <a class="inverted" href="#">Subscription center</a>
+                <br>
+                <a class="inverted" href="#">Privacy policy</a>
+              </div>
+            </form>
+          </li>
+          <li><a href="#" class="donate">Donate</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
       </div>
-
-      <ul class="nav-buttons horizontal">
-        <li><a href="#">Books/Music/DVDs</a></li>
-        <li class="active"><a href="#">Research</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Connect</a></li>
-        <li><a href="#">Give</a></li>
-        <li><a href="#">Get help</a></li>
-        <li class="search">
-          <form action="" id="main-search" class="">
-            <div class="search-query-content">
-              <input type="submit" class="search-button" name="Search" value="Search"><input type="text" class="form-text" id="search-query-text" name="search-query-text" aria-labelledby="search-query-text" value=""><div class="search-select hidden">
-              <label class="search-radio-label selected" for="books-type"><input type="radio" id="books-type" name="search-type" class="search-type" value="books-type" checked="checked">Books/Music/DVDs</label>
-              <label class="search-radio-label" for="nypl-type"><input type="radio" id="nypl-type" name="search-type" class="search-type" value="nypl-type">NYPL.org</label>
-            </div>
-            </div>
-          </form>
-        </li>
-      </ul>
     </div>
-
-    <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+    <div class="content-wrapper">
+      <div class="logo"><a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a></div>
+      <div class="content">
+        <div class="login-toggle">
+          <button class="collapsible">Log in
+            <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+              <title>down.wedge.sm</title>
+              <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+            </svg>
+          </button>
+          <div id="login-links" class="hidden">
+            <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Catalog</strong></a>
+            <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Research catalog</strong></a>
+          </div>
+        </div>
+        <ul class="nav-buttons horizontal">
+          <li><a href="#">Books/Music/DVDs</a></li>
+          <li class="active"><a href="#">Research</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Connect</a></li>
+          <li><a href="#">Give</a></li>
+          <li><a href="#">Get help</a></li>
+          <li class="search">
+            <form action="" id="main-search" class="">
+              <div class="search-query-content">
+                <input type="submit" class="search-button" name="Search" value="Search">
+                <input type="text" class="form-text" id="search-query-text" name="search-query-text" aria-labelledby="search-query-text" value="">
+                <div class="search-select hidden">
+                  <label class="search-radio-label selected" for="books-type">
+                    <input type="radio" id="books-type" name="search-type" class="search-type" value="books-type" checked="checked">Books/Music/DVDs</label>
+                  <label class="search-radio-label" for="nypl-type">
+                    <input type="radio" id="nypl-type" name="search-type" class="search-type" value="nypl-type">NYPL.org</label>
+                </div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
           <title>down.wedge.sm</title>
           <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0"/>
         </svg></a>
-  </div>
-</header>
-
-<main class="main-page">
-
-
-  <div class="page-header">
-    <div class="content-wrapper">
-      <div class="row">
+    </div>
+  </header>
+  <main class="main-page">
+    <div class="page-header">
+      <div class="content-wrapper">
         <div><a href="/">Home</a> > <a href="#">Research</a> > Articles &amp; databases</div>
         <h1>Articles &amp; databases</h1>
       </div>
     </div>
-  </div>
-
-  <div class="content-wrapper">
-
-    <div class="quarter">
-      <div>Use the filters to show only databases that match your interests:</div>
-      <form action="" id="filter-search">
-        <fieldset class="textfield">
-          <label for="keyword-text">Title or description</label>
-          <input id="keyword-text" type="text">
-        </fieldset>
-
-        <fieldset class="radiogroup">
-          <span><strong>Accessible from</strong></span>
-          <label for="available-every"><input id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere</label>
-          <label for="available-home"><input id="available-home" type="radio" name="available" value="home">Home with a library card</label>
-          <label for="available-library"><input id="available-library" type="radio" name="available" value="library">A library branch</label>
-        </fieldset>
-
-        <div class="location hidden">
-          <fieldset>
-            <label for="location">Library branch</label>
-            <select id="location" class="form-select" name="location">
-              <option value="0">All</option><option value="36">Stephen A. Schwarzman Building</option><option value="55">New York Public Library for the Performing Arts</option><option value="64">Schomburg Center for Research in Black Culture</option><option value="65">Science, Industry, and Business Library</option><option value="978">All Branch Libraries</option><option value="12+978">Bronx Library Center</option><option value="19+978" selected="selected">Countee Cullen Library</option><option value="28+978">Grand Concourse Library</option><option value="45+978">Mid-Manhattan Library</option><option value="57+978">Parkchester Library</option><option value="67+978">Seward Park Library</option><option value="72+978">St. George Library Center</option><option value="977">Outside the Library</option>
-            </select>
-          </fieldset>
+    <div class="content-wrapper">
+      <!-- 1 (form) + 3 (results) example -->
+      <div class="row">
+        <div class="quarter">
+          <div>Use the filters to show only databases that match your interests:</div>
+          <form action="" id="filter-search">
+            <fieldset class="textfield">
+              <label for="keyword-text">Title or description</label>
+              <input id="keyword-text" type="text">
+            </fieldset>
+            <fieldset class="radiogroup">
+              <span><strong>Accessible from</strong></span>
+              <label for="available-every">
+                <input id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere</label>
+              <label for="available-home">
+                <input id="available-home" type="radio" name="available" value="home">Home with a library card</label>
+              <label for="available-library">
+                <input id="available-library" type="radio" name="available" value="library">A library branch</label>
+            </fieldset>
+            <div class="location hidden">
+              <fieldset>
+                <label for="location">Library branch</label>
+                <select id="location" class="form-select" name="location">
+                  <option value="0">All</option>
+                  <option value="36">Stephen A. Schwarzman Building</option>
+                  <option value="55">New York Public Library for the Performing Arts</option>
+                  <option value="64">Schomburg Center for Research in Black Culture</option>
+                  <option value="65">Science, Industry, and Business Library</option>
+                  <option value="978">All Branch Libraries</option>
+                  <option value="12+978">Bronx Library Center</option>
+                  <option value="19+978" selected="selected">Countee Cullen Library</option>
+                  <option value="28+978">Grand Concourse Library</option>
+                  <option value="45+978">Mid-Manhattan Library</option>
+                  <option value="57+978">Parkchester Library</option>
+                  <option value="67+978">Seward Park Library</option>
+                  <option value="72+978">St. George Library Center</option>
+                  <option value="977">Outside the Library</option>
+                </select>
+              </fieldset>
+            </div>
+            <fieldset class="select">
+              <label for="subjects">Subjects</label>
+              <select id="subjects" class="form-select" name="subjects">
+                <option value="0" selected="selected">All</option>
+                <option value="580+582+2747+2742+7556+806+586+587">Art</option>
+                <option value="582">- Architecture</option>
+                <option value="2747">- Art History</option>
+                <option value="2742">- Auction Prices</option>
+                <option value="7556">- Crafts</option>
+                <option value="806">- Fashion</option>
+                <option value="586">- Prints</option>
+                <option value="587">- Photography</option>
+                <option value="575+794+2703+800+2704+797+801+795+799+2805+798">Business</option>
+                <option value="794">- Advertising</option>
+                <option value="2703">-- Company Directories</option>
+                <option value="800">- Finance</option>
+                <option value="2704">- Industry Surveys and Profiles</option>
+                <option value="797">- Imports and Exports</option>
+                <option value="816">- Jobs</option>
+                <option value="801">- International Business</option>
+                <option value="795">- Market Research</option>
+                <option value="799">- Real Estate</option>
+                <option value="2805">- Small Business</option>
+                <option value="798">- Stocks</option>
+                <option value="817+830+832+1120">Government and Law</option>
+                <option value="830">- Census Data</option>
+                <option value="832">- Patents and Trademarks</option>
+                <option value="1120">- Social Services</option>
+                <option value="544">- Law</option>
+                <option value="571">Health and Medicine</option>
+                <option value="600+5310+7870+602+778+606+605+604+779+608+603+775+7582+777+631+2761+1110+1111">History</option>
+                <option value="5310">- American Civil War</option>
+                <option value="7870">- American Revolutionary War</option>
+                <option value="602">- Biography</option>
+                <option value="778">- Genealogy</option>
+                <option value="606">- History of Africa</option>
+                <option value="605">- History of Asia</option>
+                <option value="604">- History of Europe</option>
+                <option value="779">- History of North America</option>
+                <option value="7869">-- Colonial period, ca. 1600-1775</option>
+                <option value="608">- History of South America</option>
+                <option value="603">- History of the Ancient World</option>
+                <option value="775">- History of the Middle East</option>
+                <option value="7582">- Middle Ages</option>
+                <option value="777">- New York City History</option>
+                <option value="631">- United States History</option>
+                <option value="2761">- World History</option>
+                <option value="1110">- World War I</option>
+                <option value="1111">- World War II</option>
+                <option value="550+1101+552+551">Language and Literature</option>
+                <option value="1101">- Criticism and Theory</option>
+                <option value="552">- English and American Literature</option>
+                <option value="551">- Linguistics</option>
+                <option value="787">- Poetry</option>
+                <option value="589+791+789+792+588+793+790">Performing Arts</option>
+                <option value="791">- Broadcasting, Radio and Television</option>
+                <option value="789">- Dance</option>
+                <option value="792">- Film</option>
+                <option value="588">- Music</option>
+                <option value="793">- Recorded Sound and Video</option>
+                <option value="790">- Theatre</option>
+                <option value="520">Philosophy</option>
+                <option value="560+569+565+805">Science</option>
+                <option value="569">- Animals</option>
+                <option value="565">- Earth Sciences</option>
+                <option value="805">- Geology</option>
+                <option value="511+512+513+7609+2707+7566+2755+514+1014+2730+515+519+517+516+1096+1097+1099">Reference</option>
+                <option value="512">- Bibliography</option>
+                <option value="513">- Books and Libraries</option>
+                <option value="7609">- Directories</option>
+                <option value="2707">- Dictionaries</option>
+                <option value="7566">- Electronic books</option>
+                <option value="2755">- Homework Help</option>
+                <option value="514">- Encyclopedias</option>
+                <option value="1014">- Image Collections</option>
+                <option value="2730">- Library Catalogs</option>
+                <option value="515">- Magazines, Journals and Serials</option>
+                <option value="519">- Manuscripts and Rare Books</option>
+                <option value="517">- News Media, Journalism and Publishing</option>
+                <option value="516">- Organizations and Museums</option>
+                <option value="1096">- Historical Newspapers</option>
+                <option value="1097">- International Newspapers</option>
+                <option value="1099">- U.S. Newspapers</option>
+                <option value="530+781">Religion</option>
+                <option value="781">- Judaism</option>
+                <option value="540+816+544+3156+818+7586+543+547+7644+7694+1011+1015+601+1119+3803+542+525+541+548">Social Sciences</option>
+                <option value="3156">- Anthropology</option>
+                <option value="818">- Area and Cultural Studies</option>
+                <option value="819">-- African American Studies</option>
+                <option value="820">-- American Studies</option>
+                <option value="821">-- Asian Studies</option>
+                <option value="823">-- Gay and Lesbian Studies</option>
+                <option value="824">-- Jewish Studies</option>
+                <option value="825">-- Latin American Studies</option>
+                <option value="826">-- Native American Studies</option>
+                <option value="827">-- Renaissance Studies</option>
+                <option value="828">-- Slavic and Baltic Studies</option>
+                <option value="829">-- Women's Studies</option>
+                <option value="7586">- Criminology</option>
+                <option value="543">- Economics</option>
+                <option value="547">- Education</option>
+                <option value="7716">-- Common Core</option>
+                <option value="7644">- Environmentalism</option>
+                <option value="7694">- Sociology</option>
+                <option value="1011">- Food</option>
+                <option value="1015">- Holidays and Customs</option>
+                <option value="601">- Geography</option>
+                <option value="1107">-- Maps, Atlases, Cartography</option>
+                <option value="1119">- Public Administration</option>
+                <option value="3803">- Popular Culture</option>
+                <option value="542">- Political Science</option>
+                <option value="525">- Psychology</option>
+                <option value="541">- Statistics</option>
+                <option value="548">- Transportation</option>
+                <option value="570+573+802">Technology</option>
+                <option value="573">- Agriculture</option>
+                <option value="802">- Automobile Maintenance and Repair</option>
+              </select>
+            </fieldset>
+            <fieldset class="select">
+              <label for="audience">Audience</label>
+              <select id="audience" name="audience">
+                <option value="0" selected="selected">All</option>
+                <option value="915" selected="selected">Adults</option>
+                <option value="734+2806">Businesspeople</option>
+                <option value="2806">- Small Business Owners</option>
+                <option value="910+917">Children</option>
+                <option value="917">- School Age (5-12 years)</option>
+                <option value="737">Teachers</option>
+                <option value="914">Teens/Young Adults (13-18 years)</option>
+              </select>
+            </fieldset>
+            <fieldset class="select">
+              <label for="language">Language</label>
+              <select id="language" class="form-select" name="language">
+                <option value="0" selected="selected">All</option>
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+            </fieldset>
+            <fieldset class="alphabetical">
+              <label>Name starts with</label>
+              <span class="long">Any</span>
+              <a href="#" title="Show only resources with name starting with a number">#</a>
+              <a href="#" title="Show only resources with name starting with A">A</a>
+              <a href="#" title="Show only resources with name starting with B">B</a>
+              <a href="#" title="Show only resources with name starting with C">C</a>
+              <a href="#" title="Show only resources with name starting with D">D</a>
+              <a href="#" title="Show only resources with name starting with E">E</a>
+              <a href="#" title="Show only resources with name starting with F">F</a>
+              <a href="#" title="Show only resources with name starting with G">G</a>
+              <a href="#" title="Show only resources with name starting with H">H</a>
+              <a href="#" title="Show only resources with name starting with I">I</a>
+              <a href="#" title="Show only resources with name starting with J">J</a>
+              <a href="#" title="Show only resources with name starting with K">K</a>
+              <a href="#" title="Show only resources with name starting with L">L</a>
+              <a href="#" title="Show only resources with name starting with M">M</a>
+              <a href="#" title="Show only resources with name starting with N">N</a>
+              <a href="#" title="Show only resources with name starting with O">O</a>
+              <a href="#" title="Show only resources with name starting with P">P</a>
+              <a href="#" title="Show only resources with name starting with Q">Q</a>
+              <a href="#" title="Show only resources with name starting with R">R</a>
+              <a href="#" title="Show only resources with name starting with S">S</a>
+              <a href="#" title="Show only resources with name starting with T">T</a>
+              <a href="#" title="Show only resources with name starting with U">U</a>
+              <a href="#" title="Show only resources with name starting with V">V</a>
+              <a href="#" title="Show only resources with name starting with W">W</a>
+              <a href="#" title="Show only resources with name starting with X">X</a>
+              <a href="#" title="Show only resources with name starting with Y">Y</a>
+              <a href="#" title="Show only resources with name starting with Z">Z</a>
+            </fieldset>
+            <input type="submit" class="search-button" name="Apply" value="Apply filters">
+          </form>
         </div>
-
-        <fieldset class="select">
-          <label for="subjects">Subjects</label>
-          <select id="subjects" class="form-select" name="subjects">
-            <option value="0" selected="selected">All</option><option value="580+582+2747+2742+7556+806+586+587">Art</option><option value="582">- Architecture</option><option value="2747">- Art History</option><option value="2742">- Auction Prices</option><option value="7556">- Crafts</option><option value="806">- Fashion</option><option value="586">- Prints</option><option value="587">- Photography</option><option value="575+794+2703+800+2704+797+801+795+799+2805+798">Business</option><option value="794">- Advertising</option><option value="2703">-- Company Directories</option><option value="800">- Finance</option><option value="2704">- Industry Surveys and Profiles</option><option value="797">- Imports and Exports</option><option value="816">- Jobs</option><option value="801">- International Business</option><option value="795">- Market Research</option><option value="799">- Real Estate</option><option value="2805">- Small Business</option><option value="798">- Stocks</option><option value="817+830+832+1120">Government and Law</option><option value="830">- Census Data</option><option value="832">- Patents and Trademarks</option><option value="1120">- Social Services</option><option value="544">- Law</option><option value="571">Health and Medicine</option><option value="600+5310+7870+602+778+606+605+604+779+608+603+775+7582+777+631+2761+1110+1111">History</option><option value="5310">- American Civil War</option><option value="7870">- American Revolutionary War</option><option value="602">- Biography</option><option value="778">- Genealogy</option><option value="606">- History of Africa</option><option value="605">- History of Asia</option><option value="604">- History of Europe</option><option value="779">- History of North America</option><option value="7869">-- Colonial period, ca. 1600-1775</option><option value="608">- History of South America</option><option value="603">- History of the Ancient World</option><option value="775">- History of the Middle East</option><option value="7582">- Middle Ages</option><option value="777">- New York City History</option><option value="631">- United States History</option><option value="2761">- World History</option><option value="1110">- World War I</option><option value="1111">- World War II</option><option value="550+1101+552+551">Language and Literature</option><option value="1101">- Criticism and Theory</option><option value="552">- English and American Literature</option><option value="551">- Linguistics</option><option value="787">- Poetry</option><option value="589+791+789+792+588+793+790">Performing Arts</option><option value="791">- Broadcasting, Radio and Television</option><option value="789">- Dance</option><option value="792">- Film</option><option value="588">- Music</option><option value="793">- Recorded Sound and Video</option><option value="790">- Theatre</option><option value="520">Philosophy</option><option value="560+569+565+805">Science</option><option value="569">- Animals</option><option value="565">- Earth Sciences</option><option value="805">- Geology</option><option value="511+512+513+7609+2707+7566+2755+514+1014+2730+515+519+517+516+1096+1097+1099">Reference</option><option value="512">- Bibliography</option><option value="513">- Books and Libraries</option><option value="7609">- Directories</option><option value="2707">- Dictionaries</option><option value="7566">- Electronic books</option><option value="2755">- Homework Help</option><option value="514">- Encyclopedias</option><option value="1014">- Image Collections</option><option value="2730">- Library Catalogs</option><option value="515">- Magazines, Journals and Serials</option><option value="519">- Manuscripts and Rare Books</option><option value="517">- News Media, Journalism and Publishing</option><option value="516">- Organizations and Museums</option><option value="1096">- Historical Newspapers</option><option value="1097">- International Newspapers</option><option value="1099">- U.S. Newspapers</option><option value="530+781">Religion</option><option value="781">- Judaism</option><option value="540+816+544+3156+818+7586+543+547+7644+7694+1011+1015+601+1119+3803+542+525+541+548">Social Sciences</option><option value="3156">- Anthropology</option><option value="818">- Area and Cultural Studies</option><option value="819">-- African American Studies</option><option value="820">-- American Studies</option><option value="821">-- Asian Studies</option><option value="823">-- Gay and Lesbian Studies</option><option value="824">-- Jewish Studies</option><option value="825">-- Latin American Studies</option><option value="826">-- Native American Studies</option><option value="827">-- Renaissance Studies</option><option value="828">-- Slavic and Baltic Studies</option><option value="829">-- Women's Studies</option><option value="7586">- Criminology</option><option value="543">- Economics</option><option value="547">- Education</option><option value="7716">-- Common Core</option><option value="7644">- Environmentalism</option><option value="7694">- Sociology</option><option value="1011">- Food</option><option value="1015">- Holidays and Customs</option><option value="601">- Geography</option><option value="1107">-- Maps, Atlases, Cartography</option><option value="1119">- Public Administration</option><option value="3803">- Popular Culture</option><option value="542">- Political Science</option><option value="525">- Psychology</option><option value="541">- Statistics</option><option value="548">- Transportation</option><option value="570+573+802">Technology</option><option value="573">- Agriculture</option><option value="802">- Automobile Maintenance and Repair</option>
-          </select>
-        </fieldset>
-
-        <fieldset class="select">
-          <label for="audience">Audience</label>
-          <select id="audience" name="audience">
-            <option value="0" selected="selected">All</option><option value="915" selected="selected">Adults</option><option value="734+2806">Businesspeople</option><option value="2806">- Small Business Owners</option><option value="910+917">Children</option><option value="917">- School Age (5-12 years)</option><option value="737">Teachers</option><option value="914">Teens/Young Adults (13-18 years)</option>
-          </select>
-        </fieldset>
-
-        <fieldset class="select">
-          <label for="language">Language</label>
-          <select id="language" class="form-select" name="language">
-            <option value="0" selected="selected">All</option><option value="English">English</option><option value="French">French</option><option value="Spanish">Spanish</option>
-          </select>
-        </fieldset>
-
-        <fieldset class="alphabetical">
-          <label>Name starts with</label>
-          <span class="long">Any</span>
-          <a href="#" title="Show only resources with name starting with a number">#</a>
-          <a href="#" title="Show only resources with name starting with A">A</a>
-          <a href="#" title="Show only resources with name starting with B">B</a>
-          <a href="#" title="Show only resources with name starting with C">C</a>
-          <a href="#" title="Show only resources with name starting with D">D</a>
-          <a href="#" title="Show only resources with name starting with E">E</a>
-          <a href="#" title="Show only resources with name starting with F">F</a>
-          <a href="#" title="Show only resources with name starting with G">G</a>
-          <a href="#" title="Show only resources with name starting with H">H</a>
-          <a href="#" title="Show only resources with name starting with I">I</a>
-          <a href="#" title="Show only resources with name starting with J">J</a>
-          <a href="#" title="Show only resources with name starting with K">K</a>
-          <a href="#" title="Show only resources with name starting with L">L</a>
-          <a href="#" title="Show only resources with name starting with M">M</a>
-          <a href="#" title="Show only resources with name starting with N">N</a>
-          <a href="#" title="Show only resources with name starting with O">O</a>
-          <a href="#" title="Show only resources with name starting with P">P</a>
-          <a href="#" title="Show only resources with name starting with Q">Q</a>
-          <a href="#" title="Show only resources with name starting with R">R</a>
-          <a href="#" title="Show only resources with name starting with S">S</a>
-          <a href="#" title="Show only resources with name starting with T">T</a>
-          <a href="#" title="Show only resources with name starting with U">U</a>
-          <a href="#" title="Show only resources with name starting with V">V</a>
-          <a href="#" title="Show only resources with name starting with W">W</a>
-          <a href="#" title="Show only resources with name starting with X">X</a>
-          <a href="#" title="Show only resources with name starting with Y">Y</a>
-          <a href="#" title="Show only resources with name starting with Z">Z</a>
-        </fieldset>
-
-        <input type="submit" class="search-button" name="Apply" value="Apply filters">
-      </form>
-    </div>
-
-  <div class="main-content three-quarter">
-    <a name="mainContent"></a>
-    <div class="results-summary">
-      <span class="results-count">1,807</span> resources found for
-      <span class="facet">
-        <strong>Young Adult<a href="#" title="Remove Young Adult filter">×</a></strong>
-      </span>,
-      <span class="facet">
-        <strong>Fiction<a href="#" title="Remove Fiction filter">×</a></strong>
-      </span>.
-    </div>
-
-    <!-- sample results -->
-
-    <div class="views-table">
-      <div class="views-table-row">
-        <div class="views-table-header resource-availability">Accessible from</div>
-        <div class="views-table-header resouce-description">Resource name and description</div>
-      </div>
-      <div class="views-table-row">
-        <div class="views-table-cell">SIBL, Schwarzman Building</div>
-        <div class="views-table-cell">
-    <div class="resource-title"><a href="http://infotrac.galegroup.com.i.ezproxy.nypl.org/itweb/nypl?db=BBCN">17th-18th Century Burney Collection Newspapers</a></div>
-          <span>Early English newspapers from London, the British Isles, and British colonies. Also included are newsbooks, acts of Parliament, addresses, broadsides, pamphlets, and proclamations. **Patrons should read the </span><a href="http://www.cengage.com/legal/#terms" target="_blank" rel="nofollow">Terms &amp; Conditions</a><span> and </span><a href="http://www.cengage.com/legal/#privacy" target="_blank" rel="nofollow">Privacy Policy</a><span> of this resource before searching.</span><span>**</span>
+        <div class="main-content three-quarter">
+          <a name="mainContent"></a>
+          <div class="results-summary">
+            <span class="results-count">1,807</span> resources found for
+            <span class="facet">
+            <strong>Young Adult<a href="#" title="Remove Young Adult filter">×</a></strong>
+          </span>,
+            <span class="facet">
+            <strong>Fiction<a href="#" title="Remove Fiction filter">×</a></strong>
+          </span>.
+          </div>
+          <!-- sample results -->
+          <div class="views-table">
+            <div class="views-table-row">
+              <div class="views-table-header resource-availability">Accessible from</div>
+              <div class="views-table-header resouce-description">Resource name and description</div>
+            </div>
+            <div class="views-table-row">
+              <div class="views-table-cell">SIBL, Schwarzman Building</div>
+              <div class="views-table-cell">
+                <div class="resource-title"><a href="http://infotrac.galegroup.com.i.ezproxy.nypl.org/itweb/nypl?db=BBCN">17th-18th Century Burney Collection Newspapers</a></div>
+                <span>Early English newspapers from London, the British Isles, and British colonies. Also included are newsbooks, acts of Parliament, addresses, broadsides, pamphlets, and proclamations. **Patrons should read the </span><a href="http://www.cengage.com/legal/#terms" target="_blank" rel="nofollow">Terms &amp; Conditions</a><span> and </span><a href="http://www.cengage.com/legal/#privacy" target="_blank" rel="nofollow">Privacy Policy</a><span> of this resource before searching.</span><span>**</span>
+              </div>
+            </div>
+            <div class="views-table-row">
+              <div class="views-table-cell">Home with library card</div>
+              <div class="views-table-cell">
+                <div class="resource-title"><a href="https://www.nypl.org/collections/articles-databases/19th-century-british-library-newspapers">19th Century British Newspapers</a></div>
+                See <a href="https://www.nypl.org/collections/articles-databases/19th-century-british-library-newspapers">British Library Newspapers</a>.
+              </div>
+            </div>
+            <div class="views-table-row">
+              <div class="views-table-cell">Mid-Manhattan Library</div>
+              <div class="views-table-cell">
+                <div class="resource-title"><a href="http://i.ezproxy.nypl.org/login?url=http://history.paratext.com">19th Century Masterfile</a></div>
+                Indexes Anglo-American literature: periodicals, books, newspapers, and government documents published before 1930.
+              </div>
+            </div>
+          </div>
+          <!-- end sample results -->
+          <!-- sample results pagination (note it is outside results div) -->
+          <div class="results-pagination">
+            <a href="#prev">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
+                <title>Left arrow</title>
+                <polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
+              </svg>
+              Previous page
+            </a>
+            <span class="page-count">Page 2 of 4</span>
+            <a href="#next">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
+                <title>Right arrow</title>
+                <polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
+              </svg>
+              Next page
+            </a>
+          </div>
+          <!-- end sample results pagination -->
         </div>
       </div>
-
-      <div class="views-table-row">
-        <div class="views-table-cell">Home with library card</div>
-        <div class="views-table-cell">
-    <div class="resource-title"><a href="https://www.nypl.org/collections/articles-databases/19th-century-british-library-newspapers">19th Century British Newspapers</a></div>
-
-    See <a href="https://www.nypl.org/collections/articles-databases/19th-century-british-library-newspapers">British Library Newspapers</a>.
+      <!-- end 1 (form) + 3 (results) example -->
+      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <!-- 1 (empty) + 3 (basic content) example -->
+      <div class="row">
+        <div class="quarter"></div>
+        <div class="three-quarter">
+          <!-- sample full location info -->
+          <h2>Microforms Reading Room</h2>
+          <div id="location-info">
+            <p class="room">First Floor, Room 100</p>
+            <p class="contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
+            <p class="access">Fully accessible to wheelchairs</p>
+          </div>
+          <table class="location-hours">
+            <tbody>
+              <tr class="titles">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th class="current">Sunday</th>
+              </tr>
+              <tr class="hours">
+                <td>10:00 AM&nbsp;-&nbsp;
+                  <br> 5:45 PM</td>
+                <td>10:00 AM&nbsp;-&nbsp;
+                  <br> 7:45 PM</td>
+                <td>10:00 AM&nbsp;-&nbsp;
+                  <br> 7:45 PM</td>
+                <td>10:00 AM&nbsp;-&nbsp;
+                  <br> 5:45 PM</td>
+                <td>10:00 AM&nbsp;-&nbsp;
+                  <br> 5:45 PM</td>
+                <td>10:00 AM&nbsp;-&nbsp;
+                  <br> 5:45 PM</td>
+                <td>1:00 PM - 4:45PM</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- end sample full location info -->
+          <!-- sample full width paragraph -->
+          <p>[Example lede] The New York Public Library&nbsp;strives to ensure that everyone is welcome and has access to the full range of information, services and programs that are offered in our neighborhood branches and research libraries. &nbsp;Browse below to find out about the assistive technologies and accommodations available for people with disabilities. For&nbsp;more information or for an accommodation, please email&nbsp;<a href="mailto:accessibility@nypl.org" rel="nofollow">accessibility@nypl.org</a>.</p>
+          <!-- end sample full width paragraph -->
         </div>
       </div>
-
-      <div class="views-table-row">
-        <div class="views-table-cell">Mid-Manhattan Library</div>
-        <div class="views-table-cell">
-    <div class="resource-title"><a href="http://i.ezproxy.nypl.org/login?url=http://history.paratext.com">19th Century Masterfile</a></div>
-
-    Indexes Anglo-American literature: periodicals, books, newspapers, and government documents published before 1930.
+      <!-- end 1 (empty) + 3 (basic content) example -->
+      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <!-- 1 (empty) + 1 + 1 + 1 example -->
+      <div class="row">
+        <div class="quarter"></div>
+        <div class="quarter">
+          <h2>Programs and services for community members with disabilities</h2>
+        </div>
+        <div class="quarter">
+          <h3 class="li1"><a href="http://www.nypl.org/node/345315">Print Disabilities or Visual Impairment</a></h3>
+          <ul>
+            <li>Talking Books, Bookshare&nbsp;</li>
+            <li>Videos and DVDs with descriptive text</li>
+            <li>JAWs screenreading software, MAGic screen magnification software, personal reading machines</li>
+            <li>Technology workshops, braille study groups, and&nbsp;more</li>
+          </ul>
+        </div>
+        <div class="quarter">
+          <h3><span class="s2"><a class="title" href="http://www.nypl.org/node/345336">Deaf or Hard of Hearing</a></span></h3>
+          <ul>
+            <li><span class="s2">ASL interpretation and CART real-time captioning</span></li>
+            <li><span class="s2">Assistive listening devices, hearing loops</span></li>
+            <li><span class="s2">Captioned videos and DVDs</span></li>
+          </ul>
         </div>
       </div>
-
-
-    </div>
-    <!-- end sample results -->
-
-    <!-- sample results pagination (note it is outside results div) -->
-    <div class="results-pagination">
-      <a href="#prev">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-          <title>Left arrow</title>
-          <polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
-        </svg>
-        Previous page
-      </a>
-      <span class="page-count">Page 2 of 4</span>
-      <a href="#next">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-          <title>Right arrow</title>
-          <polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
-        </svg>
-        Next page
-      </a>
-    </div>
-    <!-- end sample results pagination -->
-
-<!-- sample full location info -->
-<h2>[sample location] Microforms Reading Room</h2>
-
-<div id="location-info">
-  <p class="room">First Floor, Room 100</p>
-  <p class="contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
-  <p class="access">Fully accessible to wheelchairs</p>
-</div>
-
-<table class="location-hours">
-  <tbody>
-    <tr class="titles"><th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
-    <th class="current">Sunday</th>
-    </tr><tr class="hours"><td>10:00 AM&nbsp;-&nbsp;<br>
-      5:45 PM</td>
-    <td>10:00 AM&nbsp;-&nbsp;<br>
-      7:45 PM</td>
-    <td>10:00 AM&nbsp;-&nbsp;<br>
-      7:45 PM</td>
-    <td>10:00 AM&nbsp;-&nbsp;<br>
-      5:45 PM</td>
-    <td>10:00 AM&nbsp;-&nbsp;<br>
-      5:45 PM</td>
-    <td>10:00 AM&nbsp;-&nbsp;<br>
-      5:45 PM</td>
-    <td>1:00 PM - 4:45PM</td>
-    </tr>
-  </tbody>
-</table>
-<!-- end sample full location info -->
-
-<!-- sample full width paragraph -->
-      <p class="lede">[Example lede] The New York Public Library&nbsp;strives to ensure that everyone is welcome and has access to the full range of information, services and programs that are offered in our neighborhood branches and research libraries. &nbsp;Browse below to find out about the assistive technologies and accommodations available for people with disabilities. For&nbsp;more information or for an accommodation, please email&nbsp;<a href="mailto:accessibility@nypl.org" rel="nofollow">accessibility@nypl.org</a>.</p>
-<!-- end sample full width paragraph -->
-
-<!-- row separator div ¯\_(ツ)_/¯ -->
-      <div class="full"></div>
-<!-- end row separator div -->
-
-<!-- set of 3 columns -->
-
-      <div class="third">
-        <h2>Programs and services for community members with disabilities</h2>
-      </div>
-
-      <div class="third">
-        <h3 class="li1"><a href="http://www.nypl.org/node/345315">Print Disabilities or Visual Impairment</a></h3>
-        <ul><li>Talking Books, Bookshare&nbsp;</li>
-          <li>Videos and DVDs with descriptive text</li>
-          <li>JAWs screenreading software, MAGic screen magnification software, personal reading machines</li>
-          <li>Technology workshops, braille study groups, and&nbsp;more</li>
-        </ul>
-      </div>
-
-      <div class="third">
-        <h3><span class="s2"><a class="title" href="http://www.nypl.org/node/345336">Deaf or Hard of Hearing</a></span></h3>
-        <ul><li><span class="s2">ASL interpretation and CART real-time captioning</span></li>
-          <li><span class="s2">Assistive listening devices, hearing loops</span></li>
-          <li><span class="s2">Captioned videos and DVDs</span></li>
-        </ul>
-      </div>
-
-      <div class="full"></div>
-
-<!-- end set of 3 columns -->
-
-<!-- set of 1 (empty) + 1 + 1 columns -->
-
-      <div class="third"></div>
-
-      <div class="third">
-        <h3 class="li1"><a href="http://www.nypl.org/node/345324">Learning, Cognitive or Developmental Disabilities</a></h3>
-        <ul><li>Movie screenings, art workshops,&nbsp;computer classes&nbsp;</li>
-          <li>Sensory-friendly storytime and playtime for children</li>
-          <li>Online resources for video storybooks and animated picture books</li>
-        </ul>
-      </div>
-
-      <div class="third">
-        <h3 class="li1"><a href="http://www.nypl.org/node/345338">Physical Disabilities</a></h3>
-        <ul><li>Books by Mail</li>
-          <li>Talking Books</li>
-        </ul>
-      </div>
-
-      <div class="full"></div>
-
-<!-- end set of 1+1+1 columns -->
-
-<!-- set of 1 (empty) + 2 (double) columns -->
-      <div class="third"></div>
-
-      <div class="two-third">
-        <h3 class="li1"><a href="https://www.nypl.org/about/locations/heiskell">Featured Location: Andrew Heiskell Library</a></h3>
-        All residents of New York City who are blind, visually impaired, physically disabled, or who have a reading disability are eligible to enroll in&nbsp;Andrew Heiskell Library's free services.
-      </div>
-
-      <div class="full"></div>
-
-<!-- end set of 1+2 columns -->
-
-<!-- related links example (3 column with custom border/padding) -->
-
-      <div class="related-links">
-        <div class="full">
-          <h2>[sample] Related links</h2>
+      <!-- end 1 (empty) + 1 + 1 + 1 example -->
+      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <!-- set of 2 (empty) + 1 + 1 columns -->
+      <div class="row">
+        <div class="half"></div>
+        <div class="quarter">
+          <h3 class="li1"><a href="http://www.nypl.org/node/345324">Learning, Cognitive or Developmental Disabilities</a></h3>
+          <ul>
+            <li>Movie screenings, art workshops,&nbsp;computer classes&nbsp;</li>
+            <li>Sensory-friendly storytime and playtime for children</li>
+            <li>Online resources for video storybooks and animated picture books</li>
+          </ul>
         </div>
-
-        <div class="third">
+        <div class="quarter">
+          <h3 class="li1"><a href="http://www.nypl.org/node/345338">Physical Disabilities</a></h3>
+          <ul>
+            <li>Books by Mail</li>
+            <li>Talking Books</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end set of 2 (empty) + 1 + 1 columns -->
+      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <!-- set of 2 (empty) + 2 columns -->
+      <div class="row">
+        <div class="half"></div>
+        <div class="half">
+          <h3 class="li1"><a href="https://www.nypl.org/about/locations/heiskell">Featured Location: Andrew Heiskell Library</a></h3> All residents of New York City who are blind, visually impaired, physically disabled, or who have a reading disability are eligible to enroll in&nbsp;Andrew Heiskell Library's free services.
+        </div>
+      </div>
+      <!-- set of 2 (empty) + 2 columns -->
+      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <!-- related links example (1+3 column with custom border/padding) -->
+      <div class="row">
+        <div class="quarter"></div>
+        <div class="three-quarter related-links">
+          <h2>Related links</h2>
+        </div>
+        <div class="quarter"></div>
+        <div class="quarter">
           <h4>New resources</h4>
           <ul class="secondary-navigation">
             <li><a href="https://www.nypl.org/node/359078" target="_blank">American Founding Era Papers</a></li>
@@ -379,77 +497,67 @@
             <li><a href="http://www.nypl.org/node/356759" target="_blank">Explora Middle School</a></li>
           </ul>
         </div>
-
-        <div class="third">
+        <div class="quarter">
           <h4>Popular resources</h4>
-          <ul class="secondary-navigation"><li><a href="/collections/articles-databases/tumblebooks" rel="nofollow">Tumblebooks</a></li>
+          <ul class="secondary-navigation">
+            <li><a href="/collections/articles-databases/tumblebooks" rel="nofollow">Tumblebooks</a></li>
             <li><a href="http://www.nypl.org/collections/articles-databases/freegal-music">Freegal Music</a></li>
             <li><a href="/ebooks/verify/bookflix" rel="nofollow">BookFlix</a></li>
             <li><a href="/node/262330" rel="nofollow">ScienceFlix</a></li>
           </ul>
         </div>
-
-        <div class="third">
+        <div class="quarter">
           <h4>Unable to connect to a database?</h4>
-          <ul class="secondary-navigation"><li><a href="/collections/articles-databases/report-problem" rel="nofollow">Report a problem</a></li></ul>
+          <ul class="secondary-navigation">
+            <li><a href="/collections/articles-databases/report-problem" rel="nofollow">Report a problem</a></li>
+          </ul>
         </div>
-
       </div>
-
-<!-- end related link example -->
-
+      <!-- end related link example -->
     </div>
-
+  </main>
+  <footer role="contentinfo">
+    <div class="content-wrapper footer-content">
+      <ul class="footerLinks">
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="/help/about-nypl">About NYPL</a></li>
+            <li><a class="inverted" href="/help/about-nypl/media-center">Press</a></li>
+            <li><a class="inverted" href="/careers">Careers</a></li>
+            <li><a class="inverted" href="/spacerental">Space rental</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="/help/about-nypl/legal-notices/privacy-policy">Privacy policy</a></li>
+            <li><a class="inverted" href="/policies">Other policies</a></li>
+            <li><a class="inverted" href="/terms-conditions">Terms &amp; conditions</a>
+            </li>
+            <li><a class="inverted" href="/help/about-nypl/leadership/board-trustees">Governance</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="/help/about-nypl/legal-notices/rules-and-regulations">Rules &amp; regulations</a></li>
+            <li><a class="inverted" href="/accessibility">Accessibility</a></li>
+            <li><a class="inverted" href="/language">Language</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="https://www.facebook.com/nypl">NYPL on Facebook</a></li>
+            <li><a class="inverted" href="https://twitter.com/nypl">NYPL on Twitter</a></li>
+            <li><a class="inverted" href="https://instagram.com/nypl">NYPL on Instagram</a></li>
+            <li><a class="inverted" href="https://nypl.tumblr.com">NYPL on Tumblr</a></li>
+            <li><a class="inverted" href="https://www.youtube.com/user/NewYorkPublicLibrary">NYPL on YouTube</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p>© The New York Public Library, 2016</p>
+      </div>
     </div>
-
-  </div>
-
-</main>
-
-<footer role="contentinfo">
-  <div class="content-wrapper footer-content">
-    <ul class="footerLinks">
-      <li>
-        <ul class="linkItemList">
-          <li><a class="inverted" href="/help/about-nypl">About NYPL</a></li>
-          <li><a class="inverted" href="/help/about-nypl/media-center">Press</a></li>
-          <li><a class="inverted" href="/careers">Careers</a></li>
-          <li><a class="inverted" href="/spacerental">Space rental</a></li>
-        </ul>
-      </li>
-      <li>
-        <ul class="linkItemList">
-          <li><a class="inverted" href="/help/about-nypl/legal-notices/privacy-policy">Privacy policy</a></li>
-          <li><a class="inverted" href="/policies">Other policies</a></li>
-          <li><a class="inverted" href="/terms-conditions">Terms &amp; conditions</a>
-          </li><li><a class="inverted" href="/help/about-nypl/leadership/board-trustees">Governance</a></li>
-        </ul>
-      </li>
-      <li>
-        <ul class="linkItemList">
-          <li><a class="inverted" href="/help/about-nypl/legal-notices/rules-and-regulations">Rules &amp; regulations</a></li>
-          <li><a class="inverted" href="/accessibility">Accessibility</a></li>
-          <li><a class="inverted" href="/language">Language</a></li>
-        </ul>
-      </li>
-      <li>
-        <ul class="linkItemList">
-          <li><a class="inverted" href="https://www.facebook.com/nypl">NYPL on Facebook</a></li>
-          <li><a class="inverted" href="https://twitter.com/nypl">NYPL on Twitter</a></li>
-          <li><a class="inverted" href="https://instagram.com/nypl">NYPL on Instagram</a></li>
-          <li><a class="inverted" href="https://nypl.tumblr.com">NYPL on Tumblr</a></li>
-          <li><a class="inverted" href="https://www.youtube.com/user/NewYorkPublicLibrary">NYPL on YouTube</a></li>
-        </ul>
-      </li>
-    </ul>
-
-
-    <div class="copyright">
-      <p>© The New York Public Library, 2016</p>
-    </div>
-
-  </div>
-</footer>
-
+  </footer>
 </body>
+
 </html>

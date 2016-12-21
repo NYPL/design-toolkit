@@ -113,7 +113,7 @@
 @warn "Move these mixins out of the microformats partial since they effect the entire style guide...";
 @mixin related-links {
   border-top: $related-links-border-width solid $nyplgray;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 @mixin toolkit-example {
