@@ -846,7 +846,7 @@ a {
     color: #1f789a; }
   a:hover, a:visited:hover {
     color: #45b1da;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 a.inverted:link {
   color: #fff; }
