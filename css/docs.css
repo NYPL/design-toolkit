@@ -209,7 +209,7 @@ header .service-buttons {
     text-decoration: none;
     text-overflow: ellipsis;
     text-transform: uppercase;
-    transition: all 0.2s;
+    transition: all 0.1s;
     white-space: nowrap; }
     header .service-buttons li > a .nypl-icon, header .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
@@ -218,7 +218,7 @@ header .service-buttons {
       height: 1em;
       width: 1em;
       speak: none;
-      transition: all 0.2s; }
+      transition: all 0.1s; }
       header .service-buttons li > a .nypl-icon.reversed, header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
@@ -238,7 +238,7 @@ header .service-buttons {
 header .email-toggle {
   position: relative; }
   header .email-toggle a:after {
-    transition: all 0.2s; }
+    transition: all 0.1s; }
   header .email-toggle a.active:after {
     transform: scaleY(-1); }
 header .login-toggle {
@@ -275,7 +275,7 @@ header .login-toggle {
     display: inline-block;
     font-weight: bold;
     padding: 0 0.5em;
-    transition: all 0.2s; }
+    transition: all 0.1s; }
     header .login-toggle > a .nypl-icon, header .login-toggle button.collapsible .nypl-icon {
       background-color: #776e64;
       display: inline-block;
@@ -283,7 +283,7 @@ header .login-toggle {
       height: 1em;
       width: 1em;
       speak: none;
-      transition: all 0.2s; }
+      transition: all 0.1s; }
       header .login-toggle > a .nypl-icon.reversed, header .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
@@ -404,7 +404,7 @@ header .nav-buttons {
     padding: 0.2em 0.4em 0.2em;
     text-decoration: none;
     text-overflow: ellipsis;
-    transition: all 0.2s;
+    transition: all 0.1s;
     white-space: nowrap; }
     header .nav-buttons a:hover {
       color: #d0343a; }
@@ -423,13 +423,29 @@ header li.search #main-search {
     padding: 0;
     background-color: #5b544d;
     color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
     height: 2rem;
-    padding: 0 1rem; }
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    header li.search #main-search .search-button:hover {
+      background-color: #9fa3a8;
+      color: black; }
     header li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
       box-shadow: inset 0 0 0 4px #ffb81d;
       outline: none; }
+    header li.search #main-search .search-button.disabled, header li.search #main-search .search-button[disabled="disabled"], header li.search #main-search .search-button[disabled], header li.search #main-search .search-button[disabled=true] {
+      cursor: default;
+      background-color: #dddbd9; }
+      header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
+        background-color: #dddbd9;
+        color: white; }
   header li.search #main-search.display {
     display: block; }
   header li.search #main-search .search-query-content {
@@ -475,7 +491,7 @@ header li.search #main-search {
     margin-right: 1px;
     padding: 0;
     text-indent: 0.5rem;
-    transition: all 0.2s ease-out;
+    transition: all 0.1s ease-out;
     width: 10rem; }
     header li.search #main-search .form-text.active {
       width: 16rem; }

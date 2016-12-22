@@ -1,3 +1,5 @@
+@import "buttons";
+
 // overriding focus borders to make them stand out
 
 @warn "lots of magic numbers here";
@@ -36,19 +38,6 @@
   background-color: $nypl-search-color-light;
   border: none;
   padding: 0;
-}
-
-@mixin simple-button($main-color: $nypl-search-color-dark, $focus-color: $focus-color) {
-  @include input;
-  background-color: $main-color;
-  color: white;
-  height: 2rem;
-  padding: 0 1rem;
-
-  &:focus {
-    @include box-shadow(inset 0 0 0 4px $focus-color);
-    outline: none;
-  }
 }
 
 @mixin textfield {
@@ -136,30 +125,18 @@
   @include fieldset;
 
   button {
+    @include basic-button($background-color: $nypl-search-color-light, $text-color:$page-color, $border-width: 0);
     @warn "fix those !importants";
-    background-color: $nypl-search-color-light;
-    border: none;
-    color: $page-color;
     display: inline-block !important;
-    font-weight: normal !important;
+    font-weight: normal;
     margin: 0 0 0.5em 0.5em;
     padding: 0.2rem 0.25em;
-    text-align: center;
-    text-decoration: none;
     width: 2em;
 
-    &:hover {
-      background-color: white;
+    &.long {
+      // because “any” has different lengths in different langs
+      min-width: 4.75em;
     }
-  }
-
-  button[disabled=true] {
-    background-color: $nypl-light-gray;
-  }
-
-  button.long {
-    // because “any” has different lengths in different langs
-    min-width: 4.75em;
   }
 }
 

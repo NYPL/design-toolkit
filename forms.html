@@ -20,7 +20,7 @@
 
   <div class="page-header">
     <div class="content-wrapper">
-      <div class="breadcrumb"><a href="./">Toolkit home</a> > Forms and buttons</div>
+      <div class="breadcrumb"><a href="./">Toolkit home</a> > Forms</div>
       <h1>NYPL Design Toolkit</h1>
     </div>
   </div>
@@ -33,7 +33,8 @@
       <ul>
         <li><a href="index.html">Toolkit home</a></li>
         <li><a href="layout.html">Layout</a></li>
-        <li>Forms and buttons</li>
+        <li>Forms</li>
+        <li><a href="buttons.html">Buttons</a></li>
         <li><a href="microformats.html">General Microformats</a></li>
         <li><a href="tables.html">Tables and data</a></li>
         <li><a href="svg-index.html">SVG Usage</a></li>
@@ -48,59 +49,12 @@
     <h2>Table of contents</h2>
 
     <ul>
-      <li><a href="#buttons">General Button Styles</a>
-        <ul>
-          <li><a href="#squareButton">Square Button</a></li>
-          <li><a href="#roundedButton">Rounded Button</a></li>
-        </ul>
-      </li>
-      <li><a href="#forms">Forms</a>
-        <ul>
-          <li><a href="#textFields">Text fields</a></li>
-          <li><a href="#selectBoxes">Select boxes</a></li>
-          <li><a href="#alphaFilters">Alphabetical filters</a></li>
-          <li><a href="#radioButtons">Radiobutton/checkbox groups</a></li>
-          <li><a href="#sorting">Sorting</a></li>
-        </ul>
-      </li>
+      <li><a href="#textFields">Text fields</a></li>
+      <li><a href="#selectBoxes">Select boxes</a></li>
+      <li><a href="#alphaFilters">Alphabetical filters</a></li>
+      <li><a href="#radioButtons">Radiobutton/checkbox groups</a></li>
+      <li><a href="#sorting">Sorting</a></li>
     </ul>
-
-    <h2 id="buttons">General Button Styles</h2>
-    <a href="#toc">Go to top</a>
-
-    <h3 id="squareButton">Square Button</h3>
-    <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
-    </p>
-      <div class="toolkit-example">
-        <button class="my-button-class">Button</button>
-        <button class="request-button">Request a Button</button>
-      </div>
-      <pre><code class="scss">
-.my-button-class {
-  @include basic-button;
-}
-.request-button {
-  @include request-button;
-}
-      </code></pre>
-      <pre><code class="html">
-&lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
-&lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
-    </code></pre>
-
-    <h3 id="roundedButton">Rounded Button</h3>
-    <p>A very simple version of the existent rounded button style.</p>
-      <div class="toolkit-example">
-        <button class="my-rounded-button">Button</button>
-      </div>
-      <pre><code class="scss">
-.my-rounded-button {
-  @include basic-button($border-radius: 1rem);
-}
-      </code></pre>
-      <pre><code class="html">
-&lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
-    </code></pre>
 
     <h2 id="forms">Forms</h2>
     <a href="#toc">Go to top</a>
