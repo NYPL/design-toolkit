@@ -114,7 +114,7 @@
     @warn "fix !important";
     background-color: $nypl-search-color-light;
     font-weight: normal !important;
-    padding: 3px 5px;
+    padding: 0.1875rem 0;
   }
 
   input[type=radio], input[type=checkbox] {
@@ -135,8 +135,10 @@
 @mixin alphabetical-filter {
   @include fieldset;
 
-  a, span {
+  button {
     @warn "fix those !importants";
+    background-color: $nypl-search-color-light;
+    border: none;
     color: $page-color;
     display: inline-block !important;
     font-weight: normal !important;
@@ -144,24 +146,20 @@
     padding: 0.2rem 0.25em;
     text-align: center;
     text-decoration: none;
-    width: 1em;
-  }
-
-  a {
-    background-color: $nypl-search-color-light;
+    width: 2em;
 
     &:hover {
       background-color: white;
     }
   }
 
-  span {
+  button[disabled=true] {
     background-color: $nypl-light-gray;
   }
 
-  span.long {
+  button.long {
     // because “any” has different lengths in different langs
-    min-width: calc(2em + 14px);
+    min-width: 4.75em;
   }
 }
 

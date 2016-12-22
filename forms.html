@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NYPL Design toolkit</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/docs.css" media="screen" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="js/atom-one-light.css">
+<script src="js/highlight.pack.js"></script>
+
+</head>
+<body>
+
+<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+
+<main class="main-page">
+
+
+  <div class="page-header">
+    <div class="content-wrapper">
+      <div class="breadcrumb"><a href="./">Toolkit home</a> > Forms and buttons</div>
+      <h1>NYPL Design Toolkit</h1>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="quarter">
+      <a name="mainContent"></a>
+      <p class="secondary-title">NYPL Design Toolkit</p>
+      <ul>
+        <li><a href="index.html">Toolkit home</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li>Forms and buttons</li>
+        <li><a href="microformats.html">General Microformats</a></li>
+        <li><a href="tables.html">Tables and data</a></li>
+        <li><a href="svg-index.html">SVG Usage</a></li>
+      </ul>
+      <ul>
+        <li><a href="example.html">Example Page</a></li>
+        <li><a href="https://github.com/NYPL/design-toolkit/" class="external">View on Github</a></li>
+      </ul>
+    </div>
+
+  <div id="toc" class="main-content three-quarter">
+    <h2>Table of contents</h2>
+
+    <ul>
+      <li><a href="#buttons">General Button Styles</a>
+        <ul>
+          <li><a href="#squareButton">Square Button</a></li>
+          <li><a href="#roundedButton">Rounded Button</a></li>
+        </ul>
+      </li>
+      <li><a href="#forms">Forms</a>
+        <ul>
+          <li><a href="#textFields">Text fields</a></li>
+          <li><a href="#selectBoxes">Select boxes</a></li>
+          <li><a href="#alphaFilters">Alphabetical filters</a></li>
+          <li><a href="#radioButtons">Radiobutton/checkbox groups</a></li>
+          <li><a href="#sorting">Sorting</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 id="buttons">General Button Styles</h2>
+    <a href="#toc">Go to top</a>
+
+    <h3 id="squareButton">Square Button</h3>
+    <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
+    </p>
+      <div class="toolkit-example">
+        <button class="my-button-class">Button</button>
+        <button class="request-button">Request a Button</button>
+      </div>
+      <pre><code class="scss">
+.my-button-class {
+  @include basic-button;
+}
+.request-button {
+  @include request-button;
+}
+      </code></pre>
+      <pre><code class="html">
+&lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
+    </code></pre>
+
+    <h3 id="roundedButton">Rounded Button</h3>
+    <p>A very simple version of the existent rounded button style.</p>
+      <div class="toolkit-example">
+        <button class="my-rounded-button">Button</button>
+      </div>
+      <pre><code class="scss">
+.my-rounded-button {
+  @include basic-button($border-radius: 1rem);
+}
+      </code></pre>
+      <pre><code class="html">
+&lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
+    </code></pre>
+
+    <h2 id="forms">Forms</h2>
+    <a href="#toc">Go to top</a>
+
+    <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
+
+    <h3 id="textFields">Text fields</h3>
+
+    <div class="toolkit-example">
+    <fieldset class="my-text-field">
+      <label for="keyword-text">Title or description</label>
+      <input id="keyword-text" type="text">
+    </fieldset>
+    </div>
+
+    <pre><code class="scss">
+.my-text-field {
+  @include text-fieldset;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;fieldset class=&quot;my-text-field&quot;&gt;
+  &lt;label for=&quot;keyword-text&quot;&gt;Title or description&lt;/label&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot;&gt;
+&lt;/fieldset&gt;
+    </code></pre>
+
+    <h3 id="selectBoxes">Select boxes</h3>
+
+    <div class="toolkit-example">
+    <fieldset class="my-select-box">
+      <label for="topics">Topics</label>
+      <select id="topics" name="topics">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="…">…</option>
+      </select>
+    </fieldset>
+    </div>
+
+    <pre><code class="scss">
+.my-select-box {
+  @include select-fieldset;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;fieldset class=&quot;my-select-box&quot;&gt;
+  &lt;label for=&quot;topics&quot;&gt;Topics&lt;/label&gt;
+  &lt;select id=&quot;topics&quot; name=&quot;topics&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+    &lt;option value=&quot;…&quot;&gt;…&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/fieldset&gt;
+    </code></pre>
+
+    <h3 id="alphaFilters">Alphabetical filters</h3>
+
+    <p>Not a form element per se but still used within search forms. This is a list of buttons that apply an alphabetical/number-type filter. Currently applied filter is disabled. The "Any" (or multi-character) selection has a <code>long</code> class.
+    </p>
+
+    <div class="toolkit-example">
+    <fieldset class="alphabetical">
+      <label>Name starts with</label>
+      <button name="az-filter" disabled="true" class="long">Any</button>
+      <button name="az-filter" title="Show only resources with name starting with a number">#</button>
+      <button name="az-filter" title="Show only resources with name starting with A">A</button>
+      <button name="az-filter" title="Show only resources with name starting with B">B</button>
+      <button name="az-filter" title="Show only resources with name starting with C">C</button>
+      <button name="az-filter" title="Show only resources with name starting with …">…</button>
+    </fieldset>
+    </div>
+
+    <pre><code class="scss">
+.alphabetical {
+  @include alphabetical-filter;
+}
+    </code></pre>
+
+    <pre><code class="html">
+&lt;fieldset class=&quot;alphabetical&quot;&gt;
+  &lt;label&gt;Name starts with&lt;/label&gt;
+  &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;long&quot;&gt;Any&lt;/button&gt;
+  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
+  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with A&quot;&gt;A&lt;/button&gt;
+  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
+  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
+  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
+&lt;/fieldset&gt;
+    </code></pre>
+
+    <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
+
+    <p>For multiple browser-compatibility reasons we avoid the <code>legend</code> tag and use a <code>span</code> tag with a nested <code>strong</code> tag.</p>
+
+
+    <div class="toolkit-example">
+    <fieldset class="radiogroup">
+      <span><strong>Accessible from</strong></span>
+      <label for="available-every">
+        <input id="available-every" type="radio" name="available" value="any">Anywhere
+      </label>
+      <label for="available-home">
+        <input id="available-home" type="radio" name="available" value="home">Home with a library card
+      </label>
+      <label for="available-library">
+        <input id="available-library" type="radio" name="available" value="library">A library branch
+      </label>
+    </fieldset>
+    </div>
+    <pre><code class="scss">
+.radiogroup {
+  @include radiobutton-fieldset;
+}
+    </code></pre>
+
+    <p><strong>NOTE:</strong> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
+
+    <pre><code class="html">
+&lt;fieldset class=&quot;radiogroup&quot;&gt;
+  &lt;span&gt;&lt;strong&gt;Accessible from&lt;/strong&gt;&lt;/span&gt;
+  &lt;label for=&quot;available-every&quot;&gt;
+    &lt;input id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
+  &lt;/label&gt;
+  &lt;label for=&quot;available-home&quot;&gt;
+    &lt;input id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
+  &lt;/label&gt;
+  &lt;label for=&quot;available-library&quot;&gt;
+    &lt;input id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
+  &lt;/label&gt;
+&lt;/fieldset&gt;
+    </code></pre>
+
+    <h3 id="sorting">Sorting</h3>
+
+    <p>coming soon</p>
+
+
+    <div class="toolkit-example">
+    </div>
+    <pre><code class="scss">
+
+    </code></pre>
+
+    <pre><code class="html">
+
+    </code></pre>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+hljs.configure({languages:['html', 'scss']})
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

@@ -1,9 +1,4 @@
-@import "nypl-normalize";
-@import "grid";
-@import "header";
-@import "tables-results";
-@import "buttons";
-@import "footer";
+@import "toolkit";
 
 // using the system
 
@@ -70,6 +65,10 @@
 
 .full {
   @include column-full;
+}
+
+.half {
+  @include column-half;
 }
 
 .quarter {
@@ -150,5 +149,5 @@ fieldset.radiogroup {
 }
 
 .row {
-  @include column-full;
+  @include grid-row;
 }

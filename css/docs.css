@@ -450,7 +450,7 @@ header li.search #main-search {
     header li.search #main-search .search-radio-label label {
       background-color: #c0bab4;
       font-weight: normal !important;
-      padding: 3px 5px; }
+      padding: 0.1875rem 0; }
     header li.search #main-search .search-radio-label input[type=radio], header li.search #main-search .search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
@@ -638,13 +638,12 @@ pre {
   margin-right: 1rem; }
 
 .nypl-icon {
-  background-color: white;
+  background-color: #fff;
   display: inline-block;
   fill: #080807;
-  height: 1em;
-  width: 1em;
-  speak: none;
-  width: 10em; }
+  height: 10em;
+  width: 10em;
+  speak: none; }
   .nypl-icon.reversed {
     background-color: inherit;
     fill: #fff; }

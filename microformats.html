@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NYPL Design toolkit</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/docs.css" media="screen" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="js/atom-one-light.css">
+<script src="js/highlight.pack.js"></script>
+
+</head>
+<body>
+
+<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+
+<main class="main-page">
+
+
+  <div class="page-header">
+    <div class="content-wrapper">
+      <div class="breadcrumb"><a href="./">Toolkit home</a> > General Microformats</div>
+      <h1>NYPL Design Toolkit</h1>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="quarter">
+      <a name="mainContent"></a>
+      <p class="secondary-title">NYPL Design Toolkit</p>
+      <ul>
+        <li><a href="index.html">Toolkit home</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="forms.html">Forms and buttons</a></li>
+        <li>General Microformats</li>
+        <li><a href="tables.html">Tables and data</a></li>
+        <li><a href="svg-index.html">SVG Usage</a></li>
+      </ul>
+      <ul>
+        <li><a href="example.html">Example Page</a></li>
+        <li><a href="https://github.com/NYPL/design-toolkit/" class="external">View on Github</a></li>
+      </ul>
+    </div>
+
+  <div id="toc" class="main-content three-quarter">
+    <h2>Table of contents</h2>
+
+    <ul>
+      <li><a href="#general">General Microformats</a>
+        <ul>
+          <li><a href="#alertBanner">Alert banner</a></li>
+          <li><a href="#locationCard">Location card</a></li>
+          <li><a href="#locationHours">Location hours</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 id="general">General Microformats</h2>
+    <a href="#toc">Go to top</a>
+
+    <h3 id="alertBanner">Alert banner</h3>
+
+    <p>Requires a <code>content-wrapper</code> for proper margin and padding.</p>
+
+    <div class="toolkit-example">
+    <div class="alert"><div class="content-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div></div>
+    </div>
+
+    <pre><code class="html">
+&lt;div class=&quot;alert&quot;&gt;
+  &lt;div class=&quot;content-wrapper&quot;&gt;
+    The New York Public Library will be closed on Monday, October 10
+    in observance of Columbus Day.
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="locationCard">Location card</h3>
+
+    <p>Note the special classes for each property.</p>
+
+    <div class="toolkit-example">
+    <div id="location-info">
+      <p class="room">First Floor, Room 100</p>
+      <p class="contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
+      <p class="access">Fully accessible to wheelchairs</p>
+    </div>
+    </div>
+    <pre><code class="scss">
+#location-info {
+  @include location-info;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div id=&quot;location-info&quot;&gt;
+  &lt;p class=&quot;room&quot;&gt;First Floor, Room 100&lt;/p&gt;
+  &lt;p class=&quot;contact&quot;&gt;Phone: (212) 642-0139 | Fax: (212) 930-0838&lt;/p&gt;
+  &lt;p class=&quot;access&quot;&gt;Fully accessible to wheelchairs&lt;/p&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="locationHours">Location hours</h3>
+
+    <p><strong>Always starts on Monday.</strong> Note the special class for the current day (Tuesday in this case) and the line breaks.</p>
+
+    <p><strong>NOTE:</strong> Mobile support for english only for now.</p>
+
+    <div class="toolkit-example">
+      <table class="location-hours">
+        <tbody>
+          <tr>
+      <th>Monday</th>
+      <th class="current">Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+          </tr>
+          <tr>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>10:00 AM - <br>7:45 PM</td>
+      <td>10:00 AM - <br>7:45 PM</td>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>10:00 AM - <br>5:45 PM</td>
+      <td>1:00 PM - <br>4:45 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <pre><code class="scss">
+.location-hours {
+  @include location-hours;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;table class=&quot;location-hours&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Monday&lt;/th&gt;
+      &lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
+      &lt;th&gt;Wednesday&lt;/th&gt;
+      &lt;th&gt;Thursday&lt;/th&gt;
+      &lt;th&gt;Friday&lt;/th&gt;
+      &lt;th&gt;Saturday&lt;/th&gt;
+      &lt;th&gt;Sunday&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
+      &lt;td&gt;1:00 PM - &lt;br&gt;4:45 PM&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+hljs.configure({languages:['html', 'scss']})
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

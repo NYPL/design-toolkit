@@ -40,6 +40,5 @@ pre {
 }
 
 .nypl-icon {
-  @include nypl-icon;
-  width: 10em;
+  @include nypl-icon($height: 10em, $width: 10em);
 }
