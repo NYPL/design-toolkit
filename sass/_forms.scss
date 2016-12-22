@@ -38,19 +38,6 @@
   padding: 0;
 }
 
-@mixin simple-button($main-color: $nyplsearchcolordark, $focus-color: $focuscolor) {
-  @include input;
-  background-color: $main-color;
-  color: white;
-  height: 2rem;
-  padding: 0 1rem;
-
-  &:focus {
-    @include box-shadow(inset 0 0 0 4px $focuscolor);
-    outline: none;
-  }
-}
-
 @mixin textfield {
   @include input;
 

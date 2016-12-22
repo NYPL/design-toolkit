@@ -7,6 +7,20 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
+
+@mixin simple-button($main-color: $nyplsearchcolordark, $focus-color: $focuscolor) {
+  @include input;
+  background-color: $main-color;
+  color: white;
+  height: 2rem;
+  padding: 0 1rem;
+
+  &:focus {
+    @include box-shadow(inset 0 0 0 4px $focuscolor);
+    outline: none;
+  }
+}
+
 @mixin basic-button ($button-text-color: $buttonTextColor, $button-border-color: $buttonTextColor, $button-background-color: $buttonBackgroundColor, $border-radius: 0) {
   background-color: $button-background-color;
   border: $button-border-color solid (1/8 * 1rem); // assuming 16px rem
