@@ -795,10 +795,10 @@ html {
   -webkit-filter: none;
   filter: none; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
-  margin-bottom: 1.5rem;
-  margin-top: 0; }
+  margin-bottom: 0;
+  margin-top: 1.5rem; }
 
 h1 {
   font-size: 2.6rem;
@@ -809,6 +809,9 @@ h2 {
 
 h3 {
   font-size: 1.4rem; }
+
+p {
+  margin-top: 0.25rem; }
 
 h4 {
   font-size: 1.2rem;
@@ -1347,7 +1350,7 @@ header li.search #main-search {
     header li.search #main-search .search-radio-label label {
       background-color: #c5c2be;
       font-weight: normal !important;
-      padding: 3px 5px; }
+      padding: 0.1875rem 0; }
     header li.search #main-search .search-radio-label input[type=radio], header li.search #main-search .search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
@@ -2008,7 +2011,7 @@ fieldset.radiogroup {
   fieldset.radiogroup label {
     background-color: #c5c2be;
     font-weight: normal !important;
-    padding: 3px 5px; }
+    padding: 0.1875rem 0; }
   fieldset.radiogroup input[type=radio], fieldset.radiogroup input[type=checkbox] {
     height: initial;
     margin-right: 0.25rem; }

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NYPL Design toolkit</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/docs.css" media="screen" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="js/atom-one-light.css">
+<script src="js/highlight.pack.js"></script>
+
+</head>
+<body>
+
+<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+
+<main class="main-page">
+
+
+  <div class="page-header">
+    <div class="content-wrapper">
+      <div class="breadcrumb"><a href="./">Toolkit home</a> > Layout</div>
+      <h1>NYPL Design Toolkit</h1>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="quarter">
+      <a name="mainContent"></a>
+      <p class="secondary-title">NYPL Design Toolkit</p>
+      <ul>
+        <li><a href="index.html">Toolkit home</a></li>
+        <li>Layout</li>
+        <li><a href="forms.html">Forms and buttons</a></li>
+        <li><a href="microformats.html">General Microformats</a></li>
+        <li><a href="tables.html">Tables and data</a></li>
+        <li><a href="svg-index.html">SVG Usage</a></li>
+      </ul>
+      <ul>
+        <li><a href="example.html">Example Page</a></li>
+        <li><a href="https://github.com/NYPL/design-toolkit/" class="external">View on Github</a></li>
+      </ul>
+    </div>
+
+  <div id="toc" class="main-content three-quarter">
+    <h2>Table of contents</h2>
+
+    <ul>
+      <li><a href="#grid">Layout</a>
+        <ul>
+          <li><a href="#mainHeader">Main header and footer</a></li>
+          <li><a href="#contentWrapper">The content wrapper</a></li>
+          <li><a href="#peageHeader">Page header (and breadcrumbs)</a></li>
+          <li><a href="#pageContent">Page content</a></li>
+          <li><a href="#fullWidth">Full width column</a></li>
+          <li><a href="#halfWidth">Half width columns</a></li>
+          <li><a href="#quarterWidth">Quarter width columns</a></li>
+          <li><a href="#mixedColumns">One quartes / three quarters width columns</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 id="grid">Layout</h2>
+
+    <h3 id="mainHeader">Main header and footer</h3>
+
+    <p>Header and footer are separate applications that contain some of the styles in this toolkit and are not documented here. This documentation covers anything else within them:</p>
+
+    <pre><code>
++-header----------------------------------------------+
+|/////////////////////////////////////////////////////|
++-----------------------------------------------------+
++-main_page_area--------------------------------------+
+|                                                     |
+|  this-documentation                                 |
+|                                                     |
++-----------------------------------------------------+
++-footer----------------------------------------------+
+|/////////////////////////////////////////////////////|
++-----------------------------------------------------+
+    </code></pre>
+
+    <p>The main page area is split in two <strong>sibling</strong> sections (elements): <strong>page header</strong> and <strong>page content</strong>:</p>
+
+    <pre><code>
++-page_header-----------------------------------------+
+|                                                     |
++-----------------------------------------------------+
++-page_content----------------------------------------+
+|                                                     |
++-----------------------------------------------------+
+    </code></pre>
+
+    <h3 id="contentWrapper">The content wrapper</h3>
+
+    <p>The general page layout has some special margins and paddings for branding purposes. A <code>full-width-wrapper</code> mixin is provided to take care of this:</p>
+
+    <pre><code class="scss">
+.some-content-wrapper {
+  @include full-width-wrapper;
+}
+    </code></pre>
+
+    <p>The <code>full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
+
+    <h3 id="peageHeader">Page header (and breadcrumbs)</h3>
+
+    <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
+
+    <p>Page header content <strong>is not</strong> the nested inside a <code>grid-row</code> type element.</p>
+
+    <div class="toolkit-example">
+      <div class="my-page-header">
+        <div class="my-content-wrapper">
+          <div class="my-breadcrumb"><a href="#">Home</a> > <a href="#">Research</a> > Articles &amp; databases</div>
+          <h1>Articles &amp; databases</h1>
+        </div>
+      </div>
+    </div>
+
+    <pre><code class="scss">
+.my-page-header {
+  @include page-header;
+}
+
+.my-breadcrumb {
+  @include breadcrumbs;
+}
+
+.my-content-wrapper {
+  @include full-width-wrapper;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-page-header&quot;&gt;
+  &lt;div class=&quot;my-content-wrapper&quot;&gt;
+    &lt;div class=&quot;my-breadcrumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &gt; &lt;a href=&quot;#&quot;&gt;Research&lt;/a&gt; &gt; Articles &amp;amp; databases&lt;/div&gt;
+    &lt;h1&gt;Articles &amp;amp; databases&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="pageContent">Page content</h3>
+
+    <p>Is wrapped by a <code>full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
+
+    <pre><code>
++-wrapper---------------------------------------------+
+| +-row_and_cols------------------------------------+ |
+| |                                                 | |
+| |                                                 | |
+| +-------------------------------------------------+ |
+| +-row_and_cols------------------------------------+ |
+| |                                                 | |
+| |                                                 | |
+| +-------------------------------------------------+ |
+| +-row_and_cols------------------------------------+ |
+| |                                                 | |
+| |                                                 | |
+| +-------------------------------------------------+ |
++-----------------------------------------------------+
+    </code></pre>
+
+    <p>The rows and columns themselves are based on a simple, mobile-ready row-4-column pattern that can be combined as needed. Existing column size mixins are <code>column-full</code>, <code>column-half</code>, <code>column-one-quarter</code>, and <code>column-three-quarters</code>.</p>
+
+    <p><strong>NOTE:</strong> avoid nesting rows inside columns as the system does not support it for the time being. It is preferred to use multiple rows if you require a more elaborate layout.</p>
+
+    <h3 id="fullWidth">Full width column</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-full">
+    <p>full width</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-full {
+  @include column-full;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-full&quot;&gt;
+    &lt;p&gt;full width&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="halfWidth">Half width columns</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-half">
+    <p>half</p>
+  </div>
+  <div class="my-col-half">
+    <p>half</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-half {
+  @include column-half;
+
+  p {
+    background-color: yellow;
+    color: black;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-half&quot;&gt;
+    &lt;p&gt;half&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-half&quot;&gt;
+    &lt;p&gt;half&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="quarterWidth">Quarter width columns</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-quarter">
+    <p>one</p>
+  </div>
+  <div class="my-col-quarter">
+    <p>two</p>
+  </div>
+  <div class="my-col-quarter">
+    <p>three</p>
+  </div>
+  <div class="my-col-quarter">
+    <p>four</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-quarter {
+  @include column-one-quarter;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;one&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;two&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;three&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;four&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="mixedColumns">One quarter / three quarters width columns</h3>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-quarter">
+    <p>one</p>
+  </div>
+  <div class="my-col-three-quarters">
+    <p>three</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-quarter {
+  @include column-one-quarter;
+
+  p {
+    background-color: blue;
+    color: white;
+  }
+}
+
+.my-col-three-quarters {
+  @include column-three-quarters;
+
+  p {
+    background-color: green;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;one&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-three-quarters&quot;&gt;
+    &lt;p&gt;three&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <div class="toolkit-example">
+
+    </div>
+    <pre><code class="scss">
+
+    </code></pre>
+    <pre><code class="html">
+
+    </code></pre>
+
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+hljs.configure({languages:['html', 'scss']})
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

@@ -450,7 +450,7 @@ header li.search #main-search {
     header li.search #main-search .search-radio-label label {
       background-color: #c5c2be;
       font-weight: normal !important;
-      padding: 3px 5px; }
+      padding: 0.1875rem 0; }
     header li.search #main-search .search-radio-label input[type=radio], header li.search #main-search .search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
