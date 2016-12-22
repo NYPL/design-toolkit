@@ -12,7 +12,7 @@
 @warn "remove magic numbers";
 
 @mixin banner-alert() {
-  background-color: $alertcolor;
+  background-color: $alert-color;
   padding: 0.8rem 0;
 }
 
@@ -38,7 +38,7 @@
   }
 
   .access {
-    color: $highlightcolor;
+    color: $highlight-color;
     font-weight: bold;
   }
 }
@@ -139,7 +139,7 @@
 }
 
 @mixin toolkit-example-dark {
-  background: $footercolor;
+  background: $nypl-footer-color;
 
   &:before {
     background-color: $inverted-link-color;

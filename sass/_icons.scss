@@ -6,7 +6,7 @@
   font-style:normal
 }
 
-@mixin nypl-icon($fill: $pagetextcolor, $background-color: white, $inverted-color: $inverted-link-color, $as-font: false, $font-content: "") {
+@mixin nypl-icon($fill: $page-text-color, $background-color: white, $inverted-color: $inverted-link-color, $as-font: false, $font-content: "") {
   @if ($as-font == false) {
     background-color: $background-color;
     display: inline-block;

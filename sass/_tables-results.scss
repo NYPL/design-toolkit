@@ -99,7 +99,7 @@
   }
 
   .views-table-row .views-table-header, thead, th {
-    border-bottom: 1px solid $pagecolor;
+    border-bottom: 1px solid $page-color;
     text-align: left;
   }
 
@@ -142,12 +142,12 @@
   }
 
   .channel-title {
-    color: $highlightcolor;
+    color: $highlight-color;
     text-transform: uppercase;
   }
 
   .signup-method {
-    color: $highlightcolor;
+    color: $highlight-color;
   }
 
   .resource-title {

@@ -1,4 +1,4 @@
-@warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to ";
+@warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to prefix nypl automatically to each variable...";
 // nypl _colors.scss
 // NYPL Reds
 $nypl-red: #d0343a;
@@ -18,6 +18,8 @@ $nypl-blue-tint: tint($nypl-blue, 30%);
 $nypl-gray-cool: #76777b;
 
 $nypl-gray: #776e64;
+
+$nypl-gray-brown: #54514a;
 
 $nypl-dark-gray: darken($nypl-gray, 40%);
 
@@ -48,27 +50,28 @@ $nypl-search-color: $nypl-gray;
 $nypl-search-color-dark: darken($nypl-search-color, 10%);
 $nypl-search-color-light: lighten($nypl-search-color, 30%);
 
-$focuscolor: $nypl-orange;
+$focus-color: $nypl-orange;
 
-$pagecolor: $nypl-dark-gray;
-$pagecolorlight: $nypl-light-gray;
-$pagetextcolor: $nypl-dark-gray;
+$page-color: $nypl-dark-gray;
+$page-colorlight: $nypl-light-gray;
+$page-text-color: $nypl-dark-gray;
 
-$footercolor: #54514A;
-$highlightcolor: $nypl-red;
-$alertcolor: $nypl-yellow;
-$background-color: #fff;
+$nypl-footer-color: $nypl-gray-brown;
+$highlight-color: $nypl-red;
+$alert-color: $nypl-yellow;
+$background-color: $nypl-white;
 
 // link colors
 $link-color: $nypl-blue;
-$linkvisitedcolor: darken($link-color, 10%);
-$linkhovercolor: lighten($link-color, 10%);
+$link-visited-color: darken($link-color, 10%);
+$link-hover-color: lighten($link-color, 10%);
 $inverted-link-color: $nypl-white;
-$invertedlinkvisitedcolor: darken($inverted-link-color, 10%);
+$inverted-link-visited-color: darken($inverted-link-color, 10%);
 
 // button colors not already defined above.
-$buttonTextColor: $nypl-dark-gray;
+$button-text-color: $nypl-dark-gray;
 
-$buttonBackgroundColor: $background-color;
+$button-border-color: $nypl-dark-gray;
 
+$button-background-color: $nypl-white;
 //

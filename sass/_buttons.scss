@@ -7,9 +7,9 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($button-text-color: $buttonTextColor, $button-border-color: $buttonTextColor, $button-background-color: $buttonBackgroundColor, $border-radius: 0) {
+@mixin basic-button ($button-text-color: $nypl-dark-gray, $button-border-color: $nypl-dark-gray, $button-background-color: $nypl-white, $border-radius: 0) {
   background-color: $button-background-color;
-  border: $button-border-color solid (1/8 * 1rem); // assuming 16px rem
+  border: $button-border-color solid (1 / 8 * 1rem); // assuming 16px rem
   border-radius: $border-radius;
   color: $button-text-color;
   cursor: pointer;
@@ -27,11 +27,11 @@
 }
 
 @mixin request-button {
-  @include basic-button ($button-text-color: $buttonBackgroundColor, $button-border-color: $nypl-blue-dark, $button-background-color: $nypl-blue-dark, $border-radius: 0.25rem);
+  @include basic-button ($button-text-color: $nypl-white, $button-border-color: $nypl-blue, $button-background-color: $nypl-blue, $border-radius: 0.25rem);
 
   &:hover {
-    background: $buttonBackgroundColor;
-    border-color: $nypl-blue-dark;
-    color: $nypl-blue-dark;
+    background: $nypl-white;
+    border-color: $nypl-blue;
+    color: $nypl-blue;
   }
 }

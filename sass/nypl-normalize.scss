@@ -9,7 +9,7 @@
 @warn "remove magic numbers and convert to mixins?";
 
 body {
-  color: $pagetextcolor;
+  color: $page-text-color;
 }
 
 html {
@@ -94,11 +94,11 @@ a {
   }
 
   &:visited {
-    color: $linkvisitedcolor;
+    color: $link-visited-color;
   }
 
   &:hover, &:visited:hover {
-    color: $linkhovercolor;
+    color: $link-hover-color;
     text-decoration: underline;
   }
 }
@@ -109,7 +109,7 @@ a.inverted {
   }
 
   &:visited {
-    color: $invertedlinkvisitedcolor;
+    color: $inverted-link-visited-color;
   }
 
   &:hover, &:visited:hover {
