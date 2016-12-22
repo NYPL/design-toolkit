@@ -641,10 +641,9 @@ pre {
   background-color: white;
   display: inline-block;
   fill: #100f0e;
-  height: 1em;
-  width: 1em;
-  speak: none;
-  width: 10em; }
+  height: 10em;
+  width: 10em;
+  speak: none; }
   .nypl-icon.reversed {
     background-color: inherit;
     fill: white; }

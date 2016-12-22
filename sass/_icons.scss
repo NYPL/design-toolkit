@@ -6,13 +6,13 @@
   font-style:normal
 }
 
-@mixin nypl-icon($fill: $pagetextcolor, $background-color: white, $inverted-color: $invertedlinkcolor, $as-font: false, $font-content: "") {
+@mixin nypl-icon($fill: $pagetextcolor, $background-color: white, $inverted-color: $invertedlinkcolor, $as-font: false, $font-content: "", $width: 1em, $height: 1em) {
   @if ($as-font == false) {
     background-color: $background-color;
     display: inline-block;
     fill: $fill;
-    height: 1em;
-    width: 1em;
+    height: $width;
+    width: $height;
     speak:none;
 
     &.reversed {
