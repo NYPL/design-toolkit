@@ -1,4 +1,4 @@
-@warn "_colors.scss no using set from Marketing";
+@warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to ";
 // nypl _colors.scss
 // NYPL Reds
 $nypl-red: #d0343a;
@@ -14,7 +14,7 @@ $nypl-blue-dark: #135772;
 
 $nypl-blue-tint: tint($nypl-blue, 30%);
 
-// NYPL Monochromes
+// NYPL Monochromatic
 $nypl-gray-cool: #76777b;
 
 $nypl-gray: #776e64;
@@ -44,9 +44,9 @@ $nypl-green-dark: #497629;
 $nypl-green-tint: tint($nypl-green, 40%);
 
 // semantic colors
-$nyplsearchcolor: $nypl-gray;
-$nyplsearchcolordark: darken($nyplsearchcolor, 10%);
-$nyplsearchcolorlight: lighten($nyplsearchcolor, 30%);
+$nypl-search-color: $nypl-gray;
+$nypl-search-color-dark: darken($nypl-search-color, 10%);
+$nypl-search-color-light: lighten($nypl-search-color, 30%);
 
 $focuscolor: $nypl-orange;
 
@@ -70,3 +70,5 @@ $invertedlinkvisitedcolor: darken($inverted-link-color, 10%);
 $buttonTextColor: $nypl-dark-gray;
 
 $buttonBackgroundColor: $background-color;
+
+//
