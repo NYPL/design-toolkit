@@ -201,10 +201,6 @@ header {
       }
     }
 
-    a {
-      text-decoration: underline;
-    }
-
     li > a, button.collapsible {
       background-color: $nypl-red;
       border: none;
@@ -264,6 +260,10 @@ header {
     a.active:after {
       transform: scaleY(-1);
     }
+
+    .subscribe-button {
+      @include basic-button($border-width: 0.0625rem, $border-color: white);
+    }
   }
 
   .login-toggle { // should be renamed
@@ -299,10 +299,6 @@ header {
       display: inline-block;
       margin-right: 1em;
       text-transform: none;
-    }
-
-    a:link {
-      text-decoration: underline;
     }
 
     > a, button.collapsible {
