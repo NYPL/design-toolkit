@@ -8,7 +8,6 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-
 @mixin basic-button ($text-color: white, $border-color: $buttonTextColor, $background-color: $nyplsearchcolordark, $border-radius: 0, $border-width: 0.125rem, $disabled-color: $nypllightgray) {
   background-color: $background-color;
   border: $border-width solid $border-color;
@@ -48,11 +47,11 @@
 }
 
 @mixin request-button {
-  @include basic-button ($text-color: $buttonBackgroundColor, $border-color: $nyplbluedark, $background-color: $nyplbluedark, $border-radius: 0.25rem);
+  @include basic-button ($text-color: $nypl-white, $border-color: $nypl-blue, $background-color: $nypl-blue, $border-radius: 0.25rem);
 
   &:hover {
-    background: $buttonBackgroundColor;
-    border-color: $nyplbluedark;
-    color: $nyplbluedark;
+    background: $nypl-white;
+    border-color: $nypl-blue;
+    color: $nypl-blue;
   }
 }

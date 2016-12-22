@@ -45,7 +45,7 @@ $collapsed-nav-height: 30px;
 
 .main-menu-toggle {
   @include media($mobile-breakpoint) {
-    background-color: $nyplred;
+    background-color: $nypl-red;
     color: white !important;
     display: block;
     margin: 0 -1rem;
@@ -54,7 +54,7 @@ $collapsed-nav-height: 30px;
     text-decoration: none;
 
     .nypl-icon {
-      @include nypl-icon(white, $nyplred);
+      @include nypl-icon(white, $nypl-red);
     }
   }
 }
@@ -72,7 +72,7 @@ $collapsed-nav-height: 30px;
 
 .nypl-logo {
   background: url("../img/nypl.svg") no-repeat scroll 0px 0px/#{$logo-width} auto white;
-  border: none;
+  border: 0;
   display: block;
   font-size: 0;
   height: $logo-height;
@@ -110,7 +110,7 @@ header {
   }
 
   .service {
-    background-color: $nyplred;
+    background-color: $nypl-red;
 
     @include media($mobile-breakpoint) {
       display: table-footer-group;
@@ -124,7 +124,7 @@ header {
 
   &.collapsed {
      // using absolute px because each site might use different font-size
-     border-bottom: 2px solid $nypllightgray;
+     border-bottom: 2px solid $nypl-light-gray;
      position: relative;
 
     .main-menu-toggle {
@@ -133,7 +133,7 @@ header {
 
     .collapsed-menu-toggle {
       bottom: 0;
-      color: $pagetextcolor;
+      color: $page-text-color;
       display: block;
       font-size: 12px;
       font-weight: bold;
@@ -206,7 +206,7 @@ header {
     }
 
     li > a, button.collapsible {
-      background-color: $nyplred;
+      background-color: $nypl-red;
       border: none;
       color: white;
       display: block;
@@ -222,17 +222,17 @@ header {
       white-space: nowrap;
 
       .nypl-icon {
-        @include nypl-icon(white, $nyplred);
+        @include nypl-icon(white, $nypl-red);
         transition: all $hover-time;
       }
 
       &:hover, &.active {
         background-color: white;
-        color: $nyplred;
+        color: $nypl-red;
 
         .nypl-icon {
           background-color: white;
-          fill: $nyplred;
+          fill: $nypl-red;
         }
       }
 
@@ -244,7 +244,7 @@ header {
 
       &.donate {
         background-color: white;
-        color: $nyplred;
+        color: $nypl-red;
       }
 
       &.donate:hover {
@@ -278,7 +278,7 @@ header {
     }
 
     div {
-      background-color: $nyplsearchcolor;
+      background-color: $nypl-search-color;
       color: white;
       font-size: 1rem;
       padding: 1rem;
@@ -306,7 +306,7 @@ header {
     }
 
     > a, button.collapsible {
-      background-color: $nyplgray;
+      background-color: $nypl-gray;
       color: white;
       display: inline-block;
       font-weight: bold;
@@ -314,7 +314,7 @@ header {
       transition: all $hover-time;
 
       .nypl-icon {
-        @include nypl-icon(white, $nyplgray);
+        @include nypl-icon(white, $nypl-gray);
         transition: all $hover-time;
       }
 
@@ -324,11 +324,11 @@ header {
 
       &:hover {
         background-color: white;
-        color: $nyplgray;
+        color: $nypl-gray;
 
         .nypl-icon {
           background-color: white;
-          fill: $nyplgray;
+          fill: $nypl-gray;
         }
       }
 
@@ -365,7 +365,7 @@ header {
 
   .email-toggle {
     form {
-      background-color: $nyplsearchcolor;
+      background-color: $nypl-search-color;
       color: white;
       font-size: 1rem;
       min-width: 17rem;
@@ -390,7 +390,7 @@ header {
 
     fieldset {
       border: none;
-      color: $pagetextcolor;
+      color: $page-text-color;
       margin: 1em 0 0.5em;
       padding: 0;
       position: relative;
@@ -428,7 +428,7 @@ header {
       margin-top: 1rem;
 
       li {
-        border-bottom: 1px solid $nypllightgray;
+        border-bottom: 1px solid $nypl-light-gray;
         float: left;
         height: auto;
         line-height: 2;
@@ -448,7 +448,7 @@ header {
 
     a {
       border: none;
-      color: $pagecolor;
+      color: $page-color;
       display: block;
       overflow: hidden;
       padding: 0.2em 0.4em 0.2em;
@@ -458,18 +458,18 @@ header {
       white-space: nowrap;
 
       &:hover {
-        color: $nyplred;
+        color: $nypl-red;
       }
 
     }
 
     li {
-      box-shadow: inset 0 0 0 $nyplred;
+      box-shadow: inset 0 0 0 $nypl-red;
       transition: box-shadow 0.2s;
     }
 
     li:hover, li.active {
-      box-shadow: inset 0 -4px 0 $nyplred;
+      box-shadow: inset 0 -4px 0 $nypl-red;
     }
 
   }
@@ -484,7 +484,7 @@ header {
     }
 
     #main-search {
-      background-color: $nyplsearchcolor;
+      background-color: $nypl-search-color;
       margin: 0;
       position: relative;
 
@@ -501,7 +501,7 @@ header {
       }
 
       .search-select {
-        background-color: $nyplsearchcolor;
+        background-color: $nypl-search-color;
         font-size: 0.9rem;
         right: 0;
         padding: 1px 3px 3px 3px;
@@ -518,11 +518,11 @@ header {
         padding: 0 0.75rem 0 0.5rem;
 
         &.selected {
-          background-color: $nyplsearchcolorlight;
+          background-color: $nypl-search-color-light;
         }
 
         &.focus {
-          box-shadow: inset 0 0 0 3px $focuscolor;
+          box-shadow: inset 0 0 0 3px $focus-color;
         }
 
         input:focus {
@@ -541,7 +541,7 @@ header {
 
       .form-text {
         @include input;
-        box-shadow: inset 0 0 0 2px $nyplsearchcolordark;
+        box-shadow: inset 0 0 0 2px $nypl-search-color-dark;
         height: 2rem;
         margin-right: 1px;
         padding: 0;
@@ -555,8 +555,8 @@ header {
 
         &:focus {
           background-color: white;
-          box-shadow: inset 0 0 0 4px $focuscolor !important;
-          color: $nyplsearchcolordark;
+          box-shadow: inset 0 0 0 4px $focus-color !important;
+          color: $nypl-search-color-dark;
           outline: none;
         }
       }

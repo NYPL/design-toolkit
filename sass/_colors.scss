@@ -1,37 +1,77 @@
-@warn '_colors.scss TODO: employ NYPL color set from marketing... can i get an ugh?';
-// colors
-$nyplgray: #7B756F;
-$nypldarkgray: darken($nyplgray, 40%);
-$nypllightgray: lighten($nyplgray, 40%);
-$nyplyellow: #FEE24A;
-$nyplorange: #ffb81d;
-$nyplred: #e32b31;
-$nypldarkgreen: #4C842E;
-$nypllightgreen: lighten($nypldarkgreen, 20%);
-$nyplblue: #1DA1D4;
-$nyplbluedark: #1980a9;
+@warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to prefix nypl automatically to each variable...";
+// nypl _colors.scss
+// NYPL Reds
+$nypl-red: #d0343a;
+
+$nypl-red-dark: #97272c;
+
+$nypl-red-tint: tint($nypl-red, 30%);
+
+// NYPL Blues
+$nypl-blue: #2799c5;
+
+$nypl-blue-dark: #135772;
+
+$nypl-blue-tint: tint($nypl-blue, 30%);
+
+// NYPL Monochromatic
+$nypl-gray-cool: #76777b;
+
+$nypl-gray: #776e64;
+
+$nypl-gray-brown: #54514a;
+
+$nypl-dark-gray: darken($nypl-gray, 40%);
+
+$nypl-light-gray: lighten($nypl-gray, 40%);
+
+$nypl-white: #fff;
+
+$nypl-black: #111;
+
+// NYPL Yellows for Alerts & Focus halos etc.
+$nypl-yellow: #fee24a;
+
+$nypl-yellow-tint: tint($nypl-yellow, 50%);
+
+$nypl-orange: #ffb81d;
+
+$nypl-organe-destaurated: desaturate($nypl-orange, 40%);
+
+// NYPL Greens
+$nypl-green: #799a05;
+
+$nypl-green-dark: #497629;
+
+$nypl-green-tint: tint($nypl-green, 40%);
 
 // semantic colors
-$nyplsearchcolor: $nyplgray;
-$nyplsearchcolordark: darken($nyplsearchcolor, 10%);
-$nyplsearchcolorlight: lighten($nyplsearchcolor, 30%);
-$focuscolor: $nyplorange;
-$pagecolor: $nypldarkgray;
-$pagecolorlight: $nypllightgray;
-$pagetextcolor: $nypldarkgray;
-$footercolor: #54514A;
-$highlightcolor: $nyplred;
-$alertcolor: $nyplyellow;
-$backgroundcolor: #fff;
+$nypl-search-color: $nypl-gray;
+$nypl-search-color-dark: darken($nypl-search-color, 10%);
+$nypl-search-color-light: lighten($nypl-search-color, 30%);
+
+$focus-color: $nypl-orange;
+
+$page-color: $nypl-dark-gray;
+$page-colorlight: $nypl-light-gray;
+$page-text-color: $nypl-dark-gray;
+
+$nypl-footer-color: $nypl-gray-brown;
+$highlight-color: $nypl-red;
+$alert-color: $nypl-yellow;
+$background-color: $nypl-white;
 
 // link colors
-$linkcolor: $nyplbluedark;
-$linkvisitedcolor: darken($linkcolor, 10%);
-$linkhovercolor: lighten($linkcolor, 10%);
-$invertedlinkcolor: white;
-$invertedlinkvisitedcolor: darken($invertedlinkcolor, 10%);
+$link-color: $nypl-blue;
+$link-visited-color: darken($link-color, 10%);
+$link-hover-color: lighten($link-color, 10%);
+$inverted-link-color: $nypl-white;
+$inverted-link-visited-color: darken($inverted-link-color, 10%);
 
 // button colors not already defined above.
-$buttonTextColor: $nypldarkgray;
+$button-text-color: $nypl-dark-gray;
 
-$buttonBackgroundColor: $backgroundcolor;
+$button-border-color: $nypl-dark-gray;
+
+$button-background-color: $nypl-white;
+//
