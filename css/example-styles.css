@@ -838,20 +838,6 @@ code {
 legend {
   display: table; }
 
-input[type=button], input[type=submit] {
-  background-color: #c0bab4;
-  border: none;
-  padding: 0;
-  background-color: #5b544d;
-  color: white;
-  height: 2rem;
-  padding: 0 1rem; }
-  input[type=button]:focus, input[type=submit]:focus {
-    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-    box-shadow: inset 0 0 0 4px #ffb81d;
-    outline: none; }
-
 a {
   text-decoration: underline; }
   a:link {
@@ -1318,10 +1304,9 @@ header li.search #main-search {
   margin: 0;
   position: relative; }
   header li.search #main-search .search-button {
-    background-color: #c0bab4;
-    border: none;
-    padding: 0;
     background-color: #5b544d;
+    border: 0 solid #080807;
+    border-radius: 0;
     color: white;
     cursor: pointer;
     font-size: 1rem;
@@ -1333,7 +1318,7 @@ header li.search #main-search {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     header li.search #main-search .search-button:hover {
-      background-color: #9fa3a8;
+      background-color: #a4abb2;
       color: black; }
     header li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -1342,9 +1327,9 @@ header li.search #main-search {
       outline: none; }
     header li.search #main-search .search-button.disabled, header li.search #main-search .search-button[disabled="disabled"], header li.search #main-search .search-button[disabled], header li.search #main-search .search-button[disabled=true] {
       cursor: default;
-      background-color: #dddbd9; }
+      background-color: #d7d4d0; }
       header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
-        background-color: #dddbd9;
+        background-color: #d7d4d0;
         color: white; }
   header li.search #main-search.display {
     display: block; }
@@ -1998,19 +1983,39 @@ fieldset.alphabetical {
     margin-left: 0.5em; }
   fieldset.alphabetical button {
     background-color: #c0bab4;
-    border: none;
+    border: 0 solid #080807;
+    border-radius: 0;
     color: #080807;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 2rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
     display: inline-block !important;
     font-weight: normal;
     margin: 0 0 0.5em 0.5em;
     padding: 0.2rem 0.25em;
     width: 2em; }
     fieldset.alphabetical button:hover {
-      background-color: white; }
-  fieldset.alphabetical button[disabled=true] {
-    background-color: #d7d4d0; }
-  fieldset.alphabetical button.long {
-    min-width: 4.75em; }
+      background-color: #3f454b;
+      color: #f7f7f8; }
+    fieldset.alphabetical button:focus {
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      outline: none; }
+    fieldset.alphabetical button.disabled, fieldset.alphabetical button[disabled="disabled"], fieldset.alphabetical button[disabled], fieldset.alphabetical button[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      fieldset.alphabetical button.disabled:hover, fieldset.alphabetical button[disabled="disabled"]:hover, fieldset.alphabetical button[disabled]:hover, fieldset.alphabetical button[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #080807; }
+    fieldset.alphabetical button.long {
+      min-width: 4.75em; }
 
 fieldset.radiogroup {
   background-color: #c0bab4;
@@ -2031,8 +2036,8 @@ fieldset.radiogroup {
     margin-right: 0.25rem; }
 
 .search-button {
-  background-color: #605c57;
-  border: 0 solid #100f0e;
+  background-color: #5b544d;
+  border: 0 solid #080807;
   border-radius: 0;
   color: white;
   cursor: pointer;
@@ -2045,7 +2050,7 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .search-button:hover {
-    background-color: #9fa3a8;
+    background-color: #a4abb2;
     color: black; }
   .search-button:focus {
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2054,16 +2059,16 @@ fieldset.radiogroup {
     outline: none; }
   .search-button.disabled, .search-button[disabled="disabled"], .search-button[disabled], .search-button[disabled=true] {
     cursor: default;
-    background-color: #dddbd9; }
+    background-color: #d7d4d0; }
     .search-button.disabled:hover, .search-button[disabled="disabled"]:hover, .search-button[disabled]:hover, .search-button[disabled=true]:hover {
-      background-color: #dddbd9;
+      background-color: #d7d4d0;
       color: white; }
 
 .my-button-class {
-  background-color: #fff;
-  border: #080807 solid 0.125rem;
+  background-color: #5b544d;
+  border: 0.125rem solid #080807;
   border-radius: 0;
-  color: #080807;
+  color: white;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -2074,12 +2079,23 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-button-class:hover {
-    background: black;
-    color: #f7f7f8; }
+    background-color: #a4abb2;
+    color: black; }
+  .my-button-class:focus {
+    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+    box-shadow: inset 0 0 0 4px #ffb81d;
+    outline: none; }
+  .my-button-class.disabled, .my-button-class[disabled="disabled"], .my-button-class[disabled], .my-button-class[disabled=true] {
+    cursor: default;
+    background-color: #d7d4d0; }
+    .my-button-class.disabled:hover, .my-button-class[disabled="disabled"]:hover, .my-button-class[disabled]:hover, .my-button-class[disabled=true]:hover {
+      background-color: #d7d4d0;
+      color: white; }
 
 .request-button {
   background-color: #2799c5;
-  border: #2799c5 solid 0.125rem;
+  border: 0.125rem solid #2799c5;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
@@ -2092,7 +2108,7 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .request-button:hover {
-    background: #d8663a;
+    background-color: #d8663a;
     color: black; }
   .request-button:focus {
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2101,9 +2117,9 @@ fieldset.radiogroup {
     outline: none; }
   .request-button.disabled, .request-button[disabled="disabled"], .request-button[disabled], .request-button[disabled=true] {
     cursor: default;
-    background-color: #dddbd9; }
+    background-color: #d7d4d0; }
     .request-button.disabled:hover, .request-button[disabled="disabled"]:hover, .request-button[disabled]:hover, .request-button[disabled=true]:hover {
-      background-color: #dddbd9;
+      background-color: #d7d4d0;
       color: #fff; }
   .request-button:hover {
     background: #fff;
@@ -2111,10 +2127,10 @@ fieldset.radiogroup {
     color: #2799c5; }
 
 .my-rounded-button {
-  background-color: #fff;
-  border: #080807 solid 0.125rem;
+  background-color: #5b544d;
+  border: 0.125rem solid #080807;
   border-radius: 1rem;
-  color: #080807;
+  color: white;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -2125,8 +2141,19 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-rounded-button:hover {
-    background: black;
-    color: #f7f7f8; }
+    background-color: #a4abb2;
+    color: black; }
+  .my-rounded-button:focus {
+    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+    box-shadow: inset 0 0 0 4px #ffb81d;
+    outline: none; }
+  .my-rounded-button.disabled, .my-rounded-button[disabled="disabled"], .my-rounded-button[disabled], .my-rounded-button[disabled=true] {
+    cursor: default;
+    background-color: #d7d4d0; }
+    .my-rounded-button.disabled:hover, .my-rounded-button[disabled="disabled"]:hover, .my-rounded-button[disabled]:hover, .my-rounded-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      color: white; }
 
 .row {
   margin: 0 -0.5rem;

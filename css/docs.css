@@ -418,10 +418,9 @@ header li.search #main-search {
   margin: 0;
   position: relative; }
   header li.search #main-search .search-button {
-    background-color: #c0bab4;
-    border: none;
-    padding: 0;
     background-color: #5b544d;
+    border: 0 solid #080807;
+    border-radius: 0;
     color: white;
     cursor: pointer;
     font-size: 1rem;
@@ -433,7 +432,7 @@ header li.search #main-search {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     header li.search #main-search .search-button:hover {
-      background-color: #9fa3a8;
+      background-color: #a4abb2;
       color: black; }
     header li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -442,9 +441,9 @@ header li.search #main-search {
       outline: none; }
     header li.search #main-search .search-button.disabled, header li.search #main-search .search-button[disabled="disabled"], header li.search #main-search .search-button[disabled], header li.search #main-search .search-button[disabled=true] {
       cursor: default;
-      background-color: #dddbd9; }
+      background-color: #d7d4d0; }
       header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
-        background-color: #dddbd9;
+        background-color: #d7d4d0;
         color: white; }
   header li.search #main-search.display {
     display: block; }

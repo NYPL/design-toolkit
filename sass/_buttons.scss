@@ -8,7 +8,7 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($text-color: white, $border-color: $buttonTextColor, $background-color: $nyplsearchcolordark, $border-radius: 0, $border-width: 0.125rem, $disabled-color: $nypllightgray) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $button-border-color, $background-color: $nypl-search-color-dark, $border-radius: 0, $border-width: 0.125rem, $disabled-color: $nypl-light-gray) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
@@ -27,7 +27,7 @@
   }
 
   &:focus {
-    @include box-shadow(inset 0 0 0 4px $focuscolor);
+    @include box-shadow(inset 0 0 0 4px $focus-color);
     outline: none;
   }
 
