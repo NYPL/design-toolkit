@@ -504,7 +504,7 @@ header li.search #main-search {
   font-weight: 400;
   font-style: normal; }
 footer {
-  background-color: #54514A;
+  background-color: #54514a;
   color: white;
   font-size: 0.9rem;
   margin-top: 5rem; }
@@ -629,7 +629,7 @@ pre {
     width: 100%; }
 
 .toolkit-example-dark {
-  background: #54514A; }
+  background: #54514a; }
   .toolkit-example-dark:before {
     background-color: #fff; }
 
