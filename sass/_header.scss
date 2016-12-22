@@ -1,6 +1,7 @@
 @import "measurements";
 @import "microformats-mixins";
 @import "media-queries";
+@import "buttons";
 
 $logo-width: 5rem;
 $logo-height: 3rem;
@@ -488,7 +489,7 @@ header {
       position: relative;
 
       .search-button {
-        @include simple-button;
+        @include basic-button($border-width: 0);
       }
 
       &.display {

@@ -136,6 +136,10 @@ fieldset.radiogroup {
 }
 
 // buttons
+.search-button {
+  @include basic-button($border-width: 0);
+}
+
 .my-button-class {
   @include basic-button;
 }

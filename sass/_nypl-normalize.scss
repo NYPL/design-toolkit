@@ -82,10 +82,6 @@ legend {
   display: table;
 }
 
-input[type=button], input[type=submit] {
-  @include simple-button;
-}
-
 a {
   text-decoration: underline;
 

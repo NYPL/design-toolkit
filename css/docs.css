@@ -1,111 +1,666 @@
-/*
-Error: Undefined mixin 'simple-button'.
-        on line 491 of sass/_header.scss, in `simple-button'
-        from line 491 of sass/_header.scss
-        from line 7 of sass/docs.scss
+@font-face {
+  font-family: nypl-moon;
+  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85");
+  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85#iefix") format("embedded-opentype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff2?viik85") format("woff2"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.ttf?viik85") format("truetype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff?viik85") format("woff"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.svg?viik85#nypl-moon") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+a {
+  border-radius: 0; }
 
-Backtrace:
-sass/_header.scss:491:in `simple-button'
-sass/_header.scss:491
-sass/docs.scss:7
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/mga/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'simple-button'.\A         on line 491 of sass/_header.scss, in `simple-button'\A         from line 491 of sass/_header.scss\A         from line 7 of sass/docs.scss"; }
+a:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.1875rem; }
+
+input {
+  border-radius: 0; }
+
+input:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.1875rem; }
+
+select {
+  border-radius: 0; }
+
+select:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.1875rem; }
+
+button {
+  border-radius: 0; }
+
+button:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.1875rem; }
+
+button.collapsible {
+  border: none;
+  cursor: pointer; }
+
+.alert {
+  background-color: #FEE24A;
+  padding: 0.8rem 0; }
+
+.horizontal {
+  display: table-cell;
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  .horizontal:before, .horizontal:after {
+    content: "";
+    display: table; }
+  .horizontal:after {
+    clear: both; }
+  @media (max-width: 965px) {
+    .horizontal {
+      float: none; } }
+  .horizontal li {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0.35em;
+    vertical-align: bottom; }
+    .horizontal li:last-child {
+      margin-right: 0; }
+
+.collapsed-menu-toggle, .main-menu-toggle {
+  display: none; }
+
+@media (max-width: 965px) {
+  .main-menu-toggle {
+    background-color: #e32b31;
+    color: white !important;
+    display: block;
+    margin: 0 -1rem;
+    padding-right: 1rem;
+    text-align: right;
+    text-decoration: none; }
+    .main-menu-toggle .nypl-icon {
+      background-color: #e32b31;
+      display: inline-block;
+      fill: white;
+      height: 1em;
+      width: 1em;
+      speak: none; }
+      .main-menu-toggle .nypl-icon.reversed {
+        background-color: inherit;
+        fill: white; } }
+
+.logo {
+  position: absolute;
+  width: 5rem; }
+  @media (max-width: 965px) {
+    .logo {
+      float: none;
+      margin-right: 0.5rem;
+      position: relative; } }
+
+.nypl-logo {
+  background: url("../img/nypl.svg") no-repeat scroll 0px 0px/5rem auto white;
+  border: none;
+  display: block;
+  font-size: 0;
+  height: 3rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.1rem;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+  width: 5rem; }
+  @media (max-width: 965px) {
+    .nypl-logo {
+      background: url("../img/lion.svg") no-repeat scroll 0px 0px/2.5rem auto white;
+      margin-right: 0.5rem;
+      width: 3rem; } }
+
+header .content-wrapper {
+  max-width: calc(82rem - 2rem);
+  padding: 0 1rem; }
+  @media (max-width: 965px) {
+    header .content-wrapper {
+      margin: 0; } }
+header .content {
+  position: relative; }
+  header .content:before, header .content:after {
+    content: "";
+    display: table; }
+  header .content:after {
+    clear: both; }
+  @media (max-width: 965px) {
+    header .content {
+      width: 100%; } }
+header .service {
+  background-color: #e32b31; }
+  @media (max-width: 965px) {
+    header .service {
+      display: table-footer-group; } }
+@media (max-width: 965px) {
+  header {
+    display: table;
+    width: 100%; } }
+header.collapsed {
+  border-bottom: 2px solid #dddbd9;
+  position: relative; }
+  header.collapsed .main-menu-toggle {
+    display: none; }
+  header.collapsed .collapsed-menu-toggle {
+    bottom: 0;
+    color: #100f0e;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    text-transform: uppercase; }
+  header.collapsed .logo {
+    height: 30px;
+    overflow: hidden; }
+  header.collapsed .nypl-logo {
+    background: url("../img/lion.svg") no-repeat scroll 0px 0px/3rem auto white;
+    background-position-y: -4px;
+    margin: 0; }
+  header.collapsed .service-buttons {
+    min-height: 10px; }
+    header.collapsed .service-buttons li {
+      display: none; }
+  header.collapsed .nav-buttons {
+    font-size: 0;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 0;
+    text-transform: uppercase; }
+    header.collapsed .nav-buttons li {
+      box-shadow: none; }
+    header.collapsed .nav-buttons a {
+      padding: 0.1em 0.4em 0.1em; }
+    header.collapsed .nav-buttons .search {
+      display: none; }
+header .service-buttons {
+  font-size: 0.8rem;
+  padding: 0;
+  text-transform: uppercase; }
+  @media (max-width: 965px) {
+    header .service-buttons {
+      display: none;
+      padding-top: 5px;
+      width: 100%; }
+      header .service-buttons li {
+        border-bottom: 1px solid white;
+        float: left;
+        line-height: 2;
+        margin: 0 0 5px 0;
+        width: 50%; } }
+  header .service-buttons a {
+    text-decoration: underline; }
+  header .service-buttons li > a, header .service-buttons button.collapsible {
+    background-color: #e32b31;
+    border: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 0 0.5em;
+    padding-right: 1em;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    transition: all 0.1s;
+    white-space: nowrap; }
+    header .service-buttons li > a .nypl-icon, header .service-buttons button.collapsible .nypl-icon {
+      background-color: #e32b31;
+      display: inline-block;
+      fill: white;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      transition: all 0.1s; }
+      header .service-buttons li > a .nypl-icon.reversed, header .service-buttons button.collapsible .nypl-icon.reversed {
+        background-color: inherit;
+        fill: white; }
+    header .service-buttons li > a:hover, header .service-buttons li > a.active, header .service-buttons button.collapsible:hover, header .service-buttons button.collapsible.active {
+      background-color: white;
+      color: #e32b31; }
+      header .service-buttons li > a:hover .nypl-icon, header .service-buttons li > a.active .nypl-icon, header .service-buttons button.collapsible:hover .nypl-icon, header .service-buttons button.collapsible.active .nypl-icon {
+        background-color: white;
+        fill: #e32b31; }
+    header .service-buttons li > a.active .nypl-icon, header .service-buttons button.collapsible.active .nypl-icon {
+      transform: scaleY(-1); }
+    header .service-buttons li > a.donate, header .service-buttons button.collapsible.donate {
+      background-color: white;
+      color: #e32b31; }
+    header .service-buttons li > a.donate:hover, header .service-buttons button.collapsible.donate:hover {
+      background-color: white; }
+header .email-toggle {
+  position: relative; }
+  header .email-toggle a:after {
+    transition: all 0.1s; }
+  header .email-toggle a.active:after {
+    transform: scaleY(-1); }
+header .login-toggle {
+  font-size: 0.8rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 1.5rem; }
+  header .login-toggle button {
+    text-transform: uppercase; }
+  header .login-toggle div {
+    background-color: #7B756F;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    position: absolute;
+    right: 0;
+    text-transform: none;
+    z-index: 1; }
+  header .login-toggle a.inverted {
+    display: block;
+    margin-bottom: 1em;
+    white-space: nowrap; }
+  header .login-toggle .welcome-message {
+    display: inline-block;
+    margin-right: 1em;
+    text-transform: none; }
+  header .login-toggle a:link {
+    text-decoration: underline; }
+  header .login-toggle > a, header .login-toggle button.collapsible {
+    background-color: #7B756F;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 0.5em;
+    transition: all 0.1s; }
+    header .login-toggle > a .nypl-icon, header .login-toggle button.collapsible .nypl-icon {
+      background-color: #7B756F;
+      display: inline-block;
+      fill: white;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      transition: all 0.1s; }
+      header .login-toggle > a .nypl-icon.reversed, header .login-toggle button.collapsible .nypl-icon.reversed {
+        background-color: inherit;
+        fill: white; }
+    header .login-toggle > a:link, header .login-toggle button.collapsible:link {
+      text-decoration: none; }
+    header .login-toggle > a:hover, header .login-toggle button.collapsible:hover {
+      background-color: white;
+      color: #7B756F; }
+      header .login-toggle > a:hover .nypl-icon, header .login-toggle button.collapsible:hover .nypl-icon {
+        background-color: white;
+        fill: #7B756F; }
+    header .login-toggle > a.active .nypl-icon, header .login-toggle button.collapsible.active .nypl-icon {
+      transform: scaleY(-1); }
+  @media (max-width: 965px) {
+    header .login-toggle {
+      top: -2rem; }
+      header .login-toggle .welcome-message {
+        display: none; } }
+header.collapsed .login-toggle {
+  right: 110px;
+  top: 9px; }
+  @media (max-width: 965px) {
+    header.collapsed .login-toggle {
+      font-size: 12px;
+      top: -19px; }
+      header.collapsed .login-toggle div {
+        right: -100%; } }
+header .email-toggle form {
+  background-color: #7B756F;
+  color: white;
+  font-size: 1rem;
+  min-width: 17rem;
+  position: absolute;
+  padding: 1rem;
+  right: 0;
+  text-transform: none;
+  z-index: 1; }
+  @media (max-width: 965px) {
+    header .email-toggle form {
+      left: 0;
+      right: auto; } }
+header .email-toggle .email-toggle-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0; }
+header .email-toggle fieldset {
+  border: none;
+  color: #100f0e;
+  margin: 1em 0 0.5em;
+  padding: 0;
+  position: relative; }
+header .email-toggle label {
+  display: block;
+  font-weight: bold;
+  margin-left: 0.5em;
+  position: absolute; }
+header .email-toggle input[type=text] {
+  background-color: #c5c2be;
+  border: none;
+  padding: 0;
+  -webkit-box-shadow: inset 0 0 0 2px #c5c2be;
+  -moz-box-shadow: inset 0 0 0 2px #c5c2be;
+  box-shadow: inset 0 0 0 2px #c5c2be;
+  height: 2rem;
+  margin-right: 1px;
+  padding: 1.5em 0 0;
+  text-indent: 0.5rem;
+  transition: all 0.2s ease-out;
+  width: 100%; }
+  header .email-toggle input[type=text].active {
+    width: 16rem; }
+  header .email-toggle input[type=text]:focus {
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
+    -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
+    box-shadow: inset 0 0 0 4px #ffb81d !important;
+    color: #605c57;
+    outline: none; }
+header .email-toggle .links {
+  margin: 1em 0 0; }
+header .nav-buttons {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: calc(3rem + 1rem); }
+  header .nav-buttons:before, header .nav-buttons:after {
+    content: "";
+    display: table; }
+  header .nav-buttons:after {
+    clear: both; }
+  @media (max-width: 1120px) {
+    header .nav-buttons {
+      font-size: 0.9rem; } }
+  @media (max-width: 965px) {
+    header .nav-buttons {
+      display: none;
+      font-size: 1.2rem;
+      margin-top: 1rem; }
+      header .nav-buttons li {
+        border-bottom: 1px solid #dddbd9;
+        float: left;
+        height: auto;
+        line-height: 2;
+        margin: 0 0 5px 0;
+        width: 50%; }
+      header .nav-buttons li.search {
+        border: none;
+        font-size: 1rem;
+        position: relative;
+        right: initial;
+        top: initial;
+        width: 100%; } }
+  header .nav-buttons a {
+    border: none;
+    color: #100f0e;
+    display: block;
+    overflow: hidden;
+    padding: 0.2em 0.4em 0.2em;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all 0.1s;
+    white-space: nowrap; }
+    header .nav-buttons a:hover {
+      color: #e32b31; }
+  header .nav-buttons li {
+    box-shadow: inset 0 0 0 #e32b31;
+    transition: box-shadow 0.2s; }
+  header .nav-buttons li:hover, header .nav-buttons li.active {
+    box-shadow: inset 0 -4px 0 #e32b31; }
+header li.search #main-search {
+  background-color: #7B756F;
+  margin: 0;
+  position: relative; }
+  header li.search #main-search .search-button {
+    background-color: #605c57;
+    border: 0 solid #100f0e;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 2rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    header li.search #main-search .search-button:hover {
+      background-color: #9fa3a8;
+      color: black; }
+    header li.search #main-search .search-button:focus {
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      outline: none; }
+    header li.search #main-search .search-button.disabled, header li.search #main-search .search-button[disabled="disabled"], header li.search #main-search .search-button[disabled], header li.search #main-search .search-button[disabled=true] {
+      cursor: default;
+      background-color: #dddbd9; }
+      header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
+        background-color: #dddbd9;
+        color: white; }
+  header li.search #main-search.display {
+    display: block; }
+  header li.search #main-search .search-query-content {
+    position: relative; }
+  header li.search #main-search .search-select {
+    background-color: #7B756F;
+    font-size: 0.9rem;
+    right: 0;
+    padding: 1px 3px 3px 3px;
+    position: absolute;
+    top: 2rem;
+    white-space: nowrap; }
+  header li.search #main-search .search-radio-label {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2;
+    padding: 0 0.75rem 0 0.5rem; }
+    header li.search #main-search .search-radio-label label {
+      background-color: #c5c2be;
+      font-weight: normal !important;
+      padding: 0.1875rem 0; }
+    header li.search #main-search .search-radio-label input[type=radio], header li.search #main-search .search-radio-label input[type=checkbox] {
+      height: initial;
+      margin-right: 0.25rem; }
+    header li.search #main-search .search-radio-label.selected {
+      background-color: #c5c2be; }
+    header li.search #main-search .search-radio-label.focus {
+      box-shadow: inset 0 0 0 3px #ffb81d; }
+    header li.search #main-search .search-radio-label input:focus {
+      outline: none; }
+  header li.search #main-search .search-query-label {
+    color: white;
+    height: 2rem;
+    left: 0.5rem;
+    line-height: 2;
+    position: absolute; }
+  header li.search #main-search .form-text {
+    background-color: #c5c2be;
+    border: none;
+    padding: 0;
+    box-shadow: inset 0 0 0 2px #605c57;
+    height: 2rem;
+    margin-right: 1px;
+    padding: 0;
+    text-indent: 0.5rem;
+    transition: all 0.1s ease-out;
+    width: 10rem; }
+    header li.search #main-search .form-text.active {
+      width: 16rem; }
+    header li.search #main-search .form-text:focus {
+      background-color: white;
+      box-shadow: inset 0 0 0 4px #ffb81d !important;
+      color: #605c57;
+      outline: none; }
+  @media (max-width: 965px) {
+    header li.search #main-search .form-text, header li.search #main-search .search-button, header li.search #main-search .search-radio-label {
+      height: 2.5rem;
+      line-height: 2.5; }
+    header li.search #main-search .form-text, header li.search #main-search .form-text.active {
+      margin: 0;
+      width: 70%; }
+    header li.search #main-search .search-button {
+      margin: 0;
+      width: 30%; }
+    header li.search #main-search .search-select {
+      top: 2.5rem; } }
+
+@font-face {
+  font-family: nypl-moon;
+  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85");
+  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85#iefix") format("embedded-opentype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff2?viik85") format("woff2"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.ttf?viik85") format("truetype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff?viik85") format("woff"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.svg?viik85#nypl-moon") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+footer {
+  background-color: #54514A;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 5rem; }
+
+footer ul {
+  list-style: none;
+  margin: 1rem 0 1rem 0;
+  padding: 0; }
+  footer ul:before, footer ul:after {
+    content: "";
+    display: table; }
+  footer ul:after {
+    clear: both; }
+
+.copyright {
+  background: url("../img/nypl-rev.svg") no-repeat scroll 0px 0px/5rem auto transparent;
+  border: none;
+  display: block;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  white-space: nowrap; }
+  .copyright p {
+    padding-top: calc(3rem + 1em); }
+
+.footerLinks li {
+  margin-left: 0; }
+.footerLinks > li {
+  float: left;
+  width: 25%; }
+  @media (max-width: 965px) {
+    .footerLinks > li {
+      float: none;
+      width: auto; } }
+
+code {
+  padding: 0; }
+
+pre {
+  border: 0.0625rem solid #dddbd9; }
+
+.toolkit-example, .toolkit-example-dark {
+  border: 0.0625rem solid #dddbd9;
+  padding: 3rem 1rem 0.5rem;
+  position: relative; }
+  .toolkit-example:before, .toolkit-example-dark:before {
+    border: 0.0625rem solid #dddbd9;
+    border-left: none;
+    border-top: none;
+    color: #7B756F;
+    content: "EXAMPLE";
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+    left: 0;
+    padding: 0.3em 1rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0; }
+
+.my-text-field {
+  background-color: #c5c2be;
+  border: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  position: relative; }
+  .my-text-field label, .my-text-field span {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em; }
+  .my-text-field label {
+    display: block;
+    position: absolute; }
+  .my-text-field input[type=text] {
+    background-color: #c5c2be;
+    border: none;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #c5c2be;
+    -moz-box-shadow: inset 0 0 0 2px #c5c2be;
+    box-shadow: inset 0 0 0 2px #c5c2be;
+    height: 2rem;
+    margin-right: 1px;
+    padding: 1.5em 0 0;
+    text-indent: 0.5rem;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .my-text-field input[type=text].active {
+      width: 16rem; }
+    .my-text-field input[type=text]:focus {
+      background-color: white;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
+      box-shadow: inset 0 0 0 4px #ffb81d !important;
+      color: #605c57;
+      outline: none; }
+
+.my-select-box {
+  background-color: #c5c2be;
+  border: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  position: relative; }
+  .my-select-box label, .my-select-box span {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em; }
+  .my-select-box label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em; }
+  .my-select-box select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 98% 50% #c5c2be;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    height: 2rem;
+    padding-right: 7%;
+    text-indent: 0.5rem;
+    width: 100%; }
+
+.toolkit-example-dark {
+  background: #54514A; }
+  .toolkit-example-dark:before {
+    background-color: white; }
+
+.toolkit-svg-icon {
+  border: 1px dotted #dddbd9;
+  margin-right: 1rem; }
+
+.nypl-icon {
+  background-color: white;
+  display: inline-block;
+  fill: #100f0e;
+  height: 10em;
+  width: 10em;
+  speak: none; }
+  .nypl-icon.reversed {
+    background-color: inherit;
+    fill: white; }
+
+/*# sourceMappingURL=docs.css.map */
