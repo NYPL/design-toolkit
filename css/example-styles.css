@@ -787,15 +787,19 @@ html {
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 1.65; }
-
-html {
+  line-height: 1.65;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   -webkit-filter: none;
   filter: none; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   line-height: 1.5;
   margin-bottom: 0;
   margin-top: 1.5rem; }
@@ -827,7 +831,8 @@ ul {
 li {
   margin-left: 1.5rem; }
 
-code, pre {
+code,
+pre {
   background-color: #d7d4d0;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
 
@@ -847,17 +852,16 @@ a {
   a:hover, a:visited:hover {
     color: #45b1da;
     text-decoration: none; }
-
-a.inverted:link {
-  color: #fff; }
-a.inverted:visited {
-  color: #e6e6e6; }
-a.inverted:hover, a.inverted:visited:hover {
-  color: #fff; }
+  a.inverted:link {
+    color: #fff; }
+  a.inverted:visited {
+    color: #e6e6e6; }
+  a.inverted:hover, a.inverted:visited:hover {
+    color: #fff; }
 
 #skip a {
-  background-color: white;
-  border: none;
+  background-color: #fff;
+  border: 0;
   color: #2799c5;
   display: block;
   font-size: 13px;
@@ -1129,7 +1133,7 @@ header .email-toggle {
     background-color: #5b544d;
     border: 0.0625rem solid white;
     border-radius: 0;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
@@ -1152,7 +1156,7 @@ header .email-toggle {
       background-color: #d7d4d0; }
       header .email-toggle .subscribe-button.disabled:hover, header .email-toggle .subscribe-button[disabled="disabled"]:hover, header .email-toggle .subscribe-button[disabled]:hover, header .email-toggle .subscribe-button[disabled=true]:hover {
         background-color: #d7d4d0;
-        color: white; }
+        color: #fff; }
 header .login-toggle {
   font-size: 0.8rem;
   position: absolute;
@@ -1331,7 +1335,7 @@ header li.search #main-search {
     background-color: #5b544d;
     border: 0 solid #080807;
     border-radius: 0;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
@@ -1354,7 +1358,7 @@ header li.search #main-search {
       background-color: #d7d4d0; }
       header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
         background-color: #d7d4d0;
-        color: white; }
+        color: #fff; }
   header li.search #main-search.display {
     display: block; }
   header li.search #main-search .search-query-content {
@@ -2063,7 +2067,7 @@ fieldset.radiogroup {
   background-color: #5b544d;
   border: 0 solid #080807;
   border-radius: 0;
-  color: white;
+  color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -2086,13 +2090,13 @@ fieldset.radiogroup {
     background-color: #d7d4d0; }
     .search-button.disabled:hover, .search-button[disabled="disabled"]:hover, .search-button[disabled]:hover, .search-button[disabled=true]:hover {
       background-color: #d7d4d0;
-      color: white; }
+      color: #fff; }
 
 .my-button-class {
   background-color: #5b544d;
   border: 0.125rem solid #080807;
   border-radius: 0;
-  color: white;
+  color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -2115,7 +2119,7 @@ fieldset.radiogroup {
     background-color: #d7d4d0; }
     .my-button-class.disabled:hover, .my-button-class[disabled="disabled"]:hover, .my-button-class[disabled]:hover, .my-button-class[disabled=true]:hover {
       background-color: #d7d4d0;
-      color: white; }
+      color: #fff; }
 
 .request-button {
   background-color: #2799c5;
@@ -2154,7 +2158,7 @@ fieldset.radiogroup {
   background-color: #5b544d;
   border: 0.125rem solid #080807;
   border-radius: 1rem;
-  color: white;
+  color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -2177,7 +2181,7 @@ fieldset.radiogroup {
     background-color: #d7d4d0; }
     .my-rounded-button.disabled:hover, .my-rounded-button[disabled="disabled"]:hover, .my-rounded-button[disabled]:hover, .my-rounded-button[disabled=true]:hover {
       background-color: #d7d4d0;
-      color: white; }
+      color: #fff; }
 
 .row {
   margin: 0 -0.5rem;

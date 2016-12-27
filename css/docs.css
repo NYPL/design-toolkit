@@ -243,7 +243,7 @@ header .email-toggle {
     background-color: #5b544d;
     border: 0.0625rem solid white;
     border-radius: 0;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
@@ -266,7 +266,7 @@ header .email-toggle {
       background-color: #d7d4d0; }
       header .email-toggle .subscribe-button.disabled:hover, header .email-toggle .subscribe-button[disabled="disabled"]:hover, header .email-toggle .subscribe-button[disabled]:hover, header .email-toggle .subscribe-button[disabled=true]:hover {
         background-color: #d7d4d0;
-        color: white; }
+        color: #fff; }
 header .login-toggle {
   font-size: 0.8rem;
   position: absolute;
@@ -445,7 +445,7 @@ header li.search #main-search {
     background-color: #5b544d;
     border: 0 solid #080807;
     border-radius: 0;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
@@ -468,7 +468,7 @@ header li.search #main-search {
       background-color: #d7d4d0; }
       header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
         background-color: #d7d4d0;
-        color: white; }
+        color: #fff; }
   header li.search #main-search.display {
     display: block; }
   header li.search #main-search .search-query-content {
