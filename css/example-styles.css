@@ -815,7 +815,8 @@ h3 {
   font-size: 1.4rem; }
 
 p {
-  margin-top: 0.25rem; }
+  margin-top: 0.25rem;
+  margin-bottom: 1rem; }
 
 h4 {
   font-size: 1.2rem;
@@ -2070,11 +2071,14 @@ table, .views-table {
   .location-hours th,
   .location-hours td {
     overflow: hidden;
+    padding: 0.125rem 0.25rem;
     text-overflow: ellipsis; }
   .location-hours td {
     padding-bottom: 1rem; }
+  .location-hours .current {
+    background-color: #fff1a5; }
   @media (max-width: 965px) {
-    .location-hours tr:first-child {
+    .location-hours thead tr {
       display: none; }
     .location-hours tr {
       border: 0; }

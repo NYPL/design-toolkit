@@ -59,37 +59,39 @@
     <h3 id="general">General tables</h3>
     <a href="#toc">Go to top</a>
 
-    <p>Tables are to be used</p>
+    <p>Use tables sparingly, <strong>only for tabular data</strong>. Use the <code>basic-table</code> mixin to format a table. All tables should have a <code>thead</code> element with the corresponding headers.</p>
 
     <div class="toolkit-example">
-      <table class="my-table">
-        <tbody>
-          <tr class="titles">
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th class="current">Sunday</th>
-          </tr>
-          <tr class="hours">
-            <td>10:00 AM&nbsp;-&nbsp;
-              <br> 5:45 PM</td>
-            <td>10:00 AM&nbsp;-&nbsp;
-              <br> 7:45 PM</td>
-            <td>10:00 AM&nbsp;-&nbsp;
-              <br> 7:45 PM</td>
-            <td>10:00 AM&nbsp;-&nbsp;
-              <br> 5:45 PM</td>
-            <td>10:00 AM&nbsp;-&nbsp;
-              <br> 5:45 PM</td>
-            <td>10:00 AM&nbsp;-&nbsp;
-              <br> 5:45 PM</td>
-            <td>1:00 PM - 4:45PM</td>
-          </tr>
-        </tbody>
-      </table>
+<table class="my-table">
+  <thead>
+    <tr>
+      <th>One</th>
+      <th>Two</th>
+      <th>Three</th>
+      <th>Four</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>some value</td>
+      <td>some value</td>
+      <td>some value</td>
+      <td>some value</td>
+    </tr>
+    <tr>
+      <td>some value</td>
+      <td>some value</td>
+      <td>some value</td>
+      <td>some value</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
     </div>
     <pre><code class="scss">
 .my-table {
@@ -97,7 +99,36 @@
 }
     </code></pre>
     <pre><code class="html">
-
+&lt;table class=&quot;my-table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;One&lt;/th&gt;
+      &lt;th&gt;Two&lt;/th&gt;
+      &lt;th&gt;Three&lt;/th&gt;
+      &lt;th&gt;Four&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+      &lt;td&gt;some value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&hellip;&lt;/td&gt;
+      &lt;td&gt;&hellip;&lt;/td&gt;
+      &lt;td&gt;&hellip;&lt;/td&gt;
+      &lt;td&gt;&hellip;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
     </code></pre>
 
     <h3 id="summary">Search results summary</h3>

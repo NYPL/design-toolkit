@@ -887,6 +887,7 @@ pre {
   .my-table th,
   .my-table td {
     overflow: hidden;
+    padding: 0.125rem 0.25rem;
     text-overflow: ellipsis; }
   .my-table td {
     padding-bottom: 1rem; }

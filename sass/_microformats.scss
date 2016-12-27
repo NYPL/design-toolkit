@@ -35,14 +35,19 @@
 @mixin location-hours {
   @include basic-table;
 
+  .current {
+    background-color: $nypl-yellow-tint;
+  }
+
   @include media($mobile-breakpoint) {
-    tr:first-child {
+    thead tr {
       display: none;
     }
 
     tr {
       border: 0;
     }
+
 
     td {
       display: block;

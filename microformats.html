@@ -103,14 +103,15 @@
 
     <h3 id="locationHours">Location hours</h3>
 
+    <p>Follow <a href="tables.html#general">general rules for tables</a> plus:</p>
     <p><strong>Always starts on Monday.</strong> Note the special class for the current day (Tuesday in this case) and the line breaks.</p>
 
     <p><strong>NOTE:</strong> Mobile support for english only for now.</p>
 
     <div class="toolkit-example">
-      <table class="location-hours">
-        <tbody>
-          <tr>
+<table class="location-hours">
+  <thead>
+    <tr>
       <th>Monday</th>
       <th class="current">Tuesday</th>
       <th>Wednesday</th>
@@ -118,18 +119,20 @@
       <th>Friday</th>
       <th>Saturday</th>
       <th>Sunday</th>
-          </tr>
-          <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
       <td>10:00 AM - <br>5:45 PM</td>
-      <td>10:00 AM - <br>7:45 PM</td>
+      <td class="current">10:00 AM - <br>7:45 PM</td>
       <td>10:00 AM - <br>7:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
       <td>1:00 PM - <br>4:45 PM</td>
-          </tr>
-        </tbody>
-      </table>
+    </tr>
+  </tbody>
+</table>
     </div>
     <pre><code class="scss">
 .location-hours {
@@ -138,7 +141,7 @@
     </code></pre>
     <pre><code class="html">
 &lt;table class=&quot;location-hours&quot;&gt;
-  &lt;tbody&gt;
+  &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Monday&lt;/th&gt;
       &lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
@@ -148,6 +151,8 @@
       &lt;th&gt;Saturday&lt;/th&gt;
       &lt;th&gt;Sunday&lt;/th&gt;
     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
       &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
