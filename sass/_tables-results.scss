@@ -1,9 +1,25 @@
 @import "measurements";
 @import "icons";
-@import "microformats-mixins";
+@import "general-mixins";
+@import "microformats";
 @import "media-queries";
 
 @warn "refactor mixins and remove magic numbers";
+
+@mixin basic-table {
+  position: relative;
+  width: 100%;
+
+  th,
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  td {
+    padding-bottom: 1rem;
+  }
+}
 
 @mixin results-summary {
   line-height: 1;

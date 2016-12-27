@@ -1,6 +1,7 @@
 @import "measurements";
 @import "css3";
-@import "microformats-mixins";
+@import "general-mixins";
+@import "microformats";
 @import "media-queries";
 
 @warn "remove magic numbers";

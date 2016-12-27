@@ -62,10 +62,39 @@
     <p>Tables are to be used</p>
 
     <div class="toolkit-example">
-
+      <table class="my-table">
+        <tbody>
+          <tr class="titles">
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th class="current">Sunday</th>
+          </tr>
+          <tr class="hours">
+            <td>10:00 AM&nbsp;-&nbsp;
+              <br> 5:45 PM</td>
+            <td>10:00 AM&nbsp;-&nbsp;
+              <br> 7:45 PM</td>
+            <td>10:00 AM&nbsp;-&nbsp;
+              <br> 7:45 PM</td>
+            <td>10:00 AM&nbsp;-&nbsp;
+              <br> 5:45 PM</td>
+            <td>10:00 AM&nbsp;-&nbsp;
+              <br> 5:45 PM</td>
+            <td>10:00 AM&nbsp;-&nbsp;
+              <br> 5:45 PM</td>
+            <td>1:00 PM - 4:45PM</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <pre><code class="scss">
-
+.my-table {
+  @include basic-table;
+}
     </code></pre>
     <pre><code class="html">
 
