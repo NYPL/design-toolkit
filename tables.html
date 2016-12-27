@@ -48,13 +48,16 @@
     <h2>Table of contents</h2>
 
     <ul>
-      <li><a href="#results">Tables and data</a></li>
+      <li><a href="#general">General tables</a></li>
+      <li><a href="#summary">Search results summary</a></li>
+      <li><a href="#results-table">Search results (table)</a></li>
+      <li><a href="#results-nontable">Search results (non-table)</a></li>
+      <li><a href="#pagination">Search results pagination</a></li>
     </ul>
 
-    <h2 id="results">Tables and data</h2>
-    <a href="#toc">Go to top</a>
 
-    <h3 id="">General tables</h3>
+    <h3 id="general">General tables</h3>
+    <a href="#toc">Go to top</a>
 
     <div class="toolkit-example">
 
@@ -66,7 +69,7 @@
 
     </code></pre>
 
-    <h3 id="">Search results summary</h3>
+    <h3 id="summary">Search results summary</h3>
 
     <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has an anchor element to remove the facet and refresh the search results.
     </p>
@@ -104,7 +107,7 @@
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="">Search results (table)</h3>
+    <h3 id="results-table">Search results (table)</h3>
 
     <p>Coming soon.</p>
 
@@ -118,7 +121,7 @@
 
     </code></pre>
 
-    <h3 id="">Search results (non-table)</h3>
+    <h3 id="results-nontable">Search results (non-table)</h3>
 
     <p>Coming soon.</p>
 
@@ -132,11 +135,9 @@
 
     </code></pre>
 
-    <h3 id="">Search results pagination</h3>
+    <h3 id="pagination">Search results pagination</h3>
 
     <p>This widget is presented <strong>only in the bottom</strong> of the results (pagination will never appear on top). Page count appears in its own <code>span</code> tag.</p>
-
-    <p><strong>NOTE:</strong> should we remove the <code>title</code> tag from the SVG?</p>
 
     <div class="toolkit-example">
     <div class="results-pagination">
@@ -166,16 +167,16 @@
 &lt;div class=&quot;results-pagination&quot;&gt;
   &lt;a href=&quot;#prev&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-&lt;title&gt;Left arrow&lt;/title&gt;
-&lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
+      &lt;title&gt;Left arrow&lt;/title&gt;
+      &lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
     &lt;/svg&gt;
     Previous page
   &lt;/a&gt;
   &lt;span class=&quot;page-count&quot;&gt;Page 2 of 4&lt;/span&gt;
   &lt;a href=&quot;#next&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-&lt;title&gt;Right arrow&lt;/title&gt;
-&lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
+      &lt;title&gt;Right arrow&lt;/title&gt;
+      &lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
     &lt;/svg&gt;
     Next page
   &lt;/a&gt;
