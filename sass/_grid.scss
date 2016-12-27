@@ -17,15 +17,25 @@
   // empty for now
 }
 
-@mixin full-width-wrapper {
-  margin: 0 auto;
-  max-width: calc(#{$max-width - $general-padding} - (#{$logo-width + $general-padding}));
-  padding: $general-padding $general-padding $general-padding ($logo-width + $general-padding);
+@mixin full-width-wrapper($in-header: false) {
+  @if $in-header == false {
+    max-width: calc(#{$max-width - $general-padding} - (#{$logo-width + $general-padding}));
+    padding: $general-padding $general-padding $general-padding ($logo-width + $general-padding);
+  } @else {
+    max-width: calc(#{$max-width} - (#{$general-padding * 2}));
+    padding: 0 $general-padding;
+  }
+
   position: relative;
+  margin: 0 auto;
   @include clearfix;
 
   @include media($mobile-breakpoint) {
-    padding-left: $general-padding;
+    @if $in-header == false {
+      padding-left: $general-padding;
+    } @else {
+      margin: 0;
+    }
   }
 }
 
@@ -39,7 +49,7 @@
   float: $float;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: $width;
   @include clearfix;
   @include box-sizing(border-box);

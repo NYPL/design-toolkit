@@ -21,6 +21,10 @@ linters:
   NameFormat:
     enabled: true
 
+  NestingDepth:
+    enabled: true
+    max_depth: 4 #because collapsible header (refactor that)
+
   PrivateNamingConvention:
     enabled: true
     prefix: _

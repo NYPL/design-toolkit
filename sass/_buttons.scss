@@ -8,22 +8,46 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($text-color: $button-text-color, $border-color: $button-border-color, $background-color: $nypl-search-color-dark, $border-radius: 0, $border-width: 0.125rem, $disabled-color: $nypl-light-gray) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $button-border-color, $background-color: $nypl-search-color-dark, $border-radius: 0, $border-width: 0, $disabled-color: $nypl-light-gray, $font-size: 1rem, $collapsible: false) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   color: $text-color;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: $font-size;
   font-weight: 700; // equivalent of a medium weight
   height: 2rem;
+  text-decoration: none;
   text-transform: uppercase;
 
   @include transition(all, $hover-time, ease-in);
 
+  @if $collapsible == true {
+    // has nypl-icon with down arrow
+    .nypl-icon {
+      @include nypl-icon($fill: $text-color, $background-color: $background-color);
+      @include transition(all, $hover-time, ease-in);
+    }
+  }
+
   &:hover {
-    background-color: invert($background-color);
-    color: invert($text-color);
+    background-color: $text-color;
+    color: $background-color;
+
+    @if $collapsible == true {
+      // has nypl-icon with down arrow
+      .nypl-icon {
+        @include nypl-icon($fill: $background-color, $background-color: $text-color);
+      }
+    }
+  }
+
+  &.active {
+    @if $collapsible == true {
+      .nypl-icon {
+        transform: scaleY(-1);
+      }
+    }
   }
 
   &:focus {
@@ -33,7 +57,8 @@
 
   &.disabled,
   &[disabled="disabled"],
-  &[disabled], &[disabled=true] {
+  &[disabled],
+  &[disabled=true] {
 
     @warn "set universal disabled style";
     cursor: default;
@@ -54,4 +79,16 @@
     border-color: $nypl-blue;
     color: $nypl-blue;
   }
+}
+
+@mixin service-button {
+  display: block;
+  font-weight: bold;
+  height: auto;
+  overflow: hidden;
+  padding: 0 0.5em;
+  padding-right: 1em;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

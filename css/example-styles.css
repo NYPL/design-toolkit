@@ -957,13 +957,14 @@ button.collapsible {
     .horizontal li:last-child {
       margin-right: 0; }
 
-.collapsed-menu-toggle, .main-menu-toggle {
+.collapsed-menu-toggle,
+.main-menu-toggle {
   display: none; }
 
 @media (max-width: 965px) {
   .main-menu-toggle {
     background-color: #d0343a;
-    color: white !important;
+    color: #fff !important;
     display: block;
     margin: 0 -1rem;
     padding-right: 1rem;
@@ -972,7 +973,7 @@ button.collapsible {
     .main-menu-toggle .nypl-icon {
       background-color: #d0343a;
       display: inline-block;
-      fill: white;
+      fill: #fff;
       height: 1em;
       width: 1em;
       speak: none; }
@@ -990,7 +991,7 @@ button.collapsible {
       position: relative; } }
 
 .nypl-logo {
-  background: url("../img/nypl.svg") no-repeat scroll 0px 0px/5rem auto white;
+  background: url("../img/nypl.svg") no-repeat scroll 0 0/5rem auto #fff;
   border: 0;
   display: block;
   font-size: 0;
@@ -1003,38 +1004,56 @@ button.collapsible {
   width: 5rem; }
   @media (max-width: 965px) {
     .nypl-logo {
-      background: url("../img/lion.svg") no-repeat scroll 0px 0px/2.5rem auto white;
+      background: url("../img/lion.svg") no-repeat scroll 0 0/2.5rem auto #fff;
       margin-right: 0.5rem;
       width: 3rem; } }
 
 header .content-wrapper {
-  max-width: calc(82rem - 2rem);
-  padding: 0 1rem; }
+  max-width: calc(82rem - (2rem));
+  padding: 0 1rem;
+  position: relative;
+  margin: 0 auto; }
+  header .content-wrapper:before, header .content-wrapper:after {
+    content: "";
+    display: table; }
+  header .content-wrapper:after {
+    clear: both; }
   @media (max-width: 965px) {
     header .content-wrapper {
       margin: 0; } }
-header .content {
+
+.content {
   position: relative; }
-  header .content:before, header .content:after {
+  .content:before, .content:after {
     content: "";
     display: table; }
-  header .content:after {
+  .content:after {
     clear: both; }
   @media (max-width: 965px) {
-    header .content {
+    .content {
       width: 100%; } }
-header .service {
+
+.service {
   background-color: #d0343a; }
   @media (max-width: 965px) {
-    header .service {
+    .service {
       display: table-footer-group; } }
+
 @media (max-width: 965px) {
-  header {
-    display: table;
-    width: 100%; } }
+  display: table;
+  width: 100%; }
 header.collapsed {
   border-bottom: 2px solid #d7d4d0;
   position: relative; }
+  header.collapsed.collapsed .login-toggle {
+    right: 110px;
+    top: 9px; }
+    @media (max-width: 965px) {
+      header.collapsed.collapsed .login-toggle {
+        font-size: 12px;
+        top: -19px; }
+        header.collapsed.collapsed .login-toggle div {
+          right: -100%; } }
   header.collapsed .main-menu-toggle {
     display: none; }
   header.collapsed .collapsed-menu-toggle {
@@ -1050,7 +1069,7 @@ header.collapsed {
     height: 30px;
     overflow: hidden; }
   header.collapsed .nypl-logo {
-    background: url("../img/lion.svg") no-repeat scroll 0px 0px/3rem auto white;
+    background: url("../img/lion.svg") no-repeat scroll 0 0/3rem auto #fff;
     background-position-y: -4px;
     margin: 0; }
   header.collapsed .service-buttons {
@@ -1066,108 +1085,267 @@ header.collapsed {
     header.collapsed .nav-buttons li {
       box-shadow: none; }
     header.collapsed .nav-buttons a {
-      padding: 0.1em 0.4em 0.1em; }
+      padding: 0.1em 0.4em; }
     header.collapsed .nav-buttons .search {
       display: none; }
-header .service-buttons {
+
+.service-buttons {
   font-size: 0.8rem;
   padding: 0;
   text-transform: uppercase; }
   @media (max-width: 965px) {
-    header .service-buttons {
+    .service-buttons {
       display: none;
       padding-top: 5px;
       width: 100%; }
-      header .service-buttons li {
-        border-bottom: 1px solid white;
+      .service-buttons li {
+        border-bottom: 1px solid #fff;
         float: left;
         line-height: 2;
-        margin: 0 0 5px 0;
+        margin: 0 0 5px;
         width: 50%; } }
-  header .service-buttons li > a, header .service-buttons button.collapsible {
+  .service-buttons li > a {
     background-color: #d0343a;
-    border: none;
-    color: white;
+    border: 0 solid #080807;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
     display: block;
     font-weight: bold;
+    height: auto;
     overflow: hidden;
     padding: 0 0.5em;
     padding-right: 1em;
     position: relative;
-    text-decoration: none;
     text-overflow: ellipsis;
-    text-transform: uppercase;
-    transition: all 0.1s;
     white-space: nowrap; }
-    header .service-buttons li > a .nypl-icon, header .service-buttons button.collapsible .nypl-icon {
+    .service-buttons li > a:hover {
+      background-color: #fff;
+      color: #d0343a; }
+    .service-buttons li > a:focus {
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      outline: none; }
+    .service-buttons li > a.disabled, .service-buttons li > a[disabled="disabled"], .service-buttons li > a[disabled], .service-buttons li > a[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      .service-buttons li > a.disabled:hover, .service-buttons li > a[disabled="disabled"]:hover, .service-buttons li > a[disabled]:hover, .service-buttons li > a[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #fff; }
+    .service-buttons li > a.donate {
+      background-color: #fff;
+      border: 0 solid #080807;
+      border-radius: 0;
+      color: #d0343a;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 700;
+      height: 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      display: block;
+      font-weight: bold;
+      height: auto;
+      overflow: hidden;
+      padding: 0 0.5em;
+      padding-right: 1em;
+      position: relative;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .service-buttons li > a.donate:hover {
+        background-color: #d0343a;
+        color: #fff; }
+      .service-buttons li > a.donate:focus {
+        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+        box-shadow: inset 0 0 0 4px #ffb81d;
+        outline: none; }
+      .service-buttons li > a.donate.disabled, .service-buttons li > a.donate[disabled="disabled"], .service-buttons li > a.donate[disabled], .service-buttons li > a.donate[disabled=true] {
+        cursor: default;
+        background-color: #d7d4d0; }
+        .service-buttons li > a.donate.disabled:hover, .service-buttons li > a.donate[disabled="disabled"]:hover, .service-buttons li > a.donate[disabled]:hover, .service-buttons li > a.donate[disabled=true]:hover {
+          background-color: #d7d4d0;
+          color: #d0343a; }
+  .service-buttons button.collapsible {
+    background-color: #d0343a;
+    border: 0 solid #080807;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    display: block;
+    font-weight: bold;
+    height: auto;
+    overflow: hidden;
+    padding: 0 0.5em;
+    padding-right: 1em;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
       display: inline-block;
-      fill: white;
+      fill: #fff;
       height: 1em;
       width: 1em;
       speak: none;
-      transition: all 0.1s; }
-      header .service-buttons li > a .nypl-icon.reversed, header .service-buttons button.collapsible .nypl-icon.reversed {
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s; }
+      .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    header .service-buttons li > a:hover, header .service-buttons li > a.active, header .service-buttons button.collapsible:hover, header .service-buttons button.collapsible.active {
-      background-color: white;
+    .service-buttons button.collapsible:hover {
+      background-color: #fff;
       color: #d0343a; }
-      header .service-buttons li > a:hover .nypl-icon, header .service-buttons li > a.active .nypl-icon, header .service-buttons button.collapsible:hover .nypl-icon, header .service-buttons button.collapsible.active .nypl-icon {
-        background-color: white;
-        fill: #d0343a; }
-    header .service-buttons li > a.active .nypl-icon, header .service-buttons button.collapsible.active .nypl-icon {
+      .service-buttons button.collapsible:hover .nypl-icon {
+        background-color: #fff;
+        display: inline-block;
+        fill: #d0343a;
+        height: 1em;
+        width: 1em;
+        speak: none; }
+        .service-buttons button.collapsible:hover .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
+    .service-buttons button.collapsible.active .nypl-icon {
       transform: scaleY(-1); }
-    header .service-buttons li > a.donate, header .service-buttons button.collapsible.donate {
-      background-color: white;
-      color: #d0343a; }
-    header .service-buttons li > a.donate:hover, header .service-buttons button.collapsible.donate:hover {
-      background-color: white; }
-header .email-toggle {
+    .service-buttons button.collapsible:focus {
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      outline: none; }
+    .service-buttons button.collapsible.disabled, .service-buttons button.collapsible[disabled="disabled"], .service-buttons button.collapsible[disabled], .service-buttons button.collapsible[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      .service-buttons button.collapsible.disabled:hover, .service-buttons button.collapsible[disabled="disabled"]:hover, .service-buttons button.collapsible[disabled]:hover, .service-buttons button.collapsible[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #fff; }
+
+.email-toggle {
   position: relative; }
-  header .email-toggle a:after {
+  .email-toggle a::after {
     transition: all 0.1s; }
-  header .email-toggle a.active:after {
+  .email-toggle a.active::after {
     transform: scaleY(-1); }
-  header .email-toggle .subscribe-button {
+  .email-toggle .subscribe-button {
     background-color: #5b544d;
-    border: 0.0625rem solid white;
+    border: 0.0625rem solid #fff;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
     height: 2rem;
+    text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    header .email-toggle .subscribe-button:hover {
-      background-color: #a4abb2;
-      color: black; }
-    header .email-toggle .subscribe-button:focus {
+    .email-toggle .subscribe-button:hover {
+      background-color: #fff;
+      color: #5b544d; }
+    .email-toggle .subscribe-button:focus {
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
       box-shadow: inset 0 0 0 4px #ffb81d;
       outline: none; }
-    header .email-toggle .subscribe-button.disabled, header .email-toggle .subscribe-button[disabled="disabled"], header .email-toggle .subscribe-button[disabled], header .email-toggle .subscribe-button[disabled=true] {
+    .email-toggle .subscribe-button.disabled, .email-toggle .subscribe-button[disabled="disabled"], .email-toggle .subscribe-button[disabled], .email-toggle .subscribe-button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      header .email-toggle .subscribe-button.disabled:hover, header .email-toggle .subscribe-button[disabled="disabled"]:hover, header .email-toggle .subscribe-button[disabled]:hover, header .email-toggle .subscribe-button[disabled=true]:hover {
+      .email-toggle .subscribe-button.disabled:hover, .email-toggle .subscribe-button[disabled="disabled"]:hover, .email-toggle .subscribe-button[disabled]:hover, .email-toggle .subscribe-button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #fff; }
-header .login-toggle {
+  .email-toggle form {
+    background-color: #776e64;
+    color: #fff;
+    font-size: 1rem;
+    min-width: 17rem;
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    text-transform: none;
+    z-index: 1; }
+    @media (max-width: 965px) {
+      .email-toggle form {
+        left: 0;
+        right: auto; } }
+  .email-toggle .email-toggle-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0; }
+  .email-toggle fieldset {
+    border: 0;
+    color: #080807;
+    margin: 1em 0 0.5em;
+    padding: 0;
+    position: relative; }
+  .email-toggle label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em;
+    position: absolute; }
+  .email-toggle input[type=text] {
+    background-color: #c0bab4;
+    border: none;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #c0bab4;
+    -moz-box-shadow: inset 0 0 0 2px #c0bab4;
+    box-shadow: inset 0 0 0 2px #c0bab4;
+    height: 2rem;
+    margin-right: 1px;
+    padding: 1.5em 0 0;
+    text-indent: 0.5rem;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .email-toggle input[type=text].active {
+      width: 16rem; }
+    .email-toggle input[type=text]:focus {
+      background-color: white;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
+      box-shadow: inset 0 0 0 4px #ffb81d !important;
+      color: #5b544d;
+      outline: none; }
+  .email-toggle .links {
+    margin: 1em 0 0; }
+
+.login-toggle {
   font-size: 0.8rem;
   position: absolute;
   right: 0;
   text-transform: uppercase;
   top: 1.5rem; }
-  header .login-toggle button {
+  .login-toggle button {
     text-transform: uppercase; }
-  header .login-toggle div {
+  .login-toggle div {
     background-color: #776e64;
-    color: white;
+    color: #fff;
     font-size: 1rem;
     padding: 1rem;
     padding-bottom: 0;
@@ -1175,163 +1353,158 @@ header .login-toggle {
     right: 0;
     text-transform: none;
     z-index: 1; }
-  header .login-toggle a.inverted {
+  .login-toggle a.inverted {
     display: block;
     margin-bottom: 1em;
     white-space: nowrap; }
-  header .login-toggle .welcome-message {
+  .login-toggle .welcome-message {
     display: inline-block;
     margin-right: 1em;
     text-transform: none; }
-  header .login-toggle > a, header .login-toggle button.collapsible {
+  .login-toggle > a,
+  .login-toggle button.collapsible {
     background-color: #776e64;
-    color: white;
-    display: inline-block;
+    border: 0 solid #080807;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    display: block;
     font-weight: bold;
+    height: auto;
+    overflow: hidden;
     padding: 0 0.5em;
-    transition: all 0.1s; }
-    header .login-toggle > a .nypl-icon, header .login-toggle button.collapsible .nypl-icon {
+    padding-right: 1em;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .login-toggle > a .nypl-icon,
+    .login-toggle button.collapsible .nypl-icon {
       background-color: #776e64;
       display: inline-block;
-      fill: white;
+      fill: #fff;
       height: 1em;
       width: 1em;
       speak: none;
-      transition: all 0.1s; }
-      header .login-toggle > a .nypl-icon.reversed, header .login-toggle button.collapsible .nypl-icon.reversed {
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s; }
+      .login-toggle > a .nypl-icon.reversed,
+      .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    header .login-toggle > a:link, header .login-toggle button.collapsible:link {
-      text-decoration: none; }
-    header .login-toggle > a:hover, header .login-toggle button.collapsible:hover {
-      background-color: white;
+    .login-toggle > a:hover,
+    .login-toggle button.collapsible:hover {
+      background-color: #fff;
       color: #776e64; }
-      header .login-toggle > a:hover .nypl-icon, header .login-toggle button.collapsible:hover .nypl-icon {
-        background-color: white;
-        fill: #776e64; }
-    header .login-toggle > a.active .nypl-icon, header .login-toggle button.collapsible.active .nypl-icon {
+      .login-toggle > a:hover .nypl-icon,
+      .login-toggle button.collapsible:hover .nypl-icon {
+        background-color: #fff;
+        display: inline-block;
+        fill: #776e64;
+        height: 1em;
+        width: 1em;
+        speak: none; }
+        .login-toggle > a:hover .nypl-icon.reversed,
+        .login-toggle button.collapsible:hover .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
+    .login-toggle > a.active .nypl-icon,
+    .login-toggle button.collapsible.active .nypl-icon {
       transform: scaleY(-1); }
+    .login-toggle > a:focus,
+    .login-toggle button.collapsible:focus {
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      outline: none; }
+    .login-toggle > a.disabled, .login-toggle > a[disabled="disabled"], .login-toggle > a[disabled], .login-toggle > a[disabled=true],
+    .login-toggle button.collapsible.disabled,
+    .login-toggle button.collapsible[disabled="disabled"],
+    .login-toggle button.collapsible[disabled],
+    .login-toggle button.collapsible[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      .login-toggle > a.disabled:hover, .login-toggle > a[disabled="disabled"]:hover, .login-toggle > a[disabled]:hover, .login-toggle > a[disabled=true]:hover,
+      .login-toggle button.collapsible.disabled:hover,
+      .login-toggle button.collapsible[disabled="disabled"]:hover,
+      .login-toggle button.collapsible[disabled]:hover,
+      .login-toggle button.collapsible[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #fff; }
+    .login-toggle > a:link,
+    .login-toggle button.collapsible:link {
+      text-decoration: none; }
   @media (max-width: 965px) {
-    header .login-toggle {
+    .login-toggle {
       top: -2rem; }
-      header .login-toggle .welcome-message {
+      .login-toggle .welcome-message {
         display: none; } }
-header.collapsed .login-toggle {
-  right: 110px;
-  top: 9px; }
-  @media (max-width: 965px) {
-    header.collapsed .login-toggle {
-      font-size: 12px;
-      top: -19px; }
-      header.collapsed .login-toggle div {
-        right: -100%; } }
-header .email-toggle form {
-  background-color: #776e64;
-  color: white;
-  font-size: 1rem;
-  min-width: 17rem;
-  position: absolute;
-  padding: 1rem;
-  right: 0;
-  text-transform: none;
-  z-index: 1; }
-  @media (max-width: 965px) {
-    header .email-toggle form {
-      left: 0;
-      right: auto; } }
-header .email-toggle .email-toggle-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 1.5;
-  margin: 0; }
-header .email-toggle fieldset {
-  border: none;
-  color: #080807;
-  margin: 1em 0 0.5em;
-  padding: 0;
-  position: relative; }
-header .email-toggle label {
-  display: block;
-  font-weight: bold;
-  margin-left: 0.5em;
-  position: absolute; }
-header .email-toggle input[type=text] {
-  background-color: #c0bab4;
-  border: none;
-  padding: 0;
-  -webkit-box-shadow: inset 0 0 0 2px #c0bab4;
-  -moz-box-shadow: inset 0 0 0 2px #c0bab4;
-  box-shadow: inset 0 0 0 2px #c0bab4;
-  height: 2rem;
-  margin-right: 1px;
-  padding: 1.5em 0 0;
-  text-indent: 0.5rem;
-  transition: all 0.2s ease-out;
-  width: 100%; }
-  header .email-toggle input[type=text].active {
-    width: 16rem; }
-  header .email-toggle input[type=text]:focus {
-    background-color: white;
-    -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
-    -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
-    box-shadow: inset 0 0 0 4px #ffb81d !important;
-    color: #5b544d;
-    outline: none; }
-header .email-toggle .links {
-  margin: 1em 0 0; }
-header .nav-buttons {
+
+.nav-buttons {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-top: calc(3rem + 1rem); }
-  header .nav-buttons:before, header .nav-buttons:after {
+  .nav-buttons:before, .nav-buttons:after {
     content: "";
     display: table; }
-  header .nav-buttons:after {
+  .nav-buttons:after {
     clear: both; }
   @media (max-width: 1120px) {
-    header .nav-buttons {
+    .nav-buttons {
       font-size: 0.9rem; } }
   @media (max-width: 965px) {
-    header .nav-buttons {
+    .nav-buttons {
       display: none;
       font-size: 1.2rem;
       margin-top: 1rem; }
-      header .nav-buttons li {
+      .nav-buttons li {
         border-bottom: 1px solid #d7d4d0;
         float: left;
         height: auto;
         line-height: 2;
-        margin: 0 0 5px 0;
+        margin: 0 0 5px;
         width: 50%; }
-      header .nav-buttons li.search {
-        border: none;
+      .nav-buttons li.search {
+        border: 0;
         font-size: 1rem;
         position: relative;
         right: initial;
         top: initial;
         width: 100%; } }
-  header .nav-buttons a {
-    border: none;
+  .nav-buttons a {
+    border: 0;
     color: #080807;
     display: block;
     overflow: hidden;
-    padding: 0.2em 0.4em 0.2em;
+    padding: 0.2em 0.4em;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all 0.1s;
     white-space: nowrap; }
-    header .nav-buttons a:hover {
+    .nav-buttons a:hover {
       color: #d0343a; }
-  header .nav-buttons li {
+  .nav-buttons li {
     box-shadow: inset 0 0 0 #d0343a;
     transition: box-shadow 0.2s; }
-  header .nav-buttons li:hover, header .nav-buttons li.active {
+  .nav-buttons li:hover,
+  .nav-buttons li.active {
     box-shadow: inset 0 -4px 0 #d0343a; }
-header li.search #main-search {
+
+li.search #main-search {
   background-color: #776e64;
   margin: 0;
   position: relative; }
-  header li.search #main-search .search-button {
+  li.search #main-search .search-button {
     background-color: #5b544d;
     border: 0 solid #080807;
     border-radius: 0;
@@ -1340,62 +1513,64 @@ header li.search #main-search {
     font-size: 1rem;
     font-weight: 700;
     height: 2rem;
+    text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    header li.search #main-search .search-button:hover {
-      background-color: #a4abb2;
-      color: black; }
-    header li.search #main-search .search-button:focus {
+    li.search #main-search .search-button:hover {
+      background-color: #fff;
+      color: #5b544d; }
+    li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
       box-shadow: inset 0 0 0 4px #ffb81d;
       outline: none; }
-    header li.search #main-search .search-button.disabled, header li.search #main-search .search-button[disabled="disabled"], header li.search #main-search .search-button[disabled], header li.search #main-search .search-button[disabled=true] {
+    li.search #main-search .search-button.disabled, li.search #main-search .search-button[disabled="disabled"], li.search #main-search .search-button[disabled], li.search #main-search .search-button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      header li.search #main-search .search-button.disabled:hover, header li.search #main-search .search-button[disabled="disabled"]:hover, header li.search #main-search .search-button[disabled]:hover, header li.search #main-search .search-button[disabled=true]:hover {
+      li.search #main-search .search-button.disabled:hover, li.search #main-search .search-button[disabled="disabled"]:hover, li.search #main-search .search-button[disabled]:hover, li.search #main-search .search-button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #fff; }
-  header li.search #main-search.display {
+  li.search #main-search.display {
     display: block; }
-  header li.search #main-search .search-query-content {
+  li.search #main-search .search-query-content {
     position: relative; }
-  header li.search #main-search .search-select {
+  li.search #main-search .search-select {
     background-color: #776e64;
     font-size: 0.9rem;
     right: 0;
-    padding: 1px 3px 3px 3px;
+    padding: 1px 3px 3px;
     position: absolute;
     top: 2rem;
-    white-space: nowrap; }
-  header li.search #main-search .search-radio-label {
+    white-space: nowrap;
+    z-index: 1; }
+  li.search #main-search .search-radio-label {
     display: inline-block;
     height: 2rem;
     line-height: 2;
     padding: 0 0.75rem 0 0.5rem; }
-    header li.search #main-search .search-radio-label label {
+    li.search #main-search .search-radio-label label {
       background-color: #c0bab4;
       font-weight: normal !important;
       padding: 0.1875rem 0; }
-    header li.search #main-search .search-radio-label input[type=radio], header li.search #main-search .search-radio-label input[type=checkbox] {
+    li.search #main-search .search-radio-label input[type=radio], li.search #main-search .search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
-    header li.search #main-search .search-radio-label.selected {
+    li.search #main-search .search-radio-label.selected {
       background-color: #c0bab4; }
-    header li.search #main-search .search-radio-label.focus {
+    li.search #main-search .search-radio-label.focus {
       box-shadow: inset 0 0 0 3px #ffb81d; }
-    header li.search #main-search .search-radio-label input:focus {
-      outline: none; }
-  header li.search #main-search .search-query-label {
-    color: white;
+  li.search #main-search input:focus {
+    outline: none; }
+  li.search #main-search .search-query-label {
+    color: #fff;
     height: 2rem;
     left: 0.5rem;
     line-height: 2;
     position: absolute; }
-  header li.search #main-search .form-text {
+  li.search #main-search .form-text {
     background-color: #c0bab4;
     border: none;
     padding: 0;
@@ -1406,24 +1581,27 @@ header li.search #main-search {
     text-indent: 0.5rem;
     transition: all 0.1s ease-out;
     width: 10rem; }
-    header li.search #main-search .form-text.active {
+    li.search #main-search .form-text.active {
       width: 16rem; }
-    header li.search #main-search .form-text:focus {
-      background-color: white;
+    li.search #main-search .form-text:focus {
+      background-color: #fff;
       box-shadow: inset 0 0 0 4px #ffb81d !important;
       color: #5b544d;
       outline: none; }
   @media (max-width: 965px) {
-    header li.search #main-search .form-text, header li.search #main-search .search-button, header li.search #main-search .search-radio-label {
+    li.search #main-search .form-text,
+    li.search #main-search .search-button,
+    li.search #main-search .search-radio-label {
       height: 2.5rem;
       line-height: 2.5; }
-    header li.search #main-search .form-text, header li.search #main-search .form-text.active {
+    li.search #main-search .form-text,
+    li.search #main-search .form-text.active {
       margin: 0;
       width: 70%; }
-    header li.search #main-search .search-button {
+    li.search #main-search .search-button {
       margin: 0;
       width: 30%; }
-    header li.search #main-search .search-select {
+    li.search #main-search .search-select {
       top: 2.5rem; } }
 
 @font-face {
@@ -1470,10 +1648,10 @@ footer ul {
       width: auto; } }
 
 .content-wrapper {
-  margin: 0 auto;
   max-width: calc(81rem - (6rem));
   padding: 1rem 1rem 1rem 6rem;
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   .content-wrapper:before, .content-wrapper:after {
     content: "";
     display: table; }
@@ -1489,10 +1667,10 @@ footer ul {
     margin: 0; }
 
 .my-content-wrapper {
-  margin: 0 auto;
   max-width: calc(81rem - (6rem));
   padding: 1rem 1rem 1rem 6rem;
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   .my-content-wrapper:before, .my-content-wrapper:after {
     content: "";
     display: table; }
@@ -1516,7 +1694,7 @@ footer ul {
   float: none;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1539,7 +1717,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 50%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1562,7 +1740,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 75%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1585,7 +1763,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 25%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1611,7 +1789,7 @@ footer ul {
   float: none;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1631,7 +1809,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 50%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1651,7 +1829,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 25%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1671,7 +1849,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 33.33333%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1691,7 +1869,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 66.66667%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1711,7 +1889,7 @@ footer ul {
   float: left;
   margin-bottom: 2rem;
   min-height: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem;
   width: 75%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2018,6 +2196,7 @@ fieldset.alphabetical {
     font-size: 1rem;
     font-weight: 700;
     height: 2rem;
+    text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -2029,8 +2208,8 @@ fieldset.alphabetical {
     padding: 0.2rem 0.25em;
     width: 2em; }
     fieldset.alphabetical button:hover {
-      background-color: #3f454b;
-      color: #f7f7f8; }
+      background-color: #080807;
+      color: #c0bab4; }
     fieldset.alphabetical button:focus {
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2072,14 +2251,15 @@ fieldset.radiogroup {
   font-size: 1rem;
   font-weight: 700;
   height: 2rem;
+  text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .search-button:hover {
-    background-color: #a4abb2;
-    color: black; }
+    background-color: #fff;
+    color: #5b544d; }
   .search-button:focus {
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
     -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2094,21 +2274,22 @@ fieldset.radiogroup {
 
 .my-button-class {
   background-color: #5b544d;
-  border: 0.125rem solid #080807;
+  border: 0 solid #080807;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
   height: 2rem;
+  text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-button-class:hover {
-    background-color: #a4abb2;
-    color: black; }
+    background-color: #fff;
+    color: #5b544d; }
   .my-button-class:focus {
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
     -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2123,21 +2304,22 @@ fieldset.radiogroup {
 
 .request-button {
   background-color: #2799c5;
-  border: 0.125rem solid #2799c5;
+  border: 0 solid #2799c5;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
   height: 2rem;
+  text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .request-button:hover {
-    background-color: #d8663a;
-    color: black; }
+    background-color: #fff;
+    color: #2799c5; }
   .request-button:focus {
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
     -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2156,21 +2338,22 @@ fieldset.radiogroup {
 
 .my-rounded-button {
   background-color: #5b544d;
-  border: 0.125rem solid #080807;
+  border: 0 solid #080807;
   border-radius: 1rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
   height: 2rem;
+  text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-rounded-button:hover {
-    background-color: #a4abb2;
-    color: black; }
+    background-color: #fff;
+    color: #5b544d; }
   .my-rounded-button:focus {
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
     -moz-box-shadow: inset 0 0 0 4px #ffb81d;
