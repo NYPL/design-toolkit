@@ -58,6 +58,7 @@
           <li><a href="#halfWidth">Half width columns</a></li>
           <li><a href="#quarterWidth">Quarter width columns</a></li>
           <li><a href="#mixedColumns">One quartes / three quarters width columns</a></li>
+          <li><a href="#offsets">Column offsets</a></li>
         </ul>
       </li>
     </ul>
@@ -316,6 +317,46 @@
 
 .my-col-three-quarters {
   @include column-three-quarters;
+
+  p {
+    background-color: green;
+    color: white;
+  }
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;my-row&quot;&gt;
+  &lt;div class=&quot;my-col-quarter&quot;&gt;
+    &lt;p&gt;one&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;my-col-three-quarters&quot;&gt;
+    &lt;p&gt;three&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="offsets">Column offsets</h3>
+
+    <p>Use the <code>column-offset($column-count)</code> to <strong>push a column to the right</strong> a certain amount of columns. </p>
+
+    <p><strong>IMPORTANT:</strong> a row has to contain four columns including their offsets.</p>
+
+    <div class="toolkit-example">
+<div class="my-row">
+  <div class="my-col-three-quarters-offset">
+    <p>three offsetted</p>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.my-row {
+  @include grid-row;
+  background-color: gray;
+}
+
+.my-col-three-quarters-offset {
+  @include column-three-quarters;
+  @include column-offset(1);
 
   p {
     background-color: green;

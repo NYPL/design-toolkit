@@ -2,11 +2,19 @@
 
 // using the system
 
+$white: #fff;
+$gray: #ccc;
+$black: #000;
+$yellow: #ff0;
+$green: #090;
+$blue: #00f;
+
 .content-wrapper {
   @include full-width-wrapper;
 }
 
-.page-header, .my-page-header {
+.page-header,
+.my-page-header {
   @include page-header;
 }
 
@@ -20,15 +28,15 @@
 
 .my-row {
   @include grid-row;
-  background-color: gray;
+  background-color: $gray;
 }
 
 .my-col-full {
   @include column-full;
 
   p {
-    background-color: blue;
-    color: white;
+    background-color: $blue;
+    color: $white;
   }
 }
 
@@ -36,8 +44,8 @@
   @include column-half;
 
   p {
-    background-color: yellow;
-    color: black;
+    background-color: $yellow;
+    color: $black;
   }
 }
 
@@ -45,8 +53,8 @@
   @include column-three-quarters;
 
   p {
-    background-color: green;
-    color: white;
+    background-color: $green;
+    color: $white;
   }
 }
 
@@ -54,8 +62,8 @@
   @include column-one-quarter;
 
   p {
-    background-color: blue;
-    color: white;
+    background-color: $blue;
+    color: $white;
   }
 }
 
@@ -99,7 +107,8 @@
   @include results-pagination;
 }
 
-table, .views-table {
+table,
+.views-table {
   @include views-table;
 }
 
@@ -119,7 +128,8 @@ table, .views-table {
   @include secondary-title;
 }
 
-div.location fieldset, fieldset.select {
+div.location fieldset,
+fieldset.select {
   @include select-fieldset;
 }
 
@@ -154,4 +164,14 @@ fieldset.radiogroup {
 
 .row {
   @include grid-row;
+}
+
+.my-col-three-quarters-offset {
+  @include column-three-quarters;
+  @include column-offset(1);
+
+  p {
+    background-color: $green;
+    color: $white;
+  }
 }

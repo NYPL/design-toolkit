@@ -86,6 +86,10 @@
   @include column-type($width: $three-quarters);
 }
 
+@mixin column-offset($column-count) {
+  margin-left: percentage($column-count / 4);
+}
+
 @mixin inner-block {
   @warn "deprecated. use row-column pattern instead.";
 }
