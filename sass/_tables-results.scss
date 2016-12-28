@@ -37,17 +37,12 @@
     margin-right: 0.5rem;
   }
 
-  a {
-    color: $nypl-gray;
+  button {
+    @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1rem);
     display: inline-block;
     margin: 0;
     padding: 0;
-    text-decoration: none;
     vertical-align: super;
-
-    &:hover {
-      color: $link-color;
-    }
   }
 }
 
@@ -57,7 +52,8 @@
   margin-bottom: 3rem;
   @include clearfix;
 
-  .page-count, a {
+  .page-count,
+  a {
     display: block;
     float: left;
     text-decoration: none;
@@ -110,21 +106,28 @@
   display: table;
   border-collapse: collapse;
 
-  tr, .views-table-row {
+  tr,
+  .views-table-row {
     border-bottom: 1px solid $nypl-light-gray;
     display: table-row;
   }
 
-  .views-table-row .views-table-header, thead, th {
+  .views-table-row .views-table-header,
+  thead,
+  th {
     border-bottom: 1px solid $page-color;
     text-align: left;
   }
 
-  td, th, .views-table-header, .views-table-cell {
+  td,
+  th,
+  .views-table-header,
+  .views-table-cell {
     display: table-cell;
   }
 
-  th, .views-table-header {
+  th,
+  .views-table-header {
     font-weight: bold;
   }
 
@@ -152,7 +155,8 @@
     width: 65%;
   }
 
-  td, .views-table-cell {
+  td,
+  .views-table-cell {
     border-bottom: 1px solid $nypl-light-gray;
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top;
@@ -173,23 +177,30 @@
 
   &.collapses {
     @include media($mobile-breakpoint) {
-      thead, th, .views-table-header, .views-table-row:first-child {
+      thead,
+      th,
+      .views-table-header,
+      .views-table-row:first-child {
         display: none;
       }
 
-      td, .views-table-cell {
+      td,
+      .views-table-cell {
         display: block;
         float: left;
         margin: 0;
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 0;
       }
 
-      tr:first-child, .views-table-row:first-child {
+      tr:first-child,
+      .views-table-row:first-child {
         border-top: 1px solid $nypl-light-gray;
       }
 
-      .event-time, .event-audience, .event-title {
-        border: none;
+      .event-time,
+      .event-audience,
+      .event-title {
+        border: 0;
         display: block;
       }
 
@@ -197,7 +208,9 @@
         width: 20%;
       }
 
-      .event-title, .event-location, .event-audience {
+      .event-title,
+      .event-location,
+      .event-audience {
         width: 30%;
       }
 
@@ -210,11 +223,11 @@
       }
 
       .event-location {
-        border-bottom: none;
+        border-bottom: 0;
         font-weight: bold;
       }
 
-      .event-audience:before {
+      .event-audience::before {
         content: "For: ";
       }
 

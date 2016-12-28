@@ -240,11 +240,11 @@ header.collapsed {
     white-space: nowrap; }
     .service-buttons li > a:hover {
       background-color: #fff;
-      color: #d0343a; }
+      color: #5b544d; }
     .service-buttons li > a:focus {
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
     .service-buttons li > a.disabled, .service-buttons li > a[disabled="disabled"], .service-buttons li > a[disabled], .service-buttons li > a[disabled=true] {
       cursor: default;
@@ -277,12 +277,12 @@ header.collapsed {
       text-overflow: ellipsis;
       white-space: nowrap; }
       .service-buttons li > a.donate:hover {
-        background-color: #d0343a;
-        color: #fff; }
+        background-color: #fff;
+        color: #5b544d; }
       .service-buttons li > a.donate:focus {
-        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-        box-shadow: inset 0 0 0 4px #ffb81d;
+        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        box-shadow: inset 0 0 0 0.125rem #ffb81d;
         outline: none; }
       .service-buttons li > a.donate.disabled, .service-buttons li > a.donate[disabled="disabled"], .service-buttons li > a.donate[disabled], .service-buttons li > a.donate[disabled=true] {
         cursor: default;
@@ -330,11 +330,11 @@ header.collapsed {
         fill: #fff; }
     .service-buttons button.collapsible:hover {
       background-color: #fff;
-      color: #d0343a; }
+      color: #5b544d; }
       .service-buttons button.collapsible:hover .nypl-icon {
         background-color: #fff;
         display: inline-block;
-        fill: #d0343a;
+        fill: #5b544d;
         height: 1em;
         width: 1em;
         speak: none; }
@@ -344,9 +344,9 @@ header.collapsed {
     .service-buttons button.collapsible.active .nypl-icon {
       transform: scaleY(-1); }
     .service-buttons button.collapsible:focus {
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
     .service-buttons button.collapsible.disabled, .service-buttons button.collapsible[disabled="disabled"], .service-buttons button.collapsible[disabled], .service-buttons button.collapsible[disabled=true] {
       cursor: default;
@@ -380,9 +380,9 @@ header.collapsed {
       background-color: #fff;
       color: #5b544d; }
     .email-toggle .subscribe-button:focus {
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
     .email-toggle .subscribe-button.disabled, .email-toggle .subscribe-button[disabled="disabled"], .email-toggle .subscribe-button[disabled], .email-toggle .subscribe-button[disabled=true] {
       cursor: default;
@@ -515,12 +515,12 @@ header.collapsed {
     .login-toggle > a:hover,
     .login-toggle button.collapsible:hover {
       background-color: #fff;
-      color: #776e64; }
+      color: #5b544d; }
       .login-toggle > a:hover .nypl-icon,
       .login-toggle button.collapsible:hover .nypl-icon {
         background-color: #fff;
         display: inline-block;
-        fill: #776e64;
+        fill: #5b544d;
         height: 1em;
         width: 1em;
         speak: none; }
@@ -533,9 +533,9 @@ header.collapsed {
       transform: scaleY(-1); }
     .login-toggle > a:focus,
     .login-toggle button.collapsible:focus {
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
     .login-toggle > a.disabled, .login-toggle > a[disabled="disabled"], .login-toggle > a[disabled], .login-toggle > a[disabled=true],
     .login-toggle button.collapsible.disabled,
@@ -633,9 +633,9 @@ li.search #main-search {
       background-color: #fff;
       color: #5b544d; }
     li.search #main-search .search-button:focus {
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
     li.search #main-search .search-button.disabled, li.search #main-search .search-button[disabled="disabled"], li.search #main-search .search-button[disabled], li.search #main-search .search-button[disabled=true] {
       cursor: default;

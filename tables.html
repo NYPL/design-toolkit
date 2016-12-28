@@ -133,21 +133,21 @@
 
     <h3 id="summary">Search results summary</h3>
 
-    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has an anchor element to remove the facet and refresh the search results.
+    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has a <code>button</code> element to remove the facet and refresh the search results.
     </p>
     <p>
-    <strong>NOTE:</strong> <strong>Avoid adding a space</strong> between the facet and the remove link so that it <strong>won't wrap to the next line</strong>.</p>
+    <strong>NOTE:</strong> <strong>Avoid adding a space</strong> between the facet and the remove button so that it <strong>won't wrap to the next line</strong>.</p>
 
     <div class="toolkit-example">
-    <div class="results-summary">
-      <span class="results-count">1,807</span> resources found for
-      <span class="facet">
-        <strong>Young Adult<a href="#" title="Remove Young Adult filter">×</a></strong>
-      </span>,
-      <span class="facet">
-        <strong>Fiction<a href="#" title="Remove Fiction filter">×</a></strong>
-      </span>.
-    </div>
+<div class="results-summary">
+  <span class="results-count">1,807</span> resources found for
+  <span class="facet">
+    <strong>Young Adult<button title="Remove Young Adult filter">×</button></strong>
+  </span>,
+  <span class="facet">
+    <strong>Fiction<button title="Remove Fiction filter">×</button></strong>
+  </span>.
+</div>
     </div>
     <pre><code class="scss">
 .results-summary {
@@ -155,16 +155,14 @@
 }
     </code></pre>
 
-    <p><strong>NOTE:</strong> Maybe replace <code>a</code> tag with <code>button</code>?</p>
-
     <pre><code class="html">
 &lt;div class=&quot;results-summary&quot;&gt;
   &lt;span class=&quot;results-count&quot;&gt;1,807&lt;/span&gt; resources found for
   &lt;span class=&quot;facet&quot;&gt;
-    &lt;strong&gt;Young Adult&lt;a href=&quot;#&quot; title=&quot;Remove Young Adult filter&quot;&gt;&times;&lt;/a&gt;&lt;/strong&gt;
+    &lt;strong&gt;Young Adult&lt;button title=&quot;Remove Young Adult filter&quot;&gt;&times;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;,
   &lt;span class=&quot;facet&quot;&gt;
-    &lt;strong&gt;Fiction&lt;a href=&quot;#&quot; title=&quot;Remove Fiction filter&quot;&gt;&times;&lt;/a&gt;&lt;/strong&gt;
+    &lt;strong&gt;Fiction&lt;button title=&quot;Remove Fiction filter&quot;&gt;&times;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;.
 &lt;/div&gt;
     </code></pre>
