@@ -79,8 +79,18 @@ $blue: #00f;
   @include column-half;
 }
 
+.half-offset {
+  @include column-half;
+  @include column-offset(2);
+}
+
 .quarter {
   @include column-one-quarter;
+}
+
+.quarter-offset {
+  @include column-one-quarter;
+  @include column-offset(2);
 }
 
 .third {
@@ -93,6 +103,11 @@ $blue: #00f;
 
 .three-quarter {
   @include column-three-quarters;
+}
+
+.three-quarter-offset {
+  @include column-three-quarters;
+  @include column-offset(1);
 }
 
 .inner {

@@ -35,6 +35,8 @@
 @mixin location-hours {
   @include basic-table;
 
+  margin-bottom: 2rem;
+
   .current {
     background-color: $nypl-yellow-tint;
   }
