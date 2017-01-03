@@ -8,7 +8,7 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($text-color: $button-text-color, $border-color: $button-border-color, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: 2rem, $collapsible: false) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: .125rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: 2.6rem, $collapsible: false, $padding-left: 1.2rem, $padding-top: .4rem) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
@@ -17,6 +17,7 @@
   font-size: $font-size;
   font-weight: 700; // equivalent of a medium weight
   height: $height;
+  padding: $padding-top $padding-left;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -33,6 +34,7 @@
   &:hover {
     $the-text-color: "";
     $the-background-color: "";
+    $the-border-color: "";
 
     @if $hover-background-color != $text-color {
       // there's custom hover color
@@ -50,6 +52,15 @@
     } @else {
       color: $background-color;
       $the-text-color: $background-color;
+    }
+
+    @if $the-border-color != $border-color {
+      // there's a custom border color
+      border-color: $border-color;
+      $the-border-color: $border-color;
+    } @else {
+      border-color: $border-color;
+      $the-border-color: $border-color;
     }
 
     @if $collapsible == true {

@@ -1099,13 +1099,14 @@ header.collapsed {
         width: 50%; } }
   .service-buttons li > a {
     background-color: #d0343a;
-    border: 0 solid #080807;
+    border: 0.125rem solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1123,7 +1124,8 @@ header.collapsed {
     white-space: nowrap; }
     .service-buttons li > a:hover {
       background-color: #fff;
-      color: #5b544d; }
+      color: #5b544d;
+      border-color: #5b544d; }
     .service-buttons li > a:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1137,13 +1139,14 @@ header.collapsed {
         color: #fff; }
     .service-buttons li > a.donate {
       background-color: #fff;
-      border: 0 solid #080807;
+      border: 0.125rem solid #5b544d;
       border-radius: 0;
       color: #d0343a;
       cursor: pointer;
       font-size: 0.8rem;
       font-weight: 700;
-      height: 2rem;
+      height: 2.6rem;
+      padding: 0.4rem 1.2rem;
       text-decoration: none;
       text-transform: uppercase;
       -webkit-transition: all 0.1s ease-in 0s;
@@ -1161,7 +1164,8 @@ header.collapsed {
       white-space: nowrap; }
       .service-buttons li > a.donate:hover {
         background-color: #fff;
-        color: #5b544d; }
+        color: #5b544d;
+        border-color: #5b544d; }
       .service-buttons li > a.donate:focus {
         -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1175,13 +1179,14 @@ header.collapsed {
           color: #d0343a; }
   .service-buttons button.collapsible {
     background-color: #d0343a;
-    border: 0 solid #080807;
+    border: 0.125rem solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1213,7 +1218,8 @@ header.collapsed {
         fill: #fff; }
     .service-buttons button.collapsible:hover {
       background-color: #fff;
-      color: #5b544d; }
+      color: #5b544d;
+      border-color: #5b544d; }
       .service-buttons button.collapsible:hover .nypl-icon {
         background-color: #fff;
         display: inline-block;
@@ -1252,7 +1258,8 @@ header.collapsed {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1261,7 +1268,8 @@ header.collapsed {
     transition: all 0.1s ease-in 0s; }
     .email-toggle .subscribe-button:hover {
       background-color: #fff;
-      color: #5b544d; }
+      color: #5b544d;
+      border-color: #fff; }
     .email-toggle .subscribe-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1357,13 +1365,14 @@ header.collapsed {
   .login-toggle > a,
   .login-toggle button.collapsible {
     background-color: #776e64;
-    border: 0 solid #080807;
+    border: 0.125rem solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1398,7 +1407,8 @@ header.collapsed {
     .login-toggle > a:hover,
     .login-toggle button.collapsible:hover {
       background-color: #fff;
-      color: #5b544d; }
+      color: #5b544d;
+      border-color: #5b544d; }
       .login-toggle > a:hover .nypl-icon,
       .login-toggle button.collapsible:hover .nypl-icon {
         background-color: #fff;
@@ -1499,13 +1509,14 @@ li.search #main-search {
   position: relative; }
   li.search #main-search .search-button {
     background-color: #5b544d;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1514,7 +1525,8 @@ li.search #main-search {
     transition: all 0.1s ease-in 0s; }
     li.search #main-search .search-button:hover {
       background-color: #fff;
-      color: #5b544d; }
+      color: #5b544d;
+      border-color: #5b544d; }
     li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1981,13 +1993,14 @@ footer {
     margin-right: 0.5rem; }
   .results-summary button {
     background-color: #fff;
-    border: 0 solid #080807;
+    border: 0.125rem solid #5b544d;
     border-radius: 0;
     color: #776e64;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
     height: 1rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -2000,7 +2013,8 @@ footer {
     vertical-align: super; }
     .results-summary button:hover {
       background-color: #fff;
-      color: #2799c5; }
+      color: #2799c5;
+      border-color: #5b544d; }
     .results-summary button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2346,13 +2360,14 @@ fieldset.alphabetical {
     margin-left: 0.5em; }
   fieldset.alphabetical button {
     background-color: #c0bab4;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #080807;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -2366,7 +2381,8 @@ fieldset.alphabetical {
     width: 2em; }
     fieldset.alphabetical button:hover {
       background-color: #fff;
-      color: #5b544d; }
+      color: #5b544d;
+      border-color: #5b544d; }
     fieldset.alphabetical button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2403,13 +2419,14 @@ fieldset.radiogroup {
 
 .search-button {
   background-color: #5b544d;
-  border: 0 solid #080807;
+  border: 0 solid #5b544d;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2418,7 +2435,8 @@ fieldset.radiogroup {
   transition: all 0.1s ease-in 0s; }
   .search-button:hover {
     background-color: #fff;
-    color: #5b544d; }
+    color: #5b544d;
+    border-color: #5b544d; }
   .search-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2433,13 +2451,14 @@ fieldset.radiogroup {
 
 .my-button-class {
   background-color: #5b544d;
-  border: 0 solid #080807;
+  border: 0.125rem solid #5b544d;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2448,7 +2467,8 @@ fieldset.radiogroup {
   transition: all 0.1s ease-in 0s; }
   .my-button-class:hover {
     background-color: #fff;
-    color: #5b544d; }
+    color: #5b544d;
+    border-color: #5b544d; }
   .my-button-class:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2463,13 +2483,14 @@ fieldset.radiogroup {
 
 .request-button {
   background-color: #2799c5;
-  border: 0 solid #2799c5;
+  border: 0.125rem solid #2799c5;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2478,7 +2499,8 @@ fieldset.radiogroup {
   transition: all 0.1s ease-in 0s; }
   .request-button:hover {
     background-color: #fff;
-    color: #5b544d; }
+    color: #5b544d;
+    border-color: #2799c5; }
   .request-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2497,13 +2519,14 @@ fieldset.radiogroup {
 
 .my-rounded-button {
   background-color: #5b544d;
-  border: 0 solid #080807;
-  border-radius: 1rem;
+  border: 0.125rem solid #5b544d;
+  border-radius: 1.3rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2512,7 +2535,8 @@ fieldset.radiogroup {
   transition: all 0.1s ease-in 0s; }
   .my-rounded-button:hover {
     background-color: #fff;
-    color: #5b544d; }
+    color: #5b544d;
+    border-color: #5b544d; }
   .my-rounded-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
