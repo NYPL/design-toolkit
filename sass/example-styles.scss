@@ -174,7 +174,7 @@ fieldset.radiogroup {
 }
 
 .my-rounded-button {
-  @include basic-button($border-radius: 1rem);
+  @include basic-button($border-radius: 1.3rem);
 }
 
 .row {
