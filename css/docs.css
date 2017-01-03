@@ -36,10 +36,6 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
-button.collapsible {
-  border: none;
-  cursor: pointer; }
-
 .alert {
   background-color: #fee24a;
   padding: 0.8rem 0; }
@@ -216,7 +212,7 @@ header.collapsed {
         width: 50%; } }
   .service-buttons li > a {
     background-color: #d0343a;
-    border: 0.125rem solid #5b544d;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
@@ -256,7 +252,7 @@ header.collapsed {
         color: #fff; }
     .service-buttons li > a.donate {
       background-color: #fff;
-      border: 0.125rem solid #5b544d;
+      border: 0 solid #5b544d;
       border-radius: 0;
       color: #d0343a;
       cursor: pointer;
@@ -296,7 +292,7 @@ header.collapsed {
           color: #d0343a; }
   .service-buttons button.collapsible {
     background-color: #d0343a;
-    border: 0.125rem solid #5b544d;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
@@ -430,7 +426,7 @@ header.collapsed {
     position: absolute; }
   .email-toggle input[type=text] {
     background-color: #c0bab4;
-    border: none;
+    border: 0;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #c0bab4;
     -moz-box-shadow: inset 0 0 0 2px #c0bab4;
@@ -444,7 +440,7 @@ header.collapsed {
     .email-toggle input[type=text].active {
       width: 16rem; }
     .email-toggle input[type=text]:focus {
-      background-color: white;
+      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
       box-shadow: inset 0 0 0 4px #ffb81d !important;
@@ -482,7 +478,7 @@ header.collapsed {
   .login-toggle > a,
   .login-toggle button.collapsible {
     background-color: #776e64;
-    border: 0.125rem solid #5b544d;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
@@ -642,7 +638,7 @@ li.search #main-search {
     transition: all 0.1s ease-in 0s; }
     li.search #main-search .search-button:hover {
       border-color: #5b544d;
-      background-color: #fff;
+      background-color: #c0bab4;
       color: #5b544d; }
     li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -675,9 +671,10 @@ li.search #main-search {
     padding: 0 0.75rem 0 0.5rem; }
     li.search #main-search .search-radio-label label {
       background-color: #c0bab4;
-      font-weight: normal !important;
+      font-weight: normal;
       padding: 0.1875rem 0; }
-    li.search #main-search .search-radio-label input[type=radio], li.search #main-search .search-radio-label input[type=checkbox] {
+    li.search #main-search .search-radio-label input[type=radio],
+    li.search #main-search .search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
     li.search #main-search .search-radio-label.selected {
@@ -694,7 +691,7 @@ li.search #main-search {
     position: absolute; }
   li.search #main-search .form-text {
     background-color: #c0bab4;
-    border: none;
+    border: 0;
     padding: 0;
     box-shadow: inset 0 0 0 2px #5b544d;
     height: 2rem;
@@ -795,11 +792,12 @@ pre {
 
 .my-text-field {
   background-color: #c0bab4;
-  border: none;
+  border: 0;
   margin: 0 0 1rem;
   padding: 0;
   position: relative; }
-  .my-text-field label, .my-text-field span {
+  .my-text-field label,
+  .my-text-field span {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
@@ -808,7 +806,7 @@ pre {
     position: absolute; }
   .my-text-field input[type=text] {
     background-color: #c0bab4;
-    border: none;
+    border: 0;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #c0bab4;
     -moz-box-shadow: inset 0 0 0 2px #c0bab4;
@@ -822,7 +820,7 @@ pre {
     .my-text-field input[type=text].active {
       width: 16rem; }
     .my-text-field input[type=text]:focus {
-      background-color: white;
+      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
       box-shadow: inset 0 0 0 4px #ffb81d !important;
@@ -831,11 +829,12 @@ pre {
 
 .my-select-box {
   background-color: #c0bab4;
-  border: none;
+  border: 0;
   margin: 0 0 1rem;
   padding: 0;
   position: relative; }
-  .my-select-box label, .my-select-box span {
+  .my-select-box label,
+  .my-select-box span {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
