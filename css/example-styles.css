@@ -1515,8 +1515,8 @@ li.search #main-search {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    height: 2rem;
+    padding: 0 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1525,7 +1525,7 @@ li.search #main-search {
     transition: all 0.1s ease-in 0s; }
     li.search #main-search .search-button:hover {
       border-color: #5b544d;
-      background-color: #fff;
+      background-color: #c0bab4;
       color: #5b544d; }
     li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;

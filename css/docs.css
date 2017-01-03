@@ -628,8 +628,8 @@ li.search #main-search {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    height: 2rem;
+    padding: 0 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
