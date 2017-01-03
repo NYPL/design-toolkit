@@ -843,11 +843,11 @@ legend {
 a {
   text-decoration: underline; }
   a:link {
-    color: #2799c5; }
+    color: #1b7fa7; }
   a:visited {
-    color: #1f789a; }
+    color: #145e7b; }
   a:hover, a:visited:hover {
-    color: #45b1da;
+    color: #22a0d3;
     text-decoration: none; }
   a.inverted:link {
     color: #fff; }
@@ -859,7 +859,7 @@ a {
 #skip a {
   background-color: #fff;
   border: 0;
-  color: #2799c5;
+  color: #1b7fa7;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -872,7 +872,7 @@ a {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #2799c5;
+    border: 5px solid #1b7fa7;
     height: auto;
     left: 7px;
     outline: 0;
@@ -2012,9 +2012,9 @@ footer {
     padding: 0;
     vertical-align: super; }
     .results-summary button:hover {
-      border-color: #2799c5;
+      border-color: #1b7fa7;
       background-color: #fff;
-      color: #2799c5; }
+      color: #1b7fa7; }
     .results-summary button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2068,7 +2068,7 @@ footer {
     width: 1em;
     speak: none;
     display: block;
-    fill: #2799c5;
+    fill: #1b7fa7;
     float: right;
     height: 2em;
     width: 2em; }
@@ -2482,8 +2482,8 @@ fieldset.radiogroup {
       color: #fff; }
 
 .request-button {
-  background-color: #2799c5;
-  border: 0.125rem solid #2799c5;
+  background-color: #1b7fa7;
+  border: 0.125rem solid #1b7fa7;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
@@ -2514,8 +2514,8 @@ fieldset.radiogroup {
       color: #fff; }
   .request-button:hover {
     background: #fff;
-    border-color: #2799c5;
-    color: #2799c5; }
+    border-color: #1b7fa7;
+    color: #1b7fa7; }
 
 .my-rounded-button {
   background-color: #5b544d;
