@@ -776,10 +776,6 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
-button.collapsible {
-  border: none;
-  cursor: pointer; }
-
 body {
   color: #080807; }
 
@@ -926,10 +922,6 @@ button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
   outline-width: 0.1875rem; }
-
-button.collapsible {
-  border: none;
-  cursor: pointer; }
 
 .alert {
   background-color: #fee24a;
@@ -1107,13 +1099,14 @@ header.collapsed {
         width: 50%; } }
   .service-buttons li > a {
     background-color: #d0343a;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1130,6 +1123,7 @@ header.collapsed {
     text-overflow: ellipsis;
     white-space: nowrap; }
     .service-buttons li > a:hover {
+      border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
     .service-buttons li > a:focus {
@@ -1145,13 +1139,14 @@ header.collapsed {
         color: #fff; }
     .service-buttons li > a.donate {
       background-color: #fff;
-      border: 0 solid #080807;
+      border: 0 solid #5b544d;
       border-radius: 0;
       color: #d0343a;
       cursor: pointer;
       font-size: 0.8rem;
       font-weight: 700;
-      height: 2rem;
+      height: 2.6rem;
+      padding: 0.4rem 1.2rem;
       text-decoration: none;
       text-transform: uppercase;
       -webkit-transition: all 0.1s ease-in 0s;
@@ -1168,6 +1163,7 @@ header.collapsed {
       text-overflow: ellipsis;
       white-space: nowrap; }
       .service-buttons li > a.donate:hover {
+        border-color: #5b544d;
         background-color: #fff;
         color: #5b544d; }
       .service-buttons li > a.donate:focus {
@@ -1183,13 +1179,14 @@ header.collapsed {
           color: #d0343a; }
   .service-buttons button.collapsible {
     background-color: #d0343a;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1220,6 +1217,7 @@ header.collapsed {
         background-color: inherit;
         fill: #fff; }
     .service-buttons button.collapsible:hover {
+      border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
       .service-buttons button.collapsible:hover .nypl-icon {
@@ -1260,7 +1258,8 @@ header.collapsed {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1268,6 +1267,7 @@ header.collapsed {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     .email-toggle .subscribe-button:hover {
+      border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
     .email-toggle .subscribe-button:focus {
@@ -1313,7 +1313,7 @@ header.collapsed {
     position: absolute; }
   .email-toggle input[type=text] {
     background-color: #c0bab4;
-    border: none;
+    border: 0;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #c0bab4;
     -moz-box-shadow: inset 0 0 0 2px #c0bab4;
@@ -1327,7 +1327,7 @@ header.collapsed {
     .email-toggle input[type=text].active {
       width: 16rem; }
     .email-toggle input[type=text]:focus {
-      background-color: white;
+      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
       box-shadow: inset 0 0 0 4px #ffb81d !important;
@@ -1365,13 +1365,14 @@ header.collapsed {
   .login-toggle > a,
   .login-toggle button.collapsible {
     background-color: #776e64;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1405,6 +1406,7 @@ header.collapsed {
         fill: #fff; }
     .login-toggle > a:hover,
     .login-toggle button.collapsible:hover {
+      border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
       .login-toggle > a:hover .nypl-icon,
@@ -1507,13 +1509,14 @@ li.search #main-search {
   position: relative; }
   li.search #main-search .search-button {
     background-color: #5b544d;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1521,6 +1524,7 @@ li.search #main-search {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     li.search #main-search .search-button:hover {
+      border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
     li.search #main-search .search-button:focus {
@@ -1554,9 +1558,10 @@ li.search #main-search {
     padding: 0 0.75rem 0 0.5rem; }
     li.search #main-search .search-radio-label label {
       background-color: #c0bab4;
-      font-weight: normal !important;
+      font-weight: normal;
       padding: 0.1875rem 0; }
-    li.search #main-search .search-radio-label input[type=radio], li.search #main-search .search-radio-label input[type=checkbox] {
+    li.search #main-search .search-radio-label input[type=radio],
+    li.search #main-search .search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
     li.search #main-search .search-radio-label.selected {
@@ -1573,7 +1578,7 @@ li.search #main-search {
     position: absolute; }
   li.search #main-search .form-text {
     background-color: #c0bab4;
-    border: none;
+    border: 0;
     padding: 0;
     box-shadow: inset 0 0 0 2px #5b544d;
     height: 2rem;
@@ -1988,13 +1993,14 @@ footer {
     margin-right: 0.5rem; }
   .results-summary button {
     background-color: #fff;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #776e64;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
     height: 1rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -2006,6 +2012,7 @@ footer {
     padding: 0;
     vertical-align: super; }
     .results-summary button:hover {
+      border-color: #2799c5;
       background-color: #fff;
       color: #2799c5; }
     .results-summary button:focus {
@@ -2274,11 +2281,12 @@ table,
 div.location fieldset,
 fieldset.select {
   background-color: #c0bab4;
-  border: none;
+  border: 0;
   margin: 0 0 1rem;
   padding: 0;
   position: relative; }
-  div.location fieldset label, div.location fieldset span,
+  div.location fieldset label,
+  div.location fieldset span,
   fieldset.select label,
   fieldset.select span {
     display: block;
@@ -2304,11 +2312,12 @@ fieldset.select {
 
 fieldset.textfield {
   background-color: #c0bab4;
-  border: none;
+  border: 0;
   margin: 0 0 1rem;
   padding: 0;
   position: relative; }
-  fieldset.textfield label, fieldset.textfield span {
+  fieldset.textfield label,
+  fieldset.textfield span {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
@@ -2317,7 +2326,7 @@ fieldset.textfield {
     position: absolute; }
   fieldset.textfield input[type=text] {
     background-color: #c0bab4;
-    border: none;
+    border: 0;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #c0bab4;
     -moz-box-shadow: inset 0 0 0 2px #c0bab4;
@@ -2331,7 +2340,7 @@ fieldset.textfield {
     fieldset.textfield input[type=text].active {
       width: 16rem; }
     fieldset.textfield input[type=text]:focus {
-      background-color: white;
+      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d !important;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d !important;
       box-shadow: inset 0 0 0 4px #ffb81d !important;
@@ -2340,35 +2349,38 @@ fieldset.textfield {
 
 fieldset.alphabetical {
   background-color: #c0bab4;
-  border: none;
+  border: 0;
   margin: 0 0 1rem;
   padding: 0;
   position: relative; }
-  fieldset.alphabetical label, fieldset.alphabetical span {
+  fieldset.alphabetical label,
+  fieldset.alphabetical span {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
   fieldset.alphabetical button {
     background-color: #c0bab4;
-    border: 0 solid #080807;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #080807;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    height: 2rem;
+    height: 2.6rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
-    display: inline-block !important;
+    display: inline-block;
     font-weight: normal;
     margin: 0 0 0.5em 0.5em;
     padding: 0.2rem 0.25em;
     width: 2em; }
     fieldset.alphabetical button:hover {
+      border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
     fieldset.alphabetical button:focus {
@@ -2387,31 +2399,34 @@ fieldset.alphabetical {
 
 fieldset.radiogroup {
   background-color: #c0bab4;
-  border: none;
+  border: 0;
   margin: 0 0 1rem;
   padding: 0;
   position: relative; }
-  fieldset.radiogroup label, fieldset.radiogroup span {
+  fieldset.radiogroup label,
+  fieldset.radiogroup span {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
   fieldset.radiogroup label {
     background-color: #c0bab4;
-    font-weight: normal !important;
+    font-weight: normal;
     padding: 0.1875rem 0; }
-  fieldset.radiogroup input[type=radio], fieldset.radiogroup input[type=checkbox] {
+  fieldset.radiogroup input[type=radio],
+  fieldset.radiogroup input[type=checkbox] {
     height: initial;
     margin-right: 0.25rem; }
 
 .search-button {
   background-color: #5b544d;
-  border: 0 solid #080807;
+  border: 0 solid #5b544d;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2419,6 +2434,7 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .search-button:hover {
+    border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
   .search-button:focus {
@@ -2435,13 +2451,14 @@ fieldset.radiogroup {
 
 .my-button-class {
   background-color: #5b544d;
-  border: 0 solid #080807;
+  border: 0.125rem solid #5b544d;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2449,6 +2466,7 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-button-class:hover {
+    border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
   .my-button-class:focus {
@@ -2465,13 +2483,14 @@ fieldset.radiogroup {
 
 .request-button {
   background-color: #2799c5;
-  border: 0 solid #2799c5;
+  border: 0.125rem solid #2799c5;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2479,6 +2498,7 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .request-button:hover {
+    border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
   .request-button:focus {
@@ -2499,13 +2519,14 @@ fieldset.radiogroup {
 
 .my-rounded-button {
   background-color: #5b544d;
-  border: 0 solid #080807;
-  border-radius: 1rem;
+  border: 0.125rem solid #5b544d;
+  border-radius: 1.3rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  height: 2rem;
+  height: 2.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2513,6 +2534,7 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-rounded-button:hover {
+    border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
   .my-rounded-button:focus {

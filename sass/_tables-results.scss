@@ -38,7 +38,7 @@
   }
 
   button {
-    @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1rem);
+    @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1rem, $border-width: 0);
     display: inline-block;
     margin: 0;
     padding: 0;
