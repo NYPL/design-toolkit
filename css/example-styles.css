@@ -1131,9 +1131,9 @@ header.collapsed {
     text-overflow: ellipsis;
     white-space: nowrap; }
     .service-buttons li > a:hover {
+      border-color: #5b544d;
       background-color: #fff;
-      color: #5b544d;
-      border-color: #5b544d; }
+      color: #5b544d; }
     .service-buttons li > a:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1171,9 +1171,9 @@ header.collapsed {
       text-overflow: ellipsis;
       white-space: nowrap; }
       .service-buttons li > a.donate:hover {
+        border-color: #5b544d;
         background-color: #fff;
-        color: #5b544d;
-        border-color: #5b544d; }
+        color: #5b544d; }
       .service-buttons li > a.donate:focus {
         -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1225,9 +1225,9 @@ header.collapsed {
         background-color: inherit;
         fill: #fff; }
     .service-buttons button.collapsible:hover {
+      border-color: #5b544d;
       background-color: #fff;
-      color: #5b544d;
-      border-color: #5b544d; }
+      color: #5b544d; }
       .service-buttons button.collapsible:hover .nypl-icon {
         background-color: #fff;
         display: inline-block;
@@ -1275,9 +1275,9 @@ header.collapsed {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     .email-toggle .subscribe-button:hover {
+      border-color: #5b544d;
       background-color: #fff;
-      color: #5b544d;
-      border-color: #fff; }
+      color: #5b544d; }
     .email-toggle .subscribe-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1414,9 +1414,9 @@ header.collapsed {
         fill: #fff; }
     .login-toggle > a:hover,
     .login-toggle button.collapsible:hover {
+      border-color: #5b544d;
       background-color: #fff;
-      color: #5b544d;
-      border-color: #5b544d; }
+      color: #5b544d; }
       .login-toggle > a:hover .nypl-icon,
       .login-toggle button.collapsible:hover .nypl-icon {
         background-color: #fff;
@@ -1532,9 +1532,9 @@ li.search #main-search {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     li.search #main-search .search-button:hover {
+      border-color: #5b544d;
       background-color: #fff;
-      color: #5b544d;
-      border-color: #5b544d; }
+      color: #5b544d; }
     li.search #main-search .search-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2019,9 +2019,9 @@ footer {
     padding: 0;
     vertical-align: super; }
     .results-summary button:hover {
+      border-color: #2799c5;
       background-color: #fff;
-      color: #2799c5;
-      border-color: #5b544d; }
+      color: #2799c5; }
     .results-summary button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2384,9 +2384,9 @@ fieldset.alphabetical {
     padding: 0.2rem 0.25em;
     width: 2em; }
     fieldset.alphabetical button:hover {
+      border-color: #5b544d;
       background-color: #fff;
-      color: #5b544d;
-      border-color: #5b544d; }
+      color: #5b544d; }
     fieldset.alphabetical button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2436,9 +2436,9 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .search-button:hover {
+    border-color: #5b544d;
     background-color: #fff;
-    color: #5b544d;
-    border-color: #5b544d; }
+    color: #5b544d; }
   .search-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2468,9 +2468,9 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-button-class:hover {
+    border-color: #5b544d;
     background-color: #fff;
-    color: #5b544d;
-    border-color: #5b544d; }
+    color: #5b544d; }
   .my-button-class:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2500,9 +2500,9 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .request-button:hover {
+    border-color: #5b544d;
     background-color: #fff;
-    color: #5b544d;
-    border-color: #2799c5; }
+    color: #5b544d; }
   .request-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2536,9 +2536,9 @@ fieldset.radiogroup {
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .my-rounded-button:hover {
+    border-color: #5b544d;
     background-color: #fff;
-    color: #5b544d;
-    border-color: #5b544d; }
+    color: #5b544d; }
   .my-rounded-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
