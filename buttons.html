@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NYPL Design toolkit</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/docs.css" media="screen" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="js/atom-one-light.css">
+<script src="js/highlight.pack.js"></script>
+
+</head>
+<body>
+
+<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+
+<main class="main-page">
+
+
+  <div class="page-header">
+    <div class="content-wrapper">
+      <div class="breadcrumb"><a href="./">Toolkit home</a> > Buttons</div>
+      <h1>NYPL Design Toolkit</h1>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="quarter">
+      <a name="mainContent"></a>
+      <p class="secondary-title">NYPL Design Toolkit</p>
+      <ul>
+        <li><a href="index.html">Toolkit home</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li>Buttons</li>
+        <li><a href="microformats.html">General Microformats</a></li>
+        <li><a href="tables.html">Tables and data</a></li>
+        <li><a href="svg-index.html">SVG Usage</a></li>
+      </ul>
+      <ul>
+        <li><a href="example.html">Example Page</a></li>
+        <li><a href="https://github.com/NYPL/design-toolkit/" class="external">View on Github</a></li>
+      </ul>
+    </div>
+
+  <div id="toc" class="main-content three-quarter">
+    <h2>Table of contents</h2>
+
+    <ul>
+      <li><a href="#squareButton">Square Button</a></li>
+      <li><a href="#roundedButton">Rounded Button</a></li>
+    </ul>
+
+    <h2 id="buttons">Buttons</h2>
+    <a href="#toc">Go to top</a>
+
+    <h3 id="squareButton">Square Button</h3>
+    <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
+    </p>
+      <div class="toolkit-example">
+        <button class="my-button-class">Button</button>
+        <button class="request-button">Request a Button</button>
+      </div>
+      <pre><code class="scss">
+.my-button-class {
+  @include basic-button;
+}
+.request-button {
+  @include request-button;
+}
+      </code></pre>
+      <pre><code class="html">
+&lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
+    </code></pre>
+
+    <h3 id="roundedButton">Rounded Button</h3>
+    <p>A very simple version of the existent rounded button style.</p>
+      <div class="toolkit-example">
+        <button class="my-rounded-button">Button</button>
+      </div>
+      <pre><code class="scss">
+.my-rounded-button {
+  @include basic-button($border-radius: 1rem);
+}
+      </code></pre>
+      <pre><code class="html">
+&lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
+    </code></pre>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+hljs.configure({languages:['html', 'scss']})
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

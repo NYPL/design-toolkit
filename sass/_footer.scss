@@ -1,26 +1,27 @@
 @import "measurements";
-@import "microformats-mixins";
+@import "general-mixins";
+@import "microformats";
 @import "media-queries";
 
 footer {
   background-color: $nypl-footer-color;
-  color: white;
+  color: $nypl-white;
   font-size: 0.9rem;
   margin-top: 5rem;
   // font-weight: bold;
   // @include Kievit-Bold;
-}
 
-footer ul {
-  list-style: none;
-  margin: 1rem 0 1rem 0;
-  padding: 0;
-  @include clearfix;
+  ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    @include clearfix;
+  }
 }
 
 .copyright {
-  background: url("../img/nypl-rev.svg") no-repeat scroll 0px 0px/#{$logo-width} auto transparent;
-  border: none;
+  background: url("../img/nypl-rev.svg") no-repeat scroll 0 0/#{$logo-width} auto transparent;
+  border: 0;
   display: block;
   height: $logo-height;
   margin-top: 2rem;
@@ -35,7 +36,7 @@ footer ul {
 .footerLinks {
 
   li {
-      margin-left: 0;
+    margin-left: 0;
   }
 
   > li {

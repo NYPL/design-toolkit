@@ -29,6 +29,7 @@ $nypl-white: #fff;
 
 $nypl-black: #111;
 
+
 // NYPL Yellows for Alerts & Focus halos etc.
 $nypl-yellow: #fee24a;
 
@@ -59,7 +60,7 @@ $page-text-color: $nypl-dark-gray;
 $nypl-footer-color: $nypl-gray-brown;
 $highlight-color: $nypl-red;
 $alert-color: $nypl-yellow;
-$background-color: $nypl-white;
+$page-background-color: $nypl-white;
 
 // link colors
 $link-color: $nypl-blue;
@@ -69,7 +70,7 @@ $inverted-link-color: $nypl-white;
 $inverted-link-visited-color: darken($inverted-link-color, 10%);
 
 // button colors not already defined above.
-$button-text-color: $nypl-dark-gray;
+$button-text-color: $nypl-white;
 
 $button-border-color: $nypl-dark-gray;
 

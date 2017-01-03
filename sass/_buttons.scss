@@ -1,5 +1,6 @@
 @import "css3";
 @import "measurements";
+@import "colors";
 // Buttons stylings
 //TODO: move button style in _forms.scss to this partial
 //      add in styles for request button
@@ -7,31 +8,105 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($button-text-color: $nypl-dark-gray, $button-border-color: $nypl-dark-gray, $button-background-color: $nypl-white, $border-radius: 0) {
-  background-color: $button-background-color;
-  border: $button-border-color solid (1 / 8 * 1rem); // assuming 16px rem
+@mixin basic-button ($text-color: $button-text-color, $border-color: $button-border-color, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: 2rem, $collapsible: false) {
+  background-color: $background-color;
+  border: $border-width solid $border-color;
   border-radius: $border-radius;
-  color: $button-text-color;
+  color: $text-color;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: $font-size;
   font-weight: 700; // equivalent of a medium weight
-  padding: 0.5rem 1rem;
+  height: $height;
+  text-decoration: none;
   text-transform: uppercase;
 
   @include transition(all, $hover-time, ease-in);
 
+  @if $collapsible == true {
+    // has nypl-icon with down arrow
+    .nypl-icon {
+      @include nypl-icon($fill: $text-color, $background-color: $background-color);
+      @include transition(all, $hover-time, ease-in);
+    }
+  }
+
   &:hover {
-    background: invert($button-background-color);
-    color: invert($button-text-color);
+    $the-text-color: "";
+    $the-background-color: "";
+
+    @if $hover-background-color != $text-color {
+      // there's custom hover color
+      background-color: $hover-background-color;
+      $the-background-color: $hover-background-color;
+    } @else {
+      background-color: $text-color;
+      $the-background-color: $text-color;
+    }
+
+    @if $hover-text-color != $background-color {
+      // there's custom hover color
+      color: $hover-text-color;
+      $the-text-color: $hover-text-color;
+    } @else {
+      color: $background-color;
+      $the-text-color: $background-color;
+    }
+
+    @if $collapsible == true {
+      // has nypl-icon with down arrow
+      .nypl-icon {
+        @include nypl-icon($fill: $the-text-color, $background-color: $the-background-color);
+      }
+    }
+  }
+
+  &.active {
+    @if $collapsible == true {
+      .nypl-icon {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  &:focus {
+    @include box-shadow(inset 0 0 0 0.125rem $focus-color);
+    outline: none;
+  }
+
+  &.disabled,
+  &[disabled="disabled"],
+  &[disabled],
+  &[disabled=true] {
+
+    @warn "set universal disabled style";
+    cursor: default;
+    background-color: $disabled-color;
+
+    &:hover {
+      background-color: $disabled-color;
+      color: $text-color;
+    }
   }
 }
 
 @mixin request-button {
-  @include basic-button ($button-text-color: $nypl-white, $button-border-color: $nypl-blue, $button-background-color: $nypl-blue, $border-radius: 0.25rem);
+  @include basic-button ($text-color: $nypl-white, $border-color: $nypl-blue, $background-color: $nypl-blue, $border-radius: 0.25rem);
 
   &:hover {
     background: $nypl-white;
     border-color: $nypl-blue;
     color: $nypl-blue;
   }
+}
+
+@mixin service-button {
+  display: block;
+  font-weight: bold;
+  height: auto;
+  overflow: hidden;
+  padding: 0 0.5em;
+  padding-right: 1em;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

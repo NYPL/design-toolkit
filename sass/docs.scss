@@ -2,6 +2,7 @@
 @import "colors";
 @import "typography";
 @import "icons";
+@import "general-mixins";
 @import "forms";
 @import "grid";
 @import "header";
@@ -30,7 +31,7 @@ pre {
 }
 
 .toolkit-example-dark {
-  @extend .toolkit-example;
+  @include toolkit-example;
   @include toolkit-example-dark;
 }
 
@@ -41,4 +42,8 @@ pre {
 
 .nypl-icon {
   @include nypl-icon($height: 10em, $width: 10em);
+}
+
+.my-table {
+  @include basic-table;
 }
