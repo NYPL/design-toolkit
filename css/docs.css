@@ -212,7 +212,7 @@ header.collapsed {
         width: 50%; } }
   .service-buttons li > a {
     background-color: #d0343a;
-    border: 0.125rem solid #5b544d;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
@@ -252,7 +252,7 @@ header.collapsed {
         color: #fff; }
     .service-buttons li > a.donate {
       background-color: #fff;
-      border: 0.125rem solid #5b544d;
+      border: 0 solid #5b544d;
       border-radius: 0;
       color: #d0343a;
       cursor: pointer;
@@ -292,7 +292,7 @@ header.collapsed {
           color: #d0343a; }
   .service-buttons button.collapsible {
     background-color: #d0343a;
-    border: 0.125rem solid #5b544d;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
@@ -478,7 +478,7 @@ header.collapsed {
   .login-toggle > a,
   .login-toggle button.collapsible {
     background-color: #776e64;
-    border: 0.125rem solid #5b544d;
+    border: 0 solid #5b544d;
     border-radius: 0;
     color: #fff;
     cursor: pointer;
@@ -637,7 +637,7 @@ li.search #main-search {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
     li.search #main-search .search-button:hover {
-      background-color: #fff;
+      background-color: #c0bab4;
       color: #5b544d;
       border-color: #5b544d; }
     li.search #main-search .search-button:focus {
