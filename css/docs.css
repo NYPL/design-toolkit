@@ -234,6 +234,7 @@ header.collapsed {
     padding-right: 1em;
     position: relative;
     text-overflow: ellipsis;
+    text-transform: uppercase;
     white-space: nowrap; }
     .service-buttons li > a:hover {
       border-color: #5b544d;
@@ -274,6 +275,7 @@ header.collapsed {
       padding-right: 1em;
       position: relative;
       text-overflow: ellipsis;
+      text-transform: uppercase;
       white-space: nowrap; }
       .service-buttons li > a.donate:hover {
         border-color: #5b544d;
@@ -314,6 +316,7 @@ header.collapsed {
     padding-right: 1em;
     position: relative;
     text-overflow: ellipsis;
+    text-transform: uppercase;
     white-space: nowrap; }
     .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
@@ -325,7 +328,12 @@ header.collapsed {
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s; }
+      transition: all 0.1s ease-in 0s;
+      -webkit-transform: translate(0, 0.25em);
+      -moz-transform: translate(0, 0.25em);
+      -ms-transform: translate(0, 0.25em);
+      -o-transform: translate(0, 0.25em);
+      transform: translate(0, 0.25em); }
       .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
@@ -453,7 +461,6 @@ header.collapsed {
   font-size: 0.8rem;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
   top: 1.5rem; }
   .login-toggle button {
     text-transform: uppercase; }
@@ -500,6 +507,7 @@ header.collapsed {
     padding-right: 1em;
     position: relative;
     text-overflow: ellipsis;
+    text-transform: uppercase;
     white-space: nowrap; }
     .login-toggle > a .nypl-icon,
     .login-toggle button.collapsible .nypl-icon {
@@ -512,7 +520,12 @@ header.collapsed {
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s; }
+      transition: all 0.1s ease-in 0s;
+      -webkit-transform: translate(0, 0.25em);
+      -moz-transform: translate(0, 0.25em);
+      -ms-transform: translate(0, 0.25em);
+      -o-transform: translate(0, 0.25em);
+      transform: translate(0, 0.25em); }
       .login-toggle > a .nypl-icon.reversed,
       .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;

@@ -119,7 +119,26 @@
   }
 }
 
+@mixin results-sorter {
+  button {
+    @include basic-button($collapsible: true, $border-width: 0);
+  }
+}
+
+@mixin results-item {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  margin-left: 0;
+}
+
+@mixin results-item-formats {
+  border-left: 1rem solid $nypl-light-gray;
+  padding-left: 1rem;
+}
+
 @mixin views-table {
+  @warn "this mixin is not used";
+
   display: table;
   border-collapse: collapse;
 

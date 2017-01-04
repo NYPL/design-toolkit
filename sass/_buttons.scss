@@ -28,6 +28,7 @@
     .nypl-icon {
       @include nypl-icon($fill: $text-color, $background-color: $background-color);
       @include transition(all, $hover-time, ease-in);
+      @include translate(0, 0.25em);
     }
   }
 
@@ -109,5 +110,6 @@
   padding-right: 1em;
   position: relative;
   text-overflow: ellipsis;
+  text-transform: uppercase;
   white-space: nowrap;
 }
