@@ -715,13 +715,16 @@ li.search #main-search {
       line-height: 2.5; }
     li.search #main-search .form-text,
     li.search #main-search .form-text.active {
-      margin: 0;
-      width: 70%; }
+      margin: 0.1875rem;
+      width: 69.2%; }
     li.search #main-search .search-button {
+      height: 3rem;
       margin: 0;
+      padding-top: 0.25rem;
       width: 30%; }
     li.search #main-search .search-select {
-      top: 2.5rem; } }
+      padding: 0 0 0.1875rem 0.1875rem;
+      top: 3rem; } }
 
 @font-face {
   font-family: nypl-moon;
