@@ -7,7 +7,7 @@
 @warn "remove magic numbers";
 
 @mixin page-header {
-  background-color: $page-colorlight;
+  background-color: $page-color-light;
 
   h1 {
     margin: 0;

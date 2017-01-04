@@ -119,9 +119,37 @@
   }
 }
 
+$sorter-width: 14em;
+
 @mixin results-sorter {
+  position: relative;
+  width: $sorter-width;
+
   button {
-    @include basic-button($collapsible: true, $border-width: 0);
+    @include basic-button($collapsible: true, $border-width: 0, $background-color: $page-background-color, $text-color: $page-color, $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
+    width: $sorter-width;
+  }
+
+  ul {
+    background-color: $nypl-search-color-light;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    width: $sorter-width;
+  }
+
+  li {
+
+  }
+
+  a {
+    color: $page-color;
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 }
 
