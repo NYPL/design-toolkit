@@ -439,9 +439,9 @@ li.search {
       background-color: $nypl-search-color;
       font-size: 0.9rem;
       right: 0;
-      padding: 1px 3px 3px;
+      padding: 0.1875rem;
       position: absolute;
-      top: 2rem;
+      top: 2.65rem;
       white-space: nowrap;
       z-index: 1;
     }
@@ -479,14 +479,14 @@ li.search {
       @include input;
       box-shadow: inset 0 0 0 2px $nypl-search-color-dark;
       height: 2rem;
-      margin-right: 1px;
+      margin: 0.3125rem 0.3125rem 0;
       padding: 0;
       text-indent: 0.5rem;
       transition: all $hover-time ease-out;
       width: 10rem;
 
       &.active {
-        width: 16rem;
+        width: 16.5rem;
       }
 
       &:focus {
