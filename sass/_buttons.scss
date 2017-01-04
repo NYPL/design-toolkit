@@ -15,11 +15,11 @@
   color: $text-color;
   cursor: pointer;
   font-size: $font-size;
-  font-weight: 700; // equivalent of a medium weight
+  // font-weight: 700; // equivalent of a medium weight
   height: $height;
   padding: $padding-vertical $padding-horizontal;
   text-decoration: none;
-  // text-transform: uppercase;
+  text-transform: uppercase;
 
   @include transition(all, $hover-time, ease-in);
 
