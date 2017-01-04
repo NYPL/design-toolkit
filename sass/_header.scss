@@ -486,7 +486,7 @@ li.search {
       width: 10rem;
 
       &.active {
-        width: 16.5rem;
+        width: 13.5rem;
       }
 
       &:focus {
@@ -508,13 +508,13 @@ li.search {
       .form-text,
       .form-text.active {
         margin: 0.1875rem;
-        width: 69.2%;
+        width: 67.2%;
       }
 
       .search-button {
         height: 3rem;
         margin: 0;
-        padding-top: 0.25rem;
+        padding: 0.1rem 0 0 0.1rem;
         width: 30%;
       }
 
