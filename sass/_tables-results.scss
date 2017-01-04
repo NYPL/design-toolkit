@@ -7,18 +7,35 @@
 @warn "refactor mixins and remove magic numbers";
 
 @mixin basic-table {
+  border-collapse: collapse;
+  display: table;
   position: relative;
   width: 100%;
 
+  tr {
+    border-bottom: 0.0625rem solid $nypl-light-gray;
+    display: table-row;
+  }
+
+  thead,
+  th {
+    border-bottom: 0.0625rem solid $page-color;
+    font-weight: bold;
+    text-align: left;
+  }
+
   th,
   td {
+    display: table-cell;
     overflow: hidden;
     padding: 0.125rem 0.25rem;
     text-overflow: ellipsis;
   }
 
   td {
+    border-bottom: 1px solid $nypl-light-gray;
     padding-bottom: 1rem;
+    vertical-align: top;
   }
 }
 

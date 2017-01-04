@@ -892,14 +892,27 @@ pre {
     fill: #fff; }
 
 .my-table {
+  border-collapse: collapse;
+  display: table;
   position: relative;
   width: 100%; }
+  .my-table tr {
+    border-bottom: 0.0625rem solid #d7d4d0;
+    display: table-row; }
+  .my-table thead,
+  .my-table th {
+    border-bottom: 0.0625rem solid #080807;
+    font-weight: bold;
+    text-align: left; }
   .my-table th,
   .my-table td {
+    display: table-cell;
     overflow: hidden;
     padding: 0.125rem 0.25rem;
     text-overflow: ellipsis; }
   .my-table td {
-    padding-bottom: 1rem; }
+    border-bottom: 1px solid #d7d4d0;
+    padding-bottom: 1rem;
+    vertical-align: top; }
 
 /*# sourceMappingURL=docs.css.map */
