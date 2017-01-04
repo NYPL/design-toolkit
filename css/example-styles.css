@@ -1127,7 +1127,7 @@ header.collapsed {
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap; }
-    .service-buttons li > a:hover {
+    .service-buttons li > a:hover, .service-buttons li > a.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
@@ -1164,7 +1164,7 @@ header.collapsed {
       text-overflow: ellipsis;
       text-transform: uppercase;
       white-space: nowrap; }
-      .service-buttons li > a.donate:hover {
+      .service-buttons li > a.donate:hover, .service-buttons li > a.donate.active {
         border-color: #5b544d;
         background-color: #fff;
         color: #5b544d; }
@@ -1221,18 +1221,18 @@ header.collapsed {
       .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .service-buttons button.collapsible:hover {
+    .service-buttons button.collapsible:hover, .service-buttons button.collapsible.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
-      .service-buttons button.collapsible:hover .nypl-icon {
+      .service-buttons button.collapsible:hover .nypl-icon, .service-buttons button.collapsible.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #5b544d;
         height: 1em;
         width: 1em;
         speak: none; }
-        .service-buttons button.collapsible:hover .nypl-icon.reversed {
+        .service-buttons button.collapsible:hover .nypl-icon.reversed, .service-buttons button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .service-buttons button.collapsible.active .nypl-icon {
@@ -1271,7 +1271,7 @@ header.collapsed {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    .email-toggle .subscribe-button:hover {
+    .email-toggle .subscribe-button:hover, .email-toggle .subscribe-button.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
@@ -1408,21 +1408,24 @@ header.collapsed {
       .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .login-toggle > a:hover,
-    .login-toggle button.collapsible:hover {
+    .login-toggle > a:hover, .login-toggle > a.active,
+    .login-toggle button.collapsible:hover,
+    .login-toggle button.collapsible.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
-      .login-toggle > a:hover .nypl-icon,
-      .login-toggle button.collapsible:hover .nypl-icon {
+      .login-toggle > a:hover .nypl-icon, .login-toggle > a.active .nypl-icon,
+      .login-toggle button.collapsible:hover .nypl-icon,
+      .login-toggle button.collapsible.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #5b544d;
         height: 1em;
         width: 1em;
         speak: none; }
-        .login-toggle > a:hover .nypl-icon.reversed,
-        .login-toggle button.collapsible:hover .nypl-icon.reversed {
+        .login-toggle > a:hover .nypl-icon.reversed, .login-toggle > a.active .nypl-icon.reversed,
+        .login-toggle button.collapsible:hover .nypl-icon.reversed,
+        .login-toggle button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .login-toggle > a.active .nypl-icon,
@@ -1527,7 +1530,7 @@ li.search #main-search {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    li.search #main-search .search-button:hover {
+    li.search #main-search .search-button:hover, li.search #main-search .search-button.active {
       border-color: #5b544d;
       background-color: #c0bab4;
       color: #5b544d; }
@@ -2015,7 +2018,7 @@ footer {
     margin: 0;
     padding: 0;
     vertical-align: super; }
-    .results-summary button:hover {
+    .results-summary button:hover, .results-summary button.active {
       border-color: #1b7fa7;
       background-color: #fff;
       color: #1b7fa7; }
@@ -2353,7 +2356,7 @@ fieldset.alphabetical {
     margin: 0 0 0.5em 0.5em;
     padding: 0.2rem 0.25em;
     width: 2em; }
-    fieldset.alphabetical button:hover {
+    fieldset.alphabetical button:hover, fieldset.alphabetical button.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
@@ -2407,7 +2410,7 @@ fieldset.radiogroup {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .search-button:hover {
+  .search-button:hover, .search-button.active {
     border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
@@ -2439,7 +2442,7 @@ fieldset.radiogroup {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .my-button-class:hover {
+  .my-button-class:hover, .my-button-class.active {
     border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
@@ -2471,7 +2474,7 @@ fieldset.radiogroup {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .request-button:hover {
+  .request-button:hover, .request-button.active {
     border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }
@@ -2507,7 +2510,7 @@ fieldset.radiogroup {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .my-rounded-button:hover {
+  .my-rounded-button:hover, .my-rounded-button.active {
     border-color: #5b544d;
     background-color: #fff;
     color: #5b544d; }

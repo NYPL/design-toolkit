@@ -36,6 +36,9 @@ function init() {
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()
     }
+    if (!$(e.target).closest('.sorter').length) {
+      hideSort()
+    }
     if (!$(e.target).closest('.login-toggle').length && !$(e.target).parents("#login-links").length) {
       hideLogin()
     }
@@ -47,6 +50,12 @@ function init() {
   $(".login-toggle button.collapsible").click(function(e) {
     if ($(e.target).closest('.login-toggle').length && !$(e.target).parents("#login-links").length) {
       toggleLogin()
+    }
+  })
+
+  $(".sorter button").click(function(e) {
+    if ($(e.target).closest('.sorter').length) {
+      toggleSort()
     }
   })
 
@@ -68,6 +77,16 @@ function init() {
     $(this).remove()
     $("header").removeClass("collapsed")
   })
+}
+
+function toggleSort() {
+  $(".sorter button").toggleClass("active")
+  $(".sorter ul").toggleClass("hidden")
+}
+
+function hideSort() {
+  $(".sorter button").removeClass("active")
+  $(".sorter ul").addClass("hidden")
 }
 
 function toggleLogin() {
