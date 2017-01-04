@@ -17,6 +17,7 @@ linters:
 
   LeadingZero:
     enabled: true
+    style: include_zero
 
   NameFormat:
     enabled: true
