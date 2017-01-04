@@ -424,7 +424,7 @@ li.search {
     position: relative;
 
     .search-button {
-      @include basic-button($border-width: 0, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-top: 0);
+      @include basic-button($border-width: 0, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
     }
 
     &.display {

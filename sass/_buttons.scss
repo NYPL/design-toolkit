@@ -19,7 +19,7 @@
   height: $height;
   padding: $padding-vertical $padding-horizontal;
   text-decoration: none;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   @include transition(all, $hover-time, ease-in);
 
