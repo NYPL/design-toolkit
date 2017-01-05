@@ -8,7 +8,7 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0.125rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.25rem) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0.0625rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.2rem) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;

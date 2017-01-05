@@ -55,3 +55,11 @@
 .result-item-formats-table {
   @include basic-table;
 }
+
+.results-pagination {
+  @include results-pagination;
+}
+
+.sr-only {
+  @include screenreader-only;
+}

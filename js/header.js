@@ -1,6 +1,15 @@
 var hideTimeout
 
 function init() {
+  $(".select-box").on("change", function(e) {
+    var id = $(e.target).attr("id");
+    console.log(id);
+    var buttonid = "btn-apply_" + id;
+    var html = '<input type="submit" id="'+buttonid+'" class="submit-form-button" name="Apply" value="Apply">';
+    $("#"+buttonid).remove();
+    $(e.target).parent().after(html);
+  })
+
   $("#main-search input[type=radio]").click(function() {
     updateSearchRadio($(this).val())
   })

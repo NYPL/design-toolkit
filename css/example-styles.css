@@ -1264,7 +1264,7 @@ header.collapsed {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    padding: 0.25rem 0.75rem;
+    padding: 0.2rem 0.75rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1984,7 +1984,7 @@ footer {
 
 .results-summary {
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   margin-top: 1rem; }
   .results-summary::before, .results-summary::after {
     content: "";
@@ -2007,7 +2007,7 @@ footer {
     font-size: 1rem;
     font-weight: normal;
     height: 1rem;
-    padding: 0.25rem 0.75rem;
+    padding: 0.2rem 0.75rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -2064,6 +2064,7 @@ footer {
       .results-pagination .page-count {
         font-size: 1rem; } }
   .results-pagination a:last-child {
+    float: right;
     text-align: right; }
   .results-pagination a:first-child svg {
     float: left; }
@@ -2211,7 +2212,7 @@ footer {
     text-overflow: ellipsis; }
   .location-hours td {
     border-bottom: 1px solid #d7d4d0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     vertical-align: top; }
   .location-hours .current {
     background-color: #fff1a5; }
@@ -2259,7 +2260,7 @@ div.location fieldset,
 fieldset.select {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   div.location fieldset label,
@@ -2290,7 +2291,7 @@ fieldset.select {
 fieldset.textfield {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   fieldset.textfield label,
@@ -2327,7 +2328,7 @@ fieldset.textfield {
 fieldset.alphabetical {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   fieldset.alphabetical label,
@@ -2344,7 +2345,7 @@ fieldset.alphabetical {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    padding: 0.25rem 0.75rem;
+    padding: 0.2rem 0.75rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -2377,7 +2378,7 @@ fieldset.alphabetical {
 fieldset.radiogroup {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   fieldset.radiogroup label,
@@ -2403,7 +2404,7 @@ fieldset.radiogroup {
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.75rem;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2428,14 +2429,14 @@ fieldset.radiogroup {
 
 .my-button-class {
   background-color: #5b544d;
-  border: 0.125rem solid #5b544d;
+  border: 0.0625rem solid #5b544d;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.75rem;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2460,14 +2461,14 @@ fieldset.radiogroup {
 
 .request-button {
   background-color: #1b7fa7;
-  border: 0.125rem solid #1b7fa7;
+  border: 0.0625rem solid #1b7fa7;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.75rem;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2496,14 +2497,14 @@ fieldset.radiogroup {
 
 .my-rounded-button {
   background-color: #5b544d;
-  border: 0.125rem solid #5b544d;
+  border: 0.0625rem solid #5b544d;
   border-radius: 1.3rem;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.75rem;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;

@@ -34,14 +34,14 @@
 
   td {
     border-bottom: 1px solid $nypl-light-gray;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     vertical-align: top;
   }
 }
 
 @mixin results-summary {
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   margin-top: 1rem;
   @include clearfix;
 
@@ -88,6 +88,7 @@
   }
 
   a:last-child {
+    float: right;
     text-align: right;
   }
 

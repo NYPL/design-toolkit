@@ -374,7 +374,7 @@ header.collapsed {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    padding: 0.25rem 0.75rem;
+    padding: 0.2rem 0.75rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -797,7 +797,7 @@ pre {
 .my-text-field {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   .my-text-field label,
@@ -834,7 +834,7 @@ pre {
 .my-select-box {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   .my-select-box label,
@@ -916,7 +916,7 @@ pre {
     text-overflow: ellipsis; }
   .my-table td {
     border-bottom: 1px solid #d7d4d0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     vertical-align: top; }
 
 /*# sourceMappingURL=docs.css.map */
