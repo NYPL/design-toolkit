@@ -41,7 +41,7 @@
 
 @mixin results-summary {
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   margin-top: 1rem;
   @include clearfix;
 
@@ -119,10 +119,17 @@
   }
 }
 
+@mixin results-sorting-controls {
+  border-bottom: 0.25rem solid $page-color;
+  margin-bottom: 1rem;
+  @include clearfix;
+}
+
 $sorter-width: 11em;
 
 @mixin results-sorter {
   display: inline-block;
+  float: right;
   position: relative;
 
   button {
@@ -131,10 +138,10 @@ $sorter-width: 11em;
 
   ul {
     background-color: $nypl-search-color-light;
-    left: 0;
     list-style: none;
-    position: absolute;
     min-width: $sorter-width;
+    position: absolute;
+    right: 0;
     z-index: 1;
   }
 
@@ -159,11 +166,26 @@ $sorter-width: 11em;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @mixin results-item-formats {
-  border-left: 1rem solid $nypl-light-gray;
-  padding-left: 1rem;
+  border-left: 0.5rem solid $nypl-light-gray;
+  padding-left: 0.5rem;
+
+
+  th:first-child,
+  td:first-child {
+    width: 60%;
+  }
+
+  th:last-child,
+  td:last-child {
+    width: 40%;
+  }
 }
 
 @mixin views-table {
