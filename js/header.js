@@ -62,7 +62,8 @@ function init() {
     }
   })
 
-  $(".sorter button").click(function(e) {
+  $(".sorter button").on("click", function(e) {
+    e.preventDefault();
     if ($(e.target).closest('.sorter').length) {
       toggleSort()
     }
