@@ -205,23 +205,23 @@
     <p>This widget is presented <strong>only in the bottom</strong> of the results (pagination will never appear on top). Page count appears in its own <code>span</code> tag.</p>
 
     <div class="toolkit-example">
-    <div class="results-pagination">
-      <a href="#prev">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-    <title>Left arrow</title>
-    <polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
-        </svg>
-        Previous page
-      </a>
-      <span class="page-count">Page 2 of 4</span>
-      <a href="#next">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-    <title>Right arrow</title>
-    <polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
-        </svg>
-        Next page
-      </a>
-    </div>
+<div class="results-pagination">
+  <a href="/page/1" rel="prev">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
+<title>Left arrow</title>
+<polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
+    </svg>
+    Previous page
+  </a>
+  <span class="page-count">Page 2 of 4</span>
+  <a href="/page/3" rel="next">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
+<title>Right arrow</title>
+<polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
+    </svg>
+    Next page
+  </a>
+</div>
     </div>
     <pre><code class="scss">
 .results-pagination {
@@ -230,18 +230,18 @@
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;results-pagination&quot;&gt;
-  &lt;a href=&quot;#prev&quot;&gt;
+  &lt;a href=&quot;/page/1&quot; rel=&quot;prev&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-      &lt;title&gt;Left arrow&lt;/title&gt;
-      &lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
+&lt;title&gt;Left arrow&lt;/title&gt;
+&lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
     &lt;/svg&gt;
     Previous page
   &lt;/a&gt;
   &lt;span class=&quot;page-count&quot;&gt;Page 2 of 4&lt;/span&gt;
-  &lt;a href=&quot;#next&quot;&gt;
+  &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-      &lt;title&gt;Right arrow&lt;/title&gt;
-      &lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
+&lt;title&gt;Right arrow&lt;/title&gt;
+&lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
     &lt;/svg&gt;
     Next page
   &lt;/a&gt;
