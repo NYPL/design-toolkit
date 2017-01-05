@@ -8,6 +8,10 @@
   @include page-header;
 }
 
+.row {
+  @include grid-row;
+}
+
 .quarter {
   @include column-one-quarter;
 }

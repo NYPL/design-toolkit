@@ -1678,6 +1678,15 @@ footer {
   .page-header h1 {
     margin: 0; }
 
+.row {
+  margin: 0 -0.5rem;
+  min-height: 1rem; }
+  .row::before, .row::after {
+    content: "";
+    display: table; }
+  .row::after {
+    clear: both; }
+
 .quarter {
   float: left;
   margin-bottom: 2rem;
