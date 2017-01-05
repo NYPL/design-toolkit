@@ -8,6 +8,10 @@
   @include page-header;
 }
 
+.breadcrumb {
+  @include breadcrumbs;
+}
+
 .row {
   @include grid-row;
 }
