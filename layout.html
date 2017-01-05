@@ -20,7 +20,10 @@
 
   <div class="page-header">
     <div class="content-wrapper">
-      <div class="breadcrumb"><a href="./">Toolkit home</a> > Layout</div>
+      <ol class="breadcrumb">
+        <li><a href="./">Toolkit home</a></li>
+        <li>Layout</li>
+      </ol>
       <h1>NYPL Design Toolkit</h1>
     </div>
   </div>
@@ -112,15 +115,23 @@
 
     <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
-    <p>Page header content <strong>is not</strong> the nested inside a <code>grid-row</code> type element.</p>
+    <p><strong>Note:</strong> Page header content <strong>is not</strong> the nested inside a <code>grid-row</code> type element.</p>
+
+    <h4>Breadcrumbs</h4>
+
+    <p>Breadcrumbs are built with an ordered list (<code>ol</code> tag) of links up the information structure of the current page. The <strong>last item</strong> in the list <strong>does not</strong> have a link as it corresponds to the page the user is on. It is <strong>not necessary to add a “&gt;” character</strong>.</p>
 
     <div class="toolkit-example">
-      <div class="my-page-header">
-        <div class="my-content-wrapper">
-          <div class="my-breadcrumb"><a href="#">Home</a> > <a href="#">Research</a> > Articles &amp; databases</div>
-          <h1>Articles &amp; databases</h1>
-        </div>
-      </div>
+<div class="my-page-header">
+  <div class="my-content-wrapper">
+    <ol class="my-breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/research">Research</a></li>
+      <li>Articles &amp; databases</li>
+    </ol>
+    <h1>Articles &amp; databases</h1>
+  </div>
+</div>
     </div>
 
     <pre><code class="scss">
@@ -139,7 +150,11 @@
     <pre><code class="html">
 &lt;div class=&quot;my-page-header&quot;&gt;
   &lt;div class=&quot;my-content-wrapper&quot;&gt;
-    &lt;div class=&quot;my-breadcrumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &gt; &lt;a href=&quot;#&quot;&gt;Research&lt;/a&gt; &gt; Articles &amp;amp; databases&lt;/div&gt;
+    &lt;ol class=&quot;my-breadcrumb&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/research&quot;&gt;Research&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Articles &amp;amp; databases&lt;/li&gt;
+    &lt;/ol&gt;
     &lt;h1&gt;Articles &amp;amp; databases&lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;

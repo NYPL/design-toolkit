@@ -919,4 +919,16 @@ pre {
     padding-bottom: 0.5rem;
     vertical-align: top; }
 
+.breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0; }
+  .breadcrumb li {
+    display: inline-block;
+    margin-left: 0; }
+    .breadcrumb li::before {
+      content: "> "; }
+    .breadcrumb li:first-child::before {
+      content: ""; }
+
 /*# sourceMappingURL=docs.css.map */

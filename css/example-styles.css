@@ -1680,6 +1680,18 @@ footer {
   .my-page-header h1 {
     margin: 0; }
 
+.my-breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0; }
+  .my-breadcrumb li {
+    display: inline-block;
+    margin-left: 0; }
+    .my-breadcrumb li::before {
+      content: "> "; }
+    .my-breadcrumb li:first-child::before {
+      content: ""; }
+
 .my-content-wrapper {
   max-width: calc(81rem - (6rem));
   padding: 1rem 1rem 1rem 6rem;

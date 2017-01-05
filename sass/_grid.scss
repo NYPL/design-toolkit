@@ -15,7 +15,22 @@
 }
 
 @mixin breadcrumbs {
-  // empty for now
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-left: 0;
+
+    &::before {
+      content: "> ";
+    }
+
+    &:first-child::before {
+      content: "";
+    }
+  }
 }
 
 @mixin full-width-wrapper($in-header: false) {
