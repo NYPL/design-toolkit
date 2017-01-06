@@ -7,24 +7,41 @@
 @warn "refactor mixins and remove magic numbers";
 
 @mixin basic-table {
+  border-collapse: collapse;
+  display: table;
   position: relative;
   width: 100%;
 
+  tr {
+    border-bottom: 0.0625rem solid $nypl-light-gray;
+    display: table-row;
+  }
+
+  thead,
+  th {
+    border-bottom: 0.0625rem solid $page-color;
+    font-weight: bold;
+    text-align: left;
+  }
+
   th,
   td {
+    display: table-cell;
     overflow: hidden;
     padding: 0.125rem 0.25rem;
     text-overflow: ellipsis;
   }
 
   td {
-    padding-bottom: 1rem;
+    border-bottom: 1px solid $nypl-light-gray;
+    padding-bottom: 0.5rem;
+    vertical-align: top;
   }
 }
 
 @mixin results-summary {
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   margin-top: 1rem;
   @include clearfix;
 
@@ -71,6 +88,7 @@
   }
 
   a:last-child {
+    float: right;
     text-align: right;
   }
 
@@ -102,7 +120,78 @@
   }
 }
 
+@mixin results-sorting-controls {
+  border-bottom: 0.25rem solid $page-color;
+  margin-bottom: 1rem;
+  @include clearfix;
+}
+
+$sorter-width: 11em;
+
+@mixin results-sorter {
+  display: inline-block;
+  float: right;
+  position: relative;
+
+  button {
+    @include basic-button($collapsible: true, $border-width: 0, $background-color: $page-background-color, $text-color: $page-color, $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
+  }
+
+  ul {
+    background-color: $nypl-search-color-light;
+    list-style: none;
+    min-width: $sorter-width;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  li {
+    margin-left: 0;
+  }
+
+  a {
+    color: $page-color;
+    display: block;
+    padding: 0.25em 0.5em 0.25em 1em;
+    text-decoration: none;
+
+    &:hover {
+      color: $page-color;
+      font-weight: bold;
+    }
+  }
+}
+
+@mixin results-item {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  margin-left: 0;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@mixin results-item-formats {
+  border-left: 0.5rem solid $nypl-light-gray;
+  padding-left: 0.5rem;
+
+
+  th:first-child,
+  td:first-child {
+    width: 60%;
+  }
+
+  th:last-child,
+  td:last-child {
+    width: 40%;
+  }
+}
+
 @mixin views-table {
+  @warn "this mixin is not used";
+
   display: table;
   border-collapse: collapse;
 

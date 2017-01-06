@@ -114,20 +114,6 @@ button:focus {
       margin-right: 0.5rem;
       width: 3rem; } }
 
-header .content-wrapper {
-  max-width: calc(82rem - (2rem));
-  padding: 0 1rem;
-  position: relative;
-  margin: 0 auto; }
-  header .content-wrapper::before, header .content-wrapper::after {
-    content: "";
-    display: table; }
-  header .content-wrapper::after {
-    clear: both; }
-  @media (max-width: 965px) {
-    header .content-wrapper {
-      margin: 0; } }
-
 .content {
   position: relative; }
   .content::before, .content::after {
@@ -148,6 +134,25 @@ header .content-wrapper {
 @media (max-width: 965px) {
   display: table;
   width: 100%; }
+@media (max-width: 965px) {
+  header {
+    display: table;
+    width: 100%; } }
+
+header .content-wrapper {
+  max-width: calc(82rem - (2rem));
+  padding: 0 1rem;
+  position: relative;
+  margin: 0 auto; }
+  header .content-wrapper::before, header .content-wrapper::after {
+    content: "";
+    display: table; }
+  header .content-wrapper::after {
+    clear: both; }
+  @media (max-width: 965px) {
+    header .content-wrapper {
+      margin: 0; } }
+
 header.collapsed {
   border-bottom: 2px solid #d7d4d0;
   position: relative; }
@@ -217,25 +222,22 @@ header.collapsed {
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
-    font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0 0.5em;
     text-decoration: none;
-    text-transform: uppercase;
+    white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
     display: block;
     font-weight: bold;
-    height: auto;
     overflow: hidden;
-    padding: 0 0.5em;
-    padding-right: 1em;
-    position: relative;
     text-overflow: ellipsis;
+    text-transform: uppercase;
     white-space: nowrap; }
-    .service-buttons li > a:hover {
+    .service-buttons li > a:hover, .service-buttons li > a.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
@@ -251,31 +253,28 @@ header.collapsed {
         background-color: #d7d4d0;
         color: #fff; }
     .service-buttons li > a.donate {
-      background-color: #fff;
+      background-color: #d0343a;
       border: 0 solid #5b544d;
       border-radius: 0;
-      color: #d0343a;
+      color: #fff;
       cursor: pointer;
       font-size: 0.8rem;
-      font-weight: 700;
-      height: 2.6rem;
-      padding: 0.4rem 1.2rem;
+      font-weight: normal;
+      height: auto;
+      padding: 0 0.5em;
       text-decoration: none;
-      text-transform: uppercase;
+      white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
       transition: all 0.1s ease-in 0s;
       display: block;
       font-weight: bold;
-      height: auto;
       overflow: hidden;
-      padding: 0 0.5em;
-      padding-right: 1em;
-      position: relative;
       text-overflow: ellipsis;
+      text-transform: uppercase;
       white-space: nowrap; }
-      .service-buttons li > a.donate:hover {
+      .service-buttons li > a.donate:hover, .service-buttons li > a.donate.active {
         border-color: #5b544d;
         background-color: #fff;
         color: #5b544d; }
@@ -289,7 +288,7 @@ header.collapsed {
         background-color: #d7d4d0; }
         .service-buttons li > a.donate.disabled:hover, .service-buttons li > a.donate[disabled="disabled"]:hover, .service-buttons li > a.donate[disabled]:hover, .service-buttons li > a.donate[disabled=true]:hover {
           background-color: #d7d4d0;
-          color: #d0343a; }
+          color: #fff; }
   .service-buttons button.collapsible {
     background-color: #d0343a;
     border: 0 solid #5b544d;
@@ -297,23 +296,23 @@ header.collapsed {
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
-    font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0 0.5em;
     text-decoration: none;
-    text-transform: uppercase;
+    white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
+    position: relative;
+    padding-right: 1.5em;
+    text-align: left;
     display: block;
     font-weight: bold;
-    height: auto;
     overflow: hidden;
-    padding: 0 0.5em;
-    padding-right: 1em;
-    position: relative;
     text-overflow: ellipsis;
+    text-transform: uppercase;
     white-space: nowrap; }
     .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
@@ -325,22 +324,25 @@ header.collapsed {
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s; }
+      transition: all 0.1s ease-in 0s;
+      position: absolute;
+      right: 0.25em;
+      top: 0.4em; }
       .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .service-buttons button.collapsible:hover {
+    .service-buttons button.collapsible:hover, .service-buttons button.collapsible.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
-      .service-buttons button.collapsible:hover .nypl-icon {
+      .service-buttons button.collapsible:hover .nypl-icon, .service-buttons button.collapsible.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #5b544d;
         height: 1em;
         width: 1em;
         speak: none; }
-        .service-buttons button.collapsible:hover .nypl-icon.reversed {
+        .service-buttons button.collapsible:hover .nypl-icon.reversed, .service-buttons button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .service-buttons button.collapsible.active .nypl-icon {
@@ -370,16 +372,16 @@ header.collapsed {
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0.2rem 0.75rem;
     text-decoration: none;
-    text-transform: uppercase;
+    white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    .email-toggle .subscribe-button:hover {
+    .email-toggle .subscribe-button:hover, .email-toggle .subscribe-button.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
@@ -453,7 +455,6 @@ header.collapsed {
   font-size: 0.8rem;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
   top: 1.5rem; }
   .login-toggle button {
     text-transform: uppercase; }
@@ -483,24 +484,21 @@ header.collapsed {
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
-    font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0 0.5em;
     text-decoration: none;
-    text-transform: uppercase;
+    white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
+    position: relative;
+    padding-right: 1.5em;
+    text-align: left;
     display: block;
     font-weight: bold;
-    height: auto;
-    overflow: hidden;
-    padding: 0 0.5em;
-    padding-right: 1em;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    text-transform: uppercase; }
     .login-toggle > a .nypl-icon,
     .login-toggle button.collapsible .nypl-icon {
       background-color: #776e64;
@@ -512,26 +510,32 @@ header.collapsed {
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s; }
+      transition: all 0.1s ease-in 0s;
+      position: absolute;
+      right: 0.25em;
+      top: 0.4em; }
       .login-toggle > a .nypl-icon.reversed,
       .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .login-toggle > a:hover,
-    .login-toggle button.collapsible:hover {
+    .login-toggle > a:hover, .login-toggle > a.active,
+    .login-toggle button.collapsible:hover,
+    .login-toggle button.collapsible.active {
       border-color: #5b544d;
       background-color: #fff;
       color: #5b544d; }
-      .login-toggle > a:hover .nypl-icon,
-      .login-toggle button.collapsible:hover .nypl-icon {
+      .login-toggle > a:hover .nypl-icon, .login-toggle > a.active .nypl-icon,
+      .login-toggle button.collapsible:hover .nypl-icon,
+      .login-toggle button.collapsible.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #5b544d;
         height: 1em;
         width: 1em;
         speak: none; }
-        .login-toggle > a:hover .nypl-icon.reversed,
-        .login-toggle button.collapsible:hover .nypl-icon.reversed {
+        .login-toggle > a:hover .nypl-icon.reversed, .login-toggle > a.active .nypl-icon.reversed,
+        .login-toggle button.collapsible:hover .nypl-icon.reversed,
+        .login-toggle button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .login-toggle > a.active .nypl-icon,
@@ -627,16 +631,16 @@ li.search #main-search {
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: 700;
-    height: 2.6rem;
-    padding: 0.4rem 1.2rem;
+    font-weight: normal;
+    height: 2rem;
+    padding: 0 0.75rem;
     text-decoration: none;
-    text-transform: uppercase;
+    white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    li.search #main-search .search-button:hover {
+    li.search #main-search .search-button:hover, li.search #main-search .search-button.active {
       border-color: #5b544d;
       background-color: #c0bab4;
       color: #5b544d; }
@@ -796,7 +800,7 @@ pre {
 .my-text-field {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   .my-text-field label,
@@ -833,7 +837,7 @@ pre {
 .my-select-box {
   background-color: #c0bab4;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   position: relative; }
   .my-select-box label,
@@ -895,14 +899,39 @@ pre {
     fill: #fff; }
 
 .my-table {
+  border-collapse: collapse;
+  display: table;
   position: relative;
   width: 100%; }
+  .my-table tr {
+    border-bottom: 0.0625rem solid #d7d4d0;
+    display: table-row; }
+  .my-table thead,
+  .my-table th {
+    border-bottom: 0.0625rem solid #080807;
+    font-weight: bold;
+    text-align: left; }
   .my-table th,
   .my-table td {
+    display: table-cell;
     overflow: hidden;
     padding: 0.125rem 0.25rem;
     text-overflow: ellipsis; }
   .my-table td {
-    padding-bottom: 1rem; }
+    border-bottom: 1px solid #d7d4d0;
+    padding-bottom: 0.5rem;
+    vertical-align: top; }
+
+.breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0; }
+  .breadcrumb li {
+    display: inline-block;
+    margin-left: 0; }
+    .breadcrumb li::before {
+      content: "> "; }
+    .breadcrumb li:first-child::before {
+      content: ""; }
 
 /*# sourceMappingURL=docs.css.map */

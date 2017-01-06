@@ -1,6 +1,15 @@
 var hideTimeout
 
 function init() {
+  $(".select-box").on("change", function(e) {
+    var id = $(e.target).attr("id");
+    console.log(id);
+    var buttonid = "btn-apply_" + id;
+    var html = '<input type="submit" id="'+buttonid+'" class="submit-form-button" name="Apply" value="Apply">';
+    $("#"+buttonid).remove();
+    $(e.target).parent().after(html);
+  })
+
   $("#main-search input[type=radio]").click(function() {
     updateSearchRadio($(this).val())
   })
@@ -36,6 +45,9 @@ function init() {
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()
     }
+    if (!$(e.target).closest('.sorter').length) {
+      hideSort()
+    }
     if (!$(e.target).closest('.login-toggle').length && !$(e.target).parents("#login-links").length) {
       hideLogin()
     }
@@ -47,6 +59,13 @@ function init() {
   $(".login-toggle button.collapsible").click(function(e) {
     if ($(e.target).closest('.login-toggle').length && !$(e.target).parents("#login-links").length) {
       toggleLogin()
+    }
+  })
+
+  $(".sorter button").on("click", function(e) {
+    e.preventDefault();
+    if ($(e.target).closest('.sorter').length) {
+      toggleSort()
     }
   })
 
@@ -68,6 +87,16 @@ function init() {
     $(this).remove()
     $("header").removeClass("collapsed")
   })
+}
+
+function toggleSort() {
+  $(".sorter button").toggleClass("active")
+  $(".sorter ul").toggleClass("hidden")
+}
+
+function hideSort() {
+  $(".sorter button").removeClass("active")
+  $(".sorter ul").addClass("hidden")
 }
 
 function toggleLogin() {

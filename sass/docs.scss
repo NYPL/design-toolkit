@@ -47,3 +47,7 @@ pre {
 .my-table {
   @include basic-table;
 }
+
+.breadcrumb {
+  @include breadcrumbs;
+}

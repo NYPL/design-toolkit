@@ -93,10 +93,6 @@ $collapsed-nav-height: 30px;
   }
 }
 
-header .content-wrapper {
-  @include full-width-wrapper($in-header: true);
-}
-
 .content {
   position: relative;
   @include clearfix;
@@ -117,6 +113,19 @@ header .content-wrapper {
 @include media($mobile-breakpoint) {
   display: table;
   width: 100%;
+}
+
+header {
+  @include media($mobile-breakpoint) {
+    display: table;
+    width: 100%;
+  }
+}
+
+@warn "LINTER COMPLAINS ABOUT NESTING BUT ALSO ABOUT MERGEABLE SELECTOR. NEED FIX.";
+
+header .content-wrapper {
+  @include full-width-wrapper($in-header: true);
 }
 
 header.collapsed {
@@ -214,18 +223,15 @@ header.collapsed {
   }
 
   li > a {
-    @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-red, $border-width: 0);
     @include service-button;
 
     &.donate {
-      @include basic-button($font-size: 0.8rem, $text-color: $nypl-red, $background-color: $nypl-white, $border-width: 0);
       @include service-button;
     }
   }
 
   button.collapsible {
-    @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-red, $collapsible: true, $border-width: 0);
-    @include service-button;
+    @include service-button($collapsible: true);
   }
 }
 
@@ -296,7 +302,6 @@ header.collapsed {
   font-size: 0.8rem;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
   top: 1.5rem;
 
   button {
@@ -329,8 +334,7 @@ header.collapsed {
 
   > a,
   button.collapsible {
-    @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $collapsible: true, $border-width: 0);
-    @include service-button;
+    @include login-button;
 
     &:link {
       text-decoration: none;
@@ -424,7 +428,7 @@ li.search {
     position: relative;
 
     .search-button {
-      @include basic-button($border-width: 0, $hover-background-color: $nypl-search-color-light);
+      @include basic-button($border-width: 0, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
     }
 
     &.display {

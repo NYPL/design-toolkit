@@ -10,6 +10,20 @@
   }
 }
 
+@mixin screenreader-only {
+  // to hide something from view but make it visible to screen readers
+  // used on some table headers
+  // based on last.fm tables
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 $white: #fff; // for tint lint pass
 $black: #000; // for shade lint pass
 

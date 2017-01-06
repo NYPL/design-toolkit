@@ -8,30 +8,38 @@
 @warn "use 'default' in default names (from colors.scss i suppose)";
 @warn "some magic numbers";
 
-@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0.125rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: 2.6rem, $collapsible: false, $padding-left: 1.2rem, $padding-top: 0.4rem) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0.0625rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.2rem) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   color: $text-color;
   cursor: pointer;
   font-size: $font-size;
-  font-weight: 700; // equivalent of a medium weight
+  font-weight: normal;
   height: $height;
-  padding: $padding-top $padding-left;
+  padding: $padding-vertical $padding-horizontal;
   text-decoration: none;
-  text-transform: uppercase;
+  white-space: nowrap;
 
   @include transition(all, $hover-time, ease-in);
 
   @if $collapsible == true {
     // has nypl-icon with down arrow
+    position: relative;
+    padding-right: 1.5em;
+    text-align: left;
+
     .nypl-icon {
       @include nypl-icon($fill: $text-color, $background-color: $background-color);
       @include transition(all, $hover-time, ease-in);
+      position: absolute;
+      right: 0.25em;
+      top: #{0.4em + $padding-vertical};
     }
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     $the-text-color: "";
     $the-background-color: "";
 
@@ -100,14 +108,19 @@
   }
 }
 
-@mixin service-button {
+@mixin service-button($collapsible: false) {
+  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-red, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5em);
   display: block;
   font-weight: bold;
-  height: auto;
   overflow: hidden;
-  padding: 0 0.5em;
-  padding-right: 1em;
-  position: relative;
   text-overflow: ellipsis;
+  text-transform: uppercase;
   white-space: nowrap;
+}
+
+@mixin login-button {
+  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5em, $collapsible: true, $border-width: 0);
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
 }
