@@ -140,8 +140,11 @@
 
     <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has a <code>button</code> element to remove the facet and refresh the search results.
     </p>
+
     <p>
     <strong>NOTE:</strong> <strong>Avoid adding a space</strong> between the facet and the remove button so that it <strong>won't wrap to the next line</strong>.</p>
+
+    <p>After the results summary, a “Start over” <code>button</code> should be added to allow the user to clear all facets and filters and start a new search from scratch.</p>
 
     <div class="toolkit-example">
 <div class="results-summary">
@@ -152,6 +155,7 @@
   <span class="facet">
     <strong>Fiction<button title="Remove Fiction filter">×</button></strong>
   </span>.
+  <button>Start over</button>
 </div>
     </div>
     <pre><code class="scss">
@@ -169,6 +173,7 @@
   &lt;span class=&quot;facet&quot;&gt;
     &lt;strong&gt;Fiction&lt;button title=&quot;Remove Fiction filter&quot;&gt;&times;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;.
+  &lt;button&gt;Start over&lt;/button&gt;
 &lt;/div&gt;
     </code></pre>
 

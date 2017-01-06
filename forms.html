@@ -67,11 +67,13 @@
 
     <h3 id="textFields">Text fields</h3>
 
+    <p>Text fields can include (but not <em>rely on</em>) a placeholder that provides additional information on the type of input it expects.</p>
+
     <div class="toolkit-example">
-    <fieldset class="my-text-field">
-      <label for="keyword-text">Title or description</label>
-      <input id="keyword-text" type="text">
-    </fieldset>
+<fieldset class="my-text-field">
+  <label for="keyword-text">Title or description</label>
+  <input id="keyword-text" type="text" placeholder="Enter keywords">
+</fieldset>
     </div>
 
     <pre><code class="scss">
@@ -82,7 +84,7 @@
     <pre><code class="html">
 &lt;fieldset class=&quot;my-text-field&quot;&gt;
   &lt;label for=&quot;keyword-text&quot;&gt;Title or description&lt;/label&gt;
-  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot;&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
 &lt;/fieldset&gt;
     </code></pre>
 

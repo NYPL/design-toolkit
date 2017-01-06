@@ -50,16 +50,25 @@
     float: left;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  button.remove-facet {
-    @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1rem, $border-width: 0);
+  span button {
+    // the button inside a facet
+    @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1em, $border-width: 0);
     display: inline-block;
     margin: 0;
     padding: 0;
     vertical-align: super;
+  }
+
+  button {
+    // the reset button
+    @include basic-button($height: 2em);
+    clear: both;
+    display: block;
+    margin: 0.5rem 0 0;
   }
 }
 

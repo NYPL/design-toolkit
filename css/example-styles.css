@@ -2011,9 +2011,9 @@ footer {
     float: left;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-right: 0.5rem; }
-  .results-summary button.remove-facet {
+  .results-summary span button {
     background-color: #fff;
     border: 0 solid #776e64;
     border-radius: 0;
@@ -2021,7 +2021,7 @@ footer {
     cursor: pointer;
     font-size: 1rem;
     font-weight: normal;
-    height: 1rem;
+    height: 1em;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     white-space: nowrap;
@@ -2033,21 +2033,55 @@ footer {
     margin: 0;
     padding: 0;
     vertical-align: super; }
-    .results-summary button.remove-facet:hover, .results-summary button.remove-facet.active {
+    .results-summary span button:hover, .results-summary span button.active {
       border-color: #1b7fa7;
       background-color: #fff;
       color: #1b7fa7; }
-    .results-summary button.remove-facet:focus {
+    .results-summary span button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .results-summary button.remove-facet.disabled, .results-summary button.remove-facet[disabled="disabled"], .results-summary button.remove-facet[disabled], .results-summary button.remove-facet[disabled=true] {
+    .results-summary span button.disabled, .results-summary span button[disabled="disabled"], .results-summary span button[disabled], .results-summary span button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      .results-summary button.remove-facet.disabled:hover, .results-summary button.remove-facet[disabled="disabled"]:hover, .results-summary button.remove-facet[disabled]:hover, .results-summary button.remove-facet[disabled=true]:hover {
+      .results-summary span button.disabled:hover, .results-summary span button[disabled="disabled"]:hover, .results-summary span button[disabled]:hover, .results-summary span button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #776e64; }
+  .results-summary button {
+    background-color: #776e64;
+    border: 0.0625rem solid #776e64;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: normal;
+    height: 2em;
+    padding: 0.2rem 0.75rem;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    clear: both;
+    display: block;
+    margin: 0.5rem 0 0; }
+    .results-summary button:hover, .results-summary button.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+    .results-summary button:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .results-summary button.disabled, .results-summary button[disabled="disabled"], .results-summary button[disabled], .results-summary button[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      .results-summary button.disabled:hover, .results-summary button[disabled="disabled"]:hover, .results-summary button[disabled]:hover, .results-summary button[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #fff; }
 
 .results-pagination {
   font-size: 1.5rem;
