@@ -33,6 +33,12 @@ linters:
   PropertySortOrder:
     enabled: false
 
+  PropertyUnits:
+  global: ['em', 'rem', '%'] # Allow relative units globally
+  properties:
+    line-height: [] # No units allowed
+    margin: ['em', 'rem']
+
   QualifyingElement:
     enabled: false
 
