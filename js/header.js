@@ -5,8 +5,16 @@ function init() {
     var id = $(e.target).attr("id");
     console.log(id);
     var buttonid = "btn-apply_" + id;
-    var html = '<input type="submit" id="'+buttonid+'" class="submit-form-button" name="Apply" value="Apply">';
     $("#"+buttonid).remove();
+    if (id == "date") {
+      var val = $(e.target).val();
+      if (val == "date_range") {
+        $(".text-field.year-text").removeClass("hidden");
+        return;
+      }
+    }
+    $(".text-field.year-text").addClass("hidden");
+    var html = '<input type="submit" id="'+buttonid+'" class="submit-form-button" name="Apply" value="Apply">';
     $(e.target).parent().after(html);
   })
 
@@ -87,6 +95,7 @@ function init() {
     $(this).remove()
     $("header").removeClass("collapsed")
   })
+
 }
 
 function toggleSort() {
