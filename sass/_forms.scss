@@ -37,8 +37,8 @@ $form-padding: 0.5em;
   }
 }
 
-@mixin input {
-  background-color: $nypl-search-color-light;
+@mixin input ($background-color: $nypl-search-color-light){
+  background-color: $background-color;
   border: 0;
   padding: 0;
 }
