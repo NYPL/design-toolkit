@@ -137,11 +137,49 @@
   </select>
 </fieldset>
 
-<fieldset class="select-box">
-  <label for="subject">Subject</label>
-  <select id="subject" name="subject">
-<option selected="" value="subject_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.0">Any</option><option value="Electronic books. lcgft" data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$0">Electronic books. lcgft (9)</option><option value="Constitutional law United States." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$1">Constitutional law United States. (7)</option><option value="United States Constitution." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$2">United States Constitution. (5)</option><option value="Hamilton, Alexander, 1757-1804." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$3">Hamilton, Alexander, 1757-1804. (4)</option><option value="Machinery, Kinematics of." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$4">Machinery, Kinematics of. (4)</option><option value="Mechanical movements." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$5">Mechanical movements. (4)</option><option value="Chicago (Ill.) Social conditions." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$6">Chicago (Ill.) Social conditions. (3)</option><option value="Authors, American 20th century Biography." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$7">Authors, American 20th century Biography. (2)</option><option value="Automobile racing drivers Great Britain Biography." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$8">Automobile racing drivers Great Britain Biography. (2)</option><option value="Counterpoint." data-reactid=".2142tuw0m78.1.2.0.0.2:$2.2.1:$9">Counterpoint. (2)</option>
-  </select>
+<fieldset class="searchable-facet">
+  <div class="facet-search">
+    <label for="subject-text">Subject</label>
+    <input id="subject-text" type="text" placeholder="Enter keywords">
+  </div>
+  <div class="facet-list">
+    <label for="subject-poems">
+      <span class="facet-label">
+        <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
+        Poems
+      </span>
+      <span class="facet-count">97</span>
+    </label>
+    <label for="subject-ejournals">
+      <span class="facet-label">
+        <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
+        Electronic journals
+      </span>
+      <span class="facet-count">489</span>
+    </label>
+    <label for="subject-home">
+      <span class="facet-label">
+        <input id="subject-home" type="checkbox" name="subject" value="home">
+        Electronic books
+      </span>
+      <span class="facet-count">236</span>
+    </label>
+    <label for="subject-piano">
+      <span class="facet-label">
+        <input id="subject-piano" type="checkbox" name="subject" value="piano">
+        Piano music
+      </span>
+      <span class="facet-count">198</span>
+    </label>
+    <label for="subject-opera">
+      <span class="facet-label">
+        <input id="subject-opera" type="checkbox" name="subject" value="opera">
+        Operas
+      </span>
+      <span class="facet-count">122</span>
+    </label>
+    <a href="#more" class="more-facets">Show 10 more subjects</a>
+  </div>
 </fieldset>
 
 <fieldset class="select-box">
@@ -199,8 +237,9 @@
 <!-- results column -->
 <div class="main-content three-quarter" id="mainContent">
       <div class="results-summary">
-        <span class="results-count">125</span> results found <span class="facet">for
-        keywords <strong>hamilton</strong><button title="Remove hamilton keyword filter">×</button></span>,
+        <span class="results-count">125</span> results found 
+        <span class="facet">for keywords <strong>hamilton</strong><button title="Remove hamilton keyword filter">×</button></span>,
+        <span class="facet">with subject <strong>Poems</strong><button title="Remove Poems subject filter">×</button></span>,
         <span class="facet">with owner <strong>Stephen A. Schwarzman Building</strong><button title="Remove Stephen A. Schwarzman Building owner filter">×</button></span>.
         <button>Start over</button>
       </div>

@@ -31,9 +31,13 @@ $form-padding: 0.5em;
   padding: 0;
   position: relative;
 
+  label {
+    @include label;
+  }
+
   label,
   span {
-    @include label;
+    margin-left: $form-padding;
   }
 }
 
@@ -66,17 +70,22 @@ $form-padding: 0.5em;
   }
 }
 
-@mixin text-fieldset {
-  @include fieldset;
-
+@mixin textfield-with-label {
   label {
+    background-color: transparent;
     display: block;
+    font-weight: bold;
     position: absolute;
   }
 
   input[type=text] {
     @include textfield;
   }
+}
+
+@mixin text-fieldset {
+  @include fieldset;
+  @include textfield-with-label;
 }
 
 @mixin select-fieldset {
@@ -117,6 +126,39 @@ $form-padding: 0.5em;
 @mixin radiobutton-fieldset {
   @include fieldset;
   @include simple-radiobutton;
+}
+
+@mixin searchable-fieldset {
+  @include fieldset;
+  @include simple-radiobutton;
+
+
+  .facet-search {
+    @include textfield-with-label;
+  }
+
+  .facet-list {
+    display: table;
+    width: 100%;
+
+    label {
+      display: table-row;
+    }
+
+    span {
+      display: table-cell;
+      padding: 0 $form-padding;
+
+      &.facet-count {
+        text-align: right;
+      }
+    }
+
+    .more-facets {
+      display: inline-block;
+      margin: $form-padding;
+    }
+  }
 }
 
 @mixin checkbox-fieldset {

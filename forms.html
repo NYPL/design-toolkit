@@ -57,6 +57,7 @@
       <li><a href="#selectBoxes">Select boxes</a></li>
       <li><a href="#alphaFilters">Alphabetical filters</a></li>
       <li><a href="#radioButtons">Radiobutton/checkbox groups</a></li>
+      <li><a href="#searchableFieldsets">Searchable field sets</a></li>
       <li><a href="#sorting">Sorting</a></li>
     </ul>
 
@@ -160,18 +161,18 @@
 
 
     <div class="toolkit-example">
-    <fieldset class="radiogroup">
-      <span><strong>Accessible from</strong></span>
-      <label for="available-every">
-        <input id="available-every" type="radio" name="available" value="any">Anywhere
-      </label>
-      <label for="available-home">
-        <input id="available-home" type="radio" name="available" value="home">Home with a library card
-      </label>
-      <label for="available-library">
-        <input id="available-library" type="radio" name="available" value="library">A library branch
-      </label>
-    </fieldset>
+<fieldset class="radiogroup">
+  <span><strong>Accessible from</strong></span>
+  <label for="available-every">
+    <input id="available-every" type="radio" name="available" value="any">Anywhere
+  </label>
+  <label for="available-home">
+    <input id="available-home" type="radio" name="available" value="home">Home with a library card
+  </label>
+  <label for="available-library">
+    <input id="available-library" type="radio" name="available" value="library">A library branch
+  </label>
+</fieldset>
     </div>
     <pre><code class="scss">
 .radiogroup {
@@ -193,6 +194,125 @@
   &lt;label for=&quot;available-library&quot;&gt;
     &lt;input id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
   &lt;/label&gt;
+&lt;/fieldset&gt;
+    </code></pre>
+
+    <h3 id="searchableFieldsets">Searchable field sets</h3>
+
+    <p>Searchable field sets allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
+
+    <p>The general structure is: a <code>.facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a <code>facet-list</code> of items, each with the following structure:</p>
+
+    <pre><code class="html">
+&lt;label for=&quot;my-facet-value-id&quot;&gt;
+  &lt;span class=&quot;facet-label&quot;&gt;
+    &lt;input id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot;&gt;
+    The facet text
+  &lt;/span&gt;
+  &lt;span class=&quot;facet-count&quot;&gt;[estimated result count]&lt;/span&gt;
+&lt;/label&gt;
+    </code></pre>
+
+    <p>A “Show X more” link at the end of the list allows for the user to display X more items to select from.</p>
+
+    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong>.</p>
+
+    <div class="toolkit-example">
+<fieldset class="my-searchable-facet">
+  <div class="facet-search">
+    <label for="subject-text">Subject</label>
+    <input id="subject-text" type="text" placeholder="Enter keywords">
+  </div>
+  <div class="facet-list">
+    <label for="subject-poems">
+      <span class="facet-label">
+        <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
+        Poems
+      </span>
+      <span class="facet-count">97</span>
+    </label>
+    <label for="subject-ejournals">
+      <span class="facet-label">
+        <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
+        Electronic journals
+      </span>
+      <span class="facet-count">489</span>
+    </label>
+    <label for="subject-home">
+      <span class="facet-label">
+        <input id="subject-home" type="checkbox" name="subject" value="home">
+        Electronic books
+      </span>
+      <span class="facet-count">236</span>
+    </label>
+    <label for="subject-piano">
+      <span class="facet-label">
+        <input id="subject-piano" type="checkbox" name="subject" value="piano">
+        Piano music
+      </span>
+      <span class="facet-count">198</span>
+    </label>
+    <label for="subject-opera">
+      <span class="facet-label">
+        <input id="subject-opera" type="checkbox" name="subject" value="opera">
+        Operas
+      </span>
+      <span class="facet-count">122</span>
+    </label>
+    <a href="#more" class="more-facets">Show 10 more subjects</a>
+  </div>
+</fieldset>
+    </div>
+
+    <pre><code class="scss">
+.my-searchable-facet {
+  @include searchable-fieldset;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;fieldset class=&quot;my-searchable-facet&quot;&gt;
+  &lt;div class=&quot;facet-search&quot;&gt;
+    &lt;label for=&quot;subject-text&quot;&gt;Subject&lt;/label&gt;
+    &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;facet-list&quot;&gt;
+    &lt;label for=&quot;subject-poems&quot;&gt;
+      &lt;span class=&quot;facet-label&quot;&gt;
+        &lt;input id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot;&gt;
+        Poems
+      &lt;/span&gt;
+      &lt;span class=&quot;facet-count&quot;&gt;97&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for=&quot;subject-ejournals&quot;&gt;
+      &lt;span class=&quot;facet-label&quot;&gt;
+        &lt;input id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot;&gt;
+        Electronic journals
+      &lt;/span&gt;
+      &lt;span class=&quot;facet-count&quot;&gt;489&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for=&quot;subject-home&quot;&gt;
+      &lt;span class=&quot;facet-label&quot;&gt;
+        &lt;input id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot;&gt;
+        Electronic books
+      &lt;/span&gt;
+      &lt;span class=&quot;facet-count&quot;&gt;236&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for=&quot;subject-piano&quot;&gt;
+      &lt;span class=&quot;facet-label&quot;&gt;
+        &lt;input id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot;&gt;
+        Piano music
+      &lt;/span&gt;
+      &lt;span class=&quot;facet-count&quot;&gt;198&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for=&quot;subject-opera&quot;&gt;
+      &lt;span class=&quot;facet-label&quot;&gt;
+        &lt;input id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot;&gt;
+        Operas
+      &lt;/span&gt;
+      &lt;span class=&quot;facet-count&quot;&gt;122&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;a href=&quot;#more&quot; class=&quot;more-facets&quot;&gt;Show 10 more subjects&lt;/a&gt;
+  &lt;/div&gt;
 &lt;/fieldset&gt;
     </code></pre>
 

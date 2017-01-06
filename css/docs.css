@@ -803,13 +803,17 @@ pre {
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .my-text-field label,
-  .my-text-field span {
+  .my-text-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
+  .my-text-field label,
+  .my-text-field span {
+    margin-left: 0.5em; }
   .my-text-field label {
+    background-color: transparent;
     display: block;
+    font-weight: bold;
     position: absolute; }
   .my-text-field input[type=text] {
     background-color: #efedeb;
@@ -841,10 +845,12 @@ pre {
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .my-select-box label,
-  .my-select-box span {
+  .my-select-box label {
     display: block;
     font-weight: bold;
+    margin-left: 0.5em; }
+  .my-select-box label,
+  .my-select-box span {
     margin-left: 0.5em; }
   .my-select-box label {
     display: block;
@@ -934,5 +940,68 @@ pre {
       content: "> "; }
     .breadcrumb li:first-child::before {
       content: ""; }
+
+.my-searchable-facet {
+  background-color: #efedeb;
+  border: 0;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative; }
+  .my-searchable-facet label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em; }
+  .my-searchable-facet label,
+  .my-searchable-facet span {
+    margin-left: 0.5em; }
+  .my-searchable-facet label {
+    background-color: #efedeb;
+    font-weight: normal;
+    padding: 0.1875rem 0; }
+  .my-searchable-facet input[type=radio],
+  .my-searchable-facet input[type=checkbox] {
+    height: initial;
+    margin-right: 0.25rem; }
+  .my-searchable-facet .facet-search label {
+    background-color: transparent;
+    display: block;
+    font-weight: bold;
+    position: absolute; }
+  .my-searchable-facet .facet-search input[type=text] {
+    background-color: #efedeb;
+    border: 0;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+    -moz-box-shadow: inset 0 0 0 2px #efedeb;
+    box-shadow: inset 0 0 0 2px #efedeb;
+    border-bottom: 0.0625rem solid #080807;
+    height: 2rem;
+    margin-right: 1px;
+    padding: 1.5em 0 0;
+    text-indent: 0.5em;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .my-searchable-facet .facet-search input[type=text].active {
+      width: 16rem; }
+    .my-searchable-facet .facet-search input[type=text]:focus {
+      background-color: #fff;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      color: #080807;
+      outline: none; }
+  .my-searchable-facet .facet-list {
+    display: table;
+    width: 100%; }
+    .my-searchable-facet .facet-list label {
+      display: table-row; }
+    .my-searchable-facet .facet-list span {
+      display: table-cell;
+      padding: 0 0.5em; }
+      .my-searchable-facet .facet-list span.facet-count {
+        text-align: right; }
+    .my-searchable-facet .facet-list .more-facets {
+      display: inline-block;
+      margin: 0.5em; }
 
 /*# sourceMappingURL=docs.css.map */

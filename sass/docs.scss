@@ -51,3 +51,7 @@ pre {
 .breadcrumb {
   @include breadcrumbs;
 }
+
+.my-searchable-facet {
+  @include searchable-fieldset;
+}

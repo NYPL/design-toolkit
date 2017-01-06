@@ -2313,11 +2313,14 @@ fieldset.select {
   padding: 0;
   position: relative; }
   div.location fieldset label,
+  fieldset.select label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em; }
+  div.location fieldset label,
   div.location fieldset span,
   fieldset.select label,
   fieldset.select span {
-    display: block;
-    font-weight: bold;
     margin-left: 0.5em; }
   div.location fieldset label,
   fieldset.select label {
@@ -2343,13 +2346,17 @@ fieldset.textfield {
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  fieldset.textfield label,
-  fieldset.textfield span {
+  fieldset.textfield label {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
+  fieldset.textfield label,
+  fieldset.textfield span {
+    margin-left: 0.5em; }
   fieldset.textfield label {
+    background-color: transparent;
     display: block;
+    font-weight: bold;
     position: absolute; }
   fieldset.textfield input[type=text] {
     background-color: #efedeb;
@@ -2381,10 +2388,12 @@ fieldset.alphabetical {
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  fieldset.alphabetical label,
-  fieldset.alphabetical span {
+  fieldset.alphabetical label {
     display: block;
     font-weight: bold;
+    margin-left: 0.5em; }
+  fieldset.alphabetical label,
+  fieldset.alphabetical span {
     margin-left: 0.5em; }
   fieldset.alphabetical button {
     background-color: #efedeb;
@@ -2431,10 +2440,12 @@ fieldset.radiogroup {
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  fieldset.radiogroup label,
-  fieldset.radiogroup span {
+  fieldset.radiogroup label {
     display: block;
     font-weight: bold;
+    margin-left: 0.5em; }
+  fieldset.radiogroup label,
+  fieldset.radiogroup span {
     margin-left: 0.5em; }
   fieldset.radiogroup label {
     background-color: #efedeb;

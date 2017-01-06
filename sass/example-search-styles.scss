@@ -36,6 +36,10 @@
   @include select-fieldset;
 }
 
+.searchable-facet {
+  @include searchable-fieldset;
+}
+
 .submit-form-button {
   @include basic-button;
 }
