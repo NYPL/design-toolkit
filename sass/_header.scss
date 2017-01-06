@@ -309,7 +309,7 @@ header.collapsed {
   }
 
   div {
-    background-color: $nypl-search-color;
+    background-color: $nypl-search-color-dark;
     color: $nypl-white;
     font-size: 1rem;
     padding: 1rem;
@@ -423,7 +423,7 @@ li.search {
   }
 
   #main-search {
-    background-color: $nypl-search-color;
+    background-color: $nypl-search-color-dark;
     margin: 0;
     position: relative;
 
@@ -440,7 +440,7 @@ li.search {
     }
 
     .search-select {
-      background-color: $nypl-search-color;
+      background-color: $nypl-search-color-dark;
       font-size: 0.9rem;
       right: 0;
       padding: 1px 3px 3px;
@@ -452,6 +452,7 @@ li.search {
 
     .search-radio-label {
       @include simple-radiobutton;
+      color: $nypl-search-color-light;
       display: inline-block;
       height: 2rem;
       line-height: 2;
@@ -459,6 +460,7 @@ li.search {
 
       &.selected {
         background-color: $nypl-search-color-light;
+        color: $page-text-color;
       }
 
       &.focus {

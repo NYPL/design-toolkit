@@ -44,6 +44,10 @@
   @include results-summary;
 }
 
+.search-reset {
+  @include basic-button;
+}
+
 .sorting-controls {
   @include results-sorting-controls;
 }

@@ -47,9 +47,9 @@ $nypl-green-dark: #497629;
 $nypl-green-tint: tint($nypl-green, 40%);
 
 // semantic colors
-$nypl-search-color: $nypl-gray;
-$nypl-search-color-dark: darken($nypl-search-color, 10%);
-$nypl-search-color-light: lighten($nypl-search-color, 30%);
+$nypl-search-color: $nypl-light-gray;
+$nypl-search-color-dark: $nypl-gray;//darken($nypl-search-color, 10%);
+$nypl-search-color-light: lighten($nypl-search-color, 10%);
 
 $focus-color: $nypl-orange;
 

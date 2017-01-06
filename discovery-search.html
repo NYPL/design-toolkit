@@ -119,8 +119,8 @@
         <form action="" class="" id="filter-search">
 
 <fieldset class="text-field">
-  <label for="keyword-text">Keyword, title, name, or ID</label>
-  <input id="keyword-text" type="text" value="hamilton">
+  <label for="keyword-text">Keyword (title, name, or ID)</label>
+  <input id="keyword-text" type="text" value="hamilton" placeholder="Enter a keyword">
 </fieldset>
 
 <fieldset class="select-box">
@@ -144,14 +144,21 @@
   </select>
 </fieldset>
 
-<fieldset class="text-field">
-  <label for="date-after">After date</label>
-  <input id="date-after" type="text" value="">
+<fieldset class="select-box">
+  <label for="date">Year</label>
+  <select id="date" name="date">
+    <option selected="" value="date_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.0">Any</option><option selected="" value="date_range" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.0">Year range</option><option value="0" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$0">0 (1)</option><option value="10" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$1">10 (1)</option><option value="1780" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$2">1780 (1)</option><option value="1790" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$3">1790 (5)</option><option value="1800" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$4">1800 (6)</option><option value="1810" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$5">1810 (2)</option><option value="1820" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$6">1820 (2)</option><option value="1830" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$7">1830 (9)</option><option value="1840" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$8">1840 (9)</option><option value="1850" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$9">1850 (4)</option><option value="1860" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$10">1860 (3)</option><option value="1870" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$11">1870 (3)</option><option value="1880" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$12">1880 (3)</option><option value="1890" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$13">1890 (2)</option><option value="1900" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$14">1900 (6)</option><option value="1910" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$15">1910 (6)</option><option value="1920" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$16">1920 (3)</option><option value="1930" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$17">1930 (2)</option><option value="1950" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$18">1950 (1)</option><option value="1960" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$19">1960 (3)</option><option value="1970" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$20">1970 (6)</option><option value="1980" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$21">1980 (36)</option><option value="1990" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$22">1990 (3)</option><option value="2000" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$23">2000 (7)</option><option value="2010" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$24">2010 (1)</option>
+  </select>
 </fieldset>
 
 <fieldset class="text-field">
-  <label for="date-before">Before date</label>
-  <input id="date-before" type="text" value="">
+  <label for="date-after">On or after year</label>
+  <input id="date-after" type="text" placeholder="Enter a year">
+</fieldset>
+
+<fieldset class="text-field">
+  <label for="date-before">On or before year</label>
+  <input id="date-before" type="text" placeholder="Enter a year">
 </fieldset>
 
 <fieldset class="select-box">
@@ -193,8 +200,8 @@
 <div class="main-content three-quarter" id="mainContent">
       <div class="results-summary">
         <span class="results-count">125</span> results found <span class="facet">for
-        keywords <strong>hamilton</strong><button title="Remove hamilton keyword filter">×</button></span>,
-        with owner <strong>Stephen A. Schwarzman Building</strong><button title="Remove Stephen A. Schwarzman Building owner filter">×</button></span>.
+        keywords <strong>hamilton</strong><button class="remove-facet" title="Remove hamilton keyword filter">×</button></span>,
+        with owner <strong>Stephen A. Schwarzman Building</strong><button class="remove-facet" title="Remove Stephen A. Schwarzman Building owner filter">×</button></span>. <button class="search-reset">Start over</button>
       </div>
 
 <div class="sorting-controls">
@@ -227,11 +234,11 @@
     <strong>Publisher:</strong> Cambridge [Eng.] University Press, 1914-1929.<br />
     <strong>Year published:</strong> 1914</p>
     <div class="result-item-formats">
-      <p><strong>Available in these formats:</strong></p>
+      <p><strong>Items available:</strong></p>
       <table class="result-item-formats-table">
         <thead class="sr-only">
           <tr>
-            <th>Format</th>
+            <th>Item</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -243,17 +250,17 @@
           <tr>
             <td>Stephen A. Schwarzman Building - Rose Main Rdg Rm 315
             <br /><em>Requested from offsite storage</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
           <tr>
             <td>Stephen A. Schwarzman Building - Rose Main Rdg Rm 315
             <br /><em>Requested from offsite storage</em></td>
-            <td>In use by patron</td>
+            <td><span class="item-unavailable">In use by patron</span></td>
           </tr>
           <tr>
             <td>Stephen A. Schwarzman Building - Rose Main Rdg Rm 315
             <br /><em>Requested from offsite storage</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
         </tbody>
       </table>
@@ -268,11 +275,11 @@
     <strong>Publisher:</strong> Brooklyn : The Club.<br />
     <strong>Year published:</strong> 1</p>
     <div class="result-item-formats">
-      <p><strong>Available in these formats:</strong></p>
+      <p><strong>Items available:</strong></p>
       <table class="result-item-formats-table">
         <thead class="sr-only">
           <tr>
-            <th>Format</th>
+            <th>Item</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -284,17 +291,17 @@
           <tr>
             <td>Science, Industry, and Business Library - Room 312
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td>In use by patron</td>
+            <td><span class="item-unavailable">In use by patron</span></td>
           </tr>
           <tr>
             <td>Science, Industry, and Business Library - Room 312
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td>In use by patron</td>
+            <td><span class="item-unavailable">In use by patron</span></td>
           </tr>
           <tr>
             <td>Science, Industry, and Business Library - Room 312
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
         </tbody>
       </table>
@@ -311,11 +318,11 @@
     <strong>Publisher:</strong> Brooklyn : The Club.<br />
     <strong>Year published:</strong> 1</p>
     <div class="result-item-formats">
-      <p><strong>Available in these formats:</strong></p>
+      <p><strong>Items available:</strong></p>
       <table class="result-item-formats-table">
         <thead class="sr-only">
           <tr>
-            <th>Format</th>
+            <th>Item</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -327,17 +334,17 @@
           <tr>
             <td>Science, Industry, and Business Library - Rose Main Rdg Rm 315
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
           <tr>
             <td>Science, Industry, and Business Library - Rose Main Rdg Rm 315
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
           <tr>
             <td>Science, Industry, and Business Library - Rose Main Rdg Rm 315
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td>In use by patron</td>
+            <td><span class="item-unavailable">In use by patron</span></td>
           </tr>
         </tbody>
       </table>
@@ -353,11 +360,11 @@
     <strong>Publisher:</strong> Brooklyn : The Club.<br />
     <strong>Year published:</strong> 1</p>
     <div class="result-item-formats">
-      <p><strong>Available in these formats:</strong></p>
+      <p><strong>Items available:</strong></p>
       <table class="result-item-formats-table">
         <thead class="sr-only">
           <tr>
-            <th>Format</th>
+            <th>Item</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -369,17 +376,17 @@
           <tr>
             <td>Stephen A. Schwarzman Building - Rose Main Rdg Rm 315
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td>In use by patron</td>
+            <td><span class="item-unavailable">In use by patron</span></td>
           </tr>
           <tr>
             <td>Stephen A. Schwarzman Building - Rose Main Rdg Rm 315
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
           <tr>
             <td>Stephen A. Schwarzman Building - Rose Main Rdg Rm 315
             <br /><em>Hamilton Club Bklyn, New York, N.Y. By-laws</em></td>
-            <td><a href="#">Request for in-library use</a></td>
+            <td><span class="item-available">Available for in-library use</span></td>
           </tr>
         </tbody>
       </table>
