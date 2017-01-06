@@ -103,6 +103,10 @@
 
 @mixin column-offset($column-count) {
   margin-left: percentage($column-count / 4);
+
+  @include media($mobile-breakpoint) {
+    margin-left: 0;
+  }
 }
 
 @mixin inner-block {

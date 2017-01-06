@@ -807,8 +807,7 @@ pre {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  .my-text-field label,
-  .my-text-field span {
+  .my-text-field label {
     margin-left: 0.5em; }
   .my-text-field label {
     background-color: transparent;
@@ -849,8 +848,7 @@ pre {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  .my-select-box label,
-  .my-select-box span {
+  .my-select-box label {
     margin-left: 0.5em; }
   .my-select-box label {
     display: block;
@@ -951,8 +949,7 @@ pre {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  .my-searchable-facet label,
-  .my-searchable-facet span {
+  .my-searchable-facet label {
     margin-left: 0.5em; }
   .my-searchable-facet label {
     background-color: #efedeb;

@@ -1874,6 +1874,9 @@ footer {
       float: none;
       padding: 0;
       width: auto; } }
+  @media (max-width: 965px) {
+    .half-offset {
+      margin-left: 0; } }
 
 .quarter {
   float: left;
@@ -1915,6 +1918,9 @@ footer {
       float: none;
       padding: 0;
       width: auto; } }
+  @media (max-width: 965px) {
+    .quarter-offset {
+      margin-left: 0; } }
 
 .third {
   float: left;
@@ -1996,6 +2002,9 @@ footer {
       float: none;
       padding: 0;
       width: auto; } }
+  @media (max-width: 965px) {
+    .three-quarter-offset {
+      margin-left: 0; } }
 
 .results-summary {
   line-height: 1;
@@ -2318,9 +2327,7 @@ fieldset.select {
     font-weight: bold;
     margin-left: 0.5em; }
   div.location fieldset label,
-  div.location fieldset span,
-  fieldset.select label,
-  fieldset.select span {
+  fieldset.select label {
     margin-left: 0.5em; }
   div.location fieldset label,
   fieldset.select label {
@@ -2350,8 +2357,7 @@ fieldset.textfield {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  fieldset.textfield label,
-  fieldset.textfield span {
+  fieldset.textfield label {
     margin-left: 0.5em; }
   fieldset.textfield label {
     background-color: transparent;
@@ -2392,8 +2398,7 @@ fieldset.alphabetical {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  fieldset.alphabetical label,
-  fieldset.alphabetical span {
+  fieldset.alphabetical label {
     margin-left: 0.5em; }
   fieldset.alphabetical button {
     background-color: #efedeb;
@@ -2444,8 +2449,7 @@ fieldset.radiogroup {
     display: block;
     font-weight: bold;
     margin-left: 0.5em; }
-  fieldset.radiogroup label,
-  fieldset.radiogroup span {
+  fieldset.radiogroup label {
     margin-left: 0.5em; }
   fieldset.radiogroup label {
     background-color: #efedeb;
@@ -2617,6 +2621,9 @@ fieldset.radiogroup {
       float: none;
       padding: 0;
       width: auto; } }
+  @media (max-width: 965px) {
+    .my-col-three-quarters-offset {
+      margin-left: 0; } }
   .my-col-three-quarters-offset p {
     background-color: #090;
     color: #fff; }

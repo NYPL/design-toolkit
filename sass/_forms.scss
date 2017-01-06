@@ -35,8 +35,7 @@ $form-padding: 0.5em;
     @include label;
   }
 
-  label,
-  span {
+  label {
     margin-left: $form-padding;
   }
 }
@@ -88,6 +87,19 @@ $form-padding: 0.5em;
   @include textfield-with-label;
 }
 
+@mixin select-field {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% $nypl-search-color-light;
+  border: 0;
+  border-radius: 0;
+  height: 2rem;
+  padding-right: 7%;
+  padding-left: $form-padding;
+  width: 100%;
+}
+
 @mixin select-fieldset {
   @include fieldset;
 
@@ -96,16 +108,7 @@ $form-padding: 0.5em;
   }
 
   select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% $nypl-search-color-light;
-    border: 0;
-    border-radius: 0;
-    height: 2rem;
-    padding-right: 7%;
-    padding-left: $form-padding;
-    width: 100%;
+    @include select-field;
   }
 }
 
@@ -126,6 +129,41 @@ $form-padding: 0.5em;
 @mixin radiobutton-fieldset {
   @include fieldset;
   @include simple-radiobutton;
+}
+
+@mixin omnisearch {
+  fieldset {
+    background-color: $nypl-search-color;
+    border: 0;
+    padding: $form-padding;
+
+    .omni-fields,
+    .omni-text,
+    .omni-button {
+      display: block;
+      float: left;
+      height: 2rem;
+    }
+
+    .omni-fields {
+      width: 20%;
+
+      select {
+        @include select-field;
+      }
+    }
+
+    .omni-text {
+      @include input;
+      margin: 0 1%;
+      width: 58%;
+    }
+
+    .omni-button {
+      @include basic-button($height: 2rem);
+      width: 20%;
+    }
+  }
 }
 
 @mixin searchable-fieldset {
