@@ -189,3 +189,11 @@ fieldset.radiogroup {
     color: $white;
   }
 }
+
+.sorting-controls {
+  @include results-sorting-controls;
+}
+
+.sorter {
+  @include results-sorter;
+}

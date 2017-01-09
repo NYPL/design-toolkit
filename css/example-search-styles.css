@@ -1850,9 +1850,13 @@ footer {
         background-color: #d7d4d0;
         color: #fff; }
   @media (max-width: 965px) {
-    .omnisearch fieldset .omni-fields select {
-      padding-left: 0.125em;
-      padding-right: 20%; }
+    .omnisearch fieldset .omni-fields {
+      width: 30%; }
+      .omnisearch fieldset .omni-fields select {
+        padding-left: 0.125em;
+        padding-right: 20%; }
+    .omnisearch fieldset .omni-text {
+      width: 48%; }
     .omnisearch fieldset .omni-button {
       padding: 0; } }
 

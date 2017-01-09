@@ -10,6 +10,12 @@
 <link rel="stylesheet" href="js/atom-one-light.css">
 <script src="js/highlight.pack.js"></script>
 
+<script
+        src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/header.js"></script>
+
 </head>
 <body>
 
@@ -55,6 +61,7 @@
     <ul>
       <li><a href="#general">General tables</a></li>
       <li><a href="#summary">Search results summary</a></li>
+      <li><a href="#sorting">Sorting</a></li>
       <li><a href="#results-table">Search results (table)</a></li>
       <li><a href="#results-nontable">Search results (non-table)</a></li>
       <li><a href="#pagination">Search results pagination</a></li>
@@ -176,6 +183,64 @@
   &lt;button&gt;Start over&lt;/button&gt;
 &lt;/div&gt;
     </code></pre>
+
+
+    <h3 id="sorting">Sorting</h3>
+
+    <p>Sorters are nested inside a <code>results-sorting-controls</code> element. The sorters themselves implement a <code>results-sorter</code> microformat.</p>
+
+
+    <div class="toolkit-example">
+<div class="sorting-controls">
+  <div class="sorter">
+    <button>
+    Sort by <strong>relevance</strong>
+    <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>down.wedge.sm</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+    </button>
+    <ul class="hidden">
+      <li><a href="?sort=relevance"><strong>relevance</strong></a></li>
+      <li><a href="?sort=a-z">title A-Z</a></li>
+      <li><a href="?sort=z-a">title Z-A</a></li>
+      <li><a href="?sort=date-old">date (old to new)</a></li>
+      <li><a href="?sort=date-new">date (new to old)</a></li>
+    </ul>
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.sorting-controls {
+  @include results-sorting-controls;
+}
+
+.sorter {
+  @include results-sorter;
+}
+    </code></pre>
+
+    <pre><code class="html">
+&lt;div class=&quot;sorting-controls&quot;&gt;
+  &lt;div class=&quot;sorter&quot;&gt;
+    &lt;button&gt;
+    Sort by &lt;strong&gt;relevance&lt;/strong&gt;
+    &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
+      &lt;title&gt;down.wedge.sm&lt;/title&gt;
+      &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
+    &lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;hidden&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;?sort=relevance&quot;&gt;&lt;strong&gt;relevance&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;?sort=a-z&quot;&gt;title A-Z&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;?sort=z-a&quot;&gt;title Z-A&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;?sort=date-old&quot;&gt;date (old to new)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;?sort=date-new&quot;&gt;date (new to old)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
 
     <h3 id="results-table">Search results (table)</h3>
 

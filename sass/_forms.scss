@@ -166,12 +166,18 @@ $form-padding: 0.5em;
     }
 
     @include media($mobile-breakpoint) {
-      .omni-fields select {
-        padding-left: 0.125em;
-        padding-right: 20%;
+      .omni-fields {
+        width: 30%;
+
+        select {
+          padding-left: 0.125em;
+          padding-right: 20%;
+        }
       }
 
-      .omni-text {}
+      .omni-text {
+        width: 48%;
+      }
 
       .omni-button {
         padding: 0;
