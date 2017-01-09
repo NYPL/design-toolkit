@@ -131,57 +131,63 @@ $form-padding: 0.5em;
 }
 
 @mixin omnisearch {
-  fieldset {
-    background-color: $nypl-search-color;
-    border: 0;
-    padding: $form-padding;
+  background-color: $nypl-search-color;
+  border: 0;
+  padding: $form-padding;
 
-    .omni-fields,
-    .omni-text,
-    .omni-button {
-      display: block;
-      float: left;
-      height: 2rem;
+  button,
+  .omni-fields,
+  input {
+    display: block;
+    float: left;
+    height: 2rem;
+  }
+
+  .omni-fields {
+    margin: 0 1%;
+    width: 20%;
+
+    label {
+      @include screenreader-only;
     }
 
+    select {
+      @include select-field;
+    }
+  }
+
+  input[type=text] {
+    @include input;
+    text-indent: $form-padding;
+    width: 58%;
+  }
+
+  button,
+  input[type=button],
+  input[type=submit] {
+    @include basic-button($height: 2rem);
+    line-height: 0;
+    width: 20%;
+  }
+
+  @include media($mobile-breakpoint) {
     .omni-fields {
-      margin: 0 1%;
-      width: 20%;
+      width: 30%;
 
       select {
-        @include select-field;
+        padding-left: 0.125em;
+        padding-right: 20%;
       }
     }
 
-    .omni-text {
-      @include input;
-      text-indent: $form-padding;
-      width: 58%;
+    input[type=text] {
+      width: 48%;
     }
 
-    .omni-button {
-      @include basic-button($height: 2rem);
-      line-height: 0;
-      width: 20%;
-    }
-
-    @include media($mobile-breakpoint) {
-      .omni-fields {
-        width: 30%;
-
-        select {
-          padding-left: 0.125em;
-          padding-right: 20%;
-        }
-      }
-
-      .omni-text {
-        width: 48%;
-      }
-
-      .omni-button {
-        padding: 0;
-      }
+    button,
+    input[type=button],
+    input[type=submit] {
+      padding: 0;
     }
   }
 }

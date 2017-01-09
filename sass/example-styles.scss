@@ -197,3 +197,7 @@ fieldset.radiogroup {
 .sorter {
   @include results-sorter;
 }
+
+.omnisearch {
+  @include omnisearch;
+}

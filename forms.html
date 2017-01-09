@@ -53,6 +53,7 @@
     <h2>Table of contents</h2>
 
     <ul>
+      <li><a href="#omniSearch">Omni search</a></li>
       <li><a href="#textFields">Text fields</a></li>
       <li><a href="#selectBoxes">Select boxes</a></li>
       <li><a href="#alphaFilters">Alphabetical filters</a></li>
@@ -64,6 +65,39 @@
     <a href="#toc">Go to top</a>
 
     <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
+
+    <h3 id="omniSearch">Omni search</h3>
+
+    <p>Omni search is a special fieldset contained in its own row, in a offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a submit button, a <code>span</code> tag of class <code>.omni-fields</code> (required class) and a text field. The <code>.omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
+
+    <p><strong>NOTE:</strong> The text field is <code>aria-labeledby</code> the button.</p>
+
+    <div class="toolkit-example">
+<fieldset class="omnisearch">
+  <input type="submit" id="omni-button" value="Search">
+  <span class="omni-fields">
+    <label for="search-by-field">Search in</label>
+    <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
+  </span>
+  <input type="text" aria-labelledby="omni-button" value="">
+</fieldset>
+    </div>
+
+    <pre><code class="scss">
+.omnisearch {
+  @include omnisearch;
+}
+    </code></pre>
+    <pre><code class="html">
+&lt;fieldset class=&quot;omnisearch&quot;&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;omni-button&quot; value=&quot;Search&quot;&gt;
+  &lt;span class=&quot;omni-fields&quot;&gt;
+    &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
+    &lt;select id=&quot;search-by-field&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
+  &lt;/span&gt;
+  &lt;input type=&quot;text&quot; aria-labelledby=&quot;omni-button&quot; value=&quot;&quot;&gt;
+&lt;/fieldset&gt;
+    </code></pre>
 
     <h3 id="textFields">Text fields</h3>
 
