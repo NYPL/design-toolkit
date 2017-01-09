@@ -1325,7 +1325,6 @@ header.collapsed {
     box-shadow: inset 0 0 0 2px #efedeb;
     border-bottom: 0.0625rem solid #080807;
     height: 2rem;
-    margin-right: 1px;
     padding: 1.5em 0 0;
     text-indent: 0.5em;
     transition: all 0.2s ease-out;
@@ -1678,7 +1677,8 @@ footer {
 
 .page-header,
 .my-page-header {
-  background-color: #d7d4d0; }
+  background-color: #d7d4d0;
+  margin-bottom: 1rem; }
   .page-header h1,
   .my-page-header h1 {
     margin: 0; }
@@ -1721,7 +1721,7 @@ footer {
 
 .my-col-full {
   float: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: auto;
@@ -1744,7 +1744,7 @@ footer {
 
 .my-col-half {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 50%;
@@ -1767,7 +1767,7 @@ footer {
 
 .my-col-three-quarters {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 75%;
@@ -1790,7 +1790,7 @@ footer {
 
 .my-col-quarter {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 25%;
@@ -1812,11 +1812,11 @@ footer {
     color: #fff; }
 
 #filter-search {
-  margin: 1rem 0; }
+  margin: 0 0 1rem; }
 
 .full {
   float: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: auto;
@@ -1836,7 +1836,7 @@ footer {
 
 .half {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 50%;
@@ -1856,7 +1856,7 @@ footer {
 
 .half-offset {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 50%;
@@ -1880,7 +1880,7 @@ footer {
 
 .quarter {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 25%;
@@ -1900,7 +1900,7 @@ footer {
 
 .quarter-offset {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 25%;
@@ -1924,7 +1924,7 @@ footer {
 
 .third {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 33.33333%;
@@ -1944,7 +1944,7 @@ footer {
 
 .two-third {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 66.66667%;
@@ -1964,7 +1964,7 @@ footer {
 
 .three-quarter {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 75%;
@@ -1984,7 +1984,7 @@ footer {
 
 .three-quarter-offset {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 75%;
@@ -2373,7 +2373,6 @@ fieldset.textfield {
     box-shadow: inset 0 0 0 2px #efedeb;
     border-bottom: 0.0625rem solid #080807;
     height: 2rem;
-    margin-right: 1px;
     padding: 1.5em 0 0;
     text-indent: 0.5em;
     transition: all 0.2s ease-out;
@@ -2603,7 +2602,7 @@ fieldset.radiogroup {
 
 .my-col-three-quarters-offset {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: 75%;

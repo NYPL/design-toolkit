@@ -8,6 +8,7 @@
 
 @mixin page-header {
   background-color: $page-color-light;
+  margin-bottom: 1rem;
 
   h1 {
     margin: 0;
@@ -63,7 +64,7 @@
 
 @mixin column-type($float: left, $width: auto) {
   float: $float;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: $width;
