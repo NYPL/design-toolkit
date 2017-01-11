@@ -1557,9 +1557,9 @@ li.search #main-search {
     background-color: #776e64;
     font-size: 0.9rem;
     right: 0;
-    padding: 1px 3px 3px;
+    padding: 0.1875rem;
     position: absolute;
-    top: 2rem;
+    top: 2.65rem;
     white-space: nowrap;
     z-index: 1; }
   li.search #main-search .search-radio-label {
@@ -1595,13 +1595,13 @@ li.search #main-search {
     padding: 0;
     box-shadow: inset 0 0 0 2px #776e64;
     height: 2rem;
-    margin-right: 1px;
+    margin: 0.3125rem 0.3125rem 0;
     padding: 0;
     text-indent: 0.5rem;
     transition: all 0.1s ease-out;
     width: 10rem; }
     li.search #main-search .form-text.active {
-      width: 16rem; }
+      width: 13.5rem; }
     li.search #main-search .form-text:focus {
       background-color: #fff;
       box-shadow: inset 0 0 0 4px #ffb81d !important;
@@ -1615,13 +1615,16 @@ li.search #main-search {
       line-height: 2.5; }
     li.search #main-search .form-text,
     li.search #main-search .form-text.active {
-      margin: 0;
-      width: 70%; }
+      margin: 0.1875rem;
+      width: 67.2%; }
     li.search #main-search .search-button {
+      height: 3rem;
       margin: 0;
+      padding: 0.1rem 0 0 0.1rem;
       width: 30%; }
     li.search #main-search .search-select {
-      top: 2.5rem; } }
+      padding: 0 0 0.1875rem 0.1875rem;
+      top: 3rem; } }
 
 @font-face {
   font-family: nypl-moon;
