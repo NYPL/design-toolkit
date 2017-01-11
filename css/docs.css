@@ -97,7 +97,7 @@ button:focus {
   @media (max-width: 965px) {
     .logo {
       float: none;
-      margin-right: 0.5rem;
+      margin: 0.75rem 0.5rem 0.25rem 0;
       position: relative; } }
 
 .nypl-logo {
