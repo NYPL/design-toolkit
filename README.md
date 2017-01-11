@@ -49,3 +49,8 @@ Design toolkit (SASS) for the NYPL Digital team
   ```
 
 [View documentation](http://nypl.github.io/design-toolkit)
+
+## CHANGE LOG
+
+### v0.1.0
+> Published on NPM.
