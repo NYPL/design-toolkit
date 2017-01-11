@@ -962,17 +962,21 @@ button:focus {
     background-color: #d0343a;
     color: #fff !important;
     display: block;
+    font-size: 1.1rem;
+    height: 2rem;
     margin: 0 -1rem;
-    padding-right: 1rem;
+    padding: 0rem 1rem 0.65rem 0;
     text-align: right;
     text-decoration: none; }
     .main-menu-toggle .nypl-icon {
       background-color: #d0343a;
       display: inline-block;
       fill: #fff;
-      height: 1em;
-      width: 1em;
-      speak: none; }
+      height: 1.5em;
+      width: 1.5em;
+      speak: none;
+      position: relative;
+      top: 0.4375rem; }
       .main-menu-toggle .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; } }
@@ -983,7 +987,7 @@ button:focus {
   @media (max-width: 965px) {
     .logo {
       float: none;
-      margin-right: 0.5rem;
+      margin: 0.75rem 0.5rem 0.25rem 0;
       position: relative; } }
 
 .nypl-logo {
