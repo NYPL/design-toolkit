@@ -419,12 +419,12 @@ li.search {
   }
 
   #main-search {
-    background-color: $nypl-blue-dark;
+    background-color: $nypl-search-color-dark;
     margin: 0;
     position: relative;
 
     .search-button {
-      @include basic-button($background-color: $nypl-blue, $border-width: 0, $font-size: 1.1rem, $height: 2rem, $hover-text-color:$nypl-blue, $hover-background-color: $nypl-white, $padding-top: 0, $padding-right: 1.2rem, $padding-bottom: 0, $padding-left: 1.2rem, $text-color: $nypl-white, $transform-text: none);
+      @include basic-button($background-color: $nypl-search-color, $border-width: 0, $font-size: 1.1rem, $height: 2rem, $hover-text-color:$nypl-search-color, $hover-background-color: $nypl-white, $padding-top: 0, $padding-right: 1.2rem, $padding-bottom: 0, $padding-left: 1.2rem, $text-color: $nypl-white, $transform-text: none);
     }
 
     &.display {
