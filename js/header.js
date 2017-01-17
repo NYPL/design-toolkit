@@ -53,7 +53,7 @@ function init() {
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()
     }
-    if (!$(e.target).closest('.sorter').length) {
+    if (!$(e.target).closest('.nypl-results-sorter').length) {
       hideSort()
     }
     if (!$(e.target).closest('.login-toggle').length && !$(e.target).parents("#login-links").length) {
@@ -70,9 +70,9 @@ function init() {
     }
   })
 
-  $(".sorter button").on("click", function(e) {
+  $(".nypl-results-sorter button").on("click", function(e) {
     e.preventDefault();
-    if ($(e.target).closest('.sorter').length) {
+    if ($(e.target).closest('.nypl-results-sorter').length) {
       toggleSort()
     }
   })
@@ -99,13 +99,13 @@ function init() {
 }
 
 function toggleSort() {
-  $(".sorter button").toggleClass("active")
-  $(".sorter ul").toggleClass("hidden")
+  $(".nypl-results-sorter button").toggleClass("active")
+  $(".nypl-results-sorter ul").toggleClass("hidden")
 }
 
 function hideSort() {
-  $(".sorter button").removeClass("active")
-  $(".sorter ul").addClass("hidden")
+  $(".nypl-results-sorter button").removeClass("active")
+  $(".nypl-results-sorter ul").addClass("hidden")
 }
 
 function toggleLogin() {

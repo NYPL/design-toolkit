@@ -18,9 +18,9 @@
 <main class="main-page">
 
 
-  <div class="page-header">
-    <div class="content-wrapper">
-      <ol class="breadcrumb">
+  <div class="nypl-page-header">
+    <div class="nypl-full-width-wrapper">
+      <ol class="nypl-breadcrumbs">
         <li><a href="./">Toolkit home</a></li>
         <li>General Microformats</li>
       </ol>
@@ -28,9 +28,9 @@
     </div>
   </div>
 
-  <div class="content-wrapper">
+  <div class="nypl-full-width-wrapper">
 
-    <div class="quarter">
+    <div class="nypl-column-one-quarter">
       <a name="mainContent"></a>
       <p class="secondary-title">NYPL Design Toolkit</p>
       <ul>
@@ -49,7 +49,7 @@
       </ul>
     </div>
 
-  <div id="toc" class="main-content three-quarter">
+  <div id="toc" class="nypl-column-three-quarters">
     <h2>Table of contents</h2>
 
     <ul>
@@ -58,6 +58,7 @@
           <li><a href="#alertBanner">Alert banner</a></li>
           <li><a href="#locationCard">Location card</a></li>
           <li><a href="#locationHours">Location hours</a></li>
+          <li><a href="#relatedLinks">Related links</a></li>
         </ul>
       </li>
     </ul>
@@ -67,15 +68,15 @@
 
     <h3 id="alertBanner">Alert banner</h3>
 
-    <p>Requires a <code>content-wrapper</code> for proper margin and padding.</p>
+    <p>Requires a <code>nypl-full-width-wrapper</code> for proper margin and padding.</p>
 
-    <div class="toolkit-example">
-    <div class="alert"><div class="content-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div></div>
+    <div class="nypl-toolkit-example">
+<div class="nypl-banner-alert"><div class="nypl-full-width-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div></div>
     </div>
 
     <pre><code class="html">
-&lt;div class=&quot;alert&quot;&gt;
-  &lt;div class=&quot;content-wrapper&quot;&gt;
+&lt;div class=&quot;nypl-banner-alert&quot;&gt;
+  &lt;div class=&quot;nypl-full-width-wrapper&quot;&gt;
     The New York Public Library will be closed on Monday, October 10
     in observance of Columbus Day.
   &lt;/div&gt;
@@ -84,25 +85,26 @@
 
     <h3 id="locationCard">Location card</h3>
 
-    <p>Note the special classes for each property.</p>
+    <p>Note the classes for each property.</p>
 
-    <div class="toolkit-example">
-    <div id="location-info">
-      <p class="room">First Floor, Room 100</p>
-      <p class="contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
-      <p class="access">Fully accessible to wheelchairs</p>
-    </div>
+    <div class="nypl-toolkit-example">
+<div class="nypl-location-info">
+  <p class="nypl-room">First Floor, Room 100</p>
+  <p class="nypl-contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
+  <p class="nypl-access">Fully accessible to wheelchairs</p>
+</div>
     </div>
     <pre><code class="scss">
-#location-info {
-  @include location-info;
-}
+.nypl-location-info
+.nypl-room
+.nypl-contact
+.nypl-access
     </code></pre>
     <pre><code class="html">
-&lt;div id=&quot;location-info&quot;&gt;
-  &lt;p class=&quot;room&quot;&gt;First Floor, Room 100&lt;/p&gt;
-  &lt;p class=&quot;contact&quot;&gt;Phone: (212) 642-0139 | Fax: (212) 930-0838&lt;/p&gt;
-  &lt;p class=&quot;access&quot;&gt;Fully accessible to wheelchairs&lt;/p&gt;
+&lt;div class=&quot;nypl-location-info&quot;&gt;
+  &lt;p class=&quot;nypl-room&quot;&gt;First Floor, Room 100&lt;/p&gt;
+  &lt;p class=&quot;nypl-contact&quot;&gt;Phone: (212) 642-0139 | Fax: (212) 930-0838&lt;/p&gt;
+  &lt;p class=&quot;nypl-access&quot;&gt;Fully accessible to wheelchairs&lt;/p&gt;
 &lt;/div&gt;
     </code></pre>
 
@@ -113,12 +115,12 @@
 
     <p><strong>NOTE:</strong> Mobile support for english only for now.</p>
 
-    <div class="toolkit-example">
-<table class="location-hours">
+    <div class="nypl-toolkit-example">
+<table class="nypl-location-hours">
   <thead>
     <tr>
       <th>Monday</th>
-      <th class="current">Tuesday</th>
+      <th class="nypl-current">Tuesday</th>
       <th>Wednesday</th>
       <th>Thursday</th>
       <th>Friday</th>
@@ -129,7 +131,7 @@
   <tbody>
     <tr>
       <td>10:00 AM - <br>5:45 PM</td>
-      <td class="current">10:00 AM - <br>7:45 PM</td>
+      <td class="nypl-current">10:00 AM - <br>7:45 PM</td>
       <td>10:00 AM - <br>7:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
@@ -140,16 +142,15 @@
 </table>
     </div>
     <pre><code class="scss">
-.location-hours {
-  @include location-hours;
-}
+.nypl-location-hours
+.nypl-current
     </code></pre>
     <pre><code class="html">
-&lt;table class=&quot;location-hours&quot;&gt;
+&lt;table class=&quot;nypl-location-hours&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Monday&lt;/th&gt;
-      &lt;th class=&quot;current&quot;&gt;Tuesday&lt;/th&gt;
+      &lt;th class=&quot;nypl-current&quot;&gt;Tuesday&lt;/th&gt;
       &lt;th&gt;Wednesday&lt;/th&gt;
       &lt;th&gt;Thursday&lt;/th&gt;
       &lt;th&gt;Friday&lt;/th&gt;
@@ -160,7 +161,7 @@
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
-      &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
+      &lt;td class=&quot;nypl-current&quot;&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
       &lt;td&gt;10:00 AM - &lt;br&gt;7:45 PM&lt;/td&gt;
       &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
       &lt;td&gt;10:00 AM - &lt;br&gt;5:45 PM&lt;/td&gt;
@@ -171,6 +172,60 @@
 &lt;/table&gt;
     </code></pre>
 
+
+    <h3 id="relatedLinks">Related links</h3>
+
+    <p>To be used for displaying related content to the current content. Should be placed <strong>after</strong> the main content, in its own row.</p>
+
+    <p><strong>NOTE:</strong> Make sure to preserve the whitespacing or column offset of the main content (see example below).</p>
+
+    <div class="nypl-toolkit-example">
+<div class="nypl-row">
+  <div class="nypl-column-three-quarters nypl-column-offset-one">
+    <h3>Main content here</h3>
+    <p>With some content that is offset one column from the left.</p>
+  </div>
+</div>
+<div class="nypl-row">
+  <div class="nypl-related-links nypl-column-three-quarters nypl-column-offset-one">
+    <h2>Related links</h2>
+  </div>
+  <div class="nypl-column-one-quarter nypl-column-offset-one">
+    One column of related content.
+  </div>
+  <div class="nypl-column-one-quarter">
+    Another column of related content.
+  </div>
+  <div class="nypl-column-one-quarter">
+    A third column of related content. Note that this is aligned with the main content.
+  </div>
+</div>
+    </div>
+    <pre><code class="scss">
+.nypl-related-links
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-column-three-quarters nypl-column-offset-one&quot;&gt;
+    &lt;h3&gt;Main content here&lt;/h3&gt;
+    &lt;p&gt;With some content that is offset one column from the left.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-related-links nypl-column-three-quarters nypl-column-offset-one&quot;&gt;
+    &lt;h2&gt;Related links&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;nypl-column-one-quarter nypl-column-offset-one&quot;&gt;
+    One column of related content.
+  &lt;/div&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
+    Another column of related content.
+  &lt;/div&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
+    A third column of related content. Note that this is aligned with the main content.
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
 
     </div>
 

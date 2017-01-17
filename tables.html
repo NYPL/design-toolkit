@@ -24,9 +24,9 @@
 <main class="main-page">
 
 
-  <div class="page-header">
-    <div class="content-wrapper">
-      <ol class="breadcrumb">
+  <div class="nypl-page-header">
+    <div class="nypl-full-width-wrapper">
+      <ol class="nypl-breadcrumbs">
         <li><a href="./">Toolkit home</a></li>
         <li>Tables and data</li>
       </ol>
@@ -34,9 +34,9 @@
     </div>
   </div>
 
-  <div class="content-wrapper">
+  <div class="nypl-full-width-wrapper">
 
-    <div class="quarter">
+    <div class="nypl-column-one-quarter">
       <a name="mainContent"></a>
       <p class="secondary-title">NYPL Design Toolkit</p>
       <ul>
@@ -55,7 +55,7 @@
       </ul>
     </div>
 
-  <div id="toc" class="main-content three-quarter">
+  <div id="toc" class="nypl-column-three-quarters">
     <h2>Table of contents</h2>
 
     <ul>
@@ -71,10 +71,10 @@
     <h3 id="general">General tables</h3>
     <a href="#toc">Go to top</a>
 
-    <p>Use tables sparingly, <strong>only for tabular data</strong>. Use the <code>basic-table</code> mixin to format a table. All tables should have a <code>thead</code> element with the corresponding headers.</p>
+    <p>Use tables sparingly, <strong>only for tabular data</strong>. Use the <code>nypl-basic-table</code> mixin to format a table. All tables should have a <code>thead</code> element with the corresponding headers and a .</p>
 
-    <div class="toolkit-example">
-<table class="my-table">
+    <div class="nypl-toolkit-example">
+<table class="nypl-basic-table">
   <thead>
     <tr>
       <th>One</th>
@@ -83,35 +83,31 @@
       <th>Four</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>some value</td>
-      <td>some value</td>
-      <td>some value</td>
-      <td>some value</td>
-    </tr>
-    <tr>
-      <td>some value</td>
-      <td>some value</td>
-      <td>some value</td>
-      <td>some value</td>
-    </tr>
-    <tr>
-      <td>…</td>
-      <td>…</td>
-      <td>…</td>
-      <td>…</td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>some value</td>
+    <td>some value</td>
+    <td>some value</td>
+    <td>some value</td>
+  </tr>
+  <tr>
+    <td>some value</td>
+    <td>some value</td>
+    <td>some value</td>
+    <td>some value</td>
+  </tr>
+  <tr>
+    <td>…</td>
+    <td>…</td>
+    <td>…</td>
+    <td>…</td>
+  </tr>
 </table>
     </div>
     <pre><code class="scss">
-.my-table {
-  @include basic-table;
-}
+.nypl-basic-table
     </code></pre>
     <pre><code class="html">
-&lt;table class=&quot;my-table&quot;&gt;
+&lt;table class=&quot;nypl-basic-table&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;One&lt;/th&gt;
@@ -120,26 +116,24 @@
       &lt;th&gt;Four&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-      &lt;td&gt;some value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&hellip;&lt;/td&gt;
-      &lt;td&gt;&hellip;&lt;/td&gt;
-      &lt;td&gt;&hellip;&lt;/td&gt;
-      &lt;td&gt;&hellip;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+    &lt;td&gt;some value&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&hellip;&lt;/td&gt;
+    &lt;td&gt;&hellip;&lt;/td&gt;
+    &lt;td&gt;&hellip;&lt;/td&gt;
+    &lt;td&gt;&hellip;&lt;/td&gt;
+  &lt;/tr&gt;
 &lt;/table&gt;
     </code></pre>
 
@@ -153,31 +147,31 @@
 
     <p>After the results summary, a “Start over” <code>button</code> should be added to allow the user to clear all facets and filters and start a new search from scratch.</p>
 
-    <div class="toolkit-example">
-<div class="results-summary">
-  <span class="results-count">1,807</span> resources found for
-  <span class="facet">
+    <div class="nypl-toolkit-example">
+<div class="nypl-results-summary">
+  <span class="nypl-results-count">1,807</span> resources found for
+  <span class="nypl-facet">
     <strong>Young Adult<button title="Remove Young Adult filter">×</button></strong>
   </span>,
-  <span class="facet">
+  <span class="nypl-facet">
     <strong>Fiction<button title="Remove Fiction filter">×</button></strong>
   </span>.
   <button>Start over</button>
 </div>
     </div>
     <pre><code class="scss">
-.results-summary {
-  @include results-summary;
-}
+.nypl-results-summary
+.nypl-results-count
+.nypl-facet
     </code></pre>
 
     <pre><code class="html">
-&lt;div class=&quot;results-summary&quot;&gt;
-  &lt;span class=&quot;results-count&quot;&gt;1,807&lt;/span&gt; resources found for
-  &lt;span class=&quot;facet&quot;&gt;
+&lt;div class=&quot;nypl-results-summary&quot;&gt;
+  &lt;span class=&quot;nypl-results-count&quot;&gt;1,807&lt;/span&gt; resources found for
+  &lt;span class=&quot;nypl-facet&quot;&gt;
     &lt;strong&gt;Young Adult&lt;button title=&quot;Remove Young Adult filter&quot;&gt;&times;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;,
-  &lt;span class=&quot;facet&quot;&gt;
+  &lt;span class=&quot;nypl-facet&quot;&gt;
     &lt;strong&gt;Fiction&lt;button title=&quot;Remove Fiction filter&quot;&gt;&times;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;.
   &lt;button&gt;Start over&lt;/button&gt;
@@ -187,12 +181,12 @@
 
     <h3 id="sorting">Sorting</h3>
 
-    <p>Sorters are nested inside a <code>results-sorting-controls</code> element. The sorters themselves implement a <code>results-sorter</code> microformat.</p>
+    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat.</p>
 
 
-    <div class="toolkit-example">
-<div class="sorting-controls">
-  <div class="sorter">
+    <div class="nypl-toolkit-example">
+<div class="nypl-results-sorting-controls">
+  <div class="nypl-results-sorter">
     <button>
     Sort by <strong>relevance</strong>
     <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
@@ -211,18 +205,13 @@
 </div>
     </div>
     <pre><code class="scss">
-.sorting-controls {
-  @include results-sorting-controls;
-}
-
-.sorter {
-  @include results-sorter;
-}
+.nypl-results-sorting-controls
+.nypl-results-sorter
     </code></pre>
 
     <pre><code class="html">
-&lt;div class=&quot;sorting-controls&quot;&gt;
-  &lt;div class=&quot;sorter&quot;&gt;
+&lt;div class=&quot;nypl-results-sorting-controls&quot;&gt;
+  &lt;div class=&quot;nypl-results-sorter&quot;&gt;
     &lt;button&gt;
     Sort by &lt;strong&gt;relevance&lt;/strong&gt;
     &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
@@ -246,7 +235,7 @@
 
     <p>Coming soon.</p>
 
-    <div class="toolkit-example">
+    <div class="nypl-toolkit-example">
 
     </div>
     <pre><code class="scss">
@@ -260,7 +249,7 @@
 
     <p>Coming soon.</p>
 
-    <div class="toolkit-example">
+    <div class="nypl-toolkit-example">
 
     </div>
     <pre><code class="scss">
@@ -274,8 +263,8 @@
 
     <p>This widget is presented <strong>only in the bottom</strong> of the results (pagination will never appear on top). Page count appears in its own <code>span</code> tag.</p>
 
-    <div class="toolkit-example">
-<div class="results-pagination">
+    <div class="nypl-toolkit-example">
+<div class="nypl-results-pagination">
   <a href="/page/1" rel="prev">
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
 <title>Left arrow</title>
@@ -294,9 +283,7 @@
 </div>
     </div>
     <pre><code class="scss">
-.results-pagination {
-  @include results-pagination;
-}
+.nypl-results-pagination
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;results-pagination&quot;&gt;

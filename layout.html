@@ -18,9 +18,9 @@
 <main class="main-page">
 
 
-  <div class="page-header">
-    <div class="content-wrapper">
-      <ol class="breadcrumb">
+  <div class="nypl-page-header">
+    <div class="nypl-full-width-wrapper">
+      <ol class="nypl-breadcrumbs">
         <li><a href="./">Toolkit home</a></li>
         <li>Layout</li>
       </ol>
@@ -28,9 +28,9 @@
     </div>
   </div>
 
-  <div class="content-wrapper">
+  <div class="nypl-full-width-wrapper">
 
-    <div class="quarter">
+    <div class="nypl-column-one-quarter">
       <a name="mainContent"></a>
       <p class="secondary-title">NYPL Design Toolkit</p>
       <ul>
@@ -49,7 +49,7 @@
       </ul>
     </div>
 
-  <div id="toc" class="main-content three-quarter">
+  <div id="toc" class="nypl-column-three-quarters">
     <h2>Table of contents</h2>
 
     <ul>
@@ -101,30 +101,28 @@
 
     <h3 id="contentWrapper">The content wrapper</h3>
 
-    <p>The general page layout has some special margins and paddings for branding purposes. A <code>full-width-wrapper</code> mixin is provided to take care of this:</p>
+    <p>The general page layout has some special margins and paddings for branding purposes. A <code>nypl-full-width-wrapper</code> class is provided to take care of this:</p>
 
     <pre><code class="scss">
-.some-content-wrapper {
-  @include full-width-wrapper;
-}
+.nypl-full-width-wrapper
     </code></pre>
 
-    <p>The <code>full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
+    <p>The <code>nypl-full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>nypl-full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>nypl-full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
 
     <h3 id="pageHeader">Page header (and breadcrumbs)</h3>
 
-    <p>Contains a <code>full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
+    <p>Contains a <code>nypl-full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
-    <p><strong>Note:</strong> Page header content <strong>is not</strong> the nested inside a <code>grid-row</code> type element.</p>
+    <p><strong>Note:</strong> Page header content <strong>is not</strong> the nested inside a <code>nypl-row</code> type element.</p>
 
     <h4>Breadcrumbs</h4>
 
     <p>Breadcrumbs are built with an ordered list (<code>ol</code> tag) of links up the information structure of the current page. The <strong>last item</strong> in the list <strong>does not</strong> have a link as it corresponds to the page the user is on. It is <strong>not necessary to add a “&gt;” character</strong>.</p>
 
-    <div class="toolkit-example">
-<div class="my-page-header">
-  <div class="my-content-wrapper">
-    <ol class="my-breadcrumb">
+    <div class="nypl-toolkit-example">
+<div class="nypl-page-header">
+  <div class="nypl-full-width-wrapper">
+    <ol class="nypl-breadcrumbs">
       <li><a href="/">Home</a></li>
       <li><a href="/research">Research</a></li>
       <li>Articles &amp; databases</li>
@@ -135,22 +133,14 @@
     </div>
 
     <pre><code class="scss">
-.my-page-header {
-  @include page-header;
-}
-
-.my-breadcrumb {
-  @include breadcrumbs;
-}
-
-.my-content-wrapper {
-  @include full-width-wrapper;
-}
+.nypl-page-header
+.nypl-breadcrumbs
+.nypl-full-width-wrapper
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;my-page-header&quot;&gt;
-  &lt;div class=&quot;my-content-wrapper&quot;&gt;
-    &lt;ol class=&quot;my-breadcrumb&quot;&gt;
+&lt;div class=&quot;nypl-page-header&quot;&gt;
+  &lt;div class=&quot;nypl-full-width-wrapper&quot;&gt;
+    &lt;ol class=&quot;nypl-breadcrumbs&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;/research&quot;&gt;Research&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;Articles &amp;amp; databases&lt;/li&gt;
@@ -162,7 +152,7 @@
 
     <h3 id="pageContent">Page content</h3>
 
-    <p>Is wrapped by a <code>full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
+    <p>Is wrapped by a <code>nypl-full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
 
     <pre><code>
 +-wrapper---------------------------------------------+
@@ -181,37 +171,26 @@
 +-----------------------------------------------------+
     </code></pre>
 
-    <p>The rows and columns themselves are based on a simple, mobile-ready row-4-column pattern that can be combined as needed. Existing column size mixins are <code>column-full</code>, <code>column-half</code>, <code>column-one-quarter</code>, and <code>column-three-quarters</code>.</p>
+    <p>The rows and columns themselves are based on a simple, mobile-ready row-4-column pattern that can be combined as needed. Existing column size classes are <code>nypl-column-full</code>, <code>nypl-column-half</code>, <code>nypl-column-one-quarter</code>, and <code>nypl-column-three-quarters</code>.</p>
 
     <p><strong>NOTE:</strong> avoid nesting rows inside columns as the system does not support it for the time being. It is preferred to use multiple rows if you require a more elaborate layout.</p>
 
     <h3 id="fullWidth">Full width column</h3>
 
-    <div class="toolkit-example">
-<div class="my-row">
-  <div class="my-col-full">
+    <div class="nypl-toolkit-example">
+<div class="nypl-row">
+  <div class="nypl-column-full">
     <p>full width</p>
   </div>
 </div>
     </div>
     <pre><code class="scss">
-.my-row {
-  @include grid-row;
-  background-color: gray;
-}
-
-.my-col-full {
-  @include column-full;
-
-  p {
-    background-color: blue;
-    color: white;
-  }
-}
+.nypl-row
+.nypl-column-full
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;my-row&quot;&gt;
-  &lt;div class=&quot;my-col-full&quot;&gt;
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-column-full&quot;&gt;
     &lt;p&gt;full width&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -219,37 +198,26 @@
 
     <h3 id="halfWidth">Half width columns</h3>
 
-    <div class="toolkit-example">
-<div class="my-row">
-  <div class="my-col-half">
+    <div class="nypl-toolkit-example">
+<div class="nypl-row">
+  <div class="nypl-column-half">
     <p>half</p>
   </div>
-  <div class="my-col-half">
+  <div class="nypl-column-half">
     <p>half</p>
   </div>
 </div>
     </div>
     <pre><code class="scss">
-.my-row {
-  @include grid-row;
-  background-color: gray;
-}
-
-.my-col-half {
-  @include column-half;
-
-  p {
-    background-color: yellow;
-    color: black;
-  }
-}
+.nypl-row
+.nypl-column-half
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;my-row&quot;&gt;
-  &lt;div class=&quot;my-col-half&quot;&gt;
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-column-half&quot;&gt;
     &lt;p&gt;half&lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-col-half&quot;&gt;
+  &lt;div class=&quot;nypl-column-half&quot;&gt;
     &lt;p&gt;half&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -257,49 +225,38 @@
 
     <h3 id="quarterWidth">Quarter width columns</h3>
 
-    <div class="toolkit-example">
-<div class="my-row">
-  <div class="my-col-quarter">
+    <div class="nypl-toolkit-example">
+<div class="nypl-row">
+  <div class="nypl-column-one-quarter">
     <p>one</p>
   </div>
-  <div class="my-col-quarter">
+  <div class="nypl-column-one-quarter">
     <p>two</p>
   </div>
-  <div class="my-col-quarter">
+  <div class="nypl-column-one-quarter">
     <p>three</p>
   </div>
-  <div class="my-col-quarter">
+  <div class="nypl-column-one-quarter">
     <p>four</p>
   </div>
 </div>
     </div>
     <pre><code class="scss">
-.my-row {
-  @include grid-row;
-  background-color: gray;
-}
-
-.my-col-quarter {
-  @include column-one-quarter;
-
-  p {
-    background-color: blue;
-    color: white;
-  }
-}
+.nypl-row
+.nypl-column-one-quarter
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;my-row&quot;&gt;
-  &lt;div class=&quot;my-col-quarter&quot;&gt;
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
     &lt;p&gt;one&lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-col-quarter&quot;&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
     &lt;p&gt;two&lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-col-quarter&quot;&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
     &lt;p&gt;three&lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-col-quarter&quot;&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
     &lt;p&gt;four&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -307,46 +264,27 @@
 
     <h3 id="mixedColumns">One quarter / three quarters width columns</h3>
 
-    <div class="toolkit-example">
-<div class="my-row">
-  <div class="my-col-quarter">
+    <div class="nypl-toolkit-example">
+<div class="nypl-row">
+  <div class="nypl-column-one-quarter">
     <p>one</p>
   </div>
-  <div class="my-col-three-quarters">
+  <div class="nypl-column-three-quarters">
     <p>three</p>
   </div>
 </div>
     </div>
     <pre><code class="scss">
-.my-row {
-  @include grid-row;
-  background-color: gray;
-}
-
-.my-col-quarter {
-  @include column-one-quarter;
-
-  p {
-    background-color: blue;
-    color: white;
-  }
-}
-
-.my-col-three-quarters {
-  @include column-three-quarters;
-
-  p {
-    background-color: green;
-    color: white;
-  }
-}
+.nypl-row
+.nypl-column-one-quarter
+.nypl-column-three-quarters
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;my-row&quot;&gt;
-  &lt;div class=&quot;my-col-quarter&quot;&gt;
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-column-one-quarter&quot;&gt;
     &lt;p&gt;one&lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-col-three-quarters&quot;&gt;
+  &lt;div class=&quot;nypl-column-three-quarters&quot;&gt;
     &lt;p&gt;three&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -354,45 +292,31 @@
 
     <h3 id="offsets">Column offsets</h3>
 
-    <p>Use the <code>column-offset($column-count)</code> mixin to <strong>push a column to the right</strong> a certain amount of columns. </p>
+    <p>Use the <code>nypl-column-offset-one</code>, <code>nypl-column-offset-two</code>, and <code>nypl-column-offset-three</code> classes to <strong>push a column to the right</strong> a certain amount of columns.</p>
 
     <p><strong>IMPORTANT:</strong> a row has to contain four columns including their offsets.</p>
 
-    <div class="toolkit-example">
-<div class="my-row">
-  <div class="my-col-three-quarters-offset">
+    <div class="nypl-toolkit-example">
+<div class="nypl-row">
+  <div class="nypl-column-three-quarters nypl-column-offset-one">
     <p>three offsetted</p>
   </div>
 </div>
     </div>
     <pre><code class="scss">
-.my-row {
-  @include grid-row;
-  background-color: gray;
-}
-
-.my-col-three-quarters-offset {
-  @include column-three-quarters;
-  @include column-offset(1);
-
-  p {
-    background-color: green;
-    color: white;
-  }
-}
+.nypl-row
+.nypl-column-three-quarters
+.nypl-column-offset-one
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;my-row&quot;&gt;
-  &lt;div class=&quot;my-col-quarter&quot;&gt;
-    &lt;p&gt;one&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;my-col-three-quarters&quot;&gt;
+&lt;div class=&quot;nypl-row&quot;&gt;
+  &lt;div class=&quot;nypl-column-three-quarters nypl-column-offset-one&quot;&gt;
     &lt;p&gt;three offsetted&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
     </code></pre>
 
-    <div class="toolkit-example">
+    <div class="nypl-toolkit-example">
 
     </div>
     <pre><code class="scss">

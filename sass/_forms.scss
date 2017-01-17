@@ -112,6 +112,10 @@ $form-padding: 0.5em;
 }
 
 @mixin simple-radiobutton {
+  span.nypl-label {
+    @include label;
+  }
+
   label {
     background-color: $nypl-search-color-light;
     font-weight: normal;
@@ -136,14 +140,14 @@ $form-padding: 0.5em;
   padding: $form-padding;
 
   button,
-  .omni-fields,
+  .nypl-omni-fields,
   input {
     display: block;
     float: left;
     height: 2rem;
   }
 
-  .omni-fields {
+  .nypl-omni-fields {
     margin: 0 1%;
     width: 20%;
 
@@ -171,7 +175,7 @@ $form-padding: 0.5em;
   }
 
   @include media($mobile-breakpoint) {
-    .omni-fields {
+    .nypl-omni-fields {
       width: 30%;
 
       select {
@@ -197,11 +201,11 @@ $form-padding: 0.5em;
   @include simple-radiobutton;
 
 
-  .facet-search {
+  .nypl-facet-search {
     @include textfield-with-label;
   }
 
-  .facet-list {
+  .nypl-facet-list {
     display: table;
     width: 100%;
 
@@ -213,12 +217,12 @@ $form-padding: 0.5em;
       display: table-cell;
       padding: 0 $form-padding;
 
-      &.facet-count {
+      &.nypl-facet-count {
         text-align: right;
       }
     }
 
-    .more-facets {
+    .nypl-more-facets {
       display: inline-block;
       margin: $form-padding;
     }
@@ -240,7 +244,7 @@ $form-padding: 0.5em;
     padding: 0.2rem 0.25em;
     width: 2em;
 
-    &.long {
+    &.nypl-long {
       // because “any” has different lengths in different langs
       min-width: 4.75em;
     }

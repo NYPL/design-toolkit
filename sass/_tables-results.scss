@@ -45,7 +45,7 @@
   margin-top: 1rem;
   @include clearfix;
 
-  .results-count {
+  .nypl-results-count {
     display: inline-block;
     float: left;
     font-size: 3rem;
@@ -54,7 +54,7 @@
     margin-right: 0.5rem;
   }
 
-  span button {
+  .nypl-facet button {
     // the button inside a facet
     @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1em, $border-width: 0);
     display: inline-block;
