@@ -18,9 +18,9 @@
 <div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
 
 
-<header>
+<header class="nypl-header">
   <div class="service">
-    <div class="content-wrapper">
+    <div class="nypl-full-width-wrapper">
       <ul class="service-buttons horizontal">
         <li><a href="#">Locations</a></li>
         <li><a href="#">Get a library card</a></li>
@@ -51,7 +51,7 @@
       </ul>
     </div>
   </div>
-  <div class="content-wrapper">
+  <div class="nypl-full-width-wrapper">
     <div class="logo"><a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a></div>
     <div class="content">
       <div class="login-toggle">
@@ -89,9 +89,11 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-        <title>down.wedge.sm</title>
-        <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0"/>
+    <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+        <title>menu.icon.svg</title>
+        <path d="M26.22029,10.40244H5.77971a1.09221,1.09221,0,1,1,0-2.18441H26.22029A1.09221,1.09221,0,1,1,26.22029,10.40244Z"/>
+        <path d="M26.22029,16.95568H5.77971a1.09221,1.09221,0,0,1,0-2.18441H26.22029A1.09221,1.09221,0,0,1,26.22029,16.95568Z"/>
+        <path d="M26.22029,23.782H5.77971a1.09221,1.09221,0,1,1,0-2.18441H26.22029A1.09221,1.09221,0,1,1,26.22029,23.782Z"/>
       </svg></a>
   </div>
 </header>
@@ -99,9 +101,9 @@
 <main class="main-page">
 
 
-  <div class="page-header">
-    <div class="content-wrapper">
-      <ol class="breadcrumb">
+  <div class="nypl-page-header">
+    <div class="nypl-full-width-wrapper">
+      <ol class="nypl-breadcrumbs">
         <li><a href="/">Home</a></li>
         <li><a href="https://nypl.org/research">Research</a></li>
         <li><a href="http://dev-discovery.nypl.org/">Research Catalog</a></li>
@@ -110,87 +112,87 @@
     </div>
   </div>
 
-  <div class="content-wrapper">
-    <div class="row">
-      <div class="three-quarter-offset">
-<fieldset class="omnisearch">
-  <input type="submit" id="omni-button" value="Search">
-  <span class="omni-fields">
+  <div class="nypl-full-width-wrapper">
+    <div class="nypl-row">
+      <div class="nypl-column-three-quarters nypl-column-offset-one">
+<fieldset class="nypl-omnisearch">
+  <input type="submit" id="nypl-omni-button" value="Search">
+  <span class="nypl-omni-fields">
     <label for="search-by-field">Search in</label>
     <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
   </span>
-  <input type="text" aria-labelledby="omni-button" value="hamilton">
+  <input type="text" aria-labelledby="nypl-omni-button" value="">
 </fieldset>
       </div>
     </div>
 
-    <div class="row">
+    <div class="nypl-row">
 <!-- form column -->
-      <div class="filter-search-form quarter">
+      <div class="nypl-column-one-quarter">
         <p>Refine your search</p>
-        <form action="" class="" id="filter-search">
+        <form action="" class="nypl-search-form" id="filter-search">
 
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="materialType">Material Type</label>
   <select id="materialType" name="materialType">
 <option selected="" value="materialType_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$3.2.0">Any</option><option value="resourcetypes:txt" data-reactid=".2142tuw0m78.1.2.0.0.2:$3.2.1:$0">Text (125)</option>
   </select>
 </fieldset>
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="location">Location</label>
   <select id="location" name="location">
 <option selected="" value="location_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.0">Any</option><option value="loc:ma" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$0">Stephen A. Schwarzman Building (28)</option><option value="loc:rc" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$1">NYPL Research Libraries (15)</option><option value="loc:sc" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$2">Schomburg Center (6)</option><option value="loc:my" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$3">Performing Arts Library at Lincoln Center (3)</option>
   </select>
 </fieldset>
 
-<fieldset class="searchable-facet">
-  <div class="facet-search">
+<fieldset class="nypl-searchable-fieldset">
+  <div class="nypl-facet-search">
     <label for="subject-text">Subject</label>
     <input id="subject-text" type="text" placeholder="Enter keywords">
   </div>
-  <div class="facet-list">
+  <div class="nypl-facet-list">
     <label for="subject-poems">
-      <span class="facet-label">
+      <span>
         <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
         Poems
       </span>
-      <span class="facet-count">97</span>
+      <span class="nypl-facet-count">97</span>
     </label>
     <label for="subject-ejournals">
-      <span class="facet-label">
+      <span>
         <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
         Electronic journals
       </span>
-      <span class="facet-count">489</span>
+      <span class="nypl-facet-count">489</span>
     </label>
     <label for="subject-home">
-      <span class="facet-label">
+      <span>
         <input id="subject-home" type="checkbox" name="subject" value="home">
         Electronic books
       </span>
-      <span class="facet-count">236</span>
+      <span class="nypl-facet-count">236</span>
     </label>
     <label for="subject-piano">
-      <span class="facet-label">
+      <span>
         <input id="subject-piano" type="checkbox" name="subject" value="piano">
         Piano music
       </span>
-      <span class="facet-count">198</span>
+      <span class="nypl-facet-count">198</span>
     </label>
     <label for="subject-opera">
-      <span class="facet-label">
+      <span>
         <input id="subject-opera" type="checkbox" name="subject" value="opera">
         Operas
       </span>
-      <span class="facet-count">122</span>
+      <span class="nypl-facet-count">122</span>
     </label>
-    <a href="#more" class="more-facets">Show 10 more subjects</a>
+    <a href="#more" class="nypl-more-facets">Show 10 more subjects</a>
   </div>
 </fieldset>
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="date">Year</label>
   <select id="date" name="date">
     <option selected="" value="date_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.0">Any</option><option value="date_range" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.0">Year range</option><option value="0" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$0">0 (1)</option><option value="10" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$1">10 (1)</option><option value="1780" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$2">1780 (1)</option><option value="1790" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$3">1790 (5)</option><option value="1800" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$4">1800 (6)</option><option value="1810" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$5">1810 (2)</option><option value="1820" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$6">1820 (2)</option><option value="1830" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$7">1830 (9)</option><option value="1840" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$8">1840 (9)</option><option value="1850" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$9">1850 (4)</option><option value="1860" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$10">1860 (3)</option><option value="1870" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$11">1870 (3)</option><option value="1880" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$12">1880 (3)</option><option value="1890" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$13">1890 (2)</option><option value="1900" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$14">1900 (6)</option><option value="1910" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$15">1910 (6)</option><option value="1920" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$16">1920 (3)</option><option value="1930" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$17">1930 (2)</option><option value="1950" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$18">1950 (1)</option><option value="1960" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$19">1960 (3)</option><option value="1970" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$20">1970 (6)</option><option value="1980" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$21">1980 (36)</option><option value="1990" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$22">1990 (3)</option><option value="2000" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$23">2000 (7)</option><option value="2010" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$24">2010 (1)</option>
@@ -207,28 +209,28 @@
   <input id="date-before" type="text" placeholder="Enter a year">
 </fieldset>
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="owner">Owner</label>
   <select id="owner" name="owner">
 <option value="owner_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.0">Any</option><option value="orgs:1000" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$0" selected="true">Stephen A. Schwarzman Building (30)</option><option value="orgs:1105" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$1">Irma and Paul Milstein Division of United States History, Local History and Genealogy (15)</option><option value="orgs:0003" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$2">Princeton University Library (10)</option><option value="orgs:1101" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$3">General Research Division (10)</option><option value="orgs:1114" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$4">Schomburg Center for Research in Black Culture, Jean Blackwell Hutson Research and Reference Division (6)</option><option value="orgs:1108" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$5">Rare Book Division (2)</option><option value="orgs:1123" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$6">Music Division (2)</option><option value="orgs:1104" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$7">Henry W. and Albert A. Berg Collection of English and American Literature (1)</option><option value="orgs:1106" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$8">Lionel Pincus and Princess Firyal Map Division (1)</option><option value="orgs:1107" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$9">Manuscripts and Archives Division (1)</option>
   </select>
 </fieldset>
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="issuance">Issuance</label>
   <select id="issuance" name="issuance">
 <option selected="" value="issuance_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$4.2.0">Any</option><option value="urn:biblevel:m" data-reactid=".2142tuw0m78.1.2.0.0.2:$4.2.1:$0">monograph/item (122)</option><option value="urn:biblevel:s" data-reactid=".2142tuw0m78.1.2.0.0.2:$4.2.1:$1">serial (2)</option><option value="urn:biblevel:c" data-reactid=".2142tuw0m78.1.2.0.0.2:$4.2.1:$2">collection (1)</option>
   </select>
 </fieldset>
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="publisher">Publisher</label>
   <select id="publisher" name="publisher">
 <option selected="" value="publisher_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.0">Any</option><option value="London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$0">London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793. (2)</option><option value="[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$1">[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000. (2)</option><option value="1979." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$2">1979. (1)</option><option value="Albany : Printed by Charles R. and George Webster, 1804." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$3">Albany : Printed by Charles R. and George Webster, 1804. (1)</option><option value="Albany [N.Y.] : Printed by J. Barber, 1804." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$4">Albany [N.Y.] : Printed by J. Barber, 1804. (1)</option><option value="Albany [N.Y.] : S.W. Green, 1847." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$5">Albany [N.Y.] : S.W. Green, 1847. (1)</option><option value="Ames : Iowa State University Press, 1982." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$6">Ames : Iowa State University Press, 1982. (1)</option><option value="Austin : University of Texas Press, 2009." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$7">Austin : University of Texas Press, 2009. (1)</option><option value="Bath : Printed by R. Cruttwell for G.G. and J. Robinson, 1800." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$8">Bath : Printed by R. Cruttwell for G.G. and J. Robinson, 1800. (1)</option><option value="Bath : printed by R. Cruttwell; for G. G. and J. Robinson, London, 1800." data-reactid=".2142tuw0m78.1.2.0.0.2:$5.2.1:$9">Bath : printed by R. Cruttwell; for G. G. and J. Robinson, London, 1800. (1)</option>
   </select>
 </fieldset>
 
-<fieldset class="select-box">
+<fieldset class="nypl-select-fieldset">
   <label for="language">Language</label>
   <select id="language" name="language">
 <option selected="" value="language_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$7.2.0">Any</option><option value="lang:eng" data-reactid=".2142tuw0m78.1.2.0.0.2:$7.2.1:$0">English (112)</option><option value="lang:fre" data-reactid=".2142tuw0m78.1.2.0.0.2:$7.2.1:$1">French (1)</option><option value="lang:ger" data-reactid=".2142tuw0m78.1.2.0.0.2:$7.2.1:$2">German (1)</option><option value="lang:por" data-reactid=".2142tuw0m78.1.2.0.0.2:$7.2.1:$3">Portuguese (1)</option>
@@ -236,24 +238,24 @@
 </fieldset>
 
 
-          <input type="submit" class="submit-form-button" name="Apply" value="Apply filters">
+          <input type="submit" class="nypl-basic-button" name="Apply" value="Apply filters">
         </form>
 
       </div>
 <!-- end form column -->
 
 <!-- results column -->
-<div class="main-content three-quarter" id="mainContent">
-      <div class="results-summary">
-        <span class="results-count">125</span> results found 
-        <span class="facet">for keywords <strong>hamilton</strong><button title="Remove hamilton keyword filter">×</button></span>,
-        <span class="facet">with subject <strong>Poems</strong><button title="Remove Poems subject filter">×</button></span>,
-        <span class="facet">with owner <strong>Stephen A. Schwarzman Building</strong><button title="Remove Stephen A. Schwarzman Building owner filter">×</button></span>.
+<div class="nypl-column-three-quarters" id="mainContent">
+      <div class="nypl-results-summary">
+        <span class="nypl-results-count">125</span> results found 
+        <span class="nypl-facet">for keywords <strong>hamilton</strong><button title="Remove hamilton keyword filter">×</button></span>,
+        <span class="nypl-facet">with subject <strong>Poems</strong><button title="Remove Poems subject filter">×</button></span>,
+        <span class="nypl-facet">with owner <strong>Stephen A. Schwarzman Building</strong><button title="Remove Stephen A. Schwarzman Building owner filter">×</button></span>.
         <button>Start over</button>
       </div>
 
-<div class="sorting-controls">
-  <div class="sorter">
+<div class="nypl-results-sorting-controls">
+  <div class="nypl-results-sorter">
     <button>
     Sort by <strong>relevance</strong>
     <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
@@ -273,18 +275,18 @@
 
 <!-- results list -->
 
-<ul class="results-list">
+<ul class="nypl-results-list">
 
   <!-- one result -->
-  <li class="result-item">
+  <li class="nypl-results-item">
     <h4><a href="http://dev-discovery.nypl.org/item/b11237350">The reign of Henry the Fifth by James Hamilton Wylie.</a></h4>
     <p><strong>By:</strong> Wylie, James Hamilton, 1844-1914.; Waugh, W. T. (William Templeton), 1884-1932.<br />
     <strong>Publisher:</strong> Cambridge [Eng.] University Press, 1914-1929.<br />
     <strong>Year published:</strong> 1914</p>
-    <div class="result-item-formats">
+    <div class="nypl-results-item-formats">
       <p><strong>Items available:</strong></p>
-      <table class="result-item-formats-table">
-        <thead class="sr-only">
+      <table class="nypl-basic-table">
+        <thead class="nypl-screenreader-only">
           <tr>
             <th>Item</th>
             <th>Action</th>
@@ -317,15 +319,15 @@
   <!-- end one result -->
 
   <!-- one result -->
-  <li class="result-item">
+  <li class="nypl-results-item">
     <h4><a href="http://dev-discovery.nypl.org/item/b19672006">By-laws, list of officers and members / the Hamilton Club.</a></h4>
     <p><strong>By:</strong> Hamilton Club (Brooklyn, New York, N.Y.)<br />
     <strong>Publisher:</strong> Brooklyn : The Club.<br />
     <strong>Year published:</strong> 1</p>
-    <div class="result-item-formats">
+    <div class="nypl-results-item-formats">
       <p><strong>Items available:</strong></p>
-      <table class="result-item-formats-table">
-        <thead class="sr-only">
+      <table class="nypl-basic-table">
+        <thead class="nypl-screenreader-only">
           <tr>
             <th>Item</th>
             <th>Action</th>
@@ -360,15 +362,15 @@
 
 
   <!-- one result -->
-  <li class="result-item">
+  <li class="nypl-results-item">
     <h4><a href="http://dev-discovery.nypl.org/item/b19672006">By-laws, list of officers and members / the Hamilton Club.</a></h4>
     <p><strong>By:</strong> Hamilton Club (Brooklyn, New York, N.Y.)<br />
     <strong>Publisher:</strong> Brooklyn : The Club.<br />
     <strong>Year published:</strong> 1</p>
-    <div class="result-item-formats">
+    <div class="nypl-results-item-formats">
       <p><strong>Items available:</strong></p>
-      <table class="result-item-formats-table">
-        <thead class="sr-only">
+      <table class="nypl-basic-table">
+        <thead class="nypl-screenreader-only">
           <tr>
             <th>Item</th>
             <th>Action</th>
@@ -402,15 +404,15 @@
 
 
   <!-- one result -->
-  <li class="result-item">
+  <li class="nypl-results-item">
     <h4><a href="http://dev-discovery.nypl.org/item/b19672006">By-laws, list of officers and members / the Hamilton Club.</a></h4>
     <p><strong>By:</strong> Hamilton Club (Brooklyn, New York, N.Y.)<br />
     <strong>Publisher:</strong> Brooklyn : The Club.<br />
     <strong>Year published:</strong> 1</p>
-    <div class="result-item-formats">
+    <div class="nypl-results-item-formats">
       <p><strong>Items available:</strong></p>
-      <table class="result-item-formats-table">
-        <thead class="sr-only">
+      <table class="nypl-basic-table">
+        <thead class="nypl-screenreader-only">
           <tr>
             <th>Item</th>
             <th>Action</th>
@@ -448,7 +450,7 @@
 
 <!-- pagination -->
 
-<div class="results-pagination">
+<div class="nypl-results-pagination">
   <a href="/page/1" rel="prev">
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
 <title>Left arrow</title>
@@ -479,7 +481,7 @@
 </main>
 
 <footer role="contentinfo">
-  <div class="content-wrapper footer-content">
+  <div class="nypl-full-width-wrapper footer-content">
     <ul class="footerLinks">
       <li>
         <ul class="linkItemList">

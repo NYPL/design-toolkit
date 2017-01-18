@@ -12,93 +12,92 @@
 
 <body>
   <div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
-  <div class="alert">
-    <div class="content-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div>
+  <div class="nypl-banner-alert">
+    <div class="nypl-full-width-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div>
   </div>
-  <header>
-    <div class="service">
-      <div class="content-wrapper">
-        <ul class="service-buttons horizontal">
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Get a library card</a></li>
-          <li class="email-toggle">
-            <button class="collapsible">Get email updates
-              <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-                <title>down.wedge.sm</title>
-                <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-              </svg>
-            </button>
-            <form action="" id="email-updates" class="hidden">
-              <p class="email-toggle-title">Get the best of
-                <br>NYPL in your inbox</p>
-              <fieldset>
-                <label for="email-text">Email address</label>
-                <input type="text" id="email-text" class="form-text" value="">
-              </fieldset>
-              <input type="button" class="subscribe-button" name="Sign up" value="Sign up">
-              <div class="links">
-                <a class="inverted" href="#">Subscription center</a>
-                <br>
-                <a class="inverted" href="#">Privacy policy</a>
-              </div>
-            </form>
-          </li>
-          <li><a href="#" class="donate">Donate</a></li>
-          <li><a href="#">Shop</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="content-wrapper">
-      <div class="logo"><a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a></div>
-      <div class="content">
-        <div class="login-toggle">
-          <button class="collapsible">Log in
+  <header class="nypl-header">
+  <div class="service">
+    <div class="nypl-full-width-wrapper">
+      <ul class="service-buttons horizontal">
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Get a library card</a></li>
+        <li class="email-toggle">
+          <button class="collapsible">Get email updates
             <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
               <title>down.wedge.sm</title>
               <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
             </svg>
           </button>
-          <div id="login-links" class="hidden">
-            <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Catalog</strong></a>
-            <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Research catalog</strong></a>
-          </div>
+          <form action="" id="email-updates" class="hidden">
+            <p class="email-toggle-title">Get the best of
+              <br>NYPL in your inbox</p>
+            <fieldset>
+              <label for="email-text">Email address</label>
+              <input type="text" id="email-text" class="form-text" value="">
+            </fieldset>
+            <input type="button" class="subscribe-button" name="Sign up" value="Sign up">
+            <div class="links">
+              <a class="inverted" href="#">Subscription center</a>
+              <br>
+              <a class="inverted" href="#">Privacy policy</a>
+            </div>
+          </form>
+        </li>
+        <li><a href="#" class="donate">Donate</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="nypl-full-width-wrapper">
+    <div class="logo"><a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a></div>
+    <div class="content">
+      <div class="login-toggle">
+        <button class="collapsible">Log in
+          <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+            <title>down.wedge.sm</title>
+            <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+          </svg>
+        </button>
+        <div id="login-links" class="hidden">
+          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Catalog</strong></a>
+          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Research catalog</strong></a>
         </div>
-        <ul class="nav-buttons horizontal">
-          <li><a href="#">Books/Music/DVDs</a></li>
-          <li class="active"><a href="#">Research</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Connect</a></li>
-          <li><a href="#">Give</a></li>
-          <li><a href="#">Get help</a></li>
-          <li class="search">
-            <form action="" id="main-search" class="">
-              <div class="search-query-content">
-                <input type="submit" class="search-button" name="Search" value="Search"><input type="text" class="form-text" id="search-query-text" name="search-query-text" aria-labelledby="search-query-text" value="">
-                <div class="search-select hidden">
-                  <label class="search-radio-label selected" for="books-type">
-                    <input type="radio" id="books-type" name="search-type" class="search-type" value="books-type" checked="checked">Books/Music/DVDs</label>
-                  <label class="search-radio-label" for="nypl-type">
-                    <input type="radio" id="nypl-type" name="search-type" class="search-type" value="nypl-type">NYPL.org</label>
-                </div>
-              </div>
-            </form>
-          </li>
-        </ul>
       </div>
-      <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+      <ul class="nav-buttons horizontal">
+        <li><a href="#">Books/Music/DVDs</a></li>
+        <li class="active"><a href="#">Research</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Give</a></li>
+        <li><a href="#">Get help</a></li>
+        <li class="search">
+          <form action="" id="main-search" class="">
+            <div class="search-query-content">
+              <input type="submit" class="search-button" name="Search" value="Search"><input type="text" class="form-text" id="search-query-text" name="search-query-text" aria-labelledby="search-query-text" value="">
+              <div class="search-select hidden">
+                <label class="search-radio-label selected" for="books-type">
+                  <input type="radio" id="books-type" name="search-type" class="search-type" value="books-type" checked="checked">Books/Music/DVDs</label>
+                <label class="search-radio-label" for="nypl-type">
+                  <input type="radio" id="nypl-type" name="search-type" class="search-type" value="nypl-type">NYPL.org</label>
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
         <title>menu.icon.svg</title>
         <path d="M26.22029,10.40244H5.77971a1.09221,1.09221,0,1,1,0-2.18441H26.22029A1.09221,1.09221,0,1,1,26.22029,10.40244Z"/>
         <path d="M26.22029,16.95568H5.77971a1.09221,1.09221,0,0,1,0-2.18441H26.22029A1.09221,1.09221,0,0,1,26.22029,16.95568Z"/>
         <path d="M26.22029,23.782H5.77971a1.09221,1.09221,0,1,1,0-2.18441H26.22029A1.09221,1.09221,0,1,1,26.22029,23.782Z"/>
-      </svg>
-</a>
-    </div>
-  </header>
+      </svg></a>
+  </div>
+</header>
   <main class="main-page">
-    <div class="page-header">
-      <div class="content-wrapper">
-        <ol class="my-breadcrumb">
+    <div class="nypl-page-header">
+      <div class="nypl-full-width-wrapper">
+        <ol class="nypl-breadcrumbs">
           <li><a href="/">Home</a></li>
           <li><a href="#">Research</a></li>
           <li>Articles &amp; databases</li>
@@ -106,17 +105,17 @@
         <h1>Articles &amp; databases</h1>
       </div>
     </div>
-    <div class="content-wrapper">
+    <div class="nypl-full-width-wrapper">
       <!-- 1 (form) + 3 (results) example -->
-      <div class="row">
-        <div class="quarter">
+      <div class="nypl-row">
+        <div class="nypl-column-one-quarter">
           <div>Use the filters to show only databases that match your interests:</div>
-          <form action="" id="filter-search">
-            <fieldset class="textfield">
+          <form action="" class="nypl-search-form" id="filter-search">
+            <fieldset class="nypl-text-fieldset">
               <label for="keyword-text">Title or description</label>
-              <input id="keyword-text" type="text">
+              <input id="keyword-text" type="text" placeholder="Type keywords">
             </fieldset>
-            <fieldset class="radiogroup">
+            <fieldset class="nypl-radiobutton-fieldset">
               <span><strong>Accessible from</strong></span>
               <label for="available-every">
                 <input id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere</label>
@@ -126,7 +125,7 @@
                 <input id="available-library" type="radio" name="available" value="library">A library branch</label>
             </fieldset>
             <div class="location hidden">
-              <fieldset>
+              <fieldset class="nypl-select-fieldset">
                 <label for="location">Library branch</label>
                 <select id="location" class="form-select" name="location">
                   <option value="0">All</option>
@@ -146,7 +145,7 @@
                 </select>
               </fieldset>
             </div>
-            <fieldset class="select">
+            <fieldset class="nypl-select-fieldset">
               <label for="subjects">Subjects</label>
               <select id="subjects" class="form-select" name="subjects">
                 <option value="0" selected="selected">All</option>
@@ -265,7 +264,7 @@
                 <option value="802">- Automobile Maintenance and Repair</option>
               </select>
             </fieldset>
-            <fieldset class="select">
+            <fieldset class="nypl-select-fieldset">
               <label for="audience">Audience</label>
               <select id="audience" name="audience">
                 <option value="0">All</option>
@@ -278,7 +277,7 @@
                 <option value="914" selected="selected">Teens/Young Adults (13-18 years)</option>
               </select>
             </fieldset>
-            <fieldset class="select">
+            <fieldset class="nypl-select-fieldset">
               <label for="language">Language</label>
               <select id="language" class="form-select" name="language">
                 <option value="0" selected="selected">All</option>
@@ -287,9 +286,9 @@
                 <option value="Spanish">Spanish</option>
               </select>
             </fieldset>
-            <fieldset class="alphabetical">
+            <fieldset class="nypl-alphabetical-filter">
               <label>Name starts with</label>
-              <button name="az-filter" disabled="true" class="long">Any</button>
+              <button name="az-filter" disabled="true" class="nypl-long">Any</button>
               <button name="az-filter" title="Show only resources with name starting with a number">#</button>
               <button name="az-filter" title="Show only resources with name starting with A">A</button>
               <button name="az-filter" title="Show only resources with name starting with B">B</button>
@@ -318,19 +317,19 @@
               <button name="az-filter" title="Show only resources with name starting with Y">Y</button>
               <button name="az-filter" title="Show only resources with name starting with Z">Z</button>
             </fieldset>
-            <input type="submit" class="search-button" name="Apply" value="Apply filters">
+            <input type="submit" class="nypl-basic-button" name="Apply" value="Apply filters">
           </form>
         </div>
-        <div class="main-content three-quarter">
-          <a name="mainContent"></a>
-<div class="results-summary">
-  <span class="results-count">1,807</span> resources found for
-  <span class="facet">
+        <div id="mainContent" class="nypl-column-three-quarters">
+<div class="nypl-results-summary">
+  <span class="nypl-results-count">1,807</span> resources found for
+  <span class="nypl-facet">
     <strong>Young Adult<button title="Remove Young Adult filter">×</button></strong>
   </span>,
-  <span class="facet">
+  <span class="nypl-facet">
     <strong>Fiction<button title="Remove Fiction filter">×</button></strong>
   </span>.
+  <button>Start over</button>
 </div>
           <!-- sample results -->
           <div class="views-table">
@@ -362,43 +361,44 @@
           </div>
           <!-- end sample results -->
           <!-- sample results pagination (note it is outside results div) -->
-          <div class="results-pagination">
-            <a href="#prev">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-                <title>Left arrow</title>
-                <polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
-              </svg>
-              Previous page
-            </a>
-            <span class="page-count">Page 2 of 4</span>
-            <a href="#next">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-                <title>Right arrow</title>
-                <polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
-              </svg>
-              Next page
-            </a>
-          </div>
+<div class="nypl-results-pagination">
+  <a href="/page/1" rel="prev">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
+<title>Left arrow</title>
+<polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
+    </svg>
+    Previous page
+  </a>
+  <span class="page-count">Page 2 of 4</span>
+  <a href="/page/3" rel="next">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
+<title>Right arrow</title>
+<polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
+    </svg>
+    Next page
+  </a>
+</div>
           <!-- end sample results pagination -->
         </div>
       </div>
       <!-- end 1 (form) + 3 (results) example -->
-      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <div class="nypl-row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
       <!-- 1 (empty) + 3 (basic content) example -->
-      <div class="row">
-        <div class="three-quarter-offset">
+      <div class="nypl-row">
+        <div class="nypl-column-three-quarters nypl-column-offset-one">
           <!-- sample full location info -->
           <h2>Microforms Reading Room</h2>
-          <div id="location-info">
-            <p class="room">First Floor, Room 100</p>
-            <p class="contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
-            <p class="access">Fully accessible to wheelchairs</p>
-          </div>
-<table class="location-hours">
+<div class="nypl-location-info">
+  <p class="nypl-room">First Floor, Room 100</p>
+  <p class="nypl-contact">Phone: (212) 642-0139 | Fax: (212) 930-0838</p>
+  <p class="nypl-access">Fully accessible to wheelchairs</p>
+</div>
+
+<table class="nypl-location-hours">
   <thead>
     <tr>
       <th>Monday</th>
-      <th class="current">Tuesday</th>
+      <th class="nypl-current">Tuesday</th>
       <th>Wednesday</th>
       <th>Thursday</th>
       <th>Friday</th>
@@ -409,7 +409,7 @@
   <tbody>
     <tr>
       <td>10:00 AM - <br>5:45 PM</td>
-      <td class="current">10:00 AM - <br>7:45 PM</td>
+      <td class="nypl-current">10:00 AM - <br>7:45 PM</td>
       <td>10:00 AM - <br>7:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
       <td>10:00 AM - <br>5:45 PM</td>
@@ -425,14 +425,13 @@
         </div>
       </div>
       <!-- end 1 (empty) + 3 (basic content) example -->
-      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <div class="nypl-row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
       <!-- 1 (empty) + 1 + 1 + 1 example -->
-      <div class="row">
-        <div class="quarter"></div>
-        <div class="quarter">
+      <div class="nypl-row">
+        <div class="nypl-column-one-quarter nypl-column-offset-one">
           <h2>Programs and services for community members with disabilities</h2>
         </div>
-        <div class="quarter">
+        <div class="nypl-column-one-quarter">
           <h3 class="li1"><a href="http://www.nypl.org/node/345315">Print Disabilities or Visual Impairment</a></h3>
           <ul>
             <li>Talking Books, Bookshare&nbsp;</li>
@@ -441,7 +440,7 @@
             <li>Technology workshops, braille study groups, and&nbsp;more</li>
           </ul>
         </div>
-        <div class="quarter">
+        <div class="nypl-column-one-quarter">
           <h3><span class="s2"><a class="title" href="http://www.nypl.org/node/345336">Deaf or Hard of Hearing</a></span></h3>
           <ul>
             <li><span class="s2">ASL interpretation and CART real-time captioning</span></li>
@@ -451,10 +450,10 @@
         </div>
       </div>
       <!-- end 1 (empty) + 1 + 1 + 1 example -->
-      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <div class="nypl-row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
       <!-- set of 2 (empty) + 1 + 1 columns -->
-      <div class="row">
-        <div class="quarter-offset">
+      <div class="nypl-row">
+        <div class="nypl-column-one-quarter nypl-column-offset-two">
           <h3 class="li1"><a href="http://www.nypl.org/node/345324">Learning, Cognitive or Developmental Disabilities</a></h3>
           <ul>
             <li>Movie screenings, art workshops,&nbsp;computer classes&nbsp;</li>
@@ -462,7 +461,7 @@
             <li>Online resources for video storybooks and animated picture books</li>
           </ul>
         </div>
-        <div class="quarter">
+        <div class="nypl-column-one-quarter">
           <h3 class="li1"><a href="http://www.nypl.org/node/345338">Physical Disabilities</a></h3>
           <ul>
             <li>Books by Mail</li>
@@ -471,22 +470,22 @@
         </div>
       </div>
       <!-- end set of 2 (empty) + 1 + 1 columns -->
-      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <div class="nypl-row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
       <!-- set of 2 (empty) + 2 columns -->
-      <div class="row">
-        <div class="half-offset">
+      <div class="nypl-row">
+        <div class="nypl-column-two-quarters nypl-column-offset-two">
           <h3 class="li1"><a href="https://www.nypl.org/about/locations/heiskell">Featured Location: Andrew Heiskell Library</a></h3> All residents of New York City who are blind, visually impaired, physically disabled, or who have a reading disability are eligible to enroll in&nbsp;Andrew Heiskell Library's free services.
         </div>
       </div>
       <!-- set of 2 (empty) + 2 columns -->
-      <div class="row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
+      <div class="nypl-row centered">&lt;!-- &nbsp;&nbsp;&nbsp; below is another row &nbsp;&nbsp;&nbsp; --&gt;</div>
       <!-- related links example (1+3 column with custom border/padding) -->
-      <div class="row">
-        <div class="three-quarter-offset related-links">
+      <div class="nypl-row">
+        <div class="nypl-column-three-quarters nypl-column-offset-one nypl-related-links">
           <h2>Related links</h2>
         </div>
-        <div class="quarter"></div>
-        <div class="quarter">
+        <div class="nypl-column-one-quarter"></div>
+        <div class="nypl-column-one-quarter">
           <h4>New resources</h4>
           <ul class="secondary-navigation">
             <li><a href="https://www.nypl.org/node/359078" target="_blank">American Founding Era Papers</a></li>
@@ -495,7 +494,7 @@
             <li><a href="http://www.nypl.org/node/356759" target="_blank">Explora Middle School</a></li>
           </ul>
         </div>
-        <div class="quarter">
+        <div class="nypl-column-one-quarter">
           <h4>Popular resources</h4>
           <ul class="secondary-navigation">
             <li><a href="/collections/articles-databases/tumblebooks" rel="nofollow">Tumblebooks</a></li>
@@ -504,7 +503,7 @@
             <li><a href="/node/262330" rel="nofollow">ScienceFlix</a></li>
           </ul>
         </div>
-        <div class="quarter">
+        <div class="nypl-column-one-quarter">
           <h4>Unable to connect to a database?</h4>
           <ul class="secondary-navigation">
             <li><a href="/collections/articles-databases/report-problem" rel="nofollow">Report a problem</a></li>
@@ -515,7 +514,7 @@
     </div>
   </main>
   <footer role="contentinfo">
-    <div class="content-wrapper footer-content">
+    <div class="nypl-full-width-wrapper footer-content">
       <ul class="footerLinks">
         <li>
           <ul class="linkItemList">

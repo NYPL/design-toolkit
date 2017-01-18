@@ -56,7 +56,7 @@
   }
 }
 
-@mixin grid-row {
+@mixin row {
   margin: 0 -0.5rem;
   min-height: 1rem;
   @include clearfix;

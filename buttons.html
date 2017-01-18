@@ -18,9 +18,9 @@
 <main class="main-page">
 
 
-  <div class="page-header">
-    <div class="content-wrapper">
-      <ol class="breadcrumb">
+  <div class="nypl-page-header">
+    <div class="nypl-full-width-wrapper">
+      <ol class="nypl-breadcrumbs">
         <li><a href="./">Toolkit home</a></li>
         <li>Buttons</li>
       </ol>
@@ -28,9 +28,9 @@
     </div>
   </div>
 
-  <div class="content-wrapper">
+  <div class="nypl-full-width-wrapper">
 
-    <div class="quarter">
+    <div class="nypl-column-one-quarter">
       <a name="mainContent"></a>
       <p class="secondary-title">NYPL Design Toolkit</p>
       <ul>
@@ -49,7 +49,7 @@
       </ul>
     </div>
 
-  <div id="toc" class="main-content three-quarter">
+  <div id="toc" class="nypl-column-three-quarters">
     <h2>Table of contents</h2>
 
     <ul>
@@ -63,26 +63,23 @@
     <h3 id="squareButton">Square Button</h3>
     <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
     </p>
-      <div class="toolkit-example">
-        <button class="my-button-class">Button</button>
-        <button class="request-button">Request a Button</button>
+      <div class="nypl-toolkit-example">
+        <button class="nypl-basic-button">Button</button>
+        <button class="nypl-request-button">Request a Button</button>
       </div>
       <pre><code class="scss">
-.my-button-class {
-  @include basic-button;
-}
-.request-button {
-  @include request-button;
-}
+.nypl-basic-button
+.nypl-request-button
       </code></pre>
       <pre><code class="html">
-&lt;button class=&quot;my-button-class&quot;&gt;Button&lt;/button&gt;
-&lt;button class=&quot;request-button&quot;&gt;Request a Button&lt;/button&gt;
+&lt;button class=&quot;nypl-basic-button&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;nypl-request-button&quot;&gt;Request a Button&lt;/button&gt;
     </code></pre>
 
+<!-- 
     <h3 id="roundedButton">Rounded Button</h3>
     <p>A very simple version of the existent rounded button style.</p>
-      <div class="toolkit-example">
+      <div class="nypl-toolkit-example">
         <button class="my-rounded-button">Button</button>
       </div>
       <pre><code class="scss">
@@ -93,7 +90,7 @@
       <pre><code class="html">
 &lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
     </code></pre>
-
+ -->
 
     </div>
 

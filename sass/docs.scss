@@ -9,6 +9,9 @@
 @import "tables-results";
 @import "footer";
 
+$blue: #00f;
+$gray: #ccc;
+
 code {
   padding: 0;
 }
@@ -18,40 +21,7 @@ pre {
 
 }
 
-.toolkit-example {
-  @include toolkit-example;
-}
-
-.my-text-field {
-  @include text-fieldset;
-}
-
-.my-select-box {
-  @include select-fieldset;
-}
-
-.toolkit-example-dark {
-  @include toolkit-example;
-  @include toolkit-example-dark;
-}
-
 .toolkit-svg-icon {
   border: 1px dotted $nypl-light-gray;
   margin-right: 1rem;
-}
-
-.nypl-icon {
-  @include nypl-icon($height: 10em, $width: 10em);
-}
-
-.my-table {
-  @include basic-table;
-}
-
-.breadcrumb {
-  @include breadcrumbs;
-}
-
-.my-searchable-facet {
-  @include searchable-fieldset;
 }
