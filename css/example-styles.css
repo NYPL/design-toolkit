@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2584,12 +2585,11 @@ footer {
   border: 0.0625rem solid #d7d4d0;
   padding: 3rem 1rem 0.5rem;
   position: relative; }
-  .nypl-toolkit-example::before {
+  .nypl-toolkit-example .nypl-example-text {
     border: 0.0625rem solid #d7d4d0;
     border-left: 0;
     border-top: 0;
     color: #776e64;
-    content: "EXAMPLE";
     display: inline-block;
     font-size: 1em;
     font-weight: normal;
@@ -2604,12 +2604,11 @@ footer {
   padding: 3rem 1rem 0.5rem;
   position: relative;
   background: #54514a; }
-  .nypl-toolkit-example-dark::before {
+  .nypl-toolkit-example-dark .nypl-example-text {
     border: 0.0625rem solid #d7d4d0;
     border-left: 0;
     border-top: 0;
     color: #776e64;
-    content: "EXAMPLE";
     display: inline-block;
     font-size: 1em;
     font-weight: normal;
@@ -2680,6 +2679,7 @@ footer {
     display: inline-block;
     margin: 0;
     padding: 0;
+    position: relative;
     vertical-align: super; }
     .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button.active {
       border-color: #1b7fa7;
@@ -2696,6 +2696,21 @@ footer {
       .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #776e64; }
+    .nypl-results-summary .nypl-facet button span {
+      position: absolute;
+      width: 0.1rem;
+      height: 0.1rem;
+      margin: -0.1rem;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; }
+    .nypl-results-summary .nypl-facet button::before {
+      content: "×";
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0; }
   .nypl-results-summary button {
     background-color: #776e64;
     border: 0.0625rem solid #776e64;

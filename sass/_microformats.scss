@@ -108,12 +108,11 @@
   padding: ($general-padding * 3) $general-padding ($general-padding * 0.5);
   position: relative;
 
-  &::before {
+  .nypl-example-text {
     border: $simple-border solid $nypl-light-gray;
     border-left: 0;
     border-top: 0;
     color: $nypl-gray;
-    content: "EXAMPLE";
     display: inline-block;
     font-size: 1em;
     font-weight: normal;

@@ -60,7 +60,20 @@
     display: inline-block;
     margin: 0;
     padding: 0;
+    position: relative;
     vertical-align: super;
+
+    span {
+      @include screenreader-only;
+    }
+
+    &::before {
+      content: "×";
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
   }
 
   button {
