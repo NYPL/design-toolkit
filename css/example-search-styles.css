@@ -2680,7 +2680,8 @@ footer {
     margin: 0;
     padding: 0;
     position: relative;
-    vertical-align: super; }
+    vertical-align: super;
+    width: 0.5em; }
     .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button.active {
       border-color: #1b7fa7;
       background-color: #fff;
