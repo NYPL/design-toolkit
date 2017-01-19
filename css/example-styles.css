@@ -975,30 +975,32 @@ button:focus {
         background-color: inherit;
         fill: #fff; } }
 .nypl-header .logo {
+  left: 6.4rem;
   position: absolute;
-  width: 5rem; }
+  width: 11rem; }
   @media (max-width: 965px) {
     .nypl-header .logo {
       float: none;
-      margin: 0.75rem 0.5rem 0.25rem 0;
+      margin: 1rem 0.5rem 0 0;
       position: relative; } }
 .nypl-header .nypl-logo {
-  background: url("../img/nypl.svg") no-repeat scroll 0 0/5rem auto #fff;
+  background: url("../img/nypl.svg") no-repeat scroll 0 0/11rem auto #fff;
   border: 0;
   display: block;
   font-size: 0;
-  height: 3rem;
+  height: 9rem;
   margin-top: 0.4rem;
   margin-bottom: 0.1rem;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   white-space: nowrap;
-  width: 5rem; }
+  width: 11rem; }
   @media (max-width: 965px) {
     .nypl-header .nypl-logo {
-      background: url("../img/lion.svg") no-repeat scroll 0 0/2.5rem auto #fff;
+      background: url("../img/lion.svg") no-repeat scroll 0 0/4rem auto #fff;
       margin-right: 0.5rem;
-      width: 3rem; } }
+      width: 9rem;
+      height: 5rem; } }
 .nypl-header .content {
   position: relative; }
   .nypl-header .content::before, .nypl-header .content::after {
@@ -1058,7 +1060,7 @@ button:focus {
     height: 30px;
     overflow: hidden; }
   .nypl-header.collapsed .nypl-logo {
-    background: url("../img/lion.svg") no-repeat scroll 0 0/3rem auto #fff;
+    background: url("../img/lion.svg") no-repeat scroll 0 0/9rem auto #fff;
     background-position-y: -4px;
     margin: 0; }
   .nypl-header.collapsed .service-buttons {
@@ -1447,7 +1449,7 @@ button:focus {
 .nypl-header .nav-buttons {
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-top: calc(3rem + 1rem); }
+  margin-top: calc(9rem + 1rem); }
   .nypl-header .nav-buttons::before, .nypl-header .nav-buttons::after {
     content: "";
     display: table; }
@@ -1628,15 +1630,15 @@ footer {
       clear: both; }
 
 .copyright {
-  background: url("../img/nypl-rev.svg") no-repeat scroll 0 0/5rem auto transparent;
+  background: url("../img/nypl-rev.svg") no-repeat scroll 0 0/11rem auto transparent;
   border: 0;
   display: block;
-  height: 3rem;
+  height: 9rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
   white-space: nowrap; }
   .copyright p {
-    padding-top: calc(3rem + 1em); }
+    padding-top: calc(9rem + 1em); }
 
 .footerLinks li {
   margin-left: 0; }
@@ -2338,8 +2340,8 @@ footer {
       content: ""; }
 
 .nypl-full-width-wrapper {
-  max-width: calc(81rem - (6rem));
-  padding: 1rem 1rem 1rem 6rem;
+  max-width: calc(81rem - (12rem));
+  padding: 1rem 1rem 1rem 12rem;
   position: relative;
   margin: 0 auto; }
   .nypl-full-width-wrapper::before, .nypl-full-width-wrapper::after {
