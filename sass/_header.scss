@@ -72,6 +72,7 @@ $collapsed-nav-height: 30px;
 
     @include media($mobile-breakpoint) {
       float: none;
+      left: 0;
       margin: 1rem 0.5rem 0 0;
       position: relative;
     }
