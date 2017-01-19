@@ -53,46 +53,40 @@
     <h2>Table of contents</h2>
 
     <ul>
-      <li><a href="#squareButton">Square Button</a></li>
-      <li><a href="#roundedButton">Rounded Button</a></li>
+      <li><a href="#squareButton">Basic Button</a></li>
+      <li><a href="#requestButton">Request Button</a></li>
     </ul>
 
     <h2 id="buttons">Buttons</h2>
     <a href="#toc">Go to top</a>
 
     <h3 id="squareButton">Square Button</h3>
-    <p>A very generic squarish button w/ very a very simple inverted hover state. Also a version that utilizes a blue button pattern.
-    </p>
+    <p>A generic button with an inverted hover state to be used for standard actions.</p>
       <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-        <button class="nypl-basic-button">Button</button>
-        <button class="nypl-request-button">Request a Button</button>
+<button class="nypl-basic-button">Log in</button>
       </div>
       <pre><code class="scss">
 .nypl-basic-button
+      </code></pre>
+      <pre><code class="html">
+&lt;button class=&quot;nypl-basic-button&quot;&gt;Log in&lt;/button&gt;
+    </code></pre>
+
+
+    <h3 id="requestButton">Rounded Button</h3>
+    <p>A blue-colored button used for request actions.</p>
+      <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<button class="nypl-request-button">Request a Button</button>
+      </div>
+      <pre><code class="scss">
 .nypl-request-button
       </code></pre>
       <pre><code class="html">
-&lt;button class=&quot;nypl-basic-button&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;nypl-request-button&quot;&gt;Request a Button&lt;/button&gt;
     </code></pre>
 
-<!-- 
-    <h3 id="roundedButton">Rounded Button</h3>
-    <p>A very simple version of the existent rounded button style.</p>
-      <div class="nypl-toolkit-example">
-      <span class="nypl-example-text">Example</span>
-        <button class="my-rounded-button">Button</button>
-      </div>
-      <pre><code class="scss">
-.my-rounded-button {
-  @include basic-button($border-radius: 1.3rem);
-}
-      </code></pre>
-      <pre><code class="html">
-&lt;button class=&quot;my-rounded-button&quot;&gt;Button&lt;/button&gt;
-    </code></pre>
- -->
 
     </div>
 
