@@ -5,8 +5,8 @@
 @import "grid";
 @import "buttons";
 
-$logo-width: 5rem;
-$logo-height: 3rem;
+$logo-width: 11rem;
+$logo-height: 9rem;
 $collapsed-service-height: 10px;
 $collapsed-nav-height: 30px;
 
@@ -66,12 +66,13 @@ $collapsed-nav-height: 30px;
   }
 
   .logo {
+    left: 6.4rem;
     position: absolute;
     width: $logo-width;
 
     @include media($mobile-breakpoint) {
       float: none;
-      margin: 0.75rem 0.5rem 0.25rem 0;
+      margin: 1rem 0.5rem 0 0;
       position: relative;
     }
   }
@@ -90,9 +91,10 @@ $collapsed-nav-height: 30px;
     width: $logo-width;
 
     @include media($mobile-breakpoint) {
-      background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height - 0.5} auto $nypl-white; // should be a smart hiding of the original svg
+      background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height - 5} auto $nypl-white; // should be a smart hiding of the original svg
       margin-right: 0.5rem;
       width: $logo-height;
+      height: #{$logo-height - 4};
     }
   }
 
