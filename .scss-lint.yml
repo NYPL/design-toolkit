@@ -34,10 +34,10 @@ linters:
     enabled: false
 
   PropertyUnits:
-    global: ['em', 'rem', '%'] # Allow relative units globally
+    global: ['rem', '%'] # Allow relative units globally
     properties:
       line-height: [] # No units allowed
-      margin: ['em', 'rem']
+      margin: ['rem']
 
   QualifyingElement:
     enabled: false
