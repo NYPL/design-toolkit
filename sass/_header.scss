@@ -5,8 +5,8 @@
 @import "grid";
 @import "buttons";
 
-$logo-width: 5rem;
-$logo-height: 3rem;
+$logo-width: 11rem;
+$logo-height: 9rem;
 $collapsed-service-height: 10px;
 $collapsed-nav-height: 30px;
 
@@ -53,7 +53,7 @@ $collapsed-nav-height: 30px;
       font-size: 1.1rem;
       height: 2rem;
       margin: 0 -1rem;
-      padding: 0rem 1rem 0.65rem 0;
+      padding: 0 1rem 0.65rem 0;
       text-align: right;
       text-decoration: none;
 
@@ -66,12 +66,14 @@ $collapsed-nav-height: 30px;
   }
 
   .logo {
+    left: 6.4rem;
     position: absolute;
     width: $logo-width;
 
     @include media($mobile-breakpoint) {
       float: none;
-      margin: 0.75rem 0.5rem 0.25rem 0;
+      left: 0;
+      margin: 1rem 0.5rem 0 0;
       position: relative;
     }
   }
@@ -81,7 +83,7 @@ $collapsed-nav-height: 30px;
     border: 0;
     display: block;
     font-size: 0;
-    height: $logo-height;
+    height: #{$logo-height - 1};
     margin-top: 0.4rem;
     margin-bottom: 0.1rem;
     overflow: hidden;
@@ -90,9 +92,10 @@ $collapsed-nav-height: 30px;
     width: $logo-width;
 
     @include media($mobile-breakpoint) {
-      background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height - 0.5} auto $nypl-white; // should be a smart hiding of the original svg
+      background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height - 5} auto $nypl-white; // should be a smart hiding of the original svg
       margin-right: 0.5rem;
       width: $logo-height;
+      height: #{$logo-height - 4};
     }
   }
 
@@ -348,7 +351,7 @@ $collapsed-nav-height: 30px;
   .nav-buttons {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin-top: calc(#{$logo-height} + 1rem);
+    margin-top: calc(#{$logo-height - 2.75} + 1rem);
     @include clearfix;
 
     @include media($intermediate-breakpoint) {
