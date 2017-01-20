@@ -86,29 +86,36 @@ button:focus {
         fill: #fff; } }
 .nypl-header .logo {
   position: absolute;
-  width: 5rem; }
+  z-index: 1; }
+  .nypl-header .logo::before, .nypl-header .logo::after {
+    content: "";
+    display: table; }
+  .nypl-header .logo::after {
+    clear: both; }
   @media (max-width: 965px) {
     .nypl-header .logo {
       float: none;
-      margin: 0.75rem 0.5rem 0.25rem 0;
-      position: relative; } }
+      margin: 1rem 0.5rem 1.5rem 0;
+      position: relative;
+      width: 2.81667rem; } }
 .nypl-header .nypl-logo {
-  background: url("../img/nypl.svg") no-repeat scroll 0 0/5rem auto #fff;
   border: 0;
   display: block;
   font-size: 0;
-  height: 3rem;
+  height: 2.81667rem;
   margin-top: 1rem;
   margin-bottom: 0.1rem;
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-  white-space: nowrap;
   width: 5rem; }
+  .nypl-header .nypl-logo svg {
+    height: 2.81667rem;
+    width: 5rem; }
   @media (max-width: 965px) {
     .nypl-header .nypl-logo {
-      background: url("../img/lion.svg") no-repeat scroll 0 0/2.5rem auto #fff;
+      margin: 0;
       margin-right: 0.5rem;
-      width: 3rem; } }
+      width: 2.81667rem; }
+      .nypl-header .nypl-logo .wordmark {
+        display: none; } }
 .nypl-header .content {
   position: relative; }
   .nypl-header .content::before, .nypl-header .content::after {
@@ -169,7 +176,7 @@ button:focus {
     height: 30px;
     overflow: hidden; }
   .nypl-header.collapsed .nypl-logo {
-    background: url("../img/lion.svg") no-repeat scroll 0 0/3rem auto #fff;
+    background: url("../img/lion.svg") no-repeat scroll 0 0/2.81667rem auto #fff;
     background-position-y: -4px;
     margin: 0; }
   .nypl-header.collapsed .service-buttons {
@@ -552,13 +559,13 @@ button:focus {
       text-decoration: none; }
   @media (max-width: 965px) {
     .nypl-header .login-toggle {
-      top: -2rem; }
+      top: -3.3rem; }
       .nypl-header .login-toggle .welcome-message {
         display: none; } }
 .nypl-header .nav-buttons {
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-top: calc(3rem + 2rem); }
+  margin-top: calc(2.81667rem + 2rem); }
   .nypl-header .nav-buttons::before, .nypl-header .nav-buttons::after {
     content: "";
     display: table; }
@@ -742,12 +749,12 @@ footer {
   background: url("../img/nypl-rev.svg") no-repeat scroll 0 0/5rem auto transparent;
   border: 0;
   display: block;
-  height: 3rem;
+  height: 2.81667rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
   white-space: nowrap; }
   .copyright p {
-    padding-top: calc(3rem + 1em); }
+    padding-top: calc(2.81667rem + 1em); }
 
 .footerLinks li {
   margin-left: 0; }

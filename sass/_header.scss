@@ -5,8 +5,11 @@
 @import "grid";
 @import "buttons";
 
-$logo-width: 5rem;
-$logo-height: 3rem;
+$logo-ratio: 169 / 300;
+$logo-width-raw: 5;
+$logo-width: $logo-width-raw * 1rem;
+$logo-height-raw: $logo-width-raw * $logo-ratio;
+$logo-height: $logo-height-raw * 1rem;
 $collapsed-service-height: 10px;
 $collapsed-nav-height: 30px;
 
@@ -67,32 +70,39 @@ $collapsed-nav-height: 30px;
 
   .logo {
     position: absolute;
-    width: $logo-width;
+    z-index: 1;
+    @include clearfix;
 
     @include media($mobile-breakpoint) {
       float: none;
-      margin: 0.75rem 0.5rem 0.25rem 0;
+      margin: 1rem 0.5rem 1.5rem 0;
       position: relative;
+      width: $logo-height;
     }
   }
 
   .nypl-logo {
-    background: url("../img/nypl.svg") no-repeat scroll 0 0/#{$logo-width} auto $nypl-white;
     border: 0;
     display: block;
     font-size: 0;
     height: $logo-height;
     margin-top: 1rem;
     margin-bottom: 0.1rem;
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
-    white-space: nowrap;
     width: $logo-width;
 
+    svg {
+      height: $logo-height;
+      width: $logo-width;
+    }
+
     @include media($mobile-breakpoint) {
-      background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height - 0.5} auto $nypl-white; // should be a smart hiding of the original svg
+      margin: 0;
       margin-right: 0.5rem;
       width: $logo-height;
+
+      .wordmark {
+        display: none;
+      }
     }
   }
 
@@ -336,7 +346,7 @@ $collapsed-nav-height: 30px;
     }
 
     @include media($mobile-breakpoint) {
-      top: -2rem;
+      top: -3.3rem;
 
       .welcome-message {
         display: none;
