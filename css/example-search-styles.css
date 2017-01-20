@@ -960,7 +960,7 @@ button:focus {
     font-size: 1.1rem;
     height: 2rem;
     margin: 0 -1rem;
-    padding: 0rem 1rem 0.65rem 0;
+    padding: 0 1rem 0.65rem 0;
     text-align: right;
     text-decoration: none; }
     .nypl-header .main-menu-toggle .nypl-icon {
@@ -989,7 +989,7 @@ button:focus {
   display: block;
   font-size: 0;
   height: 3rem;
-  margin-top: 0.4rem;
+  margin-top: 1rem;
   margin-bottom: 0.1rem;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -1011,7 +1011,8 @@ button:focus {
     .nypl-header .content {
       width: 100%; } }
 .nypl-header .service {
-  background-color: #d0343a; }
+  background-color: #d0343a;
+  margin-bottom: 1rem; }
   @media (max-width: 965px) {
     .nypl-header .service {
       display: table-footer-group; } }
@@ -1448,7 +1449,7 @@ button:focus {
 .nypl-header .nav-buttons {
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-top: calc(3rem + 1rem); }
+  margin-top: calc(3rem + 2rem); }
   .nypl-header .nav-buttons::before, .nypl-header .nav-buttons::after {
     content: "";
     display: table; }

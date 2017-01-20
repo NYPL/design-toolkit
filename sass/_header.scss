@@ -53,7 +53,7 @@ $collapsed-nav-height: 30px;
       font-size: 1.1rem;
       height: 2rem;
       margin: 0 -1rem;
-      padding: 0rem 1rem 0.65rem 0;
+      padding: 0 1rem 0.65rem 0;
       text-align: right;
       text-decoration: none;
 
@@ -82,7 +82,7 @@ $collapsed-nav-height: 30px;
     display: block;
     font-size: 0;
     height: $logo-height;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
     margin-bottom: 0.1rem;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
@@ -107,6 +107,7 @@ $collapsed-nav-height: 30px;
 
   .service {
     background-color: $nypl-red;
+    margin-bottom: 1rem;
 
     @include media($mobile-breakpoint) {
       display: table-footer-group;
@@ -123,14 +124,12 @@ $collapsed-nav-height: 30px;
   }
 
   &.collapsed {
-    // using absolute px because each site might use different font-size
-    border-bottom: 2px solid $nypl-light-gray;
+    border-bottom: 2px solid $nypl-light-gray; // absolute px because no control over page rem
     position: relative;
 
     &.collapsed .login-toggle {
-      // absolute px because no control over page rem
-      right: 110px;
-      top: 9px;
+      right: 110px; // absolute px because no control over page rem
+      top: 9px; // absolute px because no control over page rem
 
       @include media($mobile-breakpoint) {
         font-size: 12px;
@@ -150,7 +149,7 @@ $collapsed-nav-height: 30px;
       bottom: 0;
       color: $page-text-color;
       display: block;
-      font-size: 12px;
+      font-size: 12px; // absolute px because no control over page rem
       font-weight: bold;
       position: absolute;
       right: 1rem;
@@ -348,7 +347,7 @@ $collapsed-nav-height: 30px;
   .nav-buttons {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin-top: calc(#{$logo-height} + 1rem);
+    margin-top: calc(#{$logo-height} + 2rem);
     @include clearfix;
 
     @include media($intermediate-breakpoint) {
