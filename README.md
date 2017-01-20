@@ -52,5 +52,8 @@ Design toolkit (SASS) for the NYPL Digital team
 
 ## CHANGE LOG
 
+### v0.1.1
+> Using namespace-based classes.
+
 ### v0.1.0
 > Published on NPM.
