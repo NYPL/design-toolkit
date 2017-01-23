@@ -1477,6 +1477,8 @@ button:focus {
         line-height: 2;
         margin: 0 0 0.33rem;
         width: 50%; }
+        .nypl-header .nav-buttons li a {
+          line-height: inherit; }
       .nypl-header .nav-buttons li.nypl-search {
         border: 0;
         font-size: 1rem;
@@ -1488,6 +1490,7 @@ button:focus {
     border: 0;
     color: #080807;
     display: block;
+    line-height: 2.5;
     overflow: hidden;
     padding: 0.2rem 0.4rem;
     text-decoration: none;
