@@ -26,6 +26,10 @@ linters:
     enabled: true
     max_depth: 5 #because collapsible header (refactor that)
 
+  SelectorDepth:
+    enabled: true
+    max_depth: 4 #because collapsible header (refactor that)
+
   PrivateNamingConvention:
     enabled: true
     prefix: _

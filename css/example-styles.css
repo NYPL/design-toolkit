@@ -945,7 +945,7 @@ button:focus {
   .nypl-header .horizontal li {
     display: inline-block;
     margin-left: 0;
-    margin-right: 0.35em;
+    margin-right: 0.35rem;
     vertical-align: bottom; }
     .nypl-header .horizontal li:last-child {
       margin-right: 0; }
@@ -1083,8 +1083,8 @@ button:focus {
     .nypl-header.collapsed .nav-buttons li {
       box-shadow: none; }
     .nypl-header.collapsed .nav-buttons a {
-      padding: 0.1em 0.4em; }
-    .nypl-header.collapsed .nav-buttons .search {
+      padding: 0.1rem 0.4rem; }
+    .nypl-header.collapsed .nav-buttons .nypl-search {
       display: none; }
 .nypl-header .service-buttons {
   font-size: 0.8rem;
@@ -1093,13 +1093,13 @@ button:focus {
   @media (max-width: 965px) {
     .nypl-header .service-buttons {
       display: none;
-      padding-top: 5px;
+      padding-top: 0.33rem;
       width: 100%; }
       .nypl-header .service-buttons li {
         border-bottom: 1px solid #fff;
         float: left;
         line-height: 2;
-        margin: 0 0 5px;
+        margin: 0 0 0.33rem;
         width: 50%; } }
   .nypl-header .service-buttons li > a {
     background-color: #d0343a;
@@ -1303,13 +1303,13 @@ button:focus {
   .nypl-header .email-toggle fieldset {
     border: 0;
     color: #080807;
-    margin: 1em 0 0.5em;
+    margin: 1rem 0 0.5em;
     padding: 0;
     position: relative; }
   .nypl-header .email-toggle label {
     display: block;
     font-weight: bold;
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
     position: absolute; }
   .nypl-header .email-toggle input[type=text] {
     background-color: #efedeb;
@@ -1334,7 +1334,7 @@ button:focus {
       color: #080807;
       outline: none; }
   .nypl-header .email-toggle .links {
-    margin: 1em 0 0; }
+    margin: 1rem 0 0; }
 .nypl-header .login-toggle {
   font-size: 0.8rem;
   position: absolute;
@@ -1354,11 +1354,11 @@ button:focus {
     z-index: 1; }
   .nypl-header .login-toggle a.inverted {
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     white-space: nowrap; }
   .nypl-header .login-toggle .welcome-message {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 1rem;
     text-transform: none; }
   .nypl-header .login-toggle > a,
   .nypl-header .login-toggle button.collapsible {
@@ -1475,9 +1475,9 @@ button:focus {
         float: left;
         height: auto;
         line-height: 2;
-        margin: 0 0 5px;
+        margin: 0 0 0.33rem;
         width: 50%; }
-      .nypl-header .nav-buttons li.search {
+      .nypl-header .nav-buttons li.nypl-search {
         border: 0;
         font-size: 1rem;
         position: relative;
@@ -1489,7 +1489,7 @@ button:focus {
     color: #080807;
     display: block;
     overflow: hidden;
-    padding: 0.2em 0.4em;
+    padding: 0.2rem 0.4rem;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all 0.1s;
@@ -1502,12 +1502,16 @@ button:focus {
   .nypl-header .nav-buttons li:hover,
   .nypl-header .nav-buttons li.active {
     box-shadow: inset 0 -4px 0 #d0343a; }
-.nypl-header li.search #main-search {
-  background-color: #776e64;
+.nypl-header li.nypl-search .nypl-main-search {
+  background-color: #d7d4d0;
   margin: 0;
-  position: relative; }
-  .nypl-header li.search #main-search .search-button {
-    background-color: #776e64;
+  position: relative;
+  -webkit-transition: all 0.1s ease-out 0s;
+  -moz-transition: all 0.1s ease-out 0s;
+  -o-transition: all 0.1s ease-out 0s;
+  transition: all 0.1s ease-out 0s; }
+  .nypl-header li.nypl-search .nypl-main-search .nypl-search-button {
+    background-color: #1b7fa7;
     border: 0 solid #776e64;
     border-radius: 0;
     color: #fff;
@@ -1521,99 +1525,106 @@ button:focus {
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s; }
-    .nypl-header li.search #main-search .search-button:hover, .nypl-header li.search #main-search .search-button.active {
+    transition: all 0.1s ease-in 0s;
+    margin-right: 0.5em; }
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.active {
       border-color: #776e64;
       background-color: #efedeb;
       color: #776e64; }
-    .nypl-header li.search #main-search .search-button:focus {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-header li.search #main-search .search-button.disabled, .nypl-header li.search #main-search .search-button[disabled="disabled"], .nypl-header li.search #main-search .search-button[disabled], .nypl-header li.search #main-search .search-button[disabled=true] {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.disabled, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled="disabled"], .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled], .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      .nypl-header li.search #main-search .search-button.disabled:hover, .nypl-header li.search #main-search .search-button[disabled="disabled"]:hover, .nypl-header li.search #main-search .search-button[disabled]:hover, .nypl-header li.search #main-search .search-button[disabled=true]:hover {
+      .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.disabled:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled="disabled"]:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled]:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #fff; }
-  .nypl-header li.search #main-search.display {
+  .nypl-header li.nypl-search .nypl-main-search.display {
     display: block; }
-  .nypl-header li.search #main-search .search-query-content {
+  .nypl-header li.nypl-search .nypl-main-search.active {
+    background-color: #776e64; }
+  .nypl-header li.nypl-search .nypl-main-search .nypl-search-query-content {
+    padding: 0.5em;
     position: relative; }
-  .nypl-header li.search #main-search .search-select {
+  .nypl-header li.nypl-search .nypl-main-search .nypl-search-select {
     background-color: #776e64;
     font-size: 0.9rem;
     right: 0;
-    padding: 1px 3px 3px;
+    padding: 0 0.5em 0.5em;
     position: absolute;
-    top: 2rem;
+    top: 3.15rem;
     white-space: nowrap;
     z-index: 1; }
-  .nypl-header li.search #main-search .search-radio-label {
+  .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label {
     color: #efedeb;
     display: inline-block;
     height: 2rem;
     line-height: 2;
-    padding: 0 0.75rem 0 0.5rem; }
-    .nypl-header li.search #main-search .search-radio-label span.nypl-label {
+    padding: 0 0.75rem 0 0.5rem;
+    -webkit-transition: all 0.1s ease-out 0s;
+    -moz-transition: all 0.1s ease-out 0s;
+    -o-transition: all 0.1s ease-out 0s;
+    transition: all 0.1s ease-out 0s; }
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label span.nypl-label {
       display: block;
       font-weight: bold;
       margin-left: 0.5em; }
-    .nypl-header li.search #main-search .search-radio-label label {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label label {
       background-color: #efedeb;
       font-weight: normal;
       padding: 0.1875rem 0; }
-    .nypl-header li.search #main-search .search-radio-label input[type=radio],
-    .nypl-header li.search #main-search .search-radio-label input[type=checkbox] {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label input[type=radio],
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
-    .nypl-header li.search #main-search .search-radio-label.selected {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label.selected {
       background-color: #efedeb;
       color: #080807; }
-    .nypl-header li.search #main-search .search-radio-label.focus {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label.focus {
       box-shadow: inset 0 0 0 3px #ffb81d; }
-  .nypl-header li.search #main-search input:focus {
+  .nypl-header li.nypl-search .nypl-main-search input:focus {
     outline: none; }
-  .nypl-header li.search #main-search .search-query-label {
+  .nypl-header li.nypl-search .nypl-main-search .nypl-search-query-label {
     color: #fff;
     height: 2rem;
     left: 0.5rem;
     line-height: 2;
     position: absolute; }
-  .nypl-header li.search #main-search .form-text {
+  .nypl-header li.nypl-search .nypl-main-search .nypl-form-text {
     background-color: #efedeb;
     border: 0;
     padding: 0;
-    box-shadow: inset 0 0 0 2px #776e64;
     height: 2rem;
-    margin-right: 1px;
+    margin-right: 0;
     padding: 0;
     text-indent: 0.5rem;
     transition: all 0.1s ease-out;
     width: 10rem; }
-    .nypl-header li.search #main-search .form-text.active {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text.active {
       width: 16rem; }
-    .nypl-header li.search #main-search .form-text:focus {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text:focus {
       background-color: #fff;
-      box-shadow: inset 0 0 0 4px #ffb81d !important;
+      box-shadow: inset 0 0 0 0.25rem #ffb81d;
       color: #776e64;
       outline: none; }
   @media (max-width: 965px) {
-    .nypl-header li.search #main-search .form-text,
-    .nypl-header li.search #main-search .search-button,
-    .nypl-header li.search #main-search .search-radio-label {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text,
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button,
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label {
       height: 2.5rem;
       line-height: 2.5; }
-    .nypl-header li.search #main-search .form-text,
-    .nypl-header li.search #main-search .form-text.active {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text,
+    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text.active {
       margin: 0;
       width: 70%; }
-    .nypl-header li.search #main-search .search-button {
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button {
       margin: 0;
       width: 30%; }
-    .nypl-header li.search #main-search .search-select {
-      top: 2.5rem; } }
+    .nypl-header li.nypl-search .nypl-main-search .nypl-search-select {
+      top: 3.5rem; } }
 
 @font-face {
   font-family: nypl-moon;
