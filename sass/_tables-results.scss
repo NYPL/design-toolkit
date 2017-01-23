@@ -46,10 +46,10 @@
   @include clearfix;
 
   .nypl-results-count {
-    display: inline-block;
     float: left;
     font-size: 3rem;
     font-weight: bold;
+    line-height: 1;
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -61,8 +61,7 @@
     margin: 0;
     padding: 0;
     position: relative;
-    vertical-align: super;
-    width: 0.5em;
+    width: 0.5rem;
 
     span {
       @include screenreader-only;
@@ -70,10 +69,8 @@
 
     &::before {
       content: "×";
-      display: block;
-      left: 0;
-      position: absolute;
-      top: 0;
+      display: inline-block;
+      vertical-align: super;
     }
   }
 
