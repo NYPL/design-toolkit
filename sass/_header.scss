@@ -461,7 +461,7 @@ $collapsed-nav-height: 30px;
         right: 0;
         padding: 0 $form-padding $form-padding;
         position: absolute;
-        top: 3.15rem; // because ¯\_(ツ)_/¯
+        top: 3rem; // because ¯\_(ツ)_/¯
         white-space: nowrap;
         z-index: 1;
       }
@@ -472,7 +472,7 @@ $collapsed-nav-height: 30px;
         display: inline-block;
         height: 2rem;
         line-height: 2;
-        padding: 0 0.75rem 0 0.5rem;
+        padding: 0.25rem 0.75rem 0 0.5rem;
         @include transition(all, $hover-time, ease-out);
 
         &.selected {
