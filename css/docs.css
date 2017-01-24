@@ -430,7 +430,7 @@ button:focus {
     border-bottom: 0.0625rem solid #080807;
     height: 2rem;
     padding: 1.5rem 0 0;
-    text-indent: 0.5em;
+    text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
     .nypl-header .email-toggle input[type=text].active {
@@ -638,7 +638,7 @@ button:focus {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
-    margin-right: 0.5em; }
+    margin-right: 0.5rem; }
     .nypl-header li.nypl-search .nypl-main-search .nypl-search-button:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.active {
       border-color: #776e64;
       background-color: #efedeb;
@@ -659,13 +659,13 @@ button:focus {
   .nypl-header li.nypl-search .nypl-main-search.active {
     background-color: #776e64; }
   .nypl-header li.nypl-search .nypl-main-search .nypl-search-query-content {
-    padding: 0.5em;
+    padding: 0.5rem;
     position: relative; }
   .nypl-header li.nypl-search .nypl-main-search .nypl-search-select {
     background-color: #776e64;
     font-size: 0.9rem;
     right: 0;
-    padding: 0 0.5em 0.5em;
+    padding: 0 0.5rem 0.5rem;
     position: absolute;
     top: 3.15rem;
     white-space: nowrap;
@@ -683,7 +683,7 @@ button:focus {
     .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label span.nypl-label {
       display: block;
       font-weight: bold;
-      margin-left: 0.5em; }
+      margin-left: 0.5rem; }
     .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label label {
       background-color: #efedeb;
       font-weight: normal;
