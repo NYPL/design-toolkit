@@ -179,7 +179,7 @@ $form-padding: 0.5rem;
       width: 30%;
 
       select {
-        padding-left: 0.125em;
+        padding-left: 0.125rem;
         padding-right: 20%;
       }
     }
@@ -240,13 +240,13 @@ $form-padding: 0.5rem;
     @include basic-button($background-color: $nypl-search-color-light, $text-color:$page-color, $border-width: 0);
     display: inline-block;
     font-weight: normal;
-    margin: 0 0 0.5em 0.5em;
-    padding: 0.2rem 0.25em;
-    width: 2em;
+    margin: 0 0 0.5rem 0.5rem;
+    padding: 0.2rem 0.25rem;
+    width: 2rem;
 
     &.nypl-long {
       // because “any” has different lengths in different langs
-      min-width: 4.75em;
+      min-width: 4.75rem;
     }
   }
 }

@@ -2147,7 +2147,7 @@ footer {
     .nypl-omnisearch .nypl-omni-fields {
       width: 30%; }
       .nypl-omnisearch .nypl-omni-fields select {
-        padding-left: 0.125em;
+        padding-left: 0.125rem;
         padding-right: 20%; }
     .nypl-omnisearch input[type=text] {
       width: 48%; }
@@ -2276,9 +2276,9 @@ footer {
     transition: all 0.1s ease-in 0s;
     display: inline-block;
     font-weight: normal;
-    margin: 0 0 0.5em 0.5em;
-    padding: 0.2rem 0.25em;
-    width: 2em; }
+    margin: 0 0 0.5rem 0.5rem;
+    padding: 0.2rem 0.25rem;
+    width: 2rem; }
     .nypl-alphabetical-filter button:hover, .nypl-alphabetical-filter button.active {
       border-color: #776e64;
       background-color: #fff;
@@ -2295,7 +2295,7 @@ footer {
         background-color: #d7d4d0;
         color: #080807; }
     .nypl-alphabetical-filter button.nypl-long {
-      min-width: 4.75em; }
+      min-width: 4.75rem; }
 
 .nypl-search-form {
   margin: 0 0 1rem; }
