@@ -438,7 +438,7 @@ $collapsed-nav-height: 30px;
       @include transition(all, $hover-time, ease-out);
 
       .nypl-search-button {
-        @include basic-button($border-width: 0, $background-color: $link-color, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
+        @include basic-button($font-size: inherit, $border-width: 0, $background-color: $link-color, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
         margin-right: $form-padding;
       }
 
