@@ -34,7 +34,7 @@ $collapsed-nav-height: 30px;
     li {
       display: inline-block;
       margin-left: 0;
-      margin-right: 0.35em;
+      margin-right: 0.35rem;
       vertical-align: bottom;
 
       &:last-child {
@@ -142,7 +142,7 @@ $collapsed-nav-height: 30px;
       top: 9px; // absolute px because no control over page rem
 
       @include media($mobile-breakpoint) {
-        font-size: 12px;
+        font-size: 12px; // absolute px because no control over page rem
         top: -19px;
 
         div {
@@ -197,10 +197,10 @@ $collapsed-nav-height: 30px;
       }
 
       a {
-        padding: 0.1em 0.4em;
+        padding: 0.1rem 0.4rem;
       }
 
-      .search {
+      .nypl-search {
         display: none;
       }
     }
@@ -214,14 +214,14 @@ $collapsed-nav-height: 30px;
 
     @include media($mobile-breakpoint) {
       display: none;
-      padding-top: 5px;
+      padding-top: 0.33rem;
       width: 100%;
 
       li {
         border-bottom: 1px solid $nypl-white;
         float: left;
         line-height: 2;
-        margin: 0 0 5px;
+        margin: 0 0 0.33rem;
         width: 50%;
       }
     }
@@ -281,7 +281,7 @@ $collapsed-nav-height: 30px;
     fieldset {
       border: 0;
       color: $page-text-color;
-      margin: 1em 0 0.5em;
+      margin: 1rem 0 0.5em;
       padding: 0;
       position: relative;
     }
@@ -289,7 +289,7 @@ $collapsed-nav-height: 30px;
     label {
       display: block;
       font-weight: bold;
-      margin-left: 0.5em;
+      margin-left: 0.5rem;
       position: absolute;
     }
 
@@ -298,7 +298,7 @@ $collapsed-nav-height: 30px;
     }
 
     .links {
-      margin: 1em 0 0;
+      margin: 1rem 0 0;
     }
   }
 
@@ -326,13 +326,13 @@ $collapsed-nav-height: 30px;
 
     a.inverted {
       display: block;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
       white-space: nowrap;
     }
 
     .welcome-message {
       display: inline-block;
-      margin-right: 1em;
+      margin-right: 1rem;
       text-transform: none;
     }
 
@@ -374,11 +374,15 @@ $collapsed-nav-height: 30px;
         float: left;
         height: auto;
         line-height: 2;
-        margin: 0 0 5px;
+        margin: 0 0 0.33rem;
         width: 50%;
+
+        a {
+          line-height: inherit;
+        }
       }
 
-      li.search {
+      li.nypl-search {
         border: 0;
         font-size: 1rem;
         position: relative;
@@ -392,8 +396,9 @@ $collapsed-nav-height: 30px;
       border: 0;
       color: $page-color;
       display: block;
+      line-height: 2.6;
       overflow: hidden;
-      padding: 0.2em 0.4em;
+      padding: 0.2rem 0.4rem;
       text-decoration: none;
       text-overflow: ellipsis;
       transition: all $hover-time;
@@ -418,7 +423,7 @@ $collapsed-nav-height: 30px;
   }
 
 
-  li.search {
+  li.nypl-search {
     @include media($intermediate-breakpoint) {
       // float: none;
       // position: absolute;
@@ -426,41 +431,49 @@ $collapsed-nav-height: 30px;
       // top: -3rem;
     }
 
-    #main-search {
-      background-color: $nypl-search-color-dark;
+    .nypl-main-search {
+      background-color: $nypl-search-color;
       margin: 0;
       position: relative;
+      @include transition(all, $hover-time, ease-out);
 
-      .search-button {
-        @include basic-button($border-width: 0, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
+      .nypl-search-button {
+        @include basic-button($font-size: inherit, $border-width: 0, $background-color: $link-color, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
+        margin-right: $form-padding;
       }
 
       &.display {
         display: block;
       }
 
-      .search-query-content {
+      &.active {
+        background-color: $nypl-search-color-dark;
+      }
+
+      .nypl-search-query-content {
+        padding: $form-padding;
         position: relative;
       }
 
-      .search-select {
+      .nypl-search-select {
         background-color: $nypl-search-color-dark;
         font-size: 0.9rem;
         right: 0;
-        padding: 1px 3px 3px;
+        padding: 0 $form-padding $form-padding;
         position: absolute;
-        top: 2rem;
+        top: 3rem; // because ¯\_(ツ)_/¯
         white-space: nowrap;
         z-index: 1;
       }
 
-      .search-radio-label {
+      .nypl-search-radio-label {
         @include simple-radiobutton;
         color: $nypl-search-color-light;
         display: inline-block;
         height: 2rem;
         line-height: 2;
-        padding: 0 0.75rem 0 0.5rem;
+        padding: 0.25rem 0.75rem 0 0.5rem;
+        @include transition(all, $hover-time, ease-out);
 
         &.selected {
           background-color: $nypl-search-color-light;
@@ -477,7 +490,7 @@ $collapsed-nav-height: 30px;
         outline: none;
       }
 
-      .search-query-label {
+      .nypl-search-query-label {
         color: $nypl-white;
         height: 2rem;
         left: 0.5rem;
@@ -485,11 +498,11 @@ $collapsed-nav-height: 30px;
         position: absolute;
       }
 
-      .form-text {
+      .nypl-form-text {
         @include input;
-        box-shadow: inset 0 0 0 2px $nypl-search-color-dark;
+        // box-shadow: inset 0 0 0 2px $nypl-search-color-dark;
         height: 2rem;
-        margin-right: 1px;
+        margin-right: 0;
         padding: 0;
         text-indent: 0.5rem;
         transition: all $hover-time ease-out;
@@ -501,33 +514,33 @@ $collapsed-nav-height: 30px;
 
         &:focus {
           background-color: $nypl-white;
-          box-shadow: inset 0 0 0 4px $focus-color !important;
+          box-shadow: inset 0 0 0 0.25rem $focus-color;
           color: $nypl-search-color-dark;
           outline: none;
         }
       }
 
       @include media($mobile-breakpoint) {
-        .form-text,
-        .search-button,
-        .search-radio-label {
+        .nypl-form-text,
+        .nypl-search-button,
+        .nypl-search-radio-label {
           height: 2.5rem;
           line-height: 2.5;
         }
 
-        .form-text,
-        .form-text.active {
+        .nypl-form-text,
+        .nypl-form-text.active {
           margin: 0;
           width: 70%;
         }
 
-        .search-button {
+        .nypl-search-button {
           margin: 0;
           width: 30%;
         }
 
-        .search-select {
-          top: 2.5rem;
+        .nypl-search-select {
+          top: 3.5rem;
         }
       }
 
