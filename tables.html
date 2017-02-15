@@ -51,6 +51,8 @@
       <ul>
         <li><a href="example.html">Example Page</a></li>
         <li><a href="discovery-search.html">Discovery Search Results Example</a></li>
+        <li><a href="header_login.html">Header (login)</a></li>
+        <li><a href="header_logout.html">Header (log out)</a></li>
         <li><a href="https://github.com/NYPL/design-toolkit/" class="external">View on Github</a></li>
       </ul>
     </div>
@@ -183,21 +185,20 @@
 
     <h3 id="sorting">Sorting</h3>
 
-    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat.</p>
+    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat and use the <code>aria-expanded</code> attribute that must be modified accordingly by the appropriate JavaScript. The sorting options are nested in an unordered list with a menu role.</p>
 
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-results-sorting-controls">
   <div class="nypl-results-sorter">
-    <button>
+    <button aria-expanded="false">
     Sort by <strong>relevance</strong>
-    <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-      <title>down.wedge.sm</title>
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
     </button>
-    <ul class="hidden">
+    <ul class="hidden" role="menu">
       <li><a href="?sort=relevance"><strong>relevance</strong></a></li>
       <li><a href="#">title A-Z</a></li>
       <li><a href="#">title Z-A</a></li>
@@ -215,19 +216,18 @@
     <pre><code class="html">
 &lt;div class=&quot;nypl-results-sorting-controls&quot;&gt;
   &lt;div class=&quot;nypl-results-sorter&quot;&gt;
-    &lt;button&gt;
+    &lt;button aria-expanded=&quot;false&quot;&gt;
     Sort by &lt;strong&gt;relevance&lt;/strong&gt;
-    &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
-      &lt;title&gt;down.wedge.sm&lt;/title&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
       &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
     &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;ul&gt;
+    &lt;ul class=&quot;hidden&quot; role=&quot;menu&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;?sort=relevance&quot;&gt;&lt;strong&gt;relevance&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;?sort=a-z&quot;&gt;title A-Z&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;?sort=z-a&quot;&gt;title Z-A&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;?sort=date-old&quot;&gt;date (old to new)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;?sort=date-new&quot;&gt;date (new to old)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;title A-Z&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;title Z-A&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;date (old to new)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;date (new to old)&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;

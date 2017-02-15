@@ -310,6 +310,10 @@ $collapsed-nav-height: 30px;
 
     button {
       text-transform: uppercase;
+
+      &.collapsible {
+        @include login-button($collapsible: true);
+      }
     }
 
     div {
@@ -322,6 +326,10 @@ $collapsed-nav-height: 30px;
       right: 0;
       text-transform: none;
       z-index: 1;
+    }
+
+    > a {
+      @include login-button;
     }
 
     a.inverted {
@@ -338,7 +346,7 @@ $collapsed-nav-height: 30px;
 
     > a,
     button.collapsible {
-      @include login-button;
+      display: inline-block;
 
       &:link {
         text-decoration: none;

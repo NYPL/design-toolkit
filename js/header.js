@@ -99,32 +99,32 @@ function init() {
 }
 
 function toggleSort() {
-  $(".nypl-results-sorter button").toggleClass("active")
+  $(".nypl-results-sorter button").toggleClass("active").attr("aria-expanded", "true")
   $(".nypl-results-sorter ul").toggleClass("hidden")
 }
 
 function hideSort() {
-  $(".nypl-results-sorter button").removeClass("active")
+  $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", "false")
   $(".nypl-results-sorter ul").addClass("hidden")
 }
 
 function toggleLogin() {
-  $(".login-toggle button.collapsible").toggleClass("active")
+  $(".login-toggle button.collapsible").toggleClass("active").attr("aria-expanded", "true")
   $(".login-toggle div").toggleClass("hidden")
 }
 
 function hideLogin() {
-  $(".login-toggle button.collapsible").removeClass("active")
+  $(".login-toggle button.collapsible").removeClass("active").attr("aria-expanded", "false")
   $(".login-toggle div").addClass("hidden")
 }
 
 function toggleEmail() {
-  $(".email-toggle button").toggleClass("active")
+  $(".email-toggle button").toggleClass("active").attr("aria-expanded", "true")
   $(".email-toggle form").toggleClass("hidden")
 }
 
 function hideEmail() {
-  $(".email-toggle button").removeClass("active")
+  $(".email-toggle button").removeClass("active").attr("aria-expanded", "false")
   $(".email-toggle form").addClass("hidden")
 }
 

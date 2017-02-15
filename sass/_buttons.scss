@@ -23,17 +23,17 @@
 
   @include transition(all, $hover-time, ease-in);
 
-  @if $collapsible == true {
+  @if ($collapsible == true) {
     // has nypl-icon with down arrow
     position: relative;
-    padding-right: 1.5em;
+    padding-right: 1.5rem;
     text-align: left;
 
     .nypl-icon {
       @include nypl-icon($fill: $text-color, $background-color: $background-color);
       @include transition(all, $hover-time, ease-in);
       position: absolute;
-      right: 0.25em;
+      right: 0.25rem;
       top: #{0.4em + $padding-vertical};
     }
   }
@@ -118,8 +118,8 @@
   white-space: nowrap;
 }
 
-@mixin login-button {
-  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5em, $collapsible: true, $border-width: 0);
+@mixin login-button($collapsible: false) {
+  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5em, $collapsible: $collapsible, $border-width: 0);
   display: block;
   font-weight: bold;
   text-transform: uppercase;
