@@ -248,10 +248,10 @@ button:focus {
         background-color: #d7d4d0;
         color: #fff; }
     .nypl-header .service-buttons li > a.donate {
-      background-color: #d0343a;
+      background-color: #fff;
       border: 0 solid #776e64;
       border-radius: 0;
-      color: #fff;
+      color: #d0343a;
       cursor: pointer;
       font-size: 0.8rem;
       font-weight: normal;
@@ -283,7 +283,7 @@ button:focus {
         background-color: #d7d4d0; }
         .nypl-header .service-buttons li > a.donate.disabled:hover, .nypl-header .service-buttons li > a.donate[disabled="disabled"]:hover, .nypl-header .service-buttons li > a.donate[disabled]:hover, .nypl-header .service-buttons li > a.donate[disabled=true]:hover {
           background-color: #d7d4d0;
-          color: #fff; }
+          color: #d0343a; }
   .nypl-header .service-buttons button.collapsible {
     background-color: #d0343a;
     border: 0 solid #776e64;

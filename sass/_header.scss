@@ -230,7 +230,7 @@ $collapsed-nav-height: 30px;
       @include service-button;
 
       &.donate {
-        @include service-button;
+        @include service-button($text-color: $nypl-red, $background-color: $nypl-white);
       }
     }
 

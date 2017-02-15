@@ -108,8 +108,8 @@
   }
 }
 
-@mixin service-button($collapsible: false) {
-  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-red, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5em);
+@mixin service-button($collapsible: false, $text-color: $nypl-white, $background-color: $nypl-red) {
+  @include basic-button($font-size: 0.8rem, $text-color: $text-color, $background-color: $background-color, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5em);
   display: block;
   font-weight: bold;
   overflow: hidden;
