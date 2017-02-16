@@ -1,7 +1,7 @@
 var hideTimeout
 
 function init() {
-  $(".nypl-menu-button .nypl-menu-button_button").click(function(e) {
+  $(".nypl-menu-button_button").click(function(e) {
     e.preventDefault();
     var self = $(e.target);
     var parent = self.parent();
@@ -61,7 +61,7 @@ function init() {
   })
 
   $("body").on("click touchstart touchend", function(e) {
-    // $(".nypl-menu-button .nypl-menu-button_menu").addClass("hidden")
+    // $(".nypl-menu-button_menu").addClass("hidden")
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()
     }
