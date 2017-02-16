@@ -39,13 +39,9 @@
   @include login-button;
 }
 
-.nypl-menu-button {
-  &.left {
-    @include menu-button;
-  }
-
-  &.right {
-    @include menu-button($attachment: "right");
+@each $side in left, right {
+  .nypl-menu-button_#{$side} {
+    @include menu-button($attachment: $side);
   }
 }
 

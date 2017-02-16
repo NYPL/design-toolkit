@@ -1842,10 +1842,10 @@ footer {
       background-color: #d7d4d0;
       color: #fff; }
 
-.nypl-menu-button.left {
+.nypl-menu-button_left {
   display: inline-block;
   position: relative; }
-  .nypl-menu-button.left .nypl-menu-button_button {
+  .nypl-menu-button_left .nypl-menu-button_button {
     background-color: #776e64;
     border: 0.0625rem solid #776e64;
     border-radius: 0;
@@ -1864,7 +1864,7 @@ footer {
     position: relative;
     padding-right: 1.5rem;
     text-align: left; }
-    .nypl-menu-button.left .nypl-menu-button_button .nypl-icon {
+    .nypl-menu-button_left .nypl-menu-button_button .nypl-icon {
       background-color: #776e64;
       display: inline-block;
       fill: #fff;
@@ -1878,37 +1878,37 @@ footer {
       position: absolute;
       right: 0.25rem;
       top: calc(0.3rem + 0.2rem); }
-      .nypl-menu-button.left .nypl-menu-button_button .nypl-icon.reversed {
+      .nypl-menu-button_left .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-menu-button.left .nypl-menu-button_button:hover, .nypl-menu-button.left .nypl-menu-button_button.active {
+    .nypl-menu-button_left .nypl-menu-button_button:hover, .nypl-menu-button_left .nypl-menu-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-menu-button.left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button.left .nypl-menu-button_button.active .nypl-icon {
+      .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-menu-button.left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button.left .nypl-menu-button_button.active .nypl-icon.reversed {
+        .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
-    .nypl-menu-button.left .nypl-menu-button_button.active .nypl-icon {
+    .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
       transform: scaleY(-1); }
-    .nypl-menu-button.left .nypl-menu-button_button:focus {
+    .nypl-menu-button_left .nypl-menu-button_button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-menu-button.left .nypl-menu-button_button.disabled, .nypl-menu-button.left .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button.left .nypl-menu-button_button[disabled], .nypl-menu-button.left .nypl-menu-button_button[disabled=true] {
+    .nypl-menu-button_left .nypl-menu-button_button.disabled, .nypl-menu-button_left .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button_left .nypl-menu-button_button[disabled], .nypl-menu-button_left .nypl-menu-button_button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      .nypl-menu-button.left .nypl-menu-button_button.disabled:hover, .nypl-menu-button.left .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button.left .nypl-menu-button_button[disabled]:hover, .nypl-menu-button.left .nypl-menu-button_button[disabled=true]:hover {
+      .nypl-menu-button_left .nypl-menu-button_button.disabled:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #fff; }
-  .nypl-menu-button.left .nypl-menu-button_menu {
+  .nypl-menu-button_left .nypl-menu-button_menu {
     background-color: #776e64;
     color: #fff;
     min-width: 10rem;
@@ -1916,10 +1916,11 @@ footer {
     position: absolute;
     z-index: 1;
     left: 0; }
-.nypl-menu-button.right {
+
+.nypl-menu-button_right {
   display: inline-block;
   position: relative; }
-  .nypl-menu-button.right .nypl-menu-button_button {
+  .nypl-menu-button_right .nypl-menu-button_button {
     background-color: #776e64;
     border: 0.0625rem solid #776e64;
     border-radius: 0;
@@ -1938,7 +1939,7 @@ footer {
     position: relative;
     padding-right: 1.5rem;
     text-align: left; }
-    .nypl-menu-button.right .nypl-menu-button_button .nypl-icon {
+    .nypl-menu-button_right .nypl-menu-button_button .nypl-icon {
       background-color: #776e64;
       display: inline-block;
       fill: #fff;
@@ -1952,37 +1953,37 @@ footer {
       position: absolute;
       right: 0.25rem;
       top: calc(0.3rem + 0.2rem); }
-      .nypl-menu-button.right .nypl-menu-button_button .nypl-icon.reversed {
+      .nypl-menu-button_right .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-menu-button.right .nypl-menu-button_button:hover, .nypl-menu-button.right .nypl-menu-button_button.active {
+    .nypl-menu-button_right .nypl-menu-button_button:hover, .nypl-menu-button_right .nypl-menu-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-menu-button.right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button.right .nypl-menu-button_button.active .nypl-icon {
+      .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-menu-button.right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button.right .nypl-menu-button_button.active .nypl-icon.reversed {
+        .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
-    .nypl-menu-button.right .nypl-menu-button_button.active .nypl-icon {
+    .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
       transform: scaleY(-1); }
-    .nypl-menu-button.right .nypl-menu-button_button:focus {
+    .nypl-menu-button_right .nypl-menu-button_button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-menu-button.right .nypl-menu-button_button.disabled, .nypl-menu-button.right .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button.right .nypl-menu-button_button[disabled], .nypl-menu-button.right .nypl-menu-button_button[disabled=true] {
+    .nypl-menu-button_right .nypl-menu-button_button.disabled, .nypl-menu-button_right .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button_right .nypl-menu-button_button[disabled], .nypl-menu-button_right .nypl-menu-button_button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      .nypl-menu-button.right .nypl-menu-button_button.disabled:hover, .nypl-menu-button.right .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button.right .nypl-menu-button_button[disabled]:hover, .nypl-menu-button.right .nypl-menu-button_button[disabled=true]:hover {
+      .nypl-menu-button_right .nypl-menu-button_button.disabled:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #fff; }
-  .nypl-menu-button.right .nypl-menu-button_menu {
+  .nypl-menu-button_right .nypl-menu-button_menu {
     background-color: #776e64;
     color: #fff;
     min-width: 10rem;
