@@ -242,11 +242,12 @@ $collapsed-nav-height: 30px;
   .email-toggle {
     position: relative;
 
-    a::after {
+    button,
+    svg {
       transition: all $hover-time;
     }
 
-    a.active::after {
+    button.active svg {
       transform: scaleY(-1);
     }
 
@@ -281,7 +282,7 @@ $collapsed-nav-height: 30px;
     fieldset {
       border: 0;
       color: $page-text-color;
-      margin: 1rem 0 0.5em;
+      margin: 1rem 0 0.5rem;
       padding: 0;
       position: relative;
     }

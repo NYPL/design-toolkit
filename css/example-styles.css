@@ -1110,7 +1110,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1147,7 +1147,7 @@ button:focus {
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
-      padding: 0 0.5em;
+      padding: 0 0.5rem;
       text-decoration: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
@@ -1184,7 +1184,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1213,7 +1213,7 @@ button:focus {
       transition: all 0.1s ease-in 0s;
       position: absolute;
       right: 0.25rem;
-      top: 0.4em; }
+      top: 0.3rem; }
       .nypl-header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
@@ -1246,9 +1246,10 @@ button:focus {
         color: #fff; }
 .nypl-header .email-toggle {
   position: relative; }
-  .nypl-header .email-toggle a::after {
+  .nypl-header .email-toggle button,
+  .nypl-header .email-toggle svg {
     transition: all 0.1s; }
-  .nypl-header .email-toggle a.active::after {
+  .nypl-header .email-toggle button.active svg {
     transform: scaleY(-1); }
   .nypl-header .email-toggle .subscribe-button {
     background-color: #776e64;
@@ -1303,7 +1304,7 @@ button:focus {
   .nypl-header .email-toggle fieldset {
     border: 0;
     color: #080807;
-    margin: 1rem 0 0.5em;
+    margin: 1rem 0 0.5rem;
     padding: 0;
     position: relative; }
   .nypl-header .email-toggle label {
@@ -1351,7 +1352,7 @@ button:focus {
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
-      padding: 0 0.5em;
+      padding: 0 0.5rem;
       text-decoration: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
@@ -1377,7 +1378,7 @@ button:focus {
         transition: all 0.1s ease-in 0s;
         position: absolute;
         right: 0.25rem;
-        top: 0.4em; }
+        top: 0.3rem; }
         .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -1427,7 +1428,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -1777,7 +1778,7 @@ footer {
   font-size: 0.8rem;
   font-weight: normal;
   height: auto;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -1815,7 +1816,7 @@ footer {
   font-size: 0.8rem;
   font-weight: normal;
   height: auto;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
@@ -1840,6 +1841,155 @@ footer {
     .nypl-login-button.disabled:hover, .nypl-login-button[disabled="disabled"]:hover, .nypl-login-button[disabled]:hover, .nypl-login-button[disabled=true]:hover {
       background-color: #d7d4d0;
       color: #fff; }
+
+.nypl-menu-button.left {
+  display: inline-block;
+  position: relative; }
+  .nypl-menu-button.left .nypl-menu-button_button {
+    background-color: #776e64;
+    border: 0.0625rem solid #776e64;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0.2rem 0.75rem;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    position: relative;
+    padding-right: 1.5rem;
+    text-align: left; }
+    .nypl-menu-button.left .nypl-menu-button_button .nypl-icon {
+      background-color: #776e64;
+      display: inline-block;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      position: absolute;
+      right: 0.25rem;
+      top: calc(0.3rem + 0.2rem); }
+      .nypl-menu-button.left .nypl-menu-button_button .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+    .nypl-menu-button.left .nypl-menu-button_button:hover, .nypl-menu-button.left .nypl-menu-button_button.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+      .nypl-menu-button.left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button.left .nypl-menu-button_button.active .nypl-icon {
+        background-color: #fff;
+        display: inline-block;
+        fill: #776e64;
+        height: 1em;
+        width: 1em;
+        speak: none; }
+        .nypl-menu-button.left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button.left .nypl-menu-button_button.active .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
+    .nypl-menu-button.left .nypl-menu-button_button.active .nypl-icon {
+      transform: scaleY(-1); }
+    .nypl-menu-button.left .nypl-menu-button_button:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .nypl-menu-button.left .nypl-menu-button_button.disabled, .nypl-menu-button.left .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button.left .nypl-menu-button_button[disabled], .nypl-menu-button.left .nypl-menu-button_button[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      .nypl-menu-button.left .nypl-menu-button_button.disabled:hover, .nypl-menu-button.left .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button.left .nypl-menu-button_button[disabled]:hover, .nypl-menu-button.left .nypl-menu-button_button[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #fff; }
+  .nypl-menu-button.left .nypl-menu-button_menu {
+    background-color: #776e64;
+    color: #fff;
+    min-width: 10rem;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+    left: 0; }
+.nypl-menu-button.right {
+  display: inline-block;
+  position: relative; }
+  .nypl-menu-button.right .nypl-menu-button_button {
+    background-color: #776e64;
+    border: 0.0625rem solid #776e64;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0.2rem 0.75rem;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    position: relative;
+    padding-right: 1.5rem;
+    text-align: left; }
+    .nypl-menu-button.right .nypl-menu-button_button .nypl-icon {
+      background-color: #776e64;
+      display: inline-block;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      position: absolute;
+      right: 0.25rem;
+      top: calc(0.3rem + 0.2rem); }
+      .nypl-menu-button.right .nypl-menu-button_button .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+    .nypl-menu-button.right .nypl-menu-button_button:hover, .nypl-menu-button.right .nypl-menu-button_button.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+      .nypl-menu-button.right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button.right .nypl-menu-button_button.active .nypl-icon {
+        background-color: #fff;
+        display: inline-block;
+        fill: #776e64;
+        height: 1em;
+        width: 1em;
+        speak: none; }
+        .nypl-menu-button.right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button.right .nypl-menu-button_button.active .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
+    .nypl-menu-button.right .nypl-menu-button_button.active .nypl-icon {
+      transform: scaleY(-1); }
+    .nypl-menu-button.right .nypl-menu-button_button:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .nypl-menu-button.right .nypl-menu-button_button.disabled, .nypl-menu-button.right .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button.right .nypl-menu-button_button[disabled], .nypl-menu-button.right .nypl-menu-button_button[disabled=true] {
+      cursor: default;
+      background-color: #d7d4d0; }
+      .nypl-menu-button.right .nypl-menu-button_button.disabled:hover, .nypl-menu-button.right .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button.right .nypl-menu-button_button[disabled]:hover, .nypl-menu-button.right .nypl-menu-button_button[disabled=true]:hover {
+        background-color: #d7d4d0;
+        color: #fff; }
+  .nypl-menu-button.right .nypl-menu-button_menu {
+    background-color: #776e64;
+    color: #fff;
+    min-width: 10rem;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+    right: 0; }
 
 .nypl-label {
   display: block;
@@ -2854,7 +3004,7 @@ footer {
       transition: all 0.1s ease-in 0s;
       position: absolute;
       right: 0.25rem;
-      top: 0.65em; }
+      top: calc(0.3rem + 0.25em); }
       .nypl-results-sorter button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }

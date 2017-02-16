@@ -34,7 +34,11 @@
       @include transition(all, $hover-time, ease-in);
       position: absolute;
       right: 0.25rem;
-      top: #{0.4em + $padding-vertical};
+      $top: 0.3rem;
+      @if ($padding-vertical != 0) {
+        $top: calc(#{$top} + #{$padding-vertical});
+      }
+      top: $top;
     }
   }
 
@@ -109,7 +113,7 @@
 }
 
 @mixin service-button($collapsible: false, $text-color: $nypl-white, $background-color: $nypl-red) {
-  @include basic-button($font-size: 0.8rem, $text-color: $text-color, $background-color: $background-color, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5em);
+  @include basic-button($font-size: 0.8rem, $text-color: $text-color, $background-color: $background-color, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5rem);
   display: block;
   font-weight: bold;
   overflow: hidden;
@@ -119,8 +123,32 @@
 }
 
 @mixin login-button($collapsible: false) {
-  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5em, $collapsible: $collapsible, $border-width: 0);
+  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5rem, $collapsible: $collapsible, $border-width: 0);
   display: block;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@mixin menu-button($attachment: "left", $text-color: $button-text-color, $background-color: $nypl-search-color-dark) {
+  display: inline-block;
+  position: relative;
+
+  .nypl-menu-button_button {
+    @include basic-button($collapsible: true);
+  }
+
+  .nypl-menu-button_menu {
+    background-color: $background-color;
+    color: $text-color;
+    min-width: 10rem;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+
+    @if ($attachment == "left") {
+      left: 0;
+    } @else {
+      right: 0;
+    }
+  }
 }

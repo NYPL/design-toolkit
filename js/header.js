@@ -1,6 +1,17 @@
 var hideTimeout
 
 function init() {
+  $(".nypl-menu-button .nypl-menu-button_button").click(function(e) {
+    e.preventDefault();
+    var self = $(e.target);
+    var parent = self.parent();
+    console.log(self, parent, self.closest('.nypl-menu-button'));
+    parent.find(".nypl-menu-button_menu").toggleClass("hidden")
+    var expanded = parent.find(".nypl-menu-button_menu").hasClass("hidden") ? "false" : "true";
+    self.toggleClass("active").attr("aria-expanded", expanded)
+    console.log(expanded);
+  });
+
   $(".select-box").on("change", function(e) {
     var id = $(e.target).attr("id");
     console.log(id);
@@ -50,6 +61,7 @@ function init() {
   })
 
   $("body").on("click touchstart touchend", function(e) {
+    // $(".nypl-menu-button .nypl-menu-button_menu").addClass("hidden")
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()
     }

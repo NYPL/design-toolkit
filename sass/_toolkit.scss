@@ -39,6 +39,17 @@
   @include login-button;
 }
 
+.nypl-menu-button {
+  &.left {
+    @include menu-button;
+  }
+
+  &.right {
+    @include menu-button($attachment: "right");
+  }
+}
+
+
 .nypl-label {
   @include label;
 }

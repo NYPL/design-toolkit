@@ -10,6 +10,12 @@
 <link rel="stylesheet" href="js/atom-one-light.css">
 <script src="js/highlight.pack.js"></script>
 
+<script
+        src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/header.js"></script>
+
 </head>
 <body>
 
@@ -57,6 +63,7 @@
     <ul>
       <li><a href="#squareButton">Basic Button</a></li>
       <li><a href="#requestButton">Request Button</a></li>
+      <li><a href="#menuButton">Menu Buttons</a></li>
     </ul>
 
     <h2 id="buttons">Buttons</h2>
@@ -87,6 +94,80 @@
       </code></pre>
       <pre><code class="html">
 &lt;button class=&quot;nypl-request-button&quot;&gt;Request a Button&lt;/button&gt;
+    </code></pre>
+
+
+    <h3 id="menuButton">Menu Buttons</h3>
+    <p>Menu buttons are used for situtations where it is desirable to disclose certain information to the user without requiring a page load (for example a newsletter subscription form). The disclosed information should not be excessive (be reasonable). The elements themselves are:</p>
+    <ul>
+      <li>The main container, with class <code>nypl-menu-button</code>,</li>
+      <li>a nested <code>button</code> of class <code>nypl-menu-button_button</code> and default <code>aria-expanded</code> being false,</li>
+      <li>a nested container of class <code>nypl-menu-button_menu</code> which has the contents of the menu itself, also hidden by default and a “menu” <code>role</code>.</li>
+    </ul>
+    <p>The button contains an <code>nypl-icon</code> displaying the “down wedge” (<svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>) to indicate that the button in question is a collapsible menu.</p>
+      <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-menu-button right">
+  <button aria-expanded="false" class="nypl-menu-button_button">
+  Right menu
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="hidden nypl-menu-button_menu" role="menu">
+    This is a container with things inside and it is
+    <strong>aligned to the right</strong> of the parent button.
+  </div>
+</div>
+&nbsp;
+<div class="nypl-menu-button left">
+  <button aria-expanded="false" class="nypl-menu-button_button">
+  Left menu
+  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+    <title>wedge down</title>
+    <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+  </svg>
+  </button>
+  <div class="hidden nypl-menu-button_menu" role="menu">
+    This is a container with things inside and it is
+    <strong>aligned to the left</strong> of the parent button.
+  </div>
+</div>
+      </div>
+      <pre><code class="scss">
+.nypl-menu-button.right
+.nypl-menu-button.left
+      </code></pre>
+      <pre><code class="html">
+&lt;div class=&quot;nypl-menu-button right&quot;&gt;
+  &lt;button aria-expanded=&quot;false&quot; class=&quot;nypl-menu-button_button&quot;&gt;
+  Right menu
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
+      &lt;title&gt;wedge down&lt;/title&gt;
+      &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;hidden nypl-menu-button_menu&quot; role=&quot;menu&quot;&gt;
+    This is a container with things inside and it is
+    &lt;strong&gt;aligned to the right&lt;/strong&gt; of the parent button.
+  &lt;/div&gt;
+&lt;/div&gt;
+&amp;nbsp;
+&lt;div class=&quot;nypl-menu-button left&quot;&gt;
+  &lt;button aria-expanded=&quot;false&quot; class=&quot;nypl-menu-button_button&quot;&gt;
+  Left menu
+  &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
+    &lt;title&gt;wedge down&lt;/title&gt;
+    &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
+  &lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;hidden nypl-menu-button_menu&quot; role=&quot;menu&quot;&gt;
+    This is a container with things inside and it is
+    &lt;strong&gt;aligned to the left&lt;/strong&gt; of the parent button.
+  &lt;/div&gt;
+&lt;/div&gt;
+
     </code></pre>
 
 

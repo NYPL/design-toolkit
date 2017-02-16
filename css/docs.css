@@ -219,7 +219,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -256,7 +256,7 @@ button:focus {
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
-      padding: 0 0.5em;
+      padding: 0 0.5rem;
       text-decoration: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
@@ -293,7 +293,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
@@ -322,7 +322,7 @@ button:focus {
       transition: all 0.1s ease-in 0s;
       position: absolute;
       right: 0.25rem;
-      top: 0.4em; }
+      top: 0.3rem; }
       .nypl-header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
@@ -355,9 +355,10 @@ button:focus {
         color: #fff; }
 .nypl-header .email-toggle {
   position: relative; }
-  .nypl-header .email-toggle a::after {
+  .nypl-header .email-toggle button,
+  .nypl-header .email-toggle svg {
     transition: all 0.1s; }
-  .nypl-header .email-toggle a.active::after {
+  .nypl-header .email-toggle button.active svg {
     transform: scaleY(-1); }
   .nypl-header .email-toggle .subscribe-button {
     background-color: #776e64;
@@ -412,7 +413,7 @@ button:focus {
   .nypl-header .email-toggle fieldset {
     border: 0;
     color: #080807;
-    margin: 1rem 0 0.5em;
+    margin: 1rem 0 0.5rem;
     padding: 0;
     position: relative; }
   .nypl-header .email-toggle label {
@@ -460,7 +461,7 @@ button:focus {
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
-      padding: 0 0.5em;
+      padding: 0 0.5rem;
       text-decoration: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
@@ -486,7 +487,7 @@ button:focus {
         transition: all 0.1s ease-in 0s;
         position: absolute;
         right: 0.25rem;
-        top: 0.4em; }
+        top: 0.3rem; }
         .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -536,7 +537,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;

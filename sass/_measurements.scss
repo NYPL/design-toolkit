@@ -4,16 +4,16 @@ $basefont: $basefontraw * 1px;
 
 // page measures
 $max-width-raw: 1312;
-$max-width: ($max-width-raw/$basefontraw) * 1rem; // in rems
+$max-width: ($max-width-raw / $basefontraw) * 1rem; // in rems
 
 // breakpoints
 $intermediate-breakpoint: 1120px;
 $mobile-breakpoint: 965px;
 
 // borders
-$focus-width: (3/$basefontraw) * 1rem;
+$focus-width: (3 / $basefontraw) * 1rem;
 $related-links-border-width: 0.25rem;
-$simple-border: (1/$basefontraw) * 1rem;
+$simple-border: (1 / $basefontraw) * 1rem;
 
 // grid measures
 $full-width: 100%;
