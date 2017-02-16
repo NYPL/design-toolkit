@@ -5,11 +5,17 @@ function init() {
     e.preventDefault();
     var self = $(e.target);
     var parent = self.parent();
-    console.log(self, parent, self.closest('.nypl-menu-button'));
-    parent.find(".nypl-menu-button_menu").toggleClass("hidden")
-    var expanded = parent.find(".nypl-menu-button_menu").hasClass("hidden") ? "false" : "true";
-    self.toggleClass("active").attr("aria-expanded", expanded)
-    console.log(expanded);
+    var expanded = !parent.find(".nypl-menu-button_menu").hasClass("hidden");
+    // console.log(self, parent, self.closest('.nypl-menu-button'));
+    $(".nypl-menu-button_menu").addClass("hidden")
+    $(".nypl-menu-button_button").removeClass("active")
+    if (expanded) {
+      parent.find(".nypl-menu-button_menu").addClass("hidden")
+      self.removeClass("active").attr("aria-expanded", false)
+    } else {
+      parent.find(".nypl-menu-button_menu").removeClass("hidden")
+      self.addClass("active").attr("aria-expanded", true)
+    }
   });
 
   $(".select-box").on("change", function(e) {
@@ -61,7 +67,10 @@ function init() {
   })
 
   $("body").on("click touchstart touchend", function(e) {
-    // $(".nypl-menu-button_menu").addClass("hidden")
+    if (!$(e.target).closest('.nypl-menu-button_button').length && !$(e.target).closest(".nypl-menu-button_menu").length) {
+      $(".nypl-menu-button_menu").addClass("hidden")
+      $(".nypl-menu-button_button").removeClass("active")
+    }
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()
     }
