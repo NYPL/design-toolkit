@@ -2522,7 +2522,7 @@ footer {
   margin-bottom: 2rem; }
   .nypl-location-info p {
     margin: 0;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5rem; }
   .nypl-location-info .nypl-room {
     font-weight: bold; }
   .nypl-location-info .nypl-access {
@@ -2599,10 +2599,10 @@ footer {
     border-top: 0;
     color: #776e64;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
     left: 0;
-    padding: 0.3em 1rem;
+    padding: 0.3rem 1rem;
     position: absolute;
     text-transform: uppercase;
     top: 0; }
@@ -2618,10 +2618,10 @@ footer {
     border-top: 0;
     color: #776e64;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
     left: 0;
-    padding: 0.3em 1rem;
+    padding: 0.3rem 1rem;
     position: absolute;
     text-transform: uppercase;
     top: 0; }
