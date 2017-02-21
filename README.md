@@ -3,6 +3,10 @@ Design toolkit (SASS) for the NYPL Digital team
 
 [View documentation](http://nypl.github.io/design-toolkit)
 
+## License
+
+See [LICENSE](LICENSE.md)
+
 ## CHANGE LOG
 
 ### v0.1.1
