@@ -98,6 +98,7 @@ $collapsed-nav-height: 30px;
     @include media($mobile-breakpoint) {
       margin: 0;
       margin-right: 0.5rem;
+      overflow: hidden;
       width: $logo-height;
 
       .wordmark {
@@ -304,7 +305,6 @@ $collapsed-nav-height: 30px;
   }
 
   .login-toggle { // should be renamed
-    font-size: 0.8rem;
     position: absolute;
     right: 0;
     top: 1.5rem;
@@ -440,13 +440,13 @@ $collapsed-nav-height: 30px;
       // top: -3rem;
     }
 
-    .nypl-main-search {
+    .nypl-search_main {
       background-color: $nypl-search-color;
       margin: 0;
       position: relative;
       @include transition(all, $hover-time, ease-out);
 
-      .nypl-search-button {
+      .nypl-search_button {
         @include basic-button($font-size: inherit, $border-width: 0, $background-color: $link-color, $hover-background-color: $nypl-search-color-light, $height: 2rem, $padding-vertical: 0);
         margin-right: $form-padding;
       }
@@ -459,12 +459,12 @@ $collapsed-nav-height: 30px;
         background-color: $nypl-search-color-dark;
       }
 
-      .nypl-search-query-content {
+      .nypl-search_query-content {
         padding: $form-padding;
         position: relative;
       }
 
-      .nypl-search-select {
+      .nypl-search_select {
         background-color: $nypl-search-color-dark;
         font-size: 0.9rem;
         right: 0;
@@ -475,7 +475,7 @@ $collapsed-nav-height: 30px;
         z-index: 1;
       }
 
-      .nypl-search-radio-label {
+      .nypl-search_radio-label {
         @include simple-radiobutton;
         color: $nypl-search-color-light;
         display: inline-block;
@@ -493,18 +493,14 @@ $collapsed-nav-height: 30px;
           box-shadow: inset 0 0 0 3px $focus-color;
         }
 
+        input:focus {
+          box-shadow: 0 0 0 3px $focus-color;
+        }
+
       }
 
       input:focus {
         outline: none;
-      }
-
-      .nypl-search-query-label {
-        color: $nypl-white;
-        height: 2rem;
-        left: 0.5rem;
-        line-height: 2;
-        position: absolute;
       }
 
       .nypl-form-text {
@@ -531,8 +527,8 @@ $collapsed-nav-height: 30px;
 
       @include media($mobile-breakpoint) {
         .nypl-form-text,
-        .nypl-search-button,
-        .nypl-search-radio-label {
+        .nypl-search_button,
+        .nypl-search_radio-label {
           height: 2.5rem;
           line-height: 2.5;
         }
@@ -543,12 +539,12 @@ $collapsed-nav-height: 30px;
           width: 70%;
         }
 
-        .nypl-search-button {
+        .nypl-search_button {
           margin: 0;
           width: 30%;
         }
 
-        .nypl-search-select {
+        .nypl-search_select {
           top: 3.5rem;
         }
       }

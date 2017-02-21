@@ -123,7 +123,7 @@
 }
 
 @mixin login-button($collapsible: false) {
-  @include basic-button($font-size: 0.8rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5rem, $collapsible: $collapsible, $border-width: 0);
+  @include basic-button($font-size: 0.7rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5rem, $collapsible: $collapsible, $border-width: 0);
   display: block;
   font-weight: bold;
   text-transform: uppercase;

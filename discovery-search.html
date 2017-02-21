@@ -55,7 +55,7 @@
     <div class="logo">
       <a href="//nypl.org" class="nypl-logo" title="Go to NYPL.org">
 <!-- nypl svg logo -->
-<svg aria-hidden="true" class="nypl-icon" version="1.1" id="Layer_1"
+<svg class="nypl-icon" version="1.1" id="Layer_1"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 169"
    style="enable-background:new 0 0 300 169;" xml:space="preserve">
 <title>nypl.logo.markType.svg</title>
@@ -184,16 +184,18 @@
     </div>
     <div class="content">
       <div class="login-toggle">
-        <button class="collapsible" aria-expanded="false">Log in
+        <a href="#">Your Account</a>
+        <button class="collapsible" aria-expanded="false">Catalogs
           <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
             <title>wedge down icon</title>
             <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
           </svg>
         </button>
-        <div id="login-links" class="hidden">
-          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Catalog</strong></a>
-          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Log into the <strong>Research catalog</strong></a>
+        <div id="login-links" class="hidden" role="menu">
+          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Go to the <strong>Catalog</strong></a>
+          <a class="inverted" href="https://browse.nypl.org/iii/encore/myaccount">Go to the <strong>Research catalog</strong></a>
         </div>
+        <a class="" href="">Log out</a>
       </div>
       <ul class="nav-buttons horizontal">
         <li><a href="#">Books/Music/DVDs</a></li>
@@ -204,22 +206,22 @@
         <li><a href="#">Give</a></li>
         <li><a href="#">Get help</a></li>
         <li class="nypl-search">
-          <form action="" id="" class="nypl-main-search">
-            <div class="nypl-search-query-content">
-              <input type="submit" class="nypl-search-button" name="Search" value="Search"><input type="text" class="nypl-form-text" id="search-query-text" name="search-query-text" aria-labelledby="search-query-text" value="" placeholder="type keyword(s)">
-              <div class="nypl-search-select hidden">
-                <label class="nypl-search-radio-label selected" for="books-type">
-                  <input type="radio" id="books-type" name="search-type" class="nypl-search-type" value="books-type" checked="checked">Books/Music/DVDs</label>
-                <label class="nypl-search-radio-label" for="nypl-type">
-                  <input type="radio" id="nypl-type" name="search-type" class="nypl-search-type" value="nypl-type">NYPL.org</label>
+          <form action="" id="" class="nypl-search_main">
+            <div class="nypl-search_query-content">
+              <input id="nypl-search_button" type="submit" class="nypl-search_button" name="Search" value="Search"><input type="text" class="nypl-form-text" id="nypl-search_query-text" name="search-query-text" aria-labelledby="nypl-search_query-text" value="" placeholder="type keyword(s)">
+              <div class="nypl-search_select hidden">
+                <label id="nypl-search_books-type-label" class="nypl-search_radio-label selected" for="nypl-search_books-type">
+                  <input id="nypl-search_books-type" aria-labelledby="nypl-search_button nypl-search_books-type-label" type="radio" name="search-type" class="nypl-search_type" value="books-type" checked="checked">Books/Music/DVDs</label>
+                <label id="nypl-search_nypl-type-label" class="nypl-search_radio-label" for="nypl-search_nypl-type">
+                  <input id="nypl-search_nypl-type" aria-labelledby="nypl-search_button nypl-search_nypl-type-label" type="radio" name="search-type" class="nypl-search_type" value="nypl-type">NYPL.org</label>
               </div>
             </div>
           </form>
         </li>
       </ul>
     </div>
-    <a href="#" class="main-menu-toggle menu">Show menu  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
-        <title>menu icon</title>
+    <a href="#" class="main-menu-toggle menu">Show menu  <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+        <title>menu.icon.svg</title>
         <path d="M26.22029,10.40244H5.77971a1.09221,1.09221,0,1,1,0-2.18441H26.22029A1.09221,1.09221,0,1,1,26.22029,10.40244Z"/>
         <path d="M26.22029,16.95568H5.77971a1.09221,1.09221,0,0,1,0-2.18441H26.22029A1.09221,1.09221,0,0,1,26.22029,16.95568Z"/>
         <path d="M26.22029,23.782H5.77971a1.09221,1.09221,0,1,1,0-2.18441H26.22029A1.09221,1.09221,0,1,1,26.22029,23.782Z"/>

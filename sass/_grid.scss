@@ -52,6 +52,7 @@
       padding-left: $general-padding;
     } @else {
       margin: 0;
+      padding: 0 #{$general-padding * 0.5};
     }
   }
 }

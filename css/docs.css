@@ -113,6 +113,7 @@ button:focus {
     .nypl-header .nypl-logo {
       margin: 0;
       margin-right: 0.5rem;
+      overflow: hidden;
       width: 2.81667rem; }
       .nypl-header .nypl-logo .wordmark {
         display: none; } }
@@ -148,7 +149,8 @@ button:focus {
     clear: both; }
   @media (max-width: 965px) {
     .nypl-header .nypl-full-width-wrapper {
-      margin: 0; } }
+      margin: 0;
+      padding: 0 0.5rem; } }
 .nypl-header.collapsed {
   border-bottom: 2px solid #d7d4d0;
   position: relative; }
@@ -446,7 +448,6 @@ button:focus {
   .nypl-header .email-toggle .links {
     margin: 1rem 0 0; }
 .nypl-header .login-toggle {
-  font-size: 0.8rem;
   position: absolute;
   right: 0;
   top: 1.5rem; }
@@ -458,7 +459,7 @@ button:focus {
       border-radius: 0;
       color: #fff;
       cursor: pointer;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-weight: normal;
       height: auto;
       padding: 0 0.5rem;
@@ -534,7 +535,7 @@ button:focus {
     border-radius: 0;
     color: #fff;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: normal;
     height: auto;
     padding: 0 0.5rem;
@@ -633,7 +634,7 @@ button:focus {
   .nypl-header .nav-buttons li:hover,
   .nypl-header .nav-buttons li.active {
     box-shadow: inset 0 -4px 0 #d0343a; }
-.nypl-header li.nypl-search .nypl-main-search {
+.nypl-header li.nypl-search .nypl-search_main {
   background-color: #d7d4d0;
   margin: 0;
   position: relative;
@@ -641,7 +642,7 @@ button:focus {
   -moz-transition: all 0.1s ease-out 0s;
   -o-transition: all 0.1s ease-out 0s;
   transition: all 0.1s ease-out 0s; }
-  .nypl-header li.nypl-search .nypl-main-search .nypl-search-button {
+  .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
     background-color: #1b7fa7;
     border: 0 solid #776e64;
     border-radius: 0;
@@ -658,29 +659,29 @@ button:focus {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
     margin-right: 0.5rem; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.active {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.active {
       border-color: #776e64;
       background-color: #efedeb;
       color: #776e64; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button:focus {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.disabled, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled="disabled"], .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled], .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled=true] {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.disabled, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button[disabled="disabled"], .nypl-header li.nypl-search .nypl-search_main .nypl-search_button[disabled], .nypl-header li.nypl-search .nypl-search_main .nypl-search_button[disabled=true] {
       cursor: default;
       background-color: #d7d4d0; }
-      .nypl-header li.nypl-search .nypl-main-search .nypl-search-button.disabled:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled="disabled"]:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled]:hover, .nypl-header li.nypl-search .nypl-main-search .nypl-search-button[disabled=true]:hover {
+      .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.disabled:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button[disabled="disabled"]:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button[disabled]:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button[disabled=true]:hover {
         background-color: #d7d4d0;
         color: #fff; }
-  .nypl-header li.nypl-search .nypl-main-search.display {
+  .nypl-header li.nypl-search .nypl-search_main.display {
     display: block; }
-  .nypl-header li.nypl-search .nypl-main-search.active {
+  .nypl-header li.nypl-search .nypl-search_main.active {
     background-color: #776e64; }
-  .nypl-header li.nypl-search .nypl-main-search .nypl-search-query-content {
+  .nypl-header li.nypl-search .nypl-search_main .nypl-search_query-content {
     padding: 0.5rem;
     position: relative; }
-  .nypl-header li.nypl-search .nypl-main-search .nypl-search-select {
+  .nypl-header li.nypl-search .nypl-search_main .nypl-search_select {
     background-color: #776e64;
     font-size: 0.9rem;
     right: 0;
@@ -689,7 +690,7 @@ button:focus {
     top: 3rem;
     white-space: nowrap;
     z-index: 1; }
-  .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label {
+  .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label {
     color: #efedeb;
     display: inline-block;
     height: 2rem;
@@ -699,32 +700,28 @@ button:focus {
     -moz-transition: all 0.1s ease-out 0s;
     -o-transition: all 0.1s ease-out 0s;
     transition: all 0.1s ease-out 0s; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label span.nypl-label {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label span.nypl-label {
       display: block;
       font-weight: bold;
       margin-left: 0.5rem; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label label {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label label {
       background-color: #efedeb;
       font-weight: normal;
       padding: 0.1875rem 0; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label input[type=radio],
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label input[type=checkbox] {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
       margin-right: 0.25rem; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label.selected {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.selected {
       background-color: #efedeb;
       color: #080807; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label.focus {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.focus {
       box-shadow: inset 0 0 0 3px #ffb81d; }
-  .nypl-header li.nypl-search .nypl-main-search input:focus {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input:focus {
+      box-shadow: 0 0 0 3px #ffb81d; }
+  .nypl-header li.nypl-search .nypl-search_main input:focus {
     outline: none; }
-  .nypl-header li.nypl-search .nypl-main-search .nypl-search-query-label {
-    color: #fff;
-    height: 2rem;
-    left: 0.5rem;
-    line-height: 2;
-    position: absolute; }
-  .nypl-header li.nypl-search .nypl-main-search .nypl-form-text {
+  .nypl-header li.nypl-search .nypl-search_main .nypl-form-text {
     background-color: #efedeb;
     border: 0;
     padding: 0;
@@ -734,27 +731,27 @@ button:focus {
     text-indent: 0.5rem;
     transition: all 0.1s ease-out;
     width: 10rem; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text.active {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-form-text.active {
       width: 16rem; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text:focus {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-form-text:focus {
       background-color: #fff;
       box-shadow: inset 0 0 0 0.25rem #ffb81d;
       color: #776e64;
       outline: none; }
   @media (max-width: 965px) {
-    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text,
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button,
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-radio-label {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-form-text,
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button,
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label {
       height: 2.5rem;
       line-height: 2.5; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text,
-    .nypl-header li.nypl-search .nypl-main-search .nypl-form-text.active {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-form-text,
+    .nypl-header li.nypl-search .nypl-search_main .nypl-form-text.active {
       margin: 0;
       width: 70%; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-button {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
       margin: 0;
       width: 30%; }
-    .nypl-header li.nypl-search .nypl-main-search .nypl-search-select {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_select {
       top: 3.5rem; } }
 
 @font-face {

@@ -35,28 +35,28 @@ function init() {
     $(e.target).parent().after(html);
   })
 
-  $(".nypl-main-search input[type=radio]").click(function() {
+  $(".nypl-search_main input[type=radio]").click(function() {
     updateSearchRadio($(this).val())
   })
 
-  $("#search-query-text").focus(function() {
+  $("#nypl-search_query-text").focus(function() {
     showSearch()
   })
 
-  $(".nypl-main-search input[type=radio]").focus(function() {
+  $(".nypl-search_main input[type=radio]").focus(function() {
     focusRadio($(this).val())
   })
 
-  $(".nypl-main-search input[type=radio]").blur(function() {
+  $(".nypl-search_main input[type=radio]").blur(function() {
     blurRadio($(this).val())
   })
 
-  $("#search-query-text, .nypl-search-type, .nypl-search-button, .nypl-search-radio-label").on("focus click",  function() {
+  $("#nypl-search_query-text, .nypl-search_type, .nypl-search_button, .nypl-search_radio-label").on("focus click",  function() {
     if (hideTimeout) clearTimeout(hideTimeout)
     showSearch()
   })
 
-  $("#search-query-text, .nypl-search-type, .nypl-search-button, .nypl-search-radio-label").blur(function() {
+  $("#nypl-search_query-text, .nypl-search_type, .nypl-search_button, .nypl-search_radio-label").blur(function() {
     hideTimeout = setTimeout(hideSearch, 100)
   })
 
@@ -120,61 +120,64 @@ function init() {
 }
 
 function toggleSort() {
-  $(".nypl-results-sorter button").toggleClass("active").attr("aria-expanded", "true")
+  var self = $(".nypl-results-sorter button")
+  self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   $(".nypl-results-sorter ul").toggleClass("hidden")
 }
 
 function hideSort() {
-  $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", "false")
+  $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", false)
   $(".nypl-results-sorter ul").addClass("hidden")
 }
 
 function toggleLogin() {
-  $(".login-toggle button.collapsible").toggleClass("active").attr("aria-expanded", "true")
+  var self = $(".login-toggle button.collapsible")
+  self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   $(".login-toggle div").toggleClass("hidden")
 }
 
 function hideLogin() {
-  $(".login-toggle button.collapsible").removeClass("active").attr("aria-expanded", "false")
+  $(".login-toggle button.collapsible").removeClass("active").attr("aria-expanded", false)
   $(".login-toggle div").addClass("hidden")
 }
 
 function toggleEmail() {
-  $(".email-toggle button").toggleClass("active").attr("aria-expanded", "true")
+  var self = $(".email-toggle button")
+  self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   $(".email-toggle form").toggleClass("hidden")
 }
 
 function hideEmail() {
-  $(".email-toggle button").removeClass("active").attr("aria-expanded", "false")
+  $(".email-toggle button").removeClass("active").attr("aria-expanded", false)
   $(".email-toggle form").addClass("hidden")
 }
 
 function updateSearchRadio(type) {
-  $(".nypl-search-radio-label").removeClass("selected")
-  $(".nypl-search-radio-label[for="+type+"]").addClass("selected")
+  $(".nypl-search_radio-label").removeClass("selected")
+  $(".nypl-search_radio-label[for=nypl-search_"+type+"]").addClass("selected")
 }
 
 function hideSearch() {
-  $("#search-query-text, .nypl-main-search").removeClass("active")
-  $(".nypl-search-select").addClass("hidden")
+  $("#nypl-search_query-text, .nypl-search_main").removeClass("active")
+  $(".nypl-search_select").addClass("hidden")
 }
 
 function focusRadio(type) {
   blurRadio(type)
-  $(".nypl-search-radio-label[for="+type+"]").addClass("focus")
+  $(".nypl-search_radio-label[for=nypl-search_"+type+"]").addClass("focus")
 }
 
 function blurRadio(type) {
-  $(".nypl-search-radio-label").removeClass("focus")
+  $(".nypl-search_radio-label").removeClass("focus")
 }
 
 function showSearch() {
-  $("#search-query-text, .nypl-main-search").addClass("active")
-  $(".nypl-search-select").removeClass("hidden")
+  $("#nypl-search_query-text, .nypl-search_main").addClass("active")
+  $(".nypl-search_select").removeClass("hidden")
   // $("ul.nav-buttons li.nypl-search").toggleClass("hidden")
   // $("ul.nav-buttons li.nypl-search a").toggleClass("hidden")
-  // $(".nypl-main-search").toggleClass("display")
-  // $(".nypl-main-search .nypl-search-query-text").focus()
+  // $(".nypl-search_main").toggleClass("display")
+  // $(".nypl-search_main .nypl-nypl-search_query-text").focus()
 }
 
 $(function () {
