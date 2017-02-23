@@ -1,6 +1,23 @@
 var hideTimeout
 
 function init() {
+  $(".nypl-navigation-button_button").on("click touchend", function(e) {
+    e.preventDefault();
+    var self = $(e.target);
+    var parent = self.parent();
+    var expanded = self.attr("aria-expanded") == "true";
+    // hide all in page
+    $(".nypl-navigation-button_list").addClass("hidden")
+    $(".nypl-navigation-button_button").removeClass("active").attr("aria-expanded", "false")
+    // do for this one
+    if (!expanded) {
+      parent.find(".nypl-navigation-button_list").removeClass("hidden")
+      self.toggleClass("active").attr("aria-expanded", "true")
+    }
+    // keyboard interaction below
+    // …
+  });
+
   $(".nypl-menu-button_button").on("click touchend", function(e) {
     e.preventDefault();
     var self = $(e.target);
@@ -67,7 +84,11 @@ function init() {
   $("body").on("click touchstart touchend", function(e) {
     if (!$(e.target).closest('.nypl-menu-button_button').length && !$(e.target).closest(".nypl-menu-button_menu").length) {
       $(".nypl-menu-button_menu").addClass("hidden")
-      $(".nypl-menu-button_button").removeClass("active")
+      $(".nypl-menu-button_button").removeClass("active").attr("aria-expanded", "false")
+    }
+    if (!$(e.target).closest('.nypl-navigation-button_button').length && !$(e.target).closest(".nypl-navigation-button_list").length) {
+      $(".nypl-navigation-button_list").addClass("hidden")
+      $(".nypl-navigation-button_button").removeClass("active").attr("aria-expanded", "false")
     }
     if (!$(e.target).closest('.email-toggle').length && !$(e.target).parents("#email-updates").length) {
       hideEmail()

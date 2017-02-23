@@ -45,6 +45,9 @@
   }
 }
 
+.nypl-navigation-button {
+  @include navigation-button;
+}
 
 .nypl-label {
   @include label;

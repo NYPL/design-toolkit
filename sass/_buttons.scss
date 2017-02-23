@@ -152,3 +152,34 @@
     }
   }
 }
+
+@mixin navigation-button($text-color: $button-text-color, $background-color: $nypl-search-color-dark) {
+  display: inline-block;
+  position: relative;
+
+  .nypl-navigation-button_button {
+    @include basic-button($collapsible: true);
+  }
+
+  .nypl-navigation-button_list {
+    background-color: $background-color;
+    color: $text-color;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $text-color;
+      display: block;
+      min-width: 10rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
