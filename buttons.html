@@ -124,10 +124,10 @@
 <div class="nypl-menu-button_left">
   <button aria-haspopup="true" aria-expanded="false" class="nypl-menu-button_button">
   Left menu
-  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-    <title>wedge down icon</title>
-    <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-  </svg>
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
   </button>
   <div class="hidden nypl-menu-button_menu" role="menu">
     This is a container with things inside and it is
@@ -157,10 +157,10 @@
 &lt;div class=&quot;nypl-menu-button_left&quot;&gt;
   &lt;button aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; class=&quot;nypl-menu-button_button&quot;&gt;
   Left menu
-  &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
-    &lt;title&gt;wedge down icon&lt;/title&gt;
-    &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
-  &lt;/svg&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
+      &lt;title&gt;wedge down icon&lt;/title&gt;
+      &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
+    &lt;/svg&gt;
   &lt;/button&gt;
   &lt;div class=&quot;hidden nypl-menu-button_menu&quot; role=&quot;menu&quot;&gt;
     This is a container with things inside and it is
@@ -168,6 +168,22 @@
   &lt;/div&gt;
 &lt;/div&gt;
     </code></pre>
+      <pre><code class="js">
+$(".nypl-menu-button_button").on("click touchend", function(e) {
+  e.preventDefault();
+  var self = $(e.target);
+  var parent = self.parent();
+  var expanded = self.attr("aria-expanded") == "true";
+  // hide all in page
+  $(".nypl-menu-button_menu").addClass("hidden")
+  $(".nypl-menu-button_button").removeClass("active").attr("aria-expanded", "false")
+  // do for this one
+  if (!expanded) {
+    parent.find(".nypl-menu-button_menu").removeClass("hidden")
+    self.toggleClass("active").attr("aria-expanded", "true")
+  }
+});
+      </code></pre>
 
 
     </div>

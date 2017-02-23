@@ -1,20 +1,18 @@
 var hideTimeout
 
 function init() {
-  $(".nypl-menu-button_button").click(function(e) {
+  $(".nypl-menu-button_button").on("click touchend", function(e) {
     e.preventDefault();
     var self = $(e.target);
     var parent = self.parent();
-    var expanded = !parent.find(".nypl-menu-button_menu").hasClass("hidden");
-    // console.log(self, parent, self.closest('.nypl-menu-button'));
+    var expanded = self.attr("aria-expanded") == "true";
+    // hide all in page
     $(".nypl-menu-button_menu").addClass("hidden")
-    $(".nypl-menu-button_button").removeClass("active")
-    if (expanded) {
-      parent.find(".nypl-menu-button_menu").addClass("hidden")
-      self.removeClass("active").attr("aria-expanded", false)
-    } else {
+    $(".nypl-menu-button_button").removeClass("active").attr("aria-expanded", "false")
+    // do for this one
+    if (!expanded) {
       parent.find(".nypl-menu-button_menu").removeClass("hidden")
-      self.addClass("active").attr("aria-expanded", true)
+      self.toggleClass("active").attr("aria-expanded", "true")
     }
   });
 
