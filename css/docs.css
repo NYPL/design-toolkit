@@ -343,7 +343,7 @@ button:focus {
           background-color: inherit;
           fill: #fff; }
     .nypl-header .service-buttons button.collapsible.active .nypl-icon {
-      transform: scaleY(-1); }
+      transform: rotate(180deg); }
     .nypl-header .service-buttons button.collapsible:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -361,7 +361,7 @@ button:focus {
   .nypl-header .email-toggle svg {
     transition: all 0.1s; }
   .nypl-header .email-toggle button.active svg {
-    transform: scaleY(-1); }
+    transform: rotate(180deg); }
   .nypl-header .email-toggle .subscribe-button {
     background-color: #776e64;
     border: 0.0625rem solid #fff;
@@ -507,7 +507,7 @@ button:focus {
             background-color: inherit;
             fill: #fff; }
       .nypl-header .login-toggle button.collapsible.active .nypl-icon {
-        transform: scaleY(-1); }
+        transform: rotate(180deg); }
       .nypl-header .login-toggle button.collapsible:focus {
         -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;

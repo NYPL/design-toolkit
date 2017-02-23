@@ -76,7 +76,7 @@
   &.active {
     @if $collapsible == true {
       .nypl-icon {
-        transform: scaleY(-1);
+        transform: rotate(180deg);
       }
     }
   }

@@ -249,7 +249,7 @@ $collapsed-nav-height: 30px;
     }
 
     button.active svg {
-      transform: scaleY(-1);
+      transform: rotate(180deg);
     }
 
     .subscribe-button {
