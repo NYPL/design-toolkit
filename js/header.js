@@ -18,7 +18,6 @@ function init() {
       // simple and icomplete example keyboard interaction
       parent.find("li:first-child a").focus()
       parent.on("keydown", function (ee) {
-        console.log(ee.keyCode, this);
         switch (ee.keyCode) {
           case 27: // ESC
             parent.off("keydown")
