@@ -3,8 +3,10 @@ var hideTimeout
 function init() {
   $(".nypl-navigation-button_button").on("click touchend", function(e) {
     e.preventDefault();
+    var selected = 0;
     var self = $(e.target);
     var parent = self.parent();
+    var item_count = parent.find("li").length;
     var expanded = self.attr("aria-expanded") == "true";
     // hide all in page
     $(".nypl-navigation-button_list").addClass("hidden")
@@ -13,9 +15,38 @@ function init() {
     if (!expanded) {
       parent.find(".nypl-navigation-button_list").removeClass("hidden")
       self.toggleClass("active").attr("aria-expanded", "true")
+      // simple and icomplete example keyboard interaction
+      parent.find("li:first-child a").focus()
+      parent.on("keydown", function (ee) {
+        console.log(ee.keyCode, this);
+        switch (ee.keyCode) {
+          case 27: // ESC
+            parent.off("keydown")
+            parent.find(".nypl-navigation-button_list").addClass("hidden")
+            self.removeClass("active").attr("aria-expanded", "false").focus()
+            break
+          case 32: // SPACE
+            break
+          case 38: // UP
+            ee.preventDefault();
+            if (selected == 0) {
+              selected = item_count - 1;
+            } else {
+              selected--;
+            }
+            break
+          case 40: // DOWN
+            ee.preventDefault();
+            if (selected >= item_count - 1) {
+              selected = 0;
+            } else {
+              selected++;
+            }
+            break
+        }
+        parent.find("li:nth-child("+(selected+1)+") a").focus()
+      })
     }
-    // keyboard interaction below
-    // …
   });
 
   $(".nypl-menu-button_button").on("click touchend", function(e) {
