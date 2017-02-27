@@ -2062,6 +2062,7 @@ footer {
     list-style: none;
     padding: 0;
     position: absolute;
+    top: 0;
     z-index: 1; }
     .nypl-navigation-button .nypl-navigation-button_list li {
       margin: 0;
