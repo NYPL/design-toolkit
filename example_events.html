@@ -261,37 +261,101 @@
               <label for="borough-staten">
                 <input id="borough-staten" type="checkbox" name="borough" value="staten">Staten Island</label>
             </fieldset>
-            <fieldset class="nypl-select-fieldset">
-              <label for="location">Library branch</label>
-              <select id="location" class="form-select" name="location">
-                <option selected="selected" value="">All</option>
-                <option value="4">67th Street</option>
-                <option value="12">Bronx Library Center</option>
-                <option value="15">Chatham Square</option>
-                <option value="18">Columbus</option>
-                <option value="31">Hamilton Grange</option>
-                <option value="32">Harlem</option>
-                <option value="39">Jefferson Market</option>
-                <option value="40">Jerome Park</option>
-                <option value="42">Kips Bay</option>
-                <option value="45">Mid-Manhattan Library</option>
-                <option value="632">Morris Park</option>
-                <option value="49">Mosholu</option>
-                <option value="53">New Amsterdam</option>
-                <option value="57">Parkchester</option>
-                <option value="58">Pelham Bay</option>
-                <option value="61">Riverdale</option>
-                <option value="62">Riverside</option>
-                <option value="63">Roosevelt Island</option>
-                <option value="65">SIBL</option>
-                <option value="36">Schwarzman Building</option>
-                <option value="66">Sedgwick</option>
-                <option value="67">Seward Park</option>
-                <option value="72">St. George Library Center</option>
-                <option value="76">Tompkins Square</option>
-                <option value="81">Wakefield</option>
-              </select>
-            </fieldset>
+
+<fieldset class="nypl-searchable-fieldset">
+  <div class="nypl-facet-search">
+    <label for="branch-text">Library Branch</label>
+    <input id="branch-text" type="text" placeholder="Enter name">
+  </div>
+  <div class="nypl-facet-list">
+    
+    <label for="branch-12">
+      <span>
+        <input id="branch-12" type="checkbox" name="branch" value="12">
+        Bronx Library Center
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    
+    
+    
+    <label for="branch-32">
+      <span>
+        <input id="branch-32" type="checkbox" name="branch" value="32">
+        Harlem
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    <label for="branch-39">
+      <span>
+        <input id="branch-39" type="checkbox" name="branch" value="39">
+        Jefferson Market
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    
+    <label for="branch-42">
+      <span>
+        <input id="branch-42" type="checkbox" name="branch" value="42">
+        Kips Bay
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    <label for="branch-45">
+      <span>
+        <input id="branch-45" type="checkbox" name="branch" value="45">
+        Mid-Manhattan Library
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    
+    
+    
+    <label for="branch-57">
+      <span>
+        <input id="branch-57" type="checkbox" name="branch" value="57">
+        Parkchester
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    <label for="branch-58">
+      <span>
+        <input id="branch-58" type="checkbox" name="branch" value="58">
+        Pelham Bay
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    
+    
+    <label for="branch-63">
+      <span>
+        <input id="branch-63" type="checkbox" name="branch" value="63">
+        Roosevelt Island
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    <label for="branch-65">
+      <span>
+        <input id="branch-65" type="checkbox" name="branch" value="65">
+        SIBL
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    <label for="branch-36">
+      <span>
+        <input id="branch-36" type="checkbox" name="branch" value="36">
+        Schwarzman Building
+      </span>
+      <!-- <span class="nypl-facet-count">97</span> -->
+    </label>
+    
+    
+    
+    
+    
+    <a href="#more" class="nypl-more-facets">Show 10 more branches</a>
+  </div>
+</fieldset>
 
           <fieldset class="nypl-text-fieldset">
             <label for="date-from">After date</label>
