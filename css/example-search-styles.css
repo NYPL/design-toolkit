@@ -2073,6 +2073,10 @@ footer {
       min-width: 10rem;
       padding: 0.5rem 1rem; }
 
+.nypl-a11y-note {
+  border-left: 1rem solid #fee24a;
+  padding-left: 1rem; }
+
 .nypl-label {
   display: block;
   font-weight: bold;

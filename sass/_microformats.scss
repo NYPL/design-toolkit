@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+@mixin a11y-note {
+  border-left: 1rem solid $alert-color;
+  padding-left: 1rem;
+}
+
 @mixin location-info {
   border-left: 1rem solid $nypl-light-gray;
   padding-left: 1rem;

@@ -49,6 +49,10 @@
   @include navigation-button;
 }
 
+.nypl-a11y-note {
+  @include a11y-note;
+}
+
 .nypl-label {
   @include label;
 }

@@ -191,19 +191,20 @@
 
     <p>For multiple browser-compatibility reasons we avoid the <code>legend</code> tag and use a <code>span</code> tag of class <code>nypl-label</code>.</p>
 
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> For proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title <code>span</code> tag and its corresponding <code>label</code> tag.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <fieldset class="nypl-radiobutton-fieldset">
-  <span class="nypl-label">Accessible from</span>
-  <label for="available-every">
-    <input id="available-every" type="radio" name="available" value="any">Anywhere
+  <span id="radiobutton-group1" class="nypl-label">Accessible from</span>
+  <label id="radiobutton-group1_every" for="available-every">
+    <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
   </label>
-  <label for="available-home">
-    <input id="available-home" type="radio" name="available" value="home">Home with a library card
+  <label id="radiobutton-group1_home" for="available-home">
+    <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
   </label>
-  <label for="available-library">
-    <input id="available-library" type="radio" name="available" value="library">A library branch
+  <label id="radiobutton-group1_library" for="available-library">
+    <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
   </label>
 </fieldset>
     </div>
@@ -215,15 +216,15 @@
 
     <pre><code class="html">
 &lt;fieldset class=&quot;nypl-radiobutton-fieldset&quot;&gt;
-  &lt;span class=&quot;nypl-label&quot;&gt;Accessible from&lt;/span&gt;
-  &lt;label for=&quot;available-every&quot;&gt;
-    &lt;input id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
+  &lt;span id=&quot;radiobutton-group1&quot; class=&quot;nypl-label&quot;&gt;Accessible from&lt;/span&gt;
+  &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
+    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
   &lt;/label&gt;
-  &lt;label for=&quot;available-home&quot;&gt;
-    &lt;input id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
+  &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
+    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
   &lt;/label&gt;
-  &lt;label for=&quot;available-library&quot;&gt;
-    &lt;input id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
+  &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
+    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
   &lt;/label&gt;
 &lt;/fieldset&gt;
     </code></pre>
