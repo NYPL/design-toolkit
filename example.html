@@ -205,7 +205,7 @@
         <li class="nypl-search">
           <form action="" id="" class="nypl-search_main">
             <div class="nypl-search_query-content">
-              <input id="nypl-search_button" type="submit" class="nypl-search_button" name="Search" value="Search"><input type="text" class="nypl-form-text" id="nypl-search_query-text" name="search-query-text" aria-labelledby="nypl-search_query-text" value="" placeholder="type keyword(s)">
+              <input id="nypl-search_button" type="submit" class="nypl-search_button" name="Search" value="Search"><input type="text" class="nypl-form-text" id="nypl-search_query-text" name="search-query-text" aria-labelledby="nypl-search_query-text" value="" placeholder="type keywords">
               <div class="nypl-search_select hidden">
                 <label id="nypl-search_books-type-label" class="nypl-search_radio-label selected" for="nypl-search_books-type">
                   <input id="nypl-search_books-type" aria-labelledby="nypl-search_button nypl-search_books-type-label" type="radio" name="search-type" class="nypl-search_type" value="books-type" checked="checked">Books/Music/DVDs</label>
@@ -247,7 +247,7 @@
               <input id="keyword-text" type="text" placeholder="Type keywords">
             </fieldset>
             <fieldset class="nypl-radiobutton-fieldset">
-              <span><strong>Accessible from</strong></span>
+              <span class="nypl-label">Accessible from</span>
               <label for="available-every">
                 <input id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere</label>
               <label for="available-home">
@@ -255,27 +255,25 @@
               <label for="available-library">
                 <input id="available-library" type="radio" name="available" value="library">A library branch</label>
             </fieldset>
-            <div class="location hidden">
-              <fieldset class="nypl-select-fieldset">
-                <label for="location">Library branch</label>
-                <select id="location" class="form-select" name="location">
-                  <option value="0">All</option>
-                  <option value="36">Stephen A. Schwarzman Building</option>
-                  <option value="55">New York Public Library for the Performing Arts</option>
-                  <option value="64">Schomburg Center for Research in Black Culture</option>
-                  <option value="65">Science, Industry, and Business Library</option>
-                  <option value="978">All Branch Libraries</option>
-                  <option value="12+978">Bronx Library Center</option>
-                  <option value="19+978" selected="selected">Countee Cullen Library</option>
-                  <option value="28+978">Grand Concourse Library</option>
-                  <option value="45+978">Mid-Manhattan Library</option>
-                  <option value="57+978">Parkchester Library</option>
-                  <option value="67+978">Seward Park Library</option>
-                  <option value="72+978">St. George Library Center</option>
-                  <option value="977">Outside the Library</option>
-                </select>
-              </fieldset>
-            </div>
+            <fieldset class="nypl-select-fieldset location hidden">
+              <label for="location">Library branch</label>
+              <select id="location" class="form-select" name="location">
+                <option value="0">All</option>
+                <option value="36">Stephen A. Schwarzman Building</option>
+                <option value="55">New York Public Library for the Performing Arts</option>
+                <option value="64">Schomburg Center for Research in Black Culture</option>
+                <option value="65">Science, Industry, and Business Library</option>
+                <option value="978">All Branch Libraries</option>
+                <option value="12+978">Bronx Library Center</option>
+                <option value="19+978" selected="selected">Countee Cullen Library</option>
+                <option value="28+978">Grand Concourse Library</option>
+                <option value="45+978">Mid-Manhattan Library</option>
+                <option value="57+978">Parkchester Library</option>
+                <option value="67+978">Seward Park Library</option>
+                <option value="72+978">St. George Library Center</option>
+                <option value="977">Outside the Library</option>
+              </select>
+            </fieldset>
             <fieldset class="nypl-select-fieldset">
               <label for="subjects">Subjects</label>
               <select id="subjects" class="form-select" name="subjects">
