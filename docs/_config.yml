@@ -1,0 +1,16 @@
+baseurl: ''
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "sections"
+    values:
+      layout: default
+
+collections:
+  sections:
+    output: true
+
+exclude:
+  - README.md
