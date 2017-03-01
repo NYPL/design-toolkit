@@ -11,3 +11,5 @@
 
 #ignore .map files too...
 *.map
+
+_site

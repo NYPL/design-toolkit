@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NYPL Design toolkit</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href={{ "/css/example-styles.css" | relative_url }} media="screen" rel="stylesheet" type="text/css">
+  <link href={{ "/css/docs.css" | relative_url }} media="screen" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+
+<main class="main-page">
+
+
+  <div class="nypl-page-header">
+    <div class="nypl-full-width-wrapper">
+      <ol class="nypl-breadcrumbs">
+        <li>Toolkit Docs Home</li>
+      </ol>
+      <h2>NYPL Design Toolkit</h2>
+    </div>
+  </div>
+
+  <div class="nypl-full-width-wrapper">
+
+    <div class="nypl-column-one-quarter">
+      <a name="mainContent"></a>
+      <p class="secondary-title">NYPL Design Toolkit</p>
+{% include section-nav.html %}
+{% include examples-nav.html %}
+    </div>
+
+    <div id="toc" class="nypl-column-three-quarters">
+
+{{ content }}
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

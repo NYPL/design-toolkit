@@ -1,0 +1,13 @@
+baseurl: ''
+
+collections:
+  sections:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: sections
+    values:
+      layout: default

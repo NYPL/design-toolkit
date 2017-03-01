@@ -10,8 +10,14 @@
   background-color: $page-color-light;
   margin-bottom: 1rem;
 
-  h1 {
+  h1,
+  h2 {
     margin: 0;
+  }
+
+  h2 { // when it's a secondary title (real title is inside content below)
+    font-size: 2rem;
+    line-height: 1;
   }
 }
 

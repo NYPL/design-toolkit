@@ -1,0 +1,222 @@
+---
+title: Buttons and menus
+description: Buttons and menus.
+---
+
+<h3 id="rectangularButton">Rectangular Button</h3>
+<p>A generic button with an inverted hover state to be used for standard actions.</p>
+  <div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+<button class="nypl-basic-button">Log in</button>
+  </div>
+  <pre><code class="scss">
+.nypl-basic-button
+  </code></pre>
+  <pre><code class="html">
+&lt;button class=&quot;nypl-basic-button&quot;&gt;Log in&lt;/button&gt;
+</code></pre>
+
+
+<h3 id="requestButton">Rounded Button</h3>
+<p>A blue-colored button used for request actions.</p>
+  <div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+<button class="nypl-request-button">Request a Button</button>
+  </div>
+  <pre><code class="scss">
+.nypl-request-button
+  </code></pre>
+  <pre><code class="html">
+&lt;button class=&quot;nypl-request-button&quot;&gt;Request a Button&lt;/button&gt;
+</code></pre>
+
+
+<h3 id="menuButton">Generic Menu Buttons</h3>
+<p>Generic menu buttons are used for situations where it is desirable to disclose certain information to the user without requiring a page load (for example a newsletter subscription form). The disclosed information should not be excessive (be reasonable). The elements themselves are:</p>
+<ul>
+  <li>The main container, with class of either <code>nypl-menu-button_left</code> or <code>nypl-menu-button_right</code> with</li>
+  <li>a nested <code>button</code> of class <code>nypl-menu-button_button</code>, referencing the controlled menu ID via <code>aria-controls</code>, and default <code>aria-expanded</code> being false,</li>
+  <li>a nested container of class <code>nypl-menu-button_menu</code> which has the contents of the menu itself and with the corresponding controlled ID, also hidden by default and a “menu” <code>role</code>.</li>
+</ul>
+<p>The button contains an <code>nypl-icon</code> displaying the “down wedge” (<svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>) to indicate that the button in question is a collapsible menu. JavaScript must be used to show/hide the menus; the example uses jQuery.</p>
+  <div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+<div class="nypl-menu-button_right">
+<button aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="nypl-menu-button_menu1"
+      class="nypl-menu-button_button">
+Right menu
+<svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
+</button>
+<div id="nypl-menu-button_menu1"
+   class="hidden nypl-menu-button_menu"
+   role="menu">
+This is a container with things inside and it is
+<strong>aligned to the right</strong> of the button.
+</div>
+</div>
+
+<div class="nypl-menu-button_left">
+<button aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="nypl-menu-button_menu2"
+      class="nypl-menu-button_button">
+Left menu
+<svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
+</button>
+<div id="nypl-menu-button_menu2"
+   class="hidden nypl-menu-button_menu"
+   role="menu">
+This is a container with things inside and it is
+<strong>aligned to the left</strong> of the button.
+</div>
+</div>
+  </div>
+  <pre><code class="scss">
+.nypl-menu-button_right
+.nypl-menu-button_left
+  </code></pre>
+  <pre><code class="html">
+&lt;div class=&quot;nypl-menu-button_right&quot;&gt;
+&lt;button aria-haspopup=&quot;true&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;nypl-menu-button_menu1&quot;
+      class=&quot;nypl-menu-button_button&quot;&gt;
+Right menu
+&lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;&lt;title&gt;wedge down icon&lt;/title&gt;&lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;&lt;/svg&gt;
+&lt;/button&gt;
+&lt;div id=&quot;nypl-menu-button_menu1&quot;
+   class=&quot;hidden nypl-menu-button_menu&quot;
+   role=&quot;menu&quot;&gt;
+This is a container with things inside and it is
+&lt;strong&gt;aligned to the right&lt;/strong&gt; of the button.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nypl-menu-button_left&quot;&gt;
+&lt;button aria-haspopup=&quot;true&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;nypl-menu-button_menu2&quot;
+      class=&quot;nypl-menu-button_button&quot;&gt;
+Left menu
+&lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;&lt;title&gt;wedge down icon&lt;/title&gt;&lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;&lt;/svg&gt;
+&lt;/button&gt;
+&lt;div id=&quot;nypl-menu-button_menu2&quot;
+   class=&quot;hidden nypl-menu-button_menu&quot;
+   role=&quot;menu&quot;&gt;
+This is a container with things inside and it is
+&lt;strong&gt;aligned to the left&lt;/strong&gt; of the button.
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  <pre><code class="js">
+$(".nypl-menu-button_button").on("click touchend", function(e) {
+e.preventDefault();
+var self = $(e.target);
+var parent = self.parent();
+var expanded = self.attr("aria-expanded") == "true";
+// hide all in page
+$(".nypl-menu-button_menu").addClass("hidden")
+$(".nypl-menu-button_button").removeClass("active").attr("aria-expanded", "false")
+// do for this one
+if (!expanded) {
+parent.find(".nypl-menu-button_menu").removeClass("hidden")
+self.toggleClass("active").attr("aria-expanded", "true")
+}
+});
+  </code></pre>
+
+<h3 id="navButton">Navigation Menu Buttons</h3>
+<p>Navigation menu buttons are a variant of the <a href="#menuButton">Generic Menu Button</a> that display a list of link targets for a user to select from.</p>
+<p>The main challenge with Navigation Menu Buttons is the JavaScript involved to make them accessible via keyboard shortcuts. The Navigation Menu Button must conform to the same keyboard shortcuts that control the <code>select</code> element.</p>
+  <div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+<div class="nypl-navigation-button">
+<button class="nypl-navigation-button_button"
+      aria-expanded="false"
+      aria-controls="nypl-navigation-button_list1"
+      id="nypl-navigation-button_button">
+Search Quick Links
+<svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
+</button>
+<ul id="nypl-navigation-button_list1"
+  class="nypl-navigation-button_list hidden"
+  role="menu"
+  aria-labelledby="nypl-navigation-button_button">
+<li role="none"><a href="//duckduckgo.com" role="menuitem" tabindex="-1">Duck Duck Go</a></li>
+<li role="none"><a href="//google.com" role="menuitem" tabindex="-1">Google</a></li>
+<li role="none"><a href="//bing.com" role="menuitem" tabindex="-1">Bing</a></li>
+</ul>
+</div>
+  </div>
+  <pre><code class="scss">
+.nypl-navigation-button
+  </code></pre>
+  <pre><code class="html">
+&lt;div class=&quot;nypl-navigation-button&quot;&gt;
+&lt;button class=&quot;nypl-navigation-button_button&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;nypl-navigation-button_list1&quot;
+      id=&quot;nypl-navigation-button_button&quot;&gt;
+Search Quick Links
+&lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;&lt;title&gt;wedge down icon&lt;/title&gt;&lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;&lt;/svg&gt;
+&lt;/button&gt;
+&lt;ul id=&quot;nypl-navigation-button_list1&quot;
+  class=&quot;nypl-navigation-button_list hidden&quot;
+  role=&quot;menu&quot;
+  aria-labelledby=&quot;nypl-navigation-button_button&quot;&gt;
+&lt;li role=&quot;none&quot;&gt;&lt;a href=&quot;//duckduckgo.com&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;Duck Duck Go&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;none&quot;&gt;&lt;a href=&quot;//google.com&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;none&quot;&gt;&lt;a href=&quot;//bing.com&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;Bing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+  <pre><code class="js">
+$(".nypl-navigation-button_button").on("click touchend", function(e) {
+e.preventDefault();
+var selected = 0;
+var self = $(e.target);
+var parent = self.parent();
+var item_count = parent.find("li").length;
+var expanded = self.attr("aria-expanded") == "true";
+// hide all in page
+$(".nypl-navigation-button_list").addClass("hidden")
+$(".nypl-navigation-button_button").removeClass("active").attr("aria-expanded", "false")
+// do for this one
+if (!expanded) {
+parent.find(".nypl-navigation-button_list").removeClass("hidden")
+self.toggleClass("active").attr("aria-expanded", "true")
+// simple and icomplete example keyboard interaction
+parent.find("li:first-child a").focus()
+parent.on("keydown", function (ee) {
+  switch (ee.keyCode) {
+    case 27: // ESC
+      parent.off("keydown")
+      parent.find(".nypl-navigation-button_list").addClass("hidden")
+      self.removeClass("active").attr("aria-expanded", "false").focus()
+      break
+    case 32: // SPACE
+      break
+    case 38: // UP
+      ee.preventDefault();
+      if (selected == 0) {
+        selected = item_count - 1;
+      } else {
+        selected--;
+      }
+      break
+    case 40: // DOWN
+      ee.preventDefault();
+      if (selected >= item_count - 1) {
+        selected = 0;
+      } else {
+        selected++;
+      }
+      break
+  }
+  parent.find("li:nth-child("+(selected+1)+") a").focus()
+})
+}
+});
+  </code></pre>
