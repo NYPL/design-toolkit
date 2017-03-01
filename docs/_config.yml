@@ -13,4 +13,5 @@ collections:
     output: true
 
 exclude:
+  - Gemfile
   - README.md
