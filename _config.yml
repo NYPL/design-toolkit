@@ -10,6 +10,5 @@ defaults:
   -
     scope:
       path: ''
-      type: sections
     values:
       layout: default
