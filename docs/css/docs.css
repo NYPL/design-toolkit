@@ -802,8 +802,27 @@ code {
 pre {
   border: 0.0625rem solid #d7d4d0; }
 
+h1 {
+  margin-top: 0; }
+
 .toolkit-svg-icon {
   border: 1px dotted #d7d4d0;
   margin-right: 1rem; }
+
+.clickable-header {
+  cursor: pointer; }
+
+.clickable-header:hover {
+  text-decoration: underline; }
+
+.top-level-header {
+  display: inline; }
+
+.back-to-top {
+  cursor: pointer;
+  font-style: normal;
+  margin-left: 0.5rem; }
+  .back-to-top:hover {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=docs.css.map */

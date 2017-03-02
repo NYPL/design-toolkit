@@ -21,7 +21,33 @@ pre {
 
 }
 
+h1 {
+  margin-top: 0;
+}
+
 .toolkit-svg-icon {
   border: 1px dotted $nypl-light-gray;
   margin-right: 1rem;
+}
+
+.clickable-header {
+  cursor: pointer;
+}
+
+.clickable-header:hover {
+  text-decoration: underline;
+}
+
+.top-level-header {
+  display: inline;
+}
+
+.back-to-top {
+  cursor: pointer;
+  font-style: normal;
+  margin-left: 0.5rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
