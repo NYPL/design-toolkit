@@ -1,13 +1,16 @@
 ---
-title: Design Resources
-description: Design resources, internal documentation, and tools to support universal design.
+title: Resources
+description: Information resources, internal documentation, and tools to support universal design.
 ---
 
 ### Resources  
-* WebAIM: WebAIM email discussion listserv + archive of past threads: http://webaim.org/discussion/
-* HTML5 Dashboard: Accessibility support status of HTML5 http://www.html5accessibility.com/
+**[WebAIM](http://webaim.org/)**
+Rich with tutorials, best practices, and studies related to Web Accessibility; this can be a first stop when tackling a new issue. Subscribe to their robust listserv and/or search the listerv archives on the [WebAIM Discussion](http://webaim.org/discussion/) page.  
 
-***  
+**[HTML5 Dashboard: Accessibility support status of HTML5](http://www.html5accessibility.com/)**
+
+
+<br>
 
 ### Validation Tools  
 #### [WAVE](http://wave.webaim.org/)
@@ -15,8 +18,8 @@ Test against WCAG 2.0; created by WebAIM. Also available as an extension for var
 
 #### [CynthiaSays](http://cynthiasays.com/)
 Test for compliance with Section 508, WCAG 2.0 A, WCAG 2.0 AA, or WCAG 2.0 AAA  
-***  
 
+<br>
 ### Assistive Technology  
 #### Screen Readers  
 Screen readers are software which render web content through a voice synthesizer or braille display. These depend on well formatted html both for clear navigation of the content and because the software will render non-visual components of the html, ex. alt and longdesc tags containing descriptions of page images.
@@ -27,14 +30,14 @@ Screen readers are software which render web content through a voice synthesizer
 * Screen readers rely on a number of common keyboard commands, so keep that in mind if selecting shortcuts for your product.
 * Likewise, be sure to check functionality of common shortcuts when building new pages.
 * JAWS stands for Job Access With Speech. It is one of the most common screen readers and **all Library PCs have JAWS installed**.
-
+<br>
 <table class="nypl-basic-table">
   <thead>
     <tr>
       <th>Screenreader</th>
       <th>Cost</th>
-      <th></th>
-      <th></th>
+      <th>Tutorial</th>
+      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
