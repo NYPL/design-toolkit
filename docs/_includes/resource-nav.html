@@ -1,0 +1,6 @@
+      <p><strong>Resources</strong></p>
+      <ul>
+{% for section in site.resources %}
+        <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+{% endfor %}
+      </ul>
