@@ -187,7 +187,7 @@ $(".nypl-navigation-button_button").removeClass("active").attr("aria-expanded", 
 if (!expanded) {
 parent.find(".nypl-navigation-button_list").removeClass("hidden")
 self.toggleClass("active").attr("aria-expanded", "true")
-// simple and icomplete example keyboard interaction
+// simple and incomplete example keyboard interaction
 parent.find("li:first-child a").focus()
 parent.on("keydown", function (ee) {
   switch (ee.keyCode) {
