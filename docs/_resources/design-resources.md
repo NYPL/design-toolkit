@@ -28,9 +28,33 @@ Screen readers are software which render web content through a voice synthesizer
 * Likewise, be sure to check functionality of common shortcuts when building new pages.
 * JAWS stands for Job Access With Speech. It is one of the most common screen readers and **all Library PCs have JAWS installed**.
 
-
-|Screenreader |Cost         |         |         |
-|-------------|-------------|---------|---------|
-|JAWS         |1K           |[Primer](http://webaim.org/articles/jaws/)| [List of JAWs shortcuts](http://doccenter.freedomscientific.com/doccenter/archives/training/JAWSKeystrokes.htm) |
-|NVDA         |[Free](http://www.nvaccess.org/)         |[Primer](http://webaim.org/articles/nvda/)|
-|Voiceover    |Free w/ iOS  |[Primer](http://webaim.org/articles/jaws/)|
+<table class="nypl-basic-table">
+  <thead>
+    <tr>
+      <th>Screenreader</th>
+      <th>Cost</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JAWS</td>
+      <td>1K</td>
+      <td><a href="http://webaim.org/articles/jaws/">Primer</a></td>
+      <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/JAWSKeystrokes.htm">List of JAWs shortcuts</a></td>
+    </tr>
+    <tr>
+      <td>NVDA</td>
+      <td><a href="http://www.nvaccess.org/">Free</a></td>
+      <td><a href="http://webaim.org/articles/nvda/">Primer</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Voiceover</td>
+      <td>Free w/ iOS</td>
+      <td><a href="http://webaim.org/articles/jaws/">Primer</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
