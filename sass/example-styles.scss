@@ -3,3 +3,13 @@
 .views-table {
   @include views-table;
 }
+
+hr {
+  border: 0;
+  border-top: 0.05rem solid $nypl-gray;
+  height: 2rem;
+
+  &::after {
+    content: "<!-- // start of new row // -->";
+  }
+}
