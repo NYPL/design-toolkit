@@ -14,11 +14,16 @@ $gray: #ccc;
 
 code {
   padding: 0;
+
+  &:before,
+  &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
 }
 
 pre {
   border: $simple-border solid $nypl-light-gray;
-
 }
 
 h1 {

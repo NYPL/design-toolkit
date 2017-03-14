@@ -798,6 +798,9 @@ footer {
 
 code {
   padding: 0; }
+  code:before, code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; }
 
 pre {
   border: 0.0625rem solid #d7d4d0; }
