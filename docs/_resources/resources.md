@@ -43,19 +43,19 @@ Screen readers are software which render web content through a voice synthesizer
   <tbody>
     <tr>
       <td>JAWS</td>
-      <td>1K</td>
+      <td>$1,000</td>
       <td><a href="http://webaim.org/articles/jaws/">Primer</a></td>
       <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/JAWSKeystrokes.htm">List of JAWs shortcuts</a></td>
     </tr>
     <tr>
       <td>NVDA</td>
-      <td><a href="http://www.nvaccess.org/">Free</a></td>
+      <td><a href="http://www.nvaccess.org/">Free download</a></td>
       <td><a href="http://webaim.org/articles/nvda/">Primer</a></td>
       <td> </td>
     </tr>
     <tr>
       <td>Voiceover</td>
-      <td>Free w/ iOS</td>
+      <td>Free with iOS</td>
       <td><a href="http://webaim.org/articles/jaws/">Primer</a></td>
       <td> </td>
     </tr>
