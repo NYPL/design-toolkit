@@ -77,6 +77,22 @@
   @include text-fieldset;
 }
 
+.nypl-name-fieldset {
+  @include name-fieldset;
+}
+
+.nypl-address-fieldset {
+  @include address-fieldset;
+}
+
+.nypl-date-fieldset {
+  @include date-fieldset;
+}
+
+.nypl-required-field {
+  @include required-field;
+}
+
 .nypl-select-field {
   @include select-field;
 }

@@ -2086,6 +2086,7 @@ footer {
 .nypl-fieldset {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
@@ -2155,6 +2156,7 @@ footer {
 .nypl-text-fieldset {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
@@ -2192,6 +2194,157 @@ footer {
       color: #080807;
       outline: none; }
 
+.nypl-name-fieldset {
+  background-color: #efedeb;
+  border: 0;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  background-color: #fff; }
+  .nypl-name-fieldset label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5rem; }
+  .nypl-name-fieldset label {
+    margin-left: 0.5rem; }
+  .nypl-name-fieldset label {
+    background-color: transparent;
+    display: block;
+    font-weight: bold;
+    position: absolute; }
+  .nypl-name-fieldset input[type=text] {
+    background-color: #efedeb;
+    border: 0;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+    -moz-box-shadow: inset 0 0 0 2px #efedeb;
+    box-shadow: inset 0 0 0 2px #efedeb;
+    border-bottom: 0.0625rem solid #080807;
+    height: 2rem;
+    padding: 1.5rem 0 0;
+    text-indent: 0.5rem;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .nypl-name-fieldset input[type=text].active {
+      width: 16rem; }
+    .nypl-name-fieldset input[type=text]:focus {
+      background-color: #fff;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      color: #080807;
+      outline: none; }
+  .nypl-name-fieldset > span {
+    display: block;
+    float: left;
+    margin-right: 0.125rem;
+    width: calc(50% - 0.125rem); }
+    .nypl-name-fieldset > span:last-child {
+      margin-right: 0; }
+
+.nypl-address-fieldset {
+  background-color: #efedeb;
+  border: 0;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  background-color: #fff; }
+  .nypl-address-fieldset label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5rem; }
+  .nypl-address-fieldset label {
+    margin-left: 0.5rem; }
+  .nypl-address-fieldset label {
+    background-color: transparent;
+    display: block;
+    font-weight: bold;
+    position: absolute; }
+  .nypl-address-fieldset input[type=text] {
+    background-color: #efedeb;
+    border: 0;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+    -moz-box-shadow: inset 0 0 0 2px #efedeb;
+    box-shadow: inset 0 0 0 2px #efedeb;
+    border-bottom: 0.0625rem solid #080807;
+    height: 2rem;
+    padding: 1.5rem 0 0;
+    text-indent: 0.5rem;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .nypl-address-fieldset input[type=text].active {
+      width: 16rem; }
+    .nypl-address-fieldset input[type=text]:focus {
+      background-color: #fff;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      color: #080807;
+      outline: none; }
+  .nypl-address-fieldset > span {
+    display: block;
+    margin-bottom: 1rem; }
+    .nypl-address-fieldset > span::before, .nypl-address-fieldset > span::after {
+      content: "";
+      display: table; }
+    .nypl-address-fieldset > span::after {
+      clear: both; }
+  .nypl-address-fieldset .nypl-simple-radiobutton {
+    background-color: #efedeb; }
+    .nypl-address-fieldset .nypl-simple-radiobutton label {
+      position: relative; }
+
+.nypl-date-fieldset {
+  background-color: #efedeb;
+  border: 0;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  min-width: 12rem;
+  width: 50%; }
+  .nypl-date-fieldset label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5rem; }
+  .nypl-date-fieldset label {
+    margin-left: 0.5rem; }
+  .nypl-date-fieldset label {
+    background-color: transparent;
+    display: block;
+    font-weight: bold;
+    position: absolute; }
+  .nypl-date-fieldset input[type=text] {
+    background-color: #efedeb;
+    border: 0;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+    -moz-box-shadow: inset 0 0 0 2px #efedeb;
+    box-shadow: inset 0 0 0 2px #efedeb;
+    border-bottom: 0.0625rem solid #080807;
+    height: 2rem;
+    padding: 1.5rem 0 0;
+    text-indent: 0.5rem;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .nypl-date-fieldset input[type=text].active {
+      width: 16rem; }
+    .nypl-date-fieldset input[type=text]:focus {
+      background-color: #fff;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      color: #080807;
+      outline: none; }
+
+.nypl-required-field {
+  color: #d0343a;
+  font-size: 0.9rem;
+  font-weight: normal; }
+
 .nypl-select-field {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2207,6 +2360,7 @@ footer {
 .nypl-select-fieldset {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
@@ -2219,7 +2373,8 @@ footer {
   .nypl-select-fieldset label {
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
+    margin-left: 0.5rem;
+    position: relative; }
   .nypl-select-fieldset select {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -2248,6 +2403,7 @@ footer {
 .nypl-radiobutton-fieldset {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
@@ -2382,6 +2538,7 @@ footer {
 .nypl-searchable-fieldset {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
@@ -2447,6 +2604,7 @@ footer {
 .nypl-checkbox-fieldset {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
@@ -2472,6 +2630,7 @@ footer {
 .nypl-alphabetical-filter {
   background-color: #efedeb;
   border: 0;
+  display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }

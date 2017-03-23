@@ -1,6 +1,7 @@
 var hideTimeout
 
 function init() {
+  $(".hidden").hide();
   $(".nypl-navigation-button_button").on("click touchend", function(e) {
     e.preventDefault();
     var selected = 0;
