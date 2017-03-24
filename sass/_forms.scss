@@ -92,7 +92,7 @@ $form-padding: 0.5rem;
   @include textfield-with-label;
   background-color: $page-background-color;
 
-  > span {
+  div {
     display: block;
     float: left;
     margin-right: 0.125rem;
@@ -109,9 +109,8 @@ $form-padding: 0.5rem;
   @include textfield-with-label;
   background-color: $page-background-color;
 
-  > span {
+  div {
     @include clearfix;
-    display: block;
     margin-bottom: $general-padding;
   }
 

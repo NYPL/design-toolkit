@@ -2235,12 +2235,12 @@ footer {
       box-shadow: inset 0 0 0 4px #ffb81d;
       color: #080807;
       outline: none; }
-  .nypl-name-fieldset > span {
+  .nypl-name-fieldset div {
     display: block;
     float: left;
     margin-right: 0.125rem;
     width: calc(50% - 0.125rem); }
-    .nypl-name-fieldset > span:last-child {
+    .nypl-name-fieldset div:last-child {
       margin-right: 0; }
 
 .nypl-address-fieldset {
@@ -2284,13 +2284,12 @@ footer {
       box-shadow: inset 0 0 0 4px #ffb81d;
       color: #080807;
       outline: none; }
-  .nypl-address-fieldset > span {
-    display: block;
+  .nypl-address-fieldset div {
     margin-bottom: 1rem; }
-    .nypl-address-fieldset > span::before, .nypl-address-fieldset > span::after {
+    .nypl-address-fieldset div::before, .nypl-address-fieldset div::after {
       content: "";
       display: table; }
-    .nypl-address-fieldset > span::after {
+    .nypl-address-fieldset div::after {
       clear: both; }
   .nypl-address-fieldset .nypl-simple-radiobutton {
     background-color: #efedeb; }
