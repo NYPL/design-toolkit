@@ -56,3 +56,47 @@ h1 {
     text-decoration: underline;
   }
 }
+// Color Swatches
+.swatches {
+  display: block;
+}
+
+.color-box {
+  background: $nypl-light-gray;
+  border: 1px solid $nypl-dark-gray;
+  display: inline-block;
+  height: 7.5rem;
+  list-style: none;
+  padding: 0.75rem;
+  width: 7.5rem;
+}
+
+@mixin swatch-box ($color-name: $nypl-light-gray) {
+  background: $color-name;
+  color: $nypl-white;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  //vertical-align: middle;
+  @content;
+}
+
+$colors: (
+  nypl-red: $nypl-red,
+  nypl-red-dark: $nypl-red-dark,
+  nypl-red-tint: $nypl-red-tint
+);
+
+@each $nypl-colors, $color-name in $colors {
+  .#{$nypl-colors}-swatch {
+    @include swatch-box ($color-name);
+  }
+}
+
+// .color-swatch {
+//
+//   > div {
+//     text-align: center;
+//     }
+// }

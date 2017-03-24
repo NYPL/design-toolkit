@@ -828,4 +828,40 @@ h1 {
   .back-to-top:hover {
     text-decoration: underline; }
 
+.swatches {
+  display: block; }
+
+.color-box {
+  background: #d7d4d0;
+  border: 1px solid #080807;
+  display: inline-block;
+  height: 7.5rem;
+  list-style: none;
+  padding: 0.75rem;
+  width: 7.5rem; }
+
+.nypl-red-swatch {
+  background: #d0343a;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  text-align: center; }
+
+.nypl-red-dark-swatch {
+  background: #97272c;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  text-align: center; }
+
+.nypl-red-tint-swatch {
+  background: #de7175;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  text-align: center; }
+
 /*# sourceMappingURL=docs.css.map */

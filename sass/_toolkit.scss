@@ -24,7 +24,7 @@
 }
 
 .nypl-icon {
-  @include nypl-icon($height: 1rem, $width: 1rem);
+  @include nypl-icon($height: 10rem, $width: 10rem);
 }
 
 .nypl-request-button {
@@ -237,5 +237,3 @@
 .nypl-views-table {
   @include views-table;
 }
-
-
