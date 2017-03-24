@@ -242,6 +242,7 @@
         <div id="mainContent" class="nypl-column-half nypl-column-offset-one">
           <!-- sample card -->
 
+            <div id="step-1">
             <h2>Please enter the following information</h2>
             <fieldset class="nypl-name-fieldset">
               <div>
@@ -277,6 +278,10 @@
               <input id="email" type="text" class="form-text">
             </fieldset>
 
+            <input type="button" id="step-1_submit" class="nypl-basic-button" value="Continue">
+            </div>
+
+            <div id="step-2">
             <h2>Permanent Address</h2>
 
             <fieldset class="nypl-address-fieldset">
@@ -329,7 +334,10 @@
                 </label>
               </div>
             </fieldset>
+            <input type="button" id="step-2_submit" class="nypl-basic-button" value="Continue">
+            </div>
 
+            <div id="step-3">
             <h2>Local Address (if different)</h2>
 
             <fieldset class="nypl-address-fieldset">
@@ -415,8 +423,9 @@
                 <input id="phone-text2" type="text">
               </div>
             </fieldset>
+            <input type="submit" id="card-submit-main" class="nypl-basic-button" value="Apply">
+            </div>
 
-            <input type="submit" class="nypl-basic-button" value="Apply">
 
           <!-- end sample card -->
         </div>

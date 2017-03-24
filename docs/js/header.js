@@ -2,6 +2,17 @@ var hideTimeout
 
 function init() {
   $(".hidden").hide();
+  $("#step-2, #step-3").hide();
+  $("#step-1_submit").click(function () {
+    $("#step-2").show();
+    $("#step-1").hide();
+    document.location = "#step-2";
+  })
+  $("#step-2_submit").click(function () {
+    $("#step-3").show();
+    $("#step-2").hide();
+    document.location = "#step-3";
+  })
   $(".nypl-navigation-button_button").on("click touchend", function(e) {
     e.preventDefault();
     var selected = 0;
