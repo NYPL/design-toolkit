@@ -69,60 +69,53 @@
   @include input;
 }
 
-.nypl-textfield {
-  @include textfield;
+.nypl-text-field {
+  @include text-field;
 }
 
-.nypl-textfield-with-label {
-  @include textfield-with-label;
+.nypl-text-field-with-label {
+  @include text-field-with-label;
 }
 
-.nypl-text-fieldset {
-  @include text-fieldset;
-}
-
-.nypl-name-fieldset {
-  @include name-fieldset;
+.nypl-name-field {
+  @include name-field;
 }
 
 .nypl-address-fieldset {
   @include address-fieldset;
 }
 
-.nypl-date-fieldset {
-  @include date-fieldset;
+.nypl-date-field {
+  @include date-field;
 }
 
 .nypl-required-field {
   @include required-field;
 }
 
-.nypl-select-field {
-  @include select-field;
+.nypl-select {
+  @include select;
 }
 
-.nypl-select-fieldset {
-  @include select-fieldset;
+.nypl-select-field {
+  @include select-field;
 }
 
 .nypl-simple-radiobutton {
   @include simple-radiobutton;
 }
 
-.nypl-radiobutton-fieldset {
-  @include radiobutton-fieldset;
+.nypl-radiobutton-field,
+.nypl-checkbox-field {
+  @include radiobutton-field;
 }
 
 .nypl-omnisearch {
   @include omnisearch;
 }
 
-.nypl-searchable-fieldset {
-  @include searchable-fieldset;
-}
-
-.nypl-checkbox-fieldset {
-  @include checkbox-fieldset;
+.nypl-searchable-field {
+  @include searchable-field;
 }
 
 .nypl-alphabetical-filter {

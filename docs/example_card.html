@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
 </head>
 
@@ -244,7 +245,7 @@
 
             <div id="step-1">
             <h2>Please enter the following information</h2>
-            <fieldset class="nypl-name-fieldset">
+            <fieldset class="nypl-name-field">
               <div>
                 <label for="first-text">First Name <span class="nypl-required-field">Required</span></label>
                 <input id="first-text" type="text">
@@ -255,12 +256,12 @@
               </div>
             </fieldset>
 
-            <fieldset class="nypl-date-fieldset">
+            <div class="nypl-date-field">
               <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
               <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY">
-            </fieldset>
+            </div>
 
-            <fieldset class="nypl-select-fieldset">
+            <fieldset class="nypl-select-field">
               <label for="F045pcode2">Education Level</label>
               <select id="F045pcode2">
                 <option value="-" selected="selected">Select</option>
@@ -273,7 +274,7 @@
               </select>
             </fieldset>
 
-            <fieldset class="nypl-text-fieldset">
+            <fieldset class="nypl-text-field">
               <label for="email">E-Mail</label>
               <input id="email" type="text" class="form-text">
             </fieldset>
@@ -305,7 +306,7 @@
                 <label for="country-text">Country</label>
                 <input id="country-text" type="text">
               </div>
-              <div class="nypl-select-fieldset">
+              <div class="nypl-select-field">
                 <label for="borough">Borough/Region</label>
                 <select id="borough">
                   <option value="0" selected="selected">Select</option>
@@ -351,7 +352,7 @@
                 <label for="city-text2">City <span class="nypl-required-field">Required</span></label>
                 <input id="city-text2" type="text">
               </div>
-              <div class="nypl-select-fieldset">
+              <div class="nypl-select-field">
                 <label for="state1">State</label>
                 <select id="state1">
                   <option value="AL">Alabama</option>

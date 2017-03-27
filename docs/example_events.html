@@ -239,11 +239,11 @@
         <div class="nypl-column-one-quarter">
           <div>Use the filters to show only events that match your interests:</div>
           <form action="" class="nypl-search-form" id="filter-search">
-            <fieldset class="nypl-text-fieldset">
+            <div class="nypl-text-field">
               <label for="keyword-text">Title or description</label>
               <input id="keyword-text" type="text" placeholder="Type keywords">
-            </fieldset>
-            <fieldset class="nypl-radiobutton-fieldset">
+            </div>
+            <div class="nypl-radiobutton-field">
               <span class="nypl-label">Audience</span>
               <label for="audience-adults">
                 <input id="audience-adults" type="checkbox" name="audience" value="adults">Adults</label>
@@ -251,8 +251,8 @@
                 <input id="audience-teens" type="checkbox" name="audience" value="teens" checked="checked">Teens or young adults</label>
               <label for="audience-children">
                 <input id="audience-children" type="checkbox" name="audience" value="children">Children</label>
-            </fieldset>
-            <fieldset class="nypl-radiobutton-fieldset">
+            </div>
+            <div class="nypl-radiobutton-field">
               <span class="nypl-label">Borough</span>
               <label for="borough-bronx">
                 <input id="borough-bronx" type="checkbox" name="borough" value="bronx">Bronx</label>
@@ -260,9 +260,9 @@
                 <input id="borough-manhattan" type="checkbox" name="borough" value="manhattan">Manhattan</label>
               <label for="borough-staten">
                 <input id="borough-staten" type="checkbox" name="borough" value="staten">Staten Island</label>
-            </fieldset>
+            </div>
 
-<fieldset class="nypl-searchable-fieldset">
+<div class="nypl-searchable-field">
   <div class="nypl-facet-search">
     <label for="branch-text">Library Branch</label>
     <input id="branch-text" type="text" placeholder="Enter name">
@@ -340,19 +340,19 @@
     </label>
     <a href="#more" class="nypl-more-facets">Show 10 more branches</a>
   </div>
-</fieldset>
+</div>
 
-          <fieldset class="nypl-text-fieldset">
+          <div class="nypl-text-field">
             <label for="date-from">After date</label>
             <input id="date-from" type="text" class="form-text">
-          </fieldset>
+          </div>
 
-          <fieldset class="nypl-text-fieldset">
+          <div class="nypl-text-field">
             <label for="date-to">Before date</label>
             <input id="date-to" type="text" class="form-text">
-          </fieldset>
+          </div>
 
-            <fieldset class="nypl-select-fieldset">
+            <div class="nypl-select-field">
               <label for="topic">Topic</label>
               <select id="topic" name="topic">
                 <option value="">All</option>
@@ -365,8 +365,8 @@
                 <option value="4275">Literature, Poetry &amp; Writing</option>
                 <option value="4272">Local Community</option>
               </select>
-            </fieldset>
-            <fieldset class="nypl-select-fieldset">
+            </div>
+            <div class="nypl-select-field">
               <label for="series">Series</label>
               <select id="series" class="form-select" name="series">
                 <option value="">All</option>
@@ -377,7 +377,7 @@
                 <option value="72874">Supervised Lab </option>
                 <option value="200787">TechConnect</option>
               </select>
-            </fieldset>
+            </div>
             <input type="submit" class="nypl-basic-button" name="Apply" value="Apply filters">
           </form>
         </div>

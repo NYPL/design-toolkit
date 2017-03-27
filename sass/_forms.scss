@@ -47,7 +47,7 @@ $form-padding: 0.5rem;
   padding: 0;
 }
 
-@mixin textfield {
+@mixin text {
   @include input;
   @include box-shadow(inset 0 0 0 2px $nypl-search-color-light);
   border-bottom: 0.0625rem solid $page-color;
@@ -69,7 +69,7 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin textfield-with-label {
+@mixin text-field-with-label {
   label {
     background-color: transparent;
     display: block;
@@ -78,18 +78,18 @@ $form-padding: 0.5rem;
   }
 
   input[type=text] {
-    @include textfield;
+    @include text;
   }
 }
 
-@mixin text-fieldset {
+@mixin text-field {
   @include fieldset;
-  @include textfield-with-label;
+  @include text-field-with-label;
 }
 
-@mixin name-fieldset {
+@mixin name-field {
   @include fieldset;
-  @include textfield-with-label;
+  @include text-field-with-label;
   background-color: $page-background-color;
 
   div {
@@ -106,7 +106,7 @@ $form-padding: 0.5rem;
 
 @mixin address-fieldset {
   @include fieldset;
-  @include textfield-with-label;
+  @include text-field-with-label;
   background-color: $page-background-color;
 
   div {
@@ -123,9 +123,9 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin date-fieldset {
+@mixin date-field {
   @include fieldset;
-  @include textfield-with-label;
+  @include text-field-with-label;
 
   min-width: 12rem;
   width: 50%;
@@ -137,7 +137,7 @@ $form-padding: 0.5rem;
   font-weight: normal;
 }
 
-@mixin select-field {
+@mixin select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -150,7 +150,7 @@ $form-padding: 0.5rem;
   width: 100%;
 }
 
-@mixin select-fieldset {
+@mixin select-field {
   @include fieldset;
 
   label {
@@ -159,7 +159,7 @@ $form-padding: 0.5rem;
   }
 
   select {
-    @include select-field;
+    @include select;
   }
 }
 
@@ -181,7 +181,7 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin radiobutton-fieldset {
+@mixin radiobutton-field {
   @include fieldset;
   @include simple-radiobutton;
 }
@@ -208,7 +208,7 @@ $form-padding: 0.5rem;
     }
 
     select {
-      @include select-field;
+      @include select;
     }
   }
 
@@ -248,13 +248,13 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin searchable-fieldset {
+@mixin searchable-field {
   @include fieldset;
   @include simple-radiobutton;
 
 
   .nypl-facet-search {
-    @include textfield-with-label;
+    @include text-field-with-label;
   }
 
   .nypl-facet-list {
@@ -279,10 +279,6 @@ $form-padding: 0.5rem;
       margin: $form-padding;
     }
   }
-}
-
-@mixin checkbox-fieldset {
-  @include radiobutton-fieldset;
 }
 
 @mixin alphabetical-filter {

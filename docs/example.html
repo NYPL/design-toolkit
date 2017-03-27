@@ -242,11 +242,11 @@
         <div class="nypl-column-one-quarter">
           <div>Use the filters to show only databases that match your interests:</div>
           <form action="" class="nypl-search-form" id="filter-search">
-            <fieldset class="nypl-text-fieldset">
+            <div class="nypl-text-field">
               <label for="keyword-text">Title or description</label>
               <input id="keyword-text" type="text" placeholder="Type keywords">
-            </fieldset>
-            <fieldset class="nypl-radiobutton-fieldset">
+            </div>
+            <div class="nypl-radiobutton-field">
               <span class="nypl-label">Accessible from</span>
               <label for="available-every">
                 <input id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere</label>
@@ -254,8 +254,8 @@
                 <input id="available-home" type="radio" name="available" value="home">Home with a library card</label>
               <label for="available-library">
                 <input id="available-library" type="radio" name="available" value="library">A library branch</label>
-            </fieldset>
-            <fieldset class="nypl-select-fieldset location hidden">
+            </div>
+            <div class="nypl-select-field location hidden">
               <label for="location">Library branch</label>
               <select id="location" class="form-select" name="location">
                 <option value="0">All</option>
@@ -273,8 +273,8 @@
                 <option value="72+978">St. George Library Center</option>
                 <option value="977">Outside the Library</option>
               </select>
-            </fieldset>
-            <fieldset class="nypl-select-fieldset">
+            </div>
+            <div class="nypl-select-field">
               <label for="subjects">Subjects</label>
               <select id="subjects" class="form-select" name="subjects">
                 <option value="0" selected="selected">All</option>
@@ -392,8 +392,8 @@
                 <option value="573">- Agriculture</option>
                 <option value="802">- Automobile Maintenance and Repair</option>
               </select>
-            </fieldset>
-            <fieldset class="nypl-select-fieldset">
+            </div>
+            <div class="nypl-select-field">
               <label for="audience">Audience</label>
               <select id="audience" name="audience">
                 <option value="0">All</option>
@@ -405,8 +405,8 @@
                 <option value="737">Teachers</option>
                 <option value="914" selected="selected">Teens/Young Adults (13-18 years)</option>
               </select>
-            </fieldset>
-            <fieldset class="nypl-select-fieldset">
+            </div>
+            <div class="nypl-select-field">
               <label for="language">Language</label>
               <select id="language" class="form-select" name="language">
                 <option value="0" selected="selected">All</option>
@@ -414,8 +414,8 @@
                 <option value="French">French</option>
                 <option value="Spanish">Spanish</option>
               </select>
-            </fieldset>
-            <fieldset class="nypl-alphabetical-filter">
+            </div>
+            <div class="nypl-alphabetical-filter">
               <label>Name starts with</label>
               <button name="az-filter" disabled="true" class="nypl-long">Any</button>
               <button name="az-filter" title="Show only resources with name starting with a number">#</button>
@@ -445,7 +445,7 @@
               <button name="az-filter" title="Show only resources with name starting with X">X</button>
               <button name="az-filter" title="Show only resources with name starting with Y">Y</button>
               <button name="az-filter" title="Show only resources with name starting with Z">Z</button>
-            </fieldset>
+            </div>
             <input type="submit" class="nypl-basic-button" name="Apply" value="Apply filters">
           </form>
         </div>

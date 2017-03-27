@@ -296,7 +296,7 @@ $collapsed-nav-height: 30px;
     }
 
     input[type=text] {
-      @include textfield;
+      @include text-field;
     }
 
     .links {

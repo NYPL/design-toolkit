@@ -2,6 +2,7 @@ var hideTimeout
 
 function init() {
   $(".hidden").hide();
+  $('#date-of-birth').mask('00/00/0000');
   $("#step-2, #step-3").hide();
   $("#step-1_submit").click(function (e) {
     $("#step-2").show();

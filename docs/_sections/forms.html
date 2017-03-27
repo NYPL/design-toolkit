@@ -45,42 +45,95 @@ description: Form fields and user input.
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-text-fieldset">
+<div class="nypl-text-field">
   <label for="keyword-text">Title or description</label>
   <input id="keyword-text" type="text" placeholder="Enter keywords">
-</fieldset>
+</div>
     </div>
 
     <pre><code class="scss">
-.nypl-text-fieldset
+.nypl-text-field
     </code></pre>
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-text-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-text-field&quot;&gt;
   &lt;label for=&quot;keyword-text&quot;&gt;Title or description&lt;/label&gt;
   &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
-&lt;/fieldset&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="requiredFields">Required fields</h3>
+
+    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-text-field">
+  <label for="keyword-text">Title
+    <span class="nypl-required-field">Required</span>
+  </label>
+  <input id="keyword-text" type="text" placeholder="Enter keywords">
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-required-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-text-field&quot;&gt;
+  &lt;label for=&quot;keyword-text&quot;&gt;Title
+    &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="dateFields">Date fields</h3>
+
+    <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
+
+    <p><strong>Note:</strong> This only applies for dates that will conform to  a year/month/day-style pattern (YYYY/MM/DD, MM/DD/YYYY, etc).</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-date-field">
+  <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
+  <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY">
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-date-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-date-field&quot;&gt;
+  &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+  &lt;input id=&quot;date-of-birth&quot; type=&quot;text&quot; class=&quot;form-text&quot; placeholder=&quot;MM/DD/YYYY&quot;&gt;
+&lt;/div&gt;
+    </code></pre>
+    <pre><code class="js">
+$('#date-of-birth').mask('00/00/0000');
     </code></pre>
 
     <h3 id="selectBoxes">Select boxes</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-    <fieldset class="nypl-select-fieldset">
-      <label for="topics">Topics</label>
-      <select id="topics" name="topics">
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-        <option value="…">…</option>
-      </select>
-    </fieldset>
+  <div class="nypl-select-field">
+    <label for="topics">Topics</label>
+    <select id="topics" name="topics">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="…">…</option>
+    </select>
+  </div>
     </div>
 
     <pre><code class="scss">
-.nypl-select-fieldset
+.nypl-select-field
     </code></pre>
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-select-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-select-field&quot;&gt;
   &lt;label for=&quot;topics&quot;&gt;Topics&lt;/label&gt;
   &lt;select id=&quot;topics&quot; name=&quot;topics&quot;&gt;
     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
@@ -88,7 +141,7 @@ description: Form fields and user input.
     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
     &lt;option value=&quot;…&quot;&gt;…&lt;/option&gt;
   &lt;/select&gt;
-&lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>
 
     <h3 id="alphaFilters">Alphabetical filters</h3>
@@ -98,7 +151,7 @@ description: Form fields and user input.
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-alphabetical-filter">
+<div class="nypl-alphabetical-filter">
   <label>Name starts with</label>
   <button name="az-filter" disabled="true" class="nypl-long">Any</button>
   <button name="az-filter" title="Show only resources with name starting with a number">#</button>
@@ -106,7 +159,7 @@ description: Form fields and user input.
   <button name="az-filter" title="Show only resources with name starting with B">B</button>
   <button name="az-filter" title="Show only resources with name starting with C">C</button>
   <button name="az-filter" title="Show only resources with name starting with …">…</button>
-</fieldset>
+</div>
     </div>
 
     <pre><code class="scss">
@@ -114,7 +167,7 @@ description: Form fields and user input.
     </code></pre>
 
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-alphabetical-filter&quot;&gt;
+&lt;div class=&quot;nypl-alphabetical-filter&quot;&gt;
   &lt;label&gt;Name starts with&lt;/label&gt;
   &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;nypl-long&quot;&gt;Any&lt;/button&gt;
   &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
@@ -122,7 +175,7 @@ description: Form fields and user input.
   &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
   &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
   &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
-&lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>
 
     <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
@@ -133,7 +186,7 @@ description: Form fields and user input.
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-radiobutton-fieldset">
+<div class="nypl-radiobutton-field">
   <span id="radiobutton-group1" class="nypl-label">Accessible from</span>
   <label id="radiobutton-group1_every" for="available-every">
     <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
@@ -144,16 +197,16 @@ description: Form fields and user input.
   <label id="radiobutton-group1_library" for="available-library">
     <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
   </label>
-</fieldset>
+</div>
     </div>
     <pre><code class="scss">
-.nypl-radiobutton-fieldset
+.nypl-radiobutton-field
     </code></pre>
 
     <p><strong>NOTE:</strong> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
 
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-radiobutton-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-radiobutton-field&quot;&gt;
   &lt;span id=&quot;radiobutton-group1&quot; class=&quot;nypl-label&quot;&gt;Accessible from&lt;/span&gt;
   &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
     &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
@@ -164,12 +217,12 @@ description: Form fields and user input.
   &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
     &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
   &lt;/label&gt;
-&lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>
 
-    <h3 id="searchableFieldsets">Searchable field sets</h3>
+    <h3 id="searchableFieldsets">Searchable fields</h3>
 
-    <p>Searchable field sets allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
+    <p>Searchable fields allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
 
     <p>The general structure is: a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a <code>nypl-facet-list</code> of items, each with the following structure:</p>
 
@@ -191,7 +244,7 @@ description: Form fields and user input.
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-searchable-fieldset">
+<div class="nypl-searchable-field">
   <div class="nypl-facet-search">
     <label for="subject-text">Subject</label>
     <input id="subject-text" type="text" placeholder="Enter keywords">
@@ -234,17 +287,17 @@ description: Form fields and user input.
     </label>
     <a href="#more" class="nypl-more-facets">Show 10 more subjects</a>
   </div>
-</fieldset>
+</div>
     </div>
 
     <pre><code class="scss">
-.nypl-searchable-fieldset
+.nypl-searchable-field
 .nypl-facet-search
 .nypl-facet-list
 .nypl-facet-count
     </code></pre>
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-searchable-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-searchable-field&quot;&gt;
   &lt;div class=&quot;nypl-facet-search&quot;&gt;
     &lt;label for=&quot;subject-text&quot;&gt;Subject&lt;/label&gt;
     &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
@@ -287,5 +340,5 @@ description: Form fields and user input.
     &lt;/label&gt;
     &lt;a href=&quot;#more&quot; class=&quot;nypl-more-facets&quot;&gt;Show 10 more subjects&lt;/a&gt;
   &lt;/div&gt;
-&lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>

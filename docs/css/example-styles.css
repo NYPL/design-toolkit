@@ -1318,25 +1318,43 @@ button:focus {
   .nypl-header .email-toggle input[type=text] {
     background-color: #efedeb;
     border: 0;
+    display: block;
+    margin: 1rem 0;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.0625rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
-    text-indent: 0.5rem;
-    transition: all 0.2s ease-out;
-    width: 100%; }
-    .nypl-header .email-toggle input[type=text].active {
-      width: 16rem; }
-    .nypl-header .email-toggle input[type=text]:focus {
-      background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
-      color: #080807;
-      outline: none; }
+    position: relative; }
+    .nypl-header .email-toggle input[type=text] label {
+      display: block;
+      font-weight: bold;
+      margin-left: 0.5rem; }
+    .nypl-header .email-toggle input[type=text] label {
+      margin-left: 0.5rem; }
+    .nypl-header .email-toggle input[type=text] label {
+      background-color: transparent;
+      display: block;
+      font-weight: bold;
+      position: absolute; }
+    .nypl-header .email-toggle input[type=text] input[type=text] {
+      background-color: #efedeb;
+      border: 0;
+      padding: 0;
+      -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+      -moz-box-shadow: inset 0 0 0 2px #efedeb;
+      box-shadow: inset 0 0 0 2px #efedeb;
+      border-bottom: 0.0625rem solid #080807;
+      height: 2rem;
+      padding: 1.5rem 0 0;
+      text-indent: 0.5rem;
+      transition: all 0.2s ease-out;
+      width: 100%; }
+      .nypl-header .email-toggle input[type=text] input[type=text].active {
+        width: 16rem; }
+      .nypl-header .email-toggle input[type=text] input[type=text]:focus {
+        background-color: #fff;
+        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+        box-shadow: inset 0 0 0 4px #ffb81d;
+        color: #080807;
+        outline: none; }
   .nypl-header .email-toggle .links {
     margin: 1rem 0 0; }
 .nypl-header .login-toggle {
@@ -2110,76 +2128,25 @@ footer {
   border: 0;
   padding: 0; }
 
-.nypl-textfield {
-  background-color: #efedeb;
-  border: 0;
-  padding: 0;
-  -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-  -moz-box-shadow: inset 0 0 0 2px #efedeb;
-  box-shadow: inset 0 0 0 2px #efedeb;
-  border-bottom: 0.0625rem solid #080807;
-  height: 2rem;
-  padding: 1.5rem 0 0;
-  text-indent: 0.5rem;
-  transition: all 0.2s ease-out;
-  width: 100%; }
-  .nypl-textfield.active {
-    width: 16rem; }
-  .nypl-textfield:focus {
-    background-color: #fff;
-    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-    box-shadow: inset 0 0 0 4px #ffb81d;
-    color: #080807;
-    outline: none; }
-
-.nypl-textfield-with-label label {
-  background-color: transparent;
-  display: block;
-  font-weight: bold;
-  position: absolute; }
-.nypl-textfield-with-label input[type=text] {
-  background-color: #efedeb;
-  border: 0;
-  padding: 0;
-  -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-  -moz-box-shadow: inset 0 0 0 2px #efedeb;
-  box-shadow: inset 0 0 0 2px #efedeb;
-  border-bottom: 0.0625rem solid #080807;
-  height: 2rem;
-  padding: 1.5rem 0 0;
-  text-indent: 0.5rem;
-  transition: all 0.2s ease-out;
-  width: 100%; }
-  .nypl-textfield-with-label input[type=text].active {
-    width: 16rem; }
-  .nypl-textfield-with-label input[type=text]:focus {
-    background-color: #fff;
-    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-    box-shadow: inset 0 0 0 4px #ffb81d;
-    color: #080807;
-    outline: none; }
-
-.nypl-text-fieldset {
+.nypl-text-field {
   background-color: #efedeb;
   border: 0;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-text-fieldset label {
+  .nypl-text-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-text-fieldset label {
+  .nypl-text-field label {
     margin-left: 0.5rem; }
-  .nypl-text-fieldset label {
+  .nypl-text-field label {
     background-color: transparent;
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-text-fieldset input[type=text] {
+  .nypl-text-field input[type=text] {
     background-color: #efedeb;
     border: 0;
     padding: 0;
@@ -2192,9 +2159,9 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-text-fieldset input[type=text].active {
+    .nypl-text-field input[type=text].active {
       width: 16rem; }
-    .nypl-text-fieldset input[type=text]:focus {
+    .nypl-text-field input[type=text]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2202,7 +2169,35 @@ footer {
       color: #080807;
       outline: none; }
 
-.nypl-name-fieldset {
+.nypl-text-field-with-label label {
+  background-color: transparent;
+  display: block;
+  font-weight: bold;
+  position: absolute; }
+.nypl-text-field-with-label input[type=text] {
+  background-color: #efedeb;
+  border: 0;
+  padding: 0;
+  -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+  -moz-box-shadow: inset 0 0 0 2px #efedeb;
+  box-shadow: inset 0 0 0 2px #efedeb;
+  border-bottom: 0.0625rem solid #080807;
+  height: 2rem;
+  padding: 1.5rem 0 0;
+  text-indent: 0.5rem;
+  transition: all 0.2s ease-out;
+  width: 100%; }
+  .nypl-text-field-with-label input[type=text].active {
+    width: 16rem; }
+  .nypl-text-field-with-label input[type=text]:focus {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+    box-shadow: inset 0 0 0 4px #ffb81d;
+    color: #080807;
+    outline: none; }
+
+.nypl-name-field {
   background-color: #efedeb;
   border: 0;
   display: block;
@@ -2210,18 +2205,18 @@ footer {
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-name-fieldset label {
+  .nypl-name-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-name-fieldset label {
+  .nypl-name-field label {
     margin-left: 0.5rem; }
-  .nypl-name-fieldset label {
+  .nypl-name-field label {
     background-color: transparent;
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-name-fieldset input[type=text] {
+  .nypl-name-field input[type=text] {
     background-color: #efedeb;
     border: 0;
     padding: 0;
@@ -2234,21 +2229,21 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-name-fieldset input[type=text].active {
+    .nypl-name-field input[type=text].active {
       width: 16rem; }
-    .nypl-name-fieldset input[type=text]:focus {
+    .nypl-name-field input[type=text]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
       box-shadow: inset 0 0 0 4px #ffb81d;
       color: #080807;
       outline: none; }
-  .nypl-name-fieldset div {
+  .nypl-name-field div {
     display: block;
     float: left;
     margin-right: 0.125rem;
     width: calc(50% - 0.125rem); }
-    .nypl-name-fieldset div:last-child {
+    .nypl-name-field div:last-child {
       margin-right: 0; }
 
 .nypl-address-fieldset {
@@ -2304,7 +2299,7 @@ footer {
     .nypl-address-fieldset .nypl-simple-radiobutton label {
       position: relative; }
 
-.nypl-date-fieldset {
+.nypl-date-field {
   background-color: #efedeb;
   border: 0;
   display: block;
@@ -2313,18 +2308,18 @@ footer {
   position: relative;
   min-width: 12rem;
   width: 50%; }
-  .nypl-date-fieldset label {
+  .nypl-date-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-date-fieldset label {
+  .nypl-date-field label {
     margin-left: 0.5rem; }
-  .nypl-date-fieldset label {
+  .nypl-date-field label {
     background-color: transparent;
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-date-fieldset input[type=text] {
+  .nypl-date-field input[type=text] {
     background-color: #efedeb;
     border: 0;
     padding: 0;
@@ -2337,9 +2332,9 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-date-fieldset input[type=text].active {
+    .nypl-date-field input[type=text].active {
       width: 16rem; }
-    .nypl-date-fieldset input[type=text]:focus {
+    .nypl-date-field input[type=text]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2352,7 +2347,7 @@ footer {
   font-size: 0.9rem;
   font-weight: normal; }
 
-.nypl-select-field {
+.nypl-select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -2364,25 +2359,25 @@ footer {
   padding-left: 0.5rem;
   width: 100%; }
 
-.nypl-select-fieldset {
+.nypl-select-field {
   background-color: #efedeb;
   border: 0;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-select-fieldset label {
+  .nypl-select-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-select-fieldset label {
+  .nypl-select-field label {
     margin-left: 0.5rem; }
-  .nypl-select-fieldset label {
+  .nypl-select-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem;
     position: relative; }
-  .nypl-select-fieldset select {
+  .nypl-select-field select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -2407,29 +2402,36 @@ footer {
   height: initial;
   margin-right: 0.25rem; }
 
-.nypl-radiobutton-fieldset {
+.nypl-radiobutton-field,
+.nypl-checkbox-field {
   background-color: #efedeb;
   border: 0;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-radiobutton-fieldset label {
+  .nypl-radiobutton-field label,
+  .nypl-checkbox-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-radiobutton-fieldset label {
+  .nypl-radiobutton-field label,
+  .nypl-checkbox-field label {
     margin-left: 0.5rem; }
-  .nypl-radiobutton-fieldset span.nypl-label {
+  .nypl-radiobutton-field span.nypl-label,
+  .nypl-checkbox-field span.nypl-label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-radiobutton-fieldset label {
+  .nypl-radiobutton-field label,
+  .nypl-checkbox-field label {
     background-color: #efedeb;
     font-weight: normal;
     padding: 0.1875rem 0; }
-  .nypl-radiobutton-fieldset input[type=radio],
-  .nypl-radiobutton-fieldset input[type=checkbox] {
+  .nypl-radiobutton-field input[type=radio],
+  .nypl-radiobutton-field input[type=checkbox],
+  .nypl-checkbox-field input[type=radio],
+  .nypl-checkbox-field input[type=checkbox] {
     height: initial;
     margin-right: 0.25rem; }
 
@@ -2542,37 +2544,37 @@ footer {
     .nypl-omnisearch input[type=submit] {
       padding: 0; } }
 
-.nypl-searchable-fieldset {
+.nypl-searchable-field {
   background-color: #efedeb;
   border: 0;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-searchable-fieldset label {
+  .nypl-searchable-field label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-searchable-fieldset label {
+  .nypl-searchable-field label {
     margin-left: 0.5rem; }
-  .nypl-searchable-fieldset span.nypl-label {
+  .nypl-searchable-field span.nypl-label {
     display: block;
     font-weight: bold;
     margin-left: 0.5rem; }
-  .nypl-searchable-fieldset label {
+  .nypl-searchable-field label {
     background-color: #efedeb;
     font-weight: normal;
     padding: 0.1875rem 0; }
-  .nypl-searchable-fieldset input[type=radio],
-  .nypl-searchable-fieldset input[type=checkbox] {
+  .nypl-searchable-field input[type=radio],
+  .nypl-searchable-field input[type=checkbox] {
     height: initial;
     margin-right: 0.25rem; }
-  .nypl-searchable-fieldset .nypl-facet-search label {
+  .nypl-searchable-field .nypl-facet-search label {
     background-color: transparent;
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-searchable-fieldset .nypl-facet-search input[type=text] {
+  .nypl-searchable-field .nypl-facet-search input[type=text] {
     background-color: #efedeb;
     border: 0;
     padding: 0;
@@ -2585,54 +2587,28 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-searchable-fieldset .nypl-facet-search input[type=text].active {
+    .nypl-searchable-field .nypl-facet-search input[type=text].active {
       width: 16rem; }
-    .nypl-searchable-fieldset .nypl-facet-search input[type=text]:focus {
+    .nypl-searchable-field .nypl-facet-search input[type=text]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
       box-shadow: inset 0 0 0 4px #ffb81d;
       color: #080807;
       outline: none; }
-  .nypl-searchable-fieldset .nypl-facet-list {
+  .nypl-searchable-field .nypl-facet-list {
     display: table;
     width: 100%; }
-    .nypl-searchable-fieldset .nypl-facet-list label {
+    .nypl-searchable-field .nypl-facet-list label {
       display: table-row; }
-    .nypl-searchable-fieldset .nypl-facet-list span {
+    .nypl-searchable-field .nypl-facet-list span {
       display: table-cell;
       padding: 0 0.5rem; }
-      .nypl-searchable-fieldset .nypl-facet-list span.nypl-facet-count {
+      .nypl-searchable-field .nypl-facet-list span.nypl-facet-count {
         text-align: right; }
-    .nypl-searchable-fieldset .nypl-facet-list .nypl-more-facets {
+    .nypl-searchable-field .nypl-facet-list .nypl-more-facets {
       display: inline-block;
       margin: 0.5rem; }
-
-.nypl-checkbox-fieldset {
-  background-color: #efedeb;
-  border: 0;
-  display: block;
-  margin: 1rem 0;
-  padding: 0;
-  position: relative; }
-  .nypl-checkbox-fieldset label {
-    display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-checkbox-fieldset label {
-    margin-left: 0.5rem; }
-  .nypl-checkbox-fieldset span.nypl-label {
-    display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-checkbox-fieldset label {
-    background-color: #efedeb;
-    font-weight: normal;
-    padding: 0.1875rem 0; }
-  .nypl-checkbox-fieldset input[type=radio],
-  .nypl-checkbox-fieldset input[type=checkbox] {
-    height: initial;
-    margin-right: 0.25rem; }
 
 .nypl-alphabetical-filter {
   background-color: #efedeb;
