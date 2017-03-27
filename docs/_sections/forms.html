@@ -5,11 +5,11 @@ description: Form fields and user input.
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> When encountering a properly formatted form, screen readers switch over to "form mode." This switch is typically signified by a loud beep. While in form mode, keyboard controls work differently, ex. "h" types a letter "h" rather than prompting the reader to scan headings. Users of screen readers and keyboard nav, generally navigate forms with the ‘Tab’ key.</p>
 
-    <p>Forms fields should be wrapped by a <code>fieldset</code> tag. How these wrappings are determined is up to the developer’s good judgment. Future recommended microformats for fieldsets may be implemented.</p>
+    <p>Forms fields should be wrapped by a <code>fieldset</code> tag. How these wrappings are determined is up to the developer’s good judgment. Recommended microformats for fieldsets are being implemented, such as the <a href="#omniSearch">Omni Search fieldset</a>.</p>
 
-    <h3 id="omniSearch">Omni search</h3>
+    <h3 id="omniSearch">Omni Search</h3>
 
-    <p>Omni search is a special fieldset contained in its own row, in an offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a submit <code>button</code>, a <code>span</code> tag of class <code>.nypl-omni-fields</code> and a text field. The <code>.nypl-omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
+    <p>Omni Search is a special fieldset contained in its own row, in an offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a submit <code>button</code>, a <code>span</code> tag of class <code>.nypl-omni-fields</code> and a text field. The <code>.nypl-omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
 
     <p><strong>NOTE:</strong> The text field is <code>aria-labeledby</code> the button.</p>
 
