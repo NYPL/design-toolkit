@@ -829,39 +829,86 @@ h1 {
     text-decoration: underline; }
 
 .swatches {
-  display: block; }
+  box-sizing: border-box; }
+  .swatches > :nth-child(1) {
+    width: 18.5rem; }
+  .swatches.reverse div {
+    color: #111; }
 
 .color-box {
-  background: #d7d4d0;
-  border: 1px solid #080807;
-  display: inline-block;
-  height: 7.5rem;
   list-style: none;
-  padding: 0.75rem;
-  width: 7.5rem; }
+  padding: 0.25rem;
+  margin-left: 0;
+  width: 25%; }
+  .color-box > .main {
+    height: 8rem;
+    padding-top: 3rem; }
+  .color-box > div {
+    color: #fff;
+    font-size: 75%;
+    font-style: italic;
+    height: 4rem;
+    margin: 0;
+    text-align: center; }
 
 .nypl-red-swatch {
-  background: #d0343a;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  text-align: center; }
+  background: #d0343a; }
 
 .nypl-red-dark-swatch {
-  background: #97272c;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  text-align: center; }
+  background: #97272c; }
 
 .nypl-red-tint-swatch {
-  background: #de7175;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  text-align: center; }
+  background: #de7175; }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: #5fa5c1; }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: #fff1a5; }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-destaurated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: #afc269; }
 
 /*# sourceMappingURL=docs.css.map */

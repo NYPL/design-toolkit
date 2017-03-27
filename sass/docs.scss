@@ -58,34 +58,64 @@ h1 {
 }
 // Color Swatches
 .swatches {
-  display: block;
+  box-sizing: border-box;
+
+  > :nth-child(1) {
+    width: 18.5rem;
+  }
+
+  &.reverse div {
+    color: $nypl-black;
+  }
 }
 
 .color-box {
-  background: $nypl-light-gray;
-  border: 1px solid $nypl-dark-gray;
-  display: inline-block;
-  height: 7.5rem;
   list-style: none;
-  padding: 0.75rem;
-  width: 7.5rem;
+  padding: 0.25rem;
+  margin-left: 0;
+  width: 25%;
+
+  > .main {
+    height: 8rem;
+    padding-top: 3rem;
+  }
+
+  > div {
+    color: $nypl-white;
+    font-size: 75%;
+    font-style: italic;
+    height: 4rem;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 @mixin swatch-box ($color-name: $nypl-light-gray) {
   background: $color-name;
-  color: $nypl-white;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  //vertical-align: middle;
   @content;
 }
 
 $colors: (
   nypl-red: $nypl-red,
   nypl-red-dark: $nypl-red-dark,
-  nypl-red-tint: $nypl-red-tint
+  nypl-red-tint: $nypl-red-tint,
+  nypl-blue: $nypl-blue,
+  nypl-blue-dark: $nypl-blue-dark,
+  nypl-blue-tint: $nypl-blue-tint,
+  nypl-gray-cool: $nypl-gray-cool,
+  nypl-gray: $nypl-gray,
+  nypl-gray-brown: $nypl-gray-brown,
+  nypl-dark-gray: $nypl-dark-gray,
+  nypl-light-gray: $nypl-light-gray,
+  nypl-white: $nypl-white,
+  nypl-black: $nypl-black,
+  nypl-yellow: $nypl-yellow,
+  nypl-yellow-tint: $nypl-yellow-tint,
+  nypl-orange: $nypl-orange,
+  nypl-orange-destaurated: $nypl-orange-destaurated,
+  nypl-green: $nypl-green,
+  nypl-green-dark: $nypl-green-dark,
+  nypl-green-tint: $nypl-green-tint,
 );
 
 @each $nypl-colors, $color-name in $colors {
@@ -93,10 +123,3 @@ $colors: (
     @include swatch-box ($color-name);
   }
 }
-
-// .color-swatch {
-//
-//   > div {
-//     text-align: center;
-//     }
-// }
