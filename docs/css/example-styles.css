@@ -2104,6 +2104,11 @@ footer {
   border-left: 1rem solid #fee24a;
   padding-left: 1rem; }
 
+.nypl-progress-indicator {
+  color: #776e64;
+  margin: 0;
+  padding: 0; }
+
 .nypl-label {
   display: block;
   font-weight: bold;

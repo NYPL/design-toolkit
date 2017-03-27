@@ -57,6 +57,10 @@
   @include a11y-note;
 }
 
+.nypl-progress-indicator {
+  @include progress-indicator;
+}
+
 .nypl-label {
   @include label;
 }

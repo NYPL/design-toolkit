@@ -5,13 +5,16 @@ description: Formats for specific information such as library hours, room locati
 
     <h3 id="alertBanner">Alert banner</h3>
 
-    <p>Requires a <code>nypl-full-width-wrapper</code> for proper margin and padding.</p>
+    <p>Requires a <code>nypl-full-width-wrapper</code> for proper margin and padding (See: <a href="layout.html">Layout</a>).</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-banner-alert"><div class="nypl-full-width-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div></div>
     </div>
-
+    <pre><code class="scss">
+.nypl-banner-alert
+.nypl-full-width-wrapper
+    </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-banner-alert&quot;&gt;
   &lt;div class=&quot;nypl-full-width-wrapper&quot;&gt;
@@ -19,6 +22,21 @@ description: Formats for specific information such as library hours, room locati
     in observance of Columbus Day.
   &lt;/div&gt;
 &lt;/div&gt;
+    </code></pre>
+
+    <h3 id="progressIndicator">Progress Indicator</h3>
+
+    <p>For situations where patrons are completing a multi-step process like registering for a library card, use a <code>p</code> tag of this class.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<p class="nypl-progress-indicator">Step 1 of 3</p>
+    </div>
+    <pre><code class="scss">
+.nypl-progress-indicator
+    </code></pre>
+    <pre><code class="html">
+&lt;p class=&quot;nypl-progress-indicator&quot;&gt;Step 1 of 3&lt;/p&gt;
     </code></pre>
 
     <h3 id="locationCard">Location card</h3>
