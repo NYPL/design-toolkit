@@ -1,11 +1,7 @@
 ---
-title: Color Usage
+title: Color Reference
 description: Color Usage
 ---
-
-### NYPL Guidelines
-We use a species of the approved color set forth by marketing.
-Find the marketing [version here](http://some url).
 
 ### Swatches
 
@@ -52,7 +48,7 @@ Find the marketing [version here](http://some url).
 </li><li class="color-box">  
   <div class="nypl-orange-swatch">$nypl-orange: #ffb81d</div>
 </li><li class="color-box">  
-  <div class="nypl-yellow-tint-swatch">$nypl-orange-destaurated: desaturate($nypl-orange, 40%)</div>
+  <div class="nypl-yellow-tint-swatch">$nypl-orange-destaurated:<br>desaturate($nypl-orange, 40%)</div>
 </li>
 </ul>
 <ul class="swatches">
@@ -61,21 +57,6 @@ Find the marketing [version here](http://some url).
 </li><li class="color-box">
   <div class="nypl-green-dark-swatch">$nypl-green-dark: #497629</div>
 </li><li class="color-box">  
-  <div class="$nypl-green-tint-swatch">$nypl-green-tint: tint($nypl-green, 40%)</div>
+  <div class="nypl-green-tint-swatch">$nypl-green-tint:<br>tint($nypl-green, 40%)</div>
 </li>
 </ul>
-
-
-### Accessible Color Combinations
-Combos that dont throw accessibility errors. These combinations should provide adequate contrast between forground and background text
-  + Black text on gray ground
-  + White text on red ground
-  + Black Text on yellow ground
-
-### Examples
-+ inline text link
-+ Top level pages `<h1>` & background
-+ focus styles
-+ Alerts & Notifications
-  - Global Library Alerts
-  - Form Validations

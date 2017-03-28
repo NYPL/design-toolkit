@@ -845,10 +845,11 @@ h1 {
     padding-top: 3rem; }
   .color-box > div {
     color: #fff;
-    font-size: 75%;
+    font-size: 90%;
     font-style: italic;
     height: 4rem;
     margin: 0;
+    padding-top: 1rem;
     text-align: center; }
 
 .nypl-red-swatch {
