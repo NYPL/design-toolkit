@@ -48,7 +48,7 @@ description: Color Usage
 </li><li class="color-box">  
   <div class="nypl-orange-swatch">$nypl-orange: #ffb81d</div>
 </li><li class="color-box">  
-  <div class="nypl-yellow-tint-swatch">$nypl-orange-destaurated:<br>desaturate($nypl-orange, 40%)</div>
+  <div class="nypl-orange-destaurated-swatch">$nypl-orange-destaurated:<br>desaturate($nypl-orange, 40%)</div>
 </li>
 </ul>
 <ul class="swatches">
