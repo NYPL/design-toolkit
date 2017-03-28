@@ -280,24 +280,24 @@ $collapsed-nav-height: 30px;
       margin: 0;
     }
 
-    fieldset {
-      border: 0;
-      color: $page-text-color;
-      margin: 1rem 0 0.5rem;
-      padding: 0;
-      position: relative;
-    }
+    // fieldset {
+    //   border: 0;
+    //   color: $page-text-color;
+    //   margin: 1rem 0 0.5rem;
+    //   padding: 0;
+    //   position: relative;
+    // }
 
-    label {
-      display: block;
-      font-weight: bold;
-      margin-left: 0.5rem;
-      position: absolute;
-    }
+    // label {
+    //   display: block;
+    //   font-weight: bold;
+    //   margin-left: 0.5rem;
+    //   position: absolute;
+    // }
 
-    input[type=text] {
-      @include text-field;
-    }
+    // input[type=text] {
+    //   @include text-field;
+    // }
 
     .links {
       margin: 1rem 0 0;

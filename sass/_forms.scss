@@ -19,6 +19,7 @@ $form-padding: 0.5rem;
 }
 
 @mixin label {
+  color: $page-text-color;
   display: block;
   font-weight: bold;
   margin-left: $form-padding;
@@ -72,6 +73,7 @@ $form-padding: 0.5rem;
 @mixin text-field-with-label {
   label {
     background-color: transparent;
+    color: $page-text-color;
     display: block;
     font-weight: bold;
     position: absolute;

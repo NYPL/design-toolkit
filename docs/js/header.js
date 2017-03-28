@@ -1,7 +1,7 @@
 var hideTimeout
 
 function init() {
-  $(".hidden").hide();
+  $(".nypl-select-field.hidden").hide();
   $('#date-of-birth').mask('00/00/0000');
   $("#step-2, #step-3").hide();
   $("#step-1_submit").click(function (e) {
@@ -172,10 +172,11 @@ function init() {
 
   $("input[name=available]").change(function() {
     var value = $("input[name=available]:checked").val()
+    console.log("hi");
     if (value == "library") {
-      $("fieldset.location").fadeIn(200)
+      $(".nypl-select-field.location").fadeIn(200)
     } else {
-      $("fieldset.location").fadeOut(200)
+      $(".nypl-select-field.location").fadeOut(200)
     }
   })
 

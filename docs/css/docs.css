@@ -412,57 +412,6 @@ button:focus {
     font-weight: bold;
     line-height: 1.5;
     margin: 0; }
-  .nypl-header .email-toggle fieldset {
-    border: 0;
-    color: #080807;
-    margin: 1rem 0 0.5rem;
-    padding: 0;
-    position: relative; }
-  .nypl-header .email-toggle label {
-    display: block;
-    font-weight: bold;
-    margin-left: 0.5rem;
-    position: absolute; }
-  .nypl-header .email-toggle input[type=text] {
-    background-color: #efedeb;
-    border: 0;
-    display: block;
-    margin: 1rem 0;
-    padding: 0;
-    position: relative; }
-    .nypl-header .email-toggle input[type=text] label {
-      display: block;
-      font-weight: bold;
-      margin-left: 0.5rem; }
-    .nypl-header .email-toggle input[type=text] label {
-      margin-left: 0.5rem; }
-    .nypl-header .email-toggle input[type=text] label {
-      background-color: transparent;
-      display: block;
-      font-weight: bold;
-      position: absolute; }
-    .nypl-header .email-toggle input[type=text] input[type=text] {
-      background-color: #efedeb;
-      border: 0;
-      padding: 0;
-      -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-      -moz-box-shadow: inset 0 0 0 2px #efedeb;
-      box-shadow: inset 0 0 0 2px #efedeb;
-      border-bottom: 0.0625rem solid #080807;
-      height: 2rem;
-      padding: 1.5rem 0 0;
-      text-indent: 0.5rem;
-      transition: all 0.2s ease-out;
-      width: 100%; }
-      .nypl-header .email-toggle input[type=text] input[type=text].active {
-        width: 16rem; }
-      .nypl-header .email-toggle input[type=text] input[type=text]:focus {
-        background-color: #fff;
-        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-        box-shadow: inset 0 0 0 4px #ffb81d;
-        color: #080807;
-        outline: none; }
   .nypl-header .email-toggle .links {
     margin: 1rem 0 0; }
 .nypl-header .login-toggle {
@@ -719,6 +668,7 @@ button:focus {
     -o-transition: all 0.1s ease-out 0s;
     transition: all 0.1s ease-out 0s; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label span.nypl-label {
+      color: #080807;
       display: block;
       font-weight: bold;
       margin-left: 0.5rem; }
