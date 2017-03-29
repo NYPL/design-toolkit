@@ -60,10 +60,6 @@ h1 {
 .swatches {
   box-sizing: border-box;
 
-  > :nth-child(1) {
-    width: 18.5rem;
-  }
-
   &.reverse div {
     color: $nypl-black;
   }
@@ -73,7 +69,6 @@ h1 {
   list-style: none;
   padding: 0.25rem;
   margin-left: 0;
-  width: 25%;
 
   > .main {
     height: 8rem;

@@ -830,16 +830,13 @@ h1 {
 
 .swatches {
   box-sizing: border-box; }
-  .swatches > :nth-child(1) {
-    width: 18.5rem; }
   .swatches.reverse div {
     color: #111; }
 
 .color-box {
   list-style: none;
   padding: 0.25rem;
-  margin-left: 0;
-  width: 25%; }
+  margin-left: 0; }
   .color-box > .main {
     height: 8rem;
     padding-top: 3rem; }
