@@ -28,6 +28,7 @@ $form-padding: 0.5rem;
 @mixin fieldset {
   background-color: $nypl-search-color-light;
   border: 0;
+  border-radius: $general-border-radius;
   box-shadow: none;
   display: block;
   margin: $general-padding 0;
@@ -50,6 +51,7 @@ $form-padding: 0.5rem;
 @mixin input {
   background-color: $nypl-search-color-light;
   border: 0;
+  border-radius: $general-border-radius $general-border-radius 0 0;
   padding: 0;
 }
 
@@ -150,7 +152,7 @@ $form-padding: 0.5rem;
   appearance: none;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% $nypl-search-color-light;
   border: 0;
-  border-radius: 0;
+  border-radius: $general-border-radius;
   height: 2rem;
   padding-right: 7%;
   padding-left: $form-padding;
@@ -171,12 +173,15 @@ $form-padding: 0.5rem;
 }
 
 @mixin simple-radiobutton {
+  border-radius: $general-border-radius;
+
   span.nypl-label {
     @include label;
   }
 
   label {
     background-color: $nypl-search-color-light;
+    border-radius: $general-border-radius;
     font-weight: normal;
     padding: 0.1875rem 0;
   }
@@ -196,6 +201,7 @@ $form-padding: 0.5rem;
 @mixin omnisearch {
   background-color: $nypl-search-color;
   border: 0;
+  border-radius: ($general-border-radius * 2);
   padding: $form-padding;
 
   button,
@@ -221,6 +227,7 @@ $form-padding: 0.5rem;
 
   input[type=text] {
     @include input;
+    border-radius: $general-border-radius;
     text-indent: $form-padding;
     width: 58%;
   }

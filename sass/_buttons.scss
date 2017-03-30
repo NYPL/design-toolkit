@@ -17,7 +17,7 @@
   padding: 0;
 }
 
-@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: 0, $border-width: 0.0625rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.2rem) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: $general-border-radius, $border-width: 0.0625rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.2rem) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
@@ -123,6 +123,7 @@
 
 @mixin service-button($collapsible: false, $text-color: $nypl-white, $background-color: $nypl-red) {
   @include basic-button($font-size: 0.8rem, $text-color: $text-color, $background-color: $background-color, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5rem);
+  border-radius: 0;
   display: block;
   font-weight: bold;
   overflow: hidden;
@@ -133,6 +134,7 @@
 
 @mixin login-button($collapsible: false) {
   @include basic-button($font-size: 0.7rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5rem, $collapsible: $collapsible, $border-width: 0);
+  border-radius: 0;
   display: block;
   font-weight: bold;
   text-transform: uppercase;

@@ -215,7 +215,7 @@ button:focus {
   .nypl-header .service-buttons li > a {
     background-color: #d0343a;
     border: 0 solid #776e64;
-    border-radius: 0;
+    border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
@@ -228,6 +228,7 @@ button:focus {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
+    border-radius: 0;
     display: block;
     font-weight: bold;
     overflow: hidden;
@@ -252,7 +253,7 @@ button:focus {
     .nypl-header .service-buttons li > a.donate {
       background-color: #fff;
       border: 0 solid #776e64;
-      border-radius: 0;
+      border-radius: 0.2rem;
       color: #d0343a;
       cursor: pointer;
       font-size: 0.8rem;
@@ -265,6 +266,7 @@ button:focus {
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
       transition: all 0.1s ease-in 0s;
+      border-radius: 0;
       display: block;
       font-weight: bold;
       overflow: hidden;
@@ -289,7 +291,7 @@ button:focus {
   .nypl-header .service-buttons button.collapsible {
     background-color: #d0343a;
     border: 0 solid #776e64;
-    border-radius: 0;
+    border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
@@ -305,6 +307,7 @@ button:focus {
     position: relative;
     padding-right: 1.5rem;
     text-align: left;
+    border-radius: 0;
     display: block;
     font-weight: bold;
     overflow: hidden;
@@ -365,7 +368,7 @@ button:focus {
   .nypl-header .email-toggle .subscribe-button {
     background-color: #776e64;
     border: 0.0625rem solid #fff;
-    border-radius: 0;
+    border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
@@ -423,7 +426,7 @@ button:focus {
     .nypl-header .login-toggle button.collapsible {
       background-color: #776e64;
       border: 0 solid #776e64;
-      border-radius: 0;
+      border-radius: 0.2rem;
       color: #fff;
       cursor: pointer;
       font-size: 0.7rem;
@@ -439,6 +442,7 @@ button:focus {
       position: relative;
       padding-right: 1.5rem;
       text-align: left;
+      border-radius: 0;
       display: block;
       font-weight: bold;
       text-transform: uppercase; }
@@ -499,7 +503,7 @@ button:focus {
   .nypl-header .login-toggle > a {
     background-color: #776e64;
     border: 0 solid #776e64;
-    border-radius: 0;
+    border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
     font-size: 0.7rem;
@@ -512,6 +516,7 @@ button:focus {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
+    border-radius: 0;
     display: block;
     font-weight: bold;
     text-transform: uppercase; }
@@ -603,6 +608,7 @@ button:focus {
     box-shadow: inset 0 -4px 0 #d0343a; }
 .nypl-header li.nypl-search .nypl-search_main {
   background-color: #d7d4d0;
+  border-radius: 0.4rem 0.4rem 0 0;
   margin: 0;
   position: relative;
   -webkit-transition: all 0.1s ease-out 0s;
@@ -612,7 +618,7 @@ button:focus {
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
     background-color: #1b7fa7;
     border: 0 solid #776e64;
-    border-radius: 0;
+    border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
     font-size: inherit;
@@ -658,6 +664,7 @@ button:focus {
     white-space: nowrap;
     z-index: 1; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label {
+    border-radius: 0.2rem;
     color: #efedeb;
     display: inline-block;
     height: 2rem;
@@ -674,6 +681,7 @@ button:focus {
       margin-left: 0.5rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label label {
       background-color: #efedeb;
+      border-radius: 0.2rem;
       font-weight: normal;
       padding: 0.1875rem 0; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
@@ -692,7 +700,9 @@ button:focus {
   .nypl-header li.nypl-search .nypl-search_main .nypl-form-text {
     background-color: #efedeb;
     border: 0;
+    border-radius: 0.2rem 0.2rem 0 0;
     padding: 0;
+    border-radius: 0.2rem;
     height: 2rem;
     margin-right: 0;
     padding: 0;

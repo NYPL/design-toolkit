@@ -442,6 +442,7 @@ $collapsed-nav-height: 30px;
 
     .nypl-search_main {
       background-color: $nypl-search-color;
+      border-radius: ($general-border-radius * 2) ($general-border-radius * 2) 0 0;
       margin: 0;
       position: relative;
       @include transition(all, $hover-time, ease-out);
@@ -506,6 +507,7 @@ $collapsed-nav-height: 30px;
       .nypl-form-text {
         @include input;
         // box-shadow: inset 0 0 0 2px $nypl-search-color-dark;
+        border-radius: $general-border-radius;
         height: 2rem;
         margin-right: 0;
         padding: 0;
