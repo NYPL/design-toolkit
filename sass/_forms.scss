@@ -28,17 +28,22 @@ $form-padding: 0.5rem;
 @mixin fieldset {
   background-color: $nypl-search-color-light;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: $general-padding 0;
   padding: 0;
   position: relative;
 
-  label {
-    @include label;
+  fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
   }
 
-  label {
-    margin-left: $form-padding;
+  label,
+  legend {
+    @include label;
   }
 }
 

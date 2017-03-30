@@ -248,13 +248,18 @@
               <input id="keyword-text" type="text" placeholder="Type keywords">
             </div>
             <div class="nypl-radiobutton-field">
-              <span class="nypl-label">Accessible from</span>
-              <label for="available-every">
-                <input id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere</label>
-              <label for="available-home">
-                <input id="available-home" type="radio" name="available" value="home">Home with a library card</label>
-              <label for="available-library">
-                <input id="available-library" type="radio" name="available" value="library">A library branch</label>
+              <fieldset>
+                <legend id="radiobutton-group1">Accessible from</legend>
+                <label id="radiobutton-group1_every" for="available-every">
+                  <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any" checked="checked">Anywhere
+                </label>
+                <label id="radiobutton-group1_home" for="available-home">
+                  <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
+                </label>
+                <label id="radiobutton-group1_library" for="available-library">
+                  <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
+                </label>
+              </fieldset>
             </div>
             <div class="nypl-select-field location hidden">
               <label for="location">Library branch</label>
@@ -417,7 +422,8 @@
               </select>
             </div>
             <div class="nypl-alphabetical-filter">
-              <label>Name starts with</label>
+            <fieldset>
+              <legend>Name starts with</legend>
               <button name="az-filter" disabled="true" class="nypl-long">Any</button>
               <button name="az-filter" title="Show only resources with name starting with a number">#</button>
               <button name="az-filter" title="Show only resources with name starting with A">A</button>
@@ -446,6 +452,7 @@
               <button name="az-filter" title="Show only resources with name starting with X">X</button>
               <button name="az-filter" title="Show only resources with name starting with Y">Y</button>
               <button name="az-filter" title="Show only resources with name starting with Z">Z</button>
+            </fieldset>
             </div>
             <input type="submit" class="nypl-basic-button" name="Apply" value="Apply filters">
           </form>

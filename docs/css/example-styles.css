@@ -2068,16 +2068,21 @@ footer {
 .nypl-fieldset {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-fieldset label {
+  .nypl-fieldset fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-fieldset label,
+  .nypl-fieldset legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-fieldset label {
     margin-left: 0.5rem; }
 
 .nypl-input {
@@ -2088,16 +2093,21 @@ footer {
 .nypl-text-field {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-text-field label {
+  .nypl-text-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-text-field label,
+  .nypl-text-field legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-text-field label {
     margin-left: 0.5rem; }
   .nypl-text-field label {
     background-color: transparent;
@@ -2160,17 +2170,22 @@ footer {
 .nypl-name-field {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-name-field label {
+  .nypl-name-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-name-field label,
+  .nypl-name-field legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-name-field label {
     margin-left: 0.5rem; }
   .nypl-name-field label {
     background-color: transparent;
@@ -2211,17 +2226,22 @@ footer {
 .nypl-address-fieldset {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-address-fieldset label {
+  .nypl-address-fieldset fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-address-fieldset label,
+  .nypl-address-fieldset legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-address-fieldset label {
     margin-left: 0.5rem; }
   .nypl-address-fieldset label {
     background-color: transparent;
@@ -2266,18 +2286,23 @@ footer {
 .nypl-date-field {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative;
   min-width: 12rem;
   width: 50%; }
-  .nypl-date-field label {
+  .nypl-date-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-date-field label,
+  .nypl-date-field legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-date-field label {
     margin-left: 0.5rem; }
   .nypl-date-field label {
     background-color: transparent;
@@ -2328,16 +2353,21 @@ footer {
 .nypl-select-field {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-select-field label {
+  .nypl-select-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-select-field label,
+  .nypl-select-field legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-select-field label {
     margin-left: 0.5rem; }
   .nypl-select-field label {
     color: #080807;
@@ -2375,18 +2405,24 @@ footer {
 .nypl-checkbox-field {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
+  .nypl-radiobutton-field fieldset,
+  .nypl-checkbox-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
   .nypl-radiobutton-field label,
-  .nypl-checkbox-field label {
+  .nypl-radiobutton-field legend,
+  .nypl-checkbox-field label,
+  .nypl-checkbox-field legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-radiobutton-field label,
-  .nypl-checkbox-field label {
     margin-left: 0.5rem; }
   .nypl-radiobutton-field span.nypl-label,
   .nypl-checkbox-field span.nypl-label {
@@ -2518,16 +2554,21 @@ footer {
 .nypl-searchable-field {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-searchable-field label {
+  .nypl-searchable-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-searchable-field label,
+  .nypl-searchable-field legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-searchable-field label {
     margin-left: 0.5rem; }
   .nypl-searchable-field span.nypl-label {
     color: #080807;
@@ -2587,16 +2628,21 @@ footer {
 .nypl-alphabetical-filter {
   background-color: #efedeb;
   border: 0;
+  box-shadow: none;
   display: block;
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-alphabetical-filter label {
+  .nypl-alphabetical-filter fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-alphabetical-filter label,
+  .nypl-alphabetical-filter legend {
     color: #080807;
     display: block;
     font-weight: bold;
-    margin-left: 0.5rem; }
-  .nypl-alphabetical-filter label {
     margin-left: 0.5rem; }
   .nypl-alphabetical-filter button {
     background-color: #efedeb;

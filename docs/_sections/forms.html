@@ -146,19 +146,21 @@ $('#date-of-birth').mask('00/00/0000');
 
     <h3 id="alphaFilters">Alphabetical filters</h3>
 
-    <p>Not a form element per se but still used within search forms. This is a list of buttons that apply an alphabetical/number-type filter. Currently applied filter is disabled. The "Any" (or multi-character) selection has a <code>nypl-long</code> class.
+    <p>Not a form element per se but still used within search forms. This control should contain a <code>fieldset</code> and <code>legend</code> that wrap and label it respectively. This is a list of buttons that apply an alphabetical/number-type filter. Currently applied filter is disabled. The "Any" (or multi-character) selection has a <code>nypl-long</code> class.
     </p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-alphabetical-filter">
-  <label>Name starts with</label>
-  <button name="az-filter" disabled="true" class="nypl-long">Any</button>
-  <button name="az-filter" title="Show only resources with name starting with a number">#</button>
-  <button name="az-filter" title="Show only resources with name starting with A">A</button>
-  <button name="az-filter" title="Show only resources with name starting with B">B</button>
-  <button name="az-filter" title="Show only resources with name starting with C">C</button>
-  <button name="az-filter" title="Show only resources with name starting with …">…</button>
+  <fieldset>
+    <legend>Name starts with</legend>
+    <button name="az-filter" disabled="true" class="nypl-long">Any</button>
+    <button name="az-filter" title="Show only resources with name starting with a number">#</button>
+    <button name="az-filter" title="Show only resources with name starting with A">A</button>
+    <button name="az-filter" title="Show only resources with name starting with B">B</button>
+    <button name="az-filter" title="Show only resources with name starting with C">C</button>
+    <button name="az-filter" title="Show only resources with name starting with …">…</button>
+  </fieldset>
 </div>
     </div>
 
@@ -168,35 +170,39 @@ $('#date-of-birth').mask('00/00/0000');
 
     <pre><code class="html">
 &lt;div class=&quot;nypl-alphabetical-filter&quot;&gt;
-  &lt;label&gt;Name starts with&lt;/label&gt;
-  &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;nypl-long&quot;&gt;Any&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with A&quot;&gt;A&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Name starts with&lt;/legend&gt;
+    &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;nypl-long&quot;&gt;Any&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with A&quot;&gt;A&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
+  &lt;/fieldset&gt;
 &lt;/div&gt;
     </code></pre>
 
     <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
 
-    <p>For multiple browser-compatibility reasons we avoid the <code>legend</code> tag and use a <code>span</code> tag of class <code>nypl-label</code>.</p>
+    <p>Another control that contains a <code>fieldset</code> and its corresponding <code>legend</code>.</p>
 
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> For proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title <code>span</code> tag and its corresponding <code>label</code> tag.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> For proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title <code>legend</code> tag and its corresponding <code>label</code> tag.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-radiobutton-field">
-  <span id="radiobutton-group1" class="nypl-label">Accessible from</span>
-  <label id="radiobutton-group1_every" for="available-every">
-    <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
-  </label>
-  <label id="radiobutton-group1_home" for="available-home">
-    <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
-  </label>
-  <label id="radiobutton-group1_library" for="available-library">
-    <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
-  </label>
+  <fieldset>
+    <legend id="radiobutton-group1">Accessible from</legend>
+    <label id="radiobutton-group1_every" for="available-every">
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
+    </label>
+    <label id="radiobutton-group1_home" for="available-home">
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
+    </label>
+    <label id="radiobutton-group1_library" for="available-library">
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
+    </label>
+  </fieldset>
 </div>
     </div>
     <pre><code class="scss">
@@ -207,16 +213,18 @@ $('#date-of-birth').mask('00/00/0000');
 
     <pre><code class="html">
 &lt;div class=&quot;nypl-radiobutton-field&quot;&gt;
-  &lt;span id=&quot;radiobutton-group1&quot; class=&quot;nypl-label&quot;&gt;Accessible from&lt;/span&gt;
-  &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
-    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
-  &lt;/label&gt;
-  &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
-    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
-  &lt;/label&gt;
-  &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
-    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
-  &lt;/label&gt;
+  &lt;fieldset&gt;
+    &lt;legend id=&quot;radiobutton-group1&quot;&gt;Accessible from&lt;/legend&gt;
+    &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
+    &lt;/label&gt;
+    &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
+    &lt;/label&gt;
+    &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
 &lt;/div&gt;
     </code></pre>
 
