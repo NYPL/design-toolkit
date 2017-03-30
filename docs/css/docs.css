@@ -775,6 +775,7 @@ footer {
       width: auto; } }
 
 code {
+  border-radius: 0.2rem;
   padding: 0; }
   code::before, code::after {
     letter-spacing: -0.2em;

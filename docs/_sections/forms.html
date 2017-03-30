@@ -193,13 +193,13 @@ $('#date-of-birth').mask('00/00/0000');
 <div class="nypl-radiobutton-field">
   <fieldset>
     <legend id="radiobutton-group1">Accessible from</legend>
-    <label id="radiobutton-group1_every" for="available-every">
+    <label id="radiobutton-group1_every">
       <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
     </label>
-    <label id="radiobutton-group1_home" for="available-home">
+    <label id="radiobutton-group1_home">
       <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
     </label>
-    <label id="radiobutton-group1_library" for="available-library">
+    <label id="radiobutton-group1_library">
       <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
     </label>
   </fieldset>
@@ -209,19 +209,19 @@ $('#date-of-birth').mask('00/00/0000');
 .nypl-radiobutton-field
     </code></pre>
 
-    <p><strong>NOTE:</strong> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
+    <p><strong>NOTE:</strong> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag. The <code>for</code> attribute is unnecessary since the label wraps the input element.</p>
 
     <pre><code class="html">
 &lt;div class=&quot;nypl-radiobutton-field&quot;&gt;
   &lt;fieldset&gt;
     &lt;legend id=&quot;radiobutton-group1&quot;&gt;Accessible from&lt;/legend&gt;
-    &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
+    &lt;label id=&quot;radiobutton-group1_every&quot;&gt;
       &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
     &lt;/label&gt;
-    &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
+    &lt;label id=&quot;radiobutton-group1_home&quot;&gt;
       &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
     &lt;/label&gt;
-    &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
+    &lt;label id=&quot;radiobutton-group1_library&quot;&gt;
       &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
     &lt;/label&gt;
   &lt;/fieldset&gt;
@@ -235,7 +235,7 @@ $('#date-of-birth').mask('00/00/0000');
     <p>The general structure is: a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a <code>nypl-facet-list</code> of items, each with the following structure:</p>
 
     <pre><code class="html">
-&lt;label for=&quot;my-facet-value-id&quot;&gt;
+&lt;label&gt;
   &lt;span&gt;
     &lt;input id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot;&gt;
     The facet text
@@ -258,35 +258,35 @@ $('#date-of-birth').mask('00/00/0000');
     <input id="subject-text" type="text" placeholder="Enter keywords">
   </div>
   <div class="nypl-facet-list">
-    <label for="subject-poems">
+    <label>
       <span>
         <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
         Poems
       </span>
       <span class="nypl-facet-count">97</span>
     </label>
-    <label for="subject-ejournals">
+    <label>
       <span>
         <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
         Electronic journals
       </span>
       <span class="nypl-facet-count">489</span>
     </label>
-    <label for="subject-home">
+    <label>
       <span>
         <input id="subject-home" type="checkbox" name="subject" value="home">
         Electronic books
       </span>
       <span class="nypl-facet-count">236</span>
     </label>
-    <label for="subject-piano">
+    <label>
       <span>
         <input id="subject-piano" type="checkbox" name="subject" value="piano">
         Piano music
       </span>
       <span class="nypl-facet-count">198</span>
     </label>
-    <label for="subject-opera">
+    <label>
       <span>
         <input id="subject-opera" type="checkbox" name="subject" value="opera">
         Operas
@@ -304,6 +304,9 @@ $('#date-of-birth').mask('00/00/0000');
 .nypl-facet-list
 .nypl-facet-count
     </code></pre>
+
+    <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a>, the <code>for</code> attribute is unnecessary <strong>in the checkboxes</strong> since the label wraps the input element.</p>
+
     <pre><code class="html">
 &lt;div class=&quot;nypl-searchable-field&quot;&gt;
   &lt;div class=&quot;nypl-facet-search&quot;&gt;
@@ -311,35 +314,35 @@ $('#date-of-birth').mask('00/00/0000');
     &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;nypl-facet-list&quot;&gt;
-    &lt;label for=&quot;subject-poems&quot;&gt;
+    &lt;label&gt;
       &lt;span&gt;
         &lt;input id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot;&gt;
         Poems
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;97&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-ejournals&quot;&gt;
+    &lt;label&gt;
       &lt;span&gt;
         &lt;input id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot;&gt;
         Electronic journals
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;489&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-home&quot;&gt;
+    &lt;label&gt;
       &lt;span&gt;
         &lt;input id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot;&gt;
         Electronic books
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-piano&quot;&gt;
+    &lt;label&gt;
       &lt;span&gt;
         &lt;input id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot;&gt;
         Piano music
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-opera&quot;&gt;
+    &lt;label&gt;
       &lt;span&gt;
         &lt;input id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot;&gt;
         Operas
