@@ -1548,6 +1548,7 @@ button:focus {
     position: relative; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_select {
     background-color: #776e64;
+    border-radius: 0 0 0.4rem 0.4rem;
     font-size: 0.9rem;
     right: 0;
     padding: 0 0.5rem 0.5rem;
