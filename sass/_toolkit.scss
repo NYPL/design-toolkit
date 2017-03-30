@@ -19,6 +19,10 @@
 @import "buttons";
 @import "footer";
 
+.nypl-link-button {
+  @include link-button;
+}
+
 .nypl-basic-button {
   @include basic-button;
 }
@@ -53,6 +57,10 @@
   @include a11y-note;
 }
 
+.nypl-progress-indicator {
+  @include progress-indicator;
+}
+
 .nypl-label {
   @include label;
 }
@@ -65,44 +73,53 @@
   @include input;
 }
 
-.nypl-textfield {
-  @include textfield;
+.nypl-text-field {
+  @include text-field;
 }
 
-.nypl-textfield-with-label {
-  @include textfield-with-label;
+.nypl-text-field-with-label {
+  @include text-field-with-label;
 }
 
-.nypl-text-fieldset {
-  @include text-fieldset;
+.nypl-name-field {
+  @include name-field;
+}
+
+.nypl-address-fieldset {
+  @include address-fieldset;
+}
+
+.nypl-date-field {
+  @include date-field;
+}
+
+.nypl-required-field {
+  @include required-field;
+}
+
+.nypl-select {
+  @include select;
 }
 
 .nypl-select-field {
   @include select-field;
 }
 
-.nypl-select-fieldset {
-  @include select-fieldset;
-}
-
 .nypl-simple-radiobutton {
   @include simple-radiobutton;
 }
 
-.nypl-radiobutton-fieldset {
-  @include radiobutton-fieldset;
+.nypl-radiobutton-field,
+.nypl-checkbox-field {
+  @include radiobutton-field;
 }
 
 .nypl-omnisearch {
   @include omnisearch;
 }
 
-.nypl-searchable-fieldset {
-  @include searchable-fieldset;
-}
-
-.nypl-checkbox-fieldset {
-  @include checkbox-fieldset;
+.nypl-searchable-field {
+  @include searchable-field;
 }
 
 .nypl-alphabetical-filter {

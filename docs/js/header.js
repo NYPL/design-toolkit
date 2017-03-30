@@ -1,6 +1,29 @@
 var hideTimeout
 
 function init() {
+  $(".nypl-select-field.hidden").hide();
+  $('#date-of-birth').mask('00/00/0000');
+  $("#step-2, #step-3").hide();
+  $("#step-1_submit").click(function (e) {
+    $("#step-2").show();
+    $("#step-1").hide();
+    document.location = "#step-2";
+  })
+  $("#step-2_submit").click(function (e) {
+    $("#step-3").show();
+    $("#step-2").hide();
+    document.location = "#step-3";
+  })
+  $("#prev-2").click(function (e) {
+    console.log("1");
+    $("#step-1").show();
+    $("#step-2").hide();
+  })
+  $("#prev-3").click(function (e) {
+    console.log("2");
+    $("#step-2").show();
+    $("#step-3").hide();
+  })
   $(".nypl-navigation-button_button").on("click touchend", function(e) {
     e.preventDefault();
     var selected = 0;
@@ -149,10 +172,11 @@ function init() {
 
   $("input[name=available]").change(function() {
     var value = $("input[name=available]:checked").val()
+    console.log("hi");
     if (value == "library") {
-      $("fieldset.location").fadeIn(200)
+      $(".nypl-select-field.location").fadeIn(200)
     } else {
-      $("fieldset.location").fadeOut(200)
+      $(".nypl-select-field.location").fadeOut(200)
     }
   })
 

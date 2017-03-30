@@ -15,8 +15,8 @@ $gray: #ccc;
 code {
   padding: 0;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     letter-spacing: -0.2em;
     content: "\00a0";
   }
