@@ -265,18 +265,87 @@
         <form action="" class="nypl-search-form" id="filter-search">
 
 
-<div class="nypl-select-field">
-  <label for="materialType">Material Type</label>
-  <select id="materialType" name="materialType">
-<option selected="" value="materialType_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$3.2.0">Any</option><option value="resourcetypes:txt" data-reactid=".2142tuw0m78.1.2.0.0.2:$3.2.1:$0">Text (125)</option>
-  </select>
+<div class="nypl-searchable-field">
+  <div class="nypl-facet-search">
+    <label for="material-text">Material Type</label>
+    <input id="material-text" type="text" placeholder="Enter keywords">
+  </div>
+  <div class="nypl-facet-list">
+    <label for="material-Artifact" class="nypl-bar_9">
+      <input id="material-Artifact" type="checkbox" name="subject" value="Artifact" checked="checked">
+      <span>
+        Artifact
+      </span>
+      <span class="nypl-facet-count">97</span>
+    </label>
+    <label for="material-Audio" class="nypl-bar_43">
+      <input id="material-Audio" type="checkbox" name="subject" value="Audio">
+      <span>
+        Audio
+      </span>
+      <span class="nypl-facet-count">489</span>
+    </label>
+    <label for="material-home" class="nypl-bar_21">
+      <input id="material-Cartographic" type="checkbox" name="subject" value="Cartographic">
+      <span>
+        Cartographic
+      </span>
+      <span class="nypl-facet-count">236</span>
+    </label>
+    <label for="material-Collection" class="nypl-bar_17">
+      <input id="material-Collection" type="checkbox" name="subject" value="Collection">
+      <span>
+        Collection
+      </span>
+      <span class="nypl-facet-count">198</span>
+    </label>
+    <label for="material-Dataset" class="nypl-bar_11">
+      <input id="material-Dataset" type="checkbox" name="subject" value="Dataset">
+      <span>
+        Dataset
+      </span>
+      <span class="nypl-facet-count">122</span>
+    </label>
+  </div>
+  <a href="#more" class="nypl-more-facets">Show 10 more</a>
 </div>
 
-<div class="nypl-select-field">
-  <label for="location">Location</label>
-  <select id="location" name="location">
-<option selected="" value="location_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.0">Any</option><option value="loc:ma" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$0">Stephen A. Schwarzman Building (28)</option><option value="loc:rc" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$1">NYPL Research Libraries (15)</option><option value="loc:sc" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$2">Schomburg Center (6)</option><option value="loc:my" data-reactid=".2142tuw0m78.1.2.0.0.2:$6.2.1:$3">Performing Arts Library at Lincoln Center (3)</option>
-  </select>
+<div class="nypl-searchable-field">
+  <div class="nypl-facet-search">
+    <label for="location-text">Location</label>
+    <input id="location-text" type="text" placeholder="Enter keywords">
+  </div>
+  <div class="nypl-facet-list">
+    <label for="location-Stephen A. Schwarzman Building " class="nypl-bar_46">
+      <input id="location-Stephen A. Schwarzman Building " type="checkbox" name="location" value="Stephen A. Schwarzman Building ">
+      <span>
+        Stephen A. Schwarzman Building
+      </span>
+      <span class="nypl-facet-count">28</span>
+    </label>
+    <label for="location-NYPL Research Libraries " class="nypl-bar_29">
+      <input id="location-NYPL Research Libraries " type="checkbox" name="location" value="NYPL Research Libraries ">
+      <span>
+        NYPL Research Libraries
+      </span>
+      <span class="nypl-facet-count">15</span>
+    </label>
+    <label for="location-Schomburg Center " class="nypl-bar_12">
+      <input id="location-Schomburg Center " type="checkbox" name="location" value="Schomburg Center ">
+      <span>
+        Schomburg Center
+      </span>
+      <span class="nypl-facet-count">6</span>
+    </label>
+    <label for="location-Performing Arts Library at Lincoln Center " class="nypl-bar_6">
+      <input id="location-Performing Arts Library at Lincoln Center " type="checkbox" name="location" value="Performing Arts Library at Lincoln Center ">
+      <span>
+        Performing Arts Library at Lincoln Center
+      </span>
+      <span class="nypl-facet-count">3</span>
+    </label>
+  </div>
+  <a href="#more" class="nypl-more-facets">Show 10 more</a>
 </div>
 
 <div class="nypl-searchable-field">
@@ -285,50 +354,53 @@
     <input id="subject-text" type="text" placeholder="Enter keywords">
   </div>
   <div class="nypl-facet-list">
-    <label for="subject-poems">
+    <label for="subject-poems" class="nypl-bar_9">
+      <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
       <span>
-        <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
         Poems
       </span>
       <span class="nypl-facet-count">97</span>
     </label>
-    <label for="subject-ejournals">
+    <label for="subject-ejournals" class="nypl-bar_43">
+      <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
       <span>
-        <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
         Electronic journals
       </span>
       <span class="nypl-facet-count">489</span>
     </label>
-    <label for="subject-home">
+    <label for="subject-home" class="nypl-bar_21">
+      <input id="subject-home" type="checkbox" name="subject" value="home">
       <span>
-        <input id="subject-home" type="checkbox" name="subject" value="home">
         Electronic books
       </span>
       <span class="nypl-facet-count">236</span>
     </label>
-    <label for="subject-piano">
+    <label for="subject-piano" class="nypl-bar_18">
+      <input id="subject-piano" type="checkbox" name="subject" value="piano">
       <span>
-        <input id="subject-piano" type="checkbox" name="subject" value="piano">
         Piano music
       </span>
       <span class="nypl-facet-count">198</span>
     </label>
-    <label for="subject-opera">
+    <label for="subject-opera" class="nypl-bar_11">
+      <input id="subject-opera" type="checkbox" name="subject" value="opera">
       <span>
-        <input id="subject-opera" type="checkbox" name="subject" value="opera">
         Operas
       </span>
       <span class="nypl-facet-count">122</span>
     </label>
-    <a href="#more" class="nypl-more-facets">Show 10 more subjects</a>
   </div>
+  <a href="#more" class="nypl-more-facets">Show 10 more</a>
 </div>
 
-<div class="nypl-select-field">
-  <label for="date">Year</label>
-  <select id="date" name="date">
-    <option selected="" value="date_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.0">Any</option><option value="date_range" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.0">Year range</option><option value="0" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$0">0 (1)</option><option value="10" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$1">10 (1)</option><option value="1780" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$2">1780 (1)</option><option value="1790" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$3">1790 (5)</option><option value="1800" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$4">1800 (6)</option><option value="1810" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$5">1810 (2)</option><option value="1820" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$6">1820 (2)</option><option value="1830" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$7">1830 (9)</option><option value="1840" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$8">1840 (9)</option><option value="1850" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$9">1850 (4)</option><option value="1860" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$10">1860 (3)</option><option value="1870" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$11">1870 (3)</option><option value="1880" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$12">1880 (3)</option><option value="1890" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$13">1890 (2)</option><option value="1900" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$14">1900 (6)</option><option value="1910" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$15">1910 (6)</option><option value="1920" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$16">1920 (3)</option><option value="1930" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$17">1930 (2)</option><option value="1950" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$18">1950 (1)</option><option value="1960" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$19">1960 (3)</option><option value="1970" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$20">1970 (6)</option><option value="1980" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$21">1980 (36)</option><option value="1990" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$22">1990 (3)</option><option value="2000" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$23">2000 (7)</option><option value="2010" data-reactid=".2142tuw0m78.1.2.0.0.2:$1.2.1:$24">2010 (1)</option>
-  </select>
+<div class="nypl-text-field">
+  <label for="date-from">After Year</label>
+  <input id="date-from" type="text" class="form-text">
+</div>
+
+<div class="nypl-text-field">
+  <label for="date-to">Before Year</label>
+  <input id="date-to" type="text" class="form-text">
 </div>
 
 <div class="text-field year-text hidden">
@@ -341,11 +413,84 @@
   <input id="date-before" type="text" placeholder="Enter a year">
 </div>
 
-<div class="nypl-select-field">
-  <label for="owner">Owner</label>
-  <select id="owner" name="owner">
-<option value="owner_any" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.0">Any</option><option value="orgs:1000" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$0" selected="true">Stephen A. Schwarzman Building (30)</option><option value="orgs:1105" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$1">Irma and Paul Milstein Division of United States History, Local History and Genealogy (15)</option><option value="orgs:0003" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$2">Princeton University Library (10)</option><option value="orgs:1101" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$3">General Research Division (10)</option><option value="orgs:1114" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$4">Schomburg Center for Research in Black Culture, Jean Blackwell Hutson Research and Reference Division (6)</option><option value="orgs:1108" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$5">Rare Book Division (2)</option><option value="orgs:1123" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$6">Music Division (2)</option><option value="orgs:1104" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$7">Henry W. and Albert A. Berg Collection of English and American Literature (1)</option><option value="orgs:1106" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$8">Lionel Pincus and Princess Firyal Map Division (1)</option><option value="orgs:1107" data-reactid=".2142tuw0m78.1.2.0.0.2:$0.2.1:$9">Manuscripts and Archives Division (1)</option>
-  </select>
+<div class="nypl-searchable-field">
+  <div class="nypl-facet-search">
+    <label for="owner-text">Owner</label>
+    <input id="owner-text" type="text" placeholder="Enter keywords">
+  </div>
+  <div class="nypl-facet-list">
+    <label for="location-orgs:1000" class="nypl-bar_30">
+      <input id="location-orgs:1000" type="checkbox" name="location" value="orgs:1000">
+      <span>
+        Stephen A. Schwarzman Building
+      </span>
+      <span class="nypl-facet-count">30</span>
+    </label>
+    <label for="location-orgs:1105" class="nypl-bar_15">
+      <input id="location-orgs:1105" type="checkbox" name="location" value="orgs:1105">
+      <span>
+        Irma and Paul Milstein Division of United States History, Local History and Genealogy
+      </span>
+      <span class="nypl-facet-count">15</span>
+    </label>
+    <label for="location-orgs:0003" class="nypl-bar_10">
+      <input id="location-orgs:0003" type="checkbox" name="location" value="orgs:0003">
+      <span>
+        Princeton University Library
+      </span>
+      <span class="nypl-facet-count">10</span>
+    </label>
+    <label for="location-orgs:1101" class="nypl-bar_10">
+      <input id="location-orgs:1101" type="checkbox" name="location" value="orgs:1101">
+      <span>
+        General Research Division
+      </span>
+      <span class="nypl-facet-count">10</span>
+    </label>
+    <label for="location-orgs:1114" class="nypl-bar_10">
+      <input id="location-orgs:1114" type="checkbox" name="location" value="orgs:1114">
+      <span>
+        Schomburg Center for Research in Black Culture, Jean Blackwell Hutson Research and Reference Division
+      </span>
+      <span class="nypl-facet-count">6</span>
+    </label>
+    <label for="location-orgs:1108" class="nypl-bar_6">
+      <input id="location-orgs:1108" type="checkbox" name="location" value="orgs:1108">
+      <span>
+        Rare Book Division
+      </span>
+      <span class="nypl-facet-count">2</span>
+    </label>
+    <label for="location-orgs:1123" class="nypl-bar_2">
+      <input id="location-orgs:1123" type="checkbox" name="location" value="orgs:1123">
+      <span>
+        Music Division
+      </span>
+      <span class="nypl-facet-count">2</span>
+    </label>
+    <label for="location-orgs:1104" class="nypl-bar_2">
+      <input id="location-orgs:1104" type="checkbox" name="location" value="orgs:1104">
+      <span>
+        Henry W. and Albert A. Berg Collection of English and American Literature
+      </span>
+      <span class="nypl-facet-count">1</span>
+    </label>
+    <label for="location-orgs:1106" class="nypl-bar_1">
+      <input id="location-orgs:1106" type="checkbox" name="location" value="orgs:1106">
+      <span>
+        Lionel Pincus and Princess Firyal Map Division
+      </span>
+      <span class="nypl-facet-count">1</span>
+    </label>
+    <label for="location-orgs:1107" class="nypl-bar_1">
+      <input id="location-orgs:1107" type="checkbox" name="location" value="orgs:1107">
+      <span>
+        Manuscripts and Archives Division
+      </span>
+      <span class="nypl-facet-count">1</span>
+    </label>
+  </div>
+  <a href="#more" class="nypl-more-facets">Show 10 more</a>
 </div>
 
 <div class="nypl-select-field">
@@ -379,7 +524,7 @@
 <!-- results column -->
 <div class="nypl-column-three-quarters" id="mainContent">
       <div class="nypl-results-summary">
-        <span class="nypl-results-count">125</span> results found 
+        <span class="nypl-results-count">125</span> results found
         <span class="nypl-facet">for keywords <strong>hamilton</strong><button><span>Remove hamilton keyword filter</span></button></span>,
         <span class="nypl-facet">with subject <strong>Poems</strong><button><span>Remove Poems subject filter</span></button></span>,
         <span class="nypl-facet">with owner <strong>Stephen A. Schwarzman Building</strong><button><span>Remove Stephen A. Schwarzman Building owner filter</span></button></span>.

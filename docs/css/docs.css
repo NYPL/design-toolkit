@@ -688,7 +688,7 @@ button:focus {
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
-      margin-right: 0.25rem; }
+      margin: 0 0.25rem 0 0; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.selected {
       background-color: #efedeb;
       color: #080807; }

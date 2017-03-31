@@ -189,7 +189,7 @@ $form-padding: 0.5rem;
   input[type=radio],
   input[type=checkbox] {
     height: initial;
-    margin-right: 0.25rem;
+    margin: 0 0.25rem 0 0;
   }
 }
 
@@ -272,26 +272,41 @@ $form-padding: 0.5rem;
   }
 
   .nypl-facet-list {
+    border-collapse: separate;
+    border-spacing: 0 0.2rem;
     display: table;
     width: 100%;
 
     label {
       display: table-row;
+
+      @for $percent from 1 through 100 {
+        &.nypl-bar_#{$percent} {
+          background: linear-gradient(to right, transparent, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color);
+        }
+      }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: table-cell;
+      width: 2rem;
     }
 
     span {
       display: table-cell;
-      padding: 0 $form-padding;
+      padding: 0 $form-padding 0 0;
+      width: 100%;
 
       &.nypl-facet-count {
         text-align: right;
       }
     }
+  }
 
-    .nypl-more-facets {
-      display: inline-block;
-      margin: $form-padding;
-    }
+  .nypl-more-facets {
+    display: inline-block;
+    margin: $form-padding;
   }
 }
 
