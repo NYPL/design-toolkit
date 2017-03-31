@@ -13,6 +13,7 @@ $blue: #00f;
 $gray: #ccc;
 
 code {
+  border-radius: $general-border-radius;
   padding: 0;
 
   &::before,

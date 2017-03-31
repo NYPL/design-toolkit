@@ -467,6 +467,7 @@ $collapsed-nav-height: 30px;
 
       .nypl-search_select {
         background-color: $nypl-search-color-dark;
+        border-radius: 0 0 ($general-border-radius * 2) ($general-border-radius * 2);
         font-size: 0.9rem;
         right: 0;
         padding: 0 $form-padding $form-padding;
