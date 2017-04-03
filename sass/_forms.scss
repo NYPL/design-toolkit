@@ -297,7 +297,10 @@ $form-padding: 0.5rem;
     span {
       display: block;
       float: left;
+      // overflow: hidden;
       padding: 0 $form-padding 0 0;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
       width: calc(100% - 4.5rem - #{$form-padding});
 
       &.nypl-facet-count {
