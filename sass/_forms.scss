@@ -272,35 +272,38 @@ $form-padding: 0.5rem;
   }
 
   .nypl-facet-list {
-    border-collapse: separate;
-    border-spacing: 0 0.2rem;
-    display: table;
     width: 100%;
 
     label {
-      display: table-row;
+      @include clearfix;
+      border-radius: 0;
+      display: block;
+      margin-bottom: 0.2rem;
 
       @for $percent from 1 through 100 {
         &.nypl-bar_#{$percent} {
-          background: linear-gradient(to right, transparent, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color);
-          background-attachment: fixed;
+          background: linear-gradient(to right, transparent 0%, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color) 100%;
         }
       }
     }
 
     input[type="radio"],
     input[type="checkbox"] {
-      display: table-cell;
-      width: 2rem;
+      display: block;
+      height: 1.6rem;
+      float: left;
     }
 
     span {
-      display: table-cell;
+      display: block;
+      float: left;
       padding: 0 $form-padding 0 0;
-      width: 100%;
+      width: calc(100% - 4.5rem - #{$form-padding});
 
       &.nypl-facet-count {
+        float: right;
         text-align: right;
+        width: 2.5rem;
       }
     }
   }
