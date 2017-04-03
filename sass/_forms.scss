@@ -283,6 +283,7 @@ $form-padding: 0.5rem;
       @for $percent from 1 through 100 {
         &.nypl-bar_#{$percent} {
           background: linear-gradient(to right, transparent, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color);
+          background-attachment: fixed;
         }
       }
     }
