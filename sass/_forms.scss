@@ -278,7 +278,7 @@ $form-padding: 0.5rem;
       @include clearfix;
       border-radius: 0;
       display: block;
-      margin-bottom: 0.2rem;
+      margin-top: 0.2rem;
 
       @for $percent from 1 through 100 {
         &.nypl-bar_#{$percent} {

@@ -2654,7 +2654,7 @@ footer {
     .nypl-searchable-field .nypl-facet-list label {
       border-radius: 0;
       display: block;
-      margin-bottom: 0.2rem; }
+      margin-top: 0.2rem; }
       .nypl-searchable-field .nypl-facet-list label::before, .nypl-searchable-field .nypl-facet-list label::after {
         content: "";
         display: table; }
