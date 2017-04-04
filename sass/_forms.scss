@@ -265,7 +265,7 @@ $form-padding: 0.5rem;
 @mixin searchable-field {
   @include fieldset;
   @include simple-radiobutton;
-
+  padding-bottom: $form-padding;
 
   .nypl-facet-search {
     @include text-field-with-label;
@@ -311,9 +311,8 @@ $form-padding: 0.5rem;
     }
   }
 
-  .nypl-more-facets {
-    display: inline-block;
-    margin: $form-padding;
+  .nypl-link-button {
+    margin: $form-padding $form-padding 0;
   }
 }
 

@@ -122,8 +122,8 @@
       display: block;
       fill: $link-color;
       float: right;
-      height: 2em;
-      width: 2em;
+      height: 2rem;
+      width: 2rem;
     }
 
     @include media($mobile-breakpoint) {
@@ -159,6 +159,7 @@ $sorter-width: 11em;
 
   ul {
     background-color: $nypl-search-color-light;
+    border-radius: $general-border-radius;
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
@@ -173,7 +174,7 @@ $sorter-width: 11em;
   a {
     color: $page-color;
     display: block;
-    padding: 0.25em 0.5em 0.25em 1em;
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none;
 
     &:hover {

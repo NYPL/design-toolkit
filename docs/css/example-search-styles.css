@@ -2594,7 +2594,8 @@ footer {
   margin: 1rem 0;
   padding: 0;
   position: relative;
-  border-radius: 0.2rem; }
+  border-radius: 0.2rem;
+  padding-bottom: 0.5rem; }
   .nypl-searchable-field fieldset {
     border: 0;
     box-shadow: none;
@@ -2874,9 +2875,8 @@ footer {
         float: right;
         text-align: right;
         width: 2.5rem; }
-  .nypl-searchable-field .nypl-more-facets {
-    display: inline-block;
-    margin: 0.5rem; }
+  .nypl-searchable-field .nypl-link-button {
+    margin: 0.5rem 0.5rem 0; }
 
 .nypl-alphabetical-filter {
   background-color: #efedeb;
@@ -3454,8 +3454,8 @@ footer {
     display: block;
     fill: #1b7fa7;
     float: right;
-    height: 2em;
-    width: 2em; }
+    height: 2rem;
+    width: 2rem; }
     .nypl-results-pagination a svg.reversed {
       background-color: inherit;
       fill: #fff; }
@@ -3545,6 +3545,7 @@ footer {
         color: #080807; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
+    border-radius: 0.2rem;
     list-style: none;
     min-width: 11em;
     position: absolute;
@@ -3555,7 +3556,7 @@ footer {
   .nypl-results-sorter a {
     color: #080807;
     display: block;
-    padding: 0.25em 0.5em 0.25em 1em;
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none; }
     .nypl-results-sorter a:hover {
       color: #080807;
