@@ -288,7 +288,7 @@ button:-moz-focusring,
  */
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  margin: 0;
   padding: 0.35em 0.625em 0.75em; }
 
 /**
@@ -658,7 +658,7 @@ button:-moz-focusring,
  */
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  margin: 0;
   padding: 0.35em 0.625em 0.75em; }
 
 /**
@@ -2585,6 +2585,14 @@ footer {
     .nypl-omnisearch input[type=submit] {
       padding: 0; } }
 
+.nypl-mobile-refine {
+  display: none; }
+  @media (max-width: 965px) {
+    .nypl-mobile-refine {
+      display: block; }
+      .nypl-mobile-refine.hidden {
+        display: none; } }
+
 .nypl-searchable-field {
   background-color: #efedeb;
   border: 0;
@@ -2655,6 +2663,7 @@ footer {
     .nypl-searchable-field .nypl-facet-list label {
       border-radius: 0;
       display: block;
+      font-size: 0.85rem;
       margin-top: 0.2rem; }
       .nypl-searchable-field .nypl-facet-list label::before, .nypl-searchable-field .nypl-facet-list label::after {
         content: "";
@@ -2870,11 +2879,15 @@ footer {
       display: block;
       float: left;
       padding: 0 0.5rem 0 0;
-      width: calc(100% - 4.5rem - 0.5rem); }
+      width: calc(100% - 4rem - 0.5rem); }
+      .nypl-searchable-field .nypl-facet-list span.nypl-collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
       .nypl-searchable-field .nypl-facet-list span.nypl-facet-count {
         float: right;
         text-align: right;
-        width: 2.5rem; }
+        width: 2rem; }
   .nypl-searchable-field .nypl-link-button {
     margin: 0.5rem 0.5rem 0; }
 
@@ -2939,6 +2952,11 @@ footer {
 
 .nypl-search-form {
   margin: 0 0 1rem; }
+  @media (max-width: 965px) {
+    .nypl-search-form {
+      display: none; }
+      .nypl-search-form.active {
+        display: block; } }
 
 .nypl-screenreader-only {
   position: absolute;
@@ -3311,7 +3329,7 @@ footer {
     vertical-align: top; }
 
 .nypl-results-summary {
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   margin-top: 1rem; }
   .nypl-results-summary::before, .nypl-results-summary::after {
@@ -3324,7 +3342,7 @@ footer {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     margin-right: 0.5rem; }
   .nypl-results-summary .nypl-facet button {
     background-color: #fff;
@@ -3343,6 +3361,7 @@ footer {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
     display: inline-block;
+    line-height: 0;
     margin: 0;
     padding: 0;
     position: relative;

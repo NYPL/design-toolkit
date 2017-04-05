@@ -1,6 +1,19 @@
 var hideTimeout
 
 function init() {
+  $(".nypl-mobile-refine button").click(function(e){
+    e.preventDefault();
+    var self = $(e.target);
+    var parent = self.parent();
+    parent.addClass("hidden");
+    $(".nypl-search-form").addClass("active")
+  })
+  $(".nypl-collapsed").click(function(e){
+    e.preventDefault();
+    var self = $(e.target);
+    self.removeClass("nypl-collapsed")
+    self.off("click")
+  })
   $(".nypl-select-field.hidden").hide();
   $('#date-of-birth').mask('00/00/0000');
   $("#step-2, #step-3").hide();

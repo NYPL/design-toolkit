@@ -40,7 +40,7 @@
 }
 
 @mixin results-summary {
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   @include clearfix;
@@ -50,7 +50,7 @@
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     margin-right: 0.5rem;
   }
 
@@ -58,6 +58,7 @@
     // the button inside a facet
     @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1em, $border-width: 0);
     display: inline-block;
+    line-height: 0;
     margin: 0;
     padding: 0;
     position: relative;

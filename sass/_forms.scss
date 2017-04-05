@@ -278,6 +278,7 @@ $form-padding: 0.5rem;
       @include clearfix;
       border-radius: 0;
       display: block;
+      font-size: 0.85rem;
       margin-top: 0.2rem;
 
       @for $percent from 1 through 100 {
@@ -297,16 +298,19 @@ $form-padding: 0.5rem;
     span {
       display: block;
       float: left;
-      // overflow: hidden;
       padding: 0 $form-padding 0 0;
-      // text-overflow: ellipsis;
-      // white-space: nowrap;
-      width: calc(100% - 4.5rem - #{$form-padding});
+      width: calc(100% - 4rem - #{$form-padding});
+
+      &.nypl-collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
 
       &.nypl-facet-count {
         float: right;
         text-align: right;
-        width: 2.5rem;
+        width: 2rem;
       }
     }
   }
@@ -334,7 +338,27 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin mobile-refine {
+  display: none;
+
+  @include media($mobile-breakpoint) {
+    display: block;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
 @mixin search-form() {
   // used for left-column searches
   margin: 0 0 1rem;
+
+  @include media($mobile-breakpoint) {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }

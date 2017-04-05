@@ -118,6 +118,10 @@
   @include omnisearch;
 }
 
+.nypl-mobile-refine {
+  @include mobile-refine;
+}
+
 .nypl-searchable-field {
   @include searchable-field;
 }
