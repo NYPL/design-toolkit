@@ -1070,8 +1070,6 @@ button:focus {
     height: 30px;
     overflow: hidden; }
   .nypl-header.collapsed .nypl-logo {
-    background: url("../img/lion.svg") no-repeat scroll 0 0/2.81667rem auto #fff;
-    background-position-y: -4px;
     margin: 0; }
   .nypl-header.collapsed .service-buttons {
     min-height: 10px; }
