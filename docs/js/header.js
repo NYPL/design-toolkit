@@ -7,6 +7,7 @@ function init() {
     var parent = self.parent();
     parent.addClass("hidden");
     $(".nypl-search-form").addClass("active")
+    $("#material-text").focus()
   })
   $(".nypl-collapsed").click(function(e){
     e.preventDefault();
