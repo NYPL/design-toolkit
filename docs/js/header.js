@@ -5,6 +5,8 @@ function init() {
     e.preventDefault();
     var self = $(e.target);
     var parent = self.parent();
+    console.log(self);
+    self.attr("aria-expanded", "true");
     parent.addClass("hidden");
     $(".nypl-search-form").addClass("active")
     $("#material-text").focus()
