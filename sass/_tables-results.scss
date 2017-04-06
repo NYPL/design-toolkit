@@ -194,6 +194,38 @@ $sorter-width: 11em;
     font-weight: normal;
   }
 
+  dl {
+    @include clearfix;
+    margin-bottom: 1rem;
+  }
+
+  dt,
+  dd {
+    float: left;
+  }
+
+  dt {
+    clear: left;
+    font-weight: bold;
+    width: 8.5rem;
+
+    &::after {
+      content: ":";
+    }
+
+    @include media($mobile-breakpoint) {
+      width: 40%;
+    }
+  }
+
+  dd {
+    margin: 0;
+
+    @include media($mobile-breakpoint) {
+      width: 60%;
+    }
+  }
+
   p {
     margin-bottom: 0.5rem;
   }

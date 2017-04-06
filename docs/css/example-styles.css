@@ -3604,6 +3604,30 @@ footer {
   margin-left: 0; }
   .nypl-results-item h2 {
     font-weight: normal; }
+  .nypl-results-item dl {
+    margin-bottom: 1rem; }
+    .nypl-results-item dl::before, .nypl-results-item dl::after {
+      content: "";
+      display: table; }
+    .nypl-results-item dl::after {
+      clear: both; }
+  .nypl-results-item dt,
+  .nypl-results-item dd {
+    float: left; }
+  .nypl-results-item dt {
+    clear: left;
+    font-weight: bold;
+    width: 8.5rem; }
+    .nypl-results-item dt::after {
+      content: ":"; }
+    @media (max-width: 965px) {
+      .nypl-results-item dt {
+        width: 40%; } }
+  .nypl-results-item dd {
+    margin: 0; }
+    @media (max-width: 965px) {
+      .nypl-results-item dd {
+        width: 60%; } }
   .nypl-results-item p {
     margin-bottom: 0.5rem; }
 
