@@ -3598,6 +3598,8 @@ footer {
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0; }
+  .nypl-results-item h2 {
+    font-weight: normal; }
   .nypl-results-item p {
     margin-bottom: 0.5rem; }
 
