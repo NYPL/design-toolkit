@@ -2427,6 +2427,17 @@ footer {
     height: initial;
     margin: 0 0.25rem 0 0; }
 
+.nypl-terms-checkbox {
+  border-left: 0.5rem solid #776e64;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem; }
+  .nypl-terms-checkbox label {
+    font-weight: normal;
+    padding: 0.1875rem 0; }
+  .nypl-terms-checkbox input[type=checkbox] {
+    height: initial;
+    margin: 0 0.25rem 0 0; }
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   background-color: #efedeb;

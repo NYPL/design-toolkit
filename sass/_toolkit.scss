@@ -109,6 +109,10 @@
   @include simple-radiobutton;
 }
 
+.nypl-terms-checkbox {
+  @include terms-checkbox;
+}
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   @include radiobutton-field;
