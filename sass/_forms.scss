@@ -172,6 +172,11 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin form-error {
+  border-left: 1rem solid $highlight-color;
+  padding-left: 1rem;
+}
+
 @mixin simple-radiobutton {
   border-radius: $general-border-radius;
 

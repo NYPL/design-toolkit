@@ -105,6 +105,10 @@
   @include select-field;
 }
 
+.nypl-form-error {
+  @include form-error;
+}
+
 .nypl-simple-radiobutton {
   @include simple-radiobutton;
 }

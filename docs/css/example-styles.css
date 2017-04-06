@@ -2410,6 +2410,10 @@ footer {
     padding-left: 0.5rem;
     width: 100%; }
 
+.nypl-form-error {
+  border-left: 1rem solid #d0343a;
+  padding-left: 1rem; }
+
 .nypl-simple-radiobutton {
   border-radius: 0.2rem; }
   .nypl-simple-radiobutton span.nypl-label {
