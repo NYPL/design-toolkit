@@ -339,6 +339,21 @@ $form-padding: 0.5rem;
   .nypl-link-button {
     margin: $form-padding $form-padding 0;
   }
+
+  &.nosearch {
+    // when there are too few items to make search worthwhile
+
+    .nypl-facet-search {
+      label {
+        position: relative;
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+  }
 }
 
 @mixin alphabetical-filter {

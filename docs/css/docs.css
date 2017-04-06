@@ -2903,6 +2903,10 @@ footer {
         width: 2rem; }
   .nypl-searchable-field .nypl-link-button {
     margin: 0.5rem 0.5rem 0; }
+  .nypl-searchable-field.nosearch .nypl-facet-search label {
+    position: relative; }
+  .nypl-searchable-field.nosearch .nypl-facet-search input {
+    display: none; }
 
 .nypl-alphabetical-filter {
   background-color: #efedeb;

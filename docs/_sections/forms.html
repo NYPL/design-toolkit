@@ -270,11 +270,13 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;/label&gt;
     </code></pre>
 
+    <p>The placeholder on the search box should have the text “Search [facetname plural]” to make clear that the user is searching within the possible values to facet on.</p>
+
     <p>The label has an optional class of <code>nypl-bar_[percentnumber]</code> where the <code>[percentnumber]</code> determines the length of the decorative bar behind the value and should reflect the relative size of the selection of that facet. It must be an integer from 1 to 100, from shortest to longest (this is a different number from the estimated result count). A label with class <code>nypl-bar_10</code> would be 10% long, from the right.</p>
 
     <p>The facet count is optional but must be of class <code>nypl-facet-count</code>.</p>
 
-    <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from.</p>
+    <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
     <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong>.</p>
 
@@ -283,7 +285,7 @@ $('#date-of-birth').mask('00/00/0000');
 <div class="nypl-searchable-field">
   <div class="nypl-facet-search">
     <label for="subject-text">Subject</label>
-    <input id="subject-text" type="text" placeholder="Enter keywords">
+    <input id="subject-text" type="text" placeholder="Search Subjects">
   </div>
   <div class="nypl-facet-list">
     <label for="subject-poems" class="nypl-bar_9">
