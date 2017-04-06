@@ -3617,7 +3617,7 @@ footer {
   .nypl-results-item dt {
     clear: left;
     font-weight: bold;
-    width: 8.5rem; }
+    width: 12rem; }
     .nypl-results-item dt::after {
       content: ":"; }
     @media (max-width: 965px) {
