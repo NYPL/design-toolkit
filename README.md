@@ -16,6 +16,10 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.3
+> Removed invocation of SVG file.
+> Updated `node-sass`.
+
 ### v0.1.2
 > Many new classes and documentation.
 > Jekyll-based docs.
