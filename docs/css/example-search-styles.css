@@ -1108,6 +1108,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
@@ -1125,7 +1126,9 @@ button:focus {
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap; }
-    .nypl-header .service-buttons li > a:hover, .nypl-header .service-buttons li > a.active {
+    .nypl-header .service-buttons li > a:link, .nypl-header .service-buttons li > a:visited {
+      color: #fff; }
+    .nypl-header .service-buttons li > a:hover, .nypl-header .service-buttons li > a:hover:visited, .nypl-header .service-buttons li > a.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -1146,6 +1149,7 @@ button:focus {
       border-radius: 0.2rem;
       color: #d0343a;
       cursor: pointer;
+      display: inline-block;
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
@@ -1163,7 +1167,9 @@ button:focus {
       text-overflow: ellipsis;
       text-transform: uppercase;
       white-space: nowrap; }
-      .nypl-header .service-buttons li > a.donate:hover, .nypl-header .service-buttons li > a.donate.active {
+      .nypl-header .service-buttons li > a.donate:link, .nypl-header .service-buttons li > a.donate:visited {
+        color: #d0343a; }
+      .nypl-header .service-buttons li > a.donate:hover, .nypl-header .service-buttons li > a.donate:hover:visited, .nypl-header .service-buttons li > a.donate.active {
         border-color: #776e64;
         background-color: #fff;
         color: #776e64; }
@@ -1184,6 +1190,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
@@ -1221,18 +1228,20 @@ button:focus {
       .nypl-header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-header .service-buttons button.collapsible:hover, .nypl-header .service-buttons button.collapsible.active {
+    .nypl-header .service-buttons button.collapsible:link, .nypl-header .service-buttons button.collapsible:visited {
+      color: #fff; }
+    .nypl-header .service-buttons button.collapsible:hover, .nypl-header .service-buttons button.collapsible:hover:visited, .nypl-header .service-buttons button.collapsible.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-header .service-buttons button.collapsible:hover .nypl-icon, .nypl-header .service-buttons button.collapsible.active .nypl-icon {
+      .nypl-header .service-buttons button.collapsible:hover .nypl-icon, .nypl-header .service-buttons button.collapsible:hover:visited .nypl-icon, .nypl-header .service-buttons button.collapsible.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-header .service-buttons button.collapsible:hover .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible.active .nypl-icon.reversed {
+        .nypl-header .service-buttons button.collapsible:hover .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-header .service-buttons button.collapsible.active .nypl-icon {
@@ -1261,6 +1270,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -1271,7 +1281,9 @@ button:focus {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    .nypl-header .email-toggle .subscribe-button:hover, .nypl-header .email-toggle .subscribe-button.active {
+    .nypl-header .email-toggle .subscribe-button:link, .nypl-header .email-toggle .subscribe-button:visited {
+      color: #fff; }
+    .nypl-header .email-toggle .subscribe-button:hover, .nypl-header .email-toggle .subscribe-button:hover:visited, .nypl-header .email-toggle .subscribe-button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -1319,6 +1331,7 @@ button:focus {
       border-radius: 0.2rem;
       color: #fff;
       cursor: pointer;
+      display: inline-block;
       font-size: 0.7rem;
       font-weight: normal;
       height: auto;
@@ -1353,18 +1366,20 @@ button:focus {
         .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
-      .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible.active {
+      .nypl-header .login-toggle button.collapsible:link, .nypl-header .login-toggle button.collapsible:visited {
+        color: #fff; }
+      .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible:hover:visited, .nypl-header .login-toggle button.collapsible.active {
         border-color: #776e64;
         background-color: #fff;
         color: #776e64; }
-        .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
+        .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
           background-color: #fff;
           display: inline-block;
           fill: #776e64;
           height: 1em;
           width: 1em;
           speak: none; }
-          .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
+          .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
             background-color: inherit;
             fill: #fff; }
       .nypl-header .login-toggle button.collapsible.active .nypl-icon {
@@ -1396,6 +1411,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 0.7rem;
     font-weight: normal;
     height: auto;
@@ -1410,7 +1426,9 @@ button:focus {
     display: block;
     font-weight: bold;
     text-transform: uppercase; }
-    .nypl-header .login-toggle > a:hover, .nypl-header .login-toggle > a.active {
+    .nypl-header .login-toggle > a:link, .nypl-header .login-toggle > a:visited {
+      color: #fff; }
+    .nypl-header .login-toggle > a:hover, .nypl-header .login-toggle > a:hover:visited, .nypl-header .login-toggle > a.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -1511,6 +1529,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: inherit;
     font-weight: normal;
     height: 2rem;
@@ -1522,7 +1541,9 @@ button:focus {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
     margin-right: 0.5rem; }
-    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.active {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:link, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:visited {
+      color: #fff; }
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover:visited, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.active {
       border-color: #776e64;
       background-color: #efedeb;
       color: #776e64; }
@@ -1679,6 +1700,7 @@ footer {
   border-radius: 0.2rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
@@ -1689,7 +1711,9 @@ footer {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .nypl-basic-button:hover, .nypl-basic-button.active {
+  .nypl-basic-button:link, .nypl-basic-button:visited {
+    color: #fff; }
+  .nypl-basic-button:hover, .nypl-basic-button:hover:visited, .nypl-basic-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1716,12 +1740,49 @@ footer {
     background-color: inherit;
     fill: #fff; }
 
+.nypl-results-button {
+  background-color: #fff;
+  border: 0.0625rem solid #1b7fa7;
+  border-radius: 0.25rem;
+  color: #1b7fa7;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  margin: 0.5rem 0; }
+  .nypl-results-button:link, .nypl-results-button:visited {
+    color: #1b7fa7; }
+  .nypl-results-button:hover, .nypl-results-button:hover:visited, .nypl-results-button.active {
+    border-color: #fff;
+    background-color: #1b7fa7;
+    color: #fff; }
+  .nypl-results-button:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-results-button.disabled, .nypl-results-button[disabled="disabled"], .nypl-results-button[disabled], .nypl-results-button[disabled=true] {
+    cursor: default;
+    background-color: #d7d4d0; }
+    .nypl-results-button.disabled:hover, .nypl-results-button[disabled="disabled"]:hover, .nypl-results-button[disabled]:hover, .nypl-results-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      color: #1b7fa7; }
+
 .nypl-request-button {
   background-color: #1b7fa7;
   border: 0.0625rem solid #1b7fa7;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
@@ -1732,7 +1793,9 @@ footer {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .nypl-request-button:hover, .nypl-request-button.active {
+  .nypl-request-button:link, .nypl-request-button:visited {
+    color: #fff; }
+  .nypl-request-button:hover, .nypl-request-button:hover:visited, .nypl-request-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1758,6 +1821,7 @@ footer {
   border-radius: 0.2rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 0.8rem;
   font-weight: normal;
   height: auto;
@@ -1775,7 +1839,9 @@ footer {
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap; }
-  .nypl-service-button:hover, .nypl-service-button.active {
+  .nypl-service-button:link, .nypl-service-button:visited {
+    color: #fff; }
+  .nypl-service-button:hover, .nypl-service-button:hover:visited, .nypl-service-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1797,6 +1863,7 @@ footer {
   border-radius: 0.2rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 0.7rem;
   font-weight: normal;
   height: auto;
@@ -1811,7 +1878,9 @@ footer {
   display: block;
   font-weight: bold;
   text-transform: uppercase; }
-  .nypl-login-button:hover, .nypl-login-button.active {
+  .nypl-login-button:link, .nypl-login-button:visited {
+    color: #fff; }
+  .nypl-login-button:hover, .nypl-login-button:hover:visited, .nypl-login-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1836,6 +1905,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -1866,18 +1936,20 @@ footer {
       .nypl-menu-button_left .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-menu-button_left .nypl-menu-button_button:hover, .nypl-menu-button_left .nypl-menu-button_button.active {
+    .nypl-menu-button_left .nypl-menu-button_button:link, .nypl-menu-button_left .nypl-menu-button_button:visited {
+      color: #fff; }
+    .nypl-menu-button_left .nypl-menu-button_button:hover, .nypl-menu-button_left .nypl-menu-button_button:hover:visited, .nypl-menu-button_left .nypl-menu-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
+      .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button:hover:visited .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon.reversed {
+        .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button:hover:visited .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
@@ -1911,6 +1983,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -1941,18 +2014,20 @@ footer {
       .nypl-menu-button_right .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-menu-button_right .nypl-menu-button_button:hover, .nypl-menu-button_right .nypl-menu-button_button.active {
+    .nypl-menu-button_right .nypl-menu-button_button:link, .nypl-menu-button_right .nypl-menu-button_button:visited {
+      color: #fff; }
+    .nypl-menu-button_right .nypl-menu-button_button:hover, .nypl-menu-button_right .nypl-menu-button_button:hover:visited, .nypl-menu-button_right .nypl-menu-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
+      .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button:hover:visited .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon.reversed {
+        .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button:hover:visited .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
@@ -1986,6 +2061,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -2016,18 +2092,20 @@ footer {
       .nypl-navigation-button .nypl-navigation-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-navigation-button .nypl-navigation-button_button:hover, .nypl-navigation-button .nypl-navigation-button_button.active {
+    .nypl-navigation-button .nypl-navigation-button_button:link, .nypl-navigation-button .nypl-navigation-button_button:visited {
+      color: #fff; }
+    .nypl-navigation-button .nypl-navigation-button_button:hover, .nypl-navigation-button .nypl-navigation-button_button:hover:visited, .nypl-navigation-button .nypl-navigation-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
+      .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button:hover:visited .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon.reversed {
+        .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button:hover:visited .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
@@ -2536,6 +2614,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: 2rem;
@@ -2548,10 +2627,18 @@ footer {
     transition: all 0.1s ease-in 0s;
     line-height: 0;
     width: 20%; }
-    .nypl-omnisearch button:hover, .nypl-omnisearch button.active,
+    .nypl-omnisearch button:link, .nypl-omnisearch button:visited,
+    .nypl-omnisearch input[type=button]:link,
+    .nypl-omnisearch input[type=button]:visited,
+    .nypl-omnisearch input[type=submit]:link,
+    .nypl-omnisearch input[type=submit]:visited {
+      color: #fff; }
+    .nypl-omnisearch button:hover, .nypl-omnisearch button:hover:visited, .nypl-omnisearch button.active,
     .nypl-omnisearch input[type=button]:hover,
+    .nypl-omnisearch input[type=button]:hover:visited,
     .nypl-omnisearch input[type=button].active,
     .nypl-omnisearch input[type=submit]:hover,
+    .nypl-omnisearch input[type=submit]:hover:visited,
     .nypl-omnisearch input[type=submit].active {
       border-color: #776e64;
       background-color: #fff;
@@ -2934,6 +3021,7 @@ footer {
     border-radius: 0.2rem;
     color: #080807;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -2949,7 +3037,9 @@ footer {
     margin: 0 0 0.5rem 0.5rem;
     padding: 0.2rem 0.25rem;
     width: 2rem; }
-    .nypl-alphabetical-filter button:hover, .nypl-alphabetical-filter button.active {
+    .nypl-alphabetical-filter button:link, .nypl-alphabetical-filter button:visited {
+      color: #080807; }
+    .nypl-alphabetical-filter button:hover, .nypl-alphabetical-filter button:hover:visited, .nypl-alphabetical-filter button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -3367,6 +3457,7 @@ footer {
     border-radius: 0.2rem;
     color: #776e64;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: 1em;
@@ -3383,7 +3474,9 @@ footer {
     padding: 0;
     position: relative;
     width: 0.5rem; }
-    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button.active {
+    .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
+      color: #776e64; }
+    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
       border-color: #1b7fa7;
       background-color: #fff;
       color: #1b7fa7; }
@@ -3417,6 +3510,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: 2em;
@@ -3430,7 +3524,9 @@ footer {
     clear: both;
     display: block;
     margin: 0.5rem 0 0; }
-    .nypl-results-summary button:hover, .nypl-results-summary button.active {
+    .nypl-results-summary button:link, .nypl-results-summary button:visited {
+      color: #fff; }
+    .nypl-results-summary button:hover, .nypl-results-summary button:hover:visited, .nypl-results-summary button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -3522,6 +3618,7 @@ footer {
     border-radius: 0.2rem;
     color: #080807;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -3552,18 +3649,20 @@ footer {
       .nypl-results-sorter button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-results-sorter button:hover, .nypl-results-sorter button.active {
+    .nypl-results-sorter button:link, .nypl-results-sorter button:visited {
+      color: #080807; }
+    .nypl-results-sorter button:hover, .nypl-results-sorter button:hover:visited, .nypl-results-sorter button.active {
       border-color: #776e64;
       background-color: #d7d4d0;
       color: #776e64; }
-      .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorter button.active .nypl-icon {
+      .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorter button:hover:visited .nypl-icon, .nypl-results-sorter button.active .nypl-icon {
         background-color: #d7d4d0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-results-sorter button:hover .nypl-icon.reversed, .nypl-results-sorter button.active .nypl-icon.reversed {
+        .nypl-results-sorter button:hover .nypl-icon.reversed, .nypl-results-sorter button:hover:visited .nypl-icon.reversed, .nypl-results-sorter button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-results-sorter button.active .nypl-icon {
@@ -3604,6 +3703,9 @@ footer {
   margin-left: 0; }
   .nypl-results-item h2 {
     font-weight: normal; }
+  .nypl-results-item .nypl-results-highlight {
+    color: #d0343a;
+    font-style: normal; }
   .nypl-results-item dl {
     margin-bottom: 1rem; }
     .nypl-results-item dl::before, .nypl-results-item dl::after {
@@ -3617,7 +3719,7 @@ footer {
   .nypl-results-item dt {
     clear: left;
     font-weight: bold;
-    width: 12rem; }
+    width: 8.5rem; }
     .nypl-results-item dt::after {
       content: ":"; }
     @media (max-width: 965px) {

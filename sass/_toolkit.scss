@@ -31,6 +31,10 @@
   @include nypl-icon($height: 1rem, $width: 1rem);
 }
 
+.nypl-results-button {
+  @include results-button;
+}
+
 .nypl-request-button {
   @include request-button;
 }

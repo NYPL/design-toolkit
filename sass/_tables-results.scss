@@ -194,6 +194,11 @@ $sorter-width: 11em;
     font-weight: normal;
   }
 
+  .nypl-results-highlight {
+    color: $highlight-color;
+    font-style: normal;
+  }
+
   dl {
     @include clearfix;
     margin-bottom: 1rem;
@@ -207,7 +212,7 @@ $sorter-width: 11em;
   dt {
     clear: left;
     font-weight: bold;
-    width: 12rem;
+    width: 8.5rem;
 
     &::after {
       content: ":";
