@@ -1666,14 +1666,10 @@ footer {
       clear: both; }
 
 .copyright {
-  border: 0;
-  display: block;
-  height: 2.81667rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
-  white-space: nowrap; }
+  margin-bottom: 5rem; }
   .copyright p {
-    padding-top: calc(2.81667rem + 1em); }
+    padding-top: 1rem; }
 
 .footerLinks li {
   margin-left: 0; }
@@ -1736,6 +1732,17 @@ footer {
   width: 1rem;
   speak: none; }
   .nypl-icon.reversed {
+    background-color: inherit;
+    fill: #fff; }
+
+.nypl-logo-rev {
+  background-color: transparent;
+  display: inline-block;
+  fill: #080807;
+  height: 2.81667rem;
+  width: 5rem;
+  speak: none; }
+  .nypl-logo-rev.reversed {
     background-color: inherit;
     fill: #fff; }
 

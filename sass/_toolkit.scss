@@ -31,6 +31,10 @@
   @include nypl-icon($height: 1rem, $width: 1rem);
 }
 
+.nypl-logo-rev {
+  @include nypl-icon($height: $logo-height, $width: $logo-width, $background-color: transparent);
+}
+
 .nypl-results-button {
   @include results-button;
 }
