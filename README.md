@@ -16,6 +16,10 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.2
+> Many new classes and documentation.
+> Jekyll-based docs.
+
 ### v0.1.1
 > Using namespace-based classes.
 
