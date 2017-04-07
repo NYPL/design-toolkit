@@ -10,6 +10,8 @@ Design toolkit (SASS) for the NYPL Digital team
 2. `bundle install` to install necessary gems
 3. `jekyll serve` (or `bundle exec jekyll serve`) to run the server
 
+## [Install the toolkit in your application](INSTALL.md)
+
 ## License
 
 See [LICENSE](LICENSE.md)
