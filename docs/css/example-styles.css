@@ -1687,7 +1687,10 @@ footer {
   color: #1b7fa7;
   cursor: pointer;
   font: inherit;
-  padding: 0; }
+  padding: 0;
+  text-decoration: underline; }
+  .nypl-link-button:hover {
+    text-decoration: none; }
 
 .nypl-basic-button {
   background-color: #776e64;
@@ -1781,6 +1784,11 @@ footer {
     .nypl-results-button.disabled:hover, .nypl-results-button[disabled="disabled"]:hover, .nypl-results-button[disabled]:hover, .nypl-results-button[disabled=true]:hover {
       background-color: #d7d4d0;
       color: #1b7fa7; }
+  .nypl-results-button span {
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin-right: 0.25rem; }
 
 .nypl-request-button {
   background-color: #1b7fa7;
@@ -3455,7 +3463,7 @@ footer {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 0;
+    margin-bottom: 0.25rem;
     margin-right: 0.5rem; }
   .nypl-results-summary .nypl-facet button {
     background-color: #fff;
