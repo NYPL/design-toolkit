@@ -199,6 +199,13 @@ $sorter-width: 11em;
     font-style: normal;
   }
 
+  .nypl-results-unavailable {
+    border-left: 0.5rem solid $highlight-color;
+    color: $highlight-color;
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+  }
+
   dl {
     @include clearfix;
     margin-bottom: 1rem;

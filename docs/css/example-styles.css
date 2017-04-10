@@ -3315,8 +3315,8 @@ footer {
 
 .nypl-location-info {
   border-left: 1rem solid #d7d4d0;
-  padding-left: 1rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  padding-left: 1rem; }
   .nypl-location-info p {
     margin: 0;
     margin-bottom: 0.5rem; }
@@ -3720,6 +3720,11 @@ footer {
   .nypl-results-item .nypl-results-highlight {
     color: #d0343a;
     font-style: normal; }
+  .nypl-results-item .nypl-results-unavailable {
+    border-left: 0.5rem solid #d0343a;
+    color: #d0343a;
+    margin: 1rem 0;
+    padding-left: 0.5rem; }
   .nypl-results-item dl {
     margin-bottom: 1rem; }
     .nypl-results-item dl::before, .nypl-results-item dl::after {
