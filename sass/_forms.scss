@@ -172,6 +172,11 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin form-error {
+  border-left: 1rem solid $highlight-color;
+  padding-left: 1rem;
+}
+
 @mixin simple-radiobutton {
   border-radius: $general-border-radius;
 
@@ -189,7 +194,23 @@ $form-padding: 0.5rem;
   input[type=radio],
   input[type=checkbox] {
     height: initial;
-    margin-right: 0.25rem;
+    margin: 0 0.25rem 0 0;
+  }
+}
+
+@mixin terms-checkbox {
+  border-left: 0.5rem solid $nypl-gray;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+
+  label {
+    font-weight: normal;
+    padding: 0.1875rem 0;
+  }
+
+  input[type=checkbox] {
+    height: initial;
+    margin: 0 0.25rem 0 0;
   }
 }
 
@@ -265,33 +286,73 @@ $form-padding: 0.5rem;
 @mixin searchable-field {
   @include fieldset;
   @include simple-radiobutton;
-
+  padding-bottom: $form-padding;
 
   .nypl-facet-search {
     @include text-field-with-label;
   }
 
   .nypl-facet-list {
-    display: table;
     width: 100%;
 
     label {
-      display: table-row;
-    }
+      @include clearfix;
+      border-radius: 0;
+      display: block;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
 
-    span {
-      display: table-cell;
-      padding: 0 $form-padding;
-
-      &.nypl-facet-count {
-        text-align: right;
+      @for $percent from 1 through 100 {
+        &.nypl-bar_#{$percent} {
+          background: linear-gradient(to right, transparent 0%, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color) 100%;
+        }
       }
     }
 
-    .nypl-more-facets {
-      display: inline-block;
-      margin: $form-padding;
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: block;
+      height: 1.6rem;
+      float: left;
     }
+
+    span {
+      display: block;
+      float: left;
+      padding: 0 $form-padding 0 0;
+      width: calc(100% - 4rem - #{$form-padding});
+
+      &.nypl-collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &.nypl-facet-count {
+        float: right;
+        text-align: right;
+        width: 2rem;
+      }
+    }
+  }
+
+  .nypl-link-button {
+    margin: $form-padding $form-padding 0;
+  }
+
+  &.nosearch {
+    // when there are too few items to make search worthwhile
+
+    .nypl-facet-search {
+      label {
+        position: relative;
+      }
+
+      input {
+        display: none;
+      }
+    }
+
   }
 }
 
@@ -313,7 +374,27 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin mobile-refine {
+  display: none;
+
+  @include media($mobile-breakpoint) {
+    display: block;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
 @mixin search-form() {
   // used for left-column searches
   margin: 0 0 1rem;
+
+  @include media($mobile-breakpoint) {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }

@@ -288,7 +288,7 @@ button:-moz-focusring,
  */
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  margin: 0;
   padding: 0.35em 0.625em 0.75em; }
 
 /**
@@ -658,7 +658,7 @@ button:-moz-focusring,
  */
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  margin: 0;
   padding: 0.35em 0.625em 0.75em; }
 
 /**
@@ -1070,8 +1070,6 @@ button:focus {
     height: 30px;
     overflow: hidden; }
   .nypl-header.collapsed .nypl-logo {
-    background: url("../img/lion.svg") no-repeat scroll 0 0/2.81667rem auto #fff;
-    background-position-y: -4px;
     margin: 0; }
   .nypl-header.collapsed .service-buttons {
     min-height: 10px; }
@@ -1110,6 +1108,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
@@ -1127,7 +1126,9 @@ button:focus {
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap; }
-    .nypl-header .service-buttons li > a:hover, .nypl-header .service-buttons li > a.active {
+    .nypl-header .service-buttons li > a:link, .nypl-header .service-buttons li > a:visited {
+      color: #fff; }
+    .nypl-header .service-buttons li > a:hover, .nypl-header .service-buttons li > a:hover:visited, .nypl-header .service-buttons li > a.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -1148,6 +1149,7 @@ button:focus {
       border-radius: 0.2rem;
       color: #d0343a;
       cursor: pointer;
+      display: inline-block;
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
@@ -1165,7 +1167,9 @@ button:focus {
       text-overflow: ellipsis;
       text-transform: uppercase;
       white-space: nowrap; }
-      .nypl-header .service-buttons li > a.donate:hover, .nypl-header .service-buttons li > a.donate.active {
+      .nypl-header .service-buttons li > a.donate:link, .nypl-header .service-buttons li > a.donate:visited {
+        color: #d0343a; }
+      .nypl-header .service-buttons li > a.donate:hover, .nypl-header .service-buttons li > a.donate:hover:visited, .nypl-header .service-buttons li > a.donate.active {
         border-color: #776e64;
         background-color: #fff;
         color: #776e64; }
@@ -1186,6 +1190,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
@@ -1223,18 +1228,20 @@ button:focus {
       .nypl-header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-header .service-buttons button.collapsible:hover, .nypl-header .service-buttons button.collapsible.active {
+    .nypl-header .service-buttons button.collapsible:link, .nypl-header .service-buttons button.collapsible:visited {
+      color: #fff; }
+    .nypl-header .service-buttons button.collapsible:hover, .nypl-header .service-buttons button.collapsible:hover:visited, .nypl-header .service-buttons button.collapsible.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-header .service-buttons button.collapsible:hover .nypl-icon, .nypl-header .service-buttons button.collapsible.active .nypl-icon {
+      .nypl-header .service-buttons button.collapsible:hover .nypl-icon, .nypl-header .service-buttons button.collapsible:hover:visited .nypl-icon, .nypl-header .service-buttons button.collapsible.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-header .service-buttons button.collapsible:hover .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible.active .nypl-icon.reversed {
+        .nypl-header .service-buttons button.collapsible:hover .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-header .service-buttons button.collapsible.active .nypl-icon {
@@ -1263,6 +1270,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -1273,7 +1281,9 @@ button:focus {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s; }
-    .nypl-header .email-toggle .subscribe-button:hover, .nypl-header .email-toggle .subscribe-button.active {
+    .nypl-header .email-toggle .subscribe-button:link, .nypl-header .email-toggle .subscribe-button:visited {
+      color: #fff; }
+    .nypl-header .email-toggle .subscribe-button:hover, .nypl-header .email-toggle .subscribe-button:hover:visited, .nypl-header .email-toggle .subscribe-button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -1321,6 +1331,7 @@ button:focus {
       border-radius: 0.2rem;
       color: #fff;
       cursor: pointer;
+      display: inline-block;
       font-size: 0.7rem;
       font-weight: normal;
       height: auto;
@@ -1355,18 +1366,20 @@ button:focus {
         .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
-      .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible.active {
+      .nypl-header .login-toggle button.collapsible:link, .nypl-header .login-toggle button.collapsible:visited {
+        color: #fff; }
+      .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible:hover:visited, .nypl-header .login-toggle button.collapsible.active {
         border-color: #776e64;
         background-color: #fff;
         color: #776e64; }
-        .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
+        .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
           background-color: #fff;
           display: inline-block;
           fill: #776e64;
           height: 1em;
           width: 1em;
           speak: none; }
-          .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
+          .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
             background-color: inherit;
             fill: #fff; }
       .nypl-header .login-toggle button.collapsible.active .nypl-icon {
@@ -1398,6 +1411,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 0.7rem;
     font-weight: normal;
     height: auto;
@@ -1412,7 +1426,9 @@ button:focus {
     display: block;
     font-weight: bold;
     text-transform: uppercase; }
-    .nypl-header .login-toggle > a:hover, .nypl-header .login-toggle > a.active {
+    .nypl-header .login-toggle > a:link, .nypl-header .login-toggle > a:visited {
+      color: #fff; }
+    .nypl-header .login-toggle > a:hover, .nypl-header .login-toggle > a:hover:visited, .nypl-header .login-toggle > a.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -1513,6 +1529,7 @@ button:focus {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: inherit;
     font-weight: normal;
     height: 2rem;
@@ -1524,7 +1541,9 @@ button:focus {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
     margin-right: 0.5rem; }
-    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.active {
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:link, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:visited {
+      color: #fff; }
+    .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:hover:visited, .nypl-header li.nypl-search .nypl-search_main .nypl-search_button.active {
       border-color: #776e64;
       background-color: #efedeb;
       color: #776e64; }
@@ -1580,7 +1599,7 @@ button:focus {
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
-      margin-right: 0.25rem; }
+      margin: 0 0.25rem 0 0; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.selected {
       background-color: #efedeb;
       color: #080807; }
@@ -1647,15 +1666,10 @@ footer {
       clear: both; }
 
 .copyright {
-  background: url("../img/nypl-rev.svg") no-repeat scroll 0 0/5rem auto transparent;
-  border: 0;
-  display: block;
-  height: 2.81667rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
-  white-space: nowrap; }
+  margin-bottom: 5rem; }
   .copyright p {
-    padding-top: calc(2.81667rem + 1em); }
+    padding-top: 1rem; }
 
 .footerLinks li {
   margin-left: 0; }
@@ -1681,6 +1695,7 @@ footer {
   border-radius: 0.2rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
@@ -1691,7 +1706,9 @@ footer {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .nypl-basic-button:hover, .nypl-basic-button.active {
+  .nypl-basic-button:link, .nypl-basic-button:visited {
+    color: #fff; }
+  .nypl-basic-button:hover, .nypl-basic-button:hover:visited, .nypl-basic-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1718,12 +1735,60 @@ footer {
     background-color: inherit;
     fill: #fff; }
 
+.nypl-logo-rev {
+  background-color: transparent;
+  display: inline-block;
+  fill: #080807;
+  height: 2.81667rem;
+  width: 5rem;
+  speak: none; }
+  .nypl-logo-rev.reversed {
+    background-color: inherit;
+    fill: #fff; }
+
+.nypl-results-button {
+  background-color: #fff;
+  border: 0.0625rem solid #1b7fa7;
+  border-radius: 0.25rem;
+  color: #1b7fa7;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  margin: 0.5rem 0; }
+  .nypl-results-button:link, .nypl-results-button:visited {
+    color: #1b7fa7; }
+  .nypl-results-button:hover, .nypl-results-button:hover:visited, .nypl-results-button.active {
+    border-color: #fff;
+    background-color: #1b7fa7;
+    color: #fff; }
+  .nypl-results-button:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-results-button.disabled, .nypl-results-button[disabled="disabled"], .nypl-results-button[disabled], .nypl-results-button[disabled=true] {
+    cursor: default;
+    background-color: #d7d4d0; }
+    .nypl-results-button.disabled:hover, .nypl-results-button[disabled="disabled"]:hover, .nypl-results-button[disabled]:hover, .nypl-results-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      color: #1b7fa7; }
+
 .nypl-request-button {
   background-color: #1b7fa7;
   border: 0.0625rem solid #1b7fa7;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 1rem;
   font-weight: normal;
   height: auto;
@@ -1734,7 +1799,9 @@ footer {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .nypl-request-button:hover, .nypl-request-button.active {
+  .nypl-request-button:link, .nypl-request-button:visited {
+    color: #fff; }
+  .nypl-request-button:hover, .nypl-request-button:hover:visited, .nypl-request-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1760,6 +1827,7 @@ footer {
   border-radius: 0.2rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 0.8rem;
   font-weight: normal;
   height: auto;
@@ -1777,7 +1845,9 @@ footer {
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap; }
-  .nypl-service-button:hover, .nypl-service-button.active {
+  .nypl-service-button:link, .nypl-service-button:visited {
+    color: #fff; }
+  .nypl-service-button:hover, .nypl-service-button:hover:visited, .nypl-service-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1799,6 +1869,7 @@ footer {
   border-radius: 0.2rem;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 0.7rem;
   font-weight: normal;
   height: auto;
@@ -1813,7 +1884,9 @@ footer {
   display: block;
   font-weight: bold;
   text-transform: uppercase; }
-  .nypl-login-button:hover, .nypl-login-button.active {
+  .nypl-login-button:link, .nypl-login-button:visited {
+    color: #fff; }
+  .nypl-login-button:hover, .nypl-login-button:hover:visited, .nypl-login-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
@@ -1838,6 +1911,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -1868,18 +1942,20 @@ footer {
       .nypl-menu-button_left .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-menu-button_left .nypl-menu-button_button:hover, .nypl-menu-button_left .nypl-menu-button_button.active {
+    .nypl-menu-button_left .nypl-menu-button_button:link, .nypl-menu-button_left .nypl-menu-button_button:visited {
+      color: #fff; }
+    .nypl-menu-button_left .nypl-menu-button_button:hover, .nypl-menu-button_left .nypl-menu-button_button:hover:visited, .nypl-menu-button_left .nypl-menu-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
+      .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button:hover:visited .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon.reversed {
+        .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button:hover:visited .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
@@ -1913,6 +1989,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -1943,18 +2020,20 @@ footer {
       .nypl-menu-button_right .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-menu-button_right .nypl-menu-button_button:hover, .nypl-menu-button_right .nypl-menu-button_button.active {
+    .nypl-menu-button_right .nypl-menu-button_button:link, .nypl-menu-button_right .nypl-menu-button_button:visited {
+      color: #fff; }
+    .nypl-menu-button_right .nypl-menu-button_button:hover, .nypl-menu-button_right .nypl-menu-button_button:hover:visited, .nypl-menu-button_right .nypl-menu-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
+      .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button:hover:visited .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon.reversed {
+        .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button:hover:visited .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
@@ -1988,6 +2067,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -2018,18 +2098,20 @@ footer {
       .nypl-navigation-button .nypl-navigation-button_button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-navigation-button .nypl-navigation-button_button:hover, .nypl-navigation-button .nypl-navigation-button_button.active {
+    .nypl-navigation-button .nypl-navigation-button_button:link, .nypl-navigation-button .nypl-navigation-button_button:visited {
+      color: #fff; }
+    .nypl-navigation-button .nypl-navigation-button_button:hover, .nypl-navigation-button .nypl-navigation-button_button:hover:visited, .nypl-navigation-button .nypl-navigation-button_button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-      .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
+      .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button:hover:visited .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
         background-color: #fff;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon.reversed {
+        .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button:hover:visited .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
@@ -2412,6 +2494,10 @@ footer {
     padding-left: 0.5rem;
     width: 100%; }
 
+.nypl-form-error {
+  border-left: 1rem solid #d0343a;
+  padding-left: 1rem; }
+
 .nypl-simple-radiobutton {
   border-radius: 0.2rem; }
   .nypl-simple-radiobutton span.nypl-label {
@@ -2427,7 +2513,18 @@ footer {
   .nypl-simple-radiobutton input[type=radio],
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
-    margin-right: 0.25rem; }
+    margin: 0 0.25rem 0 0; }
+
+.nypl-terms-checkbox {
+  border-left: 0.5rem solid #776e64;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem; }
+  .nypl-terms-checkbox label {
+    font-weight: normal;
+    padding: 0.1875rem 0; }
+  .nypl-terms-checkbox input[type=checkbox] {
+    height: initial;
+    margin: 0 0.25rem 0 0; }
 
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
@@ -2471,7 +2568,7 @@ footer {
   .nypl-checkbox-field input[type=radio],
   .nypl-checkbox-field input[type=checkbox] {
     height: initial;
-    margin-right: 0.25rem; }
+    margin: 0 0.25rem 0 0; }
 
 .nypl-omnisearch {
   background-color: #d7d4d0;
@@ -2523,6 +2620,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: 2rem;
@@ -2535,10 +2633,18 @@ footer {
     transition: all 0.1s ease-in 0s;
     line-height: 0;
     width: 20%; }
-    .nypl-omnisearch button:hover, .nypl-omnisearch button.active,
+    .nypl-omnisearch button:link, .nypl-omnisearch button:visited,
+    .nypl-omnisearch input[type=button]:link,
+    .nypl-omnisearch input[type=button]:visited,
+    .nypl-omnisearch input[type=submit]:link,
+    .nypl-omnisearch input[type=submit]:visited {
+      color: #fff; }
+    .nypl-omnisearch button:hover, .nypl-omnisearch button:hover:visited, .nypl-omnisearch button.active,
     .nypl-omnisearch input[type=button]:hover,
+    .nypl-omnisearch input[type=button]:hover:visited,
     .nypl-omnisearch input[type=button].active,
     .nypl-omnisearch input[type=submit]:hover,
+    .nypl-omnisearch input[type=submit]:hover:visited,
     .nypl-omnisearch input[type=submit].active {
       border-color: #776e64;
       background-color: #fff;
@@ -2585,6 +2691,14 @@ footer {
     .nypl-omnisearch input[type=submit] {
       padding: 0; } }
 
+.nypl-mobile-refine {
+  display: none; }
+  @media (max-width: 965px) {
+    .nypl-mobile-refine {
+      display: block; }
+      .nypl-mobile-refine.hidden {
+        display: none; } }
+
 .nypl-searchable-field {
   background-color: #efedeb;
   border: 0;
@@ -2594,7 +2708,8 @@ footer {
   margin: 1rem 0;
   padding: 0;
   position: relative;
-  border-radius: 0.2rem; }
+  border-radius: 0.2rem;
+  padding-bottom: 0.5rem; }
   .nypl-searchable-field fieldset {
     border: 0;
     box-shadow: none;
@@ -2619,7 +2734,7 @@ footer {
   .nypl-searchable-field input[type=radio],
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
-    margin-right: 0.25rem; }
+    margin: 0 0.25rem 0 0; }
   .nypl-searchable-field .nypl-facet-search label {
     background-color: transparent;
     color: #080807;
@@ -2650,18 +2765,241 @@ footer {
       color: #080807;
       outline: none; }
   .nypl-searchable-field .nypl-facet-list {
-    display: table;
     width: 100%; }
     .nypl-searchable-field .nypl-facet-list label {
-      display: table-row; }
+      border-radius: 0;
+      display: block;
+      font-size: 0.85rem;
+      margin-top: 0.2rem; }
+      .nypl-searchable-field .nypl-facet-list label::before, .nypl-searchable-field .nypl-facet-list label::after {
+        content: "";
+        display: table; }
+      .nypl-searchable-field .nypl-facet-list label::after {
+        clear: both; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_1 {
+        background: linear-gradient(to right, transparent 0%, transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_2 {
+        background: linear-gradient(to right, transparent 0%, transparent 98%, rgba(0, 0, 0, 0.1) 98%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_3 {
+        background: linear-gradient(to right, transparent 0%, transparent 97%, rgba(0, 0, 0, 0.1) 97%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_4 {
+        background: linear-gradient(to right, transparent 0%, transparent 96%, rgba(0, 0, 0, 0.1) 96%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_5 {
+        background: linear-gradient(to right, transparent 0%, transparent 95%, rgba(0, 0, 0, 0.1) 95%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_6 {
+        background: linear-gradient(to right, transparent 0%, transparent 94%, rgba(0, 0, 0, 0.1) 94%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_7 {
+        background: linear-gradient(to right, transparent 0%, transparent 93%, rgba(0, 0, 0, 0.1) 93%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_8 {
+        background: linear-gradient(to right, transparent 0%, transparent 92%, rgba(0, 0, 0, 0.1) 92%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_9 {
+        background: linear-gradient(to right, transparent 0%, transparent 91%, rgba(0, 0, 0, 0.1) 91%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_10 {
+        background: linear-gradient(to right, transparent 0%, transparent 90%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_11 {
+        background: linear-gradient(to right, transparent 0%, transparent 89%, rgba(0, 0, 0, 0.1) 89%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_12 {
+        background: linear-gradient(to right, transparent 0%, transparent 88%, rgba(0, 0, 0, 0.1) 88%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_13 {
+        background: linear-gradient(to right, transparent 0%, transparent 87%, rgba(0, 0, 0, 0.1) 87%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_14 {
+        background: linear-gradient(to right, transparent 0%, transparent 86%, rgba(0, 0, 0, 0.1) 86%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_15 {
+        background: linear-gradient(to right, transparent 0%, transparent 85%, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_16 {
+        background: linear-gradient(to right, transparent 0%, transparent 84%, rgba(0, 0, 0, 0.1) 84%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_17 {
+        background: linear-gradient(to right, transparent 0%, transparent 83%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_18 {
+        background: linear-gradient(to right, transparent 0%, transparent 82%, rgba(0, 0, 0, 0.1) 82%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_19 {
+        background: linear-gradient(to right, transparent 0%, transparent 81%, rgba(0, 0, 0, 0.1) 81%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_20 {
+        background: linear-gradient(to right, transparent 0%, transparent 80%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_21 {
+        background: linear-gradient(to right, transparent 0%, transparent 79%, rgba(0, 0, 0, 0.1) 79%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_22 {
+        background: linear-gradient(to right, transparent 0%, transparent 78%, rgba(0, 0, 0, 0.1) 78%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_23 {
+        background: linear-gradient(to right, transparent 0%, transparent 77%, rgba(0, 0, 0, 0.1) 77%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_24 {
+        background: linear-gradient(to right, transparent 0%, transparent 76%, rgba(0, 0, 0, 0.1) 76%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_25 {
+        background: linear-gradient(to right, transparent 0%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_26 {
+        background: linear-gradient(to right, transparent 0%, transparent 74%, rgba(0, 0, 0, 0.1) 74%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_27 {
+        background: linear-gradient(to right, transparent 0%, transparent 73%, rgba(0, 0, 0, 0.1) 73%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_28 {
+        background: linear-gradient(to right, transparent 0%, transparent 72%, rgba(0, 0, 0, 0.1) 72%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_29 {
+        background: linear-gradient(to right, transparent 0%, transparent 71%, rgba(0, 0, 0, 0.1) 71%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_30 {
+        background: linear-gradient(to right, transparent 0%, transparent 70%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_31 {
+        background: linear-gradient(to right, transparent 0%, transparent 69%, rgba(0, 0, 0, 0.1) 69%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_32 {
+        background: linear-gradient(to right, transparent 0%, transparent 68%, rgba(0, 0, 0, 0.1) 68%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_33 {
+        background: linear-gradient(to right, transparent 0%, transparent 67%, rgba(0, 0, 0, 0.1) 67%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_34 {
+        background: linear-gradient(to right, transparent 0%, transparent 66%, rgba(0, 0, 0, 0.1) 66%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_35 {
+        background: linear-gradient(to right, transparent 0%, transparent 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_36 {
+        background: linear-gradient(to right, transparent 0%, transparent 64%, rgba(0, 0, 0, 0.1) 64%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_37 {
+        background: linear-gradient(to right, transparent 0%, transparent 63%, rgba(0, 0, 0, 0.1) 63%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_38 {
+        background: linear-gradient(to right, transparent 0%, transparent 62%, rgba(0, 0, 0, 0.1) 62%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_39 {
+        background: linear-gradient(to right, transparent 0%, transparent 61%, rgba(0, 0, 0, 0.1) 61%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_40 {
+        background: linear-gradient(to right, transparent 0%, transparent 60%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_41 {
+        background: linear-gradient(to right, transparent 0%, transparent 59%, rgba(0, 0, 0, 0.1) 59%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_42 {
+        background: linear-gradient(to right, transparent 0%, transparent 58%, rgba(0, 0, 0, 0.1) 58%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_43 {
+        background: linear-gradient(to right, transparent 0%, transparent 57%, rgba(0, 0, 0, 0.1) 57%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_44 {
+        background: linear-gradient(to right, transparent 0%, transparent 56%, rgba(0, 0, 0, 0.1) 56%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_45 {
+        background: linear-gradient(to right, transparent 0%, transparent 55%, rgba(0, 0, 0, 0.1) 55%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_46 {
+        background: linear-gradient(to right, transparent 0%, transparent 54%, rgba(0, 0, 0, 0.1) 54%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_47 {
+        background: linear-gradient(to right, transparent 0%, transparent 53%, rgba(0, 0, 0, 0.1) 53%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_48 {
+        background: linear-gradient(to right, transparent 0%, transparent 52%, rgba(0, 0, 0, 0.1) 52%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_49 {
+        background: linear-gradient(to right, transparent 0%, transparent 51%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_50 {
+        background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_51 {
+        background: linear-gradient(to right, transparent 0%, transparent 49%, rgba(0, 0, 0, 0.1) 49%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_52 {
+        background: linear-gradient(to right, transparent 0%, transparent 48%, rgba(0, 0, 0, 0.1) 48%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_53 {
+        background: linear-gradient(to right, transparent 0%, transparent 47%, rgba(0, 0, 0, 0.1) 47%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_54 {
+        background: linear-gradient(to right, transparent 0%, transparent 46%, rgba(0, 0, 0, 0.1) 46%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_55 {
+        background: linear-gradient(to right, transparent 0%, transparent 45%, rgba(0, 0, 0, 0.1) 45%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_56 {
+        background: linear-gradient(to right, transparent 0%, transparent 44%, rgba(0, 0, 0, 0.1) 44%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_57 {
+        background: linear-gradient(to right, transparent 0%, transparent 43%, rgba(0, 0, 0, 0.1) 43%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_58 {
+        background: linear-gradient(to right, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.1) 42%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_59 {
+        background: linear-gradient(to right, transparent 0%, transparent 41%, rgba(0, 0, 0, 0.1) 41%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_60 {
+        background: linear-gradient(to right, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_61 {
+        background: linear-gradient(to right, transparent 0%, transparent 39%, rgba(0, 0, 0, 0.1) 39%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_62 {
+        background: linear-gradient(to right, transparent 0%, transparent 38%, rgba(0, 0, 0, 0.1) 38%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_63 {
+        background: linear-gradient(to right, transparent 0%, transparent 37%, rgba(0, 0, 0, 0.1) 37%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_64 {
+        background: linear-gradient(to right, transparent 0%, transparent 36%, rgba(0, 0, 0, 0.1) 36%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_65 {
+        background: linear-gradient(to right, transparent 0%, transparent 35%, rgba(0, 0, 0, 0.1) 35%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_66 {
+        background: linear-gradient(to right, transparent 0%, transparent 34%, rgba(0, 0, 0, 0.1) 34%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_67 {
+        background: linear-gradient(to right, transparent 0%, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_68 {
+        background: linear-gradient(to right, transparent 0%, transparent 32%, rgba(0, 0, 0, 0.1) 32%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_69 {
+        background: linear-gradient(to right, transparent 0%, transparent 31%, rgba(0, 0, 0, 0.1) 31%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_70 {
+        background: linear-gradient(to right, transparent 0%, transparent 30%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_71 {
+        background: linear-gradient(to right, transparent 0%, transparent 29%, rgba(0, 0, 0, 0.1) 29%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_72 {
+        background: linear-gradient(to right, transparent 0%, transparent 28%, rgba(0, 0, 0, 0.1) 28%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_73 {
+        background: linear-gradient(to right, transparent 0%, transparent 27%, rgba(0, 0, 0, 0.1) 27%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_74 {
+        background: linear-gradient(to right, transparent 0%, transparent 26%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_75 {
+        background: linear-gradient(to right, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_76 {
+        background: linear-gradient(to right, transparent 0%, transparent 24%, rgba(0, 0, 0, 0.1) 24%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_77 {
+        background: linear-gradient(to right, transparent 0%, transparent 23%, rgba(0, 0, 0, 0.1) 23%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_78 {
+        background: linear-gradient(to right, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_79 {
+        background: linear-gradient(to right, transparent 0%, transparent 21%, rgba(0, 0, 0, 0.1) 21%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_80 {
+        background: linear-gradient(to right, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_81 {
+        background: linear-gradient(to right, transparent 0%, transparent 19%, rgba(0, 0, 0, 0.1) 19%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_82 {
+        background: linear-gradient(to right, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.1) 18%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_83 {
+        background: linear-gradient(to right, transparent 0%, transparent 17%, rgba(0, 0, 0, 0.1) 17%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_84 {
+        background: linear-gradient(to right, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.1) 16%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_85 {
+        background: linear-gradient(to right, transparent 0%, transparent 15%, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_86 {
+        background: linear-gradient(to right, transparent 0%, transparent 14%, rgba(0, 0, 0, 0.1) 14%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_87 {
+        background: linear-gradient(to right, transparent 0%, transparent 13%, rgba(0, 0, 0, 0.1) 13%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_88 {
+        background: linear-gradient(to right, transparent 0%, transparent 12%, rgba(0, 0, 0, 0.1) 12%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_89 {
+        background: linear-gradient(to right, transparent 0%, transparent 11%, rgba(0, 0, 0, 0.1) 11%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_90 {
+        background: linear-gradient(to right, transparent 0%, transparent 10%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_91 {
+        background: linear-gradient(to right, transparent 0%, transparent 9%, rgba(0, 0, 0, 0.1) 9%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_92 {
+        background: linear-gradient(to right, transparent 0%, transparent 8%, rgba(0, 0, 0, 0.1) 8%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_93 {
+        background: linear-gradient(to right, transparent 0%, transparent 7%, rgba(0, 0, 0, 0.1) 7%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_94 {
+        background: linear-gradient(to right, transparent 0%, transparent 6%, rgba(0, 0, 0, 0.1) 6%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_95 {
+        background: linear-gradient(to right, transparent 0%, transparent 5%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_96 {
+        background: linear-gradient(to right, transparent 0%, transparent 4%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_97 {
+        background: linear-gradient(to right, transparent 0%, transparent 3%, rgba(0, 0, 0, 0.1) 3%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_98 {
+        background: linear-gradient(to right, transparent 0%, transparent 2%, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_99 {
+        background: linear-gradient(to right, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0, 0.1)) 100%; }
+      .nypl-searchable-field .nypl-facet-list label.nypl-bar_100 {
+        background: linear-gradient(to right, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1)) 100%; }
+    .nypl-searchable-field .nypl-facet-list input[type="radio"],
+    .nypl-searchable-field .nypl-facet-list input[type="checkbox"] {
+      display: block;
+      height: 1.6rem;
+      float: left; }
     .nypl-searchable-field .nypl-facet-list span {
-      display: table-cell;
-      padding: 0 0.5rem; }
+      display: block;
+      float: left;
+      padding: 0 0.5rem 0 0;
+      width: calc(100% - 4rem - 0.5rem); }
+      .nypl-searchable-field .nypl-facet-list span.nypl-collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
       .nypl-searchable-field .nypl-facet-list span.nypl-facet-count {
-        text-align: right; }
-    .nypl-searchable-field .nypl-facet-list .nypl-more-facets {
-      display: inline-block;
-      margin: 0.5rem; }
+        float: right;
+        text-align: right;
+        width: 2rem; }
+  .nypl-searchable-field .nypl-link-button {
+    margin: 0.5rem 0.5rem 0; }
+  .nypl-searchable-field.nosearch .nypl-facet-search label {
+    position: relative; }
+  .nypl-searchable-field.nosearch .nypl-facet-search input {
+    display: none; }
 
 .nypl-alphabetical-filter {
   background-color: #efedeb;
@@ -2689,6 +3027,7 @@ footer {
     border-radius: 0.2rem;
     color: #080807;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -2704,7 +3043,9 @@ footer {
     margin: 0 0 0.5rem 0.5rem;
     padding: 0.2rem 0.25rem;
     width: 2rem; }
-    .nypl-alphabetical-filter button:hover, .nypl-alphabetical-filter button.active {
+    .nypl-alphabetical-filter button:link, .nypl-alphabetical-filter button:visited {
+      color: #080807; }
+    .nypl-alphabetical-filter button:hover, .nypl-alphabetical-filter button:hover:visited, .nypl-alphabetical-filter button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -2724,6 +3065,11 @@ footer {
 
 .nypl-search-form {
   margin: 0 0 1rem; }
+  @media (max-width: 965px) {
+    .nypl-search-form {
+      display: none; }
+      .nypl-search-form.active {
+        display: block; } }
 
 .nypl-screenreader-only {
   position: absolute;
@@ -3096,7 +3442,7 @@ footer {
     vertical-align: top; }
 
 .nypl-results-summary {
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   margin-top: 1rem; }
   .nypl-results-summary::before, .nypl-results-summary::after {
@@ -3109,7 +3455,7 @@ footer {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     margin-right: 0.5rem; }
   .nypl-results-summary .nypl-facet button {
     background-color: #fff;
@@ -3117,6 +3463,7 @@ footer {
     border-radius: 0.2rem;
     color: #776e64;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: 1em;
@@ -3128,11 +3475,14 @@ footer {
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
     display: inline-block;
+    line-height: 0;
     margin: 0;
     padding: 0;
     position: relative;
     width: 0.5rem; }
-    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button.active {
+    .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
+      color: #776e64; }
+    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
       border-color: #1b7fa7;
       background-color: #fff;
       color: #1b7fa7; }
@@ -3166,6 +3516,7 @@ footer {
     border-radius: 0.2rem;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: 2em;
@@ -3179,7 +3530,9 @@ footer {
     clear: both;
     display: block;
     margin: 0.5rem 0 0; }
-    .nypl-results-summary button:hover, .nypl-results-summary button.active {
+    .nypl-results-summary button:link, .nypl-results-summary button:visited {
+      color: #fff; }
+    .nypl-results-summary button:hover, .nypl-results-summary button:hover:visited, .nypl-results-summary button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
@@ -3239,8 +3592,8 @@ footer {
     display: block;
     fill: #1b7fa7;
     float: right;
-    height: 2em;
-    width: 2em; }
+    height: 2rem;
+    width: 2rem; }
     .nypl-results-pagination a svg.reversed {
       background-color: inherit;
       fill: #fff; }
@@ -3271,6 +3624,7 @@ footer {
     border-radius: 0.2rem;
     color: #080807;
     cursor: pointer;
+    display: inline-block;
     font-size: 1rem;
     font-weight: normal;
     height: auto;
@@ -3301,18 +3655,20 @@ footer {
       .nypl-results-sorter button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-results-sorter button:hover, .nypl-results-sorter button.active {
+    .nypl-results-sorter button:link, .nypl-results-sorter button:visited {
+      color: #080807; }
+    .nypl-results-sorter button:hover, .nypl-results-sorter button:hover:visited, .nypl-results-sorter button.active {
       border-color: #776e64;
       background-color: #d7d4d0;
       color: #776e64; }
-      .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorter button.active .nypl-icon {
+      .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorter button:hover:visited .nypl-icon, .nypl-results-sorter button.active .nypl-icon {
         background-color: #d7d4d0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
         width: 1em;
         speak: none; }
-        .nypl-results-sorter button:hover .nypl-icon.reversed, .nypl-results-sorter button.active .nypl-icon.reversed {
+        .nypl-results-sorter button:hover .nypl-icon.reversed, .nypl-results-sorter button:hover:visited .nypl-icon.reversed, .nypl-results-sorter button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
     .nypl-results-sorter button.active .nypl-icon {
@@ -3330,6 +3686,7 @@ footer {
         color: #080807; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
+    border-radius: 0.2rem;
     list-style: none;
     min-width: 11em;
     position: absolute;
@@ -3340,7 +3697,7 @@ footer {
   .nypl-results-sorter a {
     color: #080807;
     display: block;
-    padding: 0.25em 0.5em 0.25em 1em;
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none; }
     .nypl-results-sorter a:hover {
       color: #080807;
@@ -3350,6 +3707,35 @@ footer {
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0; }
+  .nypl-results-item h2 {
+    font-weight: normal; }
+  .nypl-results-item .nypl-results-highlight {
+    color: #d0343a;
+    font-style: normal; }
+  .nypl-results-item dl {
+    margin-bottom: 1rem; }
+    .nypl-results-item dl::before, .nypl-results-item dl::after {
+      content: "";
+      display: table; }
+    .nypl-results-item dl::after {
+      clear: both; }
+  .nypl-results-item dt,
+  .nypl-results-item dd {
+    float: left; }
+  .nypl-results-item dt {
+    clear: left;
+    font-weight: bold;
+    width: 8.5rem; }
+    .nypl-results-item dt::after {
+      content: ":"; }
+    @media (max-width: 965px) {
+      .nypl-results-item dt {
+        width: 40%; } }
+  .nypl-results-item dd {
+    margin: 0; }
+    @media (max-width: 965px) {
+      .nypl-results-item dd {
+        width: 60%; } }
   .nypl-results-item p {
     margin-bottom: 0.5rem; }
 

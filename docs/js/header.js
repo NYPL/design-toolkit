@@ -1,6 +1,22 @@
 var hideTimeout
 
 function init() {
+  $(".nypl-mobile-refine button").click(function(e){
+    e.preventDefault();
+    var self = $(e.target);
+    var parent = self.parent();
+    console.log(self);
+    self.attr("aria-expanded", "true");
+    parent.addClass("hidden");
+    $(".nypl-search-form").addClass("active")
+    $("#material-text").focus()
+  })
+  $(".nypl-collapsed").click(function(e){
+    e.preventDefault();
+    var self = $(e.target);
+    self.removeClass("nypl-collapsed")
+    self.off("click")
+  })
   $(".nypl-select-field.hidden").hide();
   $('#date-of-birth').mask('00/00/0000');
   $("#step-2, #step-3").hide();

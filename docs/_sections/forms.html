@@ -21,7 +21,7 @@ description: Form fields and user input.
     <label for="search-by-field">Search in</label>
     <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
   </span>
-  <input type="text" aria-labelledby="nypl-omni-button" value="">
+  <input type="text" aria-labelledby="nypl-omni-button" value="" />
 </fieldset>
     </div>
 
@@ -35,7 +35,7 @@ description: Form fields and user input.
     &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
     &lt;select id=&quot;search-by-field&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
   &lt;/span&gt;
-  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot;&gt;
+  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot; /&gt;
 &lt;/fieldset&gt;
     </code></pre>
 
@@ -47,7 +47,7 @@ description: Form fields and user input.
       <span class="nypl-example-text">Example</span>
 <div class="nypl-text-field">
   <label for="keyword-text">Title or description</label>
-  <input id="keyword-text" type="text" placeholder="Enter keywords">
+  <input id="keyword-text" type="text" placeholder="Enter keywords" />
 </div>
     </div>
 
@@ -57,7 +57,7 @@ description: Form fields and user input.
     <pre><code class="html">
 &lt;div class=&quot;nypl-text-field&quot;&gt;
   &lt;label for=&quot;keyword-text&quot;&gt;Title or description&lt;/label&gt;
-  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
 &lt;/div&gt;
     </code></pre>
 
@@ -71,7 +71,7 @@ description: Form fields and user input.
   <label for="keyword-text">Title
     <span class="nypl-required-field">Required</span>
   </label>
-  <input id="keyword-text" type="text" placeholder="Enter keywords">
+  <input id="keyword-text" type="text" placeholder="Enter keywords" />
 </div>
     </div>
 
@@ -83,7 +83,7 @@ description: Form fields and user input.
   &lt;label for=&quot;keyword-text&quot;&gt;Title
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
 &lt;/div&gt;
     </code></pre>
 
@@ -97,7 +97,7 @@ description: Form fields and user input.
       <span class="nypl-example-text">Example</span>
 <div class="nypl-date-field">
   <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
-  <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY">
+  <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY" />
 </div>
     </div>
 
@@ -107,7 +107,7 @@ description: Form fields and user input.
     <pre><code class="html">
 &lt;div class=&quot;nypl-date-field&quot;&gt;
   &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
-  &lt;input id=&quot;date-of-birth&quot; type=&quot;text&quot; class=&quot;form-text&quot; placeholder=&quot;MM/DD/YYYY&quot;&gt;
+  &lt;input id=&quot;date-of-birth&quot; type=&quot;text&quot; class=&quot;form-text&quot; placeholder=&quot;MM/DD/YYYY&quot; /&gt;
 &lt;/div&gt;
     </code></pre>
     <pre><code class="js">
@@ -182,6 +182,32 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;/div&gt;
     </code></pre>
 
+
+    <h3 id="optInBox">Terms/Opt-in Checkboxes</h3>
+
+    <p>For situations where the user is requested to accept a terms of service or to opt-in to communications from the Library.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-terms-checkbox">
+  <label for="checkbox-optin">
+    <input id="checkbox-optin" type="checkbox" value="1" />Yes, I'd like to receive e-communications about NYPL's programs, services, and initiatives.
+  </label>
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-terms-checkbox
+    </code></pre>
+
+    <pre><code class="html">
+&lt;div class=&quot;nypl-terms-checkbox&quot;&gt;
+  &lt;label for=&quot;checkbox-optin&quot;&gt;
+    &lt;input id=&quot;checkbox-optin&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt;Yes, I&#039;d like to receive e-communications about NYPL&#039;s programs, services, and initiatives.
+  &lt;/label&gt;
+&lt;/div&gt;
+    </code></pre>
+
     <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
 
     <p>Another control that contains a <code>fieldset</code> and its corresponding <code>legend</code>.</p>
@@ -194,13 +220,13 @@ $('#date-of-birth').mask('00/00/0000');
   <fieldset>
     <legend id="radiobutton-group1">Accessible from</legend>
     <label id="radiobutton-group1_every" for="available-every">
-      <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any" />Anywhere
     </label>
     <label id="radiobutton-group1_home" for="available-home">
-      <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home" />Home with a library card
     </label>
     <label id="radiobutton-group1_library" for="available-library">
-      <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library" />A library branch
     </label>
   </fieldset>
 </div>
@@ -216,13 +242,13 @@ $('#date-of-birth').mask('00/00/0000');
   &lt;fieldset&gt;
     &lt;legend id=&quot;radiobutton-group1&quot;&gt;Accessible from&lt;/legend&gt;
     &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
-      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot; /&gt;Anywhere
     &lt;/label&gt;
     &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
-      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot; /&gt;Home with a library card
     &lt;/label&gt;
     &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
-      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot; /&gt;A library branch
     &lt;/label&gt;
   &lt;/fieldset&gt;
 &lt;/div&gt;
@@ -235,18 +261,22 @@ $('#date-of-birth').mask('00/00/0000');
     <p>The general structure is: a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a <code>nypl-facet-list</code> of items, each with the following structure:</p>
 
     <pre><code class="html">
-&lt;label for=&quot;my-facet-value-id&quot;&gt;
+&lt;label for=&quot;my-facet-value-id&quot; class=&quot;nypl-bar_[1 to 100]&quot;&gt;
+  &lt;input id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot;&gt;
   &lt;span&gt;
-    &lt;input id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot;&gt;
     The facet text
   &lt;/span&gt;
   &lt;span class=&quot;nypl-facet-count&quot;&gt;[estimated result count]&lt;/span&gt;
 &lt;/label&gt;
     </code></pre>
 
+    <p>The placeholder on the search box should have the text “Search [facetname plural]” to make clear that the user is searching within the possible values to facet on.</p>
+
+    <p>The label has an optional class of <code>nypl-bar_[percentnumber]</code> where the <code>[percentnumber]</code> determines the length of the decorative bar behind the value and should reflect the relative size of the selection of that facet. It must be an integer from 1 to 100, from shortest to longest (this is a different number from the estimated result count). A label with class <code>nypl-bar_10</code> would be 10% long, from the right.</p>
+
     <p>The facet count is optional but must be of class <code>nypl-facet-count</code>.</p>
 
-    <p>A “Show X more” link at the end of the list allows for the user to display X more items to select from.</p>
+    <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
     <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong>.</p>
 
@@ -255,46 +285,46 @@ $('#date-of-birth').mask('00/00/0000');
 <div class="nypl-searchable-field">
   <div class="nypl-facet-search">
     <label for="subject-text">Subject</label>
-    <input id="subject-text" type="text" placeholder="Enter keywords">
+    <input id="subject-text" type="text" placeholder="Search Subjects" />
   </div>
   <div class="nypl-facet-list">
-    <label for="subject-poems">
+    <label for="subject-poems" class="nypl-bar_9">
+      <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
       <span>
-        <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
         Poems
       </span>
       <span class="nypl-facet-count">97</span>
     </label>
-    <label for="subject-ejournals">
+    <label for="subject-ejournals" class="nypl-bar_43">
+      <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
       <span>
-        <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
         Electronic journals
       </span>
       <span class="nypl-facet-count">489</span>
     </label>
-    <label for="subject-home">
+    <label for="subject-home" class="nypl-bar_21">
+      <input id="subject-home" type="checkbox" name="subject" value="home">
       <span>
-        <input id="subject-home" type="checkbox" name="subject" value="home">
         Electronic books
       </span>
       <span class="nypl-facet-count">236</span>
     </label>
-    <label for="subject-piano">
+    <label for="subject-piano" class="nypl-bar_18">
+      <input id="subject-piano" type="checkbox" name="subject" value="piano">
       <span>
-        <input id="subject-piano" type="checkbox" name="subject" value="piano">
         Piano music
       </span>
       <span class="nypl-facet-count">198</span>
     </label>
-    <label for="subject-opera">
+    <label for="subject-opera" class="nypl-bar_11">
+      <input id="subject-opera" type="checkbox" name="subject" value="opera">
       <span>
-        <input id="subject-opera" type="checkbox" name="subject" value="opera">
         Operas
       </span>
       <span class="nypl-facet-count">122</span>
     </label>
-    <a href="#more" class="nypl-more-facets">Show 10 more subjects</a>
   </div>
+  <button class="nypl-link-button">Show 10 more</button>
 </div>
     </div>
 
@@ -311,45 +341,45 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;div class=&quot;nypl-searchable-field&quot;&gt;
   &lt;div class=&quot;nypl-facet-search&quot;&gt;
     &lt;label for=&quot;subject-text&quot;&gt;Subject&lt;/label&gt;
-    &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
+    &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Search Subjects&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;nypl-facet-list&quot;&gt;
-    &lt;label for=&quot;subject-poems&quot;&gt;
+    &lt;label for=&quot;subject-poems&quot; class=&quot;nypl-bar_91&quot;&gt;
+      &lt;input id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot;&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot;&gt;
         Poems
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;97&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-ejournals&quot;&gt;
+    &lt;label for=&quot;subject-ejournals&quot; class=&quot;nypl-bar_57&quot;&gt;
+      &lt;input id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot;&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot;&gt;
         Electronic journals
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;489&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-home&quot;&gt;
+    &lt;label for=&quot;subject-home&quot; class=&quot;nypl-bar_79&quot;&gt;
+      &lt;input id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot;&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot;&gt;
         Electronic books
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-piano&quot;&gt;
+    &lt;label for=&quot;subject-piano&quot; class=&quot;nypl-bar_82&quot;&gt;
+      &lt;input id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot;&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot;&gt;
         Piano music
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-opera&quot;&gt;
+    &lt;label for=&quot;subject-opera&quot; class=&quot;nypl-bar_89&quot;&gt;
+      &lt;input id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot;&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot;&gt;
         Operas
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
     &lt;/label&gt;
-    &lt;a href=&quot;#more&quot; class=&quot;nypl-more-facets&quot;&gt;Show 10 more subjects&lt;/a&gt;
   &lt;/div&gt;
+  &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
 &lt;/div&gt;
     </code></pre>
