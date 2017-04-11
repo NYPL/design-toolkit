@@ -86,7 +86,9 @@ $form-padding: 0.5rem;
     position: absolute;
   }
 
-  input[type=text] {
+  input[type=text],
+  input[type=email],
+  input[type=number] {
     @include text;
   }
 }
@@ -246,7 +248,9 @@ $form-padding: 0.5rem;
     }
   }
 
-  input[type=text] {
+  input[type=text],
+  input[type=email],
+  input[type=number] {
     @include input;
     border-radius: $general-border-radius;
     text-indent: $form-padding;
@@ -271,7 +275,9 @@ $form-padding: 0.5rem;
       }
     }
 
-    input[type=text] {
+    input[type=text],
+    input[type=email],
+    input[type=number] {
       width: 48%;
     }
 
