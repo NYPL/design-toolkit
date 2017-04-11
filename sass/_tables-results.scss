@@ -50,7 +50,7 @@
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 0;
+    margin-bottom: 0.25rem;
     margin-right: 0.5rem;
   }
 
@@ -197,6 +197,13 @@ $sorter-width: 11em;
   .nypl-results-highlight {
     color: $highlight-color;
     font-style: normal;
+  }
+
+  .nypl-results-unavailable {
+    border-left: 0.5rem solid $highlight-color;
+    color: $highlight-color;
+    margin: 1rem 0;
+    padding-left: 0.5rem;
   }
 
   dl {

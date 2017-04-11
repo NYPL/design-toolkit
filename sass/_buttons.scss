@@ -15,9 +15,14 @@
   cursor: pointer;
   font: inherit;
   padding: 0;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: $general-border-radius, $border-width: 0.0625rem, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.2rem) {
+@mixin basic-button ($text-color: $button-text-color, $border-color: $nypl-search-color-dark, $background-color: $nypl-search-color-dark, $hover-text-color: $nypl-search-color-dark, $hover-background-color: $button-text-color, $border-radius: $general-border-radius, $border-width: $general-border-width, $disabled-color: $nypl-light-gray, $font-size: 1rem, $height: auto, $collapsible: false, $padding-horizontal: 0.75rem, $padding-vertical: 0.2rem) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
@@ -138,12 +143,12 @@
   //   color: $nypl-white;
   // }
 
-  // span {
-  //   float: left;
-  //   font-size: 2rem;
-  //   line-height: 1;
-  //   margin-right: 0.25rem;
-  // }
+  span {
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin-right: 0.25rem;
+  }
 }
 
 @mixin service-button($collapsible: false, $text-color: $nypl-white, $background-color: $nypl-red) {
