@@ -91,6 +91,14 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin field-error {
+
+  input[type=text] {
+    background-color: $nypl-red-error;
+    border-bottom: 0.125rem $nypl-red-dark solid;
+  }
+}
+
 @mixin text-field {
   @include fieldset;
   @include text-field-with-label;

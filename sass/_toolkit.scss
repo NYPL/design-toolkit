@@ -105,6 +105,10 @@
   @include required-field;
 }
 
+.nypl-field-error {
+  @include field-error;
+}
+
 .nypl-select {
   @include select;
 }
@@ -274,5 +278,3 @@
 .nypl-views-table {
   @include views-table;
 }
-
-

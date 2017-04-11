@@ -87,6 +87,32 @@ description: Form fields and user input.
 &lt;/div&gt;
     </code></pre>
 
+    <h3 id="fieldErrors">Error state on fields</h3>
+
+    <p>Any field where user input could be deemed or returned erroneous should utilize the class <code>nypl-field-error</code></p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+      <div class="nypl-text-field nypl-field-error">
+        <label for="keyword-text">Title
+          <span class="nypl-required-field">Required</span>
+        </label>
+        <input id="keyword-text" type="text" placeholder="Enter  keywords" />
+      </div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-error-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-text-field&quot;&gt;
+  &lt;label for=&quot;keyword-text&quot;&gt;Title
+    &lt;span class=&quot;nypl-required-field&nbsp;nypl-field-error&quot;&gt;Required&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
+&lt;/div&gt;
+    </code></pre>
+
     <h3 id="dateFields">Date fields</h3>
 
     <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
@@ -278,7 +304,7 @@ $('#date-of-birth').mask('00/00/0000');
 
     <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
-    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without result count.</p>
+    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong>.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -288,11 +314,12 @@ $('#date-of-birth').mask('00/00/0000');
     <input id="subject-text" type="text" placeholder="Search Subjects" />
   </div>
   <div class="nypl-facet-list">
-    <label for="subject-poems">
+    <label for="subject-poems" class="nypl-bar_9">
       <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
       <span>
         Poems
       </span>
+      <span class="nypl-facet-count">97</span>
     </label>
     <label for="subject-ejournals" class="nypl-bar_43">
       <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">

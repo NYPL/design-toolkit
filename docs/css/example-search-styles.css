@@ -2452,6 +2452,10 @@ footer {
   font-size: 0.9rem;
   font-weight: normal; }
 
+.nypl-field-error input[type=text] {
+  background-color: #f6d6d8;
+  border-bottom: 0.125rem #97272c solid; }
+
 .nypl-select {
   -moz-appearance: none;
   -webkit-appearance: none;
