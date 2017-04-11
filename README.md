@@ -18,6 +18,9 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.4
+> Minor fixes including: #43, #47, #48.
+
 ### v0.1.3
 > Removed invocation of SVG file.
 > Updated `node-sass`.
