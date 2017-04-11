@@ -2350,6 +2350,14 @@ footer {
     width: calc(50% - 0.125rem); }
     .nypl-name-field div:last-child {
       margin-right: 0; }
+    @media (max-width: 965px) {
+      .nypl-name-field div {
+        float: none;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: auto; }
+        .nypl-name-field div:last-child {
+          margin-bottom: 0; } }
 
 .nypl-address-fieldset {
   background-color: #efedeb;

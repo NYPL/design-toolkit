@@ -112,6 +112,17 @@ $form-padding: 0.5rem;
     &:last-child {
       margin-right: 0;
     }
+
+    @include media($mobile-breakpoint) {
+      float: none;
+      margin-bottom: 1rem;
+      margin-right: 0;
+      width: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
