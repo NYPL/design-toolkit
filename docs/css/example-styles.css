@@ -3659,6 +3659,7 @@ footer {
     fill: #1b7fa7;
     float: right;
     height: 2rem;
+    margin-top: 0.4rem;
     width: 2rem; }
     .nypl-results-pagination a svg.reversed {
       background-color: inherit;
@@ -3797,8 +3798,7 @@ footer {
   .nypl-results-item dt {
     clear: left;
     color: #776e64;
-    margin-right: 0.5rem;
-    width: 8.5rem; }
+    width: 7.6rem; }
     @media (max-width: 965px) {
       .nypl-results-item dt {
         width: 40%; } }

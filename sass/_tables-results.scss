@@ -124,6 +124,7 @@
       fill: $link-color;
       float: right;
       height: 2rem;
+      margin-top: 0.4rem;
       width: 2rem;
     }
 
@@ -220,8 +221,7 @@ $sorter-width: 11em;
   dt {
     clear: left;
     color: $nypl-gray;
-    margin-right: 0.5rem;
-    width: 8.5rem;
+    width: 7.6rem;
 
     @include media($mobile-breakpoint) {
       width: 40%;
