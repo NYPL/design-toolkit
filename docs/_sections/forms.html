@@ -68,10 +68,10 @@ description: Form fields and user input.
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-text-field">
-  <label for="keyword-text">Title
+  <label for="required-field">Title
     <span class="nypl-required-field">Required</span>
   </label>
-  <input id="keyword-text" type="text" placeholder="Enter keywords" />
+  <input id="required-field" type="text" placeholder="Enter keywords" />
 </div>
     </div>
 
@@ -80,10 +80,10 @@ description: Form fields and user input.
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-text-field&quot;&gt;
-  &lt;label for=&quot;keyword-text&quot;&gt;Title
+  &lt;label for=&quot;required-field&quot;&gt;Title
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
+  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
 &lt;/div&gt;
     </code></pre>
 
@@ -97,22 +97,30 @@ description: Form fields and user input.
         </li>
       </ul>
     </p>
-    <div class="nypl-toolkit-example">
-      <span class="nypl-example-text">Example</span>
-      <div class="nypl-text-field nypl-field-error">
-        <label for="keyword-text">Email
-          <span class="nypl-required-field">Required</span>
-        </label>
-        <input aria-required="true" aria-invalid="true" id="keyword-text" type="text" placeholder="sally ride" />
-        <span class="error-desc">Email address must use the correct formatting. Ex: <i>prudence@hotmail.com</i></span>
-      </div>
-    </div>
-
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <div class="nypl-text-field nypl-field-error">
+    <label for="email-field">Email
+      <span class="nypl-required-field">Required</span>
+    </label>
+    <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
+    <span class="error-desc">Email address must use the correct formatting. Ex: <i>prudence@hotmail.com</i></span>
+  </div>
+</div>
     <pre><code class="scss">
 .nypl-error-field
     </code></pre>
     <pre><code class="html">
-      &lt;div class=&quot;nypl-toolkit-example&quot;&gt;&#10;        &lt;span class=&quot;nypl-example-text&quot;&gt;Example&lt;/span&gt;&#10;        &lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;&#10;          &lt;label for=&quot;keyword-text&quot;&gt;Email&#10;            &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&#10;          &lt;/label&gt;&#10;          &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;sally ride&quot; /&gt;&#10;          &lt;span class=&quot;error-desc&quot;&gt;Email address must use the correct formatting. Ex: &lt;i&gt;prudence@hotmail.com&lt;/i&gt;&lt;/span&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;
+&lt;div class=&quot;nypl-toolkit-example&quot;&gt;
+  &lt;span class=&quot;nypl-example-text&quot;&gt;Example&lt;/span&gt;
+  &lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;
+    &lt;label for=&quot;email-field&quot;&gt;Email
+      &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;email-field&quot; type=&quot;text&quot; placeholder=&quot;&quot; value=&quot;sally ride&quot; /&gt;
+    &lt;span class=&quot;error-desc&quot;&gt;Email address must use the correct formatting. Ex: &lt;i&gt;prudence@hotmail.com&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
 
     <h3 id="dateFields">Date fields</h3>
