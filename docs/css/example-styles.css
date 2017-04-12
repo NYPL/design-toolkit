@@ -3764,7 +3764,8 @@ footer {
   margin-bottom: 2rem;
   margin-left: 0; }
   .nypl-results-item h2 {
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 1.4rem; }
   .nypl-results-item .nypl-results-highlight {
     color: #d0343a;
     font-style: normal; }
@@ -3785,10 +3786,9 @@ footer {
     float: left; }
   .nypl-results-item dt {
     clear: left;
-    font-weight: bold;
+    color: #776e64;
+    margin-right: 0.5rem;
     width: 8.5rem; }
-    .nypl-results-item dt::after {
-      content: ":"; }
     @media (max-width: 965px) {
       .nypl-results-item dt {
         width: 40%; } }

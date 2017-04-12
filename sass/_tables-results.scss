@@ -192,6 +192,7 @@ $sorter-width: 11em;
 
   h2 {
     font-weight: normal;
+    font-size: 1.4rem;
   }
 
   .nypl-results-highlight {
@@ -218,12 +219,9 @@ $sorter-width: 11em;
 
   dt {
     clear: left;
-    font-weight: bold;
+    color: $nypl-gray;
+    margin-right: 0.5rem;
     width: 8.5rem;
-
-    &::after {
-      content: ":";
-    }
 
     @include media($mobile-breakpoint) {
       width: 40%;
