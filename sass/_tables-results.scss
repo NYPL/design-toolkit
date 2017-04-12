@@ -198,9 +198,8 @@ $sorter-width: 11em;
     font-size: 1.4rem;
   }
 
-  .nypl-results-highlight {
-    color: $highlight-color;
-    font-style: normal;
+  dd.nypl-results-highlight {
+    font-weight: bold;
   }
 
   .nypl-results-unavailable {

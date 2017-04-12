@@ -3779,9 +3779,8 @@ footer {
   .nypl-results-item h2 {
     font-weight: normal;
     font-size: 1.4rem; }
-  .nypl-results-item .nypl-results-highlight {
-    color: #d0343a;
-    font-style: normal; }
+  .nypl-results-item dd.nypl-results-highlight {
+    font-weight: bold; }
   .nypl-results-item .nypl-results-unavailable {
     border-left: 0.5rem solid #d0343a;
     color: #d0343a;
