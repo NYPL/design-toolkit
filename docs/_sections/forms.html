@@ -89,16 +89,22 @@ description: Form fields and user input.
 
     <h3 id="fieldErrors">Error state on fields</h3>
 
-    <p>Any field where user input could be deemed or returned erroneous should utilize the class <code>nypl-field-error</code>. It is up to the form designer to determine what fields should have an error state. It is up to the developer to implement the necessary front and back end validations as well as the expected input formatting that would necessitate a state change for a given field. Additionally, explanatory text must be supplied by the form designer decribing the error and how to correct it. </p>
-
+    <p>Any field where user input could be returned erroneous should utilize the class <code>nypl-field-error</code>. The developer must append the <code>span</code> with the class: <code><span>error-desc</span></code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text. It is the responsibility of the developer to implement the necessary front and back end validations, via Javascript or some other means.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints#Required_and_invalid_fields" target="_blank">Basic Form Hints: Required and invalid fields</a>
+        </li>
+      </ul>
+    </p>
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
       <div class="nypl-text-field nypl-field-error">
-        <label for="keyword-text">Title
+        <label for="keyword-text">Email
           <span class="nypl-required-field">Required</span>
         </label>
-        <input id="keyword-text" type="text" placeholder="User's erroneous input" />
-        <span class="error-desc">Please enter the correct information in the above field.</span>
+        <input aria-required="true" aria-invalid="true" id="keyword-text" type="text" placeholder="sally ride" />
+        <span class="error-desc">Email address must use the correct formatting. Ex: <i>prudence@hotmail.com</i></span>
       </div>
     </div>
 
@@ -106,13 +112,7 @@ description: Form fields and user input.
 .nypl-error-field
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;nypl-text-field&quot;&gt;
-  &lt;label for=&quot;keyword-text&quot;&gt;Title
-    &lt;span class=&quot;nypl-required-field&nbsp;nypl-field-error&quot;&gt;Required&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;User's erroneous input&quot; /&gt;
-  &lt;span class=&quot;error-desc&quot;&gt;Please enter the correct information in the above field.&lt;/span&gt;
-&lt;/div&gt;
+      &lt;div class=&quot;nypl-toolkit-example&quot;&gt;&#10;        &lt;span class=&quot;nypl-example-text&quot;&gt;Example&lt;/span&gt;&#10;        &lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;&#10;          &lt;label for=&quot;keyword-text&quot;&gt;Email&#10;            &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&#10;          &lt;/label&gt;&#10;          &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;sally ride&quot; /&gt;&#10;          &lt;span class=&quot;error-desc&quot;&gt;Email address must use the correct formatting. Ex: &lt;i&gt;prudence@hotmail.com&lt;/i&gt;&lt;/span&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;
     </code></pre>
 
     <h3 id="dateFields">Date fields</h3>
