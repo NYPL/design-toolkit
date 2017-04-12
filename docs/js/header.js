@@ -16,11 +16,17 @@ function init() {
     e.preventDefault();
     var self = $(e.target);
     var parent = self.parent();
-    console.log(self);
-    self.attr("aria-expanded", "true");
-    parent.addClass("hidden");
-    $(".nypl-search-form").addClass("active")
-    $("#material-text").focus()
+    if (self.attr("aria-expanded") != "true") {
+      self.attr("aria-expanded", "true");
+      self.text("Hide facets");
+      $(".nypl-search-form").addClass("active")
+      $("#filter-search").focus()
+    } else {
+      self.attr("aria-expanded", "false");
+      self.text("Refine search");
+      $(".nypl-search-form").removeClass("active")
+      $("#mainContent").focus()
+    }
   })
   $(".nypl-collapsed").click(function(e){
     e.preventDefault();
