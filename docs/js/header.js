@@ -1,13 +1,7 @@
 var hideTimeout
 
 function onSampleCodeClick (t) {
-  var e,
-  n,
-  i,
-  o,
-  r,
-  s,
-  a;
+  var e, n, i, o, r, s, a;
   for (e = $(t.target), a = window.getSelection(), a.rangeCount > 0 && a.removeAllRanges(), s = [
   ], i = 0, o = e.length; i < o; i++) n = e[i],
   r = document.createRange(),
