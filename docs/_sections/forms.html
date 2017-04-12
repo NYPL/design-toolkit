@@ -89,7 +89,7 @@ description: Form fields and user input.
 
     <h3 id="fieldErrors">Error state on fields</h3>
 
-    <p>Any field where user input could be returned erroneous should utilize the class <code>nypl-field-error</code>. The developer must append the <code>span</code> with the class: <code><span>error-desc</span></code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text. It is the responsibility of the developer to implement the necessary front and back end validations, via Javascript or some other means.</p>
+    <p>Any field where user input could be returned erroneous should utilize the class <code>nypl-field-error</code>. The developer must append the <code>span</code> with the class: <code><span>error-desc</span></code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text. It is the responsibility of the developer to implement the necessary front and back end validations, via JavaScript or some other means.</p>
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
       <ul>
         <li>
@@ -104,7 +104,7 @@ description: Form fields and user input.
       <span class="nypl-required-field">Required</span>
     </label>
     <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
-    <span class="error-desc">Email address must use the correct formatting. Ex: <i>prudence@nypl.org</i></span>
+    <span class="error-desc">Email address must use the correct formatting. Ex: <i>prudence@example.org</i></span>
   </div>
 </div>
     <pre><code class="scss">
