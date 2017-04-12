@@ -86,7 +86,9 @@ $form-padding: 0.5rem;
     position: absolute;
   }
 
-  input[type=text] {
+  input[type=text],
+  input[type=email],
+  input[type=number] {
     @include text;
   }
 }
@@ -124,6 +126,17 @@ $form-padding: 0.5rem;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @include media($mobile-breakpoint) {
+      float: none;
+      margin-bottom: 1rem;
+      margin-right: 0;
+      width: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -261,7 +274,9 @@ $form-padding: 0.5rem;
     }
   }
 
-  input[type=text] {
+  input[type=text],
+  input[type=email],
+  input[type=number] {
     @include input;
     border-radius: $general-border-radius;
     text-indent: $form-padding;
@@ -286,7 +301,9 @@ $form-padding: 0.5rem;
       }
     }
 
-    input[type=text] {
+    input[type=text],
+    input[type=email],
+    input[type=number] {
       width: 48%;
     }
 

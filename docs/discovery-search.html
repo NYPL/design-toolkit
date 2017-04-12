@@ -208,7 +208,7 @@
         <li class="nypl-search">
           <form action="" id="" class="nypl-search_main">
             <div class="nypl-search_query-content">
-              <input id="nypl-search_button" type="submit" class="nypl-search_button" name="Search" value="Search"><input type="text" class="nypl-form-text" id="nypl-search_query-text" name="search-query-text" aria-labelledby="nypl-search_query-text" value="" placeholder="type keywords">
+              <input id="nypl-search_button" type="submit" class="nypl-search_button" name="Search" value="Search"><input type="text" class="nypl-form-text" id="nypl-search_query-text" name="search-query-text" aria-labelledby="nypl-search_button" value="" placeholder="type keywords">
               <div class="nypl-search_select hidden">
                 <label id="nypl-search_books-type-label" class="nypl-search_radio-label selected" for="nypl-search_books-type">
                   <input id="nypl-search_books-type" aria-labelledby="nypl-search_button nypl-search_books-type-label" type="radio" name="search-type" class="nypl-search_type" value="books-type" checked="checked">Books/Music/DVDs</label>
@@ -269,7 +269,7 @@
     <label for="material-text">Material Type</label>
     <input id="material-text" type="text" placeholder="Search Material Types">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="material-Artifact">
       <input id="material-Artifact" type="checkbox" name="subject" value="Artifact" checked="checked">
       <span>
@@ -304,7 +304,7 @@
       </span>
       <span class="nypl-facet-count">122</span>
     </label>
-  </div>
+  </fieldset>
   <button class="nypl-link-button">Show 10 more</button>
 </div>
 
@@ -313,7 +313,7 @@
     <label for="location-text">Location</label>
     <input id="location-text" type="text" placeholder="Search Locations">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="location-Stephen A. Schwarzman Building " class="nypl-bar_46">
       <input id="location-Stephen A. Schwarzman Building " type="checkbox" name="location" value="Stephen A. Schwarzman Building ">
       <span>
@@ -342,7 +342,7 @@
       </span>
       <span class="nypl-facet-count">3</span>
     </label>
-  </div>
+  </fieldset>
   <button class="nypl-link-button">Show 10 more</button>
 </div> -->
 
@@ -351,7 +351,7 @@
     <label for="subject-text">Subject</label>
     <input id="subject-text" type="text" placeholder="Search Subjects">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="subject-poems">
       <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
       <span>
@@ -386,7 +386,7 @@
       </span>
       <span class="nypl-facet-count">122</span>
     </label>
-  </div>
+  </fieldset>
   <button class="nypl-link-button">Show 10 more</button>
 </div>
 
@@ -415,7 +415,7 @@
     <label for="owner-text">Owner</label>
     <input id="owner-text" type="text" placeholder="Search Owners">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="location-orgs:1000" class="nypl-bar_30">
       <input id="location-orgs:1000" type="checkbox" name="location" value="orgs:1000">
       <span>
@@ -451,7 +451,7 @@
       </span>
       <span class="nypl-facet-count">6</span>
     </label>
-  </div>
+  </fieldset>
   <button class="nypl-link-button">Show 10 more</button>
 </div> -->
 
@@ -460,7 +460,7 @@
     <label for="issuance-text">Issuance</label>
     <input id="issuance-text" type="text" placeholder="Search Issuances">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="issuance-urn:biblevel:m" class="nypl-bar_97">
       <input id="issuance-urn:biblevel:m" type="checkbox" name="issuance" value="urn:biblevel:m">
       <span>
@@ -482,7 +482,7 @@
       </span>
       <span class="nypl-facet-count">1</span>
     </label>
-  </div>
+  </fieldset>
 </div>
 
 <div class="nypl-searchable-field">
@@ -490,7 +490,7 @@
     <label for="publisher-text">Publisher</label>
     <input id="publisher-text" type="text" placeholder="Search Publishers">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="publisher-London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." class="nypl-bar_10">
       <input id="publisher-London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." type="checkbox" name="publisher" value="London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793.">
       <span>
@@ -526,7 +526,7 @@
       </span>
       <span class="nypl-facet-count">1</span>
     </label>
-  </div>
+  </fieldset>
   <button class="nypl-link-button">Show 10 more</button>
 </div>
 
@@ -535,7 +535,7 @@
     <label for="language-text">Language</label>
     <input id="language-text" type="text" placeholder="Search Languages">
   </div>
-  <div class="nypl-facet-list">
+  <fieldset class="nypl-facet-list">
     <label for="language-lang:eng" class="nypl-bar_95">
       <input id="language-lang:eng" type="checkbox" name="language" value="lang:eng">
       <span>
@@ -564,7 +564,7 @@
       </span>
       <span class="nypl-facet-count">1</span>
     </label>
-  </div>
+  </fieldset>
 </div>
 
 
@@ -580,7 +580,6 @@
         <span class="nypl-results-count">9,478</span> results found
         <span class="nypl-facet">for keywords <strong>new york waterways</strong><button><span>Remove new york waterways keyword filter</span></button></span>,
         <span class="nypl-facet">with subject <strong>Poems</strong><button><span>Remove Poems subject filter</span></button></span>.
-        <button>Start over</button>
       </div>
 
 <div class="nypl-results-sorting-controls">
@@ -612,10 +611,10 @@
       <dl>
         <dt>Material Type</dt>
         <dd>Text</dd>
-        <dt>By</dt>
+        <dt>Author</dt>
         <dd>New York State Waterways Association.</dd>
         <dt>At Locations</dt>
-        <dd>SASB - Rose Main Rdg Rm 315, SASB - Microforms Rm 119</dd>
+        <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>), SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
         <dt>Usage Type</dt>
         <dd>In-library use</dd>
       </dl>
@@ -628,14 +627,14 @@
       <dl>
         <dt>Material Type</dt>
         <dd>Audio</dd>
-        <dt>By</dt>
+        <dt>Author</dt>
         <dd>Ten Penny Players.</dd>
         <dt>Year Published</dt>
         <dd>1979</dd>
         <dt>Publisher</dt>
         <dd>Ten Penny Players, Inc.,</dd>
         <dt>At Location</dt>
-        <dd>SASB - Rose Main Rdg Rm 315</dd>
+        <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
         <dt>Usage Type</dt>
         <dd>In-library use</dd>
       </dl>
@@ -649,12 +648,12 @@
       <dl>
         <dt>Material Type</dt>
         <dd>Text</dd>
-        <dt>By</dt>
+        <dt>Author</dt>
         <dd>Smith, Robert A. C., 1857-</dd>
         <dt>Year Published</dt>
         <dd>1914</dd>
         <dt>At Location</dt>
-        <dd>SASB - Rose Main Rdg Rm 315</dd>
+        <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
         <dt>Usage Type</dt>
         <dd>In-library use</dd>
       </dl>
@@ -667,14 +666,14 @@
       <dl>
         <dt>Material Type</dt>
         <dd>Still image</dd>
-        <dt>By</dt>
+        <dt>Author</dt>
         <dd>Freeman, Lewis R. (Lewis Ransome), b. 1878.</dd>
         <dt>Year Published</dt>
         <dd>1926</dd>
         <dt>Publisher</dt>
         <dd>Dodd, Mead and company,</dd>
         <dt>At Location</dt>
-        <dd>SASB - Rose Main Rdg Rm 315</dd>
+        <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
         <dt>Usage Type</dt>
         <dd>In-library use</dd>
       </dl>
@@ -687,14 +686,14 @@
       <dl>
         <dt>Material Type</dt>
         <dd>Microforms</dd>
-        <dt>By</dt>
+        <dt>Author</dt>
         <dd>Ten Penny Players.</dd>
         <dt>Year Published</dt>
         <dd>1980</dd>
         <dt>Publisher</dt>
         <dd>Waterways Project of Ten Penny Players, Inc.,</dd>
         <dt>At Location</dt>
-        <dd>SASB - Microforms Rm 119</dd>
+        <dd>SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
         <dt>Usage Type</dt>
         <dd>In-library use (Advance request required)</dd>
       </dl>
@@ -778,7 +777,7 @@
     <div class="copyright">
 <svg version="1.1" class="nypl-logo-rev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 726 426" enable-background="new 0 0 726 426" xml:space="preserve">
-<g id="lion" transform="translate(0.000000, 112.000000)">
+<g id="lion-rev" transform="translate(0.000000, 112.000000)">
   <path id="Shape" fill="#FFFFFF" d="M250,109.7c-11.7-5.7-26.8-8.6-37.9-14.7c-8.7-4.8-15.4-12.8-24.8-17.2
     c-9.6-4.7-24-9.4-29.5-10.8c-19.5-4.8-35.9,1.4-41.6,5.9c-10.6,8.4-18.9,22-15.7,41.6c1.4,8.3,3.9,15.3,8,21
     c16.4,23.2,47.2,30.8,71.6,45.4c0.9,0.6,1.8,0.4,2.3-0.3c4.1-6,7.4-10.9,14.3-13.7c7-2.9,18-1.9,27.5-1.5c9.8,0.5,20.4-0.4,24-5.5
@@ -816,7 +815,7 @@
     c3.4,0.3,5.7,0.1,9.5-1.5c3.2-1.4,6.9-5.9,8.7-12.3c1.3-4.7,1.4-6.1,4.3-6.4c0.7-0.1,2,0.1,2.8,0.3c3.5,1,7.3,3.9,10,6
     c7.1,5.4,17.6,17.3,19.4,21.1c1.2,2.5,0.1,4.1-0.6,5.5C290,242,278.4,257.7,270.2,265.7z"/>
 </g>
-<g id="wordmark" transform="translate(357.000000, 0.000000)">
+<g id="wordmark-rev" transform="translate(357.000000, 0.000000)">
   <g id="Group">
     <polygon id="Shape_10_" fill="#FFFFFF" points="0.5,5.6 6,5.6 46.7,64.5 46.7,5.6 52,5.6 52,73.8 46.8,73.8 5.8,14.5 5.8,73.8 
       0.6,73.8    "/>

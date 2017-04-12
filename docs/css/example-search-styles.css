@@ -2221,7 +2221,9 @@ footer {
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-text-field input[type=text] {
+  .nypl-text-field input[type=text],
+  .nypl-text-field input[type=email],
+  .nypl-text-field input[type=number] {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -2235,9 +2237,13 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-text-field input[type=text].active {
+    .nypl-text-field input[type=text].active,
+    .nypl-text-field input[type=email].active,
+    .nypl-text-field input[type=number].active {
       width: 16rem; }
-    .nypl-text-field input[type=text]:focus {
+    .nypl-text-field input[type=text]:focus,
+    .nypl-text-field input[type=email]:focus,
+    .nypl-text-field input[type=number]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2251,7 +2257,9 @@ footer {
   display: block;
   font-weight: bold;
   position: absolute; }
-.nypl-text-field-with-label input[type=text] {
+.nypl-text-field-with-label input[type=text],
+.nypl-text-field-with-label input[type=email],
+.nypl-text-field-with-label input[type=number] {
   background-color: #efedeb;
   border: 0;
   border-radius: 0.2rem 0.2rem 0 0;
@@ -2265,9 +2273,13 @@ footer {
   text-indent: 0.5rem;
   transition: all 0.2s ease-out;
   width: 100%; }
-  .nypl-text-field-with-label input[type=text].active {
+  .nypl-text-field-with-label input[type=text].active,
+  .nypl-text-field-with-label input[type=email].active,
+  .nypl-text-field-with-label input[type=number].active {
     width: 16rem; }
-  .nypl-text-field-with-label input[type=text]:focus {
+  .nypl-text-field-with-label input[type=text]:focus,
+  .nypl-text-field-with-label input[type=email]:focus,
+  .nypl-text-field-with-label input[type=number]:focus {
     background-color: #fff;
     -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
     -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2302,7 +2314,9 @@ footer {
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-name-field input[type=text] {
+  .nypl-name-field input[type=text],
+  .nypl-name-field input[type=email],
+  .nypl-name-field input[type=number] {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -2316,9 +2330,13 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-name-field input[type=text].active {
+    .nypl-name-field input[type=text].active,
+    .nypl-name-field input[type=email].active,
+    .nypl-name-field input[type=number].active {
       width: 16rem; }
-    .nypl-name-field input[type=text]:focus {
+    .nypl-name-field input[type=text]:focus,
+    .nypl-name-field input[type=email]:focus,
+    .nypl-name-field input[type=number]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2332,6 +2350,14 @@ footer {
     width: calc(50% - 0.125rem); }
     .nypl-name-field div:last-child {
       margin-right: 0; }
+    @media (max-width: 965px) {
+      .nypl-name-field div {
+        float: none;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: auto; }
+        .nypl-name-field div:last-child {
+          margin-bottom: 0; } }
 
 .nypl-address-fieldset {
   background-color: #efedeb;
@@ -2360,7 +2386,9 @@ footer {
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-address-fieldset input[type=text] {
+  .nypl-address-fieldset input[type=text],
+  .nypl-address-fieldset input[type=email],
+  .nypl-address-fieldset input[type=number] {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -2374,9 +2402,13 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-address-fieldset input[type=text].active {
+    .nypl-address-fieldset input[type=text].active,
+    .nypl-address-fieldset input[type=email].active,
+    .nypl-address-fieldset input[type=number].active {
       width: 16rem; }
-    .nypl-address-fieldset input[type=text]:focus {
+    .nypl-address-fieldset input[type=text]:focus,
+    .nypl-address-fieldset input[type=email]:focus,
+    .nypl-address-fieldset input[type=number]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2423,7 +2455,9 @@ footer {
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-date-field input[type=text] {
+  .nypl-date-field input[type=text],
+  .nypl-date-field input[type=email],
+  .nypl-date-field input[type=number] {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -2437,9 +2471,13 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-date-field input[type=text].active {
+    .nypl-date-field input[type=text].active,
+    .nypl-date-field input[type=email].active,
+    .nypl-date-field input[type=number].active {
       width: 16rem; }
-    .nypl-date-field input[type=text]:focus {
+    .nypl-date-field input[type=text]:focus,
+    .nypl-date-field input[type=email]:focus,
+    .nypl-date-field input[type=number]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -2622,7 +2660,9 @@ footer {
       padding-right: 7%;
       padding-left: 0.5rem;
       width: 100%; }
-  .nypl-omnisearch input[type=text] {
+  .nypl-omnisearch input[type=text],
+  .nypl-omnisearch input[type=email],
+  .nypl-omnisearch input[type=number] {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -2702,7 +2742,9 @@ footer {
       .nypl-omnisearch .nypl-omni-fields select {
         padding-left: 0.125rem;
         padding-right: 20%; }
-    .nypl-omnisearch input[type=text] {
+    .nypl-omnisearch input[type=text],
+    .nypl-omnisearch input[type=email],
+    .nypl-omnisearch input[type=number] {
       width: 48%; }
     .nypl-omnisearch button,
     .nypl-omnisearch input[type=button],
@@ -2759,7 +2801,9 @@ footer {
     display: block;
     font-weight: bold;
     position: absolute; }
-  .nypl-searchable-field .nypl-facet-search input[type=text] {
+  .nypl-searchable-field .nypl-facet-search input[type=text],
+  .nypl-searchable-field .nypl-facet-search input[type=email],
+  .nypl-searchable-field .nypl-facet-search input[type=number] {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -2773,9 +2817,13 @@ footer {
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
-    .nypl-searchable-field .nypl-facet-search input[type=text].active {
+    .nypl-searchable-field .nypl-facet-search input[type=text].active,
+    .nypl-searchable-field .nypl-facet-search input[type=email].active,
+    .nypl-searchable-field .nypl-facet-search input[type=number].active {
       width: 16rem; }
-    .nypl-searchable-field .nypl-facet-search input[type=text]:focus {
+    .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
+    .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
+    .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
       background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
       -moz-box-shadow: inset 0 0 0 4px #ffb81d;
@@ -3726,7 +3774,8 @@ footer {
   margin-bottom: 2rem;
   margin-left: 0; }
   .nypl-results-item h2 {
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 1.4rem; }
   .nypl-results-item .nypl-results-highlight {
     color: #d0343a;
     font-style: normal; }
@@ -3747,10 +3796,9 @@ footer {
     float: left; }
   .nypl-results-item dt {
     clear: left;
-    font-weight: bold;
+    color: #776e64;
+    margin-right: 0.5rem;
     width: 8.5rem; }
-    .nypl-results-item dt::after {
-      content: ":"; }
     @media (max-width: 965px) {
       .nypl-results-item dt {
         width: 40%; } }
