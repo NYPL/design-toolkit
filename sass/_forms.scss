@@ -58,7 +58,7 @@ $form-padding: 0.5rem;
 @mixin text {
   @include input;
   @include box-shadow(inset 0 0 0 2px $nypl-search-color-light);
-  border-bottom: 0.0625rem solid $page-color;
+  border-bottom: $general-border-width solid $page-color;
   height: 2rem;
   padding: 1.5rem 0 0;
   text-indent: $form-padding;
@@ -91,6 +91,13 @@ $form-padding: 0.5rem;
   input[type=number] {
     @include text;
   }
+
+  .nypl-field-status {
+    background-color: transparent;
+    color: $nypl-gray;
+    display: inline-block;
+    padding-left: $form-padding;
+  }
 }
 
 @mixin field-error {
@@ -102,7 +109,7 @@ $form-padding: 0.5rem;
     box-shadow: none;
   }
 
-  .error-desc {
+  .nypl-field-status {
     background: $page-background-color;
     color: $nypl-red;
   }
