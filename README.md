@@ -18,6 +18,10 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.5
+> Added error states in text fields.
+> Discovery results improvements.
+
 ### v0.1.4
 > Minor fixes including: #43, #47, #48.
 
