@@ -2203,7 +2203,8 @@ footer {
   display: block;
   margin: 1rem 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
   .nypl-text-field fieldset {
     border: 0;
     box-shadow: none;
@@ -2456,6 +2457,7 @@ footer {
   margin: 1rem 0;
   padding: 0;
   position: relative;
+  background-color: #fff;
   min-width: 12rem;
   width: 50%; }
   .nypl-date-field fieldset {
