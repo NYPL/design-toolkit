@@ -92,10 +92,17 @@ $form-padding: 0.5rem;
 }
 
 @mixin field-error {
+  background: $page-background-color;
 
   input[type=text] {
     background-color: $nypl-red-error;
     border-bottom: 0.125rem $nypl-red-dark solid;
+    box-shadow: none;
+  }
+
+  .error-desc {
+    background: $page-background-color;
+    color: $nypl-red;
   }
 }
 

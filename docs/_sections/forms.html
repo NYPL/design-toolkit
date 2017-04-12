@@ -89,7 +89,7 @@ description: Form fields and user input.
 
     <h3 id="fieldErrors">Error state on fields</h3>
 
-    <p>Any field where user input could be deemed or returned erroneous should utilize the class <code>nypl-field-error</code></p>
+    <p>Any field where user input could be deemed or returned erroneous should utilize the class <code>nypl-field-error</code>. It is up to the form designer to determine what fields should have an error state. It is up to the developer to implement the necessary front and back end validations as well as the expected input formatting that would necessitate a state change for a given field. Additionally, explanatory text must be supplied by the form designer decribing the error and how to correct it. </p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -97,7 +97,8 @@ description: Form fields and user input.
         <label for="keyword-text">Title
           <span class="nypl-required-field">Required</span>
         </label>
-        <input id="keyword-text" type="text" placeholder="Enter  keywords" />
+        <input id="keyword-text" type="text" placeholder="User's erroneous input" />
+        <span class="error-desc">Please enter the correct information in the above field.</span>
       </div>
     </div>
 
