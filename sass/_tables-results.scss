@@ -187,9 +187,11 @@ $sorter-width: 11em;
 }
 
 @mixin results-item {
+  border-bottom: $general-border-width dashed $nypl-gray;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
+  padding-bottom: 1rem;
 
   h2 {
     font-weight: normal;
