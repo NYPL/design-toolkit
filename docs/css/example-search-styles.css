@@ -3771,7 +3771,7 @@ footer {
       font-weight: bold; }
 
 .nypl-results-item {
-  border-bottom: 0.0625rem dashed #776e64;
+  border-bottom: 0.0625rem solid #776e64;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;

@@ -187,7 +187,7 @@ $sorter-width: 11em;
 }
 
 @mixin results-item {
-  border-bottom: $general-border-width dashed $nypl-gray;
+  border-bottom: $general-border-width solid $nypl-gray;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
