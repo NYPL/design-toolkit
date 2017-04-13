@@ -1,6 +1,6 @@
 {
   "name": "@nypl/design-toolkit",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "NYPL Design Toolkit",
   "author": "NYPL Digital",
   "contributors": [
@@ -24,7 +24,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "node-sass": "3.4"
+    "node-sass": "3.8"
   },
   "eyeglass": {
     "name": "toolkit",

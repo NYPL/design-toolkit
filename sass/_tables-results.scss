@@ -40,7 +40,7 @@
 }
 
 @mixin results-summary {
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   @include clearfix;
@@ -50,7 +50,7 @@
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     margin-right: 0.5rem;
   }
 
@@ -58,6 +58,7 @@
     // the button inside a facet
     @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1em, $border-width: 0);
     display: inline-block;
+    line-height: 0;
     margin: 0;
     padding: 0;
     position: relative;
@@ -122,8 +123,9 @@
       display: block;
       fill: $link-color;
       float: right;
-      height: 2em;
-      width: 2em;
+      height: 2rem;
+      margin-top: 0.4rem;
+      width: 2rem;
     }
 
     @include media($mobile-breakpoint) {
@@ -159,6 +161,7 @@ $sorter-width: 11em;
 
   ul {
     background-color: $nypl-search-color-light;
+    border-radius: $general-border-radius;
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
@@ -173,7 +176,7 @@ $sorter-width: 11em;
   a {
     color: $page-color;
     display: block;
-    padding: 0.25em 0.5em 0.25em 1em;
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none;
 
     &:hover {
@@ -184,9 +187,55 @@ $sorter-width: 11em;
 }
 
 @mixin results-item {
+  border-bottom: $general-border-width solid $nypl-gray;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
+  padding-bottom: 1rem;
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+  }
+
+  dd.nypl-results-highlight {
+    font-weight: bold;
+  }
+
+  .nypl-results-unavailable {
+    border-left: 0.5rem solid $highlight-color;
+    color: $highlight-color;
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+  }
+
+  dl {
+    @include clearfix;
+    margin-bottom: 1rem;
+  }
+
+  dt,
+  dd {
+    float: left;
+  }
+
+  dt {
+    clear: left;
+    color: $nypl-gray;
+    width: 7.6rem;
+
+    @include media($mobile-breakpoint) {
+      width: 40%;
+    }
+  }
+
+  dd {
+    margin: 0;
+
+    @include media($mobile-breakpoint) {
+      width: 60%;
+    }
+  }
 
   p {
     margin-bottom: 0.5rem;

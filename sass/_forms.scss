@@ -19,6 +19,7 @@ $form-padding: 0.5rem;
 }
 
 @mixin label {
+  color: $page-text-color;
   display: block;
   font-weight: bold;
   margin-left: $form-padding;
@@ -27,29 +28,37 @@ $form-padding: 0.5rem;
 @mixin fieldset {
   background-color: $nypl-search-color-light;
   border: 0;
-  margin: 1rem 0;
+  border-radius: $general-border-radius;
+  box-shadow: none;
+  display: block;
+  margin: $general-padding 0;
   padding: 0;
   position: relative;
 
-  label {
-    @include label;
+  fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
   }
 
-  label {
-    margin-left: $form-padding;
+  label,
+  legend {
+    @include label;
   }
 }
 
 @mixin input {
   background-color: $nypl-search-color-light;
   border: 0;
+  border-radius: $general-border-radius $general-border-radius 0 0;
   padding: 0;
 }
 
-@mixin textfield {
+@mixin text {
   @include input;
   @include box-shadow(inset 0 0 0 2px $nypl-search-color-light);
-  border-bottom: 0.0625rem solid $page-color;
+  border-bottom: $general-border-width solid $page-color;
   height: 2rem;
   padding: 1.5rem 0 0;
   text-indent: $form-padding;
@@ -68,56 +77,151 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin textfield-with-label {
+@mixin text-field-with-label {
   label {
     background-color: transparent;
+    color: $page-text-color;
     display: block;
     font-weight: bold;
     position: absolute;
   }
 
-  input[type=text] {
-    @include textfield;
+  input[type=text],
+  input[type=email],
+  input[type=number] {
+    @include text;
+  }
+
+  .nypl-field-status {
+    background-color: transparent;
+    color: $nypl-gray;
+    display: inline-block;
+    padding-left: $form-padding;
   }
 }
 
-@mixin text-fieldset {
-  @include fieldset;
-  @include textfield-with-label;
+@mixin field-error {
+  background: $page-background-color;
+
+  input[type=text] {
+    background-color: $nypl-red-error;
+    border-bottom: 0.125rem $nypl-red-dark solid;
+    box-shadow: none;
+  }
+
+  .nypl-field-status {
+    background: $page-background-color;
+    color: $nypl-red;
+  }
 }
 
-@mixin select-field {
+@mixin text-field {
+  @include fieldset;
+  @include text-field-with-label;
+}
+
+@mixin name-field {
+  @include fieldset;
+  @include text-field-with-label;
+  background-color: $page-background-color;
+
+  div {
+    display: block;
+    float: left;
+    margin-right: 0.125rem;
+    width: calc(50% - 0.125rem);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include media($mobile-breakpoint) {
+      float: none;
+      margin-bottom: 1rem;
+      margin-right: 0;
+      width: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@mixin address-fieldset {
+  @include fieldset;
+  @include text-field-with-label;
+  background-color: $page-background-color;
+
+  div {
+    @include clearfix;
+    margin-bottom: $general-padding;
+  }
+
+  .nypl-simple-radiobutton {
+    background-color: $nypl-search-color-light;
+
+    label {
+      position: relative;
+    }
+  }
+}
+
+@mixin date-field {
+  @include fieldset;
+  @include text-field-with-label;
+
+  min-width: 12rem;
+  width: 50%;
+}
+
+@mixin required-field {
+  color: $highlight-color;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+@mixin select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% $nypl-search-color-light;
   border: 0;
-  border-radius: 0;
+  border-radius: $general-border-radius;
   height: 2rem;
   padding-right: 7%;
   padding-left: $form-padding;
   width: 100%;
 }
 
-@mixin select-fieldset {
+@mixin select-field {
   @include fieldset;
 
   label {
     @include label;
+    position: relative;
   }
 
   select {
-    @include select-field;
+    @include select;
   }
 }
 
+@mixin form-error {
+  border-left: 1rem solid $highlight-color;
+  padding-left: 1rem;
+}
+
 @mixin simple-radiobutton {
+  border-radius: $general-border-radius;
+
   span.nypl-label {
     @include label;
   }
 
   label {
     background-color: $nypl-search-color-light;
+    border-radius: $general-border-radius;
     font-weight: normal;
     padding: 0.1875rem 0;
   }
@@ -125,11 +229,27 @@ $form-padding: 0.5rem;
   input[type=radio],
   input[type=checkbox] {
     height: initial;
-    margin-right: 0.25rem;
+    margin: 0 0.25rem 0 0;
   }
 }
 
-@mixin radiobutton-fieldset {
+@mixin terms-checkbox {
+  border-left: 0.5rem solid $nypl-gray;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+
+  label {
+    font-weight: normal;
+    padding: 0.1875rem 0;
+  }
+
+  input[type=checkbox] {
+    height: initial;
+    margin: 0 0.25rem 0 0;
+  }
+}
+
+@mixin radiobutton-field {
   @include fieldset;
   @include simple-radiobutton;
 }
@@ -137,6 +257,7 @@ $form-padding: 0.5rem;
 @mixin omnisearch {
   background-color: $nypl-search-color;
   border: 0;
+  border-radius: ($general-border-radius * 2);
   padding: $form-padding;
 
   button,
@@ -156,12 +277,15 @@ $form-padding: 0.5rem;
     }
 
     select {
-      @include select-field;
+      @include select;
     }
   }
 
-  input[type=text] {
+  input[type=text],
+  input[type=email],
+  input[type=number] {
     @include input;
+    border-radius: $general-border-radius;
     text-indent: $form-padding;
     width: 58%;
   }
@@ -184,7 +308,9 @@ $form-padding: 0.5rem;
       }
     }
 
-    input[type=text] {
+    input[type=text],
+    input[type=email],
+    input[type=number] {
       width: 48%;
     }
 
@@ -196,41 +322,77 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin searchable-fieldset {
+@mixin searchable-field {
   @include fieldset;
   @include simple-radiobutton;
-
+  padding-bottom: $form-padding;
 
   .nypl-facet-search {
-    @include textfield-with-label;
+    @include text-field-with-label;
   }
 
   .nypl-facet-list {
-    display: table;
     width: 100%;
 
     label {
-      display: table-row;
-    }
+      @include clearfix;
+      border-radius: 0;
+      display: block;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
 
-    span {
-      display: table-cell;
-      padding: 0 $form-padding;
-
-      &.nypl-facet-count {
-        text-align: right;
+      @for $percent from 1 through 100 {
+        &.nypl-bar_#{$percent} {
+          background: linear-gradient(to right, transparent 0%, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color) 100%;
+        }
       }
     }
 
-    .nypl-more-facets {
-      display: inline-block;
-      margin: $form-padding;
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: block;
+      height: 1.6rem;
+      float: left;
+    }
+
+    span {
+      display: block;
+      float: left;
+      padding: 0 $form-padding 0 0;
+      width: calc(100% - 4rem - #{$form-padding});
+
+      &.nypl-collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &.nypl-facet-count {
+        float: right;
+        text-align: right;
+        width: 2rem;
+      }
     }
   }
-}
 
-@mixin checkbox-fieldset {
-  @include radiobutton-fieldset;
+  .nypl-link-button {
+    margin: $form-padding $form-padding 0;
+  }
+
+  &.nosearch {
+    // when there are too few items to make search worthwhile
+
+    .nypl-facet-search {
+      label {
+        position: relative;
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+  }
 }
 
 @mixin alphabetical-filter {
@@ -251,7 +413,27 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin mobile-refine {
+  display: none;
+
+  @include media($mobile-breakpoint) {
+    display: block;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
 @mixin search-form() {
   // used for left-column searches
   margin: 0 0 1rem;
+
+  @include media($mobile-breakpoint) {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }

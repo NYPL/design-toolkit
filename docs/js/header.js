@@ -1,6 +1,62 @@
 var hideTimeout
 
+function onSampleCodeClick (t) {
+  var e, n, i, o, r, s, a;
+  for (e = $(t.target), a = window.getSelection(), a.rangeCount > 0 && a.removeAllRanges(), s = [
+  ], i = 0, o = e.length; i < o; i++) n = e[i],
+  r = document.createRange(),
+  r.selectNode(n),
+  s.push(a.addRange(r));
+  return s
+}
+
 function init() {
+  $("code.html").on("click", onSampleCodeClick)
+  $(".nypl-mobile-refine button").click(function(e){
+    e.preventDefault();
+    var self = $(e.target);
+    var parent = self.parent();
+    if (self.attr("aria-expanded") != "true") {
+      self.attr("aria-expanded", "true");
+      self.text("Hide facets");
+      $(".nypl-search-form").addClass("active")
+      $("#filter-search").focus()
+    } else {
+      self.attr("aria-expanded", "false");
+      self.text("Refine search");
+      $(".nypl-search-form").removeClass("active")
+      $("#mainContent").focus()
+    }
+  })
+  $(".nypl-collapsed").click(function(e){
+    e.preventDefault();
+    var self = $(e.target);
+    self.removeClass("nypl-collapsed")
+    self.off("click")
+  })
+  $(".nypl-select-field.hidden").hide();
+  $('#date-of-birth').mask('00/00/0000');
+  $("#step-2, #step-3").hide();
+  $("#step-1_submit").click(function (e) {
+    $("#step-2").show();
+    $("#step-1").hide();
+    document.location = "#step-2";
+  })
+  $("#step-2_submit").click(function (e) {
+    $("#step-3").show();
+    $("#step-2").hide();
+    document.location = "#step-3";
+  })
+  $("#prev-2").click(function (e) {
+    console.log("1");
+    $("#step-1").show();
+    $("#step-2").hide();
+  })
+  $("#prev-3").click(function (e) {
+    console.log("2");
+    $("#step-2").show();
+    $("#step-3").hide();
+  })
   $(".nypl-navigation-button_button").on("click touchend", function(e) {
     e.preventDefault();
     var selected = 0;
@@ -149,10 +205,11 @@ function init() {
 
   $("input[name=available]").change(function() {
     var value = $("input[name=available]:checked").val()
+    console.log("hi");
     if (value == "library") {
-      $("fieldset.location").fadeIn(200)
+      $(".nypl-select-field.location").fadeIn(200)
     } else {
-      $("fieldset.location").fadeOut(200)
+      $(".nypl-select-field.location").fadeOut(200)
     }
   })
 

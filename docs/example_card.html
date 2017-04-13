@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Log out | NYPL</title>
+  <title>Example | NYPL design toolkit</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
-
 </head>
+
 <body>
-
-
+  <div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
+  <div class="nypl-banner-alert">
+    <div class="nypl-full-width-wrapper">The New York Public Library will be closed on Monday, October 10 in observance of Columbus Day.</div>
+  </div>
 <header class="nypl-header">
   <div class="service">
     <div class="nypl-full-width-wrapper">
@@ -195,12 +197,12 @@
       </div>
       <ul class="nav-buttons horizontal">
         <li><a href="#">Books/Music/DVDs</a></li>
-        <li class="active"><a href="#">Research</a></li>
+        <li><a href="#">Research</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Connect</a></li>
         <li><a href="#">Give</a></li>
-        <li><a href="#">Get help</a></li>
+        <li class="active"><a href="#">Get help</a></li>
         <li class="nypl-search">
           <form action="" id="" class="nypl-search_main">
             <div class="nypl-search_query-content">
@@ -224,9 +226,264 @@
       </svg></a>
   </div>
 </header>
+  <main class="main-page">
+    <div class="nypl-page-header">
+      <div class="nypl-full-width-wrapper">
+        <ol class="nypl-breadcrumbs">
+          <li><a href="/">Home</a></li>
+          <li>Get a Library Card</li>
+        </ol>
+        <h1>Get a Library Card</h1>
+      </div>
+    </div>
+          <form action="">
+    <div class="nypl-full-width-wrapper">
+      <!-- 1 (form) + 3 (results) example -->
+      <div class="nypl-row">
+        <div id="mainContent" class="nypl-column-half nypl-column-offset-one">
+          <!-- sample card -->
+
+            <div id="step-1">
+            <p class="nypl-progress-indicator">Step 1 of 3</p>
+            <h2>Please enter the following information</h2>
+            <fieldset class="nypl-name-field">
+              <div>
+                <label for="first-text">First Name <span class="nypl-required-field">Required</span></label>
+                <input id="first-text" type="text">
+              </div>
+              <div>
+                <label for="last-text">Last Name <span class="nypl-required-field">Required</span></label>
+                <input id="last-text" type="text">
+              </div>
+            </fieldset>
+
+            <div class="nypl-date-field">
+              <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
+              <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY">
+            </div>
+
+            <fieldset class="nypl-select-field">
+              <label for="F045pcode2">Education Level</label>
+              <select id="F045pcode2">
+                <option value="-" selected="selected">Select</option>
+                <option value="s">SOME (K-12)</option>
+                <option value="g">GED</option>
+                <option value="h">HIGH SCHOOL</option>
+                <option value="t">2 YEAR COLLEGE</option>
+                <option value="f">4 YEAR COLLEGE</option>
+                <option value="p">POST GRADUATE</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="nypl-text-field">
+              <label for="email">E-Mail</label>
+              <input id="email" type="text" class="form-text">
+            </fieldset>
+
+            <input type="button" id="step-1_submit" class="nypl-basic-button" value="Continue">
+            </div>
+
+            <div id="step-2">
+            <p class="nypl-progress-indicator">Step 2 of 3</p>
+            <h2>Permanent Address</h2>
+
+            <fieldset class="nypl-address-fieldset">
+              <div>
+                <label for="street-text">Street and Unit or Apartment Number <span class="nypl-required-field">Required</span></label>
+                <input id="street-text" type="text">
+              </div>
+              <div>
+                <label for="first-text">City <span class="nypl-required-field">Required</span></label>
+                <input id="first-text" type="text">
+              </div>
+              <div>
+                <label for="state-text">State <span class="nypl-required-field">Required</span></label>
+                <input id="state-text" type="text">
+              </div>
+              <div>
+                <label for="post-text">Postal Code <span class="nypl-required-field">Required</span></label>
+                <input id="post-text" type="text">
+              </div>
+              <div>
+                <label for="country-text">Country</label>
+                <input id="country-text" type="text">
+              </div>
+              <div class="nypl-select-field">
+                <label for="borough">Borough/Region</label>
+                <select id="borough">
+                  <option value="0" selected="selected">Select</option>
+                  <option value="1">BRONX</option>
+                  <option value="4">BROOKLYN</option>
+                  <option value="2">MANHATTAN</option>
+                  <option value="5">QUEENS</option>
+                  <option value="3">STATEN ISLAND</option>
+                  <option value="7">NASSAU COUNTY</option>
+                  <option value="8">SUFFOLK COUNTY</option>
+                  <option value="6">WESTCHESTER COUNTY</option>
+                  <option value="11">OTHER NEW YORK STATE</option>
+                  <option value="10">CONNECTICUT</option>
+                  <option value="9">NEW JERSEY</option>
+                  <option value="12">OTHER U.S.</option>
+                  <option value="13">INTERNATIONAL</option>
+                </select>
+              </div>
+              <div>
+                <label for="phone-text">Telephone <span class="nypl-required-field">Required</span></label>
+                <input id="phone-text" type="text">
+              </div>
+            </fieldset>
+
+            <div class="nypl-terms-checkbox">
+              <label for="checkbox-optin">
+                <input id="checkbox-optin" type="checkbox" value="1">Yes, I'd like to receive e-communications about NYPL's programs, services, and initiatives.
+              </label>
+            </div>
+
+            <button class="nypl-link-button" id="prev-2">Previous</button>
+            <input type="button" id="step-2_submit" class="nypl-basic-button" value="Continue">
+            </div>
+
+            <div id="step-3">
+            <p class="nypl-progress-indicator">Step 3 of 3</p>
+            <h2>Local Address (if different)</h2>
+
+            <fieldset class="nypl-address-fieldset">
+              <div>
+                <label for="street-text2">Street and Unit or Apartment Number <span class="nypl-required-field">Required</span></label>
+                <input id="street-text2" type="text">
+              </div>
+              <div>
+                <label for="city-text2">City <span class="nypl-required-field">Required</span></label>
+                <input id="city-text2" type="text">
+              </div>
+              <div class="nypl-select-field">
+                <label for="state1">State</label>
+                <select id="state1">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY" selected="selected">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="GU">Guam</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="VI">Virgin Islands</option>
+                  <option value="AA">Armed Forces Americas</option>
+                  <option value="AP">Armed Forces Pacific</option>
+                  <option value="AE">Armed Forces Others</option>
+                </select>
+              </div>
+              <div>
+                <label for="post-text2">Postal Code <span class="nypl-required-field">Required</span></label>
+                <input id="post-text2" type="text">
+              </div>
+              <div>
+                <label for="phone-text2">Telephone <span class="nypl-required-field">Required</span></label>
+                <input id="phone-text2" type="text">
+              </div>
+            </fieldset>
+            <button class="nypl-link-button" id="prev-3">Previous</button>
+            <input type="submit" id="card-submit-main" class="nypl-basic-button" value="Apply">
+            </div>
 
 
-
+          <!-- end sample card -->
+        </div>
+      </div>
+      <!-- end 1 (form) + 3 (results) example -->
+    </div>
+          </form>
+  </main>
+  <footer role="contentinfo">
+    <div class="nypl-full-width-wrapper footer-content">
+      <ul class="footerLinks">
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="/help/about-nypl">About NYPL</a></li>
+            <li><a class="inverted" href="/help/about-nypl/media-center">Press</a></li>
+            <li><a class="inverted" href="/careers">Careers</a></li>
+            <li><a class="inverted" href="/spacerental">Space rental</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="/help/about-nypl/legal-notices/privacy-policy">Privacy policy</a></li>
+            <li><a class="inverted" href="/policies">Other policies</a></li>
+            <li><a class="inverted" href="/terms-conditions">Terms &amp; conditions</a>
+            </li>
+            <li><a class="inverted" href="/help/about-nypl/leadership/board-trustees">Governance</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="/help/about-nypl/legal-notices/rules-and-regulations">Rules &amp; regulations</a></li>
+            <li><a class="inverted" href="/accessibility">Accessibility</a></li>
+            <li><a class="inverted" href="/language">Language</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="linkItemList">
+            <li><a class="inverted" href="https://www.facebook.com/nypl">NYPL on Facebook</a></li>
+            <li><a class="inverted" href="https://twitter.com/nypl">NYPL on Twitter</a></li>
+            <li><a class="inverted" href="https://instagram.com/nypl">NYPL on Instagram</a></li>
+            <li><a class="inverted" href="https://nypl.tumblr.com">NYPL on Tumblr</a></li>
+            <li><a class="inverted" href="https://www.youtube.com/user/NewYorkPublicLibrary">NYPL on YouTube</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p>© The New York Public Library, 2016</p>
+      </div>
+    </div>
+  </footer>
 </body>
-</html>
 
+</html>

@@ -5,11 +5,11 @@ description: Form fields and user input.
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> When encountering a properly formatted form, screen readers switch over to "form mode." This switch is typically signified by a loud beep. While in form mode, keyboard controls work differently, ex. "h" types a letter "h" rather than prompting the reader to scan headings. Users of screen readers and keyboard nav, generally navigate forms with the ‘Tab’ key.</p>
 
-    <p>Forms fields should be wrapped by a <code>fieldset</code> tag.</p>
+    <p>Forms fields should be wrapped by a <code>fieldset</code> tag. How these wrappings are determined is up to the developer’s good judgment. Recommended microformats for fieldsets are being implemented, such as the <a href="#omniSearch">Omni Search fieldset</a>.</p>
 
-    <h3 id="omniSearch">Omni search</h3>
+    <h3 id="omniSearch">Omni Search</h3>
 
-    <p>Omni search is a special fieldset contained in its own row, in an offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a submit <code>button</code>, a <code>span</code> tag of class <code>.nypl-omni-fields</code> and a text field. The <code>.nypl-omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
+    <p>Omni Search is a special fieldset contained in its own row, in an offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a submit <code>button</code>, a <code>span</code> tag of class <code>.nypl-omni-fields</code> and a text field. The <code>.nypl-omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
 
     <p><strong>NOTE:</strong> The text field is <code>aria-labeledby</code> the button.</p>
 
@@ -21,7 +21,7 @@ description: Form fields and user input.
     <label for="search-by-field">Search in</label>
     <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
   </span>
-  <input type="text" aria-labelledby="nypl-omni-button" value="">
+  <input type="text" aria-labelledby="nypl-omni-button" value="" />
 </fieldset>
     </div>
 
@@ -35,7 +35,7 @@ description: Form fields and user input.
     &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
     &lt;select id=&quot;search-by-field&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
   &lt;/span&gt;
-  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot;&gt;
+  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot; /&gt;
 &lt;/fieldset&gt;
     </code></pre>
 
@@ -45,42 +45,132 @@ description: Form fields and user input.
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-text-fieldset">
+<div class="nypl-text-field">
   <label for="keyword-text">Title or description</label>
-  <input id="keyword-text" type="text" placeholder="Enter keywords">
-</fieldset>
+  <input id="keyword-text" type="text" placeholder="Enter keywords" />
+</div>
     </div>
 
     <pre><code class="scss">
-.nypl-text-fieldset
+.nypl-text-field
     </code></pre>
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-text-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-text-field&quot;&gt;
   &lt;label for=&quot;keyword-text&quot;&gt;Title or description&lt;/label&gt;
-  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
-&lt;/fieldset&gt;
+  &lt;input id=&quot;keyword-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="requiredFields">Required fields</h3>
+
+    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-text-field">
+  <label for="required-field">Username
+    <span class="nypl-required-field">Required</span>
+  </label>
+  <input id="required-field" type="text" />
+  <span class="nypl-field-status">Username must only contain letters and numbers</span>
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-required-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-text-field&quot;&gt;
+  &lt;label for=&quot;required-field&quot;&gt;Username
+    &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; /&gt;
+  &lt;span class=&quot;nypl-field-status&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="fieldErrors">Error state on fields</h3>
+
+    <p>Any field where user input could be returned erroneous should add the class <code>nypl-field-error</code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text. It is the responsibility of the developer to implement the necessary front and back end validations, via JavaScript or some other means.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints#Required_and_invalid_fields" target="_blank">Basic Form Hints: Required and invalid fields</a>
+        </li>
+      </ul>
+    </p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <div class="nypl-text-field nypl-field-error">
+    <label for="email-field">Email
+      <span class="nypl-required-field">Required</span>
+    </label>
+    <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
+    <span class="nypl-field-status">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
+  </div>
+</div>
+    <pre><code class="scss">
+.nypl-error-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;
+  &lt;label for=&quot;email-field&quot;&gt;Email
+    &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;email-field&quot; type=&quot;text&quot; placeholder=&quot;&quot; value=&quot;sally ride&quot; /&gt;
+  &lt;span class=&quot;nypl-field-status&quot;&gt;Email address must use the correct formatting. Ex: &lt;em&gt;prudence@example.org&lt;/em&gt;&lt;/span&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="dateFields">Date fields</h3>
+
+    <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
+
+    <p><strong>Note:</strong> This only applies for dates that will conform to  a year/month/day-style pattern (YYYY/MM/DD, MM/DD/YYYY, etc).</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-date-field">
+  <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
+  <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY" />
+  <span class="nypl-field-status">Format the date as MM/DD/YYYY</span>
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-date-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-date-field&quot;&gt;
+  &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+  &lt;input id=&quot;date-of-birth&quot; type=&quot;text&quot; class=&quot;form-text&quot; placeholder=&quot;MM/DD/YYYY&quot; /&gt;
+  &lt;span class=&quot;nypl-field-status&quot;&gt;Format the date as MM/DD/YYYY&lt;/span&gt;
+&lt;/div&gt;
+    </code></pre>
+    <pre><code class="js">
+$('#date-of-birth').mask('00/00/0000');
     </code></pre>
 
     <h3 id="selectBoxes">Select boxes</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-    <fieldset class="nypl-select-fieldset">
-      <label for="topics">Topics</label>
-      <select id="topics" name="topics">
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-        <option value="…">…</option>
-      </select>
-    </fieldset>
+  <div class="nypl-select-field">
+    <label for="topics">Topics</label>
+    <select id="topics" name="topics">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="…">…</option>
+    </select>
+  </div>
     </div>
 
     <pre><code class="scss">
-.nypl-select-fieldset
+.nypl-select-field
     </code></pre>
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-select-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-select-field&quot;&gt;
   &lt;label for=&quot;topics&quot;&gt;Topics&lt;/label&gt;
   &lt;select id=&quot;topics&quot; name=&quot;topics&quot;&gt;
     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
@@ -88,25 +178,27 @@ description: Form fields and user input.
     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
     &lt;option value=&quot;…&quot;&gt;…&lt;/option&gt;
   &lt;/select&gt;
-&lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>
 
     <h3 id="alphaFilters">Alphabetical filters</h3>
 
-    <p>Not a form element per se but still used within search forms. This is a list of buttons that apply an alphabetical/number-type filter. Currently applied filter is disabled. The "Any" (or multi-character) selection has a <code>nypl-long</code> class.
+    <p>Not a form element per se but still used within search forms. This control should contain a <code>fieldset</code> and <code>legend</code> that wrap and label it respectively. This is a list of buttons that apply an alphabetical/number-type filter. Currently applied filter is disabled. The "Any" (or multi-character) selection has a <code>nypl-long</code> class.
     </p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-alphabetical-filter">
-  <label>Name starts with</label>
-  <button name="az-filter" disabled="true" class="nypl-long">Any</button>
-  <button name="az-filter" title="Show only resources with name starting with a number">#</button>
-  <button name="az-filter" title="Show only resources with name starting with A">A</button>
-  <button name="az-filter" title="Show only resources with name starting with B">B</button>
-  <button name="az-filter" title="Show only resources with name starting with C">C</button>
-  <button name="az-filter" title="Show only resources with name starting with …">…</button>
-</fieldset>
+<div class="nypl-alphabetical-filter">
+  <fieldset>
+    <legend>Name starts with</legend>
+    <button name="az-filter" disabled="true" class="nypl-long">Any</button>
+    <button name="az-filter" title="Show only resources with name starting with a number">#</button>
+    <button name="az-filter" title="Show only resources with name starting with A">A</button>
+    <button name="az-filter" title="Show only resources with name starting with B">B</button>
+    <button name="az-filter" title="Show only resources with name starting with C">C</button>
+    <button name="az-filter" title="Show only resources with name starting with …">…</button>
+  </fieldset>
+</div>
     </div>
 
     <pre><code class="scss">
@@ -114,178 +206,226 @@ description: Form fields and user input.
     </code></pre>
 
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-alphabetical-filter&quot;&gt;
-  &lt;label&gt;Name starts with&lt;/label&gt;
-  &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;nypl-long&quot;&gt;Any&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with A&quot;&gt;A&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
-  &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
-&lt;/fieldset&gt;
+&lt;div class=&quot;nypl-alphabetical-filter&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Name starts with&lt;/legend&gt;
+    &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;nypl-long&quot;&gt;Any&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with A&quot;&gt;A&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>
 
-    <h3 id="radioButtons">Radiobutton/checkbox groups</h3>
 
-    <p>For multiple browser-compatibility reasons we avoid the <code>legend</code> tag and use a <code>span</code> tag of class <code>nypl-label</code>.</p>
+    <h3 id="optInBox">Terms/Opt-in Checkboxes</h3>
 
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> For proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title <code>span</code> tag and its corresponding <code>label</code> tag.</p>
+    <p>For situations where the user is requested to accept a terms of service or to opt-in to communications from the Library.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-radiobutton-fieldset">
-  <span id="radiobutton-group1" class="nypl-label">Accessible from</span>
-  <label id="radiobutton-group1_every" for="available-every">
-    <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any">Anywhere
+<div class="nypl-terms-checkbox">
+  <label for="checkbox-optin">
+    <input id="checkbox-optin" type="checkbox" value="1" />Yes, I'd like to receive e-communications about NYPL's programs, services, and initiatives.
   </label>
-  <label id="radiobutton-group1_home" for="available-home">
-    <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home">Home with a library card
-  </label>
-  <label id="radiobutton-group1_library" for="available-library">
-    <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library">A library branch
-  </label>
-</fieldset>
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-terms-checkbox
+    </code></pre>
+
+    <pre><code class="html">
+&lt;div class=&quot;nypl-terms-checkbox&quot;&gt;
+  &lt;label for=&quot;checkbox-optin&quot;&gt;
+    &lt;input id=&quot;checkbox-optin&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt;Yes, I&#039;d like to receive e-communications about NYPL&#039;s programs, services, and initiatives.
+  &lt;/label&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="radioButtons">Radiobutton/Checkbox Groups</h3>
+
+    <p>Another control that contains a <code>fieldset</code> and its corresponding <code>legend</code>.</p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> For proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title <code>legend</code> tag and its corresponding <code>label</code> tag.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-radiobutton-field">
+  <fieldset>
+    <legend id="radiobutton-group1">Accessible from</legend>
+    <label id="radiobutton-group1_every" for="available-every">
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-every" type="radio" name="available" value="any" />Anywhere
+    </label>
+    <label id="radiobutton-group1_home" for="available-home">
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-home" type="radio" name="available" value="home" />Home with a library card
+    </label>
+    <label id="radiobutton-group1_library" for="available-library">
+      <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-library" type="radio" name="available" value="library" />A library branch
+    </label>
+  </fieldset>
+</div>
     </div>
     <pre><code class="scss">
-.nypl-radiobutton-fieldset
+.nypl-radiobutton-field
     </code></pre>
 
     <p><strong>NOTE:</strong> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
 
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-radiobutton-fieldset&quot;&gt;
-  &lt;span id=&quot;radiobutton-group1&quot; class=&quot;nypl-label&quot;&gt;Accessible from&lt;/span&gt;
-  &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
-    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot;&gt;Anywhere
-  &lt;/label&gt;
-  &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
-    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot;&gt;Home with a library card
-  &lt;/label&gt;
-  &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
-    &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot;&gt;A library branch
-  &lt;/label&gt;
-&lt;/fieldset&gt;
+&lt;div class=&quot;nypl-radiobutton-field&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend id=&quot;radiobutton-group1&quot;&gt;Accessible from&lt;/legend&gt;
+    &lt;label id=&quot;radiobutton-group1_every&quot; for=&quot;available-every&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_every&quot; id=&quot;available-every&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;any&quot; /&gt;Anywhere
+    &lt;/label&gt;
+    &lt;label id=&quot;radiobutton-group1_home&quot; for=&quot;available-home&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_home&quot; id=&quot;available-home&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;home&quot; /&gt;Home with a library card
+    &lt;/label&gt;
+    &lt;label id=&quot;radiobutton-group1_library&quot; for=&quot;available-library&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group1 radiobutton-group1_library&quot; id=&quot;available-library&quot; type=&quot;radio&quot; name=&quot;available&quot; value=&quot;library&quot; /&gt;A library branch
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
     </code></pre>
 
-    <h3 id="searchableFieldsets">Searchable field sets</h3>
+    <h3 id="searchableFieldsets">Searchable fields</h3>
 
-    <p>Searchable field sets allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
+    <p>Searchable fields allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
 
-    <p>The general structure is: a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a <code>nypl-facet-list</code> of items, each with the following structure:</p>
+    <p>The general structure is: a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a fieldset of class <code>nypl-facet-list</code> of items, each with the following structure:</p>
 
     <pre><code class="html">
-&lt;label for=&quot;my-facet-value-id&quot;&gt;
+&lt;label for=&quot;my-facet-value-id&quot; class=&quot;nypl-bar_[1 to 100]&quot;&gt;
+  &lt;input id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot;&gt;
   &lt;span&gt;
-    &lt;input id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot;&gt;
+    The facet text
+  &lt;/span&gt;
+  &lt;span class=&quot;nypl-facet-count&quot;&gt;[estimated result count]&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;label id=&quot;my-facet-label-id&quot; for=&quot;my-facet-value-id&quot;&gt;
+  &lt;input aria-labelledby=&quot;my-facet-label-id my-facet-value-id&quot; id=&quot;my-facet-value-id&quot; type=&quot;checkbox&quot; name=&quot;my-name&quot; value=&quot;my-value&quot; /&gt;
+  &lt;span&gt;
     The facet text
   &lt;/span&gt;
   &lt;span class=&quot;nypl-facet-count&quot;&gt;[estimated result count]&lt;/span&gt;
 &lt;/label&gt;
     </code></pre>
 
+    <p>The placeholder on the search box should have the text “Search [facetname plural]” to make clear that the user is searching within the possible values to facet on.</p>
+
+    <p>The label has an optional class of <code>nypl-bar_[percentnumber]</code> where the <code>[percentnumber]</code> determines the length of the decorative bar behind the value and should reflect the relative size of the selection of that facet. It must be an integer from 1 to 100, from shortest to longest (this is a different number from the estimated result count). A label with class <code>nypl-bar_10</code> would be 10% long, from the right.</p>
+
     <p>The facet count is optional but must be of class <code>nypl-facet-count</code>.</p>
 
-    <p>A “Show X more” link at the end of the list allows for the user to display X more items to select from.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Similar to <a href="#radioButtons">Radiobutton/Checkbox Groups</a>, for proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title group's <code>label</code> tag and its own corresponding <code>label</code> tag.</p>
+
+    <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
     <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong>.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<fieldset class="nypl-searchable-fieldset">
+<div class="nypl-searchable-field">
   <div class="nypl-facet-search">
-    <label for="subject-text">Subject</label>
-    <input id="subject-text" type="text" placeholder="Enter keywords">
+    <label id="searchable1" for="subject-text">Subject</label>
+    <input id="subject-text" type="text" placeholder="Search Subjects" />
   </div>
-  <div class="nypl-facet-list">
-    <label for="subject-poems">
+  <fieldset class="nypl-facet-list">
+    <label id="subject_poems" for="subject-poems">
+      <input aria-labelledby="searchable1 subject_poems" id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked" />
       <span>
-        <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
         Poems
       </span>
       <span class="nypl-facet-count">97</span>
     </label>
-    <label for="subject-ejournals">
+    <label id="subject_ejournals" for="subject-ejournals" class="nypl-bar_43">
+      <input aria-labelledby="searchable1 subject_ejournals" id="subject-ejournals" type="checkbox" name="subject" value="ejournals" />
       <span>
-        <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
         Electronic journals
       </span>
       <span class="nypl-facet-count">489</span>
     </label>
-    <label for="subject-home">
+    <label id="subject_home" for="subject-home" class="nypl-bar_21">
+      <input aria-labelledby="searchable1 subject_home" id="subject-home" type="checkbox" name="subject" value="home" />
       <span>
-        <input id="subject-home" type="checkbox" name="subject" value="home">
         Electronic books
       </span>
       <span class="nypl-facet-count">236</span>
     </label>
-    <label for="subject-piano">
+    <label id="subject_piano" for="subject-piano" class="nypl-bar_18">
+      <input aria-labelledby="searchable1 subject_piano" id="subject-piano" type="checkbox" name="subject" value="piano" />
       <span>
-        <input id="subject-piano" type="checkbox" name="subject" value="piano">
         Piano music
       </span>
       <span class="nypl-facet-count">198</span>
     </label>
-    <label for="subject-opera">
+    <label id="subject_opera" for="subject-opera" class="nypl-bar_11">
+      <input aria-labelledby="searchable1 subject_opera" id="subject-opera" type="checkbox" name="subject" value="opera" />
       <span>
-        <input id="subject-opera" type="checkbox" name="subject" value="opera">
         Operas
       </span>
       <span class="nypl-facet-count">122</span>
     </label>
-    <a href="#more" class="nypl-more-facets">Show 10 more subjects</a>
-  </div>
-</fieldset>
+  </fieldset>
+  <button class="nypl-link-button">Show 10 more</button>
+</div>
     </div>
 
     <pre><code class="scss">
-.nypl-searchable-fieldset
+.nypl-searchable-field
 .nypl-facet-search
 .nypl-facet-list
 .nypl-facet-count
     </code></pre>
+
+    <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
+
     <pre><code class="html">
-&lt;fieldset class=&quot;nypl-searchable-fieldset&quot;&gt;
+&lt;div class=&quot;nypl-searchable-field&quot;&gt;
   &lt;div class=&quot;nypl-facet-search&quot;&gt;
-    &lt;label for=&quot;subject-text&quot;&gt;Subject&lt;/label&gt;
-    &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot;&gt;
+    &lt;label id=&quot;searchable1&quot; for=&quot;subject-text&quot;&gt;Subject&lt;/label&gt;
+    &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Search Subjects&quot; /&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;nypl-facet-list&quot;&gt;
-    &lt;label for=&quot;subject-poems&quot;&gt;
+  &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
+    &lt;label id=&quot;subject_poems&quot; for=&quot;subject-poems&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable1 subject_poems&quot; id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot; /&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot;&gt;
         Poems
       &lt;/span&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;97&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-ejournals&quot;&gt;
+    &lt;label id=&quot;subject_ejournals&quot; for=&quot;subject-ejournals&quot; class=&quot;nypl-bar_43&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable1 subject_ejournals&quot; id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot; /&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot;&gt;
         Electronic journals
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;489&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-home&quot;&gt;
+    &lt;label id=&quot;subject_home&quot; for=&quot;subject-home&quot; class=&quot;nypl-bar_21&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable1 subject_home&quot; id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot; /&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot;&gt;
         Electronic books
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-piano&quot;&gt;
+    &lt;label id=&quot;subject_piano&quot; for=&quot;subject-piano&quot; class=&quot;nypl-bar_18&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable1 subject_piano&quot; id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot; /&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot;&gt;
         Piano music
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label for=&quot;subject-opera&quot;&gt;
+    &lt;label id=&quot;subject_opera&quot; for=&quot;subject-opera&quot; class=&quot;nypl-bar_11&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable1 subject_opera&quot; id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot; /&gt;
       &lt;span&gt;
-        &lt;input id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot;&gt;
         Operas
       &lt;/span&gt;
       &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
     &lt;/label&gt;
-    &lt;a href=&quot;#more&quot; class=&quot;nypl-more-facets&quot;&gt;Show 10 more subjects&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/fieldset&gt;
+  &lt;/fieldset&gt;
+  &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
+&lt;/div&gt;
     </code></pre>

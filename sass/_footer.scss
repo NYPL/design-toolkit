@@ -3,6 +3,8 @@
 @import "microformats";
 @import "media-queries";
 
+@warn "do footer";
+
 footer {
   background-color: $nypl-footer-color;
   color: $nypl-white;
@@ -20,16 +22,11 @@ footer {
 }
 
 .copyright {
-  background: url("../img/nypl-rev.svg") no-repeat scroll 0 0/#{$logo-width} auto transparent;
-  border: 0;
-  display: block;
-  height: $logo-height;
   margin-top: 2rem;
   margin-bottom: 5rem;
-  white-space: nowrap;
 
   p {
-    padding-top: calc(#{$logo-height} + 1em);
+    padding-top: 1rem;
   }
 }
 

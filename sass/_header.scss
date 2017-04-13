@@ -173,8 +173,8 @@ $collapsed-nav-height: 30px;
     }
 
     .nypl-logo {
-      background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height} auto $nypl-white;
-      background-position-y: -4px;
+      // background: url("../img/lion.svg") no-repeat scroll 0 0/#{$logo-height} auto $nypl-white;
+      // background-position-y: -4px;
       margin: 0;
     }
 
@@ -280,24 +280,24 @@ $collapsed-nav-height: 30px;
       margin: 0;
     }
 
-    fieldset {
-      border: 0;
-      color: $page-text-color;
-      margin: 1rem 0 0.5rem;
-      padding: 0;
-      position: relative;
-    }
+    // fieldset {
+    //   border: 0;
+    //   color: $page-text-color;
+    //   margin: 1rem 0 0.5rem;
+    //   padding: 0;
+    //   position: relative;
+    // }
 
-    label {
-      display: block;
-      font-weight: bold;
-      margin-left: 0.5rem;
-      position: absolute;
-    }
+    // label {
+    //   display: block;
+    //   font-weight: bold;
+    //   margin-left: 0.5rem;
+    //   position: absolute;
+    // }
 
-    input[type=text] {
-      @include textfield;
-    }
+    // input[type=text] {
+    //   @include text-field;
+    // }
 
     .links {
       margin: 1rem 0 0;
@@ -442,6 +442,7 @@ $collapsed-nav-height: 30px;
 
     .nypl-search_main {
       background-color: $nypl-search-color;
+      border-radius: ($general-border-radius * 2) ($general-border-radius * 2) 0 0;
       margin: 0;
       position: relative;
       @include transition(all, $hover-time, ease-out);
@@ -466,6 +467,7 @@ $collapsed-nav-height: 30px;
 
       .nypl-search_select {
         background-color: $nypl-search-color-dark;
+        border-radius: 0 0 ($general-border-radius * 2) ($general-border-radius * 2);
         font-size: 0.9rem;
         right: 0;
         padding: 0 $form-padding $form-padding;
@@ -506,6 +508,7 @@ $collapsed-nav-height: 30px;
       .nypl-form-text {
         @include input;
         // box-shadow: inset 0 0 0 2px $nypl-search-color-dark;
+        border-radius: $general-border-radius;
         height: 2rem;
         margin-right: 0;
         padding: 0;

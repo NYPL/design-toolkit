@@ -17,10 +17,16 @@
   padding-left: 1rem;
 }
 
+@mixin progress-indicator {
+  color: $nypl-gray;
+  margin: 0;
+  padding: 0;
+}
+
 @mixin location-info {
   border-left: 1rem solid $nypl-light-gray;
-  padding-left: 1rem;
   margin-bottom: 2rem;
+  padding-left: 1rem;
 
   p {
     margin: 0;

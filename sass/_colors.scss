@@ -7,6 +7,10 @@ $nypl-red-dark: #97272c;
 
 $nypl-red-tint: tint($nypl-red, 30%);
 
+// field error bg
+
+$nypl-red-error: tint($nypl-red, 80%);
+
 // NYPL Blues
 $nypl-blue: #1b7fa7;
 
@@ -61,6 +65,7 @@ $nypl-footer-color: $nypl-gray-brown;
 $highlight-color: $nypl-red;
 $alert-color: $nypl-yellow;
 $page-background-color: $nypl-white;
+$nypl-bar-color: rgba(0, 0, 0, 0.1);
 
 // link colors
 $link-color: $nypl-blue;
