@@ -3970,4 +3970,85 @@ h1 {
   .back-to-top:hover {
     text-decoration: underline; }
 
+.swatches {
+  box-sizing: border-box; }
+  .swatches.reverse div {
+    color: #111; }
+
+.color-box {
+  list-style: none;
+  padding: 0.25rem;
+  margin-left: 0; }
+  .color-box > .main {
+    height: 8rem;
+    padding-top: 3rem; }
+  .color-box > div {
+    color: #fff;
+    font-size: 90%;
+    font-style: italic;
+    height: 4rem;
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center; }
+
+.nypl-red-swatch {
+  background: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background: #97272c; }
+
+.nypl-red-tint-swatch {
+  background: #de7175; }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: #5fa5c1; }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: #fff1a5; }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-destaurated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: #afc269; }
+
 /*# sourceMappingURL=docs.css.map */

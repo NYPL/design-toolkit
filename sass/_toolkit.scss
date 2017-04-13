@@ -28,7 +28,7 @@
 }
 
 .nypl-icon {
-  @include nypl-icon($height: 1rem, $width: 1rem);
+  @include nypl-icon($height: 10rem, $width: 10rem);
 }
 
 .nypl-logo-rev {
