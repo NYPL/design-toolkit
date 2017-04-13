@@ -446,7 +446,6 @@ h4 {
   margin: 0; }
 
 ul {
-  margin-bottom: 1.5rem;
   margin-top: 0;
   padding: 0; }
 
@@ -1413,6 +1412,7 @@ button:focus {
 
 .nypl-form-error {
   border-left: 1rem solid #d0343a;
+  color: #d0343a;
   padding-left: 1rem; }
 
 .nypl-simple-radiobutton {

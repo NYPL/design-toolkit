@@ -209,6 +209,7 @@ $form-padding: 0.5rem;
 
 @mixin form-error {
   border-left: 1rem solid $highlight-color;
+  color: $highlight-color;
   padding-left: 1rem;
 }
 
