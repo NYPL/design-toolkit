@@ -928,6 +928,43 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
+@font-face {
+  font-family: nypl-moon;
+  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85");
+  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85#iefix") format("embedded-opentype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff2?viik85") format("woff2"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.ttf?viik85") format("truetype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff?viik85") format("woff"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.svg?viik85#nypl-moon") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+footer {
+  background-color: #54514a;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 5rem; }
+  footer ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0; }
+    footer ul::before, footer ul::after {
+      content: "";
+      display: table; }
+    footer ul::after {
+      clear: both; }
+
+.copyright {
+  margin-top: 2rem;
+  margin-bottom: 5rem; }
+  .copyright p {
+    padding-top: 1rem; }
+
+.footerLinks li {
+  margin-left: 0; }
+.footerLinks > li {
+  float: left;
+  width: 25%; }
+  @media (max-width: 965px) {
+    .footerLinks > li {
+      float: none;
+      width: auto; } }
+
 .nypl-header .horizontal {
   display: table-cell;
   float: right;
@@ -1643,43 +1680,6 @@ button:focus {
       width: 30%; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_select {
       top: 3.5rem; } }
-
-@font-face {
-  font-family: nypl-moon;
-  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85");
-  src: url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.eot?viik85#iefix") format("embedded-opentype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff2?viik85") format("woff2"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.ttf?viik85") format("truetype"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.woff?viik85") format("woff"), url("//d2znry4lg8s0tq.cloudfront.net/nypl-moon/nypl-moon.svg?viik85#nypl-moon") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-footer {
-  background-color: #54514a;
-  color: #fff;
-  font-size: 0.9rem;
-  margin-top: 5rem; }
-  footer ul {
-    list-style: none;
-    margin: 1rem 0;
-    padding: 0; }
-    footer ul::before, footer ul::after {
-      content: "";
-      display: table; }
-    footer ul::after {
-      clear: both; }
-
-.copyright {
-  margin-top: 2rem;
-  margin-bottom: 5rem; }
-  .copyright p {
-    padding-top: 1rem; }
-
-.footerLinks li {
-  margin-left: 0; }
-.footerLinks > li {
-  float: left;
-  width: 25%; }
-  @media (max-width: 965px) {
-    .footerLinks > li {
-      float: none;
-      width: auto; } }
 
 .nypl-link-button {
   background: none;

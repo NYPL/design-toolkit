@@ -1,7 +1,3 @@
-@import "measurements";
-@import "general-mixins";
-@import "microformats";
-@import "media-queries";
 @import "grid";
 @import "buttons";
 
@@ -15,9 +11,7 @@ $collapsed-nav-height: 30px;
 
 @warn "lots of refactoring to do here";
 
-@warn "INCREASE LINT NESTINGDEPTH SO THIS IS POSSIBLE (below) OR FIND A WAY TO MAKE IT SHALLOWER";
-
-.nypl-header {
+@mixin header {
   .horizontal {
     display: table-cell;
     float: right;

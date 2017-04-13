@@ -19,6 +19,10 @@
 @import "buttons";
 @import "footer";
 
+.nypl-header {
+  @include header;
+}
+
 .nypl-link-button {
   @include link-button;
 }
