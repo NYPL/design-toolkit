@@ -401,11 +401,11 @@ $('#date-of-birth').mask('00/00/0000');
 
     <p>Form falidation should be handled such that it works even if JavaScript is disabled by the user. Client-side validation is useful to prevent invalid input beforehand, but can be unreliable. Make sure to do additional server-side validation of any user input.</p>
 
-    <p>Form validation includes two aspects: form-level messages and field-level messages.</p>
+    <p>Form validation includes two aspects: <a href="#formErrors">form-level messages</a> and <a href="#fieldErrors">field-level messages</a>.</p>
 
     <h4 id="formErrors">Error messages for the submitted form</h4>
 
-    <p>When the form has been submitted, errors or problems with individual fields must be hightlighted at the top of the form and linked internally to the individual fields. the components are: a <code>div</code> element of class <code>nypl-form-error</code>, a heading informing the user that errors have occurred should be used, a child list with the individual field errors. The field errors must link to the field itself to make it easier for users to find it within the form:</p>
+    <p>When the form has been submitted, errors or problems with individual fields must be hightlighted <strong>and focused</strong> at the top of the form and linked internally to the individual fields. The components are: a <code>div</code> element of class <code>nypl-form-error</code>, a heading informing the user that errors have occurred should be used, a child list with the individual field errors. The field errors must link to the field itself to make it easier for users to find it within the form:</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
