@@ -93,9 +93,9 @@ $form-padding: 0.5rem;
   }
 
   .nypl-field-status {
-    background-color: transparent;
+    background-color: $page-background-color;
     color: $nypl-gray;
-    display: inline-block;
+    display: block;
     padding-left: $form-padding;
   }
 }
@@ -118,7 +118,6 @@ $form-padding: 0.5rem;
 @mixin text-field {
   @include fieldset;
   @include text-field-with-label;
-  background-color: $page-background-color;
 }
 
 @mixin name-field {
@@ -171,7 +170,6 @@ $form-padding: 0.5rem;
 @mixin date-field {
   @include fieldset;
   @include text-field-with-label;
-  background-color: $page-background-color;
   min-width: 12rem;
   width: 50%;
 }
@@ -210,6 +208,7 @@ $form-padding: 0.5rem;
 
 @mixin form-error {
   border-left: 1rem solid $highlight-color;
+  color: $highlight-color;
   padding-left: 1rem;
 }
 

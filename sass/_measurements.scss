@@ -29,3 +29,13 @@ $general-border-width: 0.125rem;
 
 // animation timing
 $hover-time: 0.1s;
+
+// header numbers
+$logo-ratio: 169 / 300;
+$logo-width-raw: 5;
+$logo-width: $logo-width-raw * 1rem;
+$logo-height-raw: $logo-width-raw * $logo-ratio;
+$logo-height: $logo-height-raw * 1rem;
+$collapsed-service-height: 10px;
+$collapsed-nav-height: 30px;
+

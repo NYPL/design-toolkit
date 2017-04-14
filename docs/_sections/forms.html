@@ -63,7 +63,7 @@ description: Form fields and user input.
 
     <h3 id="requiredFields">Required fields</h3>
 
-    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”.</p>
+    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes. An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -71,7 +71,7 @@ description: Form fields and user input.
   <label for="required-field">Username
     <span class="nypl-required-field">Required</span>
   </label>
-  <input id="required-field" type="text" />
+  <input id="required-field" type="text" required="true" aria-required="true" />
   <span class="nypl-field-status">Username must only contain letters and numbers</span>
 </div>
     </div>
@@ -84,41 +84,8 @@ description: Form fields and user input.
   &lt;label for=&quot;required-field&quot;&gt;Username
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; /&gt;
+  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-required=&quot;true&quot; /&gt;
   &lt;span class=&quot;nypl-field-status&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
-&lt;/div&gt;
-    </code></pre>
-
-    <h3 id="fieldErrors">Error state on fields</h3>
-
-    <p>Any field where user input could be returned erroneous should add the class <code>nypl-field-error</code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text. It is the responsibility of the developer to implement the necessary front and back end validations, via JavaScript or some other means.</p>
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
-      <ul>
-        <li>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints#Required_and_invalid_fields" target="_blank">Basic Form Hints: Required and invalid fields</a>
-        </li>
-      </ul>
-    </p>
-<div class="nypl-toolkit-example">
-  <span class="nypl-example-text">Example</span>
-  <div class="nypl-text-field nypl-field-error">
-    <label for="email-field">Email
-      <span class="nypl-required-field">Required</span>
-    </label>
-    <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
-    <span class="nypl-field-status">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
-  </div>
-</div>
-    <pre><code class="scss">
-.nypl-error-field
-    </code></pre>
-    <pre><code class="html">
-&lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;
-  &lt;label for=&quot;email-field&quot;&gt;Email
-    &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;email-field&quot; type=&quot;text&quot; placeholder=&quot;&quot; value=&quot;sally ride&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot;&gt;Email address must use the correct formatting. Ex: &lt;em&gt;prudence@example.org&lt;/em&gt;&lt;/span&gt;
 &lt;/div&gt;
     </code></pre>
 
@@ -427,5 +394,72 @@ $('#date-of-birth').mask('00/00/0000');
     &lt;/label&gt;
   &lt;/fieldset&gt;
   &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="formValidation">Form Validation</h3>
+
+    <p>Form falidation should be handled such that it works even if JavaScript is disabled by the user. Client-side validation is useful to prevent invalid input beforehand, but can be unreliable. Make sure to do additional server-side validation of any user input.</p>
+
+    <p>Form validation includes two aspects: form-level messages and field-level messages.</p>
+
+    <h4 id="formErrors">Error messages for the submitted form</h4>
+
+    <p>When the form has been submitted, errors or problems with individual fields must be hightlighted at the top of the form and linked internally to the individual fields. the components are: a <code>div</code> element of class <code>nypl-form-error</code>, a heading informing the user that errors have occurred should be used, a child list with the individual field errors. The field errors must link to the field itself to make it easier for users to find it within the form:</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-form-error">
+  <h2>Opps! Seems there are some errors in this form!</h2>
+  <ul>
+    <li>The <a href="#">username</a> already exists. Please choose another username.</li>
+    <li>The <a href="#">email</a> is invalid.</li>
+  </ul>
+</div>
+    </div>
+    <pre><code class="scss">
+    .nypl-form-error
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-form-error&quot;&gt;
+  There are errors in in this form:
+  &lt;ul&gt;
+    &lt;li&gt;The &lt;a href=&quot;#&quot;&gt;username&lt;/a&gt; already exists. Please choose another username.&lt;/li&gt;
+    &lt;li&gt;The &lt;a href=&quot;#&quot;&gt;email&lt;/a&gt; is invalid.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h4 id="fieldErrors">Error state and messages on text fields</h4>
+
+    <p>Any field where user input could be erroneous should add the class <code>nypl-field-error</code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text using an <code>nypl-field-status</code> as described in <a href="#requiredFields">Required Fields</a>. It is the responsibility of the developer to implement the necessary validations.</p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints#Required_and_invalid_fields" target="_blank">Basic Form Hints: Required and invalid fields</a>
+        </li>
+      </ul>
+    </p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <div class="nypl-text-field nypl-field-error">
+    <label for="email-field">Email
+      <span class="nypl-required-field">Required</span>
+    </label>
+    <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
+    <span class="nypl-field-status">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
+  </div>
+</div>
+    <pre><code class="scss">
+.nypl-error-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;
+  &lt;label for=&quot;email-field&quot;&gt;Email
+    &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;email-field&quot; type=&quot;text&quot; placeholder=&quot;&quot; value=&quot;sally ride&quot; /&gt;
+  &lt;span class=&quot;nypl-field-status&quot;&gt;Email address must use the correct formatting. Ex: &lt;em&gt;prudence@example.org&lt;/em&gt;&lt;/span&gt;
 &lt;/div&gt;
     </code></pre>

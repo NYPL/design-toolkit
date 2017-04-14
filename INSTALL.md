@@ -47,3 +47,16 @@ Design toolkit (SASS) for the NYPL Digital team
   ```scss
   @import "toolkit";
   ```
+
+2. If you also need the header or footer styles, add those:
+
+  ```scss
+  @import "header";
+  @import "footer";
+  ```
+
+3. You can also load the normalization file to remove any browser or other colliding styles (must be the first import):
+
+  ```scss
+  @import "nypl-normalize";
+  ```
