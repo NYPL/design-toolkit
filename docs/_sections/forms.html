@@ -63,7 +63,7 @@ description: Form fields and user input.
 
     <h3 id="requiredFields">Required fields</h3>
 
-    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
+    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes. An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -432,7 +432,8 @@ $('#date-of-birth').mask('00/00/0000');
 
     <h4 id="fieldErrors">Error state and messages on text fields</h4>
 
-    <p>Any field where user input could be returned erroneous should add the class <code>nypl-field-error</code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text. It is the responsibility of the developer to implement the necessary front and back end validations, via JavaScript or some other means.</p>
+    <p>Any field where user input could be erroneous should add the class <code>nypl-field-error</code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text using an <code>nypl-field-status</code> as described in <a href="#requiredFields">Required Fields</a>. It is the responsibility of the developer to implement the necessary validations.</p>
+
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
       <ul>
         <li>
