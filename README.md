@@ -18,6 +18,9 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.7
+- Font settings mixin.
+
 ### v0.1.6
 - Big refactor so that normalize, header, and footer can be loaded separately from the general toolkit.
 - Removed font-based icons.

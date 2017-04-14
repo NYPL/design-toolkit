@@ -267,6 +267,10 @@
   @include results-item;
 }
 
+.nypl-item-toc {
+  @include item-toc;
+}
+
 .nypl-results-item-formats {
   @include results-item-formats;
 }

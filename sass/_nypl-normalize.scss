@@ -14,10 +14,8 @@ body {
 }
 
 html {
+  @include font-settings;
   background-color: $page-background-color;
-  font-family: $sans-serif-stack;
-  font-size: $basefont;
-  line-height: 1.65;
 
   @warn "hard-coded filter to make page grayscale. make mixin?";
   -webkit-filter: grayscale(1);

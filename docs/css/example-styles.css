@@ -405,10 +405,10 @@ body {
   color: #080807; }
 
 html {
-  background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.65;
+  background-color: #fff;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   -webkit-filter: none;
@@ -2676,6 +2676,15 @@ button:focus {
         width: 60%; } }
   .nypl-results-item p {
     margin-bottom: 0.5rem; }
+
+.nypl-item-toc {
+  list-style-type: none; }
+  .nypl-item-toc li {
+    display: inline-block; }
+    .nypl-item-toc li::after {
+      content: "|"; }
+    .nypl-item-toc li:last-child::after {
+      content: ""; }
 
 .nypl-results-item-formats {
   border-left: 0.5rem solid #d7d4d0;
