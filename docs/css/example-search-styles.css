@@ -2701,15 +2701,15 @@ button:focus {
 
 .nypl-item-holdings li {
   margin-bottom: 0.5rem; }
-  .nypl-item-holdings li::before, .nypl-item-holdings li::after {
-    content: "";
-    display: table; }
-  .nypl-item-holdings li::after {
-    clear: both; }
   @media (max-width: 965px) {
     .nypl-item-holdings li {
       list-style-type: none;
-      margin-left: 0; } }
+      margin-left: 0; }
+      .nypl-item-holdings li::before, .nypl-item-holdings li::after {
+        content: "";
+        display: table; }
+      .nypl-item-holdings li::after {
+        clear: both; } }
 .nypl-item-holdings .nypl-link-button,
 .nypl-item-holdings .nypl-item-unavailable {
   display: inline-block;

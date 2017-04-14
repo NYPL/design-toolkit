@@ -282,10 +282,10 @@ $sorter-width: 11em;
 
 @mixin item-holdings {
   li {
-    @include clearfix;
     margin-bottom: 0.5rem;
 
     @include media($mobile-breakpoint) {
+      @include clearfix;
       list-style-type: none;
       margin-left: 0;
     }
