@@ -63,7 +63,7 @@ description: Form fields and user input.
 
     <h3 id="requiredFields">Required fields</h3>
 
-    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”.</p>
+    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -71,7 +71,7 @@ description: Form fields and user input.
   <label for="required-field">Username
     <span class="nypl-required-field">Required</span>
   </label>
-  <input id="required-field" type="text" />
+  <input id="required-field" type="text" required="true" aria-required="true" />
   <span class="nypl-field-status">Username must only contain letters and numbers</span>
 </div>
     </div>
@@ -84,7 +84,7 @@ description: Form fields and user input.
   &lt;label for=&quot;required-field&quot;&gt;Username
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; /&gt;
+  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-required=&quot;true&quot; /&gt;
   &lt;span class=&quot;nypl-field-status&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
 &lt;/div&gt;
     </code></pre>
