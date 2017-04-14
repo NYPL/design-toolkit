@@ -186,37 +186,26 @@ $sorter-width: 11em;
   }
 }
 
-@mixin results-item {
-  border-bottom: $general-border-width solid $nypl-gray;
-  list-style-type: none;
-  margin-bottom: 2rem;
-  margin-left: 0;
-  padding-bottom: 1rem;
-
-  h2 {
-    font-weight: normal;
-    font-size: 1.4rem;
-  }
-
+@mixin item-definition-list($item-margin-bottom: 0.5rem) {
   dd.nypl-results-highlight {
     font-weight: bold;
-  }
-
-  .nypl-results-unavailable {
-    border-left: 0.5rem solid $highlight-color;
-    color: $highlight-color;
-    margin: 1rem 0;
-    padding-left: 0.5rem;
   }
 
   dl {
     @include clearfix;
     margin-bottom: 1rem;
+
+    li {
+      list-style-type: none;
+      margin-left: 0;
+    }
   }
 
   dt,
   dd {
     float: left;
+    line-height: 1.5;
+    margin: 0 0 $item-margin-bottom;
   }
 
   dt {
@@ -236,42 +225,92 @@ $sorter-width: 11em;
       width: 60%;
     }
   }
+}
+
+@mixin results-item {
+  border-bottom: $general-border-width solid $nypl-gray;
+  list-style-type: none;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  padding-bottom: 1rem;
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nypl-results-unavailable {
+    border-left: 0.5rem solid $highlight-color;
+    color: $highlight-color;
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+  }
+
+  @include item-definition-list;
 
   p {
     margin-bottom: 0.5rem;
   }
 }
 
-@mixin results-item-formats {
-  border-left: 0.5rem solid $nypl-light-gray;
-  padding-left: 0.5rem;
-
-
-  th:first-child,
-  td:first-child {
-    width: 60%;
-  }
-
-  th:last-child,
-  td:last-child {
-    width: 40%;
-  }
-}
-
 @mixin item-toc {
   list-style-type: none;
+  margin: 1rem 0;
 
   li {
     display: inline-block;
+    margin: 0;
 
     &::after {
-      content: "|";
+      content: "\2003|\2003";
     }
 
     &:last-child::after {
       content: "";
     }
+
+    @include media($mobile-breakpoint) {
+      display: block;
+
+      &::after {
+        content: "";
+      }
+    }
   }
+}
+
+@mixin item-holdings {
+  li {
+    @include clearfix;
+    margin-bottom: 0.5rem;
+
+    @include media($mobile-breakpoint) {
+      list-style-type: none;
+      margin-left: 0;
+    }
+  }
+
+  .nypl-link-button,
+  .nypl-item-unavailable {
+    display: inline-block;
+    text-align: center;
+    width: 7rem;
+
+    @include media($mobile-breakpoint) {
+      display: block;
+      float: left;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .nypl-item-unavailable {
+    color: $highlight-color;
+  }
+}
+
+@mixin item-details {
+  @include item-definition-list($item-margin-bottom: 1rem);
 }
 
 @mixin views-table {

@@ -271,8 +271,12 @@
   @include item-toc;
 }
 
-.nypl-results-item-formats {
-  @include results-item-formats;
+.nypl-item-holdings {
+  @include item-holdings;
+}
+
+.nypl-item-details {
+  @include item-details;
 }
 
 .nypl-views-table {
