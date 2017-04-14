@@ -18,23 +18,27 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.6
+- Big refactor so that normalize, header, and footer can be loaded separately from the general toolkit.
+- Removed font-based icons.
+
 ### v0.1.5
-> Added error states in text fields.
-> Discovery results improvements.
+- Added error states in text fields.
+- Discovery results improvements.
 
 ### v0.1.4
-> Minor fixes including: #43, #47, #48.
+- Minor fixes including: #43, #47, #48.
 
 ### v0.1.3
-> Removed invocation of SVG file.
-> Updated `node-sass`.
+- Removed invocation of SVG file.
+- Updated `node-sass`.
 
 ### v0.1.2
-> Many new classes and documentation.
-> Jekyll-based docs.
+- Many new classes and documentation.
+- Jekyll-based docs.
 
 ### v0.1.1
-> Using namespace-based classes.
+- Using namespace-based classes.
 
 ### v0.1.0
-> Published on NPM.
+- Published on NPM.

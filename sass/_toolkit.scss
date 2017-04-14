@@ -2,8 +2,6 @@
 // https://nypl.github.io/design-toolkit/
 // MIT License
 
-@import "normalize";
-@import "nypl-normalize";
 @import "css3";
 @import "measurements";
 @import "media-queries";
@@ -14,10 +12,8 @@
 @import "icons";
 @import "forms";
 @import "grid";
-@import "header";
 @import "tables-results";
 @import "buttons";
-@import "footer";
 
 .nypl-link-button {
   @include link-button;
@@ -28,7 +24,7 @@
 }
 
 .nypl-icon {
-  @include nypl-icon($height: 1rem, $width: 1rem);
+  @include nypl-icon;
 }
 
 .nypl-logo-rev {

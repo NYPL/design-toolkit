@@ -1,23 +1,9 @@
-@import "measurements";
-@import "general-mixins";
-@import "microformats";
-@import "media-queries";
 @import "grid";
 @import "buttons";
 
-$logo-ratio: 169 / 300;
-$logo-width-raw: 5;
-$logo-width: $logo-width-raw * 1rem;
-$logo-height-raw: $logo-width-raw * $logo-ratio;
-$logo-height: $logo-height-raw * 1rem;
-$collapsed-service-height: 10px;
-$collapsed-nav-height: 30px;
-
 @warn "lots of refactoring to do here";
 
-@warn "INCREASE LINT NESTINGDEPTH SO THIS IS POSSIBLE (below) OR FIND A WAY TO MAKE IT SHALLOWER";
-
-.nypl-header {
+@mixin header {
   .horizontal {
     display: table-cell;
     float: right;
