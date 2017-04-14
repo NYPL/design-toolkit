@@ -1086,9 +1086,9 @@ button:focus {
       color: #080807;
       outline: none; }
   .nypl-text-field .nypl-field-status {
-    background-color: transparent;
+    background-color: #fff;
     color: #776e64;
-    display: inline-block;
+    display: block;
     padding-left: 0.5rem; }
 
 .nypl-text-field-with-label label {
@@ -1127,9 +1127,9 @@ button:focus {
     color: #080807;
     outline: none; }
 .nypl-text-field-with-label .nypl-field-status {
-  background-color: transparent;
+  background-color: #fff;
   color: #776e64;
-  display: inline-block;
+  display: block;
   padding-left: 0.5rem; }
 
 .nypl-name-field {
@@ -1189,9 +1189,9 @@ button:focus {
       color: #080807;
       outline: none; }
   .nypl-name-field .nypl-field-status {
-    background-color: transparent;
+    background-color: #fff;
     color: #776e64;
-    display: inline-block;
+    display: block;
     padding-left: 0.5rem; }
   .nypl-name-field div {
     display: block;
@@ -1266,9 +1266,9 @@ button:focus {
       color: #080807;
       outline: none; }
   .nypl-address-fieldset .nypl-field-status {
-    background-color: transparent;
+    background-color: #fff;
     color: #776e64;
-    display: inline-block;
+    display: block;
     padding-left: 0.5rem; }
   .nypl-address-fieldset div {
     margin-bottom: 1rem; }
@@ -1340,9 +1340,9 @@ button:focus {
       color: #080807;
       outline: none; }
   .nypl-date-field .nypl-field-status {
-    background-color: transparent;
+    background-color: #fff;
     color: #776e64;
-    display: inline-block;
+    display: block;
     padding-left: 0.5rem; }
 
 .nypl-required-field {
@@ -1692,9 +1692,9 @@ button:focus {
       color: #080807;
       outline: none; }
   .nypl-searchable-field .nypl-facet-search .nypl-field-status {
-    background-color: transparent;
+    background-color: #fff;
     color: #776e64;
-    display: inline-block;
+    display: block;
     padding-left: 0.5rem; }
   .nypl-searchable-field .nypl-facet-list {
     width: 100%; }

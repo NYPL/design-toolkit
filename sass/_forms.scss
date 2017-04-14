@@ -93,9 +93,9 @@ $form-padding: 0.5rem;
   }
 
   .nypl-field-status {
-    background-color: transparent;
+    background-color: $page-background-color;
     color: $nypl-gray;
-    display: inline-block;
+    display: block;
     padding-left: $form-padding;
   }
 }
@@ -170,7 +170,6 @@ $form-padding: 0.5rem;
 @mixin date-field {
   @include fieldset;
   @include text-field-with-label;
-
   min-width: 12rem;
   width: 50%;
 }
