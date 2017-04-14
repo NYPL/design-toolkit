@@ -1089,6 +1089,8 @@ button:focus {
     background-color: #fff;
     color: #776e64;
     display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
     padding-left: 0.5rem; }
 
 .nypl-text-field-with-label label {
@@ -1130,6 +1132,8 @@ button:focus {
   background-color: #fff;
   color: #776e64;
   display: block;
+  font-size: 0.8rem;
+  line-height: 1.5;
   padding-left: 0.5rem; }
 
 .nypl-name-field {
@@ -1192,6 +1196,8 @@ button:focus {
     background-color: #fff;
     color: #776e64;
     display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
     padding-left: 0.5rem; }
   .nypl-name-field div {
     display: block;
@@ -1269,6 +1275,8 @@ button:focus {
     background-color: #fff;
     color: #776e64;
     display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
     padding-left: 0.5rem; }
   .nypl-address-fieldset div {
     margin-bottom: 1rem; }
@@ -1343,6 +1351,8 @@ button:focus {
     background-color: #fff;
     color: #776e64;
     display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
     padding-left: 0.5rem; }
 
 .nypl-required-field {
@@ -1695,6 +1705,8 @@ button:focus {
     background-color: #fff;
     color: #776e64;
     display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
     padding-left: 0.5rem; }
   .nypl-searchable-field .nypl-facet-list {
     width: 100%; }
