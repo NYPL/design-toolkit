@@ -10,6 +10,34 @@
   }
 }
 
+$bullet-size: 0.5rem;
+
+@mixin custom-list-bullet($color: $nypl-gray, $hides-on-mobile: true) {
+  list-style-type: none;
+  margin-left: $bullet-size;
+
+  &::before {
+    content: "";
+    background-color: $color;
+    display: inline-block;
+    position: relative;
+    height: $bullet-size;
+    width: $bullet-size;
+    @include border-radius($bullet-size * 0.5);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-right: ($bullet-size * 0.5);
+    top: 0;
+
+    @if ($hides-on-mobile == true) {
+      @include media($mobile-breakpoint) {
+        display: none;
+      }
+    }
+  }
+}
+
 @mixin screenreader-only {
   // to hide something from view but make it visible to screen readers
   // used on some table headers

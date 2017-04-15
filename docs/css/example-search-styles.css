@@ -2712,16 +2712,31 @@ button:focus {
           content: ""; } }
 
 .nypl-item-holdings li {
+  list-style-type: none;
+  margin-left: 0.5rem;
   margin-bottom: 0.5rem; }
+  .nypl-item-holdings li::before {
+    content: "";
+    background-color: #776e64;
+    display: inline-block;
+    position: relative;
+    height: 0.5rem;
+    width: 0.5rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-right: 0.25rem;
+    top: 0; }
+    @media (max-width: 965px) {
+      .nypl-item-holdings li::before {
+        display: none; } }
   @media (max-width: 965px) {
     .nypl-item-holdings li {
-      list-style-type: none;
-      margin-left: 0; }
-      .nypl-item-holdings li::before, .nypl-item-holdings li::after {
-        content: "";
-        display: table; }
-      .nypl-item-holdings li::after {
-        clear: both; } }
+      clear: left;
+      margin-left: 0; } }
 .nypl-item-holdings .nypl-link-button,
 .nypl-item-holdings .nypl-item-unavailable {
   display: inline-block;
