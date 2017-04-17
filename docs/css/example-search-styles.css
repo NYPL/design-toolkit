@@ -2737,13 +2737,13 @@ button:focus {
     .nypl-item-holdings li {
       clear: left;
       margin-left: 0; } }
-.nypl-item-holdings .nypl-link-button,
+.nypl-item-holdings a,
 .nypl-item-holdings .nypl-item-unavailable {
   display: inline-block;
   text-align: center;
   width: 7rem; }
   @media (max-width: 965px) {
-    .nypl-item-holdings .nypl-link-button,
+    .nypl-item-holdings a,
     .nypl-item-holdings .nypl-item-unavailable {
       display: block;
       float: left;
