@@ -516,6 +516,28 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
+.nypl-icon {
+  background-color: #fff;
+  display: inline-block;
+  fill: #080807;
+  height: 1em;
+  width: 1em;
+  speak: none; }
+  .nypl-icon.reversed {
+    background-color: inherit;
+    fill: #fff; }
+
+.nypl-logo-rev {
+  background-color: transparent;
+  display: inline-block;
+  fill: #080807;
+  height: 2.81667rem;
+  width: 5rem;
+  speak: none; }
+  .nypl-logo-rev.reversed {
+    background-color: inherit;
+    fill: #fff; }
+
 .nypl-link-button {
   background: none;
   border: 0;
@@ -555,34 +577,14 @@ button:focus {
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-basic-button.disabled, .nypl-basic-button[disabled="disabled"], .nypl-basic-button[disabled], .nypl-basic-button[disabled=true] {
-    cursor: default;
-    background-color: #d7d4d0; }
-    .nypl-basic-button.disabled:hover, .nypl-basic-button[disabled="disabled"]:hover, .nypl-basic-button[disabled]:hover, .nypl-basic-button[disabled=true]:hover {
+  .nypl-basic-button.disabled, .nypl-basic-button[disabled="disabled"], .nypl-basic-button[disabled="true"], .nypl-basic-button[disabled], .nypl-basic-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-basic-button.disabled:hover, .nypl-basic-button[disabled="disabled"]:hover, .nypl-basic-button[disabled="true"]:hover, .nypl-basic-button[disabled]:hover, .nypl-basic-button[disabled=true]:hover {
       background-color: #d7d4d0;
+      border-color: #fff;
       color: #fff; }
-
-.nypl-icon {
-  background-color: #fff;
-  display: inline-block;
-  fill: #080807;
-  height: 1em;
-  width: 1em;
-  speak: none; }
-  .nypl-icon.reversed {
-    background-color: inherit;
-    fill: #fff; }
-
-.nypl-logo-rev {
-  background-color: transparent;
-  display: inline-block;
-  fill: #080807;
-  height: 2.81667rem;
-  width: 5rem;
-  speak: none; }
-  .nypl-logo-rev.reversed {
-    background-color: inherit;
-    fill: #fff; }
 
 .nypl-results-button {
   background-color: #fff;
@@ -613,11 +615,13 @@ button:focus {
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-results-button.disabled, .nypl-results-button[disabled="disabled"], .nypl-results-button[disabled], .nypl-results-button[disabled=true] {
-    cursor: default;
-    background-color: #d7d4d0; }
-    .nypl-results-button.disabled:hover, .nypl-results-button[disabled="disabled"]:hover, .nypl-results-button[disabled]:hover, .nypl-results-button[disabled=true]:hover {
+  .nypl-results-button.disabled, .nypl-results-button[disabled="disabled"], .nypl-results-button[disabled="true"], .nypl-results-button[disabled], .nypl-results-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #1b7fa7;
+    cursor: default; }
+    .nypl-results-button.disabled:hover, .nypl-results-button[disabled="disabled"]:hover, .nypl-results-button[disabled="true"]:hover, .nypl-results-button[disabled]:hover, .nypl-results-button[disabled=true]:hover {
       background-color: #d7d4d0;
+      border-color: #1b7fa7;
       color: #1b7fa7; }
   .nypl-results-button span {
     display: block;
@@ -653,11 +657,13 @@ button:focus {
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-request-button.disabled, .nypl-request-button[disabled="disabled"], .nypl-request-button[disabled], .nypl-request-button[disabled=true] {
-    cursor: default;
-    background-color: #d7d4d0; }
-    .nypl-request-button.disabled:hover, .nypl-request-button[disabled="disabled"]:hover, .nypl-request-button[disabled]:hover, .nypl-request-button[disabled=true]:hover {
+  .nypl-request-button.disabled, .nypl-request-button[disabled="disabled"], .nypl-request-button[disabled="true"], .nypl-request-button[disabled], .nypl-request-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-request-button.disabled:hover, .nypl-request-button[disabled="disabled"]:hover, .nypl-request-button[disabled="true"]:hover, .nypl-request-button[disabled]:hover, .nypl-request-button[disabled=true]:hover {
       background-color: #d7d4d0;
+      border-color: #fff;
       color: #fff; }
   .nypl-request-button:hover {
     background: #fff;
@@ -699,11 +705,13 @@ button:focus {
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-service-button.disabled, .nypl-service-button[disabled="disabled"], .nypl-service-button[disabled], .nypl-service-button[disabled=true] {
-    cursor: default;
-    background-color: #d7d4d0; }
-    .nypl-service-button.disabled:hover, .nypl-service-button[disabled="disabled"]:hover, .nypl-service-button[disabled]:hover, .nypl-service-button[disabled=true]:hover {
+  .nypl-service-button.disabled, .nypl-service-button[disabled="disabled"], .nypl-service-button[disabled="true"], .nypl-service-button[disabled], .nypl-service-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-service-button.disabled:hover, .nypl-service-button[disabled="disabled"]:hover, .nypl-service-button[disabled="true"]:hover, .nypl-service-button[disabled]:hover, .nypl-service-button[disabled=true]:hover {
       background-color: #d7d4d0;
+      border-color: #fff;
       color: #fff; }
 
 .nypl-login-button {
@@ -738,11 +746,13 @@ button:focus {
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-login-button.disabled, .nypl-login-button[disabled="disabled"], .nypl-login-button[disabled], .nypl-login-button[disabled=true] {
-    cursor: default;
-    background-color: #d7d4d0; }
-    .nypl-login-button.disabled:hover, .nypl-login-button[disabled="disabled"]:hover, .nypl-login-button[disabled]:hover, .nypl-login-button[disabled=true]:hover {
+  .nypl-login-button.disabled, .nypl-login-button[disabled="disabled"], .nypl-login-button[disabled="true"], .nypl-login-button[disabled], .nypl-login-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-login-button.disabled:hover, .nypl-login-button[disabled="disabled"]:hover, .nypl-login-button[disabled="true"]:hover, .nypl-login-button[disabled]:hover, .nypl-login-button[disabled=true]:hover {
       background-color: #d7d4d0;
+      border-color: #fff;
       color: #fff; }
 
 .nypl-menu-button_left {
@@ -808,11 +818,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-menu-button_left .nypl-menu-button_button.disabled, .nypl-menu-button_left .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button_left .nypl-menu-button_button[disabled], .nypl-menu-button_left .nypl-menu-button_button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-menu-button_left .nypl-menu-button_button.disabled:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled=true]:hover {
+    .nypl-menu-button_left .nypl-menu-button_button.disabled, .nypl-menu-button_left .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button_left .nypl-menu-button_button[disabled="true"], .nypl-menu-button_left .nypl-menu-button_button[disabled], .nypl-menu-button_left .nypl-menu-button_button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-menu-button_left .nypl-menu-button_button.disabled:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled="true"]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled]:hover, .nypl-menu-button_left .nypl-menu-button_button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #fff; }
   .nypl-menu-button_left .nypl-menu-button_menu {
     background-color: #776e64;
@@ -886,11 +898,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-menu-button_right .nypl-menu-button_button.disabled, .nypl-menu-button_right .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button_right .nypl-menu-button_button[disabled], .nypl-menu-button_right .nypl-menu-button_button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-menu-button_right .nypl-menu-button_button.disabled:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled=true]:hover {
+    .nypl-menu-button_right .nypl-menu-button_button.disabled, .nypl-menu-button_right .nypl-menu-button_button[disabled="disabled"], .nypl-menu-button_right .nypl-menu-button_button[disabled="true"], .nypl-menu-button_right .nypl-menu-button_button[disabled], .nypl-menu-button_right .nypl-menu-button_button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-menu-button_right .nypl-menu-button_button.disabled:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled="disabled"]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled="true"]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled]:hover, .nypl-menu-button_right .nypl-menu-button_button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #fff; }
   .nypl-menu-button_right .nypl-menu-button_menu {
     background-color: #776e64;
@@ -964,11 +978,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-navigation-button .nypl-navigation-button_button.disabled, .nypl-navigation-button .nypl-navigation-button_button[disabled="disabled"], .nypl-navigation-button .nypl-navigation-button_button[disabled], .nypl-navigation-button .nypl-navigation-button_button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-navigation-button .nypl-navigation-button_button.disabled:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled="disabled"]:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled]:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled=true]:hover {
+    .nypl-navigation-button .nypl-navigation-button_button.disabled, .nypl-navigation-button .nypl-navigation-button_button[disabled="disabled"], .nypl-navigation-button .nypl-navigation-button_button[disabled="true"], .nypl-navigation-button .nypl-navigation-button_button[disabled], .nypl-navigation-button .nypl-navigation-button_button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-navigation-button .nypl-navigation-button_button.disabled:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled="disabled"]:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled="true"]:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled]:hover, .nypl-navigation-button .nypl-navigation-button_button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #fff; }
   .nypl-navigation-button .nypl-navigation-button_list {
     background-color: #776e64;
@@ -987,6 +1003,29 @@ button:focus {
       display: block;
       min-width: 10rem;
       padding: 0.5rem 1rem; }
+
+.nypl-spinner-button {
+  overflow: hidden;
+  position: relative; }
+@keyframes spinner-right {
+  0% {
+    right: -40%; }
+  100% {
+    right: 140%; } }
+  .nypl-spinner-button.spinning::after {
+    animation: spinner-right 0.6s linear infinite;
+    background-color: rgba(255, 255, 255, 0.75);
+    content: "";
+    display: block;
+    height: 3rem;
+    margin-top: -1.5rem;
+    position: absolute;
+    right: 140%;
+    top: 50%;
+    transform: skewX(-30deg);
+    width: 3rem; }
+  .nypl-spinner-button.spinning:enabled:hover::after {
+    background-color: rgba(119, 110, 100, 0.75); }
 
 .nypl-a11y-note {
   border-left: 1rem solid #fee24a;
@@ -1585,27 +1624,33 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-omnisearch button.disabled, .nypl-omnisearch button[disabled="disabled"], .nypl-omnisearch button[disabled], .nypl-omnisearch button[disabled=true],
+    .nypl-omnisearch button.disabled, .nypl-omnisearch button[disabled="disabled"], .nypl-omnisearch button[disabled="true"], .nypl-omnisearch button[disabled], .nypl-omnisearch button[disabled=true],
     .nypl-omnisearch input[type=button].disabled,
     .nypl-omnisearch input[type=button][disabled="disabled"],
+    .nypl-omnisearch input[type=button][disabled="true"],
     .nypl-omnisearch input[type=button][disabled],
     .nypl-omnisearch input[type=button][disabled=true],
     .nypl-omnisearch input[type=submit].disabled,
     .nypl-omnisearch input[type=submit][disabled="disabled"],
+    .nypl-omnisearch input[type=submit][disabled="true"],
     .nypl-omnisearch input[type=submit][disabled],
     .nypl-omnisearch input[type=submit][disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-omnisearch button.disabled:hover, .nypl-omnisearch button[disabled="disabled"]:hover, .nypl-omnisearch button[disabled]:hover, .nypl-omnisearch button[disabled=true]:hover,
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-omnisearch button.disabled:hover, .nypl-omnisearch button[disabled="disabled"]:hover, .nypl-omnisearch button[disabled="true"]:hover, .nypl-omnisearch button[disabled]:hover, .nypl-omnisearch button[disabled=true]:hover,
       .nypl-omnisearch input[type=button].disabled:hover,
       .nypl-omnisearch input[type=button][disabled="disabled"]:hover,
+      .nypl-omnisearch input[type=button][disabled="true"]:hover,
       .nypl-omnisearch input[type=button][disabled]:hover,
       .nypl-omnisearch input[type=button][disabled=true]:hover,
       .nypl-omnisearch input[type=submit].disabled:hover,
       .nypl-omnisearch input[type=submit][disabled="disabled"]:hover,
+      .nypl-omnisearch input[type=submit][disabled="true"]:hover,
       .nypl-omnisearch input[type=submit][disabled]:hover,
       .nypl-omnisearch input[type=submit][disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #fff; }
   @media (max-width: 965px) {
     .nypl-omnisearch .nypl-omni-fields {
@@ -1998,11 +2043,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-alphabetical-filter button.disabled, .nypl-alphabetical-filter button[disabled="disabled"], .nypl-alphabetical-filter button[disabled], .nypl-alphabetical-filter button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-alphabetical-filter button.disabled:hover, .nypl-alphabetical-filter button[disabled="disabled"]:hover, .nypl-alphabetical-filter button[disabled]:hover, .nypl-alphabetical-filter button[disabled=true]:hover {
+    .nypl-alphabetical-filter button.disabled, .nypl-alphabetical-filter button[disabled="disabled"], .nypl-alphabetical-filter button[disabled="true"], .nypl-alphabetical-filter button[disabled], .nypl-alphabetical-filter button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-alphabetical-filter button.disabled:hover, .nypl-alphabetical-filter button[disabled="disabled"]:hover, .nypl-alphabetical-filter button[disabled="true"]:hover, .nypl-alphabetical-filter button[disabled]:hover, .nypl-alphabetical-filter button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #080807; }
     .nypl-alphabetical-filter button.nypl-long {
       min-width: 4.75rem; }
@@ -2435,11 +2482,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
+    .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #776e64; }
     .nypl-results-summary .nypl-facet button span {
       position: absolute;
@@ -2485,11 +2534,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-results-summary button.disabled, .nypl-results-summary button[disabled="disabled"], .nypl-results-summary button[disabled], .nypl-results-summary button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-results-summary button.disabled:hover, .nypl-results-summary button[disabled="disabled"]:hover, .nypl-results-summary button[disabled]:hover, .nypl-results-summary button[disabled=true]:hover {
+    .nypl-results-summary button.disabled, .nypl-results-summary button[disabled="disabled"], .nypl-results-summary button[disabled="true"], .nypl-results-summary button[disabled], .nypl-results-summary button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-results-summary button.disabled:hover, .nypl-results-summary button[disabled="disabled"]:hover, .nypl-results-summary button[disabled="true"]:hover, .nypl-results-summary button[disabled]:hover, .nypl-results-summary button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #fff;
         color: #fff; }
 
 .nypl-results-pagination {
@@ -2623,11 +2674,13 @@ button:focus {
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    .nypl-results-sorter button.disabled, .nypl-results-sorter button[disabled="disabled"], .nypl-results-sorter button[disabled], .nypl-results-sorter button[disabled=true] {
-      cursor: default;
-      background-color: #d7d4d0; }
-      .nypl-results-sorter button.disabled:hover, .nypl-results-sorter button[disabled="disabled"]:hover, .nypl-results-sorter button[disabled]:hover, .nypl-results-sorter button[disabled=true]:hover {
+    .nypl-results-sorter button.disabled, .nypl-results-sorter button[disabled="disabled"], .nypl-results-sorter button[disabled="true"], .nypl-results-sorter button[disabled], .nypl-results-sorter button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #d7d4d0;
+      cursor: default; }
+      .nypl-results-sorter button.disabled:hover, .nypl-results-sorter button[disabled="disabled"]:hover, .nypl-results-sorter button[disabled="true"]:hover, .nypl-results-sorter button[disabled]:hover, .nypl-results-sorter button[disabled=true]:hover {
         background-color: #d7d4d0;
+        border-color: #d7d4d0;
         color: #080807; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
@@ -2733,6 +2786,27 @@ button:focus {
     @media (max-width: 965px) {
       .nypl-item-holdings li::before {
         display: none; } }
+  .nypl-item-holdings li:hover {
+    list-style-type: none;
+    margin-left: 0.5rem; }
+    .nypl-item-holdings li:hover::before {
+      content: "";
+      background-color: #776e64;
+      display: inline-block;
+      position: relative;
+      height: 0.5rem;
+      width: 0.5rem;
+      -webkit-border-radius: 0.25rem;
+      -moz-border-radius: 0.25rem;
+      border-radius: 0.25rem;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      margin-right: 0.25rem;
+      top: 0; }
+      @media (max-width: 965px) {
+        .nypl-item-holdings li:hover::before {
+          display: none; } }
   @media (max-width: 965px) {
     .nypl-item-holdings li {
       clear: left;

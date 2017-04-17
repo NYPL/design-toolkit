@@ -29,6 +29,31 @@ description: Buttons and menus.
 &lt;button class=&quot;nypl-request-button&quot;&gt;Request a Button&lt;/button&gt;
 </code></pre>
 
+<h3 id="spinnerButton">Buttons With Spinners</h3>
+<p>For situations where there might be a delay between user submission and server response longer than half a second, it is recommended to add an additional <code>nypl-spinner-button</code> class to the button. Once the user clicks or taps the button, an additional <code>spinning</code> class should be activated so that an animation is displayed on the button that indicates the user has to wait for server response. It is also recommended to <strong>disable the button</strong> so that the user cannot double-click.</p>
+
+  <div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+<button class="nypl-basic-button nypl-spinner-button">Click To Activate!</button>
+<button class="nypl-request-button nypl-spinner-button">Click To Activate!</button>
+  </div>
+  <pre><code class="scss">
+.nypl-spinner-button
+  </code></pre>
+  <pre><code class="html">
+&lt;button class=&quot;nypl-basic-button nypl-spinner-button&quot;&gt;Click To Activate!&lt;/button&gt;
+&lt;button class=&quot;nypl-request-button nypl-spinner-button&quot;&gt;Click To Activate!&lt;/button&gt;
+</code></pre>
+  <pre><code class="js">
+// example jQuery-based activation code
+$(".nypl-spinner-button").on("click touchend", function(e) {
+  var self = $(e.target);
+  self.toggleClass("spinning");
+  self.blur();
+  self.attr("disabled", "true");
+})
+  </code></pre>
+
 <h3 id="linkButton">Link Button</h3>
 <p>A link-styled button for situations when you want to clearly differentiate the desired/default action from a secondary action (as displayed in the example).</p>
   <div class="nypl-toolkit-example">

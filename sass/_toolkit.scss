@@ -15,20 +15,20 @@
 @import "tables-results";
 @import "buttons";
 
-.nypl-link-button {
-  @include link-button;
-}
-
-.nypl-basic-button {
-  @include basic-button;
-}
-
 .nypl-icon {
   @include nypl-icon;
 }
 
 .nypl-logo-rev {
   @include nypl-icon($height: $logo-height, $width: $logo-width, $background-color: transparent);
+}
+
+.nypl-link-button {
+  @include link-button;
+}
+
+.nypl-basic-button {
+  @include basic-button;
 }
 
 .nypl-results-button {
@@ -55,6 +55,10 @@
 
 .nypl-navigation-button {
   @include navigation-button;
+}
+
+.nypl-spinner-button {
+  @include spinner-button;
 }
 
 .nypl-a11y-note {

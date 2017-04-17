@@ -62,26 +62,26 @@
     color: $text-color;
   }
 
+  $the-text-color: "";
+  $the-background-color: "";
+
+  @if $hover-background-color != $text-color {
+    // there's custom hover color
+    $the-background-color: $hover-background-color;
+  } @else {
+    $the-background-color: $text-color;
+  }
+
+  @if $hover-text-color != $background-color {
+    // there's custom hover color
+    $the-text-color: $hover-text-color;
+  } @else {
+    $the-text-color: $background-color;
+  }
+
   &:hover,
   &:hover:visited,
   &.active {
-    $the-text-color: "";
-    $the-background-color: "";
-
-    @if $hover-background-color != $text-color {
-      // there's custom hover color
-      $the-background-color: $hover-background-color;
-    } @else {
-      $the-background-color: $text-color;
-    }
-
-    @if $hover-text-color != $background-color {
-      // there's custom hover color
-      $the-text-color: $hover-text-color;
-    } @else {
-      $the-text-color: $background-color;
-    }
-
     border-color: $the-text-color;
     background-color: $the-background-color;
     color: $the-text-color;
@@ -109,15 +109,18 @@
 
   &.disabled,
   &[disabled="disabled"],
+  &[disabled="true"],
   &[disabled],
   &[disabled=true] {
 
     @warn "set universal disabled style";
-    cursor: default;
     background-color: $disabled-color;
+    border-color: $the-background-color;
+    cursor: default;
 
     &:hover {
       background-color: $disabled-color;
+      border-color: $the-background-color;
       color: $text-color;
     }
   }
@@ -130,6 +133,44 @@
     background: $nypl-white;
     border-color: $nypl-blue;
     color: $nypl-blue;
+  }
+}
+
+
+@mixin spinner-button {
+  $spinner-size: 3rem;
+
+  @keyframes spinner-right {
+    0% {
+      right: -40%;
+    }
+
+    100% {
+      right: 140%;
+    }
+  }
+
+  overflow: hidden;
+  position: relative;
+
+  &.spinning {
+    &::after {
+      animation: spinner-right 0.6s linear infinite;
+      background-color: transparentize($nypl-white, 0.25);
+      content: "";
+      display: block;
+      height: $spinner-size;
+      margin-top: #{-0.5 * $spinner-size};
+      position: absolute;
+      right: 140%;
+      top: 50%;
+      transform: skewX(-30deg);
+      width: $spinner-size;
+    }
+
+    &:enabled:hover::after {
+      background-color: transparentize($nypl-gray, 0.25);
+    }
   }
 }
 

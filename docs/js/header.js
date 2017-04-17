@@ -12,6 +12,12 @@ function onSampleCodeClick (t) {
 
 function init() {
   $("code.html").on("click", onSampleCodeClick)
+  $(".nypl-spinner-button").on("click touchend", function(e) {
+    var self = $(e.target);
+    self.toggleClass("spinning");
+    self.blur();
+    self.attr("disabled", "true");
+  })
   $(".nypl-mobile-refine button").click(function(e){
     e.preventDefault();
     var self = $(e.target);

@@ -285,6 +285,10 @@ $sorter-width: 11em;
     @include custom-list-bullet;
     margin-bottom: 0.5rem;
 
+    &:hover {
+      @include custom-list-bullet($nypl-gray);
+    }
+
     @include media($mobile-breakpoint) {
       clear: left;
       margin-left: 0;
