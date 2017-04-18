@@ -70,6 +70,8 @@
 }
 
 @mixin column-type($float: left, $width: auto) {
+  border: 1px solid $nypl-red;
+  border: 0;
   float: $float;
   margin-bottom: 1rem;
   min-height: 1rem;

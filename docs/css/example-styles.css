@@ -2131,6 +2131,8 @@ button:focus {
     clear: both; }
 
 .nypl-column-type {
+  border: 1px solid #d0343a;
+  border: 0;
   float: left;
   margin-bottom: 1rem;
   min-height: 1rem;
@@ -2150,7 +2152,10 @@ button:focus {
       padding: 0;
       width: auto; } }
 
-.nypl-column-full {
+.nypl-column-full,
+.nypl-column-four-quarters {
+  border: 1px solid #d0343a;
+  border: 0;
   float: none;
   margin-bottom: 1rem;
   min-height: 1rem;
@@ -2159,18 +2164,25 @@ button:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .nypl-column-full::before, .nypl-column-full::after {
+  .nypl-column-full::before, .nypl-column-full::after,
+  .nypl-column-four-quarters::before,
+  .nypl-column-four-quarters::after {
     content: "";
     display: table; }
-  .nypl-column-full::after {
+  .nypl-column-full::after,
+  .nypl-column-four-quarters::after {
     clear: both; }
   @media (max-width: 965px) {
-    .nypl-column-full {
+    .nypl-column-full,
+    .nypl-column-four-quarters {
       float: none;
       padding: 0;
       width: auto; } }
 
-.nypl-column-half {
+.nypl-column-half,
+.nypl-column-two-quarters {
+  border: 1px solid #d0343a;
+  border: 0;
   float: left;
   margin-bottom: 1rem;
   min-height: 1rem;
@@ -2179,18 +2191,24 @@ button:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .nypl-column-half::before, .nypl-column-half::after {
+  .nypl-column-half::before, .nypl-column-half::after,
+  .nypl-column-two-quarters::before,
+  .nypl-column-two-quarters::after {
     content: "";
     display: table; }
-  .nypl-column-half::after {
+  .nypl-column-half::after,
+  .nypl-column-two-quarters::after {
     clear: both; }
   @media (max-width: 965px) {
-    .nypl-column-half {
+    .nypl-column-half,
+    .nypl-column-two-quarters {
       float: none;
       padding: 0;
       width: auto; } }
 
 .nypl-column-one-quarter {
+  border: 1px solid #d0343a;
+  border: 0;
   float: left;
   margin-bottom: 1rem;
   min-height: 1rem;
@@ -2211,6 +2229,8 @@ button:focus {
       width: auto; } }
 
 .nypl-column-one-third {
+  border: 1px solid #d0343a;
+  border: 0;
   float: left;
   margin-bottom: 1rem;
   min-height: 1rem;
@@ -2231,6 +2251,8 @@ button:focus {
       width: auto; } }
 
 .nypl-column-two-thirds {
+  border: 1px solid #d0343a;
+  border: 0;
   float: left;
   margin-bottom: 1rem;
   min-height: 1rem;
@@ -2251,6 +2273,8 @@ button:focus {
       width: auto; } }
 
 .nypl-column-three-quarters {
+  border: 1px solid #d0343a;
+  border: 0;
   float: left;
   margin-bottom: 1rem;
   min-height: 1rem;

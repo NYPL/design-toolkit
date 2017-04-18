@@ -182,11 +182,13 @@
   @include column-type;
 }
 
-.nypl-column-full {
+.nypl-column-full,
+.nypl-column-four-quarters {
   @include column-full;
 }
 
-.nypl-column-half {
+.nypl-column-half,
+.nypl-column-two-quarters {
   @include column-half;
 }
 
