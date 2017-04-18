@@ -11,6 +11,15 @@
 
 body {
   color: $page-text-color;
+
+}
+
+::selection {
+  background: $nypl-light-blue;
+}
+
+::-moz-selection {
+  background: $nypl-light-blue;
 }
 
 html {

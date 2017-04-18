@@ -14,6 +14,8 @@ $nypl-red-error: tint($nypl-red, 80%);
 // NYPL Blues
 $nypl-blue: #1b7fa7;
 
+$nypl-light-blue: lighten(#1b7fa7, 30%);
+
 $nypl-blue-dark: #135772;
 
 $nypl-blue-tint: tint($nypl-blue, 30%);
