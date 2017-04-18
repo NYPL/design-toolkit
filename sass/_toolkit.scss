@@ -61,6 +61,10 @@
   @include spinner-button;
 }
 
+.nypl-general-note {
+  @include general-note;
+}
+
 .nypl-a11y-note {
   @include a11y-note;
 }

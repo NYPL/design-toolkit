@@ -30,7 +30,10 @@ description: Buttons and menus.
 </code></pre>
 
 <h3 id="spinnerButton">Buttons With Spinners</h3>
+
 <p>For situations where there might be a delay between user submission and server response longer than half a second, it is recommended to add an additional <code>nypl-spinner-button</code> class to the button. Once the user clicks or taps the button, an additional <code>spinning</code> class should be activated so that an animation is displayed on the button that indicates the user has to wait for server response. It is also recommended to <strong>disable the button</strong> so that the user cannot double-click.</p>
+
+<p class="nypl-a11y-note"><strong>Accessibility note:</strong> This is a visual-only recommendation and should not be relied on as the only indicator of state.</p>
 
   <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
