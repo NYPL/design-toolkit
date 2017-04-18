@@ -15,11 +15,13 @@ body {
 }
 
 ::selection {
-  background: $nypl-light-blue;
+  background: $page-text-color;
+  color: $page-background-color;
 }
 
 ::-moz-selection {
-  background: $nypl-light-blue;
+  background: $page-text-color;
+  color: $page-background-color;
 }
 
 html {

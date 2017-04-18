@@ -405,10 +405,12 @@ body {
   color: #080807; }
 
 ::selection {
-  background: #73c7e8; }
+  background: #080807;
+  color: #fff; }
 
 ::-moz-selection {
-  background: #73c7e8; }
+  background: #080807;
+  color: #fff; }
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
