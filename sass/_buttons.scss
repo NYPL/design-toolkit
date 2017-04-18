@@ -138,15 +138,15 @@
 
 
 @mixin spinner-button {
-  $spinner-size: 3rem;
+  $bar-color: transparentize($nypl-white, 0.5);
 
   @keyframes spinner-right {
     0% {
-      right: -40%;
+      right: -50%;
     }
 
     100% {
-      right: 140%;
+      right: -10%;
     }
   }
 
@@ -155,17 +155,18 @@
 
   &.spinning {
     &::after {
-      animation: spinner-right 0.6s linear infinite;
-      background-color: transparentize($nypl-white, 0.25);
+      animation: spinner-right 1.5s linear infinite;
+      background: -moz-repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
+      background: repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
       content: "";
       display: block;
-      height: $spinner-size;
-      margin-top: #{-0.5 * $spinner-size};
+      height: 200%;
+      margin-top: -30%;
       position: absolute;
-      right: 140%;
+      right: -50%;
       top: 50%;
       transform: skewX(-30deg);
-      width: $spinner-size;
+      width: 200%;
     }
 
     &:enabled:hover::after {
