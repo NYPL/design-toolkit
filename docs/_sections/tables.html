@@ -182,17 +182,78 @@ description: Displaying search results and tabular data.
 
     <h3 id="results-nontable">Search results (non-table)</h3>
 
-    <p>Coming soon.</p>
+    <p>Sometimes search results don't accommodate to a consistent structure or it is not useful to present them in table form. In these cases results should be returned in a unordered list (<code>ul</code>) of class <code>nypl-results-list</code>. Each result list item should have the class <code>nypl-results-item</code> and contain:
+      <ul>
+        <li>An <code>h2</code> element that contains a link to the result page.</li>
+        <li><strong>Optional:</strong> A notification of unavailability of the item (if applicable) in a div with class <code>nypl-results-unavailable</code>.</li>
+        <li><strong>Optional:</strong> A definition list (<code>dl</code>) with the most relevant attributes of the result item sorted by importance. Terms that need to be highlighted (for easier scanning of results) should have a class of <code>nypl-results-highlight</code></li>
+      </ul>
+    </p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-
+<ul class="nypl-results-list">
+  <!-- an item -->
+  <li class="nypl-results-item">
+    <h2><a href="#">The Biography of Example</a></h2>
+    <dl>
+      <dt class="nypl-results-highlight">Material Type</dt>
+      <dd class="nypl-results-highlight">Text</dd>
+      <dt>Author</dt>
+      <dd>Smith, Angela F., 1982-</dd>
+      <dt>Published</dt>
+      <dd>2014</dd>
+    </dl>
+  </li>
+  <!-- another item -->
+  <li class="nypl-results-item">
+    <h2><a href="#">Very Rare Item</a></h2>
+    <div class="nypl-results-unavailable">Currently not available for use</div>
+    <dl>
+      <dt class="nypl-results-highlight">Material Type</dt>
+      <dd class="nypl-results-highlight">Text</dd>
+      <dt>Author</dt>
+      <dd>Casasbuenas Gutiérrez, Margarita, 1915-1997</dd>
+      <dt>Published</dt>
+      <dd>1942</dd>
+    </dl>
+  </li>
+</ul>
     </div>
     <pre><code class="scss">
-
+.nypl-results-list
+.nypl-results-item
+.nypl-results-unavailable
+.nypl-results-highlight
     </code></pre>
     <pre><code class="html">
-
+&lt;ul class=&quot;nypl-results-list&quot;&gt;
+  &lt;!-- an item --&gt;
+  &lt;li class=&quot;nypl-results-item&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;The Biography of Example&lt;/a&gt;&lt;/h2&gt;
+    &lt;dl&gt;
+      &lt;dt class=&quot;nypl-results-highlight&quot;&gt;Material Type&lt;/dt&gt;
+      &lt;dd class=&quot;nypl-results-highlight&quot;&gt;Text&lt;/dd&gt;
+      &lt;dt&gt;Author&lt;/dt&gt;
+      &lt;dd&gt;Smith, Angela F., 1982-&lt;/dd&gt;
+      &lt;dt&gt;Published&lt;/dt&gt;
+      &lt;dd&gt;2014&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;!-- another item --&gt;
+  &lt;li class=&quot;nypl-results-item&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Very Rare Item&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;nypl-results-unavailable&quot;&gt;Currently not available for use&lt;/div&gt;
+    &lt;dl&gt;
+      &lt;dt class=&quot;nypl-results-highlight&quot;&gt;Material Type&lt;/dt&gt;
+      &lt;dd class=&quot;nypl-results-highlight&quot;&gt;Text&lt;/dd&gt;
+      &lt;dt&gt;Author&lt;/dt&gt;
+      &lt;dd&gt;Casasbuenas Guti&eacute;rrez, Margarita, 1915-1997&lt;/dd&gt;
+      &lt;dt&gt;Published&lt;/dt&gt;
+      &lt;dd&gt;1942&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
     </code></pre>
 
     <h3 id="pagination">Search results pagination</h3>
