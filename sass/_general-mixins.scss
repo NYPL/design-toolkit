@@ -16,6 +16,12 @@ $bullet-size: 0.5rem;
   list-style-type: none;
   margin-left: $bullet-size;
 
+  @if ($hides-on-mobile == true) {
+    @include media($mobile-breakpoint) {
+      margin-left: 0;
+    }
+  }
+
   &::before {
     content: "";
     background-color: $color;
