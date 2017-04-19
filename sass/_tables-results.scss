@@ -317,6 +317,14 @@ $sorter-width: 11em;
   @include item-definition-list($item-margin-bottom: 1rem);
 }
 
+@mixin item-external-links {
+  @include item-definition-list;
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
 @mixin views-table {
   @warn "this mixin is not used";
 

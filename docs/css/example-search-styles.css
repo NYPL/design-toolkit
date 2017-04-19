@@ -2898,6 +2898,38 @@ button:focus {
     .nypl-item-details dd {
       width: 60%; } }
 
+.nypl-item-external-links dd.nypl-results-highlight {
+  font-weight: bold; }
+.nypl-item-external-links dl {
+  margin-bottom: 1rem; }
+  .nypl-item-external-links dl::before, .nypl-item-external-links dl::after {
+    content: "";
+    display: table; }
+  .nypl-item-external-links dl::after {
+    clear: both; }
+  .nypl-item-external-links dl li {
+    list-style-type: none;
+    margin-left: 0; }
+.nypl-item-external-links dt,
+.nypl-item-external-links dd {
+  float: left;
+  line-height: 1.5;
+  margin: 0 0 0.5rem; }
+.nypl-item-external-links dt {
+  clear: left;
+  color: #776e64;
+  width: 7.6rem; }
+  @media (max-width: 965px) {
+    .nypl-item-external-links dt {
+      width: 40%; } }
+.nypl-item-external-links dd {
+  margin: 0; }
+  @media (max-width: 965px) {
+    .nypl-item-external-links dd {
+      width: 60%; } }
+.nypl-item-external-links li {
+  margin-bottom: 1rem; }
+
 .nypl-views-table {
   display: table;
   border-collapse: collapse; }

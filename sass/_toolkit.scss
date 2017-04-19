@@ -289,6 +289,10 @@
   @include item-details;
 }
 
+.nypl-item-external-links {
+  @include item-external-links;
+}
+
 .nypl-views-table {
   @include views-table;
 }
