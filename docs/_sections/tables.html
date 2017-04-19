@@ -77,12 +77,14 @@ description: Displaying search results and tabular data.
     <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232). Each applied facet or term has a <code>button</code> element to remove the facet and refresh the search results. the button contains the screen-reader-friendly text inside a <code>span</code> tag.
     </p>
 
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The main element must include the following attributes when being updated via JavaScript (no page refresh): <code>aria-live="assertive"</code> <code>aria-atomic="true"</code> <code>role="presentation"</code>.</p>
+
     <p>
     <strong>NOTE:</strong> <strong>Avoid adding a space</strong> between the facet and the remove button so that it <strong>won't wrap to the next line</strong>.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-results-summary">
+<div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
   <span class="nypl-results-count">1,807</span> resources found for
   <span class="nypl-facet">
     <strong>Young Adult<button><span>Remove Young Adult filter</span></button></strong>
@@ -99,7 +101,7 @@ description: Displaying search results and tabular data.
     </code></pre>
 
     <pre><code class="html">
-&lt;div class=&quot;nypl-results-summary&quot;&gt;
+&lt;div class=&quot;nypl-results-summary&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot; role=&quot;presentation&quot;&gt;
   &lt;span class=&quot;nypl-results-count&quot;&gt;1,807&lt;/span&gt; resources found for
   &lt;span class=&quot;nypl-facet&quot;&gt;
     &lt;strong&gt;Young Adult&lt;button&gt;&lt;span&gt;Remove Young Adult filter&lt;/span&gt;&lt;/button&gt;&lt;/strong&gt;
@@ -107,8 +109,7 @@ description: Displaying search results and tabular data.
   &lt;span class=&quot;nypl-facet&quot;&gt;
     &lt;strong&gt;Fiction&lt;button&gt;&lt;span&gt;Remove Fiction filter&lt;/span&gt;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;.
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;    </code></pre>
 
 
     <h3 id="sorting">Sorting</h3>
