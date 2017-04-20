@@ -263,14 +263,14 @@ function toggleSort(e) {
   var item_count = parent.find("li").length
   console.log(item_count)
   self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
-  $(".nypl-results-sorter ul").toggleClass("hidden")
+  parent.find("ul").toggleClass("hidden")
   if (self.attr("aria-expanded") == "true") {
     parent.find("li:first-child a").focus()
     parent.on("keydown", function (ee) {
       switch (ee.keyCode) {
         case 27: // ESC
           parent.off("keydown")
-          parent.find(".nypl-results-sorter ul").addClass("hidden")
+          parent.find("ul").addClass("hidden")
           self.removeClass("active").attr("aria-expanded", "false").focus()
           break
         case 32: // SPACE
