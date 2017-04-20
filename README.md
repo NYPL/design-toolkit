@@ -21,6 +21,7 @@ See [LICENSE](LICENSE.md)
 ### v0.1.9
 - Added name field and docs.
 - Applying `1rem` value to inputs to avoid overrides.
+- Added some keyboard shortcuts to Sorting example.
 
 ### v0.1.8
 - Form validation examples (including JS).

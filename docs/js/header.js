@@ -230,7 +230,7 @@ function init() {
   $(".nypl-results-sorter button").on("click", function(e) {
     e.preventDefault();
     if ($(e.target).closest('.nypl-results-sorter').length) {
-      toggleSort()
+      toggleSort(e)
     }
   })
 
@@ -256,10 +256,45 @@ function init() {
 
 }
 
-function toggleSort() {
+function toggleSort(e) {
   var self = $(".nypl-results-sorter button")
+  var parent = self.parent()
+  var selected = 0
+  var item_count = parent.find("li").length
+  console.log(item_count)
   self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   $(".nypl-results-sorter ul").toggleClass("hidden")
+  if (self.attr("aria-expanded") == "true") {
+    parent.find("li:first-child a").focus()
+    parent.on("keydown", function (ee) {
+      switch (ee.keyCode) {
+        case 27: // ESC
+          parent.off("keydown")
+          parent.find(".nypl-results-sorter ul").addClass("hidden")
+          self.removeClass("active").attr("aria-expanded", "false").focus()
+          break
+        case 32: // SPACE
+          break
+        case 38: // UP
+          ee.preventDefault();
+          if (selected == 0) {
+            selected = item_count - 1;
+          } else {
+            selected--;
+          }
+          break
+        case 40: // DOWN
+          ee.preventDefault();
+          if (selected >= item_count - 1) {
+            selected = 0;
+          } else {
+            selected++;
+          }
+          break
+      }
+      parent.find("li:nth-child("+(selected+1)+") a").focus()
+    })
+  }
 }
 
 function hideSort() {
