@@ -18,6 +18,10 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.9
+- Added name field and docs.
+- Applying `1rem` value to inputs to avoid overrides.
+
 ### v0.1.8
 - Form validation examples (including JS).
 - Search results documentation.

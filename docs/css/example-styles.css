@@ -1080,6 +1080,7 @@ button:focus {
   background-color: #efedeb;
   border: 0;
   border-radius: 0.2rem 0.2rem 0 0;
+  font-size: 1rem;
   padding: 0; }
 
 .nypl-text-field {
@@ -1114,6 +1115,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #efedeb;
     -moz-box-shadow: inset 0 0 0 2px #efedeb;
@@ -1157,6 +1159,7 @@ button:focus {
   background-color: #efedeb;
   border: 0;
   border-radius: 0.2rem 0.2rem 0 0;
+  font-size: 1rem;
   padding: 0;
   -webkit-box-shadow: inset 0 0 0 2px #efedeb;
   -moz-box-shadow: inset 0 0 0 2px #efedeb;
@@ -1198,6 +1201,11 @@ button:focus {
   padding: 0;
   position: relative;
   background-color: #fff; }
+  .nypl-name-field::before, .nypl-name-field::after {
+    content: "";
+    display: table; }
+  .nypl-name-field::after {
+    clear: both; }
   .nypl-name-field fieldset {
     border: 0;
     box-shadow: none;
@@ -1221,6 +1229,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #efedeb;
     -moz-box-shadow: inset 0 0 0 2px #efedeb;
@@ -1251,20 +1260,20 @@ button:focus {
     font-size: 0.8rem;
     line-height: 1.5;
     padding-left: 0.5rem; }
-  .nypl-name-field div {
+  .nypl-name-field > div {
     display: block;
     float: left;
     margin-right: 0.125rem;
     width: calc(50% - 0.125rem); }
-    .nypl-name-field div:last-child {
+    .nypl-name-field > div:last-child {
       margin-right: 0; }
     @media (max-width: 965px) {
-      .nypl-name-field div {
+      .nypl-name-field > div {
         float: none;
         margin-bottom: 1rem;
         margin-right: 0;
         width: auto; }
-        .nypl-name-field div:last-child {
+        .nypl-name-field > div:last-child {
           margin-bottom: 0; } }
 
 .nypl-address-fieldset {
@@ -1300,6 +1309,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #efedeb;
     -moz-box-shadow: inset 0 0 0 2px #efedeb;
@@ -1376,6 +1386,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #efedeb;
     -moz-box-shadow: inset 0 0 0 2px #efedeb;
@@ -1589,6 +1600,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;
     text-indent: 0.5rem;
@@ -1736,6 +1748,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     -webkit-box-shadow: inset 0 0 0 2px #efedeb;
     -moz-box-shadow: inset 0 0 0 2px #efedeb;
@@ -3715,6 +3728,7 @@ button:focus {
     background-color: #efedeb;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;
     height: 2rem;

@@ -134,6 +134,40 @@ $("#username1 #required-field").keyup(function (e) {
 $('#date-of-birth').mask('00/00/0000');
     </code></pre>
 
+    <h3 id="nameFields">Name Fields</h3>
+
+    <p>To be used when requesting the full names of a user in separate first and last name values. Both the first and last name input boxes should be wrapped by a <code>div</code> tag and follow the basic structure of <a href="#textFields">Text Fields</a>.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-name-field">
+  <div>
+    <label for="first-text">First Name <span class="nypl-required-field">Required</span></label>
+    <input id="first-text" type="text">
+  </div>
+  <div>
+    <label for="last-text">Last Name <span class="nypl-required-field">Required</span></label>
+    <input id="last-text" type="text">
+  </div>
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-name-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-name-field&quot;&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;first-text&quot;&gt;First Name &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+    &lt;input id=&quot;first-text&quot; type=&quot;text&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;last-text&quot;&gt;Last Name &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+    &lt;input id=&quot;last-text&quot; type=&quot;text&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
     <h3 id="selectBoxes">Select boxes</h3>
 
     <div class="nypl-toolkit-example">
