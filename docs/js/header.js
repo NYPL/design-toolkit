@@ -11,6 +11,31 @@ function onSampleCodeClick (t) {
 }
 
 function init() {
+  $("#username1 #required-field").keyup(function (e) {
+    var self = $(e.target)
+    var text = self.val()
+    var regex = /\W/g
+    if (text.length > 2 && regex.test(text)) {
+      $("#username1").addClass("nypl-field-error")
+      $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
+    } else {
+      $("#username1").removeClass("nypl-field-error")
+      $("#username1 .nypl-field-status").text("Username must only contain letters and numbers.")
+    }
+  })
+  $("#email1 #email-field").blur(function (e) {
+    var self = $(e.target)
+    var text = self.val()
+    var regex = /^[^@\s]+@[^@\s]+\.[^@\s]+/
+    if (!regex.test(text)) {
+      $("#email1").addClass("nypl-field-error")
+      $("#email1 .nypl-field-status").text("The Email address must use the correct formatting. Example: prudence@example.org. Try again.")
+    } else {
+      $("#email1").removeClass("nypl-field-error")
+      $("#email1 .nypl-field-status").text("")
+      self.attr("aria-invalid", "false")
+    }
+  })
   $("code.html").on("click", onSampleCodeClick)
   $(".nypl-spinner-button").on("click touchend", function(e) {
     var self = $(e.target);

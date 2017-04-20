@@ -18,6 +18,11 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.8
+- Form validation examples (including JS).
+- Search results documentation.
+- Some `aria-live` support included.
+
 ### v0.1.7
 - Font settings mixin.
 

@@ -63,16 +63,18 @@ description: Form fields and user input.
 
     <h3 id="requiredFields">Required fields</h3>
 
-    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes. An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field.</p>
+    <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field. If included, the note must include the <code>aria-live="assertive"</code> and <code>aria-atomic="true"</code> attributes if the form is being validated via client-side JavaScript. The example below shows a simple validation on every key press using jQuery. See <a href="#formValidation">Form Validation</a> for more information.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-text-field">
+<div class="nypl-text-field" id="username1">
   <label for="required-field">Username
     <span class="nypl-required-field">Required</span>
   </label>
   <input id="required-field" type="text" required="true" aria-required="true" />
-  <span class="nypl-field-status">Username must only contain letters and numbers</span>
+  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Username must only contain letters and numbers.</span>
 </div>
     </div>
 
@@ -80,13 +82,27 @@ description: Form fields and user input.
 .nypl-required-field
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;nypl-text-field&quot;&gt;
+&lt;div class=&quot;nypl-text-field&quot; id=&quot;username1&quot;&gt;
   &lt;label for=&quot;required-field&quot;&gt;Username
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
   &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-required=&quot;true&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
+  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
 &lt;/div&gt;
+    </code></pre>
+    <pre><code class="js">
+$("#username1 #required-field").keyup(function (e) {
+  var self = $(e.target)
+  var text = self.val()
+  var regex = /\W/g
+  if (text.length > 2 && regex.test(text)) {
+    $("#username1").addClass("nypl-field-error")
+    $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
+  } else {
+    $("#username1").removeClass("nypl-field-error")
+    $("#username1 .nypl-field-status").text("Username must only contain letters and numbers.")
+  }
+})
     </code></pre>
 
     <h3 id="dateFields">Date fields</h3>
@@ -100,7 +116,7 @@ description: Form fields and user input.
 <div class="nypl-date-field">
   <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
   <input id="date-of-birth" type="text" class="form-text" placeholder="MM/DD/YYYY" />
-  <span class="nypl-field-status">Format the date as MM/DD/YYYY</span>
+  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Format the date as MM/DD/YYYY</span>
 </div>
     </div>
 
@@ -111,7 +127,7 @@ description: Form fields and user input.
 &lt;div class=&quot;nypl-date-field&quot;&gt;
   &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
   &lt;input id=&quot;date-of-birth&quot; type=&quot;text&quot; class=&quot;form-text&quot; placeholder=&quot;MM/DD/YYYY&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot;&gt;Format the date as MM/DD/YYYY&lt;/span&gt;
+  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Format the date as MM/DD/YYYY&lt;/span&gt;
 &lt;/div&gt;
     </code></pre>
     <pre><code class="js">
@@ -434,32 +450,42 @@ $('#date-of-birth').mask('00/00/0000');
 
     <p>Any field where user input could be erroneous should add the class <code>nypl-field-error</code> upon validation. It is up to the product designer to determine what fields should have an error state and provide correct explanatory text using an <code>nypl-field-status</code> as described in <a href="#requiredFields">Required Fields</a>. It is the responsibility of the developer to implement the necessary validations.</p>
 
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-requried</code> and <code>aria-invalid</code>. <code>aria-requried</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. See the following resources:
-      <ul>
-        <li>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints#Required_and_invalid_fields" target="_blank">Basic Form Hints: Required and invalid fields</a>
-        </li>
-      </ul>
-    </p>
-<div class="nypl-toolkit-example">
-  <span class="nypl-example-text">Example</span>
-  <div class="nypl-text-field nypl-field-error">
-    <label for="email-field">Email
-      <span class="nypl-required-field">Required</span>
-    </label>
-    <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
-    <span class="nypl-field-status">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
-  </div>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The correct <code>aria</code> attributes must be added to the <code>input</code> field for proper accessibility coverage. The example below describes both <code>aria-required</code> and <code>aria-invalid</code>. <code>aria-required</code> will be a static state for the form, whereas <code>aria-invalid</code> will initially be set to <code>false</code>, upon a an invalid submission, the attribute should return <code>true</code> as it's value. The field must also make use of the <code>nypl-field-status</code> <code>span</code> element as described in <a href="#requiredFields">Required Fields</a> above. The example below provides a very simple jQuery-based implementation. See also <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints#Required_and_invalid_fields" target="_blank">Basic Form Hints: Required and invalid fields</a> in the Mozilla Developer Network.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-text-field nypl-field-error" id="email1">
+  <label for="email-field">Email
+    <span class="nypl-required-field">Required</span>
+  </label>
+  <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
+  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
 </div>
+    </div>
     <pre><code class="scss">
-.nypl-error-field
+.nypl-field-error
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;nypl-text-field nypl-field-error&quot;&gt;
+&lt;div class=&quot;nypl-text-field nypl-field-error&quot; id=&quot;email1&quot;&gt;
   &lt;label for=&quot;email-field&quot;&gt;Email
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
   &lt;input aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; id=&quot;email-field&quot; type=&quot;text&quot; placeholder=&quot;&quot; value=&quot;sally ride&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot;&gt;Email address must use the correct formatting. Ex: &lt;em&gt;prudence@example.org&lt;/em&gt;&lt;/span&gt;
+  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Email address must use the correct formatting. Ex: &lt;em&gt;prudence@example.org&lt;/em&gt;&lt;/span&gt;
 &lt;/div&gt;
+    </code></pre>
+    <pre><code class="js">
+$("#email1 #email-field").blur(function (e) {
+  var self = $(e.target)
+  var text = self.val()
+  var regex = /^[^@\s]+@[^@\s]+\.[^@\s]+/
+  if (!regex.test(text)) {
+    $("#email1").addClass("nypl-field-error")
+    $("#email1 .nypl-field-status").text("The Email address must use the correct formatting. Example: prudence@example.org. Try again.")
+  } else {
+    $("#email1").removeClass("nypl-field-error")
+    $("#email1 .nypl-field-status").text("")
+    self.attr("aria-invalid", "false")
+  }
+})
     </code></pre>
