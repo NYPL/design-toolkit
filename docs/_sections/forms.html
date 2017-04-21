@@ -39,7 +39,7 @@ description: Form fields and user input.
 &lt;/fieldset&gt;
     </code></pre>
 
-    <h3 id="textFields">Text fields</h3>
+    <h3 id="textFields">Text Fields</h3>
 
     <p>Text fields can include (but not <em>rely on</em>) a placeholder that provides additional information on the type of input it expects.</p>
 
@@ -61,7 +61,7 @@ description: Form fields and user input.
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="requiredFields">Required fields</h3>
+    <h3 id="requiredFields">Required Fields</h3>
 
     <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
 
@@ -105,7 +105,7 @@ $("#username1 #required-field").keyup(function (e) {
 })
     </code></pre>
 
-    <h3 id="dateFields">Date fields</h3>
+    <h3 id="dateFields">Date Fields</h3>
 
     <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
 
@@ -168,7 +168,7 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="selectBoxes">Select boxes</h3>
+    <h3 id="selectBoxes">Select Boxes</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -198,7 +198,7 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="alphaFilters">Alphabetical filters</h3>
+    <h3 id="alphaFilters">Alphabetical Filters</h3>
 
     <p>Not a form element per se but still used within search forms. This control should contain a <code>fieldset</code> and <code>legend</code> that wrap and label it respectively. This is a list of buttons that apply an alphabetical/number-type filter. Currently applied filter is disabled. The "Any" (or multi-character) selection has a <code>nypl-long</code> class.
     </p>
@@ -308,7 +308,7 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="searchableFieldsets">Searchable fields</h3>
+    <h3 id="searchableFieldsets">Searchable Fields</h3>
 
     <p>Searchable fields allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
 

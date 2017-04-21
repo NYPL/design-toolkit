@@ -3,7 +3,7 @@ title: Layout
 description: Grid system and layout.
 ---
 
-    <h3 id="mainHeader">Main header and footer</h3>
+    <h3 id="mainHeader">Main Header And Footer</h3>
 
     <p>Header and footer are separate applications that contain some of the styles in this toolkit and are not documented here. This documentation covers anything else within them:</p>
 
@@ -32,7 +32,7 @@ description: Grid system and layout.
 +-----------------------------------------------------+
     </code></pre>
 
-    <h3 id="contentWrapper">The content wrapper</h3>
+    <h3 id="contentWrapper">The Content Wrapper</h3>
 
     <p>The general page layout has some special margins and paddings for branding purposes. A <code>nypl-full-width-wrapper</code> class is provided to take care of this:</p>
 
@@ -42,13 +42,13 @@ description: Grid system and layout.
 
     <p>The <code>nypl-full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>nypl-full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>nypl-full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
 
-    <h3 id="pageHeader">Page header (and breadcrumbs)</h3>
+    <h3 id="pageHeader">Page Header (And Breadcrumbs)</h3>
 
     <p>Contains a <code>nypl-full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
 
     <p><strong>Note:</strong> Page header content <strong>is not</strong> the nested inside a <code>nypl-row</code> type element.</p>
 
-    <h4>Breadcrumbs</h4>
+    <h4 id="breadcrumbs">Breadcrumbs</h4>
 
     <p>Breadcrumbs are built with an ordered list (<code>ol</code> tag) of links up the information structure of the current page. The <strong>last item</strong> in the list <strong>does not</strong> have a link as it corresponds to the page the user is on. It is <strong>not necessary to add a “&gt;” character</strong>.</p>
 
@@ -84,7 +84,7 @@ description: Grid system and layout.
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="pageContent">Page content</h3>
+    <h3 id="pageContent">Page Content</h3>
 
     <p>Is wrapped by a <code>nypl-full-width-wrapper</code> element that takes care of the general page padding and centering (see above). Inside this wrapper is a row/column layout that contains <strong>the entirety</strong> of any given page's main contents.</p>
 
@@ -109,7 +109,7 @@ description: Grid system and layout.
 
     <p><strong>NOTE:</strong> avoid nesting rows inside columns as the system does not support it for the time being. It is preferred to use multiple rows if you require a more elaborate layout.</p>
 
-    <h3 id="fullWidth">Full width column</h3>
+    <h3 id="fullWidth">Full Width Column</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -131,7 +131,7 @@ description: Grid system and layout.
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="halfWidth">Half width columns</h3>
+    <h3 id="halfWidth">Half Width Columns</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -159,7 +159,7 @@ description: Grid system and layout.
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="quarterWidth">Quarter width columns</h3>
+    <h3 id="quarterWidth">Quarter Width Columns</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -199,7 +199,7 @@ description: Grid system and layout.
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="mixedColumns">One quarter / three quarters width columns</h3>
+    <h3 id="mixedColumns">One Quarter / Three Quarters Width Columns</h3>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -228,11 +228,11 @@ description: Grid system and layout.
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="offsets">Column offsets</h3>
+    <h3 id="offsets">Column Offsets</h3>
 
     <p>Use the <code>nypl-column-offset-one</code>, <code>nypl-column-offset-two</code>, and <code>nypl-column-offset-three</code> classes to <strong>push a column to the right</strong> a certain amount of columns.</p>
 
-    <p><strong>IMPORTANT:</strong> a row has to contain four columns including their offsets.</p>
+    <p><strong>Important:</strong> A row has to contain four columns including their offsets.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -253,15 +253,4 @@ description: Grid system and layout.
     &lt;p&gt;three offsetted&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-    </code></pre>
-
-    <div class="nypl-toolkit-example">
-      <span class="nypl-example-text">Example</span>
-
-    </div>
-    <pre><code class="scss">
-
-    </code></pre>
-    <pre><code class="html">
-
     </code></pre>
