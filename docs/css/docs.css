@@ -1993,22 +1993,13 @@ button:focus {
         background: linear-gradient(to right, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1)) 100%; }
     .nypl-searchable-field .nypl-facet-list input[type="radio"],
     .nypl-searchable-field .nypl-facet-list input[type="checkbox"] {
-      display: block;
-      height: 1.6rem;
-      float: left; }
+      display: inline-block; }
     .nypl-searchable-field .nypl-facet-list span {
-      display: block;
-      float: left;
-      padding: 0 0.5rem 0 0;
-      width: calc(100% - 4rem - 0.5rem); }
-      .nypl-searchable-field .nypl-facet-list span.nypl-collapsed {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap; }
-      .nypl-searchable-field .nypl-facet-list span.nypl-facet-count {
-        float: right;
-        text-align: right;
-        width: 2rem; }
+      color: #776e64;
+      display: inline-block;
+      float: right;
+      margin: 0 0.25rem 0 1rem;
+      text-align: right; }
   .nypl-searchable-field .nypl-link-button {
     margin: 0.5rem 0.5rem 0; }
   .nypl-searchable-field.nosearch .nypl-facet-search label {
@@ -2616,6 +2607,8 @@ button:focus {
     .nypl-results-pagination .page-count::after,
     .nypl-results-pagination a::after {
       clear: both; }
+  .nypl-results-pagination .page-count.first {
+    margin-left: 30%; }
   .nypl-results-pagination .page-count {
     text-align: center;
     width: 40%; }

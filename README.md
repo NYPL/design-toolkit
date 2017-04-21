@@ -18,6 +18,9 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.10
+- Various fixes including: #59, #61.
+
 ### v0.1.9
 - Added name field and docs.
 - Applying `1rem` value to inputs to avoid overrides.

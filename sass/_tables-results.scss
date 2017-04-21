@@ -99,6 +99,10 @@
     @include clearfix;
   }
 
+  .page-count.first {
+    margin-left: 30%;
+  }
+
   .page-count {
     text-align: center;
     width: 40%;
