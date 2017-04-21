@@ -20,7 +20,7 @@ function init() {
       $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
     } else {
       $("#username1").removeClass("nypl-field-error")
-      $("#username1 .nypl-field-status").text("Username must only contain letters and numbers.")
+      $("#username1 .nypl-field-status").text("")
     }
   })
   $("#email1 #email-field").blur(function (e) {
