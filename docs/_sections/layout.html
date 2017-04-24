@@ -36,8 +36,21 @@ description: Grid system and layout.
 
     <p>The general page layout has some special margins and paddings for branding purposes. A <code>nypl-full-width-wrapper</code> class is provided to take care of this:</p>
 
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-full-width-wrapper">
+  &lt;!-- rows and columns go here (you can't see a thing because wrapper has no border or background) --&gt;
+</div>
+    </div>
+
     <pre><code class="scss">
 .nypl-full-width-wrapper
+    </code></pre>
+
+    <pre><code class="html">
+&lt;div class=&quot;nypl-full-width-wrapper&quot;&gt;
+  &amp;lt;!-- rows and columns go here (you can't see a thing because wrapper has no border or background) --&amp;gt;
+&lt;/div&gt;
     </code></pre>
 
     <p>The <code>nypl-full-width-wrapper</code> is needed only twice: one for the page header, one for the page content. In the page header, the <code>nypl-full-width-wrapper</code> is <strong>nested inside</strong>. In the page content, the <code>nypl-full-width-wrapper</code> <strong>wraps the content</strong>. This is better explained below.</p>
