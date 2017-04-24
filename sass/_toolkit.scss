@@ -35,8 +35,9 @@
   @include results-button;
 }
 
-.nypl-request-button {
-  @include request-button;
+.nypl-request-button, // for background compatibility support
+.nypl-primary-button {
+  @include primary-button;
 }
 
 .nypl-service-button {
