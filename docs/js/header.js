@@ -12,7 +12,7 @@ function onSampleCodeClick (t) {
 
 function makeItSpin(who, input) {
   $(who).toggleClass("spinning");
-  if (input) $(input).attr("disabled", "true");
+  if (input) $(input).attr("disabled", "true").blur();
   setTimeout(function () {
     $(who).toggleClass("spinning")
     if (input) $(input).removeAttr("disabled");
