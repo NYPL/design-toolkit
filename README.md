@@ -22,6 +22,7 @@ See [LICENSE](LICENSE.md)
 - Crankin' it up to eleven!
 - Now with spinner fields! (#67)
 - Now with search results microformat. (#57)
+- Added green state to terms checkbox.
 - Fixed also issues: #62.
 
 ### v0.1.10
