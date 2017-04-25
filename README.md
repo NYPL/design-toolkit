@@ -18,6 +18,12 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.11
+- Crankin' it up to eleven!
+- Now with spinner fields! (#67)
+- Now with search results microformat. (#57)
+- Fixed also issues: #62.
+
 ### v0.1.10
 - Various fixes including: #59, #61.
 
