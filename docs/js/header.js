@@ -22,7 +22,7 @@ function makeItSpin(who, input) {
 function init() {
   $(".nypl-text-field.nypl-spinner-field input").change( function(e) {
     var self = $(e.target)
-    makeItSpin(self.parent())
+    makeItSpin(self.parent(), self)
   })
   $(".nypl-select-field.nypl-spinner-field select").change( function(e) {
     var self = $(e.target)
