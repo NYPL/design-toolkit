@@ -10,7 +10,40 @@ function onSampleCodeClick (t) {
   return s
 }
 
+function makeItSpin(who, input) {
+  $(who).toggleClass("spinning");
+  if (input) $(input).attr("disabled", "true");
+  setTimeout(function () {
+    $(who).toggleClass("spinning")
+    if (input) $(input).removeAttr("disabled");
+  }, 2000)
+}
+
 function init() {
+  $(".nypl-text-field.nypl-spinner-field input").change( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent(), self)
+  })
+  $(".nypl-select-field.nypl-spinner-field select").change( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent(), self)
+  })
+  $(".nypl-alphabetical-filter.nypl-spinner-field button").click( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent().parent())
+  })
+  $(".nypl-radiobutton-field.nypl-spinner-field fieldset").change( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent().parent().parent(), self.parent().parent())
+  })
+  $(".nypl-searchable-field.nypl-spinner-field #subject-text2").change( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent().parent())
+  })
+  $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent().parent().parent(), self.parent().parent())
+  })
   $("#username1 #required-field").keyup(function (e) {
     var self = $(e.target)
     var text = self.val()
