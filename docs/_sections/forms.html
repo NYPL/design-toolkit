@@ -496,9 +496,9 @@ $("#email1 #email-field").blur(function (e) {
 
     <p>Use these spinners when the interface being developed updates remotely (via AJAX calls or similar) instead of a regular page refresh to indicate the user that background processing is happening. This prevents user confusion and error.</p>
 
-    <p>The main field element (whether a div or fieldset) must include an additional <code>nypl-spinner-field</code> class. Once the user submits or makes changes in the field that produce a remote request, an additional <code>spinning</code> class should be activated so that an animation is displayed overlaying it and preventing any user input that indicates the user has to wait for server response.</p>
+    <p>The main field element (whether a div or fieldset) must include an additional <code>nypl-spinner-field</code> class. Once the user submits or makes changes in the field that produce a remote request, an additional <code>spinning</code> class should be activated so that an animation is displayed overlaying it.</p>
 
-    <p><strong>Important:</strong> The necessary precautions of disabling elements within the field should be taken into account.</p>
+    <p><strong>Important:</strong> While the overlay prevents some user input, the necessary precautions of disabling and/or blurring elements within the field should also be taken into account.</p>
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> This is a visual-only <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a> recommendation and should not be relied on as the only indicator of state.</p>
 
