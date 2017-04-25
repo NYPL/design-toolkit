@@ -57,8 +57,9 @@
   @include navigation-button;
 }
 
-.nypl-spinner-button {
-  @include spinner-button;
+.nypl-spinner-button,
+.nypl-spinner-field {
+  @include spinner-element;
 }
 
 .nypl-general-note {
