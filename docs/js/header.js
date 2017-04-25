@@ -11,6 +11,14 @@ function onSampleCodeClick (t) {
 }
 
 function init() {
+  $("#checkbox-optin").change(function(e){
+    var checked = e.target.checked
+    if (checked) {
+      $(".nypl-terms-checkbox").addClass("checked")
+    } else {
+      $(".nypl-terms-checkbox").removeClass("checked")
+    }
+  })
   $("#username1 #required-field").keyup(function (e) {
     var self = $(e.target)
     var text = self.val()

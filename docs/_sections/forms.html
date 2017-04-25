@@ -239,7 +239,7 @@ $('#date-of-birth').mask('00/00/0000');
 
     <h3 id="optInBox">Terms/Opt-in Checkboxes</h3>
 
-    <p>For situations where the user is requested to accept a terms of service or to opt-in to communications from the Library.</p>
+    <p>For situations where the user is requested to accept a terms of service or to opt-in to communications from the Library. When checked, a class of <code>checked</code> should be added to the main element.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
@@ -252,6 +252,7 @@ $('#date-of-birth').mask('00/00/0000');
 
     <pre><code class="scss">
 .nypl-terms-checkbox
+.checked
     </code></pre>
 
     <pre><code class="html">
@@ -260,6 +261,17 @@ $('#date-of-birth').mask('00/00/0000');
     &lt;input id=&quot;checkbox-optin&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt;Yes, I&#039;d like to receive e-communications about NYPL&#039;s programs, services, and initiatives.
   &lt;/label&gt;
 &lt;/div&gt;
+    </code></pre>
+
+    <pre><code class="js">
+$("#checkbox-optin").change(function(e){
+  var checked = e.target.checked
+  if (checked) {
+    $(".nypl-terms-checkbox").addClass("checked")
+  } else {
+    $(".nypl-terms-checkbox").removeClass("checked")
+  }
+})
     </code></pre>
 
     <h3 id="radioButtons">Radiobutton/Checkbox Groups</h3>

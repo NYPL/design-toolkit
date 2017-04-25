@@ -251,6 +251,10 @@ $form-padding: 0.5rem;
     height: initial;
     margin: 0 0.25rem 0 0;
   }
+
+  &.checked {
+    border-left-color: $nypl-green;
+  }
 }
 
 @mixin radiobutton-field {
