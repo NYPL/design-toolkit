@@ -524,6 +524,12 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
+.hidden {
+  display: none; }
+
+.centered {
+  text-align: center; }
+
 .nypl-icon {
   background-color: #fff;
   display: inline-block;
@@ -3807,11 +3813,5 @@ button:focus {
     outline: 0;
     overflow: visible;
     width: auto; }
-
-.hidden {
-  display: none; }
-
-.centered {
-  text-align: center; }
 
 /*# sourceMappingURL=example-search-styles.css.map */
