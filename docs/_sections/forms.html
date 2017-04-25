@@ -677,7 +677,7 @@ $("#email1 #email-field").blur(function (e) {
 // example jQuery-based activation code
 function makeItSpin(who, input) {
   $(who).toggleClass("spinning");
-  if (input) $(input).attr("disabled", "true");
+  if (input) $(input).attr("disabled", "true").blur();
   setTimeout(function () {
     $(who).toggleClass("spinning")
     if (input) $(input).removeAttr("disabled");
