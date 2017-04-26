@@ -2003,7 +2003,7 @@ button:focus {
     .nypl-searchable-field .nypl-facet-list input[type="radio"],
     .nypl-searchable-field .nypl-facet-list input[type="checkbox"] {
       display: inline-block; }
-    .nypl-searchable-field .nypl-facet-list span {
+    .nypl-searchable-field .nypl-facet-list .nypl-facet-count {
       color: #776e64;
       display: inline-block;
       float: right;
