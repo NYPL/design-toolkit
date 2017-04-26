@@ -20,6 +20,13 @@ function makeItSpin(who, input) {
 }
 
 function init() {
+  $("#checkbox-optin").change(function(e){
+    var checked = e.target.checked
+    if (checked) {
+      $(".nypl-terms-checkbox").addClass("checked")
+    } else {
+      $(".nypl-terms-checkbox").removeClass("checked")
+    }
   $(".nypl-text-field.nypl-spinner-field input").change( function(e) {
     var self = $(e.target)
     makeItSpin(self.parent(), self)
