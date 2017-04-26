@@ -27,6 +27,7 @@ function init() {
     } else {
       $(".nypl-terms-checkbox").removeClass("checked")
     }
+  })
   $(".nypl-text-field.nypl-spinner-field input").change( function(e) {
     var self = $(e.target)
     makeItSpin(self.parent(), self)
