@@ -23,7 +23,7 @@ See [LICENSE](LICENSE.md)
 - Now with spinner fields! (#67)
 - Now with search results microformat. (#57)
 - Added green state to terms checkbox.
-- Fixed also issues: #62.
+- Fixed more minor stuff and issue: #62.
 
 ### v0.1.10
 - Various fixes including: #59, #61.
