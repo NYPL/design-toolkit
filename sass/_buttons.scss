@@ -137,44 +137,6 @@
 }
 
 
-@mixin spinner-button {
-  $bar-color: transparentize($nypl-white, 0.5);
-
-  @keyframes spinner-right {
-    0% {
-      right: -50%;
-    }
-
-    100% {
-      right: -10%;
-    }
-  }
-
-  overflow: hidden;
-  position: relative;
-
-  &.spinning {
-    &::after {
-      animation: spinner-right 1.5s linear infinite;
-      background: -moz-repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
-      background: repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
-      content: "";
-      display: block;
-      height: 200%;
-      margin-top: -30%;
-      position: absolute;
-      right: -50%;
-      top: 50%;
-      transform: skewX(-30deg);
-      width: 200%;
-    }
-
-    &:enabled:hover::after {
-      background-color: transparentize($nypl-gray, 0.25);
-    }
-  }
-}
-
 @mixin results-button {
   @include basic-button ($text-color: $nypl-blue, $border-color: $nypl-blue, $background-color: $nypl-white, $hover-text-color: $nypl-white, $hover-background-color: $nypl-blue, $border-radius: 0.25rem);
   margin: 0.5rem 0;

@@ -503,3 +503,222 @@ $("#email1 #email-field").blur(function (e) {
   }
 })
     </code></pre>
+
+    <h3 id="fieldsSpinners">Fields With Spinners</h3>
+
+    <p>Use these spinners when the interface being developed updates remotely (via AJAX calls or similar) instead of a regular page refresh to indicate the user that background processing is happening. This prevents user confusion and error.</p>
+
+    <p>The main field element (whether a div or fieldset) must include an additional <code>nypl-spinner-field</code> class. Once the user submits or makes changes in the field that produce a remote request, an additional <code>spinning</code> class should be activated so that an animation is displayed overlaying it.</p>
+
+    <p><strong>Important:</strong> While the overlay prevents some user input, the necessary precautions of disabling and/or blurring elements within the field should also be taken into account.</p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> This is a visual-only <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a> recommendation and should not be relied on as the only indicator of state.</p>
+
+  <div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+
+<div class="nypl-text-field nypl-spinner-field">
+  <label for="keyword-text2">Title or description</label>
+  <input id="keyword-text2" type="text" placeholder="Enter keywords" />
+</div>
+
+
+<div class="nypl-select-field nypl-spinner-field">
+  <label for="topics2">Topics</label>
+  <select id="topics2" name="topics">
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="…">…</option>
+  </select>
+</div>
+
+<div class="nypl-alphabetical-filter nypl-spinner-field">
+  <fieldset>
+    <legend>Name starts with</legend>
+    <button name="az-filter" disabled="true" class="nypl-long">Any</button>
+    <button name="az-filter" title="Show only resources with name starting with a number">#</button>
+    <button name="az-filter" title="Show only resources with name starting with A">A</button>
+    <button name="az-filter" title="Show only resources with name starting with B">B</button>
+    <button name="az-filter" title="Show only resources with name starting with C">C</button>
+    <button name="az-filter" title="Show only resources with name starting with …">…</button>
+  </fieldset>
+</div>
+
+
+<div class="nypl-radiobutton-field nypl-spinner-field">
+  <fieldset>
+    <legend id="radiobutton-group2">Accessible from</legend>
+    <label id="radiobutton-group2_every" for="available-every2">
+      <input aria-labelledby="radiobutton-group2 radiobutton-group2_every" id="available-every2" type="radio" name="available2" value="any" />Anywhere
+    </label>
+    <label id="radiobutton-group2_home" for="available-home2">
+      <input aria-labelledby="radiobutton-group2 radiobutton-group2_home" id="available-home2" type="radio" name="available2" value="home" />Home with a library card
+    </label>
+    <label id="radiobutton-group2_library" for="available-library2">
+      <input aria-labelledby="radiobutton-group2 radiobutton-group2_library" id="available-library2" type="radio" name="available2" value="library" />A library branch
+    </label>
+  </fieldset>
+</div>
+
+
+<div class="nypl-searchable-field nypl-spinner-field">
+  <div class="nypl-facet-search">
+    <label id="searchable2" for="subject-text2">Subject</label>
+    <input id="subject-text2" type="text" placeholder="Search Subjects" />
+  </div>
+  <fieldset class="nypl-facet-list">
+    <label id="subject_poems2" for="subject-poems2">
+      <input aria-labelledby="searchable2 subject_poems2" id="subject-poems2" type="checkbox" name="subject2" value="poems" checked="checked" />
+      Poems
+    </label>
+    <label id="subject_ejournals2" for="subject-ejournals2" class="nypl-bar_43">
+      <input aria-labelledby="searchable2 subject_ejournals2" id="subject-ejournals2" type="checkbox" name="subject2" value="ejournals" />
+      <span class="nypl-facet-count">1,334,741</span>
+      Electronic journals
+    </label>
+    <label id="subject_home2" for="subject-home2" class="nypl-bar_21">
+      <input aria-labelledby="searchable2 subject_home2" id="subject-home2" type="checkbox" name="subject2" value="home" />
+      <span class="nypl-facet-count">236</span>
+      Electronic books
+    </label>
+    <label id="subject_piano2" for="subject-piano2" class="nypl-bar_18">
+      <input aria-labelledby="searchable2 subject_piano2" id="subject-piano2" type="checkbox" name="subject2" value="piano" />
+      <span class="nypl-facet-count">198</span>
+      Piano music
+    </label>
+    <label id="subject_opera2" for="subject-opera2" class="nypl-bar_11">
+      <input aria-labelledby="searchable2 subject_opera2" id="subject-opera2" type="checkbox" name="subject2" value="opera" />
+      <span class="nypl-facet-count">122</span>
+      Operas
+    </label>
+  </fieldset>
+  <button class="nypl-link-button">Show 10 more</button>
+</div>
+
+  </div>
+
+  <pre><code class="scss">
+.nypl-spinner-field
+.spinning
+  </code></pre>
+
+  <pre><code class="html">
+&lt;div class=&quot;nypl-text-field nypl-spinner-field&quot;&gt;
+  &lt;label for=&quot;keyword-text2&quot;&gt;Title or description&lt;/label&gt;
+  &lt;input id=&quot;keyword-text2&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;nypl-select-field nypl-spinner-field&quot;&gt;
+  &lt;label for=&quot;topics2&quot;&gt;Topics&lt;/label&gt;
+  &lt;select id=&quot;topics2&quot; name=&quot;topics&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+    &lt;option value=&quot;&hellip;&quot;&gt;&hellip;&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;nypl-alphabetical-filter nypl-spinner-field&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Name starts with&lt;/legend&gt;
+    &lt;button name=&quot;az-filter&quot; disabled=&quot;true&quot; class=&quot;nypl-long&quot;&gt;Any&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with a number&quot;&gt;#&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with A&quot;&gt;A&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with B&quot;&gt;B&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with C&quot;&gt;C&lt;/button&gt;
+    &lt;button name=&quot;az-filter&quot; title=&quot;Show only resources with name starting with &hellip;&quot;&gt;&hellip;&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;nypl-radiobutton-field nypl-spinner-field&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend id=&quot;radiobutton-group2&quot;&gt;Accessible from&lt;/legend&gt;
+    &lt;label id=&quot;radiobutton-group2_every&quot; for=&quot;available-every2&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_every&quot; id=&quot;available-every2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;any&quot; /&gt;Anywhere
+    &lt;/label&gt;
+    &lt;label id=&quot;radiobutton-group2_home&quot; for=&quot;available-home2&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_home&quot; id=&quot;available-home2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;home&quot; /&gt;Home with a library card
+    &lt;/label&gt;
+    &lt;label id=&quot;radiobutton-group2_library&quot; for=&quot;available-library2&quot;&gt;
+      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_library&quot; id=&quot;available-library2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;library&quot; /&gt;A library branch
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;nypl-searchable-field nypl-spinner-field&quot;&gt;
+  &lt;div class=&quot;nypl-facet-search&quot;&gt;
+    &lt;label id=&quot;searchable2&quot; for=&quot;subject-text2&quot;&gt;Subject&lt;/label&gt;
+    &lt;input id=&quot;subject-text2&quot; type=&quot;text&quot; placeholder=&quot;Search Subjects&quot; /&gt;
+  &lt;/div&gt;
+  &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
+    &lt;label id=&quot;subject_poems2&quot; for=&quot;subject-poems2&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable2 subject_poems2&quot; id=&quot;subject-poems2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;poems&quot; checked=&quot;checked&quot; /&gt;
+      Poems
+    &lt;/label&gt;
+    &lt;label id=&quot;subject_ejournals2&quot; for=&quot;subject-ejournals2&quot; class=&quot;nypl-bar_43&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable2 subject_ejournals2&quot; id=&quot;subject-ejournals2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;ejournals&quot; /&gt;
+      &lt;span class=&quot;nypl-facet-count&quot;&gt;1,334,741&lt;/span&gt;
+      Electronic journals
+    &lt;/label&gt;
+    &lt;label id=&quot;subject_home2&quot; for=&quot;subject-home2&quot; class=&quot;nypl-bar_21&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable2 subject_home2&quot; id=&quot;subject-home2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;home&quot; /&gt;
+      &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
+      Electronic books
+    &lt;/label&gt;
+    &lt;label id=&quot;subject_piano2&quot; for=&quot;subject-piano2&quot; class=&quot;nypl-bar_18&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable2 subject_piano2&quot; id=&quot;subject-piano2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;piano&quot; /&gt;
+      &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
+      Piano music
+    &lt;/label&gt;
+    &lt;label id=&quot;subject_opera2&quot; for=&quot;subject-opera2&quot; class=&quot;nypl-bar_11&quot;&gt;
+      &lt;input aria-labelledby=&quot;searchable2 subject_opera2&quot; id=&quot;subject-opera2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;opera&quot; /&gt;
+      &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
+      Operas
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
+&lt;/div&gt;
+
+  </code></pre>
+
+  <pre><code class="js">
+// example jQuery-based activation code
+function makeItSpin(who, input) {
+  $(who).toggleClass("spinning");
+  if (input) $(input).attr("disabled", "true").blur();
+  setTimeout(function () {
+    $(who).toggleClass("spinning")
+    if (input) $(input).removeAttr("disabled");
+  }, 2000)
+}
+
+$(".nypl-text-field.nypl-spinner-field input").change( function(e) {
+  var self = $(e.target)
+  makeItSpin(self.parent())
+})
+$(".nypl-select-field.nypl-spinner-field select").change( function(e) {
+  var self = $(e.target)
+  makeItSpin(self.parent(), self)
+})
+$(".nypl-alphabetical-filter.nypl-spinner-field button").click( function(e) {
+  var self = $(e.target)
+  makeItSpin(self.parent().parent())
+})
+$(".nypl-radiobutton-field.nypl-spinner-field fieldset").change( function(e) {
+  var self = $(e.target)
+  makeItSpin(self.parent().parent().parent(), self.parent().parent())
+})
+$(".nypl-searchable-field.nypl-spinner-field #subject-text2").change( function(e) {
+  var self = $(e.target)
+  makeItSpin(self.parent().parent())
+})
+$(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
+  var self = $(e.target)
+  makeItSpin(self.parent().parent().parent(), self.parent().parent())
+})
+
+  </code></pre>

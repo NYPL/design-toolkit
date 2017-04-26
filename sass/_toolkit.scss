@@ -15,6 +15,14 @@
 @import "tables-results";
 @import "buttons";
 
+.hidden { // hacky
+  display: none;
+}
+
+.centered { // also hacky
+  text-align: center;
+}
+
 .nypl-icon {
   @include nypl-icon;
 }
@@ -57,8 +65,9 @@
   @include navigation-button;
 }
 
-.nypl-spinner-button {
-  @include spinner-button;
+.nypl-spinner-button,
+.nypl-spinner-field {
+  @include spinner-element;
 }
 
 .nypl-general-note {
