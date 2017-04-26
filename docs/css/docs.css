@@ -643,7 +643,8 @@ button:focus {
     line-height: 1;
     margin-right: 0.25rem; }
 
-.nypl-request-button {
+.nypl-request-button,
+.nypl-primary-button {
   background-color: #1b7fa7;
   border: 0.125rem solid #1b7fa7;
   border-radius: 0.25rem;
@@ -660,26 +661,43 @@ button:focus {
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .nypl-request-button:link, .nypl-request-button:visited {
+  .nypl-request-button:link, .nypl-request-button:visited,
+  .nypl-primary-button:link,
+  .nypl-primary-button:visited {
     color: #fff; }
-  .nypl-request-button:hover, .nypl-request-button:hover:visited, .nypl-request-button.active {
+  .nypl-request-button:hover, .nypl-request-button:hover:visited, .nypl-request-button.active,
+  .nypl-primary-button:hover,
+  .nypl-primary-button:hover:visited,
+  .nypl-primary-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
-  .nypl-request-button:focus {
+  .nypl-request-button:focus,
+  .nypl-primary-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-request-button.disabled, .nypl-request-button[disabled="disabled"], .nypl-request-button[disabled="true"], .nypl-request-button[disabled], .nypl-request-button[disabled=true] {
+  .nypl-request-button.disabled, .nypl-request-button[disabled="disabled"], .nypl-request-button[disabled="true"], .nypl-request-button[disabled], .nypl-request-button[disabled=true],
+  .nypl-primary-button.disabled,
+  .nypl-primary-button[disabled="disabled"],
+  .nypl-primary-button[disabled="true"],
+  .nypl-primary-button[disabled],
+  .nypl-primary-button[disabled=true] {
     background-color: #d7d4d0;
     border-color: #fff;
     cursor: default; }
-    .nypl-request-button.disabled:hover, .nypl-request-button[disabled="disabled"]:hover, .nypl-request-button[disabled="true"]:hover, .nypl-request-button[disabled]:hover, .nypl-request-button[disabled=true]:hover {
+    .nypl-request-button.disabled:hover, .nypl-request-button[disabled="disabled"]:hover, .nypl-request-button[disabled="true"]:hover, .nypl-request-button[disabled]:hover, .nypl-request-button[disabled=true]:hover,
+    .nypl-primary-button.disabled:hover,
+    .nypl-primary-button[disabled="disabled"]:hover,
+    .nypl-primary-button[disabled="true"]:hover,
+    .nypl-primary-button[disabled]:hover,
+    .nypl-primary-button[disabled=true]:hover {
       background-color: #d7d4d0;
       border-color: #fff;
       color: #fff; }
-  .nypl-request-button:hover {
+  .nypl-request-button:hover,
+  .nypl-primary-button:hover {
     background: #fff;
     border-color: #1b7fa7;
     color: #1b7fa7; }
