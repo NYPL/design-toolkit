@@ -112,12 +112,12 @@ function init() {
     document.location = "#step-3";
   })
   $("#prev-2").click(function (e) {
-    console.log("1");
+    // console.log("1");
     $("#step-1").show();
     $("#step-2").hide();
   })
   $("#prev-3").click(function (e) {
-    console.log("2");
+    // console.log("2");
     $("#step-2").show();
     $("#step-3").hide();
   })
@@ -185,7 +185,7 @@ function init() {
 
   $(".select-box").on("change", function(e) {
     var id = $(e.target).attr("id");
-    console.log(id);
+    // console.log(id);
     var buttonid = "btn-apply_" + id;
     $("#"+buttonid).remove();
     if (id == "date") {
@@ -269,7 +269,7 @@ function init() {
 
   $("input[name=available]").change(function() {
     var value = $("input[name=available]:checked").val()
-    console.log("hi");
+    // console.log("hi");
     if (value == "library") {
       $(".nypl-select-field.location").fadeIn(200)
     } else {
@@ -294,7 +294,7 @@ function toggleSort(e) {
   var parent = self.parent()
   var selected = 0
   var item_count = parent.find("li").length
-  console.log(item_count)
+  // console.log(item_count)
   self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   parent.find("ul").toggleClass("hidden")
   if (self.attr("aria-expanded") == "true") {
