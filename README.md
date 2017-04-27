@@ -18,6 +18,13 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.11
+- Crankin' it up to eleven!
+- Now with spinner fields! (#67)
+- Now with search results microformat. (#57)
+- Added green state to terms checkbox.
+- Fixed more minor stuff and issue #62 and also PRs: #64 #68 #69 #70 #71 #72 #73 #77 (and moar).
+
 ### v0.1.10
 - Various fixes including: #59, #61.
 
