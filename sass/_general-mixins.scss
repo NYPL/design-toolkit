@@ -48,7 +48,7 @@ $bullet-size: 0.5rem;
   $collapsing-time: 0.5s;
   $max-height: 40rem; // 640
 
-  @include transition(all, $collapsing-time, ease-in);
+  @include transition(all, $collapsing-time, ease-out);
 
   max-height: $max-height;
   overflow: hidden;
