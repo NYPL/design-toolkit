@@ -553,8 +553,14 @@ button:focus {
     fill: #fff; }
 
 .nypl-collapsible {
-  max-height: auto;
-  overflow: hidden; }
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
+  max-height: 40rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
   .nypl-collapsible.collapsed {
     max-height: 0; }
 
@@ -1803,51 +1809,53 @@ button:focus {
       .nypl-searchable-field button.nypl-facet-toggle .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-  .nypl-searchable-field .nypl-facet-search label {
-    background-color: transparent;
-    color: #080807;
-    display: block;
-    font-weight: bold;
-    position: absolute; }
-  .nypl-searchable-field .nypl-facet-search input[type=text],
-  .nypl-searchable-field .nypl-facet-search input[type=email],
-  .nypl-searchable-field .nypl-facet-search input[type=number] {
-    background-color: #efedeb;
-    border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
-    font-size: 1rem;
-    padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
-    text-indent: 0.5rem;
-    transition: all 0.2s ease-out;
-    width: 100%; }
-    .nypl-searchable-field .nypl-facet-search input[type=text].active,
-    .nypl-searchable-field .nypl-facet-search input[type=email].active,
-    .nypl-searchable-field .nypl-facet-search input[type=number].active {
-      width: 16rem; }
-    .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
-    .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
-    .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
-      background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+  .nypl-searchable-field .nypl-facet-search {
+    position: relative; }
+    .nypl-searchable-field .nypl-facet-search label {
+      background-color: transparent;
       color: #080807;
-      outline: none; }
-  .nypl-searchable-field .nypl-facet-search .nypl-field-status {
-    background-color: #fff;
-    color: #776e64;
-    display: block;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    padding-left: 0.5rem; }
-  .nypl-searchable-field .nypl-facet-search label {
-    font-weight: normal; }
+      display: block;
+      font-weight: bold;
+      position: absolute; }
+    .nypl-searchable-field .nypl-facet-search input[type=text],
+    .nypl-searchable-field .nypl-facet-search input[type=email],
+    .nypl-searchable-field .nypl-facet-search input[type=number] {
+      background-color: #efedeb;
+      border: 0;
+      border-radius: 0.2rem 0.2rem 0 0;
+      font-size: 1rem;
+      padding: 0;
+      -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+      -moz-box-shadow: inset 0 0 0 2px #efedeb;
+      box-shadow: inset 0 0 0 2px #efedeb;
+      border-bottom: 0.125rem solid #080807;
+      height: 2rem;
+      padding: 1.5rem 0 0;
+      text-indent: 0.5rem;
+      transition: all 0.2s ease-out;
+      width: 100%; }
+      .nypl-searchable-field .nypl-facet-search input[type=text].active,
+      .nypl-searchable-field .nypl-facet-search input[type=email].active,
+      .nypl-searchable-field .nypl-facet-search input[type=number].active {
+        width: 16rem; }
+      .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
+      .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
+      .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
+        background-color: #fff;
+        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+        box-shadow: inset 0 0 0 4px #ffb81d;
+        color: #080807;
+        outline: none; }
+    .nypl-searchable-field .nypl-facet-search .nypl-field-status {
+      background-color: #fff;
+      color: #776e64;
+      display: block;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      padding-left: 0.5rem; }
+    .nypl-searchable-field .nypl-facet-search label {
+      font-weight: normal; }
   .nypl-searchable-field .nypl-facet-list {
     width: 100%; }
     .nypl-searchable-field .nypl-facet-list label {
@@ -2073,9 +2081,6 @@ button:focus {
     margin: 0.5rem 0.5rem 0; }
   .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
     transform: rotate(0deg); }
-  .nypl-searchable-field.collapsed .nypl-facet-search label {
-    height: 0;
-    overflow: hidden; }
   .nypl-searchable-field.nosearch .nypl-facet-search {
     display: none; }
 

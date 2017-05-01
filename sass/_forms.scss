@@ -362,6 +362,7 @@ $form-padding: 0.5rem;
 
   .nypl-facet-search {
     @include text-field-with-label;
+    position: relative;
 
     label {
       font-weight: normal;
@@ -406,12 +407,6 @@ $form-padding: 0.5rem;
   &.collapsed {
     .nypl-facet-toggle .nypl-icon {
       transform: rotate(0deg);
-    }
-
-    .nypl-facet-search label {
-      // hack but prevents abs positioned label from showing up
-      height: 0;
-      overflow: hidden;
     }
   }
 

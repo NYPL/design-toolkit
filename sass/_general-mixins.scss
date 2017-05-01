@@ -45,8 +45,15 @@ $bullet-size: 0.5rem;
 }
 
 @mixin collapsible {
-  max-height: auto;
+  $collapsing-time: 0.5s;
+  $max-height: 40rem; // 640
+
+  @include transition(all, $collapsing-time, ease-in);
+
+  max-height: $max-height;
   overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   &.collapsed {
     max-height: 0;
