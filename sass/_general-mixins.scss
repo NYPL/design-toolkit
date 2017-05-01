@@ -44,6 +44,15 @@ $bullet-size: 0.5rem;
   }
 }
 
+@mixin collapsible {
+  max-height: auto;
+  overflow: hidden;
+
+  &.collapsed {
+    max-height: 0;
+  }
+}
+
 @mixin spinner-element {
   $bar-color: transparentize($nypl-white, 0.5);
   $spinner-time: 1.5s;

@@ -335,8 +335,37 @@ $form-padding: 0.5rem;
   @include simple-radiobutton;
   padding-bottom: $form-padding;
 
+  button.nypl-facet-toggle {
+    background-color: $nypl-search-color-dark;
+    border: 0;
+    border-radius: $general-border-radius $general-border-radius 0 0;
+    color: $page-background-color;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.25rem;
+    padding-right: 1.5rem;
+    padding-top: 0.25rem;
+    text-align: left;
+    width: 100%;
+
+    .nypl-icon {
+      @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
+      @include transition(all, $hover-time, ease-in);
+      position: absolute;
+      right: 0.5rem;
+      top: 0.65rem;
+      transform: rotate(180deg);
+    }
+  }
+
   .nypl-facet-search {
     @include text-field-with-label;
+
+    label {
+      font-weight: normal;
+    }
   }
 
   .nypl-facet-list {
@@ -374,17 +403,23 @@ $form-padding: 0.5rem;
     margin: $form-padding $form-padding 0;
   }
 
+  &.collapsed {
+    .nypl-facet-toggle .nypl-icon {
+      transform: rotate(0deg);
+    }
+
+    .nypl-facet-search label {
+      // hack but prevents abs positioned label from showing up
+      height: 0;
+      overflow: hidden;
+    }
+  }
+
   &.nosearch {
     // when there are too few items to make search worthwhile
 
     .nypl-facet-search {
-      label {
-        position: relative;
-      }
-
-      input {
-        display: none;
-      }
+      display: none;
     }
 
   }

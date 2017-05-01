@@ -31,6 +31,10 @@
   @include nypl-icon($height: $logo-height, $width: $logo-width, $background-color: transparent);
 }
 
+.nypl-collapsible {
+  @include collapsible;
+}
+
 .nypl-link-button {
   @include link-button;
 }

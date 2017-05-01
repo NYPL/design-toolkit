@@ -20,6 +20,9 @@ function makeItSpin(who, input) {
 }
 
 function init() {
+  $("button.nypl-facet-toggle").click(function (e) {
+    toggleFacet(e)
+  })
   $("#checkbox-optin").change(function(e){
     var checked = e.target.checked
     if (checked) {
@@ -341,6 +344,17 @@ function toggleSort(e) {
 function hideSort() {
   $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", false)
   $(".nypl-results-sorter ul").addClass("hidden")
+}
+
+function toggleFacet(e) {
+  var button = $(e.target)
+  var facet = button.parent()
+  var collapsible = facet.find(".nypl-collapsible")
+  button.attr("aria-expanded", button.attr("aria-expanded") == "false" ? "true" : "false")
+  facet.attr("aria-expanded", facet.attr("aria-expanded") == "false" ? "true" : "false")
+  collapsible.attr("aria-expanded", collapsible.attr("aria-expanded") == "false" ? "true" : "false")
+  facet.toggleClass("collapsed")
+  collapsible.toggleClass("collapsed")
 }
 
 function toggleLogin() {

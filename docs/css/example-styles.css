@@ -552,6 +552,12 @@ button:focus {
     background-color: inherit;
     fill: #fff; }
 
+.nypl-collapsible {
+  max-height: auto;
+  overflow: hidden; }
+  .nypl-collapsible.collapsed {
+    max-height: 0; }
+
 .nypl-link-button {
   background: none;
   border: 0;
@@ -1765,6 +1771,38 @@ button:focus {
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
     margin: 0 0.25rem 0 0; }
+  .nypl-searchable-field button.nypl-facet-toggle {
+    background-color: #776e64;
+    border: 0;
+    border-radius: 0.2rem 0.2rem 0 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.25rem;
+    padding-right: 1.5rem;
+    padding-top: 0.25rem;
+    text-align: left;
+    width: 100%; }
+    .nypl-searchable-field button.nypl-facet-toggle .nypl-icon {
+      background-color: #776e64;
+      display: inline-block;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      position: absolute;
+      right: 0.5rem;
+      top: 0.65rem;
+      transform: rotate(180deg); }
+      .nypl-searchable-field button.nypl-facet-toggle .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
   .nypl-searchable-field .nypl-facet-search label {
     background-color: transparent;
     color: #080807;
@@ -1808,6 +1846,8 @@ button:focus {
     font-size: 0.8rem;
     line-height: 1.5;
     padding-left: 0.5rem; }
+  .nypl-searchable-field .nypl-facet-search label {
+    font-weight: normal; }
   .nypl-searchable-field .nypl-facet-list {
     width: 100%; }
     .nypl-searchable-field .nypl-facet-list label {
@@ -2031,9 +2071,12 @@ button:focus {
       text-align: right; }
   .nypl-searchable-field .nypl-link-button {
     margin: 0.5rem 0.5rem 0; }
-  .nypl-searchable-field.nosearch .nypl-facet-search label {
-    position: relative; }
-  .nypl-searchable-field.nosearch .nypl-facet-search input {
+  .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
+    transform: rotate(0deg); }
+  .nypl-searchable-field.collapsed .nypl-facet-search label {
+    height: 0;
+    overflow: hidden; }
+  .nypl-searchable-field.nosearch .nypl-facet-search {
     display: none; }
 
 .nypl-alphabetical-filter {
