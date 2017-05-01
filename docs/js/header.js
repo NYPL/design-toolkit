@@ -49,11 +49,11 @@ function init() {
   })
   $(".nypl-searchable-field.nypl-spinner-field #subject-text2").change( function(e) {
     var self = $(e.target)
-    makeItSpin(self.parent().parent())
+    makeItSpin(self.parent().parent().parent())
   })
   $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
     var self = $(e.target)
-    makeItSpin(self.parent().parent().parent(), self.parent().parent())
+    makeItSpin(self.parent().parent().parent().parent(), self.parent().parent().parent())
   })
   $("#username1 #required-field").keyup(function (e) {
     var self = $(e.target)
@@ -86,6 +86,10 @@ function init() {
     self.toggleClass("spinning");
     self.blur();
     self.attr("disabled", "true");
+    setTimeout(function () {
+      self.toggleClass("spinning")
+      self.removeAttr("disabled");
+    }, 2000)
   })
   $(".nypl-mobile-refine button").click(function(e){
     e.preventDefault();

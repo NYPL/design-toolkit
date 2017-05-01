@@ -55,6 +55,10 @@ $(".nypl-spinner-button").on("click touchend", function(e) {
   self.toggleClass("spinning");
   self.blur();
   self.attr("disabled", "true");
+  setTimeout(function () {
+    self.toggleClass("spinning")
+    self.removeAttr("disabled");
+  }, 2000)
 })
   </code></pre>
 
