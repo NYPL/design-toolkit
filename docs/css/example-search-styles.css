@@ -1787,6 +1787,7 @@ button:focus {
     font-weight: bold;
     position: relative;
     padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
     padding-right: 1.5rem;
     padding-top: 0.25rem;
     text-align: left;
