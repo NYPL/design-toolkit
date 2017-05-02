@@ -18,6 +18,11 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.12
+- Searchable facets now collapsible (#75)
+- Omni search spinner example added.
+- Added design of discovery homepage.
+
 ### v0.1.11
 - Crankin' it up to eleven!
 - Now with spinner fields! (#67)
