@@ -54,33 +54,29 @@
     margin-right: 0.5rem;
   }
 
-  .nypl-facet button {
-    // the button inside a facet
-    @include basic-button($text-color: $nypl-gray, $background-color: $page-background-color, $hover-text-color: $link-color, $hover-background-color: $page-background-color, $height: 1em, $border-width: 0);
+  .nypl-facet {
+    background-color: $nypl-light-gray;
+    border-radius: $general-border-radius 2rem 2rem $general-border-radius;
     display: inline-block;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 0.5rem;
+    margin-bottom: 0.25rem;
+    padding: 0 0.25rem 0 0.5rem;
 
-    span {
-      @include screenreader-only;
+    button {
+      // the button inside a facet
+      @include basic-button($border-radius: 2rem, $padding-vertical: 0, $padding-horizontal: 0);
+      margin: 0.25rem 0 0.25rem 0.25rem;
+
+      span {
+        @include screenreader-only;
+      }
+
+      &::before {
+        content: "×";
+        display: block;
+        line-height: 0;
+        margin: 0.6rem 0.35rem 0.7rem;
+      }
     }
-
-    &::before {
-      content: "×";
-      display: inline-block;
-      vertical-align: super;
-    }
-  }
-
-  button {
-    // the reset button
-    @include basic-button($height: 2em);
-    clear: both;
-    display: block;
-    margin: 0.5rem 0 0;
   }
 }
 
