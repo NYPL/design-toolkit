@@ -5,6 +5,35 @@
   padding: 0.8rem 0;
 }
 
+@mixin lead {
+  font-size: 2rem;
+}
+
+@mixin basic-list {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+@mixin bar-list {
+  @include basic-list;
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  li {
+    span.count {
+      color: $nypl-gray;
+      display: inline-block;
+      float: right;
+    }
+  }
+}
+
 @mixin secondary-title {
   font-size: 1.2rem;
   font-weight: bold;

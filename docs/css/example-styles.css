@@ -429,8 +429,8 @@ h4,
 h5,
 h6,
 p {
-  line-height: 1.5;
-  margin-bottom: 0;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
   margin-top: 1.5rem; }
 
 h1 {
@@ -438,7 +438,8 @@ h1 {
   line-height: 1; }
 
 h2 {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 1.1; }
 
 h3 {
   font-size: 1.4rem; }
@@ -551,6 +552,27 @@ button:focus {
   .nypl-logo-rev.reversed {
     background-color: inherit;
     fill: #fff; }
+
+.nypl-lead {
+  font-size: 2rem; }
+
+.nypl-basic-list {
+  list-style-type: none; }
+  .nypl-basic-list li {
+    margin-bottom: 0.5rem;
+    margin-left: 0; }
+
+.nypl-bar-list {
+  list-style-type: none; }
+  .nypl-bar-list li {
+    margin-bottom: 0.5rem;
+    margin-left: 0; }
+  .nypl-bar-list h2 {
+    font-size: 1.4rem; }
+  .nypl-bar-list li span.count {
+    color: #776e64;
+    display: inline-block;
+    float: right; }
 
 .nypl-link-button {
   background: none;
