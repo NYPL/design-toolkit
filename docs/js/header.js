@@ -19,14 +19,14 @@ function makeItSpin(who, input) {
   }, 2000)
 }
 
-function init() {
-  $("#checkbox-optin").change(function(e){
-    var checked = e.target.checked
-    if (checked) {
-      $(".nypl-terms-checkbox").addClass("checked")
-    } else {
-      $(".nypl-terms-checkbox").removeClass("checked")
-    }
+function initSpinners() {
+  $(".nypl-omnisearch.nypl-spinner-field #nypl-omni-button1").click( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent(), self)
+  })
+  $(".nypl-omnisearch.nypl-spinner-field input[type=text]").change( function(e) {
+    var self = $(e.target)
+    makeItSpin(self.parent(), self)
   })
   $(".nypl-text-field.nypl-spinner-field input").change( function(e) {
     var self = $(e.target)
@@ -51,6 +51,18 @@ function init() {
   $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
     var self = $(e.target)
     makeItSpin(self.parent().parent().parent(), self.parent().parent())
+  })
+}
+
+function init() {
+  initSpinners()
+  $("#checkbox-optin").change(function(e){
+    var checked = e.target.checked
+    if (checked) {
+      $(".nypl-terms-checkbox").addClass("checked")
+    } else {
+      $(".nypl-terms-checkbox").removeClass("checked")
+    }
   })
   $("#username1 #required-field").keyup(function (e) {
     var self = $(e.target)

@@ -517,6 +517,15 @@ $("#email1 #email-field").blur(function (e) {
   <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
 
+<fieldset class="nypl-omnisearch nypl-spinner-field">
+  <input type="submit" id="nypl-omni-button1" value="Search">
+  <span class="nypl-omni-fields">
+    <label for="search-by-field1">Search in</label>
+    <select id="search-by-field1"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
+  </span>
+  <input type="text" aria-labelledby="nypl-omni-button1" value="" />
+</fieldset>
+
 <div class="nypl-text-field nypl-spinner-field">
   <label for="keyword-text2">Title or description</label>
   <input id="keyword-text2" type="text" placeholder="Enter keywords" />
@@ -607,6 +616,15 @@ $("#email1 #email-field").blur(function (e) {
   </code></pre>
 
   <pre><code class="html">
+&lt;fieldset class=&quot;nypl-omnisearch nypl-spinner-field&quot;&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button1&quot; value=&quot;Search&quot;&gt;
+  &lt;span class=&quot;nypl-omni-fields&quot;&gt;
+    &lt;label for=&quot;search-by-field1&quot;&gt;Search in&lt;/label&gt;
+    &lt;select id=&quot;search-by-field1&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
+  &lt;/span&gt;
+  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button1&quot; value=&quot;&quot; /&gt;
+&lt;/fieldset&gt;
+
 &lt;div class=&quot;nypl-text-field nypl-spinner-field&quot;&gt;
   &lt;label for=&quot;keyword-text2&quot;&gt;Title or description&lt;/label&gt;
   &lt;input id=&quot;keyword-text2&quot; type=&quot;text&quot; placeholder=&quot;Enter keywords&quot; /&gt;
