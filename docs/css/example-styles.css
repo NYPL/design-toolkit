@@ -2518,100 +2518,63 @@ button:focus {
     line-height: 1;
     margin-bottom: 0.25rem;
     margin-right: 0.5rem; }
-  .nypl-results-summary .nypl-facet button {
-    background-color: #fff;
-    border: 0 solid #776e64;
-    border-radius: 0.2rem;
-    color: #776e64;
-    cursor: pointer;
+  .nypl-results-summary .nypl-facet {
+    background-color: #d7d4d0;
+    border-radius: 0.2rem 2rem 2rem 0.2rem;
     display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-    height: 1em;
-    padding: 0.2rem 0.75rem;
-    text-decoration: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    display: inline-block;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 0.5rem; }
-    .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
-      color: #776e64; }
-    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
-      border-color: #1b7fa7;
-      background-color: #fff;
-      color: #1b7fa7; }
-    .nypl-results-summary .nypl-facet button:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        color: #776e64; }
-    .nypl-results-summary .nypl-facet button span {
-      position: absolute;
-      width: 0.1rem;
-      height: 0.1rem;
-      margin: -0.1rem;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .nypl-results-summary .nypl-facet button::before {
-      content: "×";
+    margin-bottom: 0.25rem;
+    padding: 0 0.25rem 0 0.5rem; }
+    .nypl-results-summary .nypl-facet button {
+      background-color: #776e64;
+      border: 0.125rem solid #776e64;
+      border-radius: 2rem;
+      color: #fff;
+      cursor: pointer;
       display: inline-block;
-      vertical-align: super; }
-  .nypl-results-summary button {
-    background-color: #776e64;
-    border: 0.125rem solid #776e64;
-    border-radius: 0.2rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-    height: 2em;
-    padding: 0.2rem 0.75rem;
-    text-decoration: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    clear: both;
-    display: block;
-    margin: 0.5rem 0 0; }
-    .nypl-results-summary button:link, .nypl-results-summary button:visited {
-      color: #fff; }
-    .nypl-results-summary button:hover, .nypl-results-summary button:hover:visited, .nypl-results-summary button.active {
-      border-color: #776e64;
-      background-color: #fff;
-      color: #776e64; }
-    .nypl-results-summary button:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-results-summary button.disabled, .nypl-results-summary button[disabled="disabled"], .nypl-results-summary button[disabled="true"], .nypl-results-summary button[disabled], .nypl-results-summary button[disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-results-summary button.disabled:hover, .nypl-results-summary button[disabled="disabled"]:hover, .nypl-results-summary button[disabled="true"]:hover, .nypl-results-summary button[disabled]:hover, .nypl-results-summary button[disabled=true]:hover {
+      font-size: 1rem;
+      font-weight: normal;
+      height: auto;
+      padding: 0 0;
+      text-decoration: none;
+      white-space: nowrap;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      margin: 0.25rem 0 0.25rem 0.25rem; }
+      .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
+        color: #fff; }
+      .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
+        border-color: #776e64;
+        background-color: #fff;
+        color: #776e64; }
+      .nypl-results-summary .nypl-facet button:focus {
+        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        outline: none; }
+      .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
         background-color: #d7d4d0;
         border-color: #fff;
-        color: #fff; }
+        cursor: default; }
+        .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
+          background-color: #d7d4d0;
+          border-color: #fff;
+          color: #fff; }
+      .nypl-results-summary .nypl-facet button span {
+        position: absolute;
+        width: 0.1rem;
+        height: 0.1rem;
+        margin: -0.1rem;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; }
+      .nypl-results-summary .nypl-facet button::before {
+        content: "×";
+        display: block;
+        line-height: 0;
+        margin: 0.6rem 0.35rem 0.7rem; }
 
 .nypl-results-pagination {
   font-size: 1.5rem;
