@@ -31,6 +31,24 @@
   @include nypl-icon($height: $logo-height, $width: $logo-width, $background-color: transparent);
 }
 
+@for $percent from 1 through 100 {
+  .nypl-bar_#{$percent} {
+    @include bar($percent);
+  }
+}
+
+.nypl-lead {
+  @include lead;
+}
+
+.nypl-basic-list {
+  @include basic-list;
+}
+
+.nypl-bar-list {
+  @include bar-list;
+}
+
 .nypl-link-button {
   @include link-button;
 }
