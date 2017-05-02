@@ -1397,9 +1397,6 @@ button:focus {
     top: 0;
     transform: skewX(-30deg);
     width: 200%; }
-  .nypl-spinner-button.spinning:enabled:hover::after,
-  .nypl-spinner-field.spinning:enabled:hover::after {
-    background-color: rgba(119, 110, 100, 0.75); }
 
 .nypl-general-note {
   border-left: 1rem solid #776e64;

@@ -92,10 +92,6 @@ $bullet-size: 0.5rem;
       transform: skewX(-30deg);
       width: 200%;
     }
-
-    &:enabled:hover::after {
-      background-color: transparentize($nypl-gray, 0.25);
-    }
   }
 }
 
