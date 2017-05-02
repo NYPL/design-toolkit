@@ -31,6 +31,7 @@
   @include nypl-icon($height: $logo-height, $width: $logo-width, $background-color: transparent);
 }
 
+<<<<<<< HEAD
 @for $percent from 1 through 100 {
   .nypl-bar_#{$percent} {
     @include bar($percent);
@@ -47,6 +48,10 @@
 
 .nypl-bar-list {
   @include bar-list;
+}
+
+.nypl-collapsible {
+  @include collapsible;
 }
 
 .nypl-link-button {

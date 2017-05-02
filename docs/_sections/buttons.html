@@ -55,6 +55,10 @@ $(".nypl-spinner-button").on("click touchend", function(e) {
   self.toggleClass("spinning");
   self.blur();
   self.attr("disabled", "true");
+  setTimeout(function () {
+    self.toggleClass("spinning")
+    self.removeAttr("disabled");
+  }, 2000)
 })
   </code></pre>
 
@@ -175,21 +179,21 @@ self.toggleClass("active").attr("aria-expanded", "true")
   <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
 <div class="nypl-navigation-button">
-<button class="nypl-navigation-button_button"
-      aria-expanded="false"
-      aria-controls="nypl-navigation-button_list1"
-      id="nypl-navigation-button_button">
-Search Quick Links
-<svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
-</button>
-<ul id="nypl-navigation-button_list1"
-  class="nypl-navigation-button_list hidden"
-  role="menu"
-  aria-labelledby="nypl-navigation-button_button">
-<li role="none"><a href="//duckduckgo.com" role="menuitem" tabindex="-1">Duck Duck Go</a></li>
-<li role="none"><a href="//google.com" role="menuitem" tabindex="-1">Google</a></li>
-<li role="none"><a href="//bing.com" role="menuitem" tabindex="-1">Bing</a></li>
-</ul>
+  <button class="nypl-navigation-button_button"
+        aria-expanded="false"
+        aria-controls="nypl-navigation-button_list1"
+        id="nypl-navigation-button_button">
+  Search Quick Links
+  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
+  </button>
+  <ul id="nypl-navigation-button_list1"
+    class="nypl-navigation-button_list hidden"
+    role="menu"
+    aria-labelledby="nypl-navigation-button_button">
+    <li role="none"><a href="//duckduckgo.com" role="menuitem" tabindex="-1">Duck Duck Go</a></li>
+    <li role="none"><a href="//google.com" role="menuitem" tabindex="-1">Google</a></li>
+    <li role="none"><a href="//bing.com" role="menuitem" tabindex="-1">Bing</a></li>
+  </ul>
 </div>
   </div>
   <pre><code class="scss">

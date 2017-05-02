@@ -143,11 +143,11 @@ $('#date-of-birth').mask('00/00/0000');
 <div class="nypl-name-field">
   <div>
     <label for="first-text">First Name <span class="nypl-required-field">Required</span></label>
-    <input id="first-text" type="text">
+    <input id="first-text" type="text" />
   </div>
   <div>
     <label for="last-text">Last Name <span class="nypl-required-field">Required</span></label>
-    <input id="last-text" type="text">
+    <input id="last-text" type="text" />
   </div>
 </div>
     </div>
@@ -159,11 +159,11 @@ $('#date-of-birth').mask('00/00/0000');
 &lt;div class=&quot;nypl-name-field&quot;&gt;
   &lt;div&gt;
     &lt;label for=&quot;first-text&quot;&gt;First Name &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
-    &lt;input id=&quot;first-text&quot; type=&quot;text&quot;&gt;
+    &lt;input id=&quot;first-text&quot; type=&quot;text&quot; /&gt;
   &lt;/div&gt;
   &lt;div&gt;
     &lt;label for=&quot;last-text&quot;&gt;Last Name &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
-    &lt;input id=&quot;last-text&quot; type=&quot;text&quot;&gt;
+    &lt;input id=&quot;last-text&quot; type=&quot;text&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
     </code></pre>
@@ -324,7 +324,16 @@ $("#checkbox-optin").change(function(e){
 
     <p>Searchable fields allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
 
-    <p>The general structure is: a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by a fieldset of class <code>nypl-facet-list</code> of items, each with the following structure (note that the result count comes <strong>before</strong> the facet text):</p>
+    <p>The general structure is:
+      <ul>
+        <li>a <code>nypl-facet-toggle</code> toggle button that controls the open/closed state of the widget,</li>
+        <li>a div of class <code>nypl-collapsible</code> which contains:</li>
+        <li>a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by</li>
+        <li>a fieldset of class <code>nypl-facet-list</code> with</li>
+        <li>each of the possible facet values as described below.</li>
+      </ul>
+    </p>
+    <p>Each facet value checkbox has the following structure (note that the result count comes <strong>before</strong> the facet text):</p>
 
     <pre><code class="html">
 &lt;label id=&quot;my-facet-label-id&quot; for=&quot;my-facet-value-id&quot; class=&quot;nypl-bar_[1 to 100]&quot;&gt;
@@ -340,46 +349,58 @@ $("#checkbox-optin").change(function(e){
 
     <p>The facet count is optional but must be of class <code>nypl-facet-count</code>.</p>
 
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Similar to <a href="#radioButtons">Radiobutton/Checkbox Groups</a>, for proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title group's <code>label</code> tag and its own corresponding <code>label</code> tag.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Similar to <a href="#radioButtons">Radiobutton/Checkbox Groups</a>, for proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title group's <code>button</code> tag and its own corresponding <code>label</code> tag.</p>
 
     <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
-    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number.</p>
+    <p>Toggling between closed and open states along with the affected <code>aria-expanded</code> values of the widget will be controlled via JavaScript. A <code>collapsed</code> class must be added (or removed) to the <code>nypl-searchable-field</code> and <code>nypl-collapsible</code> elements. The example below uses jQuery.</p>
+
+    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number. <strong>The widget defaults to the collapsed state.</strong></p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-searchable-field">
-  <div class="nypl-facet-search">
-    <label id="searchable1" for="subject-text">Subject</label>
-    <input id="subject-text" type="text" placeholder="Search Subjects" />
+<div class="nypl-searchable-field collapsed" aria-expanded="false">
+  <button type="button" id="searchable1" class="nypl-facet-toggle"
+    aria-controls="nypl-searchable-field_facet1" aria-expanded="false">
+    Subject
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_facet1" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label for="subject-text">Search within Subjects</label>
+      <input id="subject-text" type="text" />
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label id="subject_poems" for="subject-poems">
+        <input aria-labelledby="searchable1 subject_poems" id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked" />
+        <span>Poems</span>
+      </label>
+      <label id="subject_ejournals" for="subject-ejournals" class="nypl-bar_43">
+        <input aria-labelledby="searchable1 subject_ejournals" id="subject-ejournals" type="checkbox" name="subject" value="ejournals" />
+        <span class="nypl-facet-count">1,334,741</span>
+        <span>Electronic journals</span>
+      </label>
+      <label id="subject_home" for="subject-home" class="nypl-bar_21">
+        <input aria-labelledby="searchable1 subject_home" id="subject-home" type="checkbox" name="subject" value="home" />
+        <span class="nypl-facet-count">236</span>
+        <span>Electronic books</span>
+      </label>
+      <label id="subject_piano" for="subject-piano" class="nypl-bar_18">
+        <input aria-labelledby="searchable1 subject_piano" id="subject-piano" type="checkbox" name="subject" value="piano" />
+        <span class="nypl-facet-count">198</span>
+        <span>Piano music</span>
+      </label>
+      <label id="subject_opera" for="subject-opera" class="nypl-bar_11">
+        <input aria-labelledby="searchable1 subject_opera" id="subject-opera" type="checkbox" name="subject" value="opera" />
+        <span class="nypl-facet-count">122</span>
+        <span>Operas</span>
+      </label>
+    </fieldset>
+    <button class="nypl-link-button">Show 10 more</button>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label id="subject_poems" for="subject-poems">
-      <input aria-labelledby="searchable1 subject_poems" id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked" />
-      <span>Poems</span>
-    </label>
-    <label id="subject_ejournals" for="subject-ejournals" class="nypl-bar_43">
-      <input aria-labelledby="searchable1 subject_ejournals" id="subject-ejournals" type="checkbox" name="subject" value="ejournals" />
-      <span class="nypl-facet-count">1,334,741</span>
-      <span>Electronic journals</span>
-    </label>
-    <label id="subject_home" for="subject-home" class="nypl-bar_21">
-      <input aria-labelledby="searchable1 subject_home" id="subject-home" type="checkbox" name="subject" value="home" />
-      <span class="nypl-facet-count">236</span>
-      <span>Electronic books</span>
-    </label>
-    <label id="subject_piano" for="subject-piano" class="nypl-bar_18">
-      <input aria-labelledby="searchable1 subject_piano" id="subject-piano" type="checkbox" name="subject" value="piano" />
-      <span class="nypl-facet-count">198</span>
-      <span>Piano music</span>
-    </label>
-    <label id="subject_opera" for="subject-opera" class="nypl-bar_11">
-      <input aria-labelledby="searchable1 subject_opera" id="subject-opera" type="checkbox" name="subject" value="opera" />
-      <span class="nypl-facet-count">122</span>
-      <span>Operas</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
 </div>
     </div>
 
@@ -388,44 +409,73 @@ $("#checkbox-optin").change(function(e){
 .nypl-facet-search
 .nypl-facet-list
 .nypl-facet-count
+.nypl-collapsible
+.collapsed
     </code></pre>
 
     <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
 
     <pre><code class="html">
-&lt;div class=&quot;nypl-searchable-field&quot;&gt;
-  &lt;div class=&quot;nypl-facet-search&quot;&gt;
-    &lt;label id=&quot;searchable1&quot; for=&quot;subject-text&quot;&gt;Subject&lt;/label&gt;
-    &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; placeholder=&quot;Search Subjects&quot; /&gt;
+&lt;div class=&quot;nypl-searchable-field collapsed&quot; aria-expanded=&quot;false&quot;&gt;
+  &lt;button type=&quot;button&quot; id=&quot;searchable1&quot; class=&quot;nypl-facet-toggle&quot;
+    aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;false&quot;&gt;
+    Subject
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
+      &lt;title&gt;wedge down icon&lt;/title&gt;
+      &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;nypl-collapsible collapsed&quot; id=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;div class=&quot;nypl-facet-search&quot;&gt;
+      &lt;label for=&quot;subject-text&quot;&gt;Search within Subject&lt;/label&gt;
+      &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+    &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
+      &lt;label id=&quot;subject_poems&quot; for=&quot;subject-poems&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable1 subject_poems&quot; id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot; /&gt;
+        &lt;span&gt;Poems&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_ejournals&quot; for=&quot;subject-ejournals&quot; class=&quot;nypl-bar_43&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable1 subject_ejournals&quot; id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;1,334,741&lt;/span&gt;
+        &lt;span&gt;Electronic journals&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_home&quot; for=&quot;subject-home&quot; class=&quot;nypl-bar_21&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable1 subject_home&quot; id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
+        &lt;span&gt;Electronic books&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_piano&quot; for=&quot;subject-piano&quot; class=&quot;nypl-bar_18&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable1 subject_piano&quot; id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
+        &lt;span&gt;Piano music&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_opera&quot; for=&quot;subject-opera&quot; class=&quot;nypl-bar_11&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable1 subject_opera&quot; id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
+        &lt;span&gt;Operas&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/fieldset&gt;
+    &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
   &lt;/div&gt;
-  &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
-    &lt;label id=&quot;subject_poems&quot; for=&quot;subject-poems&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable1 subject_poems&quot; id=&quot;subject-poems&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;poems&quot; checked=&quot;checked&quot; /&gt;
-      &lt;span&gt;Poems&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_ejournals&quot; for=&quot;subject-ejournals&quot; class=&quot;nypl-bar_43&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable1 subject_ejournals&quot; id=&quot;subject-ejournals&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;ejournals&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;1,334,741&lt;/span&gt;
-      &lt;span&gt;Electronic journals&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_home&quot; for=&quot;subject-home&quot; class=&quot;nypl-bar_21&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable1 subject_home&quot; id=&quot;subject-home&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;home&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
-      &lt;span&gt;Electronic books&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_piano&quot; for=&quot;subject-piano&quot; class=&quot;nypl-bar_18&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable1 subject_piano&quot; id=&quot;subject-piano&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;piano&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
-      &lt;span&gt;Piano music&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_opera&quot; for=&quot;subject-opera&quot; class=&quot;nypl-bar_11&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable1 subject_opera&quot; id=&quot;subject-opera&quot; type=&quot;checkbox&quot; name=&quot;subject&quot; value=&quot;opera&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
-      &lt;span&gt;Operas&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/fieldset&gt;
-  &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
 &lt;/div&gt;
+    </code></pre>
+    <pre><code class="js">
+// jQuery example
+$("button.nypl-facet-toggle").click(function (e) {
+  toggleFacet(e)
+})
+
+function toggleFacet(e) {
+  var button = $(e.target)
+  var facet = button.parent()
+  var collapsible = facet.find(".nypl-collapsible")
+  button.attr("aria-expanded", button.attr("aria-expanded") == "false" ? "true" : "false")
+  facet.attr("aria-expanded", facet.attr("aria-expanded") == "false" ? "true" : "false")
+  collapsible.attr("aria-expanded", collapsible.attr("aria-expanded") == "false" ? "true" : "false")
+  facet.toggleClass("collapsed")
+  collapsible.toggleClass("collapsed")
+}
     </code></pre>
 
     <h3 id="formValidation">Form Validation</h3>
@@ -565,38 +615,48 @@ $("#email1 #email-field").blur(function (e) {
 </div>
 
 
-<div class="nypl-searchable-field nypl-spinner-field">
-  <div class="nypl-facet-search">
-    <label id="searchable2" for="subject-text2">Subject</label>
-    <input id="subject-text2" type="text" placeholder="Search Subjects" />
+<div class="nypl-searchable-field nypl-spinner-field" aria-expanded="true">
+  <button type="button" id="searchable1" class="nypl-facet-toggle"
+    aria-controls="nypl-searchable-field_subject" aria-expanded="true">
+    Subject
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible" id="nypl-searchable-field_subject" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label id="searchable2" for="subject-text2">Search within Subjects</label>
+      <input id="subject-text2" type="text" />
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label id="subject_poems2" for="subject-poems2">
+        <input aria-labelledby="searchable2 subject_poems2" id="subject-poems2" type="checkbox" name="subject2" value="poems" checked="checked" />
+        <span>Poems</span>
+      </label>
+      <label id="subject_ejournals2" for="subject-ejournals2" class="nypl-bar_43">
+        <input aria-labelledby="searchable2 subject_ejournals2" id="subject-ejournals2" type="checkbox" name="subject2" value="ejournals" />
+        <span class="nypl-facet-count">1,334,741</span>
+        <span>Electronic journals</span>
+      </label>
+      <label id="subject_home2" for="subject-home2" class="nypl-bar_21">
+        <input aria-labelledby="searchable2 subject_home2" id="subject-home2" type="checkbox" name="subject2" value="home" />
+        <span class="nypl-facet-count">236</span>
+        <span>Electronic books</span>
+      </label>
+      <label id="subject_piano2" for="subject-piano2" class="nypl-bar_18">
+        <input aria-labelledby="searchable2 subject_piano2" id="subject-piano2" type="checkbox" name="subject2" value="piano" />
+        <span class="nypl-facet-count">198</span>
+        <span>Piano music</span>
+      </label>
+      <label id="subject_opera2" for="subject-opera2" class="nypl-bar_11">
+        <input aria-labelledby="searchable2 subject_opera2" id="subject-opera2" type="checkbox" name="subject2" value="opera" />
+        <span class="nypl-facet-count">122</span>
+        <span>Operas</span>
+      </label>
+    </fieldset>
+    <button class="nypl-link-button">Show 10 more</button>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label id="subject_poems2" for="subject-poems2">
-      <input aria-labelledby="searchable2 subject_poems2" id="subject-poems2" type="checkbox" name="subject2" value="poems" checked="checked" />
-      <span>Poems</span>
-    </label>
-    <label id="subject_ejournals2" for="subject-ejournals2" class="nypl-bar_43">
-      <input aria-labelledby="searchable2 subject_ejournals2" id="subject-ejournals2" type="checkbox" name="subject2" value="ejournals" />
-      <span class="nypl-facet-count">1,334,741</span>
-      <span>Electronic journals</span>
-    </label>
-    <label id="subject_home2" for="subject-home2" class="nypl-bar_21">
-      <input aria-labelledby="searchable2 subject_home2" id="subject-home2" type="checkbox" name="subject2" value="home" />
-      <span class="nypl-facet-count">236</span>
-      <span>Electronic books</span>
-    </label>
-    <label id="subject_piano2" for="subject-piano2" class="nypl-bar_18">
-      <input aria-labelledby="searchable2 subject_piano2" id="subject-piano2" type="checkbox" name="subject2" value="piano" />
-      <span class="nypl-facet-count">198</span>
-      <span>Piano music</span>
-    </label>
-    <label id="subject_opera2" for="subject-opera2" class="nypl-bar_11">
-      <input aria-labelledby="searchable2 subject_opera2" id="subject-opera2" type="checkbox" name="subject2" value="opera" />
-      <span class="nypl-facet-count">122</span>
-      <span>Operas</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
 </div>
 
   </div>
@@ -640,52 +700,64 @@ $("#email1 #email-field").blur(function (e) {
   &lt;fieldset&gt;
     &lt;legend id=&quot;radiobutton-group2&quot;&gt;Accessible from&lt;/legend&gt;
     &lt;label id=&quot;radiobutton-group2_every&quot; for=&quot;available-every2&quot;&gt;
-      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_every&quot; id=&quot;available-every2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;any&quot; /&gt;Anywhere
+      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_every&quot; id=&quot;available-every2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;any&quot; /&gt;
+      &lt;span&gt;Anywhere&lt;/span&gt;
     &lt;/label&gt;
     &lt;label id=&quot;radiobutton-group2_home&quot; for=&quot;available-home2&quot;&gt;
-      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_home&quot; id=&quot;available-home2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;home&quot; /&gt;Home with a library card
+      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_home&quot; id=&quot;available-home2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;home&quot; /&gt;
+      &lt;span&gt;Home with a library card&lt;/span&gt;
     &lt;/label&gt;
     &lt;label id=&quot;radiobutton-group2_library&quot; for=&quot;available-library2&quot;&gt;
-      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_library&quot; id=&quot;available-library2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;library&quot; /&gt;A library branch
+      &lt;input aria-labelledby=&quot;radiobutton-group2 radiobutton-group2_library&quot; id=&quot;available-library2&quot; type=&quot;radio&quot; name=&quot;available2&quot; value=&quot;library&quot; /&gt;
+      &lt;span&gt;A library branch&lt;/span&gt;
     &lt;/label&gt;
   &lt;/fieldset&gt;
 &lt;/div&gt;
 
 
-&lt;div class=&quot;nypl-searchable-field nypl-spinner-field&quot;&gt;
-  &lt;div class=&quot;nypl-facet-search&quot;&gt;
-    &lt;label id=&quot;searchable2&quot; for=&quot;subject-text2&quot;&gt;Subject&lt;/label&gt;
-    &lt;input id=&quot;subject-text2&quot; type=&quot;text&quot; placeholder=&quot;Search Subjects&quot; /&gt;
+&lt;div class=&quot;nypl-searchable-field nypl-spinner-field&quot; aria-expanded=&quot;true&quot;&gt;
+  &lt;button type=&quot;button&quot; id=&quot;searchable1&quot; class=&quot;nypl-facet-toggle&quot;
+    aria-controls=&quot;nypl-searchable-field_subject&quot; aria-expanded=&quot;true&quot;&gt;
+    Subject
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
+      &lt;title&gt;wedge down icon&lt;/title&gt;
+      &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;nypl-collapsible&quot; id=&quot;nypl-searchable-field_subject&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;div class=&quot;nypl-facet-search&quot;&gt;
+      &lt;label id=&quot;searchable2&quot; for=&quot;subject-text2&quot;&gt;Search within Subjects&lt;/label&gt;
+      &lt;input id=&quot;subject-text2&quot; type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+    &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
+      &lt;label id=&quot;subject_poems2&quot; for=&quot;subject-poems2&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable2 subject_poems2&quot; id=&quot;subject-poems2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;poems&quot; checked=&quot;checked&quot; /&gt;
+        &lt;span&gt;Poems&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_ejournals2&quot; for=&quot;subject-ejournals2&quot; class=&quot;nypl-bar_43&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable2 subject_ejournals2&quot; id=&quot;subject-ejournals2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;ejournals&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;1,334,741&lt;/span&gt;
+        &lt;span&gt;Electronic journals&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_home2&quot; for=&quot;subject-home2&quot; class=&quot;nypl-bar_21&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable2 subject_home2&quot; id=&quot;subject-home2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;home&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
+        &lt;span&gt;Electronic books&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_piano2&quot; for=&quot;subject-piano2&quot; class=&quot;nypl-bar_18&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable2 subject_piano2&quot; id=&quot;subject-piano2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;piano&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
+        &lt;span&gt;Piano music&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label id=&quot;subject_opera2&quot; for=&quot;subject-opera2&quot; class=&quot;nypl-bar_11&quot;&gt;
+        &lt;input aria-labelledby=&quot;searchable2 subject_opera2&quot; id=&quot;subject-opera2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;opera&quot; /&gt;
+        &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
+        &lt;span&gt;Operas&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/fieldset&gt;
+    &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
   &lt;/div&gt;
-  &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
-    &lt;label id=&quot;subject_poems2&quot; for=&quot;subject-poems2&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable2 subject_poems2&quot; id=&quot;subject-poems2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;poems&quot; checked=&quot;checked&quot; /&gt;
-      &lt;span&gt;Poems&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_ejournals2&quot; for=&quot;subject-ejournals2&quot; class=&quot;nypl-bar_43&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable2 subject_ejournals2&quot; id=&quot;subject-ejournals2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;ejournals&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;1,334,741&lt;/span&gt;
-      &lt;span&gt;Electronic journals&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_home2&quot; for=&quot;subject-home2&quot; class=&quot;nypl-bar_21&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable2 subject_home2&quot; id=&quot;subject-home2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;home&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;236&lt;/span&gt;
-      &lt;span&gt;Electronic books&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_piano2&quot; for=&quot;subject-piano2&quot; class=&quot;nypl-bar_18&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable2 subject_piano2&quot; id=&quot;subject-piano2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;piano&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;198&lt;/span&gt;
-      &lt;span&gt;Piano music&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label id=&quot;subject_opera2&quot; for=&quot;subject-opera2&quot; class=&quot;nypl-bar_11&quot;&gt;
-      &lt;input aria-labelledby=&quot;searchable2 subject_opera2&quot; id=&quot;subject-opera2&quot; type=&quot;checkbox&quot; name=&quot;subject2&quot; value=&quot;opera&quot; /&gt;
-      &lt;span class=&quot;nypl-facet-count&quot;&gt;122&lt;/span&gt;
-      &lt;span&gt;Operas&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/fieldset&gt;
-  &lt;button class=&quot;nypl-link-button&quot;&gt;Show 10 more&lt;/button&gt;
 &lt;/div&gt;
-
   </code></pre>
 
   <pre><code class="js">
