@@ -5,6 +5,10 @@
   padding: 0.8rem 0;
 }
 
+@mixin bar($percent: 100) {
+  background: linear-gradient(to right, transparent 0%, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color) 100%;
+}
+
 @mixin lead {
   font-size: 2rem;
 }
