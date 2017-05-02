@@ -855,6 +855,9 @@ button:focus {
 
 .nypl-lead {
   font-size: 2rem; }
+  @media (max-width: 965px) {
+    .nypl-lead {
+      font-size: 1.5rem; } }
 
 .nypl-basic-list {
   list-style-type: none; }
@@ -872,7 +875,8 @@ button:focus {
   .nypl-bar-list li span.count {
     color: #776e64;
     display: inline-block;
-    float: right; }
+    float: right;
+    margin-right: 0.2rem; }
 
 .nypl-link-button {
   background: none;

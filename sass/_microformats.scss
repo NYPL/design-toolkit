@@ -11,6 +11,10 @@
 
 @mixin lead {
   font-size: 2rem;
+
+  @include media($mobile-breakpoint) {
+    font-size: 1.5rem;
+  }
 }
 
 @mixin basic-list {
@@ -34,6 +38,7 @@
       color: $nypl-gray;
       display: inline-block;
       float: right;
+      margin-right: 0.2rem;
     }
   }
 }
