@@ -45,8 +45,8 @@
   @include basic-list;
 }
 
-.nypl-bar-list {
-  @include bar-list;
+.nypl-collapsible {
+  @include collapsible;
 }
 
 .nypl-link-button {

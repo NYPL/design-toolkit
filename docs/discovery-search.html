@@ -264,110 +264,90 @@
           <button class="nypl-request-button" aria-controls="filter-search" aria-expanded="false">Refine search</button>
         </div>
         <form action="" class="nypl-search-form" id="filter-search">
-<div class="nypl-searchable-field">
-  <div class="nypl-facet-search">
-    <label for="material-text">Material Type</label>
-    <input id="material-text" type="text" placeholder="Search Material Types">
+<div class="nypl-searchable-field collapsed" aria-expanded="false">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+    Material Type
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label for="material-text">Search within Material Types</label>
+      <input id="material-text" type="text">
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label for="material-Artifact">
+        <input id="material-Artifact" type="checkbox" name="subject" value="Artifact" checked="checked">
+        <span>Artifact</span>
+      </label>
+      <label for="material-Audio" class="nypl-bar_43">
+        <input id="material-Audio" type="checkbox" name="subject" value="Audio">
+        <span class="nypl-facet-count">90,334,741</span>
+        <span>Audio</span>
+      </label>
+      <label for="material-Cartographic" class="nypl-bar_21">
+        <input id="material-Cartographic" type="checkbox" name="subject" value="Cartographic">
+        <span class="nypl-facet-count">1,636,209</span>
+        <span>Cartographic</span>
+      </label>
+      <label for="material-Collection" class="nypl-bar_17">
+        <input id="material-Collection" type="checkbox" name="subject" value="Collection">
+        <span class="nypl-facet-count">198</span>
+        <span>Collection</span>
+      </label>
+      <label for="material-Dataset" class="nypl-bar_11">
+        <input id="material-Dataset" type="checkbox" name="subject" value="Dataset">
+        <span class="nypl-facet-count">122</span>
+        <span>Dataset</span>
+      </label>
+    </fieldset>
+    <button class="nypl-link-button">Show 10 more</button>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label for="material-Artifact">
-      <input id="material-Artifact" type="checkbox" name="subject" value="Artifact" checked="checked">
-      <span>Artifact</span>
-    </label>
-    <label for="material-Audio" class="nypl-bar_43">
-      <input id="material-Audio" type="checkbox" name="subject" value="Audio">
-      <span class="nypl-facet-count">90,334,741</span>
-      <span>Audio</span>
-    </label>
-    <label for="material-Cartographic" class="nypl-bar_21">
-      <input id="material-Cartographic" type="checkbox" name="subject" value="Cartographic">
-      <span class="nypl-facet-count">1,636,209</span>
-      <span>Cartographic</span>
-    </label>
-    <label for="material-Collection" class="nypl-bar_17">
-      <input id="material-Collection" type="checkbox" name="subject" value="Collection">
-      <span class="nypl-facet-count">198</span>
-      <span>Collection</span>
-    </label>
-    <label for="material-Dataset" class="nypl-bar_11">
-      <input id="material-Dataset" type="checkbox" name="subject" value="Dataset">
-      <span class="nypl-facet-count">122</span>
-      <span>Dataset</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
 </div>
 
-<!-- <div class="nypl-searchable-field">
-  <div class="nypl-facet-search">
-    <label for="location-text">Location</label>
-    <input id="location-text" type="text" placeholder="Search Locations">
+<div class="nypl-searchable-field collapsed">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_subject" aria-expanded="false">
+    Subject
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_subject" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label for="subject-text">Search within Subjects</label>
+      <input id="subject-text" type="text">
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label for="subject-poems">
+        <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
+        <span>Poems</span>
+      </label>
+      <label for="subject-ejournals" class="nypl-bar_43">
+        <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
+        <span class="nypl-facet-count">489</span>
+        <span>Electronic journals</span>
+      </label>
+      <label for="subject-home" class="nypl-bar_21">
+        <input id="subject-home" type="checkbox" name="subject" value="home">
+        <span class="nypl-facet-count">236</span>
+        <span>Electronic books</span>
+      </label>
+      <label for="subject-piano" class="nypl-bar_18">
+        <input id="subject-piano" type="checkbox" name="subject" value="piano">
+        <span class="nypl-facet-count">198</span>
+        <span>Piano music</span>
+      </label>
+      <label for="subject-opera" class="nypl-bar_11">
+        <input id="subject-opera" type="checkbox" name="subject" value="opera">
+        <span class="nypl-facet-count">122</span>
+        <span>Operas</span>
+      </label>
+    </fieldset>
+    <button class="nypl-link-button">Show 10 more</button>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label for="location-Stephen A. Schwarzman Building " class="nypl-bar_46">
-      <input id="location-Stephen A. Schwarzman Building " type="checkbox" name="location" value="Stephen A. Schwarzman Building ">
-      <span>
-        Stephen A. Schwarzman Building
-      </span>
-      <span class="nypl-facet-count">28</span>
-    </label>
-    <label for="location-NYPL Research Libraries " class="nypl-bar_29">
-      <input id="location-NYPL Research Libraries " type="checkbox" name="location" value="NYPL Research Libraries ">
-      <span>
-        NYPL Research Libraries
-      </span>
-      <span class="nypl-facet-count">15</span>
-    </label>
-    <label for="location-Schomburg Center " class="nypl-bar_12">
-      <input id="location-Schomburg Center " type="checkbox" name="location" value="Schomburg Center ">
-      <span>
-        Schomburg Center
-      </span>
-      <span class="nypl-facet-count">6</span>
-    </label>
-    <label for="location-Performing Arts Library at Lincoln Center " class="nypl-bar_6">
-      <input id="location-Performing Arts Library at Lincoln Center " type="checkbox" name="location" value="Performing Arts Library at Lincoln Center ">
-      <span>
-        Performing Arts Library at Lincoln Center
-      </span>
-      <span class="nypl-facet-count">3</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
-</div> -->
-
-<div class="nypl-searchable-field">
-  <div class="nypl-facet-search">
-    <label for="subject-text">Subject</label>
-    <input id="subject-text" type="text" placeholder="Search Subjects">
-  </div>
-  <fieldset class="nypl-facet-list">
-    <label for="subject-poems">
-      <input id="subject-poems" type="checkbox" name="subject" value="poems" checked="checked">
-      <span>Poems</span>
-    </label>
-    <label for="subject-ejournals" class="nypl-bar_43">
-      <input id="subject-ejournals" type="checkbox" name="subject" value="ejournals">
-      <span class="nypl-facet-count">489</span>
-      <span>Electronic journals</span>
-    </label>
-    <label for="subject-home" class="nypl-bar_21">
-      <input id="subject-home" type="checkbox" name="subject" value="home">
-      <span class="nypl-facet-count">236</span>
-      <span>Electronic books</span>
-    </label>
-    <label for="subject-piano" class="nypl-bar_18">
-      <input id="subject-piano" type="checkbox" name="subject" value="piano">
-      <span class="nypl-facet-count">198</span>
-      <span>Piano music</span>
-    </label>
-    <label for="subject-opera" class="nypl-bar_11">
-      <input id="subject-opera" type="checkbox" name="subject" value="opera">
-      <span class="nypl-facet-count">122</span>
-      <span>Operas</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
 </div>
 
 <div class="nypl-text-field">
@@ -390,137 +370,119 @@
   <input id="date-before" type="text" placeholder="Enter a year">
 </div>
 
-<!-- <div class="nypl-searchable-field">
-  <div class="nypl-facet-search">
-    <label for="owner-text">Owner</label>
-    <input id="owner-text" type="text" placeholder="Search Owners">
+<div class="nypl-searchable-field nosearch collapsed">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+    Issuance
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label for="issuance-text">Search within Issuances</label>
+      <input id="issuance-text" type="text">
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label for="issuance-urn:biblevel:m" class="nypl-bar_97">
+        <input id="issuance-urn:biblevel:m" type="checkbox" name="issuance" value="urn:biblevel:m">
+        <span class="nypl-facet-count">122</span>
+        <span>monograph/item</span>
+      </label>
+      <label for="issuance-urn:biblevel:s" class="nypl-bar_3">
+        <input id="issuance-urn:biblevel:s" type="checkbox" name="issuance" value="urn:biblevel:s">
+        <span class="nypl-facet-count">2</span>
+        <span>serial</span>
+      </label>
+      <label for="issuance-urn:biblevel:c" class="nypl-bar_2">
+        <input id="issuance-urn:biblevel:c" type="checkbox" name="issuance" value="urn:biblevel:c">
+        <span class="nypl-facet-count">1</span>
+        <span>collection</span>
+      </label>
+    </fieldset>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label for="location-orgs:1000" class="nypl-bar_30">
-      <input id="location-orgs:1000" type="checkbox" name="location" value="orgs:1000">
-      <span>
-        Stephen A. Schwarzman Building
-      </span>
-      <span class="nypl-facet-count">30</span>
-    </label>
-    <label for="location-orgs:1105" class="nypl-bar_15">
-      <input id="location-orgs:1105" type="checkbox" name="location" value="orgs:1105">
-      <span>
-        Irma and Paul Milstein Division of United States History, Local History and Genealogy
-      </span>
-      <span class="nypl-facet-count">15</span>
-    </label>
-    <label for="location-orgs:0003" class="nypl-bar_10">
-      <input id="location-orgs:0003" type="checkbox" name="location" value="orgs:0003">
-      <span>
-        Princeton University Library
-      </span>
-      <span class="nypl-facet-count">10</span>
-    </label>
-    <label for="location-orgs:1101" class="nypl-bar_10">
-      <input id="location-orgs:1101" type="checkbox" name="location" value="orgs:1101">
-      <span>
-        General Research Division
-      </span>
-      <span class="nypl-facet-count">10</span>
-    </label>
-    <label for="location-orgs:1114" class="nypl-bar_10">
-      <input id="location-orgs:1114" type="checkbox" name="location" value="orgs:1114">
-      <span>
-        Schomburg Center for Research in Black Culture, Jean Blackwell Hutson Research and Reference Division
-      </span>
-      <span class="nypl-facet-count">6</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
-</div> -->
-
-<div class="nypl-searchable-field nosearch">
-  <div class="nypl-facet-search">
-    <label for="issuance-text">Issuance</label>
-    <input id="issuance-text" type="text" placeholder="Search Issuances">
-  </div>
-  <fieldset class="nypl-facet-list">
-    <label for="issuance-urn:biblevel:m" class="nypl-bar_97">
-      <input id="issuance-urn:biblevel:m" type="checkbox" name="issuance" value="urn:biblevel:m">
-      <span class="nypl-facet-count">122</span>
-      <span>monograph/item</span>
-    </label>
-    <label for="issuance-urn:biblevel:s" class="nypl-bar_3">
-      <input id="issuance-urn:biblevel:s" type="checkbox" name="issuance" value="urn:biblevel:s">
-      <span class="nypl-facet-count">2</span>
-      <span>serial</span>
-    </label>
-    <label for="issuance-urn:biblevel:c" class="nypl-bar_2">
-      <input id="issuance-urn:biblevel:c" type="checkbox" name="issuance" value="urn:biblevel:c">
-      <span class="nypl-facet-count">1</span>
-      <span>collection</span>
-    </label>
-  </fieldset>
 </div>
 
-<div class="nypl-searchable-field">
-  <div class="nypl-facet-search">
-    <label for="publisher-text">Publisher</label>
-    <input id="publisher-text" type="text" placeholder="Search Publishers">
+<div class="nypl-searchable-field collapsed">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+    Publisher
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label for="publisher-text">Search within Publishers</label>
+      <input id="publisher-text" type="text">
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label for="publisher-London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." class="nypl-bar_10">
+        <input id="publisher-London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." type="checkbox" name="publisher" value="London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793.">
+        <span class="nypl-facet-count">200,913</span>
+        <span>London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793.</span>
+      </label>
+      <label for="publisher-[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000." class="nypl-bar_10">
+        <input id="publisher-[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000." type="checkbox" name="publisher" value="[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000.">
+        <span class="nypl-facet-count">2</span>
+        <span>[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000.</span>
+      </label>
+      <label for="publisher-Albany : Printed by Charles R. and George Webster, 1804." class="nypl-bar_5">
+        <input id="publisher-Albany : Printed by Charles R. and George Webster, 1804." type="checkbox" name="publisher" value="Albany : Printed by Charles R. and George Webster, 1804.">
+        <span class="nypl-facet-count">1</span>
+        <span>Albany : Printed by Charles R. and George Webster, 1804.</span>
+      </label>
+      <label for="publisher-Albany [N.Y.] : Printed by J. Barber, 1804." class="nypl-bar_5">
+        <input id="publisher-Albany [N.Y.] : Printed by J. Barber, 1804." type="checkbox" name="publisher" value="Albany [N.Y.] : Printed by J. Barber, 1804.">
+        <span class="nypl-facet-count">1</span>
+        <span>Albany [N.Y.] : Printed by J. Barber, 1804.</span>
+      </label>
+      <label for="publisher-Albany [N.Y.] : S.W. Green, 1847." class="nypl-bar_5">
+        <input id="publisher-Albany [N.Y.] : S.W. Green, 1847." type="checkbox" name="publisher" value="Albany [N.Y.] : S.W. Green, 1847.">
+        <span class="nypl-facet-count">1</span>
+        <span>Albany [N.Y.] : S.W. Green, 1847.</span>
+      </label>
+    </fieldset>
+    <button class="nypl-link-button">Show 10 more</button>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label for="publisher-London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." class="nypl-bar_10">
-      <input id="publisher-London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793." type="checkbox" name="publisher" value="London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793.">
-      <span class="nypl-facet-count">200,913</span>
-      <span>London : printed for and sold by the author, on Tower-Hill; also sold by William Heather, at the Navigation Warehouse, 157, Leadenhall-Street, 1793.</span>
-    </label>
-    <label for="publisher-[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000." class="nypl-bar_10">
-      <input id="publisher-[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000." type="checkbox" name="publisher" value="[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000.">
-      <span class="nypl-facet-count">2</span>
-      <span>[S.l.] : Chadwyck-Healey (a Bell &amp; Howell Information and Learning company), 2000.</span>
-    </label>
-    <label for="publisher-Albany : Printed by Charles R. and George Webster, 1804." class="nypl-bar_5">
-      <input id="publisher-Albany : Printed by Charles R. and George Webster, 1804." type="checkbox" name="publisher" value="Albany : Printed by Charles R. and George Webster, 1804.">
-      <span class="nypl-facet-count">1</span>
-      <span>Albany : Printed by Charles R. and George Webster, 1804.</span>
-    </label>
-    <label for="publisher-Albany [N.Y.] : Printed by J. Barber, 1804." class="nypl-bar_5">
-      <input id="publisher-Albany [N.Y.] : Printed by J. Barber, 1804." type="checkbox" name="publisher" value="Albany [N.Y.] : Printed by J. Barber, 1804.">
-      <span class="nypl-facet-count">1</span>
-      <span>Albany [N.Y.] : Printed by J. Barber, 1804.</span>
-    </label>
-    <label for="publisher-Albany [N.Y.] : S.W. Green, 1847." class="nypl-bar_5">
-      <input id="publisher-Albany [N.Y.] : S.W. Green, 1847." type="checkbox" name="publisher" value="Albany [N.Y.] : S.W. Green, 1847.">
-      <span class="nypl-facet-count">1</span>
-      <span>Albany [N.Y.] : S.W. Green, 1847.</span>
-    </label>
-  </fieldset>
-  <button class="nypl-link-button">Show 10 more</button>
 </div>
 
-<div class="nypl-searchable-field nosearch">
-  <div class="nypl-facet-search">
-    <label for="language-text">Language</label>
-    <input id="language-text" type="text" placeholder="Search Languages">
+<div class="nypl-searchable-field nosearch collapsed">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+    Language
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+      <title>wedge down icon</title>
+      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+    </svg>
+  </button>
+  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+    <div class="nypl-facet-search">
+      <label for="language-text">Search within Languages</label>
+      <input id="language-text" type="text">
+    </div>
+    <fieldset class="nypl-facet-list">
+      <label for="language-lang:eng" class="nypl-bar_95">
+        <input id="language-lang:eng" type="checkbox" name="language" value="lang:eng">
+        <span class="nypl-facet-count">112</span>
+        <span>English</span>
+      </label>
+      <label for="language-lang:fre" class="nypl-bar_2">
+        <input id="language-lang:fre" type="checkbox" name="language" value="lang:fre">
+        <span class="nypl-facet-count">1</span>
+        <span>French</span>
+      </label>
+      <label for="language-lang:ger" class="nypl-bar_2">
+        <input id="language-lang:ger" type="checkbox" name="language" value="lang:ger">
+        <span class="nypl-facet-count">1</span>
+        <span>German</span>
+      </label>
+      <label for="language-lang:por" class="nypl-bar_2">
+        <input id="language-lang:por" type="checkbox" name="language" value="lang:por">
+        <span class="nypl-facet-count">1</span>
+        <span>Portuguese</span>
+      </label>
+    </fieldset>
   </div>
-  <fieldset class="nypl-facet-list">
-    <label for="language-lang:eng" class="nypl-bar_95">
-      <input id="language-lang:eng" type="checkbox" name="language" value="lang:eng">
-      <span class="nypl-facet-count">112</span>
-      <span>English</span>
-    </label>
-    <label for="language-lang:fre" class="nypl-bar_2">
-      <input id="language-lang:fre" type="checkbox" name="language" value="lang:fre">
-      <span class="nypl-facet-count">1</span>
-      <span>French</span>
-    </label>
-    <label for="language-lang:ger" class="nypl-bar_2">
-      <input id="language-lang:ger" type="checkbox" name="language" value="lang:ger">
-      <span class="nypl-facet-count">1</span>
-      <span>German</span>
-    </label>
-    <label for="language-lang:por" class="nypl-bar_2">
-      <input id="language-lang:por" type="checkbox" name="language" value="lang:por">
-      <span class="nypl-facet-count">1</span>
-      <span>Portuguese</span>
-    </label>
-  </fieldset>
 </div>
         </form>
 
@@ -530,9 +492,9 @@
 <!-- results column -->
 <div class="nypl-column-three-quarters" id="mainContent">
       <div class="nypl-results-summary">
-        <span class="nypl-results-count">9,478</span> results found
-        <span class="nypl-facet">for keywords <strong>new york waterways</strong><button><span>Remove new york waterways keyword filter</span></button></span>,
-        <span class="nypl-facet">with subject <strong>Poems</strong><button><span>Remove Poems subject filter</span></button></span>.
+        <span class="nypl-results-count">9,478</span> results found for
+        <span class="nypl-facet">keywords <strong>new york waterways<button><span>Remove new york waterways keyword filter</span></button></strong></span>,
+        <span class="nypl-facet">subject <strong>Poems<button><span>Remove Poems subject filter</span></button></strong></span>.
       </div>
 
 <div class="nypl-results-sorting-controls">

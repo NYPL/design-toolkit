@@ -44,6 +44,22 @@ $bullet-size: 0.5rem;
   }
 }
 
+@mixin collapsible {
+  $collapsing-time: 0.5s;
+  $max-height: 40rem; // 640
+
+  @include transition(all, $collapsing-time, ease-out);
+
+  max-height: $max-height;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  &.collapsed {
+    max-height: 0;
+  }
+}
+
 @mixin spinner-element {
   $bar-color: transparentize($nypl-white, 0.5);
   $spinner-time: 1.5s;
@@ -75,10 +91,6 @@ $bullet-size: 0.5rem;
       top: 0;
       transform: skewX(-30deg);
       width: 200%;
-    }
-
-    &:enabled:hover::after {
-      background-color: transparentize($nypl-gray, 0.25);
     }
   }
 }
