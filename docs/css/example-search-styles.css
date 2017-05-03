@@ -552,6 +552,18 @@ button:focus {
     background-color: inherit;
     fill: #fff; }
 
+.nypl-collapsible {
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  max-height: 40rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .nypl-collapsible.collapsed {
+    max-height: 0; }
+
 .nypl-link-button {
   background: none;
   border: 0;
@@ -1762,49 +1774,86 @@ button:focus {
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
     margin: 0 0.25rem 0 0; }
-  .nypl-searchable-field .nypl-facet-search label {
-    background-color: transparent;
-    color: #080807;
-    display: block;
-    font-weight: bold;
-    position: absolute; }
-  .nypl-searchable-field .nypl-facet-search input[type=text],
-  .nypl-searchable-field .nypl-facet-search input[type=email],
-  .nypl-searchable-field .nypl-facet-search input[type=number] {
-    background-color: #efedeb;
+  .nypl-searchable-field button.nypl-facet-toggle {
+    background-color: #776e64;
     border: 0;
     border-radius: 0.2rem 0.2rem 0 0;
-    font-size: 1rem;
-    padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
-    text-indent: 0.5rem;
-    transition: all 0.2s ease-out;
-    width: 100%; }
-    .nypl-searchable-field .nypl-facet-search input[type=text].active,
-    .nypl-searchable-field .nypl-facet-search input[type=email].active,
-    .nypl-searchable-field .nypl-facet-search input[type=number].active {
-      width: 16rem; }
-    .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
-    .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
-    .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
-      background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
-      color: #080807;
-      outline: none; }
-  .nypl-searchable-field .nypl-facet-search .nypl-field-status {
-    background-color: #fff;
-    color: #776e64;
+    color: #fff;
+    cursor: pointer;
     display: block;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    padding-left: 0.5rem; }
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.25rem;
+    text-align: left;
+    width: 100%; }
+    .nypl-searchable-field button.nypl-facet-toggle .nypl-icon {
+      background-color: #776e64;
+      display: inline-block;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      position: absolute;
+      right: 0.5rem;
+      top: 0.65rem;
+      transform: rotate(180deg); }
+      .nypl-searchable-field button.nypl-facet-toggle .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+  .nypl-searchable-field .nypl-facet-search {
+    position: relative; }
+    .nypl-searchable-field .nypl-facet-search label {
+      background-color: transparent;
+      color: #080807;
+      display: block;
+      font-weight: bold;
+      position: absolute; }
+    .nypl-searchable-field .nypl-facet-search input[type=text],
+    .nypl-searchable-field .nypl-facet-search input[type=email],
+    .nypl-searchable-field .nypl-facet-search input[type=number] {
+      background-color: #efedeb;
+      border: 0;
+      border-radius: 0.2rem 0.2rem 0 0;
+      font-size: 1rem;
+      padding: 0;
+      -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+      -moz-box-shadow: inset 0 0 0 2px #efedeb;
+      box-shadow: inset 0 0 0 2px #efedeb;
+      border-bottom: 0.125rem solid #080807;
+      height: 2rem;
+      padding: 1.5rem 0 0;
+      text-indent: 0.5rem;
+      transition: all 0.2s ease-out;
+      width: 100%; }
+      .nypl-searchable-field .nypl-facet-search input[type=text].active,
+      .nypl-searchable-field .nypl-facet-search input[type=email].active,
+      .nypl-searchable-field .nypl-facet-search input[type=number].active {
+        width: 16rem; }
+      .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
+      .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
+      .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
+        background-color: #fff;
+        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+        box-shadow: inset 0 0 0 4px #ffb81d;
+        color: #080807;
+        outline: none; }
+    .nypl-searchable-field .nypl-facet-search .nypl-field-status {
+      background-color: #fff;
+      color: #776e64;
+      display: block;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      padding-left: 0.5rem; }
+    .nypl-searchable-field .nypl-facet-search label {
+      font-weight: normal; }
   .nypl-searchable-field .nypl-facet-list {
     width: 100%; }
     .nypl-searchable-field .nypl-facet-list label {
@@ -2028,9 +2077,9 @@ button:focus {
       text-align: right; }
   .nypl-searchable-field .nypl-link-button {
     margin: 0.5rem 0.5rem 0; }
-  .nypl-searchable-field.nosearch .nypl-facet-search label {
-    position: relative; }
-  .nypl-searchable-field.nosearch .nypl-facet-search input {
+  .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
+    transform: rotate(0deg); }
+  .nypl-searchable-field.nosearch .nypl-facet-search {
     display: none; }
 
 .nypl-alphabetical-filter {
