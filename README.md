@@ -22,6 +22,7 @@ See [LICENSE](LICENSE.md)
 - Searchable facets now collapsible (#75)
 - Omni search spinner example added.
 - Added design of discovery homepage.
+- Revisiting the “Start over” pattern in a better, Github-inspired way.
 
 ### v0.1.11
 - Crankin' it up to eleven!
