@@ -89,6 +89,7 @@ $form-padding: 0.5rem;
 
   input[type=text],
   input[type=email],
+  input[type=date],
   input[type=number] {
     @include text;
   }
@@ -175,7 +176,6 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include text-field-with-label;
   min-width: 12rem;
-  width: 50%;
 }
 
 @mixin required-field {
