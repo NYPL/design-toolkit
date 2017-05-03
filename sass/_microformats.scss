@@ -5,6 +5,44 @@
   padding: 0.8rem 0;
 }
 
+@mixin bar($percent: 100) {
+  background: linear-gradient(to right, transparent 0%, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color) 100%;
+}
+
+@mixin lead {
+  font-size: 2rem;
+
+  @include media($mobile-breakpoint) {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin basic-list {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+@mixin bar-list {
+  @include basic-list;
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  li {
+    span.count {
+      color: $nypl-gray;
+      display: inline-block;
+      float: right;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
 @mixin secondary-title {
   font-size: 1.2rem;
   font-weight: bold;

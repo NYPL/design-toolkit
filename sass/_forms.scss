@@ -379,12 +379,6 @@ $form-padding: 0.5rem;
       display: block;
       font-size: 0.85rem;
       margin-top: 0.2rem;
-
-      @for $percent from 1 through 100 {
-        &.nypl-bar_#{$percent} {
-          background: linear-gradient(to right, transparent 0%, transparent ((100 - $percent) * 1%), $nypl-bar-color ((100 - $percent) * 1%), $nypl-bar-color) 100%;
-        }
-      }
     }
 
     input[type="radio"],
