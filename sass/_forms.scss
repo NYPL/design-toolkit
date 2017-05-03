@@ -179,7 +179,7 @@ $form-padding: 0.5rem;
 }
 
 @mixin required-field {
-  color: $highlight-color;
+  color: darken($highlight-color, 10%);
   font-size: 0.9rem;
   font-weight: normal;
 }
