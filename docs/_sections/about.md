@@ -7,6 +7,14 @@ description: Why this toolkit exists and how to use it.
 
 Coming soon
 
+### Modularity
+
+Coming soon
+
+### Copy/Paste Everything
+
+Coming soon
+
 ### System Fonts
 
 Coming soon

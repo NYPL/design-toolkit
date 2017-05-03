@@ -74,7 +74,7 @@ description: Displaying search results and tabular data.
 
     <h3 id="summary">Search Results Summary</h3>
 
-    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the screen-reader-friendly text inside a <code>span</code> tag.
+    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the screen-reader-friendly text inside a <code>span</code> tag. A final <code>div</code> of class <code>nypl-clear-results</code> with an <code>nypl-link-button</code> will allow users to clear the current search and start over.
     </p>
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The main element must include the following attributes when being updated via JavaScript (no page refresh): <code>aria-live="assertive"</code> <code>aria-atomic="true"</code> <code>role="presentation"</code>.</p>
@@ -87,29 +87,34 @@ description: Displaying search results and tabular data.
 <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
   <span class="nypl-results-count">1,807</span> resources found for
   <span class="nypl-facet">
-    <strong>Young Adult<button><span>Remove Young Adult filter</span></button></strong>
+    Audience <strong>Young Adult<button><span>Remove Young Adult filter</span></button></strong>
   </span>,
   <span class="nypl-facet">
-    <strong>Fiction<button><span>Remove Fiction filter</span></button></strong>
+    Genre <strong>Fiction<button><span>Remove Fiction filter</span></button></strong>
   </span>.
+  <div class="nypl-clear-results">
+    <button class="nypl-link-button">Clear current search query, filters, and sorts</button>
+  </div>
 </div>
     </div>
     <pre><code class="scss">
 .nypl-results-summary
 .nypl-results-count
 .nypl-facet
+.nypl-clear-results
     </code></pre>
 
     <pre><code class="html">
 &lt;div class=&quot;nypl-results-summary&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot; role=&quot;presentation&quot;&gt;
   &lt;span class=&quot;nypl-results-count&quot;&gt;1,807&lt;/span&gt; resources found for
   &lt;span class=&quot;nypl-facet&quot;&gt;
-    &lt;strong&gt;Young Adult&lt;button&gt;&lt;span&gt;Remove Young Adult filter&lt;/span&gt;&lt;/button&gt;&lt;/strong&gt;
+    Audience &lt;strong&gt;Young Adult&lt;button&gt;&lt;span&gt;Remove Young Adult filter&lt;/span&gt;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;,
   &lt;span class=&quot;nypl-facet&quot;&gt;
-    &lt;strong&gt;Fiction&lt;button&gt;&lt;span&gt;Remove Fiction filter&lt;/span&gt;&lt;/button&gt;&lt;/strong&gt;
+    Genre &lt;strong&gt;Fiction&lt;button&gt;&lt;span&gt;Remove Fiction filter&lt;/span&gt;&lt;/button&gt;&lt;/strong&gt;
   &lt;/span&gt;.
-&lt;/div&gt;    </code></pre>
+&lt;/div&gt;
+    </code></pre>
 
 
     <h3 id="sorting">Sorting</h3>

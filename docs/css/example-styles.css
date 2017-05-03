@@ -865,6 +865,19 @@ button:focus {
     margin-bottom: 0.5rem;
     margin-left: 0; }
 
+.nypl-bar-list {
+  list-style-type: none; }
+  .nypl-bar-list li {
+    margin-bottom: 0.5rem;
+    margin-left: 0; }
+  .nypl-bar-list h2 {
+    font-size: 1.4rem; }
+  .nypl-bar-list li span.count {
+    color: #776e64;
+    display: inline-block;
+    float: right;
+    margin-right: 0.2rem; }
+
 .nypl-collapsible {
   -webkit-transition: all 0.5s ease-out 0s;
   -moz-transition: all 0.5s ease-out 0s;
@@ -2702,7 +2715,7 @@ button:focus {
     padding: 0 0.25rem 0 0.5rem; }
     .nypl-results-summary .nypl-facet button {
       background-color: #776e64;
-      border: 0.125rem solid #776e64;
+      border: 0 solid #776e64;
       border-radius: 2rem;
       color: #fff;
       cursor: pointer;
@@ -2751,6 +2764,8 @@ button:focus {
         display: block;
         line-height: 0;
         margin: 0.6rem 0.35rem 0.7rem; }
+  .nypl-results-summary .nypl-clear-results {
+    clear: both; }
 
 .nypl-results-pagination {
   font-size: 1.5rem;
