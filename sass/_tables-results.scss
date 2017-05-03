@@ -78,6 +78,10 @@
       }
     }
   }
+
+  .nypl-clear-results {
+    clear: both;
+  }
 }
 
 @mixin results-pagination {

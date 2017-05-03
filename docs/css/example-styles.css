@@ -2764,6 +2764,8 @@ button:focus {
         display: block;
         line-height: 0;
         margin: 0.6rem 0.35rem 0.7rem; }
+  .nypl-results-summary .nypl-clear-results {
+    clear: both; }
 
 .nypl-results-pagination {
   font-size: 1.5rem;

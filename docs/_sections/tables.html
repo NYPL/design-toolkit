@@ -74,7 +74,7 @@ description: Displaying search results and tabular data.
 
     <h3 id="summary">Search Results Summary</h3>
 
-    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the screen-reader-friendly text inside a <code>span</code> tag.
+    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the screen-reader-friendly text inside a <code>span</code> tag. A final <code>div</code> of class <code>nypl-clear-results</code> with an <code>nypl-link-button</code> will allow users to clear the current search and start over.
     </p>
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The main element must include the following attributes when being updated via JavaScript (no page refresh): <code>aria-live="assertive"</code> <code>aria-atomic="true"</code> <code>role="presentation"</code>.</p>
@@ -92,12 +92,16 @@ description: Displaying search results and tabular data.
   <span class="nypl-facet">
     Genre <strong>Fiction<button><span>Remove Fiction filter</span></button></strong>
   </span>.
+  <div class="nypl-clear-results">
+    <button class="nypl-link-button">Clear current search query, filters, and sorts</button>
+  </div>
 </div>
     </div>
     <pre><code class="scss">
 .nypl-results-summary
 .nypl-results-count
 .nypl-facet
+.nypl-clear-results
     </code></pre>
 
     <pre><code class="html">
