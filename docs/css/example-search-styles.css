@@ -2698,7 +2698,7 @@ button:focus {
     padding: 0 0.25rem 0 0.5rem; }
     .nypl-results-summary .nypl-facet button {
       background-color: #776e64;
-      border: 0.125rem solid #776e64;
+      border: 0 solid #776e64;
       border-radius: 2rem;
       color: #fff;
       cursor: pointer;
