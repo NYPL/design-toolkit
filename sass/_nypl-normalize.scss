@@ -74,7 +74,8 @@ h4 {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   padding: 0;
 }
@@ -91,8 +92,8 @@ pre {
 }
 
 code {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 strong {
