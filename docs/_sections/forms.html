@@ -107,7 +107,7 @@ $("#username1 #required-field").keyup(function (e) {
 
     <h3 id="dateFields">Date Fields</h3>
 
-    <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
+    <p>The date field implements a similar structure as the Text Field but uses <code>type="date"</code>. This input type has <a href="http://caniuse.com/#search=date">limited browser support</a> so additional server-side and JavaScript validation should be taken into consideration. Server-side validation should still occur since it is more secure.</p>
 
     <p><strong>Note:</strong> This only applies for dates that will conform to  a year/month/day-style pattern (YYYY/MM/DD, MM/DD/YYYY, etc).</p>
 
@@ -129,9 +129,6 @@ $("#username1 #required-field").keyup(function (e) {
   &lt;input id=&quot;date-of-birth&quot; type=&quot;date&quot; class=&quot;form-text&quot; /&gt;
   &lt;span class=&quot;nypl-field-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Format the date as MM/DD/YYYY&lt;/span&gt;
 &lt;/div&gt;
-    </code></pre>
-    <pre><code class="js">
-$('#date-of-birth').mask('00/00/0000');
     </code></pre>
 
     <h3 id="nameFields">Name Fields</h3>

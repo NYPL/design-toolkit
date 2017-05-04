@@ -1793,6 +1793,8 @@ button:focus {
     font-size: 0.8rem;
     line-height: 1.5;
     padding-left: 0.5rem; }
+  .nypl-date-field input[type=date] {
+    -webkit-appearance: none; }
 
 .nypl-required-field {
   color: #aa272c;
