@@ -480,11 +480,11 @@ legend {
 a {
   text-decoration: underline; }
   a:link {
-    color: #1b7fa7; }
+    color: #176e91; }
   a:visited {
-    color: #145e7b; }
+    color: #104d65; }
   a:hover, a:visited:hover {
-    color: #22a0d3;
+    color: #1f90bd;
     text-decoration: none; }
   a.inverted:link {
     color: #fff; }
@@ -893,7 +893,7 @@ button:focus {
 .nypl-link-button {
   background: none;
   border: 0;
-  color: #1b7fa7;
+  color: #176e91;
   cursor: pointer;
   font: inherit;
   padding: 0;
@@ -2308,7 +2308,7 @@ button:focus {
   border: 0; }
 
 .nypl-page-header {
-  background-color: #d7d4d0;
+  background-color: #efedeb;
   margin-bottom: 1rem; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
@@ -2811,7 +2811,7 @@ button:focus {
     width: 1em;
     speak: none;
     display: block;
-    fill: #1b7fa7;
+    fill: #176e91;
     float: right;
     height: 2rem;
     margin-top: 0.4rem;
@@ -3813,7 +3813,7 @@ button:focus {
   -o-transition: all 0.1s ease-out 0s;
   transition: all 0.1s ease-out 0s; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
-    background-color: #1b7fa7;
+    background-color: #176e91;
     border: 0 solid #776e64;
     border-radius: 0.2rem;
     color: #fff;
@@ -4061,7 +4061,7 @@ hr {
 #skip a {
   background-color: #fff;
   border: 0;
-  color: #1b7fa7;
+  color: #176e91;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -4074,7 +4074,7 @@ hr {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #1b7fa7;
+    border: 5px solid #176e91;
     height: auto;
     left: 7px;
     outline: 0;

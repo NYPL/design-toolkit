@@ -70,7 +70,7 @@ $page-background-color: $nypl-white;
 $nypl-bar-color: rgba(0, 0, 0, 0.1);
 
 // link colors
-$link-color: $nypl-blue;
+$link-color: darken($nypl-blue, 5%);
 $link-visited-color: darken($link-color, 10%);
 $link-hover-color: lighten($link-color, 10%);
 $inverted-link-color: $nypl-white;

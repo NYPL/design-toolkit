@@ -1,6 +1,10 @@
 @import "measurements";
 @import "colors";
 
+.hljs-selector-class {
+  color: $highlight-color; // overriding highlightjs which has low contrast in css class highlighting
+}
+
 #skip a {
   background-color: $nypl-white;
   border: 0;

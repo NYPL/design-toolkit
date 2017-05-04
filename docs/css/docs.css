@@ -1,7 +1,10 @@
+.hljs-selector-class {
+  color: #d0343a; }
+
 #skip a {
   background-color: #fff;
   border: 0;
-  color: #1b7fa7;
+  color: #176e91;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -14,7 +17,7 @@
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #1b7fa7;
+    border: 5px solid #176e91;
     height: auto;
     left: 7px;
     outline: 0;
