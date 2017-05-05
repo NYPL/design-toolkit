@@ -18,6 +18,12 @@ See [LICENSE](LICENSE.md)
 
 ## CHANGE LOG
 
+### v0.1.13
+- Improved search results.
+- Improved item page.
+- Added design statement.
+- Fixes: #89, #87, #82.
+
 ### v0.1.12
 - Searchable facets now collapsible (#75)
 - Omni search spinner example added.
