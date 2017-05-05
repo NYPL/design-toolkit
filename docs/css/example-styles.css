@@ -854,10 +854,10 @@ button:focus {
   background: linear-gradient(to right, transparent 0%, transparent 0%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1)) 100%; }
 
 .nypl-lead {
-  font-size: 2rem; }
+  font-size: 1.6rem; }
   @media (max-width: 965px) {
     .nypl-lead {
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
 
 .nypl-basic-list {
   list-style-type: none; }
