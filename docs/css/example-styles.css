@@ -2928,22 +2928,14 @@ button:focus {
       font-weight: bold; }
 
 .nypl-results-item {
-  border-bottom: 0.125rem solid #776e64;
+  border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
   margin-bottom: 2rem;
-  margin-left: 0;
-  padding-bottom: 1rem; }
+  margin-left: 0; }
   .nypl-results-item h2 {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem; }
-  .nypl-results-item .nypl-results-unavailable {
-    border-left: 0.5rem solid #d0343a;
-    color: #d0343a;
-    margin: 1rem 0;
-    padding-left: 0.5rem; }
-  .nypl-results-item dd.nypl-results-highlight {
-    font-weight: bold; }
   .nypl-results-item dl {
     margin-bottom: 1rem; }
     .nypl-results-item dl::before, .nypl-results-item dl::after {
@@ -2973,6 +2965,34 @@ button:focus {
         width: 60%; } }
   .nypl-results-item p {
     margin-bottom: 0.5rem; }
+
+.nypl-results-unavailable {
+  border-left: 0.5rem solid #d0343a;
+  color: #d0343a;
+  margin: 0.5rem 0;
+  padding-left: 0.5rem; }
+
+.nypl-results-item-description {
+  margin-bottom: 0.5rem; }
+
+.nypl-results-info,
+.nypl-results-place,
+.nypl-results-publisher,
+.nypl-results-date {
+  display: inline-block;
+  margin-right: 1rem; }
+
+.nypl-results-media {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #776e64;
+  font-weight: bold; }
+
+.nypl-results-use {
+  color: #776e64;
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic; }
 
 .nypl-item-toc {
   list-style-type: none;
@@ -3057,8 +3077,6 @@ button:focus {
 .nypl-item-holdings .nypl-item-unavailable {
   color: #d0343a; }
 
-.nypl-item-details dd.nypl-results-highlight {
-  font-weight: bold; }
 .nypl-item-details dl {
   margin-bottom: 1rem; }
   .nypl-item-details dl::before, .nypl-item-details dl::after {
@@ -3087,8 +3105,6 @@ button:focus {
     .nypl-item-details dd {
       width: 60%; } }
 
-.nypl-item-external-links dd.nypl-results-highlight {
-  font-weight: bold; }
 .nypl-item-external-links dl {
   margin-bottom: 1rem; }
   .nypl-item-external-links dl::before, .nypl-item-external-links dl::after {
