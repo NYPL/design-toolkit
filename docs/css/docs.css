@@ -51,7 +51,7 @@ h1 {
   text-decoration: underline; }
 
 .top-level-header {
-  display: inline; }
+  display: inline-block; }
 
 .back-to-top {
   cursor: pointer;
