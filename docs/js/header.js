@@ -79,19 +79,6 @@ function init() {
       $("#username1 .nypl-field-status").text("")
     }
   })
-  $("#email1 #email-field").blur(function (e) {
-    var self = $(e.target)
-    var text = self.val()
-    var regex = /^[^@\s]+@[^@\s]+\.[^@\s]+/
-    if (!regex.test(text)) {
-      $("#email1").addClass("nypl-field-error")
-      $("#email1 .nypl-field-status").text("The Email address must use the correct formatting. Example: prudence@example.org. Try again.")
-    } else {
-      $("#email1").removeClass("nypl-field-error")
-      $("#email1 .nypl-field-status").text("")
-      self.attr("aria-invalid", "false")
-    }
-  })
   $("code.html").on("click", onSampleCodeClick)
   $(".nypl-spinner-button").on("click touchend", function(e) {
     var self = $(e.target);
