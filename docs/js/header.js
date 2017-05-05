@@ -67,29 +67,22 @@ function init() {
       $(".nypl-terms-checkbox").removeClass("checked")
     }
   })
-  $("#username1 #required-field").keyup(function (e) {
+  $("#username1 #required-field").change(function (e) {
     var self = $(e.target)
     var text = self.val()
     var regex = /\W/g
-    if (text.length > 2 && regex.test(text)) {
+    if (text.length > 0 && regex.test(text)) {
       $("#username1").addClass("nypl-field-error")
       $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
-    } else {
-      $("#username1").removeClass("nypl-field-error")
-      $("#username1 .nypl-field-status").text("")
     }
   })
-  $("#email1 #email-field").blur(function (e) {
+  $("#email1 #email-field").change(function (e) {
     var self = $(e.target)
     var text = self.val()
     var regex = /^[^@\s]+@[^@\s]+\.[^@\s]+/
     if (!regex.test(text)) {
       $("#email1").addClass("nypl-field-error")
       $("#email1 .nypl-field-status").text("The Email address must use the correct formatting. Example: prudence@example.org. Try again.")
-    } else {
-      $("#email1").removeClass("nypl-field-error")
-      $("#email1 .nypl-field-status").text("")
-      self.attr("aria-invalid", "false")
     }
   })
   $("code.html").on("click", onSampleCodeClick)

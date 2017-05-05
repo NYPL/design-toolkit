@@ -65,16 +65,16 @@ description: Form fields and user input.
 
     <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
 
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field. If included, the note must include the <code>aria-live="assertive"</code> and <code>aria-atomic="true"</code> attributes if the form is being validated via client-side JavaScript. The example below shows a simple validation on every key press using jQuery. See <a href="#formValidation">Form Validation</a> for more information.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field. If included, the note must include the <code>aria-labelledby="[LABEL_ID] [STATUS_FIELD_ID]"</code>, <code>aria-live="assertive"</code>, and <code>aria-atomic="true"</code> attributes if the form is being validated via client-side JavaScript. The example below shows a simple validation on every key press using jQuery. See <a href="#formValidation">Form Validation</a> for more information.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-text-field" id="username1">
-  <label for="required-field">Username
+  <label for="required-field" id="username1-label">Username
     <span class="nypl-required-field">Required</span>
   </label>
-  <input id="required-field" type="text" required="true" aria-required="true" />
-  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Username must only contain letters and numbers.</span>
+  <input id="required-field" type="text" required="true" aria-labelledby="username1-label username1-status" aria-required="true" />
+  <span class="nypl-field-status" id="username1-status" aria-live="assertive" aria-atomic="true">Username must only contain letters and numbers.</span>
 </div>
     </div>
 
@@ -83,24 +83,21 @@ description: Form fields and user input.
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-text-field&quot; id=&quot;username1&quot;&gt;
-  &lt;label for=&quot;required-field&quot;&gt;Username
+  &lt;label for=&quot;required-field&quot; id=&quot;username1-label&quot;&gt;Username
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-required=&quot;true&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
+  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-labelledby=&quot;username1-label username1-status&quot; aria-required=&quot;true&quot; /&gt;
+  &lt;span class=&quot;nypl-field-status&quot; id=&quot;username1-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Username must only contain letters and numbers.&lt;/span&gt;
 &lt;/div&gt;
     </code></pre>
     <pre><code class="js">
-$("#username1 #required-field").keyup(function (e) {
+$("#username1 #required-field").change(function (e) {
   var self = $(e.target)
   var text = self.val()
   var regex = /\W/g
-  if (text.length > 2 && regex.test(text)) {
+  if (text.length > 0 && regex.test(text)) {
     $("#username1").addClass("nypl-field-error")
     $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
-  } else {
-    $("#username1").removeClass("nypl-field-error")
-    $("#username1 .nypl-field-status").text("Username must only contain letters and numbers.")
   }
 })
     </code></pre>
