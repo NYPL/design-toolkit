@@ -22,7 +22,7 @@ See [LICENSE](LICENSE.md)
 - Improved search results.
 - Improved item page.
 - Added design statement.
-- Fixes: #89, #87, #82.
+- Fixes: #89, #87, #82, #93.
 
 ### v0.1.12
 - Searchable facets now collapsible (#75)
