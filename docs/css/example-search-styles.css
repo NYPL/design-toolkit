@@ -2934,7 +2934,7 @@ button:focus {
   margin-left: 0; }
   .nypl-results-item h2 {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem; }
   .nypl-results-item dl {
     margin-bottom: 1rem; }
@@ -2969,7 +2969,7 @@ button:focus {
 .nypl-results-unavailable {
   border-left: 0.5rem solid #d0343a;
   color: #d0343a;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding-left: 0.5rem; }
 
 .nypl-results-item-description {
@@ -2991,6 +2991,7 @@ button:focus {
 .nypl-results-use {
   color: #776e64;
   display: block;
+  font-size: 0.9rem;
   font-style: italic; }
 
 .nypl-item-toc {
