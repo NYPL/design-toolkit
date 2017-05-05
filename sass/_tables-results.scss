@@ -6,6 +6,8 @@
 
 @warn "refactor mixins and remove magic numbers";
 
+$results-item-border-width: 0.0625rem;
+
 @mixin basic-table {
   border-collapse: collapse;
   display: table;
@@ -191,10 +193,6 @@ $sorter-width: 11em;
 }
 
 @mixin item-definition-list($item-margin-bottom: 0.5rem) {
-  dd.nypl-results-highlight {
-    font-weight: bold;
-  }
-
   dl {
     @include clearfix;
     margin-bottom: 1rem;
@@ -232,23 +230,15 @@ $sorter-width: 11em;
 }
 
 @mixin results-item {
-  border-bottom: $general-border-width solid $nypl-gray;
+  border-bottom: $results-item-border-width solid $nypl-light-gray;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
-  padding-bottom: 1rem;
 
   h2 {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
-  }
-
-  .nypl-results-unavailable {
-    border-left: 0.5rem solid $highlight-color;
-    color: $highlight-color;
-    margin: 1rem 0;
-    padding-left: 0.5rem;
   }
 
   @include item-definition-list;
@@ -256,6 +246,35 @@ $sorter-width: 11em;
   p {
     margin-bottom: 0.5rem;
   }
+}
+
+@mixin results-unavailable {
+  border-left: 0.5rem solid $highlight-color;
+  color: $highlight-color;
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+}
+
+@mixin results-item-description($item-margin-bottom: 0.5rem) {
+  margin-bottom: $item-margin-bottom;
+}
+
+@mixin results-info {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+@mixin results-media {
+  @include results-info;
+  color: $nypl-gray;
+  font-weight: bold;
+}
+
+@mixin results-use {
+  color: $nypl-gray;
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 @mixin item-toc {

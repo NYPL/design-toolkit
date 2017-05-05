@@ -309,6 +309,29 @@
   @include results-item;
 }
 
+.nypl-results-unavailable {
+  @include results-unavailable;
+}
+
+.nypl-results-item-description {
+  @include results-item-description;
+}
+
+.nypl-results-info,
+.nypl-results-place,
+.nypl-results-publisher,
+.nypl-results-date {
+  @include results-info;
+}
+
+.nypl-results-media {
+  @include results-media;
+}
+
+.nypl-results-use {
+  @include results-use;
+}
+
 .nypl-item-toc {
   @include item-toc;
 }

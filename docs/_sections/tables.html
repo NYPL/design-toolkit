@@ -173,9 +173,19 @@ description: Displaying search results and tabular data.
 
     <p>Sometimes search results don't accommodate to a consistent structure or it is not useful to present them in table form. In these cases results should be returned in a unordered list (<code>ul</code>) of class <code>nypl-results-list</code>. Each result list item should have the class <code>nypl-results-item</code> and contain:
       <ul>
-        <li>An <code>h2</code> element that contains a link to the result page.</li>
+        <li>An <code>h2</code> element that contains a link to the result page with the <strong>item author</strong> (if available) and the <strong>item title</strong> separated by an <strong>en-dash</strong> (&ndash;, html: <code>&amp;ndash;</code>).</li>
         <li><strong>Optional:</strong> A notification of unavailability of the item (if applicable) in a div with class <code>nypl-results-unavailable</code>.</li>
         <li><strong>Optional:</strong> A definition list (<code>dl</code>) with the most relevant attributes of the result item sorted by importance. Terms that need to be highlighted (for easier scanning of results) should have a class of <code>nypl-results-highlight</code></li>
+        <li><strong>Optional:</strong> A div of class <code>nypl-results-item-description</code> with a series of <code>span</code> tags containing this information (when available) about the item <strong>in this order</strong>:
+          <ul>
+            <li>media (or material type), class <code>.nypl-results-media</code></li>
+            <li>place of publishing, class <code>.nypl-results-place</code></li>
+            <li>publisher, class <code>.nypl-results-publisher</code></li>
+            <li>date of publishing, class <code>.nypl-results-date</code></li>
+            <li>room(s) of access, class <code>.nypl-results-info</code></li>
+            <li>usage (for example: In-library use), class <code>.nypl-results-use</code></li>
+          </ul>
+        </li>
       </ul>
     </p>
 
@@ -184,28 +194,25 @@ description: Displaying search results and tabular data.
 <ul class="nypl-results-list">
   <!-- an item -->
   <li class="nypl-results-item">
-    <h2><a href="#">The Biography of Example</a></h2>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Text</dd>
-      <dt>Author</dt>
-      <dd>Smith, Angela F., 1982-</dd>
-      <dt>Published</dt>
-      <dd>2014</dd>
-    </dl>
+    <h2><a href="#">Smith, Angela F., 1982- &ndash; The Biography of Example</a></h2>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Text</span>
+      <span class="nypl-results-place">New York</span>
+      <span class="nypl-results-date">2014</span>
+    </div>
   </li>
   <!-- another item -->
   <li class="nypl-results-item">
-    <h2><a href="#">Very Rare Item</a></h2>
+    <h2><a href="#">Casasbuenas Gutiérrez, Margarita, 1915-1997 &ndash; Very Rare Item</a></h2>
     <div class="nypl-results-unavailable">Currently not available for use</div>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Text</dd>
-      <dt>Author</dt>
-      <dd>Casasbuenas Gutiérrez, Margarita, 1915-1997</dd>
-      <dt>Published</dt>
-      <dd>1942</dd>
-    </dl>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Text</span>
+      <span class="nypl-results-place">Buenos Aires</span>
+      <span class="nypl-results-publisher">Editorial Planeta</span>
+      <span class="nypl-results-date">1972</span>
+      <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
+      <span class="nypl-results-use">Item for In-library use</span>
+    </div>
   </li>
 </ul>
     </div>
@@ -213,34 +220,36 @@ description: Displaying search results and tabular data.
 .nypl-results-list
 .nypl-results-item
 .nypl-results-unavailable
-.nypl-results-highlight
+.nypl-results-media
+.nypl-results-place
+.nypl-results-publisher
+.nypl-results-date
+.nypl-results-info
+.nypl-results-use
     </code></pre>
     <pre><code class="html">
 &lt;ul class=&quot;nypl-results-list&quot;&gt;
   &lt;!-- an item --&gt;
   &lt;li class=&quot;nypl-results-item&quot;&gt;
-    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;The Biography of Example&lt;/a&gt;&lt;/h2&gt;
-    &lt;dl&gt;
-      &lt;dt class=&quot;nypl-results-highlight&quot;&gt;Material Type&lt;/dt&gt;
-      &lt;dd class=&quot;nypl-results-highlight&quot;&gt;Text&lt;/dd&gt;
-      &lt;dt&gt;Author&lt;/dt&gt;
-      &lt;dd&gt;Smith, Angela F., 1982-&lt;/dd&gt;
-      &lt;dt&gt;Published&lt;/dt&gt;
-      &lt;dd&gt;2014&lt;/dd&gt;
-    &lt;/dl&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Smith, Angela F., 1982- &amp;ndash; The Biography of Example&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;nypl-results-item-description&quot;&gt;
+      &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-place&quot;&gt;New York&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-date&quot;&gt;2014&lt;/span&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
   &lt;!-- another item --&gt;
   &lt;li class=&quot;nypl-results-item&quot;&gt;
-    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Very Rare Item&lt;/a&gt;&lt;/h2&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Casasbuenas Guti&eacute;rrez, Margarita, 1915-1997 &amp;ndash; Very Rare Item&lt;/a&gt;&lt;/h2&gt;
     &lt;div class=&quot;nypl-results-unavailable&quot;&gt;Currently not available for use&lt;/div&gt;
-    &lt;dl&gt;
-      &lt;dt class=&quot;nypl-results-highlight&quot;&gt;Material Type&lt;/dt&gt;
-      &lt;dd class=&quot;nypl-results-highlight&quot;&gt;Text&lt;/dd&gt;
-      &lt;dt&gt;Author&lt;/dt&gt;
-      &lt;dd&gt;Casasbuenas Guti&eacute;rrez, Margarita, 1915-1997&lt;/dd&gt;
-      &lt;dt&gt;Published&lt;/dt&gt;
-      &lt;dd&gt;1942&lt;/dd&gt;
-    &lt;/dl&gt;
+    &lt;div class=&quot;nypl-results-item-description&quot;&gt;
+      &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-place&quot;&gt;Buenos Aires&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-publisher&quot;&gt;Editorial Planeta&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-date&quot;&gt;1972&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-info&quot;&gt;SASB - Rose Main Rdg Rm 315&lt;/span&gt;
+      &lt;span class=&quot;nypl-results-use&quot;&gt;Item for In-library use&lt;/span&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
     </code></pre>

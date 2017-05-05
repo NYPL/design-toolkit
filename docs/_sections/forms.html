@@ -104,16 +104,15 @@ $("#username1 #required-field").change(function (e) {
 
     <h3 id="dateFields">Date Fields</h3>
 
-    <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
+    <p>The date field implements a similar structure as the Text Field but uses <code>type="date"</code>. This input type has <a href="http://caniuse.com/#search=date">limited browser support</a> so additional server-side and JavaScript validation should be taken into consideration. Server-side validation should still occur since it is more secure.</p>
 
     <p><strong>Note:</strong> This only applies for dates that will conform to  a year/month/day-style pattern (YYYY/MM/DD, MM/DD/YYYY, etc).</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-date-field">
-  <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
+  <label for="date-of-birth">Date of Birth</label>
   <input id="date-of-birth" type="date" class="form-text" />
-  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Format the date as MM/DD/YYYY</span>
 </div>
     </div>
 
@@ -122,13 +121,9 @@ $("#username1 #required-field").change(function (e) {
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-date-field&quot;&gt;
-  &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+  &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth&lt;/label&gt;
   &lt;input id=&quot;date-of-birth&quot; type=&quot;date&quot; class=&quot;form-text&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Format the date as MM/DD/YYYY&lt;/span&gt;
 &lt;/div&gt;
-    </code></pre>
-    <pre><code class="js">
-$('#date-of-birth').mask('00/00/0000');
     </code></pre>
 
     <h3 id="nameFields">Name Fields</h3>
