@@ -369,17 +369,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li {
-  max-width: 40rem;
-  word-wrap: break-word; }
-
 a {
   border-radius: 0; }
 
@@ -439,10 +428,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+li {
   line-height: 1.4;
   margin-bottom: 0.5rem;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  max-width: 40rem;
+  word-wrap: break-word; }
 
 h1 {
   font-size: 2.6rem;
@@ -504,17 +496,6 @@ a {
     color: #e6e6e6; }
   a.inverted:hover, a.inverted:visited:hover {
     color: #fff; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li {
-  max-width: 40rem;
-  word-wrap: break-word; }
 
 a {
   border-radius: 0; }

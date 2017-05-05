@@ -42,10 +42,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+li {
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
+  max-width: 40rem;
+  word-wrap: break-word;
 }
 
 h1 {
