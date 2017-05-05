@@ -10,10 +10,10 @@
 }
 
 @mixin lead {
-  font-size: 2rem;
+  font-size: 1.6rem;
 
   @include media($mobile-breakpoint) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
