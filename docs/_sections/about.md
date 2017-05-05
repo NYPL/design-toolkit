@@ -7,9 +7,10 @@ description: Why this toolkit exists and how to use it.
 
 This toolkit aims to serve multiple purposes:
 
-- facilitate the creation of new web user interfaces
+- facilitate the rapid creation of new web user interfaces
 - ensure consistency in design and quality
 - serve as the main repository for documenting the web design efforts at NYPL Digital
+- establish and promote universal design best practices
 
 **This is a work in progress.** We will be constantly updating it, making additions and modifications to suit the needs of the team and the organization. If you see something missing or wrong, please [open an issue on the Github repository](https://github.com/NYPL/design-toolkit/issues/new).
 
@@ -36,7 +37,7 @@ These are just the main reasons why we decided, for now, to use system fonts in 
 
 ### Accessibility And Mobile First
 
-This toolkit is designed with accessibility and mobile use in mind first. All features should be available to all users in all devices. If you see something that does not conform to this goal, please [open an issue in Github](https://github.com/NYPL/design-toolkit/issues/new).
+This toolkit puts universal design and mobile use first. All features should be accessible to all users in all devices. We strive to conform to WCAG 2.0 AA standard. If you see something that does not conform to this goal and standard, please [open an issue in Github](https://github.com/NYPL/design-toolkit/issues/new).
 
 ### Installation
 
