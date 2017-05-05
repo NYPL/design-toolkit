@@ -516,11 +516,11 @@ function toggleFacet(e) {
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-text-field nypl-field-error" id="email1">
-  <label for="email-field">Email
+  <label for="email-field" id="email1-label">Email
     <span class="nypl-required-field">Required</span>
   </label>
-  <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
-  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
+  <input aria-required="true" aria-invalid="true" aria-labelledby="email1-label email1-status" id="email-field" type="text" placeholder="" value="sally ride" />
+  <span class="nypl-field-status" id="email1-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
 </div>
     </div>
     <pre><code class="scss">
