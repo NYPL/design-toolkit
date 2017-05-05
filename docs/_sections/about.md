@@ -37,7 +37,7 @@ These are just the main reasons why we decided, for now, to use system fonts in 
 
 ### Accessibility And Mobile First
 
-This toolkit puts universal design and mobile use first. All features should be accessible to all users in all devices. We strive to conform to WCAG 2.0 AA standard. If you see something that does not conform to this goal and standard, please [open an issue in Github](https://github.com/NYPL/design-toolkit/issues/new).
+This toolkit puts universal design and mobile use first. All features should be accessible to all users in all devices. We strive to conform to [WCAG 2.0 AA standard](https://www.w3.org/TR/WCAG20/). If you see something that does not conform to this goal and standard, please [open an issue in Github](https://github.com/NYPL/design-toolkit/issues/new).
 
 ### Installation
 
