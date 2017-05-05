@@ -2702,7 +2702,7 @@ button:focus {
     clear: both; }
   .nypl-results-summary .nypl-results-count {
     float: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     line-height: 1;
     margin-bottom: 0.25rem;
