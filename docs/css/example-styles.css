@@ -885,7 +885,7 @@ button:focus {
   transition: all 0.5s ease-out 0s;
   max-height: 40rem;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
   .nypl-collapsible.collapsed {
     max-height: 0; }
