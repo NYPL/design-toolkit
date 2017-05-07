@@ -1,7 +1,7 @@
 # NYPL Digital Design Toolkit
 Design toolkit (SASS) for the NYPL Digital team
 
-[View documentation](http://nypl.github.io/design-toolkit/)
+## [View documentation](http://nypl.github.io/design-toolkit/)
 
 ## View documentation locally
 
@@ -14,7 +14,7 @@ Design toolkit (SASS) for the NYPL Digital team
 
 ## License
 
-See [LICENSE](LICENSE.md)
+See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
