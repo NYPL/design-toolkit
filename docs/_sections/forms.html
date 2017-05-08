@@ -65,6 +65,8 @@ description: Form fields and user input.
 
     <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
 
+    <p>It is recommended that JavaScript-based validation be made in the <code>onchange</code> event (native to <code>select</code> and <code>input[type=radio]</code>, also fired by some frameworks on text <code>blur</code> and submit) unless there is a good reason to do otherwise (for example, each time a user types a new letter).</p>
+
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field. If included, the note must include the <code>aria-labelledby="[LABEL_ID] [STATUS_FIELD_ID]"</code>, <code>aria-live="assertive"</code>, and <code>aria-atomic="true"</code> attributes if the form is being validated via client-side JavaScript. The example below shows a simple validation on every key press using jQuery. See <a href="#formValidation">Form Validation</a> for more information.</p>
 
     <div class="nypl-toolkit-example">
