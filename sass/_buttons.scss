@@ -184,6 +184,7 @@
 
   .nypl-menu-button_menu {
     background-color: $background-color;
+    border-radius: $general-border-radius;
     color: $text-color;
     min-width: 10rem;
     padding: 1rem;
@@ -208,6 +209,7 @@
 
   .nypl-navigation-button_list {
     background-color: $background-color;
+    border-radius: $general-border-radius;
     color: $text-color;
     left: 0;
     list-style: none;

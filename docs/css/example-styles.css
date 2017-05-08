@@ -1198,6 +1198,7 @@ button:focus {
         color: #fff; }
   .nypl-menu-button_left .nypl-menu-button_menu {
     background-color: #776e64;
+    border-radius: 0.2rem;
     color: #fff;
     min-width: 10rem;
     padding: 1rem;
@@ -1278,6 +1279,7 @@ button:focus {
         color: #fff; }
   .nypl-menu-button_right .nypl-menu-button_menu {
     background-color: #776e64;
+    border-radius: 0.2rem;
     color: #fff;
     min-width: 10rem;
     padding: 1rem;
@@ -1358,6 +1360,7 @@ button:focus {
         color: #fff; }
   .nypl-navigation-button .nypl-navigation-button_list {
     background-color: #776e64;
+    border-radius: 0.2rem;
     color: #fff;
     left: 0;
     list-style: none;
