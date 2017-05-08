@@ -23,7 +23,8 @@ See [LICENSE](LICENSE)
 - Improved item page.
 - Added design statement.
 - Searchable facets should default to open but close with JS.
-- Fixes: #89, #87, #82, #94, #97.
+- Sorter docs complete.
+- Fixes: #76, #89, #87, #82, #94, #97.
 
 ### v0.1.12
 - Searchable facets now collapsible (#75)
