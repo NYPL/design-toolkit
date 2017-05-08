@@ -502,19 +502,19 @@
 
 <div class="nypl-results-sorting-controls">
   <div class="nypl-results-sorter">
-    <button>
-    Sort by <strong>relevance</strong>
-    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-      <title>wedge down icon</title>
-      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-    </svg>
+    <button aria-expanded="false">
+    Sort by <span>relevance</span>
+      <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+        <title>wedge down icon</title>
+        <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+      </svg>
     </button>
-    <ul class="hidden">
-      <li><a href="#"><strong>relevance</strong></a></li>
-      <li><a href="#">title A-Z</a></li>
-      <li><a href="#">title Z-A</a></li>
-      <li><a href="#">date (old to new)</a></li>
-      <li><a href="#">date (new to old)</a></li>
+    <ul class="hidden" role="menu">
+      <li><a href="?sort=relevance" class="active">relevance</a></li>
+      <li><a href="?sort=A-Z">title A-Z</a></li>
+      <li><a href="?sort=Z-A">title Z-A</a></li>
+      <li><a href="?sort=old">date (old to new)</a></li>
+      <li><a href="?sort=new">date (new to old)</a></li>
     </ul>
   </div>
 </div>
