@@ -279,12 +279,7 @@ function init() {
     }
   })
 
-  $(".nypl-results-sorter button").on("click", function(e) {
-    e.preventDefault();
-    if ($(e.target).closest('.nypl-results-sorter').length) {
-      toggleSort(e)
-    }
-  })
+  initSort()
 
   $("input[name=available]").change(function() {
     var value = $("input[name=available]:checked").val()
@@ -308,16 +303,41 @@ function init() {
 
 }
 
+function initSort() {
+  $(".nypl-results-sorter button").on("click", function(e) {
+    e.preventDefault();
+    if ($(e.target).closest('.nypl-results-sorter').length) {
+      toggleSort(e)
+    }
+  })
+
+  $(".nypl-results-sorter ul a").on("click", function(e) {
+    e.preventDefault();
+    var selection = $(e.target)
+    var text = selection.text()
+    $(".nypl-results-sorter ul a").removeClass("active") // deactivate all
+    selection.addClass("active")
+    $(".nypl-results-sorter button span").text(text) // set the text
+    toggleSort() //close it
+    $(".nypl-results-sorter button").focus()
+    // … should also apply the sorting stuff
+  })
+}
+
 function toggleSort(e) {
   var self = $(".nypl-results-sorter button")
   var parent = self.parent()
   var selected = 0
+  $(".nypl-results-sorter ul a").each(function (i) {
+    if ($(this).hasClass("active")) {
+      selected = i
+    }
+  })
   var item_count = parent.find("li").length
-  // console.log(item_count)
   self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   parent.find("ul").toggleClass("hidden")
   if (self.attr("aria-expanded") == "true") {
-    parent.find("li:first-child a").focus()
+    parent.find("li a.active").focus()
     parent.on("keydown", function (ee) {
       switch (ee.keyCode) {
         case 27: // ESC

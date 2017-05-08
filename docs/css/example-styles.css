@@ -2913,6 +2913,8 @@ button:focus {
         background-color: #d7d4d0;
         border-color: #d7d4d0;
         color: #080807; }
+    .nypl-results-sorter button span {
+      font-weight: bold; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
     border-radius: 0.2rem;
@@ -2928,7 +2930,7 @@ button:focus {
     display: block;
     padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none; }
-    .nypl-results-sorter a:hover {
+    .nypl-results-sorter a.active, .nypl-results-sorter a:hover, .nypl-results-sorter a:focus {
       color: #080807;
       font-weight: bold; }
 

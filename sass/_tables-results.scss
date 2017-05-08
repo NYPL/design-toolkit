@@ -163,6 +163,10 @@ $sorter-width: 11em;
 
   button {
     @include basic-button($collapsible: true, $border-width: 0, $background-color: $page-background-color, $text-color: $page-color, $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
+
+    span {
+      font-weight: bold;
+    }
   }
 
   ul {
@@ -185,7 +189,9 @@ $sorter-width: 11em;
     padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none;
 
-    &:hover {
+    &.active,
+    &:hover,
+    &:focus {
       color: $page-color;
       font-weight: bold;
     }
