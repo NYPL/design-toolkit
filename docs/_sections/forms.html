@@ -347,20 +347,20 @@ $("#checkbox-optin").change(function(e){
 
     <p>Toggling between closed and open states along with the affected <code>aria-expanded</code> values of the widget will be controlled via JavaScript. A <code>collapsed</code> class must be added (or removed) to the <code>nypl-searchable-field</code> and <code>nypl-collapsible</code> elements. The example below uses jQuery.</p>
 
-    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number. <strong>The widget defaults to the collapsed state.</strong></p>
+    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number. The widget defaults to the <strong>open state</strong> but is <strong>closed via JavaScript on page load</strong>. This is to support situations where JavaScript may be disabled and allow users to see and interact with the facets.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-searchable-field collapsed" aria-expanded="false">
+<div class="nypl-searchable-field" aria-expanded="true">
   <button type="button" id="searchable1" class="nypl-facet-toggle"
-    aria-controls="nypl-searchable-field_facet1" aria-expanded="false">
+    aria-controls="nypl-searchable-field_facet1" aria-expanded="true">
     Subject
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_facet1" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_facet1" aria-expanded="true">
     <div class="nypl-facet-search">
       <label for="subject-text">Search within Subjects</label>
       <input id="subject-text" type="text" />
@@ -408,18 +408,18 @@ $("#checkbox-optin").change(function(e){
     <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
 
     <pre><code class="html">
-&lt;div class=&quot;nypl-searchable-field collapsed&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;div class=&quot;nypl-searchable-field&quot; aria-expanded=&quot;true&quot;&gt;
   &lt;button type=&quot;button&quot; id=&quot;searchable1&quot; class=&quot;nypl-facet-toggle&quot;
-    aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;false&quot;&gt;
+    aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
     Subject
     &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
       &lt;title&gt;wedge down icon&lt;/title&gt;
       &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
     &lt;/svg&gt;
   &lt;/button&gt;
-  &lt;div class=&quot;nypl-collapsible collapsed&quot; id=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;false&quot;&gt;
+  &lt;div class=&quot;nypl-collapsible&quot; id=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
     &lt;div class=&quot;nypl-facet-search&quot;&gt;
-      &lt;label for=&quot;subject-text&quot;&gt;Search within Subject&lt;/label&gt;
+      &lt;label for=&quot;subject-text&quot;&gt;Search within Subjects&lt;/label&gt;
       &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; /&gt;
     &lt;/div&gt;
     &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
