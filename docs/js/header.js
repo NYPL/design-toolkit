@@ -56,6 +56,10 @@ function initSpinners() {
 
 function init() {
   initSpinners()
+  // close all facets
+  $("button.nypl-facet-toggle").each(function (i) {
+    closeFacet($(this))
+  })
   $("button.nypl-facet-toggle").click(function (e) {
     toggleFacet(e)
   })
@@ -352,6 +356,17 @@ function toggleSort(e) {
 function hideSort() {
   $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", false)
   $(".nypl-results-sorter ul").addClass("hidden")
+}
+
+function closeFacet(facet) {
+  var button = facet
+  var facet = button.parent()
+  var collapsible = facet.find(".nypl-collapsible")
+  button.attr("aria-expanded", "false")
+  facet.attr("aria-expanded", "false")
+  collapsible.attr("aria-expanded", "false")
+  facet.addClass("collapsed")
+  collapsible.addClass("collapsed")
 }
 
 function toggleFacet(e) {
