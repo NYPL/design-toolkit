@@ -433,6 +433,17 @@ p {
   margin-bottom: 0.5rem;
   margin-top: 1.5rem; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  max-width: 40rem;
+  word-wrap: break-word; }
+
 h1 {
   font-size: 2.6rem;
   line-height: 1; }
@@ -454,7 +465,8 @@ h4 {
   line-height: 1.5;
   margin: 0; }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   padding: 0; }
 
@@ -468,8 +480,8 @@ pre {
   font-size: 0.9rem; }
 
 code {
-  padding-left: 0.25em;
-  padding-right: 0.25em; }
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
 strong {
   font-weight: bold; }
