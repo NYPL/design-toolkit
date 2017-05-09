@@ -52,7 +52,7 @@ $bullet-size: 0.5rem;
 
   max-height: $max-height;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
   &.collapsed {

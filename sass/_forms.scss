@@ -176,6 +176,10 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include text-field-with-label;
   min-width: 12rem;
+
+  input[type=date] {
+    -webkit-appearance: none; // to prevent iOS override
+  }
 }
 
 @mixin required-field {

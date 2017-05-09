@@ -433,6 +433,17 @@ p {
   margin-bottom: 0.5rem;
   margin-top: 1.5rem; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  max-width: 40rem;
+  word-wrap: break-word; }
+
 h1 {
   font-size: 2.6rem;
   line-height: 1; }
@@ -454,7 +465,8 @@ h4 {
   line-height: 1.5;
   margin: 0; }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   padding: 0; }
 
@@ -468,8 +480,8 @@ pre {
   font-size: 0.9rem; }
 
 code {
-  padding-left: 0.25em;
-  padding-right: 0.25em; }
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
 strong {
   font-weight: bold; }
@@ -885,7 +897,7 @@ button:focus {
   transition: all 0.5s ease-out 0s;
   max-height: 40rem;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
   .nypl-collapsible.collapsed {
     max-height: 0; }
@@ -1198,6 +1210,7 @@ button:focus {
         color: #fff; }
   .nypl-menu-button_left .nypl-menu-button_menu {
     background-color: #776e64;
+    border-radius: 0.2rem;
     color: #fff;
     min-width: 10rem;
     padding: 1rem;
@@ -1278,6 +1291,7 @@ button:focus {
         color: #fff; }
   .nypl-menu-button_right .nypl-menu-button_menu {
     background-color: #776e64;
+    border-radius: 0.2rem;
     color: #fff;
     min-width: 10rem;
     padding: 1rem;
@@ -1358,6 +1372,7 @@ button:focus {
         color: #fff; }
   .nypl-navigation-button .nypl-navigation-button_list {
     background-color: #776e64;
+    border-radius: 0.2rem;
     color: #fff;
     left: 0;
     list-style: none;
@@ -1793,6 +1808,8 @@ button:focus {
     font-size: 0.8rem;
     line-height: 1.5;
     padding-left: 0.5rem; }
+  .nypl-date-field input[type=date] {
+    -webkit-appearance: none; }
 
 .nypl-required-field {
   color: #aa272c;
@@ -2908,6 +2925,8 @@ button:focus {
         background-color: #d7d4d0;
         border-color: #d7d4d0;
         color: #080807; }
+    .nypl-results-sorter button span {
+      font-weight: bold; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
     border-radius: 0.2rem;
@@ -2923,27 +2942,19 @@ button:focus {
     display: block;
     padding: 0.25rem 0.5rem 0.25rem 1rem;
     text-decoration: none; }
-    .nypl-results-sorter a:hover {
+    .nypl-results-sorter a.active, .nypl-results-sorter a:hover, .nypl-results-sorter a:focus {
       color: #080807;
       font-weight: bold; }
 
 .nypl-results-item {
-  border-bottom: 0.125rem solid #776e64;
+  border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
   margin-bottom: 2rem;
-  margin-left: 0;
-  padding-bottom: 1rem; }
+  margin-left: 0; }
   .nypl-results-item h2 {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem; }
-  .nypl-results-item .nypl-results-unavailable {
-    border-left: 0.5rem solid #d0343a;
-    color: #d0343a;
-    margin: 1rem 0;
-    padding-left: 0.5rem; }
-  .nypl-results-item dd.nypl-results-highlight {
-    font-weight: bold; }
   .nypl-results-item dl {
     margin-bottom: 1rem; }
     .nypl-results-item dl::before, .nypl-results-item dl::after {
@@ -2973,6 +2984,34 @@ button:focus {
         width: 60%; } }
   .nypl-results-item p {
     margin-bottom: 0.5rem; }
+
+.nypl-results-unavailable {
+  border-left: 0.5rem solid #d0343a;
+  color: #d0343a;
+  margin: 0.5rem 0;
+  padding-left: 0.5rem; }
+
+.nypl-results-item-description {
+  margin-bottom: 0.5rem; }
+
+.nypl-results-info,
+.nypl-results-place,
+.nypl-results-publisher,
+.nypl-results-date {
+  display: inline-block;
+  margin-right: 1rem; }
+
+.nypl-results-media {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #776e64;
+  font-weight: bold; }
+
+.nypl-results-use {
+  color: #776e64;
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic; }
 
 .nypl-item-toc {
   list-style-type: none;
@@ -3057,8 +3096,6 @@ button:focus {
 .nypl-item-holdings .nypl-item-unavailable {
   color: #d0343a; }
 
-.nypl-item-details dd.nypl-results-highlight {
-  font-weight: bold; }
 .nypl-item-details dl {
   margin-bottom: 1rem; }
   .nypl-item-details dl::before, .nypl-item-details dl::after {
@@ -3087,8 +3124,6 @@ button:focus {
     .nypl-item-details dd {
       width: 60%; } }
 
-.nypl-item-external-links dd.nypl-results-highlight {
-  font-weight: bold; }
 .nypl-item-external-links dl {
   margin-bottom: 1rem; }
   .nypl-item-external-links dl::before, .nypl-item-external-links dl::after {

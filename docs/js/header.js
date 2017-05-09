@@ -56,6 +56,10 @@ function initSpinners() {
 
 function init() {
   initSpinners()
+  // close all facets
+  $("button.nypl-facet-toggle").each(function (i) {
+    closeFacet($(this))
+  })
   $("button.nypl-facet-toggle").click(function (e) {
     toggleFacet(e)
   })
@@ -67,29 +71,22 @@ function init() {
       $(".nypl-terms-checkbox").removeClass("checked")
     }
   })
-  $("#username1 #required-field").keyup(function (e) {
+  $("#username1 #required-field").change(function (e) {
     var self = $(e.target)
     var text = self.val()
     var regex = /\W/g
-    if (text.length > 2 && regex.test(text)) {
+    if (text.length > 0 && regex.test(text)) {
       $("#username1").addClass("nypl-field-error")
       $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
-    } else {
-      $("#username1").removeClass("nypl-field-error")
-      $("#username1 .nypl-field-status").text("")
     }
   })
-  $("#email1 #email-field").blur(function (e) {
+  $("#email1 #email-field").change(function (e) {
     var self = $(e.target)
     var text = self.val()
     var regex = /^[^@\s]+@[^@\s]+\.[^@\s]+/
     if (!regex.test(text)) {
       $("#email1").addClass("nypl-field-error")
       $("#email1 .nypl-field-status").text("The Email address must use the correct formatting. Example: prudence@example.org. Try again.")
-    } else {
-      $("#email1").removeClass("nypl-field-error")
-      $("#email1 .nypl-field-status").text("")
-      self.attr("aria-invalid", "false")
     }
   })
   $("code.html").on("click", onSampleCodeClick)
@@ -126,7 +123,6 @@ function init() {
     self.off("click")
   })
   $(".nypl-select-field.hidden").hide();
-  $('#date-of-birth').mask('00/00/0000');
   $("#step-2, #step-3").hide();
   $("#step-1_submit").click(function (e) {
     $("#step-2").show();
@@ -287,12 +283,7 @@ function init() {
     }
   })
 
-  $(".nypl-results-sorter button").on("click", function(e) {
-    e.preventDefault();
-    if ($(e.target).closest('.nypl-results-sorter').length) {
-      toggleSort(e)
-    }
-  })
+  initSort()
 
   $("input[name=available]").change(function() {
     var value = $("input[name=available]:checked").val()
@@ -316,16 +307,41 @@ function init() {
 
 }
 
+function initSort() {
+  $(".nypl-results-sorter button").on("click", function(e) {
+    e.preventDefault();
+    if ($(e.target).closest('.nypl-results-sorter').length) {
+      toggleSort(e)
+    }
+  })
+
+  $(".nypl-results-sorter ul a").on("click", function(e) {
+    e.preventDefault();
+    var selection = $(e.target)
+    var text = selection.text()
+    $(".nypl-results-sorter ul a").removeClass("active") // deactivate all
+    selection.addClass("active")
+    $(".nypl-results-sorter button span").text(text) // set the text
+    toggleSort() //close it
+    $(".nypl-results-sorter button").focus()
+    // … should also apply the sorting stuff
+  })
+}
+
 function toggleSort(e) {
   var self = $(".nypl-results-sorter button")
   var parent = self.parent()
   var selected = 0
+  $(".nypl-results-sorter ul a").each(function (i) {
+    if ($(this).hasClass("active")) {
+      selected = i
+    }
+  })
   var item_count = parent.find("li").length
-  // console.log(item_count)
   self.toggleClass("active").attr("aria-expanded", self.attr("aria-expanded") == "false" ? "true" : "false")
   parent.find("ul").toggleClass("hidden")
   if (self.attr("aria-expanded") == "true") {
-    parent.find("li:first-child a").focus()
+    parent.find("li a.active").focus()
     parent.on("keydown", function (ee) {
       switch (ee.keyCode) {
         case 27: // ESC
@@ -360,6 +376,17 @@ function toggleSort(e) {
 function hideSort() {
   $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", false)
   $(".nypl-results-sorter ul").addClass("hidden")
+}
+
+function closeFacet(facet) {
+  var button = facet
+  var facet = button.parent()
+  var collapsible = facet.find(".nypl-collapsible")
+  button.attr("aria-expanded", "false")
+  facet.attr("aria-expanded", "false")
+  collapsible.attr("aria-expanded", "false")
+  facet.addClass("collapsed")
+  collapsible.addClass("collapsed")
 }
 
 function toggleFacet(e) {

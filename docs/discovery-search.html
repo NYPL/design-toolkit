@@ -264,15 +264,15 @@
           <button class="nypl-request-button" aria-controls="filter-search" aria-expanded="false">Refine search</button>
         </div>
         <form action="" class="nypl-search-form" id="filter-search">
-<div class="nypl-searchable-field collapsed" aria-expanded="false">
-  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+<div class="nypl-searchable-field" aria-expanded="true">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="true">
     Material Type
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_material" aria-expanded="true">
     <div class="nypl-facet-search">
       <label for="material-text">Search within Material Types</label>
       <input id="material-text" type="text">
@@ -307,15 +307,15 @@
   </div>
 </div>
 
-<div class="nypl-searchable-field collapsed">
-  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_subject" aria-expanded="false">
+<div class="nypl-searchable-field">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_subject" aria-expanded="true">
     Subject
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_subject" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_subject" aria-expanded="true">
     <div class="nypl-facet-search">
       <label for="subject-text">Search within Subjects</label>
       <input id="subject-text" type="text">
@@ -371,14 +371,14 @@
 </div>
 
 <div class="nypl-searchable-field nosearch collapsed">
-  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="true">
     Issuance
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_material" aria-expanded="true">
     <div class="nypl-facet-search">
       <label for="issuance-text">Search within Issuances</label>
       <input id="issuance-text" type="text">
@@ -403,15 +403,15 @@
   </div>
 </div>
 
-<div class="nypl-searchable-field collapsed">
-  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="false">
+<div class="nypl-searchable-field">
+  <button type="button" class="nypl-facet-toggle" aria-controls="nypl-searchable-field_material" aria-expanded="true">
     Publisher
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_material" aria-expanded="true">
     <div class="nypl-facet-search">
       <label for="publisher-text">Search within Publishers</label>
       <input id="publisher-text" type="text">
@@ -455,7 +455,7 @@
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_material" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_material" aria-expanded="false">
     <div class="nypl-facet-search">
       <label for="language-text">Search within Languages</label>
       <input id="language-text" type="text">
@@ -502,19 +502,19 @@
 
 <div class="nypl-results-sorting-controls">
   <div class="nypl-results-sorter">
-    <button>
-    Sort by <strong>relevance</strong>
-    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-      <title>wedge down icon</title>
-      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-    </svg>
+    <button aria-expanded="false">
+    Sort by <span>relevance</span>
+      <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
+        <title>wedge down icon</title>
+        <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+      </svg>
     </button>
-    <ul class="hidden">
-      <li><a href="#"><strong>relevance</strong></a></li>
-      <li><a href="#">title A-Z</a></li>
-      <li><a href="#">title Z-A</a></li>
-      <li><a href="#">date (old to new)</a></li>
-      <li><a href="#">date (new to old)</a></li>
+    <ul class="hidden" role="menu">
+      <li><a href="?sort=relevance" class="active">relevance</a></li>
+      <li><a href="?sort=A-Z">title A-Z</a></li>
+      <li><a href="?sort=Z-A">title Z-A</a></li>
+      <li><a href="?sort=old">date (old to new)</a></li>
+      <li><a href="?sort=new">date (new to old)</a></li>
     </ul>
   </div>
 </div>
@@ -524,88 +524,60 @@
 <ul class="nypl-results-list">
 
   <li class="nypl-results-item">
-    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways.</a></h2>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Text</dd>
-      <dt>Author</dt>
-      <dd>New York State Waterways Association.</dd>
-      <dt>At Locations</dt>
-      <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>), SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
-      <dt>Usage Type</dt>
-      <dd>In-library use</dd>
-    </dl>
+    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York State Waterways Association. &ndash; New York Waterways.</a></h2>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Text</span>
+      <span class="nypl-results-room">SASB - Rose Main Rdg Rm 315, SASB - Microforms Rm 119</span>
+      <span class="nypl-results-use">Item for In-library use</span>
+    </div>
   </li>
 
   <li class="nypl-results-item">
-    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project.</a></h2>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Audio</dd>
-      <dt>Author</dt>
-      <dd>Ten Penny Players.</dd>
-      <dt>Published</dt>
-      <dd>1979</dd>
-      <dt>Publisher</dt>
-      <dd>Ten Penny Players, Inc.,</dd>
-      <dt>At Location</dt>
-      <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
-      <dt>Usage Type</dt>
-      <dd>In-library use</dd>
-    </dl>
+    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">Ten Penny Players. &ndash; New York State waterways project.</a></h2>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Audio</span>
+      <span class="nypl-results-place">New York.</span>
+      <span class="nypl-results-publisher">Ten Penny Players, Inc.,</span>
+      <span class="nypl-results-date">1979</span>
+      <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
+      <span class="nypl-results-use">Item for In-library use</span>
+    </div>
   </li>
 
   <li class="nypl-results-item">
-    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ...</a></h2>
+    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">Smith, Robert A. C., 1857- &ndash; The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ...</a></h2>
     <div class="nypl-results-unavailable">Currently not available for use</div>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Text</dd>
-      <dt>Author</dt>
-      <dd>Smith, Robert A. C., 1857-</dd>
-      <dt>Published</dt>
-      <dd>1914</dd>
-      <dt>At Location</dt>
-      <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
-      <dt>Usage Type</dt>
-      <dd>In-library use</dd>
-    </dl>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Text</span>
+      <span class="nypl-results-place">New York.</span>
+      <span class="nypl-results-date">1914</span>
+      <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
+      <span class="nypl-results-use">Item for In-library use</span>
+    </div>
   </li>
 
   <li class="nypl-results-item">
-    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson,</a></h2>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Still image</dd>
-      <dt>Author</dt>
-      <dd>Freeman, Lewis R. (Lewis Ransome), b. 1878.</dd>
-      <dt>Published</dt>
-      <dd>1926</dd>
-      <dt>Publisher</dt>
-      <dd>Dodd, Mead and company,</dd>
-      <dt>At Location</dt>
-      <dd>SASB - Rose Main Rdg Rm 315 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
-      <dt>Usage Type</dt>
-      <dd>In-library use</dd>
-    </dl>
+    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">Freeman, Lewis R. (Lewis Ransome), b. 1878. &ndash; By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson,</a></h2>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Text</span>
+      <span class="nypl-results-place">New York.</span>
+      <span class="nypl-results-publisher">Dodd, Mead and company,</span>
+      <span class="nypl-results-date">1926</span>
+      <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
+      <span class="nypl-results-use">Item for In-library use</span>
+    </div>
   </li>
 
   <li class="nypl-results-item">
-    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10990334">Waterways.</a></h2>
-    <dl>
-      <dt class="nypl-results-highlight">Material Type</dt>
-      <dd class="nypl-results-highlight">Text</dd>
-      <dt>Author</dt>
-      <dd>Ten Penny Players.</dd>
-      <dt>Published</dt>
-      <dd>1980</dd>
-      <dt>Publisher</dt>
-      <dd>Waterways Project of Ten Penny Players, Inc.,</dd>
-      <dt>At Location</dt>
-      <dd>SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
-      <dt>Usage Type</dt>
-      <dd>In-library use (Advance request required)</dd>
-    </dl>
+    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10990334">Ten Penny Players. &ndash; Waterways.</a></h2>
+    <div class="nypl-results-item-description">
+      <span class="nypl-results-media">Text</span>
+      <span class="nypl-results-place">New York.</span>
+      <span class="nypl-results-publisher">Waterways Project of Ten Penny Players, Inc.,</span>
+      <span class="nypl-results-date">1980</span>
+      <span class="nypl-results-info">SASB - Microforms Rm 119</span>
+      <span class="nypl-results-use">Item for In-library use</span>
+    </div>
   </li>
 
 </ul>

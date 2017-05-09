@@ -65,16 +65,16 @@ description: Form fields and user input.
 
     <p>Required fields must include a <code>span</code> tag of class <code>nypl-required-field</code> in the label that includes the text “Required”. The field itself should include the <code>required</code> and <code>aria-required</code> attributes.</p>
 
-    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field. If included, the note must include the <code>aria-live="assertive"</code> and <code>aria-atomic="true"</code> attributes if the form is being validated via client-side JavaScript. The example below shows a simple validation on every key press using jQuery. See <a href="#formValidation">Form Validation</a> for more information.</p>
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An optional <span>span</span> element with class <code>nypl-field-status</code> can be included after the input field providing a brief message explaining any additional requirements about the field. If included, the note must include the <code>aria-labelledby="[LABEL_ID] [STATUS_FIELD_ID]"</code>, <code>aria-live="assertive"</code>, and <code>aria-atomic="true"</code> attributes if the form is being validated via client-side JavaScript. The example below shows a simple validation on every key press using jQuery. See <a href="#formValidation">Form Validation</a> for more information.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-text-field" id="username1">
-  <label for="required-field">Username
+  <label for="required-field" id="username1-label">Username
     <span class="nypl-required-field">Required</span>
   </label>
-  <input id="required-field" type="text" required="true" aria-required="true" />
-  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Username must only contain letters and numbers.</span>
+  <input id="required-field" type="text" required="true" aria-labelledby="username1-label username1-status" aria-required="true" />
+  <span class="nypl-field-status" id="username1-status" aria-live="assertive" aria-atomic="true">Username must only contain letters and numbers.</span>
 </div>
     </div>
 
@@ -83,40 +83,36 @@ description: Form fields and user input.
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-text-field&quot; id=&quot;username1&quot;&gt;
-  &lt;label for=&quot;required-field&quot;&gt;Username
+  &lt;label for=&quot;required-field&quot; id=&quot;username1-label&quot;&gt;Username
     &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-required=&quot;true&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Username must only contain letters and numbers&lt;/span&gt;
+  &lt;input id=&quot;required-field&quot; type=&quot;text&quot; required=&quot;true&quot; aria-labelledby=&quot;username1-label username1-status&quot; aria-required=&quot;true&quot; /&gt;
+  &lt;span class=&quot;nypl-field-status&quot; id=&quot;username1-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Username must only contain letters and numbers.&lt;/span&gt;
 &lt;/div&gt;
     </code></pre>
     <pre><code class="js">
-$("#username1 #required-field").keyup(function (e) {
+$("#username1 #required-field").change(function (e) {
   var self = $(e.target)
   var text = self.val()
   var regex = /\W/g
-  if (text.length > 2 && regex.test(text)) {
+  if (text.length > 0 && regex.test(text)) {
     $("#username1").addClass("nypl-field-error")
     $("#username1 .nypl-field-status").text("The Username must only contain letters and numbers. Try again.")
-  } else {
-    $("#username1").removeClass("nypl-field-error")
-    $("#username1 .nypl-field-status").text("Username must only contain letters and numbers.")
   }
 })
     </code></pre>
 
     <h3 id="dateFields">Date Fields</h3>
 
-    <p>The date field implements a similar structure as the Text Field but uses a date mask that must be enforced via JavaScript. The example below uses <a href="https://github.com/igorescobar/jQuery-Mask-Plugin">jQuery Mask</a>. Server-side validation should still occur since it is more secure.</p>
+    <p>The date field implements a similar structure as the Text Field but uses <code>type="date"</code>. This input type has <a href="http://caniuse.com/#search=date">limited browser support</a> so additional server-side and JavaScript validation should be taken into consideration. Server-side validation should still occur since it is more secure.</p>
 
     <p><strong>Note:</strong> This only applies for dates that will conform to  a year/month/day-style pattern (YYYY/MM/DD, MM/DD/YYYY, etc).</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-date-field">
-  <label for="date-of-birth">Date of Birth <span class="nypl-required-field">Required</span></label>
+  <label for="date-of-birth">Date of Birth</label>
   <input id="date-of-birth" type="date" class="form-text" />
-  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Format the date as MM/DD/YYYY</span>
 </div>
     </div>
 
@@ -125,13 +121,9 @@ $("#username1 #required-field").keyup(function (e) {
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-date-field&quot;&gt;
-  &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+  &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth&lt;/label&gt;
   &lt;input id=&quot;date-of-birth&quot; type=&quot;date&quot; class=&quot;form-text&quot; /&gt;
-  &lt;span class=&quot;nypl-field-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;Format the date as MM/DD/YYYY&lt;/span&gt;
 &lt;/div&gt;
-    </code></pre>
-    <pre><code class="js">
-$('#date-of-birth').mask('00/00/0000');
     </code></pre>
 
     <h3 id="nameFields">Name Fields</h3>
@@ -142,11 +134,11 @@ $('#date-of-birth').mask('00/00/0000');
       <span class="nypl-example-text">Example</span>
 <div class="nypl-name-field">
   <div>
-    <label for="first-text">First Name <span class="nypl-required-field">Required</span></label>
+    <label for="first-text">First Name</label>
     <input id="first-text" type="text" />
   </div>
   <div>
-    <label for="last-text">Last Name <span class="nypl-required-field">Required</span></label>
+    <label for="last-text">Last Name</label>
     <input id="last-text" type="text" />
   </div>
 </div>
@@ -158,11 +150,11 @@ $('#date-of-birth').mask('00/00/0000');
     <pre><code class="html">
 &lt;div class=&quot;nypl-name-field&quot;&gt;
   &lt;div&gt;
-    &lt;label for=&quot;first-text&quot;&gt;First Name &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+    &lt;label for=&quot;first-text&quot;&gt;First Name&lt;/label&gt;
     &lt;input id=&quot;first-text&quot; type=&quot;text&quot; /&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    &lt;label for=&quot;last-text&quot;&gt;Last Name &lt;span class=&quot;nypl-required-field&quot;&gt;Required&lt;/span&gt;&lt;/label&gt;
+    &lt;label for=&quot;last-text&quot;&gt;Last Name&lt;/label&gt;
     &lt;input id=&quot;last-text&quot; type=&quot;text&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -355,20 +347,20 @@ $("#checkbox-optin").change(function(e){
 
     <p>Toggling between closed and open states along with the affected <code>aria-expanded</code> values of the widget will be controlled via JavaScript. A <code>collapsed</code> class must be added (or removed) to the <code>nypl-searchable-field</code> and <code>nypl-collapsible</code> elements. The example below uses jQuery.</p>
 
-    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number. <strong>The widget defaults to the collapsed state.</strong></p>
+    <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number. The widget defaults to the <strong>open state</strong> but is <strong>closed via JavaScript on page load</strong>. This is to support situations where JavaScript may be disabled and allow users to see and interact with the facets.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-searchable-field collapsed" aria-expanded="false">
+<div class="nypl-searchable-field" aria-expanded="true">
   <button type="button" id="searchable1" class="nypl-facet-toggle"
-    aria-controls="nypl-searchable-field_facet1" aria-expanded="false">
+    aria-controls="nypl-searchable-field_facet1" aria-expanded="true">
     Subject
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
     </svg>
   </button>
-  <div class="nypl-collapsible collapsed" id="nypl-searchable-field_facet1" aria-expanded="false">
+  <div class="nypl-collapsible" id="nypl-searchable-field_facet1" aria-expanded="true">
     <div class="nypl-facet-search">
       <label for="subject-text">Search within Subjects</label>
       <input id="subject-text" type="text" />
@@ -416,18 +408,18 @@ $("#checkbox-optin").change(function(e){
     <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
 
     <pre><code class="html">
-&lt;div class=&quot;nypl-searchable-field collapsed&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;div class=&quot;nypl-searchable-field&quot; aria-expanded=&quot;true&quot;&gt;
   &lt;button type=&quot;button&quot; id=&quot;searchable1&quot; class=&quot;nypl-facet-toggle&quot;
-    aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;false&quot;&gt;
+    aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
     Subject
     &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
       &lt;title&gt;wedge down icon&lt;/title&gt;
       &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
     &lt;/svg&gt;
   &lt;/button&gt;
-  &lt;div class=&quot;nypl-collapsible collapsed&quot; id=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;false&quot;&gt;
+  &lt;div class=&quot;nypl-collapsible&quot; id=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
     &lt;div class=&quot;nypl-facet-search&quot;&gt;
-      &lt;label for=&quot;subject-text&quot;&gt;Search within Subject&lt;/label&gt;
+      &lt;label for=&quot;subject-text&quot;&gt;Search within Subjects&lt;/label&gt;
       &lt;input id=&quot;subject-text&quot; type=&quot;text&quot; /&gt;
     &lt;/div&gt;
     &lt;fieldset class=&quot;nypl-facet-list&quot;&gt;
@@ -491,7 +483,7 @@ function toggleFacet(e) {
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-form-error">
-  <h2>Opps! Seems there are some errors in this form!</h2>
+  <h2>Oops! Seems there are some errors in this form!</h2>
   <ul>
     <li>The <a href="#">username</a> already exists. Please choose another username.</li>
     <li>The <a href="#">email</a> is invalid.</li>
@@ -503,7 +495,7 @@ function toggleFacet(e) {
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-form-error&quot;&gt;
-  &lt;h2&gt;Opps! Seems there are some errors in this form!&lt;/h2&gt;
+  &lt;h2&gt;Oops! Seems there are some errors in this form!&lt;/h2&gt;
   &lt;ul&gt;
     &lt;li&gt;The &lt;a href=&quot;#&quot;&gt;username&lt;/a&gt; already exists. Please choose another username.&lt;/li&gt;
     &lt;li&gt;The &lt;a href=&quot;#&quot;&gt;email&lt;/a&gt; is invalid.&lt;/li&gt;
@@ -519,11 +511,11 @@ function toggleFacet(e) {
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-text-field nypl-field-error" id="email1">
-  <label for="email-field">Email
+  <label for="email-field" id="email1-label">Email
     <span class="nypl-required-field">Required</span>
   </label>
-  <input aria-required="true" aria-invalid="true" id="email-field" type="text" placeholder="" value="sally ride" />
-  <span class="nypl-field-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Ex: <em>prudence@example.org</em></span>
+  <input aria-required="true" aria-invalid="true" aria-labelledby="email1-label email1-status" id="email-field" type="text" placeholder="" value="sally ride" />
+  <span class="nypl-field-status" id="email1-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
 </div>
     </div>
     <pre><code class="scss">
