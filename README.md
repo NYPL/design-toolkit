@@ -18,6 +18,14 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.13
+- Improved search results.
+- Improved item page.
+- Added design statement.
+- Searchable facets should default to open but close with JS.
+- Sorter docs complete.
+- Fixes: #76, #89, #87, #82, #94, #97, #100.
+
 ### v0.1.12
 - Searchable facets now collapsible (#75)
 - Omni search spinner example added.
