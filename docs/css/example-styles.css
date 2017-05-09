@@ -2329,13 +2329,9 @@ button:focus {
   margin-bottom: 1rem; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
-    margin: 0; }
-  .nypl-page-header h1 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-  .nypl-page-header h2 {
     font-size: 2rem;
+    margin: 0; }
+  .nypl-page-header h2 {
     line-height: 1; }
 
 .nypl-breadcrumbs {
@@ -2350,7 +2346,7 @@ button:focus {
     white-space: nowrap; }
     @media (max-width: 965px) {
       .nypl-breadcrumbs li {
-        max-width: 90%; } }
+        max-width: 90vw; } }
     .nypl-breadcrumbs li::before {
       content: "> "; }
     .nypl-breadcrumbs li:first-child::before {

@@ -12,17 +12,11 @@
 
   h1,
   h2 {
+    font-size: 2rem;
     margin: 0;
   }
 
-  h1 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
   h2 { // when it's a secondary title (real title is inside content below)
-    font-size: 2rem;
     line-height: 1;
   }
 }
@@ -40,7 +34,7 @@
     white-space: nowrap;
 
     @include media($mobile-breakpoint) {
-      max-width: 90%;
+      max-width: 90vw;
     }
 
     &::before {
