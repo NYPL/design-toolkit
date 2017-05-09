@@ -1,15 +1,10 @@
 @warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to prefix nypl automatically to each variable...";
 // nypl _colors.scss
+
 // NYPL Reds
 $nypl-red: #d0343a;
 
 $nypl-red-dark: #97272c;
-
-$nypl-red-tint: tint($nypl-red, 30%);
-
-// field error bg
-
-$nypl-red-error: tint($nypl-red, 80%);
 
 // NYPL Blues
 $nypl-blue: #1b7fa7;
@@ -17,8 +12,6 @@ $nypl-blue: #1b7fa7;
 $nypl-light-blue: lighten($nypl-blue, 30%);
 
 $nypl-blue-dark: #135772;
-
-$nypl-blue-tint: tint($nypl-blue, 30%);
 
 // NYPL Monochromatic
 $nypl-gray-cool: #76777b;
@@ -39,8 +32,6 @@ $nypl-black: #111;
 // NYPL Yellows for Alerts & Focus halos etc.
 $nypl-yellow: #fee24a;
 
-$nypl-yellow-tint: tint($nypl-yellow, 50%);
-
 $nypl-orange: #ffb81d;
 
 $nypl-orange-desaturated: desaturate($nypl-orange, 40%);
@@ -49,8 +40,6 @@ $nypl-orange-desaturated: desaturate($nypl-orange, 40%);
 $nypl-green: #799a05;
 
 $nypl-green-dark: #497629;
-
-$nypl-green-tint: tint($nypl-green, 40%);
 
 // semantic colors
 $nypl-search-color: $nypl-light-gray;
@@ -83,3 +72,18 @@ $button-border-color: $nypl-dark-gray;
 
 $button-background-color: $nypl-white;
 //
+//
+// Put our tinted colors here rules here
+// this function borrowed from Bourbon
+// https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_tint.scss
+
+@function tint($color, $percent) {
+  @return mix($nypl-white, $color, $percent);
+}
+
+// field error bg
+$nypl-red-tint: tint($nypl-red, 30%);
+$nypl-red-error: tint($nypl-red, 80%);
+$nypl-blue-tint: tint($nypl-blue, 30%);
+$nypl-yellow-tint: tint($nypl-yellow, 50%);
+$nypl-green-tint: tint($nypl-green, 40%);
