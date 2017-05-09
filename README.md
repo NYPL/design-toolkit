@@ -18,6 +18,9 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.14
+- Fixes: #104, #107.
+
 ### v0.1.13
 - Improved search results.
 - Improved item page.
