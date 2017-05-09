@@ -22,7 +22,7 @@ While the goal is to make this toolkit as easy to use as possible, some web deve
 
 ### Copy/Paste Everything
 
-The main idea behind this toolkit is to have as much of the design and functionality for any user interface available “out of the box”. **You shouldn't need to be writing any custom CSS**. If you are working on a NYPL Digital project and you think the functionality or widget you need is not covered, please [open an issue in Github](https://github.com/NYPL/design-toolkit/issues/new). This way future project will benefit from new developments and you won't need to do the heavy lifting of coming up with a custom solution to a design problem. As [someone else put it best](http://mrmrs.io/writing/2016/03/24/scalable-css/): “the real way to scale CSS, is to stop writing CSS.”
+The main idea behind this toolkit is to have as much of the design and functionality for any user interface available “out of the box”. **You shouldn't need to be writing any custom CSS**. If you are working on a NYPL Digital project and you think the functionality or widget you need is not covered, please [open an issue in Github](https://github.com/NYPL/design-toolkit/issues/new). This way future projects will benefit from new developments and you won't need to do the heavy lifting of coming up with a custom solution to a design problem. As [someone else put it best](http://mrmrs.io/writing/2016/03/24/scalable-css/): “the real way to scale CSS, is to stop writing CSS.”
 
 ### System Fonts
 
