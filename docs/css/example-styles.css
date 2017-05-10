@@ -3028,21 +3028,24 @@ button:focus {
   font-size: 0.9rem;
   font-style: italic; }
 
-.nypl-item-toc {
-  list-style-type: none;
-  margin: 1rem 0; }
-  .nypl-item-toc li {
-    display: inline-block;
-    margin: 0; }
-    .nypl-item-toc li::after {
-      content: "\2003|\2003"; }
-    .nypl-item-toc li:last-child::after {
-      content: ""; }
-    @media (max-width: 965px) {
-      .nypl-item-toc li {
-        display: block; }
-        .nypl-item-toc li::after {
-          content: ""; } }
+.nypl-item-info {
+  border-left: 0.5rem solid #776e64;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: none; }
+  .nypl-item-info p {
+    margin: 0;
+    max-width: none; }
+
+.nypl-item-media {
+  color: #776e64;
+  font-weight: bold; }
+
+.nypl-item-use {
+  color: #776e64;
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic; }
 
 .nypl-item-holdings li {
   list-style-type: none;
@@ -3125,7 +3128,7 @@ button:focus {
 .nypl-item-details dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 1rem; }
+  margin: 0 0 0.5rem; }
 .nypl-item-details dt {
   clear: left;
   color: #776e64;
@@ -3139,7 +3142,7 @@ button:focus {
     .nypl-item-details dd {
       width: 60%; } }
 .nypl-item-details h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: normal; }
 
 .nypl-item-external-links dl {

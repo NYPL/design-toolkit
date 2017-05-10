@@ -285,30 +285,22 @@ $sorter-width: 11em;
   font-style: italic;
 }
 
-@mixin item-toc {
-  list-style-type: none;
-  margin: 1rem 0;
+@mixin item-info {
+  border-left: 0.5rem solid $nypl-gray;
+  padding-left: 0.5rem;
 
-  li {
-    display: inline-block;
+  margin-bottom: 1rem;
+  max-width: none;
+
+  p {
     margin: 0;
-
-    &::after {
-      content: "\2003|\2003";
-    }
-
-    &:last-child::after {
-      content: "";
-    }
-
-    @include media($mobile-breakpoint) {
-      display: block;
-
-      &::after {
-        content: "";
-      }
-    }
+    max-width: none;
   }
+}
+
+@mixin item-media {
+  color: $nypl-gray;
+  font-weight: bold;
 }
 
 @mixin item-holdings {
@@ -345,10 +337,10 @@ $sorter-width: 11em;
 }
 
 @mixin item-details {
-  @include item-definition-list($item-margin-bottom: 1rem);
+  @include item-definition-list($item-margin-bottom: 0.5rem);
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: normal;
   }
 }
