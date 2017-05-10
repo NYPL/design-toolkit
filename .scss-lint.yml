@@ -38,7 +38,7 @@ linters:
     enabled: false
 
   PropertyUnits:
-    global: ['rem', '%', 's', 'vw'] # Allow relative units globally
+    global: ['rem', '%', 's', 'vw', 'em'] # Allow relative units globally
     properties:
       line-height: [] # No units allowed
       margin: ['rem', '%']
