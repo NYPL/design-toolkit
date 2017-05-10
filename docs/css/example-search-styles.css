@@ -2742,7 +2742,7 @@ button:focus {
   .nypl-holds-table td:nth-of-type(2) {
     background-color: #d7d4d0; }
     .nypl-holds-table td:nth-of-type(2).ready {
-      background-color: ligthen(#799a05, 0.7); }
+      background-color: #e9eed6; }
   @media (max-width: 965px) {
     .nypl-holds-table thead tr {
       position: absolute;
