@@ -246,6 +246,7 @@ $sorter-width: 11em;
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    max-width: none;
   }
 
   @include item-definition-list;

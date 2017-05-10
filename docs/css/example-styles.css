@@ -2962,7 +2962,8 @@ button:focus {
   .nypl-results-item h2 {
     font-weight: normal;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    max-width: none; }
   .nypl-results-item dl {
     margin-bottom: 1rem; }
     .nypl-results-item dl::before, .nypl-results-item dl::after {
