@@ -2957,7 +2957,8 @@ button:focus {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
   margin-bottom: 2rem;
-  margin-left: 0; }
+  margin-left: 0;
+  max-width: none; }
   .nypl-results-item h2 {
     font-weight: normal;
     font-size: 1.2rem;
