@@ -304,13 +304,15 @@ $sorter-width: 11em;
 }
 
 @mixin item-holdings {
-  li {
-    @include custom-list-bullet;
-    margin-bottom: 0.5rem;
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+  }
 
-    &:hover {
-      @include custom-list-bullet($nypl-gray);
-    }
+  li {
+    list-style-type: none;
+    margin: 0 0 0.5rem;
 
     @include media($mobile-breakpoint) {
       clear: left;

@@ -3047,55 +3047,13 @@ button:focus {
   font-size: 0.9rem;
   font-style: italic; }
 
+.nypl-item-holdings h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0; }
 .nypl-item-holdings li {
   list-style-type: none;
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem; }
-  @media (max-width: 965px) {
-    .nypl-item-holdings li {
-      margin-left: 0; } }
-  .nypl-item-holdings li::before {
-    content: "";
-    background-color: #d7d4d0;
-    display: inline-block;
-    position: relative;
-    height: 0.5rem;
-    width: 0.5rem;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    border-radius: 0.25rem;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    margin-right: 0.25rem;
-    top: 0; }
-    @media (max-width: 965px) {
-      .nypl-item-holdings li::before {
-        display: none; } }
-  .nypl-item-holdings li:hover {
-    list-style-type: none;
-    margin-left: 0.5rem; }
-    @media (max-width: 965px) {
-      .nypl-item-holdings li:hover {
-        margin-left: 0; } }
-    .nypl-item-holdings li:hover::before {
-      content: "";
-      background-color: #776e64;
-      display: inline-block;
-      position: relative;
-      height: 0.5rem;
-      width: 0.5rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      border-radius: 0.25rem;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box;
-      margin-right: 0.25rem;
-      top: 0; }
-      @media (max-width: 965px) {
-        .nypl-item-holdings li:hover::before {
-          display: none; } }
+  margin: 0 0 0.5rem; }
   @media (max-width: 965px) {
     .nypl-item-holdings li {
       clear: left;
