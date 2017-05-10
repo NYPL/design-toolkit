@@ -2715,6 +2715,72 @@ button:focus {
     padding-bottom: 0.5rem;
     vertical-align: top; }
 
+.nypl-holds-table {
+  border-collapse: collapse;
+  display: table;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem; }
+  .nypl-holds-table tr {
+    border-bottom: 0.0625rem solid #d7d4d0;
+    display: table-row; }
+  .nypl-holds-table thead,
+  .nypl-holds-table th {
+    border-bottom: 0.0625rem solid #080807;
+    font-weight: bold;
+    text-align: left; }
+  .nypl-holds-table th,
+  .nypl-holds-table td {
+    display: table-cell;
+    overflow: hidden;
+    padding: 0.125rem 0.25rem;
+    text-overflow: ellipsis; }
+  .nypl-holds-table td {
+    border-bottom: 1px solid #d7d4d0;
+    padding-bottom: 0.5rem;
+    vertical-align: top; }
+  .nypl-holds-table td:nth-of-type(2) {
+    background-color: #d7d4d0; }
+    .nypl-holds-table td:nth-of-type(2).ready {
+      background-color: ligthen(#799a05, 0.7); }
+  @media (max-width: 965px) {
+    .nypl-holds-table thead tr {
+      position: absolute;
+      width: 0.1rem;
+      height: 0.1rem;
+      margin: -0.1rem;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; }
+    .nypl-holds-table tr {
+      border-top: 0.5rem solid #080807; }
+      .nypl-holds-table tr:nth-of-type(1) {
+        border: 0; }
+    .nypl-holds-table td {
+      display: block;
+      position: relative;
+      width: 100%; }
+      .nypl-holds-table td::before {
+        display: block;
+        float: left;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        width: 40%; }
+      .nypl-holds-table td .item {
+        font-size: 1.2rem;
+        padding: 1rem 0; }
+      .nypl-holds-table td:nth-of-type(1)::before {
+        content: "Item";
+        display: none; }
+      .nypl-holds-table td:nth-of-type(2)::before {
+        content: "Status";
+        margin-bottom: 0; }
+      .nypl-holds-table td:nth-of-type(3)::before {
+        content: "Location"; }
+      .nypl-holds-table td:nth-of-type(4)::before {
+        content: "Options"; } }
+
 .nypl-results-summary {
   line-height: 1.5;
   margin-bottom: 0.5rem;
