@@ -344,6 +344,11 @@ $sorter-width: 11em;
 
 @mixin item-details {
   @include item-definition-list($item-margin-bottom: 1rem);
+
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
 }
 
 @mixin item-external-links {

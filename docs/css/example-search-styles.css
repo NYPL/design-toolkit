@@ -3129,6 +3129,9 @@ button:focus {
   @media (max-width: 965px) {
     .nypl-item-details dd {
       width: 60%; } }
+.nypl-item-details h1 {
+  font-size: 2rem;
+  font-weight: normal; }
 
 .nypl-item-external-links dl {
   margin-bottom: 1rem; }
