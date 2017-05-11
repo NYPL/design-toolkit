@@ -8,11 +8,15 @@
     // background-color: $nypl-yellow-tint;
   }
 
+  td .item {
+    font-weight: 700;
+  }
+
   td:nth-of-type(2) {
     background-color: $nypl-light-gray;
 
     &.ready {
-      background-color: ligthen($nypl-green, 0.7);
+      background-color: lighten($nypl-green-tint, 30%);
     }
   }
 
