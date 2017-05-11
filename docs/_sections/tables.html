@@ -7,15 +7,17 @@ description: Displaying search results and tabular data.
 
     <p>Use tables sparingly, <strong>only for tabular data</strong>. Use the <code>nypl-basic-table</code> class to format a table. All tables should have a <code>thead</code> element with the corresponding headers.</p>
 
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Make sure to include the <code>scope="col"</code> attribute to the headers.</p>
+
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <table class="nypl-basic-table">
   <thead>
     <tr>
-      <th>One</th>
-      <th>Two</th>
-      <th>Three</th>
-      <th>Four</th>
+      <th scope="col">One</th>
+      <th scope="col">Two</th>
+      <th scope="col">Three</th>
+      <th scope="col">Four</th>
     </tr>
   </thead>
   <tr>
@@ -45,10 +47,10 @@ description: Displaying search results and tabular data.
 &lt;table class=&quot;nypl-basic-table&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;One&lt;/th&gt;
-      &lt;th&gt;Two&lt;/th&gt;
-      &lt;th&gt;Three&lt;/th&gt;
-      &lt;th&gt;Four&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;One&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Two&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Three&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Four&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tr&gt;
