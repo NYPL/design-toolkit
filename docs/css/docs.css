@@ -91,7 +91,7 @@ h1 {
   background: #97272c; }
 
 .nypl-red-tint-swatch {
-  background: #de7175; }
+  background: tint(#d0343a, 30%); }
 
 .nypl-blue-swatch {
   background: #1b7fa7; }
@@ -100,7 +100,7 @@ h1 {
   background: #135772; }
 
 .nypl-blue-tint-swatch {
-  background: #5fa5c1; }
+  background: tint(#1b7fa7, 30%); }
 
 .nypl-gray-cool-swatch {
   background: #76777b; }
@@ -127,7 +127,7 @@ h1 {
   background: #fee24a; }
 
 .nypl-yellow-tint-swatch {
-  background: #fff1a5; }
+  background: tint(#fee24a, 50%); }
 
 .nypl-orange-swatch {
   background: #ffb81d; }
@@ -142,6 +142,6 @@ h1 {
   background: #497629; }
 
 .nypl-green-tint-swatch {
-  background: #afc269; }
+  background: tint(#799a05, 40%); }
 
 /*# sourceMappingURL=docs.css.map */
