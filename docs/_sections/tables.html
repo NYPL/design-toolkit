@@ -246,7 +246,7 @@ function toggleSort(e) {
 
     <p>Sometimes search results don't accommodate to a consistent structure or it is not useful to present them in table form. In these cases results should be returned in a unordered list (<code>ul</code>) of class <code>nypl-results-list</code>. Each result list item should have the class <code>nypl-results-item</code> and contain:
       <ul>
-        <li>An <code>h2</code> element that contains a link to the result page with the <strong>item author</strong> (if available) and the <strong>item title</strong> separated by an <strong>en-dash</strong> (&ndash;, html: <code>&amp;ndash;</code>).</li>
+        <li>An <code>h2</code> element that contains a link to the result page with the <strong>item title</strong> and the <strong>item author</strong> (if available) separated by an <strong>en-dash</strong> (&ndash;, html: <code>&amp;ndash;</code>).</li>
         <li><strong>Optional:</strong> A notification of unavailability of the item (if applicable) in a div with class <code>nypl-results-unavailable</code>.</li>
         <li><strong>Optional:</strong> A definition list (<code>dl</code>) with the most relevant attributes of the result item sorted by importance. Terms that need to be highlighted (for easier scanning of results) should have a class of <code>nypl-results-highlight</code></li>
         <li><strong>Optional:</strong> A div of class <code>nypl-results-item-description</code> with a series of <code>span</code> tags containing this information (when available) about the item <strong>in this order</strong>:
@@ -267,7 +267,7 @@ function toggleSort(e) {
 <ul class="nypl-results-list">
   <!-- an item -->
   <li class="nypl-results-item">
-    <h2><a href="#">Smith, Angela F., 1982- &ndash; The Biography of Example</a></h2>
+    <h2><a href="#">The Biography of Example &ndash; Smith, Angela F., 1982-</a></h2>
     <div class="nypl-results-item-description">
       <span class="nypl-results-media">Text</span>
       <span class="nypl-results-place">New York</span>
@@ -276,7 +276,7 @@ function toggleSort(e) {
   </li>
   <!-- another item -->
   <li class="nypl-results-item">
-    <h2><a href="#">Casasbuenas Gutiérrez, Margarita, 1915-1997 &ndash; Very Rare Item</a></h2>
+    <h2><a href="#">Very Rare Item &ndash; Casasbuenas Gutiérrez, Margarita, 1915-1997</a></h2>
     <div class="nypl-results-unavailable">Currently not available for use</div>
     <div class="nypl-results-item-description">
       <span class="nypl-results-media">Text</span>
