@@ -44,6 +44,12 @@ $bullet-size: 0.5rem;
   }
 }
 
+@mixin custom-list($color: $nypl-light-gray, $hides-on-mobile: true) {
+  li {
+    @include custom-list-bullet($color: $nypl-light-gray, $hides-on-mobile: true);
+  }
+}
+
 @mixin collapsible {
   $collapsing-time: 0.5s;
   $max-height: 40rem; // 640

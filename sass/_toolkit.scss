@@ -50,6 +50,10 @@
   @include bar-list;
 }
 
+.nypl-custom-list {
+  @include custom-list;
+}
+
 .nypl-collapsible {
   @include collapsible;
 }
@@ -337,8 +341,16 @@
   @include results-use;
 }
 
-.nypl-item-toc {
-  @include item-toc;
+.nypl-item-info {
+  @include item-info;
+}
+
+.nypl-item-media {
+  @include item-media;
+}
+
+.nypl-item-use {
+  @include results-use;
 }
 
 .nypl-item-holdings {
