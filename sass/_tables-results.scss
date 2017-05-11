@@ -202,6 +202,7 @@ $sorter-width: 11em;
   dl {
     @include clearfix;
     margin-bottom: 1rem;
+    margin-top: 0;
 
     li {
       list-style-type: none;
