@@ -135,3 +135,37 @@ $black: #000; // for shade lint pass
 @function shade($color, $percentage) {
   @return mix($black, $color, $percentage);
 }
+ // Create the color swatch classes used in sections/color.html
+@mixin swatch-box ($color-name: $nypl-light-gray) {
+  background: $color-name;
+  @content;
+}
+
+$colors: (
+  nypl-red: $nypl-red,
+  nypl-red-dark: $nypl-red-dark,
+  nypl-red-tint: $nypl-red-tint,
+  nypl-blue: $nypl-blue,
+  nypl-blue-dark: $nypl-blue-dark,
+  nypl-blue-tint: $nypl-blue-tint,
+  nypl-gray-cool: $nypl-gray-cool,
+  nypl-gray: $nypl-gray,
+  nypl-gray-brown: $nypl-gray-brown,
+  nypl-dark-gray: $nypl-dark-gray,
+  nypl-light-gray: $nypl-light-gray,
+  nypl-white: $nypl-white,
+  nypl-black: $nypl-black,
+  nypl-yellow: $nypl-yellow,
+  nypl-yellow-tint: $nypl-yellow-tint,
+  nypl-orange: $nypl-orange,
+  nypl-orange-desaturated: $nypl-orange-desaturated,
+  nypl-green: $nypl-green,
+  nypl-green-dark: $nypl-green-dark,
+  nypl-green-tint: $nypl-green-tint,
+);
+
+@each $nypl-colors, $color-name in $colors {
+  .#{$nypl-colors}-swatch {
+    @include swatch-box ($color-name);
+  }
+}
