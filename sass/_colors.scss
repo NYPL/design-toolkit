@@ -72,14 +72,6 @@ $button-border-color: $nypl-dark-gray;
 
 $button-background-color: $nypl-white;
 //
-//
-// Put our tinted colors here rules here
-// this function borrowed from Bourbon
-// https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_tint.scss
-
-@function tint($color, $percent) {
-  @return mix($nypl-white, $color, $percent);
-}
 
 // field error bg
 $nypl-red-tint: tint($nypl-red, 30%);
