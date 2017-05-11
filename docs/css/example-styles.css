@@ -505,6 +505,66 @@ a {
   a.inverted:hover, a.inverted:visited:hover {
     color: #fff; }
 
+.nypl-red-swatch {
+  background: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background: #97272c; }
+
+.nypl-red-tint-swatch {
+  background: tint(#d0343a, 30%); }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: tint(#1b7fa7, 30%); }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: tint(#fee24a, 50%); }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-desaturated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: tint(#799a05, 40%); }
+
 a {
   border-radius: 0; }
 
@@ -536,6 +596,126 @@ button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
   outline-width: 0.1875rem; }
+
+.nypl-red-swatch {
+  background: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background: #97272c; }
+
+.nypl-red-tint-swatch {
+  background: #de7175; }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: #5fa5c1; }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: #fff1a5; }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-desaturated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: #afc269; }
+
+.nypl-red-swatch {
+  background: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background: #97272c; }
+
+.nypl-red-tint-swatch {
+  background: #de7175; }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: #5fa5c1; }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: #fff1a5; }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-desaturated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: #afc269; }
 
 .hidden {
   display: none; }
@@ -3246,6 +3426,126 @@ button:focus {
       width: 25%; }
     .nypl-views-table.collapses .resouce-description {
       width: 65%; } }
+
+.nypl-red-swatch {
+  background: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background: #97272c; }
+
+.nypl-red-tint-swatch {
+  background: #de7175; }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: #5fa5c1; }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: #fff1a5; }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-desaturated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: #afc269; }
+
+.nypl-red-swatch {
+  background: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background: #97272c; }
+
+.nypl-red-tint-swatch {
+  background: #de7175; }
+
+.nypl-blue-swatch {
+  background: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background: #135772; }
+
+.nypl-blue-tint-swatch {
+  background: #5fa5c1; }
+
+.nypl-gray-cool-swatch {
+  background: #76777b; }
+
+.nypl-gray-swatch {
+  background: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background: #080807; }
+
+.nypl-light-gray-swatch {
+  background: #d7d4d0; }
+
+.nypl-white-swatch {
+  background: #fff; }
+
+.nypl-black-swatch {
+  background: #111; }
+
+.nypl-yellow-swatch {
+  background: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background: #fff1a5; }
+
+.nypl-orange-swatch {
+  background: #ffb81d; }
+
+.nypl-orange-desaturated-swatch {
+  background: #d2a74a; }
+
+.nypl-green-swatch {
+  background: #799a05; }
+
+.nypl-green-dark-swatch {
+  background: #497629; }
+
+.nypl-green-tint-swatch {
+  background: #afc269; }
 
 .nypl-header .horizontal {
   display: table-cell;
