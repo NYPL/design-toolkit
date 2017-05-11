@@ -2739,6 +2739,8 @@ button:focus {
     border-bottom: 1px solid #d7d4d0;
     padding-bottom: 0.5rem;
     vertical-align: top; }
+  .nypl-holds-table td .item {
+    font-weight: 700; }
   .nypl-holds-table td:nth-of-type(2) {
     background-color: #d7d4d0; }
     .nypl-holds-table td:nth-of-type(2).ready {
