@@ -13,6 +13,7 @@
 @import "forms";
 @import "grid";
 @import "tables-results";
+@import "holds-table";
 @import "buttons";
 
 .hidden { // hacky
@@ -287,6 +288,10 @@
 
 .nypl-basic-table {
   @include basic-table;
+}
+
+.nypl-holds-table {
+  @include holds-table;
 }
 
 .nypl-results-summary {
