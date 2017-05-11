@@ -3075,26 +3075,27 @@ button:focus {
 
 .nypl-item-holdings h2 {
   font-size: 1rem;
-  font-weight: normal;
+  line-height: 1.5;
   margin: 0; }
 .nypl-item-holdings li {
+  border-bottom: 0.0625rem solid #d7d4d0;
+  line-height: 1.5;
   list-style-type: none;
-  margin: 0 0 0.5rem; }
+  margin: 1rem 0; }
   @media (max-width: 965px) {
     .nypl-item-holdings li {
       clear: left;
       margin-left: 0; } }
 .nypl-item-holdings a,
 .nypl-item-holdings .nypl-item-unavailable {
-  display: inline-block;
-  text-align: center;
+  display: block;
+  float: right;
   width: 7rem; }
   @media (max-width: 965px) {
     .nypl-item-holdings a,
     .nypl-item-holdings .nypl-item-unavailable {
       display: block;
-      float: left;
-      margin-bottom: 1rem; } }
+      float: none; } }
 .nypl-item-holdings .nypl-item-unavailable {
   color: #d0343a; }
 
