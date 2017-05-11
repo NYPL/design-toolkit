@@ -3095,8 +3095,7 @@ button:focus {
     .nypl-item-holdings a,
     .nypl-item-holdings .nypl-item-unavailable {
       display: block;
-      float: none;
-      margin-bottom: 1rem; } }
+      float: none; } }
 .nypl-item-holdings .nypl-item-unavailable {
   color: #d0343a; }
 

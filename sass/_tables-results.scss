@@ -332,7 +332,6 @@ $sorter-width: 11em;
     @include media($mobile-breakpoint) {
       display: block;
       float: none;
-      margin-bottom: 1rem;
     }
   }
 
