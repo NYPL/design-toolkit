@@ -3164,6 +3164,9 @@ button:focus {
 .nypl-item-details h1 {
   font-size: 1.6rem;
   font-weight: normal; }
+.nypl-item-details dl {
+  border-left: 0.25rem solid #080807;
+  padding: 0 0.75rem; }
 
 .nypl-item-external-links dl {
   margin-bottom: 1rem;
