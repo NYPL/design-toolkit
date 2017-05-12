@@ -12,12 +12,28 @@
     font-weight: 700;
   }
 
-  td:nth-of-type(2) {
-    background-color: $nypl-light-gray;
+  td span {
+    background-color: lighten($nypl-light-gray, 0.75);
+    padding: 0.25rem 1.25rem;
+    text-align: center;
 
     &.ready {
-      background-color: lighten($nypl-green-tint, 30%);
+      color: $nypl-green;
     }
+
+    &.paused {
+      background-color: $nypl-yellow-tint;
+    }
+
+    &.cancelled {
+      color: $nypl-red;
+    }
+
+    &.compelete {
+      background-color: $nypl-white;
+      font-style: italic;
+    }
+
   }
 
   @include media($mobile-breakpoint) {
@@ -25,9 +41,8 @@
       @include screenreader-only;
     }
 
-
     tr {
-      border-top: $general-border-width * 4 solid $nypl-dark-gray;
+      border-top: $general-border-width * 2.5 solid $nypl-dark-gray;
 
       &:nth-of-type(1) {
         border: 0;
