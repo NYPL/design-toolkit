@@ -8,25 +8,33 @@
     // background-color: $nypl-yellow-tint;
   }
 
-  td .item {
-    font-weight: 700;
+  td {
+    padding-top: 0.75rem;
+
+    .item {
+      font-weight: 700;
+    }
   }
 
   td span {
-    background-color: lighten($nypl-light-gray, 0.75);
-    padding: 0.25rem 1.25rem;
+    //background-color: lighten($nypl-light-gray, 0.75);
+    padding: 0.25rem;
     text-align: center;
 
     &.ready {
-      color: $nypl-green;
+      border-left: $simple-border * 5 solid $nypl-green;
     }
 
-    &.paused {
-      background-color: $nypl-yellow-tint;
+    &.pending {
+      border-left: $simple-border * 5 solid $nypl-yellow-tint;
     }
 
     &.cancelled {
-      color: $nypl-red;
+      border-left: $simple-border * 5 solid $nypl-red;
+    }
+
+    &.queued {
+      border-left: $simple-border * 5 solid $nypl-dark-gray;
     }
 
     &.compelete {
@@ -50,6 +58,7 @@
     }
 
     td {
+      border: 0;
       display: block;
       position: relative;
       width: 100%;
@@ -58,8 +67,8 @@
         display: block;
         float: left;
         font-weight: bold;
-        margin-bottom: 2rem;
-        width: 40%;
+        //margin-bottom: 2rem;
+        width: 100%;
       }
 
       .item {
