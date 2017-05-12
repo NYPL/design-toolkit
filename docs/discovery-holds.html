@@ -15,6 +15,14 @@
 
 </head>
 <body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="down-wedge" viewBox="0 0 68 24">
+        <title>wedge down icon</title>
+        <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
+      </symbol>
+    </defs>
+  </svg>
   <div id="skip" tabindex="-1"><a href="#mainContent">Skip to Main Content</a></div>
   <header class="nypl-header">
     <div class="service">
@@ -239,18 +247,39 @@
     </div>
     <div class="nypl-full-width-wrapper">
       <div class="nypl-row">
-          <div class="nypl-column-full">
-          <table summary="table of holds" class="nypl-holds-table">
+        <div class="nypl-column-full">
+          <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
+            <span class="nypl-results-count" id="number-of-holds"></span> resources currently associated with your account.
+            <!-- <span class="nypl-facet">
+              Audience <strong>Young Adult<button><span>Remove Young Adult filter</span></button></strong>
+            </span>,
+            <span class="nypl-facet">
+              Genre <strong>Fiction<button><span>Remove Fiction filter</span></button></strong>
+            </span>. -->
+          </div>
+          <table summary="table of holds" class="nypl-holds-table" id="holds-data-table">
             <thead>
-              <tr>
-                <th scope="col">Item</th>
-                <th scope="col" class="nypl-current">Status</th>
-                <th scope="col">Location</th>
+              <tr role="row">
+                <th scope="col">Item
+                  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet">
+                    <use xlink:href="#down-wedge"></use>
+                  </svg>
+                </th>
+                <th scope="col" class="nypl-current">Status
+                  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet">
+                    <use xlink:href="#down-wedge"></use>
+                  </svg>
+                </th>
+                <th scope="col">Location
+                  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet">
+                    <use xlink:href="#down-wedge"></use>
+                  </svg>
+                </th>
                 <th scope="col">Options</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody aria-live="polite" aria-relevant="all">
+              <tr role="row">
                 <td>
                   <div class="item"><a href="#">A political register, setting forth the principles of the Whig and Locofoco Parties in the United States, with the life and public services of Henry Clay.</a></div>
                   <div>
@@ -260,13 +289,17 @@
                     Imprint: Jonesborough, Tenn., Office of the "Jonesborough Whig," 1844.
                   </div>
                 </td>
-                <td class="ready">Ready</td>
-                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a> <a href="#">(requested from offsite storage)</a></td>
+                <td>
+                  <span class="ready">Ready</span>
+                </td>
+                <td>
+                  <a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a></br><a href="#">(requested from offsite storage)</a>
+                </td>
                 <td>
                   <a href="#">Manage this item</a>
                 </td>
               </tr>
-              <tr>
+              <tr role="row">
                 <td>
                   <div class="item"><a href="#">The Federalist papers</a></div>
                   <div>
@@ -278,13 +311,13 @@
                     Call number: IB 09-5067</br>
                   </div>
                 </td>
-                <td>Pending...</td>
-                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a> <a href="#">(requested from offsite storage)</a></td>
+                <td><span class="pending">Pending Status Update</span></td>
+                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a></br><a href="#">(requested from offsite storage)</a></td>
                 <td>
                   <a href="#">Manage this item</a>
                 </td>
               </tr>
-              <tr>
+              <tr role="row">
                 <td>
                   <div class="item"><a href="#">A political register, setting forth the principles of the Whig and Locofoco Parties in the United States, with the life and public services of Henry Clay.</a></div>
                   <div>
@@ -294,8 +327,157 @@
                     Imprint: Jonesborough, Tenn., Office of the "Jonesborough Whig," 1844.
                   </div>
                 </td>
-                <td class="ready">Ready</td>
-                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a> <a href="#">(requested from offsite storage)</a></td>
+                <td><span class="ready">Ready</span></td>
+                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a></br><a href="#">(requested from offsite storage)</a></td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <div class="item"><a href="#">The Federalist papers</a></div>
+                  <div>
+                    <a href="#">By Brownlow, William Gannaway, 1805-1877</a>
+                  </div>
+                  <div>
+                    The Federalist papers<br>
+                    New Haven: Yale University Press, 2009</br>
+                    Call number: IB 09-5067</br>
+                  </div>
+                </td>
+                <td><span class="paused">Paused</span></td>
+                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a></br><a href="#">(requested from offsite storage)</a></td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <div class="item"><a href="#">A political register, setting forth the principles of the Whig and Locofoco Parties in the United States, with the life and public services of Henry Clay.</a></div>
+                  <div>
+                    <a href="#">By Brownlow, William Gannaway, 1805-1877</a>
+                  </div>
+                  <div>
+                    Imprint: Jonesborough, Tenn., Office of the "Jonesborough Whig," 1844.
+                  </div>
+                </td>
+                <td><span class="cancelled">Cancelled</span></td>
+                <td><a href="#">Stephen A. Schwarzman Building, Milstein Division Rm 120</a></br><a href="#">(requested from offsite storage)</a></td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <a href="../item/v1a_monograph.html">The Federalist papers</a><br>
+                  New Haven: Yale University Press, 2009<br>
+                  Call number: IB 09-5067
+                </td>
+                <td>
+                  <span class="status requested">Requested</span>
+                </td>
+                <td>
+                  <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
+                  <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br>
+                  <!-- New York, NY 10018<br /> -->
+                  <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, 1st Floor, Room 121
+                </td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <a href="#">Alexander Hamilton, American</a><br>
+                  Brookhiser, Richard New York: Free Press, 1999<br>
+                  Call number: II 99-4791
+                </td>
+                <td>
+                  <span class="status in-transit">In transit</span>
+                </td>
+                <td>
+                  Off-site request from Princeton for use at<br>
+                  <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
+                  <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br>
+                  <!-- New York, NY 10018<br /> -->
+                  <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, 2nd Floor, Room 121
+                </td>
+
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <a href="#">Alexander Hamilton : a life </a><br>
+                  Randall, Willard Sterne. HarperCollins, 2003<br>
+                  Call number: *R-RMRR E302.6.H2 R25 2003
+                </td>
+                <td class="queued">
+                  <span class="status queued">Queued<br>2nd in hold queue</span>
+                </td>
+                <td>
+                  <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
+                  <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br>
+                  <!-- New York, NY 10018<br /> -->
+                  <a href="https://www.nypl.org/locations/divisions/general-research-division">General Research Division</a>, 2nd Floor, Room 217
+                </td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <div class="item"><a href="#">Alexander Hamilton</a></div>
+                  <div>Chernow, Ron New York: Penguin Press, 2004<br></div>
+                  <div>Call number: *R-RMRR E302.6.H2 .C48 2004</div>
+                </td>
+                <td class="pending">
+                  Pending
+                </td>
+                <td>
+                  <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
+                  <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br>
+                  <!-- New York, NY 10018<br /> -->
+                  <a href="https://www.nypl.org/locations/divisions/general-research-division">General Research Division</a>, 2nd Floor, Room 217
+                </td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <div class="item">
+                    <a href="#">The duel: the parallel lives of Alexander Hamilton &amp; Aaron Burr</a></div>
+                  <div>St. George, Judith, 1931-  New York: Viking, 2009</div><br>
+                  <div>Call number: JFE 10-1762</div>
+                </td>
+                <td data-value="6"><span class="status cancelled">Cancelled</span></td>
+                <td>
+                  <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
+                  <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br>
+                  <!-- New York, NY 10018<br /> -->
+                  <a href="https://www.nypl.org/locations/divisions/general-research-division">General Research Division</a>, 2nd Floor, Room 217
+                </td>
+                <td>
+                  <a href="#">Manage this item</a>
+                </td>
+              </tr>
+              <tr role="row">
+                <td>
+                  <div class="item"><a href="#">Alexander Hamilton papers</a></div>
+                  <div>Primary source</div>
+                  <div>Call number: MssCol 1297 Box 1</div>
+                </td>
+                <td>
+                  <span class="status completed">Completed</span>
+                </td>
+                <td>
+                  <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
+                  <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br>
+                  <!-- New York, NY 10018<br /> -->
+                  <a href="https://www.nypl.org/about/divisions/manuscripts-division">Manuscripts &amp; Archives Division</a>, 3rd Floor, Room 328
+                </td>
                 <td>
                   <a href="#">Manage this item</a>
                 </td>
@@ -306,4 +488,26 @@
       </div>
     </div>
   </main>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('#holds-data-table').DataTable( {
+        paging: false,
+        searching: false
+        //ordering: true
+      });
+    } );
+  </script>
+  <script type="text/javascript">
+    // get the number of trs in table
+    const trItems = document.querySelectorAll('tbody tr').length;
+    //console.log(trItems);
+    // update the number printed to item count
+      // turn the number into a string
+      const numberOfItems = trItems.toString();
+      //console.log(numberOfItems);
+      const totalNumber =  document.getElementById('number-of-holds');
+      totalNumber.innerHTML = numberOfItems;
+  </script>
 </body>
