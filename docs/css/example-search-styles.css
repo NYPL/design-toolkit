@@ -429,7 +429,6 @@ h5,
 h6,
 p {
   line-height: 1.4;
-  margin-bottom: 0.5rem;
   margin-top: 1.5rem; }
 
 h1,
@@ -455,7 +454,7 @@ h3 {
   font-size: 1.4rem; }
 
 p {
-  margin-top: 0.25rem;
+  margin-top: 0;
   margin-bottom: 1rem; }
 
 h4 {
