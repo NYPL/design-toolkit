@@ -2770,18 +2770,21 @@ button:focus {
     border-bottom: 1px solid #d7d4d0;
     padding-bottom: 0.5rem;
     vertical-align: top; }
-  .nypl-holds-table td .item {
-    font-weight: 700; }
+  .nypl-holds-table td {
+    padding-top: 0.75rem; }
+    .nypl-holds-table td .item {
+      font-weight: 700; }
   .nypl-holds-table td span {
-    background-color: #d9d6d2;
-    padding: 0.25rem 1.25rem;
+    padding: 0.25rem;
     text-align: center; }
     .nypl-holds-table td span.ready {
-      color: #799a05; }
-    .nypl-holds-table td span.paused {
-      background-color: #fff1a5; }
+      border-left: 0.3125rem solid #799a05; }
+    .nypl-holds-table td span.pending {
+      border-left: 0.3125rem solid #fff1a5; }
     .nypl-holds-table td span.cancelled {
-      color: #d0343a; }
+      border-left: 0.3125rem solid #d0343a; }
+    .nypl-holds-table td span.queued {
+      border-left: 0.3125rem solid #080807; }
     .nypl-holds-table td span.compelete {
       background-color: #fff;
       font-style: italic; }
@@ -2800,6 +2803,7 @@ button:focus {
       .nypl-holds-table tr:nth-of-type(1) {
         border: 0; }
     .nypl-holds-table td {
+      border: 0;
       display: block;
       position: relative;
       width: 100%; }
@@ -2807,8 +2811,7 @@ button:focus {
         display: block;
         float: left;
         font-weight: bold;
-        margin-bottom: 2rem;
-        width: 40%; }
+        width: 100%; }
       .nypl-holds-table td .item {
         font-size: 1.2rem;
         padding: 1rem 0; }
