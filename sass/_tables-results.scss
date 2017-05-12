@@ -355,6 +355,11 @@ $sorter-width: 11em;
     font-size: 1.6rem;
     font-weight: normal;
   }
+
+  dl {
+    border-left: 0.25rem solid $nypl-dark-gray;
+    padding: 0 0.75rem;
+  }
 }
 
 @mixin item-external-links {
