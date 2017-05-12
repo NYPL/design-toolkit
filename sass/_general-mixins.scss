@@ -33,7 +33,7 @@ $bullet-size: 0.5rem;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    margin-right: ($bullet-size * 0.5);
+    margin-right: $bullet-size;
     top: 0;
 
     @if ($hides-on-mobile == true) {

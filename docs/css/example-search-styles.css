@@ -908,7 +908,7 @@ button:focus {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     top: 0; }
     @media (max-width: 965px) {
       .nypl-custom-list li::before {
