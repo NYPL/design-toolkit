@@ -409,12 +409,12 @@
               </tr>
               <tr role="row">
                 <td>
-                  <a href="#">Alexander Hamilton : a life </a><br>
-                  Randall, Willard Sterne. HarperCollins, 2003<br>
-                  Call number: *R-RMRR E302.6.H2 R25 2003
+                  <div class="item"><a href="#">Alexander Hamilton : a life </a></div>
+                  <div>Randall, Willard Sterne. HarperCollins, 2003</div>
+                  <div>Call number: *R-RMRR E302.6.H2 R25 2003</div>
                 </td>
-                <td class="queued">
-                  <span class="status queued">Queued<br>2nd in hold queue</span>
+                <td>
+                  <span class="status queued">Queued</span>
                 </td>
                 <td>
                   <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
@@ -432,8 +432,8 @@
                   <div>Chernow, Ron New York: Penguin Press, 2004<br></div>
                   <div>Call number: *R-RMRR E302.6.H2 .C48 2004</div>
                 </td>
-                <td class="pending">
-                  Pending
+                <td>
+                  <span class="pending">Pending</span>
                 </td>
                 <td>
                   <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br>
@@ -449,7 +449,7 @@
                 <td>
                   <div class="item">
                     <a href="#">The duel: the parallel lives of Alexander Hamilton &amp; Aaron Burr</a></div>
-                  <div>St. George, Judith, 1931-  New York: Viking, 2009</div><br>
+                  <div>St. George, Judith, 1931-  New York: Viking, 2009</div>
                   <div>Call number: JFE 10-1762</div>
                 </td>
                 <td data-value="6"><span class="status cancelled">Cancelled</span></td>
@@ -505,9 +505,9 @@
     //console.log(trItems);
     // update the number printed to item count
       // turn the number into a string
-      const numberOfItems = trItems.toString();
+      //const numberOfItems = trItems.toString();
       //console.log(numberOfItems);
       const totalNumber =  document.getElementById('number-of-holds');
-      totalNumber.innerHTML = numberOfItems;
+      totalNumber.innerHTML = trItems;
   </script>
 </body>
