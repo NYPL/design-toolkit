@@ -97,7 +97,7 @@
 
   @include media($mobile-breakpoint) {
     thead tr {
-      display: none;
+      @include screenreader-only;
     }
 
     tr {

@@ -202,6 +202,7 @@ $sorter-width: 11em;
   dl {
     @include clearfix;
     margin-bottom: 1rem;
+    margin-top: 0;
 
     li {
       list-style-type: none;
@@ -240,11 +241,13 @@ $sorter-width: 11em;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
+  max-width: none;
 
   h2 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    max-width: none;
   }
 
   @include item-definition-list;
@@ -283,40 +286,34 @@ $sorter-width: 11em;
   font-style: italic;
 }
 
-@mixin item-toc {
-  list-style-type: none;
-  margin: 1rem 0;
+@mixin item-info {
+  border-left: 0.5rem solid $nypl-gray;
+  padding-left: 0.5rem;
 
-  li {
-    display: inline-block;
+  margin-bottom: 1rem;
+  max-width: none;
+
+  p {
     margin: 0;
-
-    &::after {
-      content: "\2003|\2003";
-    }
-
-    &:last-child::after {
-      content: "";
-    }
-
-    @include media($mobile-breakpoint) {
-      display: block;
-
-      &::after {
-        content: "";
-      }
-    }
+    max-width: none;
   }
 }
 
-@mixin item-holdings {
-  li {
-    @include custom-list-bullet;
-    margin-bottom: 0.5rem;
+@mixin item-media {
+  color: $nypl-gray;
+  font-weight: bold;
+}
 
-    &:hover {
-      @include custom-list-bullet($nypl-gray);
-    }
+@mixin item-holdings {
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0 0 0.5rem;
 
     @include media($mobile-breakpoint) {
       clear: left;
@@ -343,7 +340,12 @@ $sorter-width: 11em;
 }
 
 @mixin item-details {
-  @include item-definition-list($item-margin-bottom: 1rem);
+  @include item-definition-list($item-margin-bottom: 0.5rem);
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
 }
 
 @mixin item-external-links {

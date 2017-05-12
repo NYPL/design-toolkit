@@ -58,7 +58,7 @@
 hljs.configure({languages:['html', 'scss', 'js']})
 hljs.initHighlightingOnLoad();
 $(document).ready(function() {
-    $('#toc').toc({ title: '<h2>Table of contents</h2>', listType: 'ul', headers: 'h3,h4', showSpeed: 0 });
+    $('#toc').toc({ title: '<h2>Table of contents</h2>', listType: 'ul', classes: { list: 'nypl-custom-list' }, headers: 'h3,h4', showSpeed: 0 });
 });
 </script>
 </body>
