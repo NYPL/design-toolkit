@@ -2772,10 +2772,19 @@ button:focus {
     vertical-align: top; }
   .nypl-holds-table td .item {
     font-weight: 700; }
-  .nypl-holds-table td:nth-of-type(2) {
-    background-color: #d7d4d0; }
-    .nypl-holds-table td:nth-of-type(2).ready {
-      background-color: #e9eed6; }
+  .nypl-holds-table td span {
+    background-color: #d9d6d2;
+    padding: 0.25rem 1.25rem;
+    text-align: center; }
+    .nypl-holds-table td span.ready {
+      color: #799a05; }
+    .nypl-holds-table td span.paused {
+      background-color: #fff1a5; }
+    .nypl-holds-table td span.cancelled {
+      color: #d0343a; }
+    .nypl-holds-table td span.compelete {
+      background-color: #fff;
+      font-style: italic; }
   @media (max-width: 965px) {
     .nypl-holds-table thead tr {
       position: absolute;
@@ -2787,7 +2796,7 @@ button:focus {
       clip: rect(0, 0, 0, 0);
       border: 0; }
     .nypl-holds-table tr {
-      border-top: 0.5rem solid #080807; }
+      border-top: 0.3125rem solid #080807; }
       .nypl-holds-table tr:nth-of-type(1) {
         border: 0; }
     .nypl-holds-table td {
