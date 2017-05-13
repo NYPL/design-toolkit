@@ -537,6 +537,12 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
+.nypl-results-summary {
+  padding-bottom: 1rem; }
+
+.nypl-holds-summary {
+  border-bottom: 0.25rem solid #080807; }
+
 .hidden {
   display: none; }
 
@@ -2774,21 +2780,37 @@ button:focus {
     padding-top: 0.75rem; }
     .nypl-holds-table td .item {
       font-weight: 700; }
-  .nypl-holds-table td span {
-    padding: 0.25rem;
-    text-align: center; }
-    .nypl-holds-table td span.ready {
-      border-left: 0.3125rem solid #799a05; }
-    .nypl-holds-table td span.pending {
-      border-left: 0.3125rem solid #fff1a5; }
-    .nypl-holds-table td span.cancelled {
-      border-left: 0.3125rem solid #d0343a; }
-    .nypl-holds-table td span.queued {
-      border-left: 0.3125rem solid #080807; }
-    .nypl-holds-table td span.compelete {
-      background-color: #fff;
-      font-style: italic; }
+    .nypl-holds-table td dl .item-title {
+      font-weight: 700; }
+    .nypl-holds-table td dl dt {
+      color: #776e64;
+      font-weight: 700; }
+    .nypl-holds-table td dl dd {
+      font-weight: 400;
+      margin: 0; }
+  .nypl-holds-table td span.ready {
+    border-left: 0.3125rem solid #799a05; }
+  .nypl-holds-table td span.pending {
+    border-left: 0.3125rem solid #fff1a5; }
+  .nypl-holds-table td span.cancelled {
+    border-left: 0.3125rem solid #d0343a; }
+  .nypl-holds-table td span.queued {
+    border-left: 0.3125rem solid #080807; }
+  .nypl-holds-table td span.compelete {
+    background-color: #fff;
+    font-style: italic; }
+  .nypl-holds-table td[class] {
+    border-left-color: #fff;
+    border-left-style: solid;
+    border-left-width: 0.3125rem; }
+    .nypl-holds-table td[class].available {
+      border-left-color: #799a05;
+      color: #799a05; }
+    .nypl-holds-table td[class].in-transit {
+      border-left-color: #fee24a; }
   @media (max-width: 965px) {
+    .nypl-holds-table thead {
+      border: 0; }
     .nypl-holds-table thead tr {
       position: absolute;
       width: 0.1rem;
