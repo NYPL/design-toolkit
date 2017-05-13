@@ -13,6 +13,30 @@ const itemHold = [
     statusClass: 'in-transit',
     manageUrl: '#',
   },
+  {
+    title: 'Protest, reform and repression in Khrushchev\'s Soviet Union / Robert Hornsby',
+    url: 'https://catalog.nypl.org/search~S98?/Xsoviet+union&searchscope=98&SORT=DZ/Xsoviet+union&searchscope=98&SORT=DZ&SUBKEY=soviet+union/1%2C32000%2C32000%2CB/frameset&FF=Xsoviet+union&searchscope=98&SORT=DZ&13%2C13%2C',
+    author: 'Hornsby, Rob',
+    format: 'Book',
+    imprint: 'Cambridge, U.K. ; New York : Cambridge University Press, 2013',
+    location: 'Stephen A. Schwarzman Building, General Research, Room 315',
+    locLink: '#',
+    status: 'Requested from ReCAP',
+    statusClass: 'requested recap',
+    manageUrl: '#',
+  },
+  {
+    title: 'String quartet in F minor, op. 95 "serioso" [sound recording] / Ludwig van Beethoven. Five fugues from the Well-tempered clavier, arr. for string quartet, K. 405 / Johann Sebastian Bach ; Wolfgang Amadeus Mozart. String quartet, op. 3 / Alban Berg. String quartet no. 1 in D major, op. 11 / Peter Ilich Tchaikovsky.',
+    url: 'https://catalog.nypl.org/search~S98?/Xsoviet+union&searchscope=98&SORT=DZ/Xsoviet+union&searchscope=98&SORT=DZ&SUBKEY=soviet+union/1%2C32000%2C32000%2CB/frameset&FF=Xsoviet+union&searchscope=98&SORT=DZ&13%2C13%2C',
+    author: 'Hornsby, Rob',
+    format: 'Book',
+    imprint: 'Cambridge, U.K. ; New York : Cambridge University Press, 2013',
+    location: 'Stephen A. Schwarzman Building, General Research, Room 315',
+    locLink: '#',
+    status: 'Requested from ReCAP',
+    statusClass: 'requested recap',
+    manageUrl: '#',
+  },
 ];
 
 itemHold.forEach(item => {
@@ -40,6 +64,7 @@ itemHold.forEach(item => {
   console.log(tableBody);
 });
 
+// Helper so we can put the number of trs at the top of the table
 // get the number of trs in table
 const trItems = document.querySelectorAll('tbody tr').length;
 // console.log(trItems);
