@@ -19,6 +19,10 @@
     // background-color: $nypl-yellow-tint;
   }
 
+  thead tr th[class|=sorting] {
+    cursor: pointer;
+  }
+
   td {
     padding-top: 0.75rem;
 
@@ -27,22 +31,22 @@
     }
     // In the case of using Lists:
     // for dl / dt / dd
-
-    dl {
-      .item-title {
-        font-weight: 700;
-      }
-
-      dt {
-        color: $nypl-gray;
-        font-weight: 700;
-      }
-
-      dd {
-        font-weight: 400;
-        margin: 0;
-      }
-    }
+    @include item-definition-list($dt-width: 100%);
+    // dl {
+    //   .item-title {
+    //     font-weight: 700;
+    //   }
+    //
+    //   dt {
+    //     color: $nypl-gray;
+    //     font-weight: 700;
+    //   }
+    //
+    //   dd {
+    //     font-weight: 400;
+    //     margin: 0;
+    //   }
+    // }
   }
 
   td span {
