@@ -2783,8 +2783,10 @@ button:focus {
     border-bottom: 1px solid #d7d4d0;
     padding-bottom: 0.5rem;
     vertical-align: top; }
-  .nypl-holds-table thead tr th[class|=sorting] {
+  .nypl-holds-table thead tr th[class^=sorting] {
     cursor: pointer; }
+  .nypl-holds-table thead tr th[class=sorting_disabled] {
+    cursor: default; }
   .nypl-holds-table td {
     padding-top: 0.75rem; }
     .nypl-holds-table td .item {
@@ -2805,11 +2807,11 @@ button:focus {
       float: left;
       line-height: 1.5;
       margin: 0 0 0.5rem;
-      width: auto; }
+      width: 70%; }
     .nypl-holds-table td dt {
       clear: left;
       color: #776e64;
-      width: 100%; }
+      width: 30%; }
       @media (max-width: 965px) {
         .nypl-holds-table td dt {
           width: 40%; } }
@@ -2818,26 +2820,24 @@ button:focus {
       @media (max-width: 965px) {
         .nypl-holds-table td dd {
           width: 60%; } }
-  .nypl-holds-table td span.ready {
-    border-left: 0.3125rem solid #799a05; }
-  .nypl-holds-table td span.pending {
-    border-left: 0.3125rem solid #fff1a5; }
-  .nypl-holds-table td span.cancelled {
-    border-left: 0.3125rem solid #d0343a; }
-  .nypl-holds-table td span.queued {
-    border-left: 0.3125rem solid #080807; }
-  .nypl-holds-table td span.compelete {
-    background-color: #fff;
-    font-style: italic; }
-  .nypl-holds-table td[class] {
+    .nypl-holds-table td dl dt.item-title {
+      font-weight: 700;
+      width: 100%; }
+  .nypl-holds-table td span {
     border-left-color: #fff;
     border-left-style: solid;
-    border-left-width: 0.3125rem; }
-    .nypl-holds-table td[class].available {
+    border-left-width: 0.3125rem;
+    display: block;
+    padding: 1rem 0 1rem 0.5rem; }
+    .nypl-holds-table td span.available {
       border-left-color: #799a05;
       color: #799a05; }
-    .nypl-holds-table td[class].in-transit {
+    .nypl-holds-table td span.in-transit {
       border-left-color: #fee24a; }
+    .nypl-holds-table td span.ill::before {
+      content: "ill?"; }
+    .nypl-holds-table td span.recap {
+      background-color: #b5e1f3; }
   @media (max-width: 965px) {
     .nypl-holds-table thead {
       border: 0; }
@@ -2863,6 +2863,7 @@ button:focus {
         display: block;
         float: left;
         font-weight: bold;
+        padding-left: 0.75rem;
         width: 100%; }
       .nypl-holds-table td .item {
         font-size: 1.2rem;
