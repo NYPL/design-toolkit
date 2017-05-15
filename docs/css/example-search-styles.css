@@ -428,8 +428,6 @@ h4,
 h5,
 h6,
 p {
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
   margin-top: 1.5rem; }
 
 h1,
@@ -455,7 +453,7 @@ h3 {
   font-size: 1.4rem; }
 
 p {
-  margin-top: 0.25rem;
+  margin-top: 0;
   margin-bottom: 1rem; }
 
 h4 {
@@ -910,7 +908,7 @@ button:focus {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     top: 0; }
     @media (max-width: 965px) {
       .nypl-custom-list li::before {
