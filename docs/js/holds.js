@@ -70,7 +70,7 @@ const itemHold = [
     location: 'Performing Arts Research Collections - Music',
     locLink: '#',
     status: 'In transit from ILL',
-    statusClass: 'transit ill',
+    statusClass: 'in-transit ill',
     manageUrl: '#',
   },
   {
@@ -102,7 +102,7 @@ const itemHold = [
 itemHold.forEach(item => {
   const tableRow = `
     <tr role="row">
-      <td>
+      <td class="item-details">
         <dl>
           <dt class="item-title"><a href="${item.url}">${item.title}</a></dt>
           <dt>Author</dt>
@@ -113,14 +113,14 @@ itemHold.forEach(item => {
             <dd>${item.format}</dd>
         </dl>
       </td>
-      <td class="${item.statusClass}">
-        <span>${item.status}</span>
+      <td>
+        <span class="${item.statusClass}">${item.status}</span>
       </td>
       <td>
-        <span><a href="${item.locLink}">${item.location}</a></span>
+        <a href="${item.locLink}">${item.location}</a>
       </td>
       <td>
-        <span><a href="${item.manageUrl}">Manage this item</a></span>
+        <a href="${item.manageUrl}">Manage this item</a>
       </td>
     </tr>
   `;
@@ -129,13 +129,8 @@ itemHold.forEach(item => {
   console.table(tableRow);
 });
 
-// Helper so we can put the number of trs at the top of the table
-// get the number of trs in table
+// Helper so we can put the number of table rowss at the top of the table
 const trItems = document.querySelectorAll('tbody tr').length;
 // console.log(trItems);
-// update the number printed to item count
-// turn the number into a string
-// const numberOfItems = trItems.toString();
-// console.log(numberOfItems);
 const totalNumber = document.getElementById('number-of-holds');
 totalNumber.innerHTML = trItems;
