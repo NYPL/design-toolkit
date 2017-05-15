@@ -19,8 +19,17 @@
     // background-color: $nypl-yellow-tint;
   }
 
-  thead tr th[class|=sorting] {
-    cursor: pointer;
+  // make sure we use the right cursors
+  // TODO: investigate a more elegant way to accomplish this:
+  thead tr th {
+    &[class^=sorting] { // using this attr. selector lets us get
+                        // get at DataTable's injected classes sorting,sort
+      cursor: pointer;
+    }
+
+    &[class=sorting_disabled] {
+      cursor: default;
+    }
   }
 
   td {
@@ -29,59 +38,23 @@
     .item {
       font-weight: 700;
     }
-    // In the case of using Lists:
-    // for dl / dt / dd
-    @include item-definition-list($dt-width: 100%);
-    // dl {
-    //   .item-title {
-    //     font-weight: 700;
-    //   }
-    //
-    //   dt {
-    //     color: $nypl-gray;
-    //     font-weight: 700;
-    //   }
-    //
-    //   dd {
-    //     font-weight: 400;
-    //     margin: 0;
-    //   }
-    // }
+    
+    @include item-definition-list($dt-width: 30%, $dd-width: 70%);
+
+    dl { // style first item in the Holds table context
+      dt.item-title {
+        font-weight: 700;
+        width: 100%;
+      }
+    }
   }
 
   td span {
-    // holds v1 styles
-    //background-color: lighten($nypl-light-gray, 0.75);
-    // padding: 0.25rem;
-    // text-align: center;
-
-    &.ready {
-      border-left: $simple-border * 5 solid $nypl-green;
-    }
-
-    &.pending {
-      border-left: $simple-border * 5 solid $nypl-yellow-tint;
-    }
-
-    &.cancelled {
-      border-left: $simple-border * 5 solid $nypl-red;
-    }
-
-    &.queued {
-      border-left: $simple-border * 5 solid $nypl-dark-gray;
-    }
-
-    &.compelete {
-      background-color: $nypl-white;
-      font-style: italic;
-    }
-  }
-
-  // V2 stylings
-  td[class] {
-    border-left-color: $nypl-white;
+    border-left-color: $page-background-color;
     border-left-style: solid;
     border-left-width: $general-border-width * 2.5;
+    display: block;
+    padding: 1rem 0 1rem 0.5rem;
 
     &.available {
       border-left-color: $nypl-green;
@@ -90,6 +63,16 @@
 
     &.in-transit {
       border-left-color: $nypl-yellow;
+    }
+
+    &.ill {
+      &::before {
+        content: "ill?";
+      }
+    }
+
+    &.recap {
+      background-color: lighten($nypl-light-blue, 15%);
     }
   }
 
@@ -121,6 +104,7 @@
         float: left;
         font-weight: bold;
         //margin-bottom: 2rem;
+        padding-left: $general-border-width * 6;
         width: 100%;
       }
 
