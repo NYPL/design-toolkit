@@ -293,8 +293,13 @@
 
       $('#holds-data-table').DataTable( {
         paging: false,
-        searching: false
-        //ordering: true
+        searching: false,
+        "columns": [
+            null,
+            null,
+            null,
+            { "orderable": false }
+            ]
       });
     } );
   </script>
