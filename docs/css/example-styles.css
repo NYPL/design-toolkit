@@ -2776,18 +2776,41 @@ button:focus {
     border-bottom: 1px solid #d7d4d0;
     padding-bottom: 0.5rem;
     vertical-align: top; }
+  .nypl-holds-table thead tr th[class|=sorting] {
+    cursor: pointer; }
   .nypl-holds-table td {
     padding-top: 0.75rem; }
     .nypl-holds-table td .item {
       font-weight: 700; }
-    .nypl-holds-table td dl .item-title {
-      font-weight: 700; }
-    .nypl-holds-table td dl dt {
+    .nypl-holds-table td dl {
+      margin-bottom: 1rem;
+      margin-top: 0; }
+      .nypl-holds-table td dl::before, .nypl-holds-table td dl::after {
+        content: "";
+        display: table; }
+      .nypl-holds-table td dl::after {
+        clear: both; }
+      .nypl-holds-table td dl li {
+        list-style-type: none;
+        margin-left: 0; }
+    .nypl-holds-table td dt,
+    .nypl-holds-table td dd {
+      float: left;
+      line-height: 1.5;
+      margin: 0 0 0.5rem;
+      width: auto; }
+    .nypl-holds-table td dt {
+      clear: left;
       color: #776e64;
-      font-weight: 700; }
-    .nypl-holds-table td dl dd {
-      font-weight: 400;
+      width: 100%; }
+      @media (max-width: 965px) {
+        .nypl-holds-table td dt {
+          width: 40%; } }
+    .nypl-holds-table td dd {
       margin: 0; }
+      @media (max-width: 965px) {
+        .nypl-holds-table td dd {
+          width: 60%; } }
   .nypl-holds-table td span.ready {
     border-left: 0.3125rem solid #799a05; }
   .nypl-holds-table td span.pending {
@@ -3112,7 +3135,8 @@ button:focus {
   .nypl-results-item dd {
     float: left;
     line-height: 1.5;
-    margin: 0 0 0.5rem; }
+    margin: 0 0 0.5rem;
+    width: auto; }
   .nypl-results-item dt {
     clear: left;
     color: #776e64;
@@ -3216,7 +3240,8 @@ button:focus {
 .nypl-item-details dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem; }
+  margin: 0 0 0.5rem;
+  width: auto; }
 .nypl-item-details dt {
   clear: left;
   color: #776e64;
@@ -3248,7 +3273,8 @@ button:focus {
 .nypl-item-external-links dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem; }
+  margin: 0 0 0.5rem;
+  width: auto; }
 .nypl-item-external-links dt {
   clear: left;
   color: #776e64;
