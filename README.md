@@ -20,7 +20,7 @@ See [LICENSE](LICENSE)
 
 ### v0.1.14
 - Better item detail page
-- Fixes: #104, #106, #107, #108, #111, #116.
+- Fixes: #104, #106, #107, #108, #111, #116, #119.
 
 ### v0.1.13
 - Improved search results.
