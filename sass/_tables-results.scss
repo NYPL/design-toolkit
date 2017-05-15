@@ -67,16 +67,24 @@ $results-item-border-width: 0.0625rem;
       // the button inside a facet
       @include basic-button($border-radius: 2rem, $padding-vertical: 0, $padding-horizontal: 0, $border-width: 0);
       margin: 0.25rem 0 0.25rem 0.25rem;
+      vertical-align: bottom;
 
       span {
         @include screenreader-only;
       }
 
-      &::before {
-        content: "×";
+      .nypl-icon {
+        @include nypl-icon($fill: $button-text-color, $background-color: $nypl-search-color-dark, $border-radius: 1rem);
         display: block;
-        line-height: 0;
-        margin: 0.6rem 0.35rem 0.7rem;
+        margin: 0;
+      }
+
+      &:hover {
+        .nypl-icon {
+          @include nypl-icon($background-color: $button-text-color, $fill: $nypl-search-color-dark, $border-radius: 1rem);
+          display: block;
+          margin: 0;
+        }
       }
     }
   }
@@ -347,6 +355,11 @@ $sorter-width: 11em;
   h1 {
     font-size: 1.6rem;
     font-weight: normal;
+  }
+
+  dl {
+    border-left: 0.25rem solid $nypl-dark-gray;
+    padding: 0 0.75rem;
   }
 }
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -429,8 +428,6 @@ h4,
 h5,
 h6,
 p {
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
   margin-top: 1.5rem; }
 
 h1,
@@ -456,7 +453,7 @@ h3 {
   font-size: 1.4rem; }
 
 p {
-  margin-top: 0.25rem;
+  margin-top: 0;
   margin-bottom: 1rem; }
 
 h4 {
@@ -551,6 +548,7 @@ button:focus {
 
 .nypl-icon {
   background-color: #fff;
+  border-radius: 0;
   display: inline-block;
   fill: #080807;
   height: 1em;
@@ -562,6 +560,7 @@ button:focus {
 
 .nypl-logo-rev {
   background-color: transparent;
+  border-radius: 0;
   display: inline-block;
   fill: #080807;
   height: 2.81667rem;
@@ -915,7 +914,7 @@ button:focus {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     top: 0; }
     @media (max-width: 965px) {
       .nypl-custom-list li::before {
@@ -1193,6 +1192,7 @@ button:focus {
     text-align: left; }
     .nypl-menu-button_left .nypl-menu-button_button .nypl-icon {
       background-color: #776e64;
+      border-radius: 0;
       display: inline-block;
       fill: #fff;
       height: 1em;
@@ -1216,6 +1216,7 @@ button:focus {
       color: #776e64; }
       .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button:hover:visited .nypl-icon, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
+        border-radius: 0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
@@ -1274,6 +1275,7 @@ button:focus {
     text-align: left; }
     .nypl-menu-button_right .nypl-menu-button_button .nypl-icon {
       background-color: #776e64;
+      border-radius: 0;
       display: inline-block;
       fill: #fff;
       height: 1em;
@@ -1297,6 +1299,7 @@ button:focus {
       color: #776e64; }
       .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button:hover:visited .nypl-icon, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon {
         background-color: #fff;
+        border-radius: 0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
@@ -1355,6 +1358,7 @@ button:focus {
     text-align: left; }
     .nypl-navigation-button .nypl-navigation-button_button .nypl-icon {
       background-color: #776e64;
+      border-radius: 0;
       display: inline-block;
       fill: #fff;
       height: 1em;
@@ -1378,6 +1382,7 @@ button:focus {
       color: #776e64; }
       .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button:hover:visited .nypl-icon, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon {
         background-color: #fff;
+        border-radius: 0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
@@ -2179,6 +2184,7 @@ button:focus {
     width: 100%; }
     .nypl-searchable-field button.nypl-facet-toggle .nypl-icon {
       background-color: #776e64;
+      border-radius: 0;
       display: inline-block;
       fill: #fff;
       height: 1em;
@@ -2590,6 +2596,7 @@ button:focus {
 
 .nypl-nypl-icon {
   background-color: #fff;
+  border-radius: 0;
   display: inline-block;
   fill: #080807;
   height: 1em;
@@ -2910,7 +2917,8 @@ button:focus {
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
       transition: all 0.1s ease-in 0s;
-      margin: 0.25rem 0 0.25rem 0.25rem; }
+      margin: 0.25rem 0 0.25rem 0.25rem;
+      vertical-align: bottom; }
       .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
         color: #fff; }
       .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
@@ -2939,11 +2947,32 @@ button:focus {
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
         border: 0; }
-      .nypl-results-summary .nypl-facet button::before {
-        content: "×";
+      .nypl-results-summary .nypl-facet button .nypl-icon {
+        background-color: #776e64;
+        border-radius: 1rem;
+        display: inline-block;
+        fill: #fff;
+        height: 1em;
+        width: 1em;
+        speak: none;
         display: block;
-        line-height: 0;
-        margin: 0.6rem 0.35rem 0.7rem; }
+        margin: 0; }
+        .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
+      .nypl-results-summary .nypl-facet button:hover .nypl-icon {
+        background-color: #fff;
+        border-radius: 1rem;
+        display: inline-block;
+        fill: #776e64;
+        height: 1em;
+        width: 1em;
+        speak: none;
+        display: block;
+        margin: 0; }
+        .nypl-results-summary .nypl-facet button:hover .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
   .nypl-results-summary .nypl-clear-results {
     clear: both; }
 
@@ -2985,6 +3014,7 @@ button:focus {
     float: left; }
   .nypl-results-pagination a svg {
     background-color: #fff;
+    border-radius: 0;
     display: inline-block;
     fill: #080807;
     height: 1em;
@@ -3042,6 +3072,7 @@ button:focus {
     text-align: left; }
     .nypl-results-sorter button .nypl-icon {
       background-color: #fff;
+      border-radius: 0;
       display: inline-block;
       fill: #080807;
       height: 1em;
@@ -3065,6 +3096,7 @@ button:focus {
       color: #776e64; }
       .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorter button:hover:visited .nypl-icon, .nypl-results-sorter button.active .nypl-icon {
         background-color: #d7d4d0;
+        border-radius: 0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
@@ -3257,6 +3289,9 @@ button:focus {
 .nypl-item-details h1 {
   font-size: 1.6rem;
   font-weight: normal; }
+.nypl-item-details dl {
+  border-left: 0.25rem solid #080807;
+  padding: 0 0.75rem; }
 
 .nypl-item-external-links dl {
   margin-bottom: 1rem;
@@ -3414,6 +3449,7 @@ button:focus {
     text-decoration: none; }
     .nypl-header .main-menu-toggle .nypl-icon {
       background-color: #d0343a;
+      border-radius: 0;
       display: inline-block;
       fill: #fff;
       height: 1.5em;
@@ -3665,6 +3701,7 @@ button:focus {
     white-space: nowrap; }
     .nypl-header .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
+      border-radius: 0;
       display: inline-block;
       fill: #fff;
       height: 1em;
@@ -3688,6 +3725,7 @@ button:focus {
       color: #776e64; }
       .nypl-header .service-buttons button.collapsible:hover .nypl-icon, .nypl-header .service-buttons button.collapsible:hover:visited .nypl-icon, .nypl-header .service-buttons button.collapsible.active .nypl-icon {
         background-color: #fff;
+        border-radius: 0;
         display: inline-block;
         fill: #776e64;
         height: 1em;
@@ -3807,6 +3845,7 @@ button:focus {
       text-transform: uppercase; }
       .nypl-header .login-toggle button.collapsible .nypl-icon {
         background-color: #776e64;
+        border-radius: 0;
         display: inline-block;
         fill: #fff;
         height: 1em;
@@ -3830,6 +3869,7 @@ button:focus {
         color: #776e64; }
         .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
           background-color: #fff;
+          border-radius: 0;
           display: inline-block;
           fill: #776e64;
           height: 1em;
