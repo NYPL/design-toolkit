@@ -2807,11 +2807,11 @@ button:focus {
       float: left;
       line-height: 1.5;
       margin: 0 0 0.5rem;
-      width: 70%; }
+      width: 90%; }
     .nypl-holds-table td dt {
       clear: left;
       color: #776e64;
-      width: 30%; }
+      width: 10%; }
       @media (max-width: 965px) {
         .nypl-holds-table td dt {
           width: 40%; } }
