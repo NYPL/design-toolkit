@@ -38,7 +38,7 @@
     .item {
       font-weight: 700;
     }
-    
+
     @include item-definition-list($dt-width: 30%, $dd-width: 70%);
 
     dl { // style first item in the Holds table context
@@ -66,9 +66,9 @@
     }
 
     &.ill {
-      &::before {
-        content: "ill?";
-      }
+      // &::before {
+      //   content: "ill?";
+      // }
     }
 
     &.recap {
