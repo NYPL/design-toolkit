@@ -19,7 +19,7 @@
     // background-color: $nypl-yellow-tint;
   }
 
-  // make sure we use the right cursors
+  // make sure we use the right cursors on hover.
   // TODO: investigate a more elegant way to accomplish this:
   thead tr th {
     &[class^=sorting] { // using this attr. selector lets us get
@@ -39,7 +39,8 @@
       font-weight: 700;
     }
 
-    @include item-definition-list($dt-width: 30%, $dd-width: 70%);
+
+    @include item-definition-list($dt-width: 10%, $dd-width: 90%);
 
     dl { // style first item in the Holds table context
       dt.item-title {
