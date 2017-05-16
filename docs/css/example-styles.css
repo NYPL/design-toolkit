@@ -2834,8 +2834,6 @@ button:focus {
       color: #799a05; }
     .nypl-holds-table td span.in-transit {
       border-left-color: #fee24a; }
-    .nypl-holds-table td span.ill::before {
-      content: "ill?"; }
     .nypl-holds-table td span.recap {
       background-color: #b5e1f3; }
   @media (max-width: 965px) {
