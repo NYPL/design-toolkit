@@ -25,7 +25,7 @@ $three-quarters: ($full-width) - ($one-quarter);
 $gutter: 0.5rem;
 $general-padding: 1rem;
 $general-border-radius: 0.2rem;
-$general-border-width: 0.125rem;
+$general-border-width: ($simple-border * 2);
 
 // animation timing
 $hover-time: 0.1s;
