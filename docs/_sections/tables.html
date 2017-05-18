@@ -147,7 +147,7 @@ description: Displaying search results and tabular data.
 
     <h3 id="sorting">Sorting</h3>
 
-    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat which is based on the <a href="buttons.html#navButton">Navigation Menu Button</a> and use the <code>aria-expanded</code> attribute that must be modified accordingly by the appropriate JavaScript (see the <a href="buttons.html#listButton">Navigation Menu Button documentation</a> for more details). The button also contains a <code>span</code> that displays the current sorting selection. The sorting options are nested in an unordered list with <code>role="menu"</code>. Individual link elements should have an <code>active</code> class when selected. The main button should be focused when the user makes a selection (see example jQuery below).</p>
+    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat which is based on the <a href="buttons.html#navButton">Navigation Menu Button</a> and use the <code>aria-expanded</code> attribute that must be modified accordingly by the appropriate JavaScript (see the <a href="buttons.html#listButton">Navigation Menu Button documentation</a> for more details). The button also contains a <code>strong</code> element that displays the current sorting selection. The sorting options are nested in an unordered list with <code>role="menu"</code>. Individual link elements should have an <code>active</code> class when selected. The main button should be focused when the user makes a selection (see example jQuery below).</p>
 
 
     <div class="nypl-toolkit-example">
@@ -155,7 +155,7 @@ description: Displaying search results and tabular data.
 <div class="nypl-results-sorting-controls">
   <div class="nypl-results-sorter">
     <button aria-expanded="false">
-    Sort by <span>relevance</span>
+    Sort by <strong>relevance</strong>
       <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
         <title>wedge down icon</title>
         <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
@@ -181,7 +181,7 @@ description: Displaying search results and tabular data.
 &lt;div class=&quot;nypl-results-sorting-controls&quot;&gt;
   &lt;div class=&quot;nypl-results-sorter&quot;&gt;
     &lt;button aria-expanded=&quot;false&quot;&gt;
-    Sort by &lt;span&gt;relevance&lt;/span&gt;
+    Sort by &lt;strong&gt;relevance&lt;/strong&gt;
       &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
         &lt;title&gt;wedge down icon&lt;/title&gt;
         &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
@@ -214,7 +214,7 @@ function initSort() {
     var text = selection.text()
     $(".nypl-results-sorter ul a").removeClass("active") // deactivate all
     selection.addClass("active")
-    $(".nypl-results-sorter button span").text(text) // set the text
+    $(".nypl-results-sorter button strong").text(text) // set the text
     toggleSort() //close it
     $(".nypl-results-sorter button").focus()
     // … should also apply the sorting stuff
