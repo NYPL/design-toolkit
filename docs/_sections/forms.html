@@ -320,7 +320,7 @@ $("#checkbox-optin").change(function(e){
 
     <p>The general structure is:
       <ul>
-        <li>a <code>nypl-facet-toggle</code> toggle button that controls the open/closed state of the widget,</li>
+        <li>a <code>nypl-facet-toggle</code> toggle button that controls the open/closed state of the widget <strong>with the facet name wrapped in an <code>h3</code> tag</strong>,</li>
         <li>a div of class <code>nypl-collapsible</code> which contains:</li>
         <li>a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by</li>
         <li>a fieldset of class <code>nypl-facet-list</code> with</li>
@@ -345,6 +345,8 @@ $("#checkbox-optin").change(function(e){
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Similar to <a href="#radioButtons">Radiobutton/Checkbox Groups</a>, for proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title group's <code>button</code> tag and its own corresponding <code>label</code> tag.</p>
 
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The toggle button must wrap the facet name with an <code>h3</code> tag.</p>
+
     <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
     <p>Toggling between closed and open states along with the affected <code>aria-expanded</code> values of the widget will be controlled via JavaScript. A <code>collapsed</code> class must be added (or removed) to the <code>nypl-searchable-field</code> and <code>nypl-collapsible</code> elements. The example below uses jQuery.</p>
@@ -356,7 +358,7 @@ $("#checkbox-optin").change(function(e){
 <div class="nypl-searchable-field" aria-expanded="true">
   <button type="button" id="searchable1" class="nypl-facet-toggle"
     aria-controls="nypl-searchable-field_facet1" aria-expanded="true">
-    Subject
+    <h3>Subject</h3>
     <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
       <title>wedge down icon</title>
       <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
@@ -413,7 +415,7 @@ $("#checkbox-optin").change(function(e){
 &lt;div class=&quot;nypl-searchable-field&quot; aria-expanded=&quot;true&quot;&gt;
   &lt;button type=&quot;button&quot; id=&quot;searchable1&quot; class=&quot;nypl-facet-toggle&quot;
     aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
-    Subject
+    &lt;h3&gt;Subject&lt;/h3&gt;
     &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
       &lt;title&gt;wedge down icon&lt;/title&gt;
       &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;

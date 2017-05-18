@@ -2176,6 +2176,10 @@ button:focus {
     padding-top: 0.25rem;
     text-align: left;
     width: 100%; }
+    .nypl-searchable-field button.nypl-facet-toggle h3 {
+      font-size: inherit;
+      margin: 0;
+      padding: 0; }
     .nypl-searchable-field button.nypl-facet-toggle .nypl-icon {
       background-color: #776e64;
       border-radius: 0;
