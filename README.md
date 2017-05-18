@@ -19,7 +19,8 @@ See [LICENSE](LICENSE)
 ## CHANGE LOG
 
 ### v0.1.15
-- Fixes: #122, #123, #125.
+- Bundle for Discovery Beta
+- Fixes: #122, #123, #125, #128.
 
 ### v0.1.14
 - Better item detail page
