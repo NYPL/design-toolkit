@@ -320,6 +320,7 @@ $sorter-width: 11em;
   }
 
   li {
+    @include clearfix;
     border-bottom: ($general-border-width * 0.5) solid $nypl-light-gray;
     line-height: 1.5;
     list-style-type: none;
@@ -335,6 +336,7 @@ $sorter-width: 11em;
   .nypl-item-unavailable {
     display: block;
     float: right;
+    margin: 0 0 1rem 1rem;
     width: 7rem;
 
     @include media($mobile-breakpoint) {
