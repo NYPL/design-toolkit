@@ -19,7 +19,7 @@ See [LICENSE](LICENSE)
 ## CHANGE LOG
 
 ### v0.1.15
-- Fixes: #123.
+- Fixes: #122, #123, #125.
 
 ### v0.1.14
 - Better item detail page
