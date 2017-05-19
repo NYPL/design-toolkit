@@ -313,10 +313,19 @@ $sorter-width: 11em;
 }
 
 @mixin item-holdings {
+  $holdings-height: 40rem;
+
   h2 {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
+  }
+
+  ul {
+    background: linear-gradient(to bottom, transparent 0, transparent ($holdings-height - 3), lighten($nypl-light-gray, 20%) ($holdings-height - 1), $nypl-light-gray $holdings-height);
+    max-height: 40rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   li {
