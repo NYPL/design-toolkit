@@ -147,7 +147,7 @@ description: Displaying search results and tabular data.
 
     <h3 id="sorting">Sorting</h3>
 
-    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat which is based on the <a href="buttons.html#navButton">Navigation Menu Button</a> and use the <code>aria-expanded</code> attribute that must be modified accordingly by the appropriate JavaScript (see the <a href="buttons.html#listButton">Navigation Menu Button documentation</a> for more details). The button also contains a <code>span</code> that displays the current sorting selection. The sorting options are nested in an unordered list with <code>role="menu"</code>. Individual link elements should have an <code>active</code> class when selected. The main button should be focused when the user makes a selection (see example jQuery below).</p>
+    <p>Sorters are nested inside a <code>nypl-results-sorting-controls</code> element. The sorters themselves implement a <code>nypl-results-sorter</code> microformat which is based on the <a href="buttons.html#navButton">Navigation Menu Button</a> and use the <code>aria-expanded</code> attribute that must be modified accordingly by the appropriate JavaScript (see the <a href="buttons.html#listButton">Navigation Menu Button documentation</a> for more details). The button also contains a <code>strong</code> element that displays the current sorting selection. The sorting options are nested in an unordered list with <code>role="menu"</code>. Individual link elements should have an <code>active</code> class when selected. The main button should be focused when the user makes a selection (see example jQuery below).</p>
 
 
     <div class="nypl-toolkit-example">
@@ -155,7 +155,7 @@ description: Displaying search results and tabular data.
 <div class="nypl-results-sorting-controls">
   <div class="nypl-results-sorter">
     <button aria-expanded="false">
-    Sort by <span>relevance</span>
+    Sort by <strong>relevance</strong>
       <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
         <title>wedge down icon</title>
         <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
@@ -181,7 +181,7 @@ description: Displaying search results and tabular data.
 &lt;div class=&quot;nypl-results-sorting-controls&quot;&gt;
   &lt;div class=&quot;nypl-results-sorter&quot;&gt;
     &lt;button aria-expanded=&quot;false&quot;&gt;
-    Sort by &lt;span&gt;relevance&lt;/span&gt;
+    Sort by &lt;strong&gt;relevance&lt;/strong&gt;
       &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
         &lt;title&gt;wedge down icon&lt;/title&gt;
         &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
@@ -214,7 +214,7 @@ function initSort() {
     var text = selection.text()
     $(".nypl-results-sorter ul a").removeClass("active") // deactivate all
     selection.addClass("active")
-    $(".nypl-results-sorter button span").text(text) // set the text
+    $(".nypl-results-sorter button strong").text(text) // set the text
     toggleSort() //close it
     $(".nypl-results-sorter button").focus()
     // … should also apply the sorting stuff
@@ -274,17 +274,16 @@ function toggleSort(e) {
       <ul>
         <li>An <code>h2</code> element that contains a link to the result page with the <strong>item title</strong> and the <strong>item author</strong> (if available) separated by an <strong>en-dash</strong> (&ndash;, html: <code>&amp;ndash;</code>).</li>
         <li><strong>Optional:</strong> A notification of unavailability of the item (if applicable) in a div with class <code>nypl-results-unavailable</code>.</li>
-        <li><strong>Optional:</strong> A definition list (<code>dl</code>) with the most relevant attributes of the result item sorted by importance. Terms that need to be highlighted (for easier scanning of results) should have a class of <code>nypl-results-highlight</code></li>
-        <li><strong>Optional:</strong> A div of class <code>nypl-results-item-description</code> with a series of <code>span</code> tags containing this information (when available) about the item <strong>in this order</strong>:
+        <li><strong>Optional:</strong> A div of class <code>nypl-results-item-description</code> with a <code>p</code> tag with a series of <code>span</code> tags containing this information (when available) about the item <strong>in this order</strong>:
           <ul>
             <li>media (or material type), class <code>.nypl-results-media</code></li>
             <li>place of publishing, class <code>.nypl-results-place</code></li>
             <li>publisher, class <code>.nypl-results-publisher</code></li>
             <li>date of publishing, class <code>.nypl-results-date</code></li>
             <li>room(s) of access, class <code>.nypl-results-info</code></li>
-            <li>usage (for example: In-library use), class <code>.nypl-results-use</code></li>
           </ul>
         </li>
+        <li><strong>Optional:</strong> A final <code>p</code> tag with the item usage (for example: In-library use), class <code>.nypl-results-use</code></li>
       </ul>
     </p>
 
@@ -295,9 +294,11 @@ function toggleSort(e) {
   <li class="nypl-results-item">
     <h2><a href="#">The Biography of Example &ndash; Smith, Angela F., 1982-</a></h2>
     <div class="nypl-results-item-description">
-      <span class="nypl-results-media">Text</span>
-      <span class="nypl-results-place">New York</span>
-      <span class="nypl-results-date">2014</span>
+      <p>
+        <span class="nypl-results-media">Text</span>
+        <span class="nypl-results-place">New York</span>
+        <span class="nypl-results-date">2014</span>
+      </p>
     </div>
   </li>
   <!-- another item -->
@@ -305,12 +306,16 @@ function toggleSort(e) {
     <h2><a href="#">Very Rare Item &ndash; Casasbuenas Gutiérrez, Margarita, 1915-1997</a></h2>
     <div class="nypl-results-unavailable">Currently not available for use</div>
     <div class="nypl-results-item-description">
-      <span class="nypl-results-media">Text</span>
-      <span class="nypl-results-place">Buenos Aires</span>
-      <span class="nypl-results-publisher">Editorial Planeta</span>
-      <span class="nypl-results-date">1972</span>
-      <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
-      <span class="nypl-results-use">Item for In-library use</span>
+      <p>
+        <span class="nypl-results-media">Text</span>
+        <span class="nypl-results-place">Buenos Aires</span>
+        <span class="nypl-results-publisher">Editorial Planeta</span>
+        <span class="nypl-results-date">1972</span>
+        <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
+      </p>
+      <p class="nypl-results-use">
+        Item for In-library use
+      </p>
     </div>
   </li>
 </ul>
@@ -330,24 +335,30 @@ function toggleSort(e) {
 &lt;ul class=&quot;nypl-results-list&quot;&gt;
   &lt;!-- an item --&gt;
   &lt;li class=&quot;nypl-results-item&quot;&gt;
-    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Smith, Angela F., 1982- &amp;ndash; The Biography of Example&lt;/a&gt;&lt;/h2&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;The Biography of Example &amp;ndash; Smith, Angela F., 1982-&lt;/a&gt;&lt;/h2&gt;
     &lt;div class=&quot;nypl-results-item-description&quot;&gt;
-      &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-place&quot;&gt;New York&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-date&quot;&gt;2014&lt;/span&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
+        &lt;span class=&quot;nypl-results-place&quot;&gt;New York&lt;/span&gt;
+        &lt;span class=&quot;nypl-results-date&quot;&gt;2014&lt;/span&gt;
+      &lt;/p&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;!-- another item --&gt;
   &lt;li class=&quot;nypl-results-item&quot;&gt;
-    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Casasbuenas Guti&eacute;rrez, Margarita, 1915-1997 &amp;ndash; Very Rare Item&lt;/a&gt;&lt;/h2&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Very Rare Item &amp;ndash; Casasbuenas Guti&eacute;rrez, Margarita, 1915-1997&lt;/a&gt;&lt;/h2&gt;
     &lt;div class=&quot;nypl-results-unavailable&quot;&gt;Currently not available for use&lt;/div&gt;
     &lt;div class=&quot;nypl-results-item-description&quot;&gt;
-      &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-place&quot;&gt;Buenos Aires&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-publisher&quot;&gt;Editorial Planeta&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-date&quot;&gt;1972&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-info&quot;&gt;SASB - Rose Main Rdg Rm 315&lt;/span&gt;
-      &lt;span class=&quot;nypl-results-use&quot;&gt;Item for In-library use&lt;/span&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
+        &lt;span class=&quot;nypl-results-place&quot;&gt;Buenos Aires&lt;/span&gt;
+        &lt;span class=&quot;nypl-results-publisher&quot;&gt;Editorial Planeta&lt;/span&gt;
+        &lt;span class=&quot;nypl-results-date&quot;&gt;1972&lt;/span&gt;
+        &lt;span class=&quot;nypl-results-info&quot;&gt;SASB - Rose Main Rdg Rm 315&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;nypl-results-use&quot;&gt;
+        Item for In-library use
+      &lt;/p&gt;
     &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;

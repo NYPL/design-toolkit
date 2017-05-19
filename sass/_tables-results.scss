@@ -172,7 +172,7 @@ $sorter-width: 11em;
   button {
     @include basic-button($collapsible: true, $border-width: 0, $background-color: $page-background-color, $text-color: $page-color, $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
 
-    span {
+    strong {
       font-weight: bold;
     }
   }
@@ -261,7 +261,8 @@ $sorter-width: 11em;
   @include item-definition-list;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    max-width: none;
   }
 }
 
