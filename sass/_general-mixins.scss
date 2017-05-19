@@ -14,7 +14,8 @@ $bullet-size: 0.5rem;
 
 @mixin custom-list-bullet($color: $nypl-light-gray, $hides-on-mobile: true) {
   list-style-type: none;
-  margin-left: $bullet-size;
+  padding-left: ($bullet-size * 2);
+  position: relative;
 
   @if ($hides-on-mobile == true) {
     @include media($mobile-breakpoint) {
@@ -23,18 +24,18 @@ $bullet-size: 0.5rem;
   }
 
   &::before {
-    content: "";
     background-color: $color;
-    display: inline-block;
-    position: relative;
+    content: "";
+    display: block;
     height: $bullet-size;
+    left: 0;
+    position: absolute;
+    top: ($bullet-size + 0.1);
     width: $bullet-size;
     @include border-radius($bullet-size * 0.5);
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    margin-right: $bullet-size;
-    top: 0;
 
     @if ($hides-on-mobile == true) {
       @include media($mobile-breakpoint) {

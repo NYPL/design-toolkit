@@ -128,6 +128,28 @@ $("#username1 #required-field").change(function (e) {
 &lt;/div&gt;
     </code></pre>
 
+    <h3 id="yearFields">Year Fields</h3>
+
+    <p>The year field implements a similar structure as the Text Field but uses <code>type="number"</code> and expects integers (for example: 1997, 2015). It should include <code>min</code> and <code>max</code> attributes with the corresponding values which are up to the developer to decide what they are. A final <code>step="1"</code> attribute should be included unless another step count applies. This input type has <a href="http://caniuse.com/#search=number">limited browser support</a> so additional server-side and JavaScript validation should be taken into consideration. Server-side validation should still occur since it is more secure.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-year-field">
+  <label for="date-from">On or After Year</label>
+  <input id="date-from" type="number" min="1895" max="9999" step="1">
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-year-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-year-field&quot;&gt;
+  &lt;label for=&quot;date-from&quot;&gt;On or After Year&lt;/label&gt;
+  &lt;input id=&quot;date-from&quot; type=&quot;number&quot; min=&quot;1895&quot; max=&quot;9999&quot; step=&quot;1&quot;&gt;
+&lt;/div&gt;
+    </code></pre>
+
     <h3 id="nameFields">Name Fields</h3>
 
     <p>To be used when requesting the full names of a user in separate first and last name values. Both the first and last name input boxes should be wrapped by a <code>div</code> tag and follow the basic structure of <a href="#textFields">Text Fields</a>.</p>
