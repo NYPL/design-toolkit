@@ -2775,6 +2775,16 @@ button:focus {
     display: inline-block;
     margin-bottom: 0.25rem;
     padding: 0 0.25rem 0 0.5rem; }
+    .nypl-results-summary .nypl-facet strong {
+      display: inline-block;
+      max-width: 15rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+      white-space: nowrap; }
+      @media (max-width: 965px) {
+        .nypl-results-summary .nypl-facet strong {
+          max-width: 7rem; } }
     .nypl-results-summary .nypl-facet button {
       background-color: #776e64;
       border: 0 solid #776e64;
