@@ -2995,7 +2995,7 @@ button:focus {
         background-color: #d7d4d0;
         border-color: #d7d4d0;
         color: #080807; }
-    .nypl-results-sorter button span {
+    .nypl-results-sorter button strong {
       font-weight: bold; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
