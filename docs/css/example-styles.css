@@ -3112,7 +3112,7 @@ button:focus {
 .nypl-item-holdings ul {
   background: linear-gradient(to bottom, transparent 0, transparent 37rem, white 39rem, #d7d4d0 40rem);
   max-height: 40rem;
-  overflow: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
 .nypl-item-holdings li {
   border-bottom: 0.0625rem solid #d7d4d0;

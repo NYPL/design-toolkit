@@ -324,7 +324,7 @@ $sorter-width: 11em;
   ul {
     background: linear-gradient(to bottom, transparent 0, transparent ($holdings-height - 3), lighten($nypl-light-gray, 20%) ($holdings-height - 1), $nypl-light-gray $holdings-height);
     max-height: 40rem;
-    overflow: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
