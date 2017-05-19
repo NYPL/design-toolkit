@@ -321,7 +321,7 @@ function initSort() {
     var text = selection.text()
     $(".nypl-results-sorter ul a").removeClass("active") // deactivate all
     selection.addClass("active")
-    $(".nypl-results-sorter button span").text(text) // set the text
+    $(".nypl-results-sorter button strong").text(text) // set the text
     toggleSort() //close it
     $(".nypl-results-sorter button").focus()
     // … should also apply the sorting stuff
