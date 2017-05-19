@@ -261,7 +261,8 @@ $sorter-width: 11em;
   @include item-definition-list;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    max-width: none;
   }
 }
 

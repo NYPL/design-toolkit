@@ -3056,7 +3056,8 @@ button:focus {
       .nypl-results-item dd {
         width: 60%; } }
   .nypl-results-item p {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0;
+    max-width: none; }
 
 .nypl-results-unavailable {
   border-left: 0.5rem solid #d0343a;
