@@ -20,7 +20,7 @@ See [LICENSE](LICENSE)
 
 ### v0.1.15
 - Bundle for Discovery Beta
-- Fixes: #122, #123, #125, #128, #130, #132, #134, #135, #139, #141, #143.
+- Fixes: #122, #123, #125, #128, #130, #132, #134, #135, #139, #141, #143, #145.
 
 ### v0.1.14
 - Better item detail page
