@@ -231,7 +231,7 @@ $sorter-width: 11em;
     width: 7.6rem;
 
     @include media($mobile-breakpoint) {
-      width: 40%;
+      width: 45%;
     }
   }
 
@@ -239,7 +239,7 @@ $sorter-width: 11em;
     margin: 0;
 
     @include media($mobile-breakpoint) {
-      width: 60%;
+      width: 55%;
     }
   }
 }
@@ -327,6 +327,12 @@ $sorter-width: 11em;
     max-height: 40rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+
+    @include media($mobile-breakpoint) {
+      background: transparent;
+      max-height: unset;
+      overflow-y: inherit;
+    }
   }
 
   li {
@@ -348,11 +354,6 @@ $sorter-width: 11em;
     float: right;
     margin: 0 0 1rem 1rem;
     width: 7rem;
-
-    @include media($mobile-breakpoint) {
-      display: block;
-      float: none;
-    }
   }
 
   .nypl-item-unavailable {
