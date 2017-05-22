@@ -1,3 +1,9 @@
+// This File provides some helper fuctions that supplies mock data and
+// does a little work fo us so we can update our mock data freely without having
+// to update the number of holds shown in the example.
+
+// Mock data; mimics an API response.
+
 const tableBody = document.querySelector('.nypl-holds-table tbody');
 
 const itemHold = [
@@ -126,9 +132,10 @@ itemHold.forEach(item => {
   `;
 
   tableBody.insertAdjacentHTML('beforeend', tableRow);
-  console.table(tableRow);
+  // console.table(tableRow);
 });
 
+// ####
 // Helper so we can put the number of table rowss at the top of the table
 const trItems = document.querySelectorAll('tbody tr').length;
 // console.log(trItems);
