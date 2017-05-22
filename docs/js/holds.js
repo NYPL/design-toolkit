@@ -16,7 +16,8 @@ const itemHold = [
     location: 'Stephen A. Schwarzman Building, General Research, Room 315',
     locLink: '#',
     status: 'In transit from ReCAP',
-    statusClass: 'in-transit recap',
+    statusClass: 'in-transit',
+    recapClass: 'recap',
     manageUrl: '#',
   },
   {
@@ -28,7 +29,8 @@ const itemHold = [
     location: 'Stephen A. Schwarzman Building, General Research, Room 315',
     locLink: '#',
     status: 'Requested from ReCAP',
-    statusClass: 'requested recap',
+    statusClass: 'requested',
+    recapClass: 'recap',
     manageUrl: '#',
   },
   {
@@ -41,6 +43,7 @@ const itemHold = [
     locLink: '#',
     status: 'Available',
     statusClass: 'available',
+    recapClass: '',
     manageUrl: '#',
   },
   {
@@ -52,7 +55,8 @@ const itemHold = [
     location: 'Stephen A. Schwarzman Building, General Research, Room 315',
     locLink: '#',
     status: 'In transit from ReCAP',
-    statusClass: 'in-transit recap',
+    statusClass: 'in-transit',
+    recapClass: 'recap',
     manageUrl: '#',
   },
   {
@@ -65,6 +69,7 @@ const itemHold = [
     locLink: '#',
     status: 'Available',
     statusClass: 'available',
+    recapClass: '',
     manageUrl: '#',
   },
   {
@@ -77,6 +82,7 @@ const itemHold = [
     locLink: '#',
     status: 'In transit from ILL',
     statusClass: 'in-transit ill',
+    recapClass: '',
     manageUrl: '#',
   },
   {
@@ -101,6 +107,7 @@ const itemHold = [
     locLink: '#',
     status: 'Available',
     statusClass: 'available',
+    recapClass: '',
     manageUrl: '#',
   },
 ];
@@ -108,7 +115,7 @@ const itemHold = [
 itemHold.forEach(item => {
   const tableRow = `
     <tr role="row">
-      <td class="item-details">
+      <td class="item-details ${item.recapClass}">
         <dl>
           <dt class="item-title"><a href="${item.url}">${item.title}</a></dt>
           <dt>Author</dt>

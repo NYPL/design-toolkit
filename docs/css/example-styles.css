@@ -2789,8 +2789,6 @@ button:focus {
     cursor: default; }
   .nypl-holds-table td {
     padding-top: 0.75rem; }
-    .nypl-holds-table td .item {
-      font-weight: 700; }
     .nypl-holds-table td dl {
       margin-bottom: 1rem;
       margin-top: 0; }
@@ -2820,9 +2818,17 @@ button:focus {
       @media (max-width: 965px) {
         .nypl-holds-table td dd {
           width: 60%; } }
-    .nypl-holds-table td dl dt.item-title {
-      font-weight: 700;
-      width: 100%; }
+    .nypl-holds-table td dl {
+      padding-left: 0.625rem; }
+      .nypl-holds-table td dl dt.item-title {
+        font-weight: 700;
+        width: 100%; }
+    .nypl-holds-table td.recap dl {
+      border-left-color: #73c7e8;
+      border-left-style: solid;
+      border-left-width: 0.3125rem; }
+    .nypl-holds-table td .item {
+      font-weight: 700; }
   .nypl-holds-table td span {
     border-left-color: #fff;
     border-left-style: solid;
@@ -2863,6 +2869,9 @@ button:focus {
         font-weight: bold;
         padding-left: 0.75rem;
         width: 100%; }
+      .nypl-holds-table td a {
+        display: block;
+        padding-left: 0.75rem; }
       .nypl-holds-table td .item {
         font-size: 1.2rem;
         padding: 1rem 0; }

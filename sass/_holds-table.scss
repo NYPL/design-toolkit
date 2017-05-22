@@ -12,12 +12,7 @@
 
 @mixin holds-table {
   @include basic-table;
-
   margin-bottom: 2rem;
-
-  .nypl-current {
-    // background-color: $nypl-yellow-tint;
-  }
 
   // make sure we use the right cursors on hover.
   // TODO: investigate a more elegant way to accomplish this:
@@ -35,25 +30,31 @@
   td {
     padding-top: 0.75rem;
 
-    .item {
-      font-weight: 700;
-    }
-
-
     @include item-definition-list($dt-width: 10%, $dd-width: 90%);
+    dl {
+      padding-left: #{$general-border-width * 5};
 
-    dl { // style first item in the Holds table context
-      dt.item-title {
+      dt.item-title { // style first item in the Holds table context
         font-weight: 700;
         width: 100%;
       }
+    }
+
+    &.recap dl {
+      border-left-color: $nypl-light-blue;
+      border-left-style: solid;
+      border-left-width: #{$general-border-width * 2.5};
+    }
+
+    .item {
+      font-weight: 700;
     }
   }
 
   td span {
     border-left-color: $page-background-color;
     border-left-style: solid;
-    border-left-width: $general-border-width * 2.5;
+    border-left-width: #{$general-border-width * 2.5};
     display: block;
     padding: 1rem 0 1rem 0.5rem;
 
@@ -87,7 +88,7 @@
     }
 
     tr {
-      border-top: $general-border-width * 2.5 solid $nypl-dark-gray;
+      border-top: #{$general-border-width * 2.5} solid $nypl-dark-gray;
 
       &:nth-of-type(1) {
         border: 0;
@@ -104,9 +105,13 @@
         display: block;
         float: left;
         font-weight: bold;
-        //margin-bottom: 2rem;
-        padding-left: $general-border-width * 6;
+        padding-left: #{$general-border-width * 6};
         width: 100%;
+      }
+
+      a {
+        display: block;
+        padding-left: #{$general-border-width * 6};
       }
 
       .item {
