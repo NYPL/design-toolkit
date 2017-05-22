@@ -124,6 +124,11 @@ $form-padding: 0.5rem;
   @include text-field-with-label;
 }
 
+@mixin year-field {
+  @include fieldset;
+  @include text-field-with-label;
+}
+
 @mixin name-field {
   @include clearfix;
   @include fieldset;
@@ -354,6 +359,13 @@ $form-padding: 0.5rem;
     padding-top: 0.25rem;
     text-align: left;
     width: 100%;
+
+    h3 {
+      font-size: inherit;
+      margin: 0;
+      padding: 0;
+      pointer-events: none;
+    }
 
     .nypl-icon {
       @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
