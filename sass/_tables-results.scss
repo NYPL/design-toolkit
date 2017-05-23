@@ -225,7 +225,7 @@ $sorter-width: 11em;
   }
 }
 
-@mixin item-definition-list($item-margin-bottom: 0.5rem) {
+@mixin item-definition-list($item-margin-bottom: 0.5rem, $dt-width: 7.6rem, $dd-width: auto) {
   dl {
     @include clearfix;
     margin-bottom: 1rem;
@@ -247,12 +247,13 @@ $sorter-width: 11em;
     float: left;
     line-height: 1.5;
     margin: 0 0 $item-margin-bottom;
+    width: $dd-width;
   }
 
   dt {
     clear: left;
     color: $nypl-gray;
-    width: 7.6rem;
+    width: $dt-width;
 
     @include media($mobile-breakpoint) {
       width: 45%;
