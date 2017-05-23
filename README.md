@@ -19,7 +19,8 @@ See [LICENSE](LICENSE)
 ## CHANGE LOG
 
 ### v0.1.15
-- Bundle for Discovery Beta
+- Bundle for Discovery Beta.
+- Added research item holds mockup.
 - Fixes: #122, #123, #125, #128, #130, #132, #134, #135, #139, #141, #143.
 
 ### v0.1.14
