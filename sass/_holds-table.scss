@@ -1,18 +1,9 @@
-.nypl-results-summary {
-  // TODO: Put this into the results summary mixin so we're not
-  //       duplicating class declartions.
-  padding-bottom: 1rem;
-}
-
-.nypl-holds-summary {
-  // TODO: Put this into the results summary mixin so we're not depending
-  //       on another class to make a simple border.
-  border-bottom: 0.25rem solid $page-color;
-}
-
 @mixin holds-table {
   @include basic-table;
+  border-top: 0.25rem solid $page-color;
   margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
 
   // make sure we use the right cursors on hover.
   // TODO: investigate a more elegant way to accomplish this:
@@ -112,6 +103,10 @@
       a {
         display: block;
         padding-left: #{$general-border-width * 6};
+      }
+
+      dt a {
+        padding-left: 0;
       }
 
       .item {

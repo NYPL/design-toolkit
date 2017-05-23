@@ -534,12 +534,6 @@ button:focus {
   outline-style: solid;
   outline-width: 0.1875rem; }
 
-.nypl-results-summary {
-  padding-bottom: 1rem; }
-
-.nypl-holds-summary {
-  border-bottom: 0.25rem solid #080807; }
-
 .hidden {
   display: none; }
 
@@ -2837,7 +2831,10 @@ button:focus {
   display: table;
   position: relative;
   width: 100%;
-  margin-bottom: 2rem; }
+  border-top: 0.25rem solid #080807;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem; }
   .nypl-holds-table tr {
     border-bottom: 0.0625rem solid #d7d4d0;
     display: table-row; }
@@ -2870,9 +2867,35 @@ button:focus {
         display: table; }
       .nypl-holds-table td dl::after {
         clear: both; }
+      .nypl-holds-table td dl ul {
+        margin-bottom: 1rem; }
       .nypl-holds-table td dl li {
         list-style-type: none;
+        padding-left: 1rem;
+        position: relative;
+        list-style-type: none;
         margin-left: 0; }
+        @media (max-width: 965px) {
+          .nypl-holds-table td dl li {
+            margin-left: 0; } }
+        .nypl-holds-table td dl li::before {
+          background-color: #d7d4d0;
+          content: "";
+          display: block;
+          height: 0.5rem;
+          left: 0;
+          position: absolute;
+          top: 0.6rem;
+          width: 0.5rem;
+          -webkit-border-radius: 0.25rem;
+          -moz-border-radius: 0.25rem;
+          border-radius: 0.25rem;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+          @media (max-width: 965px) {
+            .nypl-holds-table td dl li::before {
+              display: none; } }
     .nypl-holds-table td dt,
     .nypl-holds-table td dd {
       float: left;
@@ -2885,12 +2908,12 @@ button:focus {
       width: 10%; }
       @media (max-width: 965px) {
         .nypl-holds-table td dt {
-          width: 40%; } }
+          width: 45%; } }
     .nypl-holds-table td dd {
       margin: 0; }
       @media (max-width: 965px) {
         .nypl-holds-table td dd {
-          width: 60%; } }
+          width: 55%; } }
     .nypl-holds-table td dl {
       padding-left: 0.625rem; }
       .nypl-holds-table td dl dt.item-title {
@@ -2945,6 +2968,8 @@ button:focus {
       .nypl-holds-table td a {
         display: block;
         padding-left: 0.75rem; }
+      .nypl-holds-table td dt a {
+        padding-left: 0; }
       .nypl-holds-table td .item {
         font-size: 1.2rem;
         padding: 1rem 0; }
