@@ -360,6 +360,13 @@ $form-padding: 0.5rem;
     text-align: left;
     width: 100%;
 
+    h3 {
+      font-size: inherit;
+      margin: 0;
+      padding: 0;
+      pointer-events: none;
+    }
+
     .nypl-icon {
       @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
       @include transition(all, $hover-time, ease-in);

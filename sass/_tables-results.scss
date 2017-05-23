@@ -249,7 +249,7 @@ $sorter-width: 11em;
     width: 7.6rem;
 
     @include media($mobile-breakpoint) {
-      width: 40%;
+      width: 45%;
     }
   }
 
@@ -257,7 +257,7 @@ $sorter-width: 11em;
     margin: 0;
 
     @include media($mobile-breakpoint) {
-      width: 60%;
+      width: 55%;
     }
   }
 }
@@ -332,13 +332,29 @@ $sorter-width: 11em;
 }
 
 @mixin item-holdings {
+  $holdings-height: 40rem;
+
   h2 {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
   }
 
+  ul {
+    background: linear-gradient(to bottom, transparent 0, transparent ($holdings-height - 3), lighten($nypl-light-gray, 20%) ($holdings-height - 1), $nypl-light-gray $holdings-height);
+    max-height: 40rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @include media($mobile-breakpoint) {
+      background: transparent;
+      max-height: unset;
+      overflow-y: inherit;
+    }
+  }
+
   li {
+    @include clearfix;
     border-bottom: ($general-border-width * 0.5) solid $nypl-light-gray;
     line-height: 1.5;
     list-style-type: none;
@@ -354,12 +370,8 @@ $sorter-width: 11em;
   .nypl-item-unavailable {
     display: block;
     float: right;
+    margin: 0 0 1rem 1rem;
     width: 7rem;
-
-    @include media($mobile-breakpoint) {
-      display: block;
-      float: none;
-    }
   }
 
   .nypl-item-unavailable {
