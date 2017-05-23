@@ -897,25 +897,26 @@ button:focus {
 
 .nypl-custom-list li {
   list-style-type: none;
-  margin-left: 0.5rem; }
+  padding-left: 1rem;
+  position: relative; }
   @media (max-width: 965px) {
     .nypl-custom-list li {
       margin-left: 0; } }
   .nypl-custom-list li::before {
-    content: "";
     background-color: #d7d4d0;
-    display: inline-block;
-    position: relative;
+    content: "";
+    display: block;
     height: 0.5rem;
+    left: 0;
+    position: absolute;
+    top: 0.6rem;
     width: 0.5rem;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
     border-radius: 0.25rem;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    margin-right: 0.5rem;
-    top: 0; }
+    background-clip: padding-box; }
     @media (max-width: 965px) {
       .nypl-custom-list li::before {
         display: none; } }
@@ -1563,6 +1564,73 @@ button:focus {
     line-height: 1.5;
     padding-left: 0.5rem; }
 
+.nypl-year-field {
+  background-color: #efedeb;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative; }
+  .nypl-year-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-year-field label,
+  .nypl-year-field legend {
+    color: #080807;
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5rem; }
+  .nypl-year-field label {
+    background-color: transparent;
+    color: #080807;
+    display: block;
+    font-weight: bold;
+    position: absolute; }
+  .nypl-year-field input[type=text],
+  .nypl-year-field input[type=email],
+  .nypl-year-field input[type=date],
+  .nypl-year-field input[type=number] {
+    background-color: #efedeb;
+    border: 0;
+    border-radius: 0.2rem 0.2rem 0 0;
+    font-size: 1rem;
+    padding: 0;
+    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
+    -moz-box-shadow: inset 0 0 0 2px #efedeb;
+    box-shadow: inset 0 0 0 2px #efedeb;
+    border-bottom: 0.125rem solid #080807;
+    height: 2rem;
+    padding: 1.5rem 0 0;
+    text-indent: 0.5rem;
+    transition: all 0.2s ease-out;
+    width: 100%; }
+    .nypl-year-field input[type=text].active,
+    .nypl-year-field input[type=email].active,
+    .nypl-year-field input[type=date].active,
+    .nypl-year-field input[type=number].active {
+      width: 16rem; }
+    .nypl-year-field input[type=text]:focus,
+    .nypl-year-field input[type=email]:focus,
+    .nypl-year-field input[type=date]:focus,
+    .nypl-year-field input[type=number]:focus {
+      background-color: #fff;
+      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
+      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
+      box-shadow: inset 0 0 0 4px #ffb81d;
+      color: #080807;
+      outline: none; }
+  .nypl-year-field .nypl-field-status {
+    background-color: #fff;
+    color: #776e64;
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding-left: 0.5rem; }
+
 .nypl-text-field-with-label label {
   background-color: transparent;
   color: #080807;
@@ -2182,6 +2250,11 @@ button:focus {
     padding-top: 0.25rem;
     text-align: left;
     width: 100%; }
+    .nypl-searchable-field button.nypl-facet-toggle h3 {
+      font-size: inherit;
+      margin: 0;
+      padding: 0;
+      pointer-events: none; }
     .nypl-searchable-field button.nypl-facet-toggle .nypl-icon {
       background-color: #776e64;
       border-radius: 0;
@@ -2908,6 +2981,16 @@ button:focus {
     display: inline-block;
     margin-bottom: 0.25rem;
     padding: 0 0.25rem 0 0.5rem; }
+    .nypl-results-summary .nypl-facet strong {
+      display: inline-block;
+      max-width: 15rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+      white-space: nowrap; }
+      @media (max-width: 965px) {
+        .nypl-results-summary .nypl-facet strong {
+          max-width: 7rem; } }
     .nypl-results-summary .nypl-facet button {
       background-color: #776e64;
       border: 0 solid #776e64;
@@ -3128,7 +3211,7 @@ button:focus {
         background-color: #d7d4d0;
         border-color: #d7d4d0;
         color: #080807; }
-    .nypl-results-sorter button span {
+    .nypl-results-sorter button strong {
       font-weight: bold; }
   .nypl-results-sorter ul {
     background-color: #efedeb;
@@ -3168,9 +3251,35 @@ button:focus {
       display: table; }
     .nypl-results-item dl::after {
       clear: both; }
+    .nypl-results-item dl ul {
+      margin-bottom: 1rem; }
     .nypl-results-item dl li {
       list-style-type: none;
+      padding-left: 1rem;
+      position: relative;
+      list-style-type: none;
       margin-left: 0; }
+      @media (max-width: 965px) {
+        .nypl-results-item dl li {
+          margin-left: 0; } }
+      .nypl-results-item dl li::before {
+        background-color: #d7d4d0;
+        content: "";
+        display: block;
+        height: 0.5rem;
+        left: 0;
+        position: absolute;
+        top: 0.6rem;
+        width: 0.5rem;
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        border-radius: 0.25rem;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box; }
+        @media (max-width: 965px) {
+          .nypl-results-item dl li::before {
+            display: none; } }
   .nypl-results-item dt,
   .nypl-results-item dd {
     float: left;
@@ -3183,14 +3292,15 @@ button:focus {
     width: 7.6rem; }
     @media (max-width: 965px) {
       .nypl-results-item dt {
-        width: 40%; } }
+        width: 45%; } }
   .nypl-results-item dd {
     margin: 0; }
     @media (max-width: 965px) {
       .nypl-results-item dd {
-        width: 60%; } }
+        width: 55%; } }
   .nypl-results-item p {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0;
+    max-width: none; }
 
 .nypl-results-unavailable {
   border-left: 0.5rem solid #d0343a;
@@ -3243,11 +3353,26 @@ button:focus {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0; }
+.nypl-item-holdings ul {
+  background: linear-gradient(to bottom, transparent 0, transparent 37rem, white 39rem, #d7d4d0 40rem);
+  max-height: 40rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+  @media (max-width: 965px) {
+    .nypl-item-holdings ul {
+      background: transparent;
+      max-height: unset;
+      overflow-y: inherit; } }
 .nypl-item-holdings li {
   border-bottom: 0.0625rem solid #d7d4d0;
   line-height: 1.5;
   list-style-type: none;
   margin: 1rem 0; }
+  .nypl-item-holdings li::before, .nypl-item-holdings li::after {
+    content: "";
+    display: table; }
+  .nypl-item-holdings li::after {
+    clear: both; }
   @media (max-width: 965px) {
     .nypl-item-holdings li {
       clear: left;
@@ -3256,12 +3381,8 @@ button:focus {
 .nypl-item-holdings .nypl-item-unavailable {
   display: block;
   float: right;
+  margin: 0 0 1rem 1rem;
   width: 7rem; }
-  @media (max-width: 965px) {
-    .nypl-item-holdings a,
-    .nypl-item-holdings .nypl-item-unavailable {
-      display: block;
-      float: none; } }
 .nypl-item-holdings .nypl-item-unavailable {
   color: #d0343a; }
 
@@ -3273,9 +3394,35 @@ button:focus {
     display: table; }
   .nypl-item-details dl::after {
     clear: both; }
+  .nypl-item-details dl ul {
+    margin-bottom: 1rem; }
   .nypl-item-details dl li {
     list-style-type: none;
+    padding-left: 1rem;
+    position: relative;
+    list-style-type: none;
     margin-left: 0; }
+    @media (max-width: 965px) {
+      .nypl-item-details dl li {
+        margin-left: 0; } }
+    .nypl-item-details dl li::before {
+      background-color: #d7d4d0;
+      content: "";
+      display: block;
+      height: 0.5rem;
+      left: 0;
+      position: absolute;
+      top: 0.6rem;
+      width: 0.5rem;
+      -webkit-border-radius: 0.25rem;
+      -moz-border-radius: 0.25rem;
+      border-radius: 0.25rem;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box; }
+      @media (max-width: 965px) {
+        .nypl-item-details dl li::before {
+          display: none; } }
 .nypl-item-details dt,
 .nypl-item-details dd {
   float: left;
@@ -3288,12 +3435,12 @@ button:focus {
   width: 7.6rem; }
   @media (max-width: 965px) {
     .nypl-item-details dt {
-      width: 40%; } }
+      width: 45%; } }
 .nypl-item-details dd {
   margin: 0; }
   @media (max-width: 965px) {
     .nypl-item-details dd {
-      width: 60%; } }
+      width: 55%; } }
 .nypl-item-details h1 {
   font-size: 1.6rem;
   font-weight: normal; }
@@ -3309,9 +3456,35 @@ button:focus {
     display: table; }
   .nypl-item-external-links dl::after {
     clear: both; }
+  .nypl-item-external-links dl ul {
+    margin-bottom: 1rem; }
   .nypl-item-external-links dl li {
     list-style-type: none;
+    padding-left: 1rem;
+    position: relative;
+    list-style-type: none;
     margin-left: 0; }
+    @media (max-width: 965px) {
+      .nypl-item-external-links dl li {
+        margin-left: 0; } }
+    .nypl-item-external-links dl li::before {
+      background-color: #d7d4d0;
+      content: "";
+      display: block;
+      height: 0.5rem;
+      left: 0;
+      position: absolute;
+      top: 0.6rem;
+      width: 0.5rem;
+      -webkit-border-radius: 0.25rem;
+      -moz-border-radius: 0.25rem;
+      border-radius: 0.25rem;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box; }
+      @media (max-width: 965px) {
+        .nypl-item-external-links dl li::before {
+          display: none; } }
 .nypl-item-external-links dt,
 .nypl-item-external-links dd {
   float: left;
@@ -3324,12 +3497,12 @@ button:focus {
   width: 7.6rem; }
   @media (max-width: 965px) {
     .nypl-item-external-links dt {
-      width: 40%; } }
+      width: 45%; } }
 .nypl-item-external-links dd {
   margin: 0; }
   @media (max-width: 965px) {
     .nypl-item-external-links dd {
-      width: 60%; } }
+      width: 55%; } }
 .nypl-item-external-links li {
   margin-bottom: 1rem; }
 
