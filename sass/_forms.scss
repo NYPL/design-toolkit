@@ -339,43 +339,61 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin searchable-field {
+@mixin facet-toggle {
+  background-color: $nypl-search-color-dark;
+  border: 0;
+  border-radius: $general-border-radius $general-border-radius 0 0;
+  color: $page-background-color;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 0.25rem;
+  padding-left: $form-padding;
+  padding-right: 1.5rem;
+  padding-top: 0.25rem;
+  text-align: left;
+  width: 100%;
+
+  h3 {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+
+  .nypl-icon {
+    @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
+    @include transition(all, $hover-time, ease-in);
+    position: absolute;
+    right: 0.5rem;
+    top: 0.65rem;
+    transform: rotate(180deg);
+  }
+}
+
+@mixin collapsible-field($is-searchable: false) {
   @include fieldset;
-  @include simple-radiobutton;
   padding-bottom: $form-padding;
 
-  button.nypl-facet-toggle {
-    background-color: $nypl-search-color-dark;
-    border: 0;
-    border-radius: $general-border-radius $general-border-radius 0 0;
-    color: $page-background-color;
-    cursor: pointer;
-    display: block;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 0.25rem;
-    padding-left: $form-padding;
-    padding-right: 1.5rem;
-    padding-top: 0.25rem;
-    text-align: left;
-    width: 100%;
-
-    h3 {
-      font-size: inherit;
-      margin: 0;
-      padding: 0;
-      pointer-events: none;
-    }
-
-    .nypl-icon {
-      @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
-      @include transition(all, $hover-time, ease-in);
-      position: absolute;
-      right: 0.5rem;
-      top: 0.65rem;
-      transform: rotate(180deg);
+  @if ($is-searchable == false) {
+    .nypl-collapsible {
+      background-color: darken($nypl-search-color, 10%);
+      padding-left: $form-padding;
+      padding-right: $form-padding;
     }
   }
+
+  &.collapsed {
+    .nypl-facet-toggle .nypl-icon {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@mixin searchable-field {
+  @include collapsible-field($is-searchable: true);
+  @include simple-radiobutton;
 
   .nypl-facet-search {
     @include text-field-with-label;
@@ -413,12 +431,6 @@ $form-padding: 0.5rem;
 
   .nypl-link-button {
     margin: $form-padding $form-padding 0;
-  }
-
-  &.collapsed {
-    .nypl-facet-toggle .nypl-icon {
-      transform: rotate(0deg);
-    }
   }
 
   &.nosearch {
