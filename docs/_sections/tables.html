@@ -76,8 +76,10 @@ description: Displaying search results and tabular data.
 
     <h3 id="summary">Search Results Summary</h3>
 
-    <p>Presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the remove facet icon (the times “×” icon) as an SVG and the screen-reader-friendly text inside a <code>span</code> tag. A final <code>div</code> of class <code>nypl-clear-results</code> with an <code>nypl-link-button</code> will allow users to clear the current search and start over.
+    <p>An element of class <code>nypl-results-summary</code> that presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the remove facet icon (the times “×” icon) as an SVG and the screen-reader-friendly text inside a <code>span</code> tag. A final <code>div</code> of class <code>nypl-clear-results</code> with an <code>nypl-link-button</code> will allow users to clear the current search and start over.
     </p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Result count and facets must be wrapped by an <code>h2</code> tag.</p>
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The main element must include the following attributes when being updated via JavaScript (no page refresh): <code>aria-live="assertive"</code> <code>aria-atomic="true"</code> <code>role="presentation"</code>.</p>
 
@@ -87,23 +89,27 @@ description: Displaying search results and tabular data.
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
-  <span class="nypl-results-count">1,807</span> resources found for
-  <span class="nypl-facet">
-    Audience
-    <strong>Young Adult</strong>
-    <button>
-      <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10 10" aria-hidden="true"><title>times.icon</title><polygon points="2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 "/></svg>
-      <span>Remove Young Adult filter</span>
-    </button>
-  </span>,
-  <span class="nypl-facet">
-    Genre
-    <strong>Fiction</strong>
-    <button>
-      <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10 10" aria-hidden="true"><title>times.icon</title><polygon points="2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 "/></svg>
-      <span>Remove Fiction filter</span>
-    </button>
-  </span>.
+  <h2>
+    <span class="nypl-results-count">1,807</span> resources found for
+    <span class="nypl-facet">
+      Audience
+      <strong>Young Adult
+        <button>
+          <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10 10" aria-hidden="true"><title>times.icon</title><polygon points="2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 "/></svg>
+          <span>Remove Young Adult filter</span>
+        </button>
+      </strong>
+    </span>,
+    <span class="nypl-facet">
+      Genre
+      <strong>Fiction
+        <button>
+          <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10 10" aria-hidden="true"><title>times.icon</title><polygon points="2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 "/></svg>
+          <span>Remove Fiction filter</span>
+        </button>
+      </strong>
+    </span>.
+  </h2>
   <div class="nypl-clear-results">
     <button class="nypl-link-button">Clear current search query, filters, and sorts</button>
   </div>
@@ -118,23 +124,27 @@ description: Displaying search results and tabular data.
 
     <pre><code class="html">
 &lt;div class=&quot;nypl-results-summary&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot; role=&quot;presentation&quot;&gt;
-  &lt;span class=&quot;nypl-results-count&quot;&gt;1,807&lt;/span&gt; resources found for
-  &lt;span class=&quot;nypl-facet&quot;&gt;
-    Audience
-    &lt;strong&gt;Young Adult&lt;/strong&gt;
-    &lt;button&gt;
-      &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 10 10&quot; aria-hidden=&quot;true&quot;&gt;&lt;title&gt;times.icon&lt;/title&gt;&lt;polygon points=&quot;2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 &quot;/&gt;&lt;/svg&gt;
-      &lt;span&gt;Remove Young Adult filter&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/span&gt;,
-  &lt;span class=&quot;nypl-facet&quot;&gt;
-    Genre
-    &lt;strong&gt;Fiction&lt;/strong&gt;
-    &lt;button&gt;
-      &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 10 10&quot; aria-hidden=&quot;true&quot;&gt;&lt;title&gt;times.icon&lt;/title&gt;&lt;polygon points=&quot;2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 &quot;/&gt;&lt;/svg&gt;
-      &lt;span&gt;Remove Fiction filter&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/span&gt;.
+  &lt;h2&gt;
+    &lt;span class=&quot;nypl-results-count&quot;&gt;1,807&lt;/span&gt; resources found for
+    &lt;span class=&quot;nypl-facet&quot;&gt;
+      Audience
+      &lt;strong&gt;Young Adult
+        &lt;button&gt;
+          &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 10 10&quot; aria-hidden=&quot;true&quot;&gt;&lt;title&gt;times.icon&lt;/title&gt;&lt;polygon points=&quot;2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 &quot;/&gt;&lt;/svg&gt;
+          &lt;span&gt;Remove Young Adult filter&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/strong&gt;
+    &lt;/span&gt;,
+    &lt;span class=&quot;nypl-facet&quot;&gt;
+      Genre
+      &lt;strong&gt;Fiction
+        &lt;button&gt;
+          &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 10 10&quot; aria-hidden=&quot;true&quot;&gt;&lt;title&gt;times.icon&lt;/title&gt;&lt;polygon points=&quot;2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 &quot;/&gt;&lt;/svg&gt;
+          &lt;span&gt;Remove Fiction filter&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/strong&gt;
+    &lt;/span&gt;.
+  &lt;/h2&gt;
   &lt;div class=&quot;nypl-clear-results&quot;&gt;
     &lt;button class=&quot;nypl-link-button&quot;&gt;Clear current search query, filters, and sorts&lt;/button&gt;
   &lt;/div&gt;

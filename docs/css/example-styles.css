@@ -2984,113 +2984,116 @@ button:focus {
       .nypl-holds-table td:nth-of-type(4)::before {
         content: "Options"; } }
 
-.nypl-results-summary {
+.nypl-results-summary::before, .nypl-results-summary::after {
+  content: "";
+  display: table; }
+.nypl-results-summary::after {
+  clear: both; }
+.nypl-results-summary h2 {
+  font-size: 1rem;
+  font-weight: normal;
   line-height: 1.5;
   margin-bottom: 0.5rem;
-  margin-top: 1rem; }
-  .nypl-results-summary::before, .nypl-results-summary::after {
-    content: "";
-    display: table; }
-  .nypl-results-summary::after {
-    clear: both; }
-  .nypl-results-summary .nypl-results-count {
-    float: left;
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 0.25rem;
-    margin-right: 0.5rem; }
-  .nypl-results-summary .nypl-facet {
-    background-color: #d7d4d0;
-    border-radius: 0.2rem 2rem 2rem 0.2rem;
+  margin-top: 1rem;
+  max-width: none; }
+.nypl-results-summary .nypl-results-count {
+  float: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem; }
+.nypl-results-summary .nypl-facet {
+  background-color: #d7d4d0;
+  border-radius: 0.2rem 2rem 2rem 0.2rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  padding: 0 0.25rem 0 0.5rem; }
+  .nypl-results-summary .nypl-facet strong {
     display: inline-block;
-    margin-bottom: 0.25rem;
-    padding: 0 0.25rem 0 0.5rem; }
-    .nypl-results-summary .nypl-facet strong {
-      display: inline-block;
-      max-width: 15rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      vertical-align: bottom;
-      white-space: nowrap; }
-      @media (max-width: 965px) {
-        .nypl-results-summary .nypl-facet strong {
-          max-width: 7rem; } }
-    .nypl-results-summary .nypl-facet button {
-      background-color: #776e64;
-      border: 0 solid #776e64;
-      border-radius: 2rem;
-      color: #fff;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 1rem;
-      font-weight: normal;
-      height: auto;
-      padding: 0 0;
-      text-decoration: none;
-      white-space: nowrap;
-      -webkit-transition: all 0.1s ease-in 0s;
-      -moz-transition: all 0.1s ease-in 0s;
-      -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s;
-      margin: 0.25rem 0 0.25rem 0.25rem;
-      vertical-align: bottom; }
-      .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
-        color: #fff; }
-      .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
-        border-color: #776e64;
-        background-color: #fff;
-        color: #776e64; }
-      .nypl-results-summary .nypl-facet button:focus {
-        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        outline: none; }
-      .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
+    max-width: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap; }
+    @media (max-width: 965px) {
+      .nypl-results-summary .nypl-facet strong {
+        max-width: 7rem; } }
+  .nypl-results-summary .nypl-facet button {
+    background-color: #776e64;
+    border: 0 solid #776e64;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0 0;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    margin: 0.25rem 0 0.25rem 0.25rem;
+    vertical-align: bottom; }
+    .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
+      color: #fff; }
+    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+    .nypl-results-summary .nypl-facet button:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
         background-color: #d7d4d0;
         border-color: #fff;
-        cursor: default; }
-        .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
-          background-color: #d7d4d0;
-          border-color: #fff;
-          color: #fff; }
-      .nypl-results-summary .nypl-facet button span {
-        position: absolute;
-        width: 0.1rem;
-        height: 0.1rem;
-        margin: -0.1rem;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0; }
-      .nypl-results-summary .nypl-facet button .nypl-icon {
-        background-color: #776e64;
-        border-radius: 1rem;
-        display: inline-block;
-        fill: #fff;
-        height: 1em;
-        width: 1em;
-        speak: none;
-        display: block;
-        margin: 0; }
-        .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
-          background-color: inherit;
-          fill: #fff; }
-      .nypl-results-summary .nypl-facet button:hover .nypl-icon {
-        background-color: #fff;
-        border-radius: 1rem;
-        display: inline-block;
-        fill: #776e64;
-        height: 1em;
-        width: 1em;
-        speak: none;
-        display: block;
-        margin: 0; }
-        .nypl-results-summary .nypl-facet button:hover .nypl-icon.reversed {
-          background-color: inherit;
-          fill: #fff; }
-  .nypl-results-summary .nypl-clear-results {
-    clear: both; }
+        color: #fff; }
+    .nypl-results-summary .nypl-facet button span {
+      position: absolute;
+      width: 0.1rem;
+      height: 0.1rem;
+      margin: -0.1rem;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; }
+    .nypl-results-summary .nypl-facet button .nypl-icon {
+      background-color: #776e64;
+      border-radius: 1rem;
+      display: inline-block;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      display: block;
+      margin: 0; }
+      .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+    .nypl-results-summary .nypl-facet button:hover .nypl-icon {
+      background-color: #fff;
+      border-radius: 1rem;
+      display: inline-block;
+      fill: #776e64;
+      height: 1em;
+      width: 1em;
+      speak: none;
+      display: block;
+      margin: 0; }
+      .nypl-results-summary .nypl-facet button:hover .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+.nypl-results-summary .nypl-clear-results {
+  clear: both; }
 
 .nypl-results-pagination {
   font-size: 1.5rem;
