@@ -22,7 +22,7 @@ See [LICENSE](LICENSE)
 - Bundle for Discovery Beta.
 - New collapsible facet.
 - Added research item holds mockup.
-- Fixes: #121, #122, #123, #125, #128, #130, #132, #134, #135, #137, #139, #141, #143, #145.
+- Fixes: #121, #122, #123, #125, #128, #130, #132, #133, #134, #135, #137, #139, #141, #143, #145.
 
 ### v0.1.14
 - Better item detail page
