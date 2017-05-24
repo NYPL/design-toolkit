@@ -64,6 +64,7 @@ $bullet-size: 0.5rem;
 
   &.collapsed {
     max-height: 0;
+    visibility: hidden;
   }
 }
 

@@ -925,7 +925,8 @@ button:focus {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
   .nypl-collapsible.collapsed {
-    max-height: 0; }
+    max-height: 0;
+    visibility: hidden; }
 
 .nypl-link-button {
   background: none;
