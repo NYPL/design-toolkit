@@ -20,7 +20,7 @@ See [LICENSE](LICENSE)
 
 ### v0.1.15
 - Bundle for Discovery Beta.
-- New collapsible facet.
+- New collapsible field.
 - Added research item holds mockup.
 - Fixes: #121, #122, #123, #125, #128, #130, #132, #133, #134, #135, #137, #139, #141, #143, #145.
 
