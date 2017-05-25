@@ -2066,7 +2066,6 @@ button:focus {
     float: left;
     height: 2rem; }
   .nypl-omnisearch .nypl-omni-fields {
-    margin: 0 1%;
     width: 20%; }
     .nypl-omnisearch .nypl-omni-fields label {
       position: absolute;
@@ -2097,6 +2096,7 @@ button:focus {
     font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;
+    margin: 0 1%;
     text-indent: 0.5rem;
     width: 58%; }
   .nypl-omnisearch button,

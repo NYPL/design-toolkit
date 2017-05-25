@@ -286,7 +286,6 @@ $form-padding: 0.5rem;
   }
 
   .nypl-omni-fields {
-    margin: 0 1%;
     width: 20%;
 
     label {
@@ -303,6 +302,7 @@ $form-padding: 0.5rem;
   input[type=number] {
     @include input;
     border-radius: $general-border-radius;
+    margin: 0 1%;
     text-indent: $form-padding;
     width: 58%;
   }
