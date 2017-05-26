@@ -18,6 +18,10 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.16
+- New omnibox field order
+- Fixes: #150.
+
 ### v0.1.15
 - Bundle for Discovery Beta.
 - New collapsible field.
