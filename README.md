@@ -24,7 +24,7 @@ See [LICENSE](LICENSE)
 
 ### v0.1.16
 - New omnibox field order
-- Fixes: #150.
+- Fixes: #150, #156.
 
 ### v0.1.15
 - Bundle for Discovery Beta.
