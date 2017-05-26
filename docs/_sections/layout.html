@@ -57,19 +57,22 @@ description: Grid system and layout.
 
     <h3 id="pageHeader">Page Header (And Breadcrumbs)</h3>
 
-    <p>Contains a <code>nypl-full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> element.</p>
+    <p>Contains a <code>nypl-full-width-wrapper</code> element (see above), that allows for the header to have a full width background color while maintaining alignment with the rest of the page elements such as header and footer. Page header contents are the nested within: breadcrumbs (optional) and header as an <code>h1</code> (or <code>h2</code> if another header in the page is more important) element.</p>
 
-    <p><strong>Note:</strong> Page header content <strong>is not</strong> the nested inside a <code>nypl-row</code> type element.</p>
+    <p><strong>Note:</strong> Page header content <strong>is not</strong> nested inside a <code>nypl-row</code> type element.</p>
 
     <h4 id="breadcrumbs">Breadcrumbs</h4>
 
-    <p>Breadcrumbs are built with an ordered list (<code>ol</code> tag) of links up the information structure of the current page. The <strong>last item</strong> in the list <strong>does not</strong> have a link as it corresponds to the page the user is on. It is <strong>not necessary to add a “&gt;” character</strong>.</p>
+    <p>Breadcrumbs are built with an ordered list (<code>ol</code> tag) with <code>role="navigation" aria-label="breadcrumbs"</code> of links up the information structure of the current page. The <strong>last item</strong> in the list <strong>does not</strong> have a link as it corresponds to the page the user is on. It is <strong>not necessary to add a “&gt;” character</strong>.</p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Before the breadcrumbs, include a <code>span</code> tag of class <code>nypl-screenreader-only</code> with the text “You are here:” to indicate screen readers the nature of the list.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-page-header">
   <div class="nypl-full-width-wrapper">
-    <ol class="nypl-breadcrumbs">
+    <span class="nypl-screenreader-only">You are here:</span>
+    <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
       <li><a href="/">Home</a></li>
       <li><a href="/research">Research</a></li>
       <li>Articles &amp; databases</li>
@@ -80,14 +83,16 @@ description: Grid system and layout.
     </div>
 
     <pre><code class="scss">
-.nypl-page-header
-.nypl-breadcrumbs
 .nypl-full-width-wrapper
+.nypl-page-header
+.nypl-screenreader-only
+.nypl-breadcrumbs
     </code></pre>
     <pre><code class="html">
 &lt;div class=&quot;nypl-page-header&quot;&gt;
   &lt;div class=&quot;nypl-full-width-wrapper&quot;&gt;
-    &lt;ol class=&quot;nypl-breadcrumbs&quot;&gt;
+    &lt;span class=&quot;nypl-screenreader-only&quot;&gt;You are here:&lt;/span&gt;
+    &lt;ol role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;nypl-breadcrumbs&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;/research&quot;&gt;Research&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;Articles &amp;amp; databases&lt;/li&gt;
