@@ -54,7 +54,7 @@ module Toolkit
     end
 
     def register_rails_engine
-      require 'bootstrap-sass/engine'
+      require 'design-toolkit/engine'
     end
 
     def register_lotus
