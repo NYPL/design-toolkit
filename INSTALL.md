@@ -1,5 +1,6 @@
-# NYPL Digital Design Toolkit
-Design toolkit (SASS) for the NYPL Digital team
+# Installing the toolkit
+
+You can install the toolkit using NPM and as a Ruby gem. See below for instructions on each method.
 
 ## Installing with npm and using a Node-based asset pipeline
 
@@ -9,7 +10,7 @@ Design toolkit (SASS) for the NYPL Digital team
   npm install --save @nypl/design-toolkit
   ```
 
-1. If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
+2. If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
 
   ##### Webpack Example
 
@@ -42,21 +43,61 @@ Design toolkit (SASS) for the NYPL Digital team
   }
   ```
 
-1. Import the NYPL Toolkit SASS library into your Sass files:
+3. Import the NYPL Toolkit SASS library into your Sass files:
 
   ```scss
   @import "toolkit";
   ```
 
-2. If you also need the header or footer styles, add those:
+4. If you also need the header or footer styles, add those:
 
   ```scss
   @import "header";
   @import "footer";
   ```
 
-3. You can also load the normalization file to remove any browser or other colliding styles (must be the first import):
+5. You can also load the normalization file to remove any browser or other colliding styles (must be the first import):
 
   ```scss
   @import "nypl-normalize";
   ```
+
+## Installing as a Ruby gem
+
+This instructions are mainly for Rails-based apps but should also cover other Ruby-based applications. Please let us know if it doesn't by opening an issue.
+
+1. In your `Gemfile` you need to add the `design-toolkit` gem:
+
+  ````ruby
+  # loading toolkit from the main repo
+  gem 'design-toolkit', :git => 'git@github.com:NYPL/design-toolkit.git'
+  ````
+
+Ensure that the `sass-rails` gem is present - it is added to new Rails applications by default.
+
+2. Stop your server if it is running.
+
+3. Run `bundle install`
+
+4. Import the toolkit styles to your stylesheets. For example, in the default `app/assets/stylesheets/application.scss`:
+
+  ````scss
+  @import "toolkit";
+  ````
+
+Avoid using the `*= require_self`, `*= require_tree .`, and `*= require` statements or your stylesheets will not be able to access the mixins or variables properly.
+
+5. If you also need the header or footer styles, add those:
+
+  ```scss
+  @import "header";
+  @import "footer";
+  ```
+
+6. You can also load the normalization file to remove any browser or other colliding styles (must be the first import):
+
+  ```scss
+  @import "nypl-normalize";
+  ```
+
+**Important:** Make sure the file has `.scss` extension (or `.sass` for Sass syntax).
