@@ -64,6 +64,8 @@ You can install the toolkit using NPM and as a Ruby gem. See below for instructi
 
 ## Installing as a Ruby gem
 
+This instructions are mainly for Rails-based apps but should also cover other Ruby-based applications. Please let us know if it doesn't by opening an issue.
+
 1. In your `Gemfile` you need to add the `design-toolkit` gem:
 
   ````ruby
