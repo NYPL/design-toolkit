@@ -1,5 +1,6 @@
-# NYPL Digital Design Toolkit
-Design toolkit (SASS) for the NYPL Digital team
+# Installing the toolkit
+
+You can install the toolkit using NPM and as a Ruby gem. See below for instructions on each method.
 
 ## Installing with npm and using a Node-based asset pipeline
 
