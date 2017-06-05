@@ -71,7 +71,6 @@ You can install the toolkit using NPM and as a Ruby gem. See below for instructi
   gem 'design-toolkit', :git => 'git@github.com:NYPL/design-toolkit.git'
   ````
 
-The gem is only present in the `rubygem` branch of the repository (June 2, )
 Ensure that the `sass-rails` gem is present - it is added to new Rails applications by default.
 
 2. Stop your server if it is running.
