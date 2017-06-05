@@ -66,8 +66,8 @@ Design toolkit (SASS) for the NYPL Digital team
 1. In your `Gemfile` you need to add the `design-toolkit` gem:
 
   ````ruby
-  # loading toolkit from the 'rubygem' branch
-  gem 'design-toolkit', :git => 'git@github.com:NYPL/design-toolkit.git', :branch => 'rubygem'
+  # loading toolkit from the main repo
+  gem 'design-toolkit', :git => 'git@github.com:NYPL/design-toolkit.git'
   ````
 
 The gem is only present in the `rubygem` branch of the repository (June 2, )
