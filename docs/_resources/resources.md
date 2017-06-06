@@ -68,7 +68,7 @@ Screen readers are software which render web content through a voice synthesizer
     <tr>
       <td>Voiceover</td>
       <td>Free with iOS</td>
-      <td><a href="http://webaim.org/articles/jaws/">Primer</a></td>
+      <td><a href="http://webaim.org/articles/voiceover/">Primer</a></td>
       <td> </td>
     </tr>
   </tbody>
