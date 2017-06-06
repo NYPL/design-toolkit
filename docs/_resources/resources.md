@@ -19,6 +19,18 @@ Test against WCAG 2.0; created by WebAIM. Also available as an extension for var
 #### [CynthiaSays](http://cynthiasays.com/)
 Test for compliance with Section 508, WCAG 2.0 A, WCAG 2.0 AA, or WCAG 2.0 AAA  
 
+#### pa11y
+[pa11y github](https://github.com/pa11y)<br>
+[main pa11y website](http://pa11y.org/)<br>
+A range of free and open source tools to help designers and developers make their web pages more accessible
+
+#### aXe
+Main aXe github repo<br>
+[aXe](https://github.com/dequelabs)
+Open-source accessibility testing tools. CL & Browser plugin options available
+
+
+
 <br>
 ### Assistive Technology  
 #### Screen Readers  
