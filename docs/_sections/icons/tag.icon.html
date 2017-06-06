@@ -1,0 +1,18 @@
+<h3>NYPL Logo</h3>
+<p>The NYPL branding / logos have special use cases. You'll probably have no need to modify the logo other than changing its size. We can use either the <em>logo mark</em> or the <em>logo type</em>. This can be achieved by using <code>css</code> to hide either of these two components of the logo mark.</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <!-- lets put the raw svg include here -->
+  {% include_relative icons/tag.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">svg</textarea>
+<pre>
+<code class="scss">
+    .nypl-icon {
+    @include nypl-icon($height: 10em, $width: 10em);
+    }
+</code></pre>
+<pre><code class="xml">
+<!-- insert encodedSvg -->
+<!-- sample svg code -->
+</code></pre>
