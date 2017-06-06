@@ -154,3 +154,10 @@ $colors: (
     text-align: center;
   }
 }
+
+// SVG Section Specific Styles
+// Fix the way the logo is displayed in the toolkit-svg-icon
+.nypl-icon.nypl-logo {
+  width: 16rem;
+  height: 9rem;
+}
