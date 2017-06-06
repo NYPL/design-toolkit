@@ -3,7 +3,15 @@ title: SVG Usage v2
 description: SVG icon usage.
 ---
 
-
+<!--
 {% include_relative icons/logoLion.icon.html %}
+-->
 
 {% include_relative icons/icon.html title="NYPL Lion Logo" desc="The NYPL branding / logos have special use cases. You'll probably have no need to modify the logo other than changing its size. We can use either the <em>logo mark</em> or the <em>logo type</em>. This can be achieved by using <code>css</code> to hide either of these two components of the logo mark." %}
+
+{% for icon in icon_files %}
+  [{{ icon.path }}]
+<object data="{{ icon.path }}" type="image/svg+xml" class="doc-icon">
+  <img src="{{ icon.path }}" />
+</object>
+{% endfor %}
