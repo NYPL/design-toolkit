@@ -4,13 +4,3 @@ description: SVG icon usage.
 ---
 
 {% include_relative icons/logoLion.icon.html %}
-
-
-{% assign icon_files = site.static_files | where: "icon", true %}
-
-{% for icon in icon_files %}
-  [{{ icon.path }}]
-<object data="{{ icon.path }}" type="image/svg+xml" class="doc-icon">
-  <img src="{{ icon.path }}" />
-</object>
-{% endfor %}
