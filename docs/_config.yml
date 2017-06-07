@@ -7,11 +7,6 @@ defaults:
     values:
       layout: default
 
-scope:
-  path: "_sections/icons"
-values:
-  icon: true
-
 collections:
   sections:
     output: true
