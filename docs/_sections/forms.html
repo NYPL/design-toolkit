@@ -9,33 +9,34 @@ description: Form fields and user input.
 
     <h3 id="omniSearch">Omni Search</h3>
 
-    <p>Omni Search is a special fieldset contained in its own row, in an offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a submit <code>button</code>, a <code>span</code> tag of class <code>.nypl-omni-fields</code> and a text field. The <code>.nypl-omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
+    <p>Omni Search is a special fieldset contained in its own row, in an offsetted column. (<a href="./layout.html">See Layout</a> for details.) The fieldset itself contains three child elements: a <code>span</code> tag of class <code>.nypl-omni-fields</code>, a text field, and a submit <code>button</code>. The <code>.nypl-omni-fields</code> element contains a hidden label (for screen readers only) and a select box with the applicable options.</p>
 
     <p><strong>NOTE:</strong> The text field is <code>aria-labeledby</code> the button.</p>
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <fieldset class="nypl-omnisearch">
-  <input type="submit" id="nypl-omni-button" value="Search">
   <span class="nypl-omni-fields">
     <label for="search-by-field">Search in</label>
     <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
   </span>
   <input type="text" aria-labelledby="nypl-omni-button" value="" />
+  <input type="submit" id="nypl-omni-button" value="Search">
 </fieldset>
     </div>
 
     <pre><code class="scss">
 .nypl-omnisearch
+.nypl-omni-fields
     </code></pre>
     <pre><code class="html">
 &lt;fieldset class=&quot;nypl-omnisearch&quot;&gt;
-  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button&quot; value=&quot;Search&quot;&gt;
   &lt;span class=&quot;nypl-omni-fields&quot;&gt;
     &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
     &lt;select id=&quot;search-by-field&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
   &lt;/span&gt;
   &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot; /&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button&quot; value=&quot;Search&quot;&gt;
 &lt;/fieldset&gt;
     </code></pre>
 
@@ -125,6 +126,28 @@ $("#username1 #required-field").change(function (e) {
 &lt;div class=&quot;nypl-date-field&quot;&gt;
   &lt;label for=&quot;date-of-birth&quot;&gt;Date of Birth&lt;/label&gt;
   &lt;input id=&quot;date-of-birth&quot; type=&quot;date&quot; class=&quot;form-text&quot; /&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h3 id="yearFields">Year Fields</h3>
+
+    <p>The year field implements a similar structure as the Text Field but uses <code>type="number"</code> and expects integers (for example: 1997, 2015). It should include <code>min</code> and <code>max</code> attributes with the corresponding values which are up to the developer to decide what they are. A final <code>step="1"</code> attribute should be included unless another step count applies. This input type has <a href="http://caniuse.com/#search=number">limited browser support</a> so additional server-side and JavaScript validation should be taken into consideration. Server-side validation should still occur since it is more secure.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-year-field">
+  <label for="date-from">On or After Year</label>
+  <input id="date-from" type="number" min="1895" max="9999" step="1">
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-year-field
+    </code></pre>
+    <pre><code class="html">
+&lt;div class=&quot;nypl-year-field&quot;&gt;
+  &lt;label for=&quot;date-from&quot;&gt;On or After Year&lt;/label&gt;
+  &lt;input id=&quot;date-from&quot; type=&quot;number&quot; min=&quot;1895&quot; max=&quot;9999&quot; step=&quot;1&quot;&gt;
 &lt;/div&gt;
     </code></pre>
 
@@ -314,13 +337,94 @@ $("#checkbox-optin").change(function(e){
 &lt;/div&gt;
     </code></pre>
 
-    <h3 id="searchableFieldsets">Searchable Fields</h3>
+    <h3 id="collapsibleFieldsets">Collapsible Fields</h3>
 
-    <p>Searchable fields allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
+    <p>Collapsible fields group multiple form fields into a collapsible box. This allows for better organization and display of multiple visually different form fields.</p>
 
     <p>The general structure is:
       <ul>
-        <li>a <code>nypl-facet-toggle</code> toggle button that controls the open/closed state of the widget,</li>
+        <li>a <code>nypl-facet-toggle</code> toggle button that controls the open/closed state of the widget <strong>with the facet name wrapped in an <code>h3</code> tag</strong>,</li>
+        <li>a div of class <code>nypl-collapsible</code> which contains the fields.</li>
+      </ul>
+    </p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The toggle button must wrap the facet name with an <code>h3</code> tag.</p>
+
+    <p>Toggling between closed and open states along with the affected <code>aria-expanded</code> values of the widget will be controlled via JavaScript. A <code>collapsed</code> class must be added (or removed) to the <code>nypl-collapsible-field</code> and <code>nypl-collapsible</code> elements. The example below uses jQuery.</p>
+
+    <p><strong>NOTE:</strong> The widget defaults to the <strong>open state</strong> but is <strong>closed via JavaScript on page load</strong>. This is to support situations where JavaScript may be disabled and allow users to see and interact with the facets.</p>
+
+    <div class="nypl-toolkit-example">
+      <span class="nypl-example-text">Example</span>
+<div class="nypl-collapsible-field" aria-expanded="true">
+  <button type="button" id="date" class="nypl-facet-toggle"
+    aria-controls="nypl-collapsible-field_date" aria-expanded="true">
+    <h3>Date</h3>
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
+  </button>
+  <div class="nypl-collapsible" id="nypl-collapsible-field_date" aria-expanded="true">
+    <div class="nypl-year-field">
+      <label for="date-from1">On or After Year</label>
+      <input id="date-from1" type="number" min="0" max="9999" step="1">
+    </div>
+    <div class="nypl-year-field">
+      <label for="date-to1">On or Before Year</label>
+      <input id="date-to1" type="number" min="0" max="9999" step="1">
+    </div>
+  </div>
+</div>
+    </div>
+
+    <pre><code class="scss">
+.nypl-collapsible-field
+.nypl-collapsible
+.collapsed
+    </code></pre>
+
+    <pre><code class="html">
+&lt;div class=&quot;nypl-collapsible-field&quot; aria-expanded=&quot;true&quot;&gt;
+  &lt;button type=&quot;button&quot; id=&quot;date&quot; class=&quot;nypl-facet-toggle&quot;
+    aria-controls=&quot;nypl-collapsible-field_date&quot; aria-expanded=&quot;true&quot;&gt;
+    &lt;h3&gt;Date&lt;/h3&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;&lt;title&gt;wedge down icon&lt;/title&gt;&lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;nypl-collapsible&quot; id=&quot;nypl-collapsible-field_date&quot; aria-expanded=&quot;true&quot;&gt;
+    &lt;div class=&quot;nypl-year-field&quot;&gt;
+      &lt;label for=&quot;date-from1&quot;&gt;On or After Year&lt;/label&gt;
+      &lt;input id=&quot;date-from1&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;9999&quot; step=&quot;1&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;nypl-year-field&quot;&gt;
+      &lt;label for=&quot;date-to1&quot;&gt;On or Before Year&lt;/label&gt;
+      &lt;input id=&quot;date-to1&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;9999&quot; step=&quot;1&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+    <pre><code class="js">
+// jQuery example
+$("button.nypl-facet-toggle").click(function (e) {
+  toggleFacet(e)
+})
+
+function toggleFacet(e) {
+  var button = $(e.target)
+  var facet = button.parent()
+  var collapsible = facet.find(".nypl-collapsible")
+  button.attr("aria-expanded", button.attr("aria-expanded") == "false" ? "true" : "false")
+  facet.attr("aria-expanded", facet.attr("aria-expanded") == "false" ? "true" : "false")
+  collapsible.attr("aria-expanded", collapsible.attr("aria-expanded") == "false" ? "true" : "false")
+  facet.toggleClass("collapsed")
+  collapsible.toggleClass("collapsed")
+}
+    </code></pre>
+
+    <h3 id="searchableFieldsets">Searchable Fields</h3>
+
+    <p>Searchable are a version of the <a href="#collapsibleFieldsets">collapsible fieldsets</a> that allow the user to see many non-exclusive options at the same time while also searching within the option list. Use searchable facets when the list of potential selectable items is too large (i.e. more than a dozen or so). The text field should autocomplete (with result count) as the user types in it. By default, show the top 10 items sorted by the amount of results that will be returned.</p>
+
+    <p>The general structure is:
+      <ul>
+        <li>a <code>nypl-facet-toggle</code> toggle button that controls the open/closed state of the widget <strong>with the facet name wrapped in an <code>h3</code> tag</strong>,</li>
         <li>a div of class <code>nypl-collapsible</code> which contains:</li>
         <li>a <code>nypl-facet-search</code> that reflects the <a href="#textFields">general structure of a text field element</a> followed by</li>
         <li>a fieldset of class <code>nypl-facet-list</code> with</li>
@@ -345,22 +449,23 @@ $("#checkbox-optin").change(function(e){
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Similar to <a href="#radioButtons">Radiobutton/Checkbox Groups</a>, for proper screen reader behavior, each radiobutton or checkbox must be <code>aria-labelledby</code> <strong>both</strong> the title group's <code>button</code> tag and its own corresponding <code>label</code> tag.</p>
 
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The toggle button must wrap the facet name with an <code>h3</code> tag.</p>
+
     <p>A “Show X more” <a href="buttons.html#linkButton">link button</a> at the end of the list allows for the user to display X more items to select from. <strong>Important:</strong> When the facet has very few items or when no “Show X more” button is displayed, the class <code>nosearch</code> has to be added to the field. This will hide the search box.</p>
 
     <p>Toggling between closed and open states along with the affected <code>aria-expanded</code> values of the widget will be controlled via JavaScript. A <code>collapsed</code> class must be added (or removed) to the <code>nypl-searchable-field</code> and <code>nypl-collapsible</code> elements. The example below uses jQuery.</p>
 
     <p><strong>NOTE:</strong> Place previously checked items <strong>first</strong> and without the number. The widget defaults to the <strong>open state</strong> but is <strong>closed via JavaScript on page load</strong>. This is to support situations where JavaScript may be disabled and allow users to see and interact with the facets.</p>
 
+    <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
+
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
 <div class="nypl-searchable-field" aria-expanded="true">
   <button type="button" id="searchable1" class="nypl-facet-toggle"
     aria-controls="nypl-searchable-field_facet1" aria-expanded="true">
-    Subject
-    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-      <title>wedge down icon</title>
-      <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-    </svg>
+    <h3>Subject</h3>
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24"><title>wedge down icon</title><polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" /></svg>
   </button>
   <div class="nypl-collapsible" id="nypl-searchable-field_facet1" aria-expanded="true">
     <div class="nypl-facet-search">
@@ -407,17 +512,12 @@ $("#checkbox-optin").change(function(e){
 .collapsed
     </code></pre>
 
-    <p><strong>NOTE:</strong> As is the case of the <a href="#radioButtons">Radio Buttons</a> In this case the input tags are <strong>wrapped</strong> by the <code>label</code> tag.</p>
-
     <pre><code class="html">
 &lt;div class=&quot;nypl-searchable-field&quot; aria-expanded=&quot;true&quot;&gt;
   &lt;button type=&quot;button&quot; id=&quot;searchable1&quot; class=&quot;nypl-facet-toggle&quot;
     aria-controls=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
-    Subject
-    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
-      &lt;title&gt;wedge down icon&lt;/title&gt;
-      &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
-    &lt;/svg&gt;
+    &lt;h3&gt;Subject&lt;/h3&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;&lt;title&gt;wedge down icon&lt;/title&gt;&lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;&lt;/svg&gt;
   &lt;/button&gt;
   &lt;div class=&quot;nypl-collapsible&quot; id=&quot;nypl-searchable-field_facet1&quot; aria-expanded=&quot;true&quot;&gt;
     &lt;div class=&quot;nypl-facet-search&quot;&gt;
@@ -474,7 +574,7 @@ function toggleFacet(e) {
 
     <h3 id="formValidation">Form Validation</h3>
 
-    <p>Form falidation should be handled such that it works even if JavaScript is disabled by the user. Client-side validation is useful to prevent invalid input beforehand, but can be unreliable. Make sure to do additional server-side validation of any user input.</p>
+    <p>Form validation should be handled such that it works even if JavaScript is disabled by the user. Client-side validation is useful to prevent invalid input beforehand, but can be unreliable. Make sure to do additional server-side validation of any user input.</p>
 
     <p>Form validation includes two aspects: <a href="#formErrors">form-level messages</a> and <a href="#fieldErrors">field-level messages</a>.</p>
 
@@ -562,12 +662,12 @@ $("#email1 #email-field").blur(function (e) {
   <span class="nypl-example-text">Example</span>
 
 <fieldset class="nypl-omnisearch nypl-spinner-field">
-  <input type="submit" id="nypl-omni-button1" value="Search">
   <span class="nypl-omni-fields">
     <label for="search-by-field1">Search in</label>
     <select id="search-by-field1"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
   </span>
   <input type="text" aria-labelledby="nypl-omni-button1" value="" />
+  <input type="submit" id="nypl-omni-button1" value="Search">
 </fieldset>
 
 <div class="nypl-text-field nypl-spinner-field">
@@ -671,12 +771,12 @@ $("#email1 #email-field").blur(function (e) {
 
   <pre><code class="html">
 &lt;fieldset class=&quot;nypl-omnisearch nypl-spinner-field&quot;&gt;
-  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button1&quot; value=&quot;Search&quot;&gt;
+  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button1&quot; value=&quot;&quot; /&gt;
   &lt;span class=&quot;nypl-omni-fields&quot;&gt;
     &lt;label for=&quot;search-by-field1&quot;&gt;Search in&lt;/label&gt;
     &lt;select id=&quot;search-by-field1&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
   &lt;/span&gt;
-  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button1&quot; value=&quot;&quot; /&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button1&quot; value=&quot;Search&quot;&gt;
 &lt;/fieldset&gt;
 
 &lt;div class=&quot;nypl-text-field nypl-spinner-field&quot;&gt;

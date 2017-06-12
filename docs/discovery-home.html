@@ -234,7 +234,8 @@
 
   <div class="nypl-page-header">
     <div class="nypl-full-width-wrapper">
-      <ol class="nypl-breadcrumbs">
+      <span class="nypl-screenreader-only">You are here:</span>
+      <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
         <li><a href="/">Home</a></li>
         <li><a href="https://nypl.org/research">Research</a></li>
         <li>Research Catalog</li>
@@ -249,13 +250,14 @@
 
 <p class="nypl-lead">Search The New York Public Library's world-renowned collections for items available for use at our <a href="https://www.nypl.org/locations/map?libraries=research">research centers</a>. Be sure to <a href="https://www.nypl.org/help/request-research-materials">request materials</a> in advance to make the most of your time on site.</p>
 
+
 <fieldset class="nypl-omnisearch">
-  <input type="submit" id="nypl-omni-button" value="Search">
   <span class="nypl-omni-fields">
     <label for="search-by-field">Search in</label>
     <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
   </span>
-  <input type="text" aria-labelledby="nypl-omni-button" value="">
+  <input type="text" aria-labelledby="nypl-omni-button" value="" />
+  <input type="submit" id="nypl-omni-button" value="Search">
 </fieldset>
 
       </div>

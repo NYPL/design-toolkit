@@ -1,0 +1,137 @@
+@mixin holds-table {
+  @include basic-table;
+  border-top: 0.25rem solid $page-color;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+
+  // make sure we use the right cursors on hover.
+  // TODO: investigate a more elegant way to accomplish this:
+  thead tr th {
+    &[class^=sorting] { // using this attr. selector lets us get
+                        // get at DataTable's injected classes sorting,sort
+      cursor: pointer;
+    }
+
+    &[class=sorting_disabled] {
+      cursor: default;
+    }
+  }
+
+  td {
+    padding-top: 0.75rem;
+
+    @include item-definition-list($dt-width: 10%, $dd-width: 90%);
+    dl {
+      padding-left: #{$general-border-width * 5};
+
+      dt.item-title { // style first item in the Holds table context
+        font-weight: 700;
+        width: 100%;
+      }
+    }
+
+    &.recap dl {
+      border-left-color: $nypl-light-blue;
+      border-left-style: solid;
+      border-left-width: #{$general-border-width * 2.5};
+    }
+
+    .item {
+      font-weight: 700;
+    }
+  }
+
+  td span {
+    border-left-color: $page-background-color;
+    border-left-style: solid;
+    border-left-width: #{$general-border-width * 2.5};
+    display: block;
+    padding: 1rem 0 1rem 0.5rem;
+
+    &.available {
+      border-left-color: $nypl-green;
+      color: $nypl-green;
+    }
+
+    &.in-transit {
+      border-left-color: $nypl-yellow;
+    }
+
+    &.ill {
+      // &::before {
+      //   content: "ill?";
+      // }
+    }
+
+    &.recap {
+      background-color: lighten($nypl-light-blue, 15%);
+    }
+  }
+
+  @include media($mobile-breakpoint) {
+    thead {
+      border: 0;
+    }
+
+    thead tr {
+      @include screenreader-only;
+    }
+
+    tr {
+      border-top: #{$general-border-width * 2.5} solid $nypl-dark-gray;
+
+      &:nth-of-type(1) {
+        border: 0;
+      }
+    }
+
+    td {
+      border: 0;
+      display: block;
+      position: relative;
+      width: 100%;
+
+      &::before {
+        display: block;
+        float: left;
+        font-weight: bold;
+        padding-left: #{$general-border-width * 6};
+        width: 100%;
+      }
+
+      a {
+        display: block;
+        padding-left: #{$general-border-width * 6};
+      }
+
+      dt a {
+        padding-left: 0;
+      }
+
+      .item {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+      }
+
+      &:nth-of-type(1)::before {
+        content: "Item";
+        display: none;
+      }
+
+      &:nth-of-type(2)::before {
+        content: "Status";
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(3)::before {
+        content: "Location";
+      }
+
+      &:nth-of-type(4)::before {
+        content: "Options";
+      }
+
+    }
+  }
+}

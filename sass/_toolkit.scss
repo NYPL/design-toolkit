@@ -13,6 +13,7 @@
 @import "forms";
 @import "grid";
 @import "tables-results";
+@import "holds-table";
 @import "buttons";
 
 .hidden { // hacky
@@ -125,6 +126,10 @@
   @include text-field;
 }
 
+.nypl-year-field {
+  @include year-field;
+}
+
 .nypl-text-field-with-label {
   @include text-field-with-label;
 }
@@ -180,6 +185,14 @@
 
 .nypl-mobile-refine {
   @include mobile-refine;
+}
+
+.nypl-facet-toggle {
+  @include facet-toggle;
+}
+
+.nypl-collapsible-field {
+  @include collapsible-field;
 }
 
 .nypl-searchable-field {
@@ -291,6 +304,10 @@
 
 .nypl-basic-table {
   @include basic-table;
+}
+
+.nypl-holds-table {
+  @include holds-table;
 }
 
 .nypl-results-summary {

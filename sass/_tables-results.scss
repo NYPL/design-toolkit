@@ -42,10 +42,16 @@ $results-item-border-width: 0.0625rem;
 }
 
 @mixin results-summary {
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
   @include clearfix;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    max-width: none;
+  }
 
   .nypl-results-count {
     float: left;
@@ -61,7 +67,21 @@ $results-item-border-width: 0.0625rem;
     border-radius: $general-border-radius 2rem 2rem $general-border-radius;
     display: inline-block;
     margin-bottom: 0.25rem;
-    padding: 0 0.25rem 0 0.5rem;
+    margin-left: 0.25rem;
+    padding: 0 0.25rem;
+
+    strong {
+      display: inline-block;
+      max-width: 15rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+      white-space: nowrap;
+
+      @include media($mobile-breakpoint) {
+        max-width: 7rem;
+      }
+    }
 
     button {
       // the button inside a facet
@@ -172,7 +192,7 @@ $sorter-width: 11em;
   button {
     @include basic-button($collapsible: true, $border-width: 0, $background-color: $page-background-color, $text-color: $page-color, $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
 
-    span {
+    strong {
       font-weight: bold;
     }
   }
@@ -206,13 +226,18 @@ $sorter-width: 11em;
   }
 }
 
-@mixin item-definition-list($item-margin-bottom: 0.5rem) {
+@mixin item-definition-list($item-margin-bottom: 0.5rem, $dt-width: 7.6rem, $dd-width: auto) {
   dl {
     @include clearfix;
     margin-bottom: 1rem;
     margin-top: 0;
 
+    ul {
+      margin-bottom: 1rem;
+    }
+
     li {
+      @include custom-list-bullet;
       list-style-type: none;
       margin-left: 0;
     }
@@ -223,15 +248,16 @@ $sorter-width: 11em;
     float: left;
     line-height: 1.5;
     margin: 0 0 $item-margin-bottom;
+    width: $dd-width;
   }
 
   dt {
     clear: left;
     color: $nypl-gray;
-    width: 7.6rem;
+    width: $dt-width;
 
     @include media($mobile-breakpoint) {
-      width: 40%;
+      width: 45%;
     }
   }
 
@@ -239,7 +265,7 @@ $sorter-width: 11em;
     margin: 0;
 
     @include media($mobile-breakpoint) {
-      width: 60%;
+      width: 55%;
     }
   }
 }
@@ -261,7 +287,8 @@ $sorter-width: 11em;
   @include item-definition-list;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    max-width: none;
   }
 }
 
@@ -313,13 +340,29 @@ $sorter-width: 11em;
 }
 
 @mixin item-holdings {
+  $holdings-height: 40rem;
+
   h2 {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
   }
 
+  ul {
+    background: linear-gradient(to bottom, transparent 0, transparent ($holdings-height - 3), lighten($nypl-light-gray, 20%) ($holdings-height - 1), $nypl-light-gray $holdings-height);
+    max-height: 40rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @include media($mobile-breakpoint) {
+      background: transparent;
+      max-height: unset;
+      overflow-y: inherit;
+    }
+  }
+
   li {
+    @include clearfix;
     border-bottom: ($general-border-width * 0.5) solid $nypl-light-gray;
     line-height: 1.5;
     list-style-type: none;
@@ -335,12 +378,8 @@ $sorter-width: 11em;
   .nypl-item-unavailable {
     display: block;
     float: right;
+    margin: 0 0 1rem 1rem;
     width: 7rem;
-
-    @include media($mobile-breakpoint) {
-      display: block;
-      float: none;
-    }
   }
 
   .nypl-item-unavailable {
