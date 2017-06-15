@@ -14,16 +14,6 @@ The following is a non-exhaustive list of concrete elements which help *create a
 **Rule**: HTML/XHTML must be valid.   
 **Test**: your favorite validator, ex https://validator.w3.org/  
 
-###  Minimum color contrast
-**Standard**: [1.4.3 | Contrast (Minimum)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)  
-**Rule**: Text and images of text have a ratio of at least 4.5:1. Large text (over 18 point or 14 point bold) has minimum ratio of 3:1.  
-**Test**: automated   
-
-###  Focus is visible
-**Standard**: [2.4.7 | Focus Visible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html)  
-**Rule**: As you keyboard navigate through a page, the focus is visible. The default browser focus should never be suppressed.   
-**Test**: manual evaluation  
-
 ###  Pages have `titles`
 **Standard**: [2.4.2 | Page Titled](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)  
 **Rule**: All pages have unique and meaningful html `title` elements.  
@@ -77,7 +67,16 @@ Exceptions: proper names, technical terms, words which are part of vernacular, a
 **Example**: If you have a cover image and a book title and want both to link to an item detail page; it's better to wrap them up in one link.  
 **Test**: automated & manual evaluation   
 
---------------------
+###  Minimum color contrast
+**Standard**: [1.4.3 | Contrast (Minimum)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)  
+**Rule**: Text and images of text have a ratio of at least 4.5:1. Large text (over 18 point or 14 point bold) has minimum ratio of 3:1.  
+**Test**: automated   
+
+###  Focus is visible
+**Standard**: [2.4.7 | Focus Visible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html)  
+**Rule**: As you keyboard navigate through a page, the focus is visible. The default browser focus should never be suppressed.   
+**Test**: manual evaluation  
+
 ###  Decorative images are noted as such
 **Standard**: [1.1.1 | Non-text Content](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)  
 **Rule**: All decorative images **either** contain a null `alt` attribute **OR** are implemented as CSS backgrounds.  
@@ -127,8 +126,6 @@ Exceptions: proper names, technical terms, words which are part of vernacular, a
 **Standard**: [2.3.1 | Three Flashes or Below Threshold](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)  
 **Rule**: No page content flashes more than 3 times per second unless that flashing content is sufficiently small and the flashes are of low contrast and do not contain too much red. Refer to standard for detailed compliance specs.  
 **Test**:   
-
---------------------
 
 ###  Bypass blocks mechanism
 **Standard**: [2.4.1 | Bypass Blocks](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html)  
