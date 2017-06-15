@@ -2,6 +2,8 @@
 title: Development Checklist
 description:
 ---
+## Resource note
+NOTE: This page is currently in draft mode. The content, layout, and formatting are incoplete and liable to change.
 
 The following is a non-exhaustive list of concrete elements which help *create a foundation* for accessible design. Intended to for use during active development in parallel with the wider design toolkit resources.   
 
@@ -222,22 +224,46 @@ If skip to main content link is used, link should be visible when keyboard navig
 **Rule**: Across product pages, components performing the same action and function have the same visual formatting and semantic labelling.    
 **Test**:   
 
+###  Consistent identification
+<!--Not sure if this belongs here-->
+**Standard**: [3.2.4 | Consistent Identification](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html)  
+**Rule**: Across product pages, components performing the same action and function have the same visual formatting and semantic labelling.    
+**Test**:   
+
+###  Consistent identification
+<!--Not sure if this belongs here-->
+**Standard**: [3.2.4 | Consistent Identification](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html)  
+**Rule**: Across product pages, components performing the same action and function have the same visual formatting and semantic labelling.    
+**Test**:   
+
+###  Input error notification  
+<!--Not sure if this belongs here-->
+**Standard**: [3.3.1 | Error Identification](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html)  
+**Rule**: Error messaging should conform with [design toolkit](https://nypl.github.io/design-toolkit/sections/forms.html#formValidation). In short, users receive notification of server-side and client-side errors (ex. format, value, length).  
+**Test**:   
+
+###  Input instructions are provided  
+<!--Not sure if this belongs here-->
+**Standard**: [3.3.2 | Labels or Instructions](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)  
+**Rule**: Error messaging should conform with [design toolkit](https://nypl.github.io/design-toolkit/sections/forms.html#formValidation). In short, when input is required in specific format, value, length, this information is clearly and persistently available to the user in text format.  
+**Test**:   
+
+###  Users are provided suggestions for resolving input errors  
+<!--Not sure if this belongs here-->
+**Standard**: [3.3.3 | Error Suggestion](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html)  
+**Rule**:  Error messaging instructions should conform with [design toolkit](https://nypl.github.io/design-toolkit/sections/forms.html#formValidation). In short, when users are notificed of input errors, they are also provided in text information on how to revise input. True for server-side and client-side errors.  
+**Test**:   
+
+### Name, role, value of ui components are programmatically available   
+**Standard**: [4.1.2 | Name, Role, Value](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html)  
+**Rule**: Name and role of components are programmatically available.    
+**Test**:   
+
 
 <!--
-Hello! The following need to be incorporated:
+Hello! The concrete elements of the following could still to be incorporated:
 
 Error messages  
-Standards 3.3.1; 3.3.3;  
-Ensure that input errors are detected and trigger error messages. Ensure that error messages:  
-     - receive focus in an understandable manner (ie, if a page reloads, the focus is on the error message)  
-     - provides enough context that user is able to correct their error  
-     - users are able to edit and delete sensitive data (ex. financial;personally identifiable data)  
+[3.3.4 | Error Prevention (Legal, Financial, Data)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html)
 
-Forms  
-standards: 1.3.1;3.3.1;3.3.2;4.1.2
-- forms requiring specific formats have clear directions  
-- error messages are clear  
-
-Roles, Landmarks, & States  
-standard 4.1.2  
 -->
