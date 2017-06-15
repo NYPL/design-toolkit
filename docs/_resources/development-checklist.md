@@ -67,7 +67,7 @@ Exceptions: proper names, technical terms, words which are part of vernacular, a
 **Test**:   
 
 ###  Links work
-**Standard**: []()  
+**Standard**: common sense  
 **Rule**: Links work.  
 **Test**: manual evaluation  
 
@@ -104,23 +104,23 @@ Exceptions: proper names, technical terms, words which are part of vernacular, a
 **Test**:   
 
 ###  Prerecorded audio has a transcript
-**Standard**: [1.2 (1.2.1 - 1.2.5)]()  
+**Standard**: [1.2.1 | Audio-only and Video-only (Prerecorded)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)  
 **Rule**: Text alternatives are provided for time-based media.   
 **Test**: automated  
 
 ###  Prerecorded audio-visual material has synchronized captions
-**Standard**: [1.2 (1.2.1 - 1.2.5)]()  
-**Rule**:   
+**Standard**: [1.2.1 | Audio-only and Video-only (Prerecorded)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)  
+**Rule**: Text alternatives are provided for time-based media.  
 **Test**: automated  
 
-###  Prerecorded video with visual content has synchronized audio descriptions
-**Standard**: [1.2 (1.2.1 - 1.2.5)]()  
-**Rule**: If a video is more than just a talking head or two, audio descriptions are available.    
+###  Prerecorded video with visual content has synchronized audio descriptions or media alternatives
+**Standard**: [1.2.3 | Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)  
+**Rule**: If a video is more than just a talking head or two, audio descriptions are available or all the information is provided in text form.    
 **Test**: automated  
 
 ###  Live AV content has synchronized captions
-**Standard**: []()  
-**Rule**:   
+**Standard**: [1.2.4 | Captions (Live)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)  
+**Rule**: Text alternatives are provided for time-based media.  
 **Test**: automated  
 
 ###  Flashing content doesn't flash too much
