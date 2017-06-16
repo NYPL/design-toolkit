@@ -18,6 +18,10 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.18
+- added additional nypl colors
+- added nypl color accessibiliy index page
+
 ### v0.1.17
 - Better accessibiliy in breadcrumbs.
 - Fixes: #153.
