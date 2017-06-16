@@ -3,62 +3,69 @@
 
 // NYPL Reds
 $nypl-red: #d0343a;
-
 $nypl-red-dark: #97272c;
 
 // NYPL Blues
 $nypl-blue: #1b7fa7;
-
+$nypl-blue-dark: #135772;
 $nypl-light-blue: lighten($nypl-blue, 30%);
 
-$nypl-blue-dark: #135772;
 
 // NYPL Monochromatic
 $nypl-gray-cool: #76777b;
-
 $nypl-gray: #776e64;
-
 $nypl-gray-brown: #54514a;
-
 $nypl-dark-gray: darken($nypl-gray, 40%);
-
 $nypl-light-gray: lighten($nypl-gray, 40%);
-
 $nypl-white: #fff;
-
 $nypl-black: #111;
 
 
 // NYPL Yellows for Alerts & Focus halos etc.
 $nypl-yellow: #fee24a;
-
 $nypl-orange: #ffb81d;
-
 $nypl-orange-desaturated: desaturate($nypl-orange, 40%);
 
-// NYPL Greens
+// NYPL Greens ~ Used in Learn
 $nypl-green: #799a05;
-
 $nypl-green-dark: #497629;
 
-// semantic colors
+// NYPL Purple ~ Attend Colors
+$nypl-purple: #72256d;
+$nypl-purple-dark: #52174f;
+$nypl-purple-tint: lighten($nypl-purple, 60%);
+
+
+// NYPL Teal ~ Research colors
+$nypl-teal: #07818d;
+$nypl-teal-dark: #047074;
+$nypl-teal-tint: lighten($nypl-teal, 60%);
+
+// Semantic colors
 $nypl-search-color: $nypl-light-gray;
 $nypl-search-color-dark: $nypl-gray;//darken($nypl-search-color, 10%);
 $nypl-search-color-light: lighten($nypl-search-color, 10%);
 
+// Accessible, high contrast orange yellow for focus rings
 $focus-color: $nypl-orange;
 
+// General Page Styles
 $page-color: $nypl-dark-gray;
-$page-color-light: $nypl-light-gray;
 $page-text-color: $nypl-dark-gray;
-
-$nypl-footer-color: $nypl-gray-brown;
-$highlight-color: $nypl-red;
-$alert-color: $nypl-yellow;
-$page-background-color: $nypl-white;
+$page-color-light: $nypl-light-gray;
 $nypl-bar-color: rgba(0, 0, 0, 0.1);
 
-// link colors
+// General page background
+$page-background-color: $nypl-white;
+
+// Global Footer background
+$nypl-footer-color: $nypl-gray-brown;
+
+// Alerting and Highlights
+$highlight-color: $nypl-red;
+$alert-color: $nypl-yellow;
+
+// Hyper-link colors
 $link-color: darken($nypl-blue, 5%);
 $link-visited-color: darken($link-color, 10%);
 $link-hover-color: lighten($link-color, 10%);
@@ -76,6 +83,6 @@ $button-background-color: $nypl-white;
 // field error bg
 $nypl-red-tint: tint($nypl-red, 30%);
 $nypl-red-error: tint($nypl-red, 80%);
-$nypl-blue-tint: tint($nypl-blue, 30%);
+$nypl-blue-tint: tint($nypl-blue, 80%);
 $nypl-yellow-tint: tint($nypl-yellow, 50%);
 $nypl-green-tint: tint($nypl-green, 40%);

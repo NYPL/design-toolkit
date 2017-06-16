@@ -102,6 +102,7 @@ $colors: (
  nypl-red-tint: $nypl-red-tint,
  nypl-blue: $nypl-blue,
  nypl-blue-dark: $nypl-blue-dark,
+ nypl-light-blue: $nypl-light-blue,
  nypl-blue-tint: $nypl-blue-tint,
  nypl-gray-cool: $nypl-gray-cool,
  nypl-gray: $nypl-gray,
@@ -117,6 +118,12 @@ $colors: (
  nypl-green: $nypl-green,
  nypl-green-dark: $nypl-green-dark,
  nypl-green-tint: $nypl-green-tint,
+ nypl-purple: $nypl-purple,
+ nypl-purple-dark: $nypl-purple-dark,
+ nypl-purple-tint: $nypl-purple-tint,
+ nypl-teal: $nypl-teal,
+ nypl-teal-dark: $nypl-teal-dark,
+ nypl-teal-tint: $nypl-teal-tint
 );
 
 @each $nypl-colors, $color-name in $colors {
@@ -129,7 +136,7 @@ $colors: (
 .swatches {
   box-sizing: border-box;
 
-  &.reverse div {
+  .reverse {
     color: $nypl-black;
   }
 }
@@ -146,11 +153,16 @@ $colors: (
 
   > div {
     color: $nypl-white;
-    font-size: 90%;
-    font-style: italic;
-    height: 4rem;
+    min-height: 4rem;
     margin: 0;
-    padding-top: 1rem;
-    text-align: center;
+    padding: 1rem 0 1rem 1rem;
+    text-align: left;
+  }
+}
+
+// Customize the A11y Table here: /sections/color-a11y.html
+.nypl-ally-table {
+  th {
+    text-align: left;
   }
 }

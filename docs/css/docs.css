@@ -78,8 +78,11 @@ h1 {
 .nypl-blue-dark-swatch {
   background-color: #135772; }
 
+.nypl-light-blue-swatch {
+  background-color: #73c7e8; }
+
 .nypl-blue-tint-swatch {
-  background-color: #5fa5c1; }
+  background-color: #d1e5ed; }
 
 .nypl-gray-cool-swatch {
   background-color: #76777b; }
@@ -123,9 +126,27 @@ h1 {
 .nypl-green-tint-swatch {
   background-color: #afc269; }
 
+.nypl-purple-swatch {
+  background-color: #72256d; }
+
+.nypl-purple-dark-swatch {
+  background-color: #52174f; }
+
+.nypl-purple-tint-swatch {
+  background-color: #f2d7f0; }
+
+.nypl-teal-swatch {
+  background-color: #07818d; }
+
+.nypl-teal-dark-swatch {
+  background-color: #047074; }
+
+.nypl-teal-tint-swatch {
+  background-color: #caf8fc; }
+
 .swatches {
   box-sizing: border-box; }
-  .swatches.reverse div {
+  .swatches .reverse {
     color: #111; }
 
 .color-box {
@@ -137,11 +158,12 @@ h1 {
     padding-top: 3rem; }
   .color-box > div {
     color: #fff;
-    font-size: 90%;
-    font-style: italic;
-    height: 4rem;
+    min-height: 4rem;
     margin: 0;
-    padding-top: 1rem;
-    text-align: center; }
+    padding: 1rem 0 1rem 1rem;
+    text-align: left; }
+
+.nypl-ally-table th {
+  text-align: left; }
 
 /*# sourceMappingURL=docs.css.map */
