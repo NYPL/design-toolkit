@@ -7,8 +7,9 @@ $nypl-red-dark: #97272c;
 
 // NYPL Blues
 $nypl-blue: #1b7fa7;
-$nypl-light-blue: lighten($nypl-blue, 30%);
 $nypl-blue-dark: #135772;
+$nypl-light-blue: lighten($nypl-blue, 30%);
+
 
 // NYPL Monochromatic
 $nypl-gray-cool: #76777b;
@@ -82,6 +83,6 @@ $button-background-color: $nypl-white;
 // field error bg
 $nypl-red-tint: tint($nypl-red, 30%);
 $nypl-red-error: tint($nypl-red, 80%);
-$nypl-blue-tint: tint($nypl-blue, 30%);
+$nypl-blue-tint: tint($nypl-blue, 80%);
 $nypl-yellow-tint: tint($nypl-yellow, 50%);
 $nypl-green-tint: tint($nypl-green, 40%);
