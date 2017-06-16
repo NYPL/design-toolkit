@@ -15,48 +15,57 @@ $nypl-blue-dark: #135772;
 
 // NYPL Monochromatic
 $nypl-gray-cool: #76777b;
-
 $nypl-gray: #776e64;
-
 $nypl-gray-brown: #54514a;
-
 $nypl-dark-gray: darken($nypl-gray, 40%);
-
 $nypl-light-gray: lighten($nypl-gray, 40%);
-
 $nypl-white: #fff;
-
 $nypl-black: #111;
 
 
 // NYPL Yellows for Alerts & Focus halos etc.
 $nypl-yellow: #fee24a;
-
 $nypl-orange: #ffb81d;
-
 $nypl-orange-desaturated: desaturate($nypl-orange, 40%);
 
 // NYPL Greens
 $nypl-green: #799a05;
-
 $nypl-green-dark: #497629;
 
-// semantic colors
+// NYPL Purple ~ Attend Colors
+$nypl-purple: #72256d;
+$nypl-purple-dark: #52174f;
+$nypl-purple-tint: lighten($nypl-purple, 40%);
+
+
+// NYPL Teal ~ Research colors
+$nypl-teal: #07818d;
+$nypl-teal-dark: #047074;
+$nypl-teal-tint: lighten($nypl-teal, 50%);
+
+// Semantic colors
 $nypl-search-color: $nypl-light-gray;
 $nypl-search-color-dark: $nypl-gray;//darken($nypl-search-color, 10%);
 $nypl-search-color-light: lighten($nypl-search-color, 10%);
 
+// accessible, high contrast orange yellow for focus rings
 $focus-color: $nypl-orange;
 
 $page-color: $nypl-dark-gray;
-$page-color-light: $nypl-light-gray;
 $page-text-color: $nypl-dark-gray;
+$page-color-light: $nypl-light-gray;
+$nypl-bar-color: rgba(0, 0, 0, 0.1);
 
+// General page background
+$page-background-color: $nypl-white;
+
+// Global Footer background
 $nypl-footer-color: $nypl-gray-brown;
+
+// Alerting and Highlights
 $highlight-color: $nypl-red;
 $alert-color: $nypl-yellow;
-$page-background-color: $nypl-white;
-$nypl-bar-color: rgba(0, 0, 0, 0.1);
+
 
 // link colors
 $link-color: darken($nypl-blue, 5%);

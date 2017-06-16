@@ -123,6 +123,24 @@ h1 {
 .nypl-green-tint-swatch {
   background-color: #afc269; }
 
+.nypl-purple-swatch {
+  background-color: #72256d; }
+
+.nypl-purple-dark-swatch {
+  background-color: #52174f; }
+
+.nypl-purple-tint-swatch {
+  background-color: #d98ad4; }
+
+.nypl-teal-swatch {
+  background-color: #07818d; }
+
+.nypl-teal-dark-swatch {
+  background-color: #047074; }
+
+.nypl-teal-tint-swatch {
+  background-color: #99f1fa; }
+
 .swatches {
   box-sizing: border-box; }
   .swatches.reverse div {

@@ -117,6 +117,12 @@ $colors: (
  nypl-green: $nypl-green,
  nypl-green-dark: $nypl-green-dark,
  nypl-green-tint: $nypl-green-tint,
+ nypl-purple: $nypl-purple,
+ nypl-purple-dark: $nypl-purple-dark,
+ nypl-purple-tint: $nypl-purple-tint,
+ nypl-teal: $nypl-teal,
+ nypl-teal-dark: $nypl-teal-dark,
+ nypl-teal-tint: $nypl-teal-tint
 );
 
 @each $nypl-colors, $color-name in $colors {
