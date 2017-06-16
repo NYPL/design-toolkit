@@ -42,13 +42,13 @@ description: Color Usage
 </ul>
 <ul class="swatches reverse">
 <li class="color-box">
-  <div class="nypl-yellow-swatch main">$nypl-yellow: #fee24a</div>
+  <div class="nypl-yellow-swatch main reverse">$nypl-yellow: #fee24a</div>
 </li><li class="color-box">
-  <div class="nypl-yellow-tint-swatch">$nypl-yellow-tint: tint($nypl-yellow, 50%)</div>
+  <div class="nypl-yellow-tint-swatch reverse">$nypl-yellow-tint: tint($nypl-yellow, 50%)</div>
 </li><li class="color-box">  
-  <div class="nypl-orange-swatch">$nypl-orange: #ffb81d</div>
+  <div class="nypl-orange-swatch reverse">$nypl-orange: #ffb81d</div>
 </li><li class="color-box">  
-  <div class="nypl-orange-desaturated-swatch">$nypl-orange-desaturated:<br>desaturate($nypl-orange, 40%)</div>
+  <div class="nypl-orange-desaturated-swatch reverse">$nypl-orange-desaturated:<br>desaturate($nypl-orange, 40%)</div>
 </li>
 </ul>
 <ul class="swatches">
