@@ -57,7 +57,7 @@ description: Color Usage
 </li><li class="color-box">
   <div class="nypl-green-dark-swatch">$nypl-green-dark: #497629</div>
 </li><li class="color-box">  
-  <div class="nypl-green-tint-swatch">$nypl-green-tint:<br>tint($nypl-green, 40%)</div>
+  <div class="nypl-green-tint-swatch reverse">$nypl-green-tint:<br>tint($nypl-green, 40%)</div>
 </li>
 </ul>
 <ul class="swatches">
@@ -66,7 +66,7 @@ description: Color Usage
 </li><li class="color-box">
   <div class="nypl-teal-dark-swatch">$nypl-teal-dark: #047074</div>
 </li><li class="color-box">  
-  <div class="nypl-teal-tint-swatch">$nypl-teal-tint:<br>tint($nypl-teal, 50%)</div>
+  <div class="nypl-teal-tint-swatch reverse">$nypl-teal-tint:<br>tint($nypl-teal, 50%)</div>
 </li>
 </ul>
 <ul class="swatches">
@@ -75,6 +75,6 @@ description: Color Usage
 </li><li class="color-box">
   <div class="nypl-purple-dark-swatch">$nypl-purple-dark: #52174f</div>
 </li><li class="color-box">  
-  <div class="nypl-purple-tint-swatch">$nypl-purple-tint:<br>tint($nypl-purple, 40%)</div>
+  <div class="nypl-purple-tint-swatch reverse">$nypl-purple-tint:<br>tint($nypl-purple, 40%)</div>
 </li>
 </ul>

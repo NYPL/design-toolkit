@@ -143,7 +143,7 @@ h1 {
 
 .swatches {
   box-sizing: border-box; }
-  .swatches.reverse div {
+  .swatches .reverse {
     color: #111; }
 
 .color-box {

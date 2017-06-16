@@ -135,7 +135,7 @@ $colors: (
 .swatches {
   box-sizing: border-box;
 
-  &.reverse div {
+  .reverse {
     color: $nypl-black;
   }
 }
