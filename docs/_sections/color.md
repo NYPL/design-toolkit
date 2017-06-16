@@ -33,9 +33,9 @@ description: Color Usage
 </li><li class="color-box">
   <div class="nypl-dark-gray-swatch">$nypl-dark-gray: darken($nypl-gray, 40%)</div>
 </li><li class="color-box">
-    <div class="nypl-light-gray-swatch">$nypl-light-gray: lighten($nypl-gray, 40%)</div>
+    <div class="nypl-light-gray-swatch reverse">$nypl-light-gray: lighten($nypl-gray, 40%)</div>
 </li><li class="color-box">
-  <div class="nypl-white-swatch" style="border: 1px dotted #111; color: #111;">$nypl-white: #fff</div>
+  <div class="nypl-white-swatch reverse" style="border: 1px dotted #111;">$nypl-white: #fff</div>
 </li><li class="color-box">
   <div class="nypl-black-swatch">$nypl-black: #111</div>
 </li>
