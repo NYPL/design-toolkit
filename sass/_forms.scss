@@ -271,8 +271,8 @@ $form-padding: 0.5rem;
   @include simple-radiobutton;
 }
 
-@mixin omnisearch {
-  background-color: $nypl-search-color;
+@mixin omnisearch ($background-color: $nypl-search-color) {
+  background-color: $background-color;
   border: 0;
   border-radius: ($general-border-radius * 2);
   padding: $form-padding;

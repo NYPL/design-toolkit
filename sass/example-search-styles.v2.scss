@@ -1,0 +1,82 @@
+@import "nypl-normalize";
+@import "toolkit";
+@import "header";
+@import "footer";
+
+.nypl-header {
+  @include header;
+}
+
+.nypl-footer {
+  @include footer;
+}
+
+#skip a {
+  background-color: $nypl-white;
+  border: 0;
+  color: $link-color;
+  display: block;
+  font-size: 13px;
+  height: 1px;
+  left: -10000px;
+  line-height: 2;
+  overflow: hidden;
+  padding: 5px 10px 3px;
+  position: absolute;
+  top: 7px;
+  width: 1px;
+  z-index: 1000;
+
+  &:focus {
+    border: 5px solid $link-color;
+    height: auto;
+    left: 7px;
+    outline: 0;
+    overflow: visible;
+    width: auto;
+  }
+}
+
+
+//////////////////////////////
+// based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
+//           specifically: Discovery_home_v4a.psd
+// Overriding pretty much all of the toolkit styles here...
+//////////////////////////////
+// header section
+
+@mixin page-header-2 {
+  height: 18rem;
+
+  h2 {
+    font-weight: 100;
+    margin: 1rem 0;
+
+    @include media($mobile-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.nypl-page-header {
+  @include page-header-2;
+}
+
+//// Search Bar
+// .nypl-omnisearch {
+//   @include omnisearch ($background-color: $nypl-white);
+//
+//   input[type=submit] {
+//     @include basic-button ($background-color: $nypl-red);
+//   }
+// }
+////// Title
+////// Field & Icon
+
+////// Back to results link
+////// Save Record button
+
+
+// Definition List of the full record
+
+// Right rail / column hold button
