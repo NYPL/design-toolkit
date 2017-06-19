@@ -27,7 +27,7 @@
         }
         @media screen and (min-width: 1024px) {
           #Header-Placeholder {
-            min-height: 230px;
+            min-height: 13rem;
           }
         }
       </style>
@@ -35,11 +35,9 @@
     </div>
 
 <main class="main-page">
-
-
   <div class="nypl-page-header">
     <div class="nypl-full-width-wrapper">
-      <span class="nypl-screenreader-only">You are here:</span>
+      <!-- <span class="nypl-screenreader-only">You are here:</span> -->
       <!-- <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
         <li><a href="/">Home</a></li>
         <li><a href="https://nypl.org/research">Research</a></li>
@@ -48,23 +46,27 @@
       </ol> -->
       <h2>New York Public Library Research Catalog</h2>
       <fieldset class="nypl-omnisearch">
-        <span class="nypl-omni-fields">
+        <!-- <span class="nypl-omni-fields">
           <label for="search-by-field">Search in</label>
           <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
-        </span>
+        </span> -->
         <input type="text" aria-labelledby="nypl-omni-button" value="" />
         <input type="submit" id="nypl-omni-button" value="Search">
       </fieldset>
+      <div class="nypl-row search-control">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="42" viewBox="0 0 25 42" preserveAspectRatio="xMidYMid meet" aria-labelledby="left-arrow" aria-hidden="true">
+            <title id="left-arrow">Back to Results</title>
+            <polygon points="21.172 42.344 0 21.172 21.172 0 25.112 3.939 7.88 21.172 25.112 38.404 21.172 42.344"/>
+          </svg>
+          Back to results</span>
+        <button type="submit" class="save-record-button">Save Record</button>
+      </div>
+
     </div>
   </div>
 
   <div class="nypl-full-width-wrapper">
-    <div class="nypl-row">
-      <div class="nypl-column-three-quarters nypl-column-offset-one">
-
-
-      </div>
-    </div>
 
 <!--
 ////////////////////////////////////
@@ -79,7 +81,7 @@
 <!-- row for the basic item info -->
 <div class="nypl-row" id="mainContent">
 
-  <div class="nypl-column-three-quarters nypl-column-offset-one">
+  <div class="nypl-column-three-quarters">
 
     <!-- item detail div -->
     <div class="nypl-item-details">
@@ -90,24 +92,24 @@
 
       <!-- bordered div -->
       <div class="nypl-item-info">
-        <p>
+        <!-- <p> -->
         <!-- materialType / issuance (language ? + " in " + language) -->
-        <span class="nypl-item-media">Text / Monograph</span> in Catalán
-        </p>
+        <!-- <span class="nypl-item-media">Text / Monograph</span> in Catalán
+        </p> -->
 
-        <p>
+        <!-- <p> -->
         <!-- placeOfPublication publisher[with link] then if (dateStartYear == dateEndYear ? dateStartYear : dateStartYear + " - " + dateEndYear (if dateEndYear == 9999, replace dateEndYear value with "present"))[with link] -->
-        Barcelona : [Tarragona] : <a href="http://dev-discovery.nypl.org/search?q=publisher%3A%22Waterways%20Project%20of%20Ten%20Penny%20Players%2C%20Inc.%2C%22" title="Make a new search for Publisher: Columna ; Diputació de Tarragona, Museu d'Art Modern,">Columna ; Diputació de Tarragona, Museu d'Art Modern,</a> <a href="http://dev-discovery.nypl.org/search?q=date%3A1995" title="Make a new search for Year Published: 1995">1995</a>
-        </p>
+        <!-- Barcelona : [Tarragona] : <a href="http://dev-discovery.nypl.org/search?q=publisher%3A%22Waterways%20Project%20of%20Ten%20Penny%20Players%2C%20Inc.%2C%22" title="Make a new search for Publisher: Columna ; Diputació de Tarragona, Museu d'Art Modern,">Columna ; Diputació de Tarragona, Museu d'Art Modern,</a> <a href="http://dev-discovery.nypl.org/search?q=date%3A1995" title="Make a new search for Year Published: 1995">1995</a> -->
+        <!-- </p> -->
 
-        <p>
         <!-- extent then dimensions -->
+        <!-- <p>
         x, 221 pages ; 25 cm
-        </p>
+        </p> -->
 
-        <p>SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</p>
+        <!-- <p>SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</p> -->
 
-        <p class="nypl-item-use">In-library use (Advance request required)</p>
+        <!-- <p class="nypl-item-use">In-library use (Advance request required)</p> -->
       </div>
       <!-- end bordered div -->
 
@@ -121,37 +123,25 @@
 <!-- row for item holds and extra item info -->
 <div class="nypl-row">
 
-  <!-- column for item holds -->
-  <div class="nypl-column-one-quarter nypl-item-holdings">
-    <h2>Items associated with this record</h2>
-    <ul>
-      <li>
-        <!-- note the title: Request item [full call number] -->
-        <a href="#" title="Request item JFL 85-274 v. 1 June-Dec 1980 ">Request</a>
-        JFL 85-274 v. 1 June-Dec 1980
-      </li>
-      <li>
-        <span class="nypl-item-unavailable">Unavailable</span>
-        JFL 85-274 v. 2 Jan-Dec 1981 inc
-      </li>
-      <li>
-        <a href="#" title="Request item JFL 85-274 v. 1 June-Dec 1980 ">View online</a>
-        JFL 85-274 v. 3 Jan-Dec 1982 inc
-      </li>
-    </ul>
-  </div>
-  <!-- end column for item holds -->
-
   <!-- column for extra item info -->
   <div class="nypl-column-three-quarters">
 
     <div class="nypl-item-details">
       <dl>
+        <dt>format</dt>
+        <dd>Text / Monograph in Catalán</dd>
+
         <dt>Author/Creator</dt>
         <dd><a href="#">Stewart, Alexander Blair, author.</a></dd>
 
         <dt>Contributors</dt>
         <dd><!-- comma separated links --><a href="#">Susanna, Alex.</a>, <a href="#">Galià i Adell, Narcís, 1925-</a></dd>
+
+        <dt>description</dt>
+        <dd>x, 221 pages ; 25 cm</dd>
+
+        <dt>bibliography</dt>
+        <dd>Barcelona : [Tarragona] : <a href="http://dev-discovery.nypl.org/search?q=publisher%3A%22Waterways%20Project%20of%20Ten%20Penny%20Players%2C%20Inc.%2C%22" title="Make a new search for Publisher: Columna ; Diputació de Tarragona, Museu d'Art Modern,">Columna ; Diputació de Tarragona, Museu d'Art Modern,</a> <a href="http://dev-discovery.nypl.org/search?q=date%3A1995" title="Make a new search for Year Published: 1995">1995</a></dd>
 
         <dt>Alternative titles</dt>
         <dd>
@@ -161,22 +151,47 @@
           </ul>
         </dd>
 
-        <dt>Notes</dt>
+        <dt>Contents</dt>
         <dd>
           <!-- paragraph per-note -->
           <p>Includes bibliographical references (pages 207-212) and index.</p>
           <p>Xining's Islamic Landscape -- Old Teaching, New Teaching: A Historical Overview of Islam in China -- Huizu -- Learning to be Muslim -- Rectification of Names: Imams, Mosques, Sects, Boundaries -- Performing the Path of the Sahaba: Walking with the Tabligh Jamaʻat -- Paths to Islam and Salafiyya: Harnessing the Transnational to Empower the Individual -- Secular Nation/Imaginary Ummah: Chinese Muslims in the National Public -- An Ummah of Individuals.</p>
         </dd>
-
-        <dt>External links</dt>
+        <dt>location</dt>
+        <dd>SASB - Microforms Rm 119 (<a href="http://www.nypl.org/locations/schwarzman">how to get there?</a>)</dd>
+        <dd>In-library use (Advance request required)</dd>
+        <dt>ISBN</dt>
+        <dd>9780786435098 (pbk. : alk. paper)</dd>
+        <dt>LCCL</dt>
+        <dd>2008034609</dd>
+        <!-- <dt>External links</dt>
         <dd>
           <ul>
             <li><a target="_blank" href="http://worldcat.org/oclc/6036674">View in WorldCat</a></li>
           </ul>
-        </dd>
+        </dd> -->
       </dl>
     </div>
-
+    <!-- column for item holds -->
+    <div class="nypl-item-holdings">
+      <h2>Items associated with this record</h2>
+      <ul>
+        <li>
+          <!-- note the title: Request item [full call number] -->
+          <a href="#" title="Request item JFL 85-274 v. 1 June-Dec 1980 ">Request</a>
+          JFL 85-274 v. 1 June-Dec 1980
+        </li>
+        <li>
+          <span class="nypl-item-unavailable">Unavailable</span>
+          JFL 85-274 v. 2 Jan-Dec 1981 inc
+        </li>
+        <li>
+          <a href="#" title="Request item JFL 85-274 v. 1 June-Dec 1980 ">View online</a>
+          JFL 85-274 v. 3 Jan-Dec 1982 inc
+        </li>
+      </ul>
+    </div>
+    <!-- end column for item holds -->
   </div>
   <!-- end column for extra item info -->
 
@@ -192,8 +207,6 @@
 ///                              ///
 ////////////////////////////////////
 -->
-
-
     </div>
 
   </div>

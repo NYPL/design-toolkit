@@ -46,37 +46,115 @@
 // header section
 
 @mixin page-header-2 {
-  height: 18rem;
+
 
   h2 {
     font-weight: 100;
-    margin: 1rem 0;
+    margin: 3rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
       display: none;
     }
   }
 }
+// /page-header-2
 
 .nypl-page-header {
   @include page-header-2;
+
+  margin-bottom: 0;
+
+  @include media($mobile-breakpoint) {
+    height: 11rem;
+  }
 }
 
 //// Search Bar
-// .nypl-omnisearch {
-//   @include omnisearch ($background-color: $nypl-white);
-//
-//   input[type=submit] {
-//     @include basic-button ($background-color: $nypl-red);
-//   }
-// }
+.nypl-omnisearch {
+  background-color: $nypl-white;
+  border: solid 0.0625rem $nypl-gray;
+  border-radius: $general-border-radius / 1.5;
+  margin-top: 1rem;
+  padding: 0;
+
+  input[type=text] {
+    background: $nypl-white;
+    width: 78%;
+  }
+
+  input[type=submit] {
+    background: $nypl-red;
+    border: 0;
+    border-radius: 0.0625rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &:hover {
+      border: solid 0.0625rem $nypl-red;
+      color: $nypl-red;
+    }
+   }
+}
+// needs a better name, this widget is the remains of the breadcrumbs & save record button below the search field...
+.search-control {
+  font-size: 0.8rem;
+  margin-top: 3.25rem;
+  text-transform: uppercase;
+  ///// Back to results link
+  ////// svg back arrow
+  span {
+    margin-left: 0.65rem;
+
+    svg {
+      height: 2rem;
+      position: relative;
+      width: 0.5625rem;
+      top: 0.7rem;
+    }
+  }
+  ////// Save Record button
+  .save-record-button {
+    @include basic-button ($text-color: $nypl-dark-gray, $background-color: $nypl-white, $border-width: $general-border-width / 1.5);
+    font-size: 0.8rem;
+    float: right;
+    margin-top: 0.75rem;
+    margin-right: 0.65rem;
+    text-transform: uppercase;
+  }
+}
 ////// Title
-////// Field & Icon
-
-////// Back to results link
-////// Save Record button
 
 
-// Definition List of the full record
+// item info / the full item record
+.nypl-item-details {
 
+  .nypl-item-info {
+    @include item-info ($border-width: 0);
+    padding-left: 0;
+  }
+
+  dl {
+    border-left: 0;
+    padding-left: 0;
+
+    dt {
+      color: $nypl-dark-gray;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      @include media($mobile-breakpoint) {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    dd {
+      @include media($mobile-breakpoint) {
+        width: 100%;
+      }
+    }
+  }
+
+}
 // Right rail / column hold button

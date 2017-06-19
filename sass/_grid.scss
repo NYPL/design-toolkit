@@ -6,8 +6,8 @@
 
 @warn "remove magic numbers";
 
-@mixin page-header {
-  background-color: lighten($page-color-light, 10%);
+@mixin page-header($background-color: lighten($page-color-light, 10%)) {
+  background-color: $background-color;
   margin-bottom: 1rem;
 
   h1,
