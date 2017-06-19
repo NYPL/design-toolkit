@@ -3390,7 +3390,7 @@ button:focus {
   font-style: italic; }
 
 .nypl-item-info {
-  border-left: 0.5rem solid #776e64;
+  border-left: 0.5 solid #776e64;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
   max-width: none; }
