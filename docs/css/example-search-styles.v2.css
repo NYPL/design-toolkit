@@ -4459,47 +4459,69 @@ button:focus {
     width: auto; }
 
 .nypl-page-header {
+  background-color: #fafaf9;
   margin-bottom: 0; }
   .nypl-page-header h2 {
+    color: #d0343a;
+    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 100;
     margin: 3rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
-        display: none; } }
+        margin-top: 0; } }
   @media (max-width: 965px) {
     .nypl-page-header {
-      height: 11rem; } }
+      height: 14rem; } }
 
 .nypl-omnisearch {
   background-color: #fff;
   border: solid 0.0625rem #776e64;
   border-radius: 0.13333rem;
+  height: 3rem;
   margin-top: 1rem;
-  padding: 0; }
+  padding: 0;
+  width: 47%; }
+  @media (max-width: 965px) {
+    .nypl-omnisearch {
+      width: 97%; } }
   .nypl-omnisearch input[type=text] {
     background: #fff;
+    margin-top: 0.5rem;
     width: 78%; }
   .nypl-omnisearch input[type=submit] {
     background: #d0343a;
     border: 0;
     border-radius: 0.0625rem;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
+    border-bottom-left-radius: 0;
+    height: 3rem;
+    width: auto; }
     .nypl-omnisearch input[type=submit]:hover {
+      background-color: #fff;
       border: solid 0.0625rem #d0343a;
       color: #d0343a; }
+  .nypl-omnisearch svg {
+    display: inline-block;
+    fill: #080807;
+    height: 1.3125rem;
+    margin-left: 93.5%;
+    position: relative;
+    top: -1.9rem;
+    width: 0.9375rem; }
 
 .search-control {
   font-size: 0.8rem;
   margin-top: 3.25rem;
   text-transform: uppercase; }
-  .search-control span {
-    margin-left: 0.65rem; }
-    .search-control span svg {
-      height: 2rem;
-      position: relative;
-      width: 0.5625rem;
-      top: 0.7rem; }
+  @media (max-width: 965px) {
+    .search-control {
+      margin-top: 0.5rem; } }
+  .search-control svg {
+    fill: #135772;
+    height: 2rem;
+    position: relative;
+    width: 0.5625rem;
+    top: 0.7rem; }
   .search-control .save-record-button {
     background-color: #fff;
     border: 0.08333rem solid #776e64;
