@@ -951,6 +951,7 @@ button:focus {
   height: auto;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -988,6 +989,7 @@ button:focus {
   height: auto;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1032,6 +1034,7 @@ button:focus {
   height: auto;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1090,6 +1093,7 @@ button:focus {
   height: auto;
   padding: 0 0.5rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1134,6 +1138,7 @@ button:focus {
   height: auto;
   padding: 0 0.5rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1178,6 +1183,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -1261,6 +1267,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -1344,6 +1351,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -2113,6 +2121,7 @@ button:focus {
     height: 2rem;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -2408,6 +2417,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3062,6 +3072,7 @@ button:focus {
     height: auto;
     padding: 0 0;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3212,6 +3223,7 @@ button:focus {
     height: auto;
     padding: 0.25em 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3838,6 +3850,7 @@ button:focus {
     height: auto;
     padding: 0 0.5rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3881,6 +3894,7 @@ button:focus {
       height: auto;
       padding: 0 0.5rem;
       text-decoration: none;
+      text-transform: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
@@ -3924,6 +3938,7 @@ button:focus {
     height: auto;
     padding: 0 0.5rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4008,6 +4023,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4071,6 +4087,7 @@ button:focus {
       height: auto;
       padding: 0 0.5rem;
       text-decoration: none;
+      text-transform: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
@@ -4155,6 +4172,7 @@ button:focus {
     height: auto;
     padding: 0 0.5rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4275,6 +4293,7 @@ button:focus {
     height: 2rem;
     padding: 0 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4493,6 +4512,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4552,5 +4572,59 @@ button:focus {
       .nypl-item-details dl dd {
         margin-bottom: 1.25rem;
         width: 100%; } }
+
+.place-hold-control {
+  border: solid #776e64 0.08333rem;
+  padding: 1rem; }
+  .place-hold-control h3 {
+    font-weight: 100;
+    margin: 0; }
+  .place-hold-control p {
+    margin: 0; }
+    @media (max-width: 965px) {
+      .place-hold-control p {
+        display: inline-block; } }
+  .place-hold-control button {
+    background-color: #008918;
+    border: 0.08333rem solid #008918;
+    border-radius: 0.13333rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    height: auto;
+    padding: 0.2rem 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    margin-top: 1.5rem;
+    width: 100%; }
+    .place-hold-control button:link, .place-hold-control button:visited {
+      color: #fff; }
+    .place-hold-control button:hover, .place-hold-control button:hover:visited, .place-hold-control button.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+    .place-hold-control button:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .place-hold-control button.disabled, .place-hold-control button[disabled="disabled"], .place-hold-control button[disabled="true"], .place-hold-control button[disabled], .place-hold-control button[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .place-hold-control button.disabled:hover, .place-hold-control button[disabled="disabled"]:hover, .place-hold-control button[disabled="true"]:hover, .place-hold-control button[disabled]:hover, .place-hold-control button[disabled=true]:hover {
+        background-color: #d7d4d0;
+        border-color: #fff;
+        color: #fff; }
+    @media (max-width: 965px) {
+      .place-hold-control button {
+        display: inline-block; } }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */

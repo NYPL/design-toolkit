@@ -163,3 +163,36 @@
 
 }
 // Right rail / column hold button
+.place-hold-control {
+  border: solid $nypl-gray $general-border-width / 1.5;
+  padding: 1rem;
+
+  h3 {
+    font-weight: 100;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+
+    @include media($mobile-breakpoint) {
+      display: inline-block;
+    }
+  }
+
+  button {
+    @include basic-button(
+      $text-color: $nypl-white,
+      $background-color: $nypl-green-ally,
+      $border-color: $nypl-green-ally,
+      $border-radius: $general-border-radius / 1.5,
+      $border-width: $general-border-width / 1.5,
+      $text-transform: uppercase);
+    margin-top: 1.5rem;
+    width: 100%;
+
+    @include media($mobile-breakpoint) {
+      display: inline-block;
+    }
+  }
+}

@@ -951,6 +951,7 @@ button:focus {
   height: auto;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -988,6 +989,7 @@ button:focus {
   height: auto;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1032,6 +1034,7 @@ button:focus {
   height: auto;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1090,6 +1093,7 @@ button:focus {
   height: auto;
   padding: 0 0.5rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1134,6 +1138,7 @@ button:focus {
   height: auto;
   padding: 0 0.5rem;
   text-decoration: none;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1178,6 +1183,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -1261,6 +1267,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -1344,6 +1351,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -2113,6 +2121,7 @@ button:focus {
     height: 2rem;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -2408,6 +2417,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3062,6 +3072,7 @@ button:focus {
     height: auto;
     padding: 0 0;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3212,6 +3223,7 @@ button:focus {
     height: auto;
     padding: 0.25em 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3838,6 +3850,7 @@ button:focus {
     height: auto;
     padding: 0 0.5rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -3881,6 +3894,7 @@ button:focus {
       height: auto;
       padding: 0 0.5rem;
       text-decoration: none;
+      text-transform: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
@@ -3924,6 +3938,7 @@ button:focus {
     height: auto;
     padding: 0 0.5rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4008,6 +4023,7 @@ button:focus {
     height: auto;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4071,6 +4087,7 @@ button:focus {
       height: auto;
       padding: 0 0.5rem;
       text-decoration: none;
+      text-transform: none;
       white-space: nowrap;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
@@ -4155,6 +4172,7 @@ button:focus {
     height: auto;
     padding: 0 0.5rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -4275,6 +4293,7 @@ button:focus {
     height: 2rem;
     padding: 0 0.75rem;
     text-decoration: none;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
