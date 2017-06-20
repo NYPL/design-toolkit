@@ -4534,18 +4534,23 @@ button:focus {
     max-width: none; }
 .nypl-item-details dl {
   border-left: 0;
+  font-size: 0.8rem;
   padding-left: 0; }
   .nypl-item-details dl dt {
     color: #080807;
-    font-size: 0.8rem;
     font-weight: 700;
+    margin: 0 0.5rem 1rem 0;
     text-transform: uppercase; }
     @media (max-width: 965px) {
       .nypl-item-details dl dt {
         float: none;
+        margin-bottom: 0.75rem;
         width: 100%; } }
-  @media (max-width: 965px) {
-    .nypl-item-details dl dd {
-      width: 100%; } }
+  .nypl-item-details dl dd {
+    margin-bottom: 1rem; }
+    @media (max-width: 965px) {
+      .nypl-item-details dl dd {
+        margin-bottom: 1.25rem;
+        width: 100%; } }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
