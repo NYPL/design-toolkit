@@ -45,27 +45,36 @@
 //////////////////////////////
 // header section
 
-@mixin page-header-2 {
-
+@mixin page-header-2(
+  $background-color: $nypl-blue,
+  $font-family: $sans-serif-stack,
+  $font-weight: 400,
+  $type-color: "") {
+  background-color: $background-color;
 
   h2 {
-    font-weight: 100;
+    color: $type-color;
+    font-family: 'Milo-Light', $font-family;
+    font-weight: $font-weight;
     margin: 3rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
-      display: none;
+      // font-size: 5rem  ;
+      margin-top: 0;
     }
   }
 }
 // /page-header-2
 
 .nypl-page-header {
-  @include page-header-2;
-
+  @include page-header-2(
+  $background-color: lighten($nypl-light-gray, 15%),
+  $font-weight: 100,
+  $type-color: $nypl-red);
   margin-bottom: 0;
 
   @include media($mobile-breakpoint) {
-    height: 11rem;
+    height: 14rem;
   }
 }
 
@@ -74,11 +83,18 @@
   background-color: $nypl-white;
   border: solid 0.0625rem $nypl-gray;
   border-radius: $general-border-radius / 1.5;
+  height: 3rem;
   margin-top: 1rem;
   padding: 0;
+  width: 47%;
+
+  @include media($mobile-breakpoint) {
+    width: 97%;
+  }
 
   input[type=text] {
     background: $nypl-white;
+    margin-top: 0.5rem;
     width: 78%;
   }
 
@@ -88,30 +104,50 @@
     border-radius: 0.0625rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    height: 3rem;
+    width: auto;
 
     &:hover {
+      background-color: $nypl-white;
       border: solid 0.0625rem $nypl-red;
       color: $nypl-red;
     }
-   }
-}
+  }
+
+  svg {
+    display: inline-block;
+    fill: $nypl-dark-gray;
+    height: 1.3125rem;
+    margin-left: 93.5%;
+    position: relative;
+    top: -1.9rem;
+    width: 0.9375rem;
+
+    // &:hover {
+    //   fill: $nypl-red;
+    // }
+    }
+  }
 // needs a better name, this widget is the remains of the breadcrumbs & save record button below the search field...
 .search-control {
   font-size: 0.8rem;
   margin-top: 3.25rem;
   text-transform: uppercase;
+
+  @include media($mobile-breakpoint) {
+    margin-top: 0.5rem;
+  }
+
   ///// Back to results link
   ////// svg back arrow
-  span {
-    margin-left: 0.65rem;
-
-    svg {
-      height: 2rem;
-      position: relative;
-      width: 0.5625rem;
-      top: 0.7rem;
-    }
+  svg {
+    fill: $nypl-blue-dark;
+    height: 2rem;
+    position: relative;
+    width: 0.5625rem;
+    top: 0.7rem;
   }
+
   ////// Save Record button
   .save-record-button {
     @include basic-button ($text-color: $nypl-dark-gray, $background-color: $nypl-white, $border-width: $general-border-width / 1.5);
