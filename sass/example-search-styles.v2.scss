@@ -135,22 +135,27 @@
 
   dl {
     border-left: 0;
+    font-size: 0.8rem;
     padding-left: 0;
 
     dt {
       color: $nypl-dark-gray;
-      font-size: 0.8rem;
       font-weight: 700;
+      margin: 0 0.5rem 1rem 0;
       text-transform: uppercase;
 
       @include media($mobile-breakpoint) {
         float: none;
+        margin-bottom: 0.75rem;
         width: 100%;
       }
     }
 
     dd {
+      margin-bottom: 1rem;
+
       @include media($mobile-breakpoint) {
+        margin-bottom: 1.25rem;
         width: 100%;
       }
     }
