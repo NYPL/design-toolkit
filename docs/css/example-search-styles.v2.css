@@ -4495,7 +4495,7 @@ button:focus {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 3rem;
-    width: auto; }
+    width: 20%; }
     .nypl-omnisearch input[type=submit]:hover {
       background-color: #fff;
       border: solid 0.0625rem #d0343a;
@@ -4510,7 +4510,6 @@ button:focus {
     width: 0.9375rem; }
 
 .search-control {
-  font-size: 0.8rem;
   margin-top: 3.25rem;
   text-transform: uppercase; }
   @media (max-width: 965px) {
@@ -4521,7 +4520,7 @@ button:focus {
     height: 2rem;
     position: relative;
     width: 0.5625rem;
-    top: 0.7rem; }
+    top: 0.6rem; }
   .search-control .save-record-button {
     background-color: #fff;
     border: 0.08333rem solid #776e64;
@@ -4540,7 +4539,6 @@ button:focus {
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
     transition: all 0.1s ease-in 0s;
-    font-size: 0.8rem;
     float: right;
     margin-top: 0.75rem;
     margin-right: 0.65rem;
@@ -4576,7 +4574,6 @@ button:focus {
     max-width: none; }
 .nypl-item-details dl {
   border-left: 0;
-  font-size: 0.8rem;
   padding-left: 0; }
   .nypl-item-details dl dt {
     color: #080807;
