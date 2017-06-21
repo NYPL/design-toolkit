@@ -4618,14 +4618,16 @@ body {
     color: #080807;
     font-weight: 700;
     margin: 0 0.5rem 1rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 20%; }
     @media (max-width: 965px) {
       .nypl-item-details dl dt {
         float: none;
         margin-bottom: 0.75rem;
         width: 100%; } }
   .nypl-item-details dl dd {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    width: 70%; }
     @media (max-width: 965px) {
       .nypl-item-details dl dd {
         margin-bottom: 1.25rem;
