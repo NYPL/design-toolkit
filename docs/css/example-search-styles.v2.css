@@ -4460,7 +4460,8 @@ button:focus {
 
 .nypl-page-header {
   background-color: #fafaf9;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 14rem; }
   .nypl-page-header h2 {
     color: #d0343a;
     font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4471,23 +4472,48 @@ button:focus {
         margin-top: 0; } }
   @media (max-width: 965px) {
     .nypl-page-header {
-      height: 14rem; } }
+      height: 17rem; } }
 
 .nypl-omnisearch {
   background-color: #fff;
   border: solid 0.0625rem #776e64;
   border-radius: 0.13333rem;
-  height: 3rem;
-  margin-top: 1rem;
-  padding: 0;
-  width: 47%; }
+  font-weight: 200;
+  height: 3.9rem;
+  padding: 0; }
   @media (max-width: 965px) {
     .nypl-omnisearch {
       width: 97%; } }
+  .nypl-omnisearch legend {
+    border-bottom: 0.08333rem solid #776e64;
+    padding: 0 1rem 0.25rem 0;
+    position: relative;
+    top: -1rem; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch legend {
+        top: -0.95rem; } }
+  .nypl-omnisearch .nypl-omni-fields {
+    border-right: 0.08333rem solid #080807;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -0.475rem;
+    width: 17%; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch .nypl-omni-fields {
+        margin-left: 0.25rem; } }
+    .nypl-omnisearch .nypl-omni-fields select {
+      border-radius: 0;
+      border: 0;
+      border-right: 0.08333rem;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
   .nypl-omnisearch input[type=text] {
     background: #fff;
-    margin-top: 0.5rem;
-    width: 78%; }
+    position: relative;
+    top: -0.475rem; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch input[type=text] {
+        width: 48%; } }
   .nypl-omnisearch input[type=submit] {
     background: #d0343a;
     border: 0;
@@ -4495,7 +4521,11 @@ button:focus {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 3rem;
-    width: 20%; }
+    position: relative;
+    top: -0.95rem; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch input[type=submit] {
+        width: 25.55%; } }
     .nypl-omnisearch input[type=submit]:hover {
       background-color: #fff;
       border: solid 0.0625rem #d0343a;
@@ -4511,6 +4541,7 @@ button:focus {
 
 .search-control {
   margin-top: 3.25rem;
+  padding-left: 0.75rem;
   text-transform: uppercase; }
   @media (max-width: 965px) {
     .search-control {

@@ -72,9 +72,10 @@
   $font-weight: 100,
   $type-color: $nypl-red);
   margin-bottom: 0;
+  height: 14rem;
 
   @include media($mobile-breakpoint) {
-    height: 14rem;
+    height: 17rem;
   }
 }
 
@@ -83,19 +84,57 @@
   background-color: $nypl-white;
   border: solid 0.0625rem $nypl-gray;
   border-radius: $general-border-radius / 1.5;
-  height: 3rem;
-  margin-top: 1rem;
+  font-weight: 200;
+  height: 3.9rem;
+  //margin-top: 1rem;
   padding: 0;
-  width: 47%;
+  //width: 47%;
 
   @include media($mobile-breakpoint) {
     width: 97%;
   }
 
+  legend {
+    border-bottom: $general-border-width / 1.5 solid $nypl-gray;
+    padding: 0 1rem 0.25rem 0;
+    position: relative;
+    top: -1rem;
+
+    @include media($mobile-breakpoint) {
+      top: -0.95rem;
+    }
+  }
+
+  .nypl-omni-fields {
+    border-right: $general-border-width / 1.5 solid $nypl-dark-gray;
+    padding-right: 1rem;
+    // margin-top: 0.5rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -0.475rem;
+    width: 17%;
+
+    @include media($mobile-breakpoint) {
+      margin-left: 0.25rem;
+    }
+
+    select {
+      border-radius: 0;
+      border: 0;
+      border-right: $general-border-width / 1.5;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% $nypl-white;
+  }
+}
+
   input[type=text] {
     background: $nypl-white;
-    margin-top: 0.5rem;
-    width: 78%;
+    // margin-top: 0.5rem;
+    position: relative;
+    top: -0.475rem;
+    // width: 78%;
+    @include media($mobile-breakpoint) {
+      width: 48%;
+    }
   }
 
   input[type=submit] {
@@ -105,7 +144,13 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 3rem;
-    width: 20%;
+    position: relative;
+    top: -0.95rem;
+    //width: 20%;
+
+    @include media($mobile-breakpoint) {
+      width: 25.55%;
+    }
 
     &:hover {
       background-color: $nypl-white;
@@ -132,6 +177,7 @@
 .search-control {
   // font-size: 0.8rem;
   margin-top: 3.25rem;
+  padding-left: 0.75rem;
   text-transform: uppercase;
 
   @include media($mobile-breakpoint) {
