@@ -4600,6 +4600,8 @@ body {
         border-color: #fff;
         color: #080807; }
 
+.nypl-item-details h1 {
+  margin-bottom: 3rem; }
 .nypl-item-details .nypl-item-info {
   border-left: 0 solid #776e64;
   padding-left: 0.5rem;
@@ -4684,8 +4686,12 @@ body {
         display: inline-block; } }
   .place-hold-control.inline {
     border: 0;
-    border-bottom: 0.08333rem solid #76777b;
-    border-top: 0.08333rem solid #76777b;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding-left: 0; }
+    .place-hold-control.inline .nypl-basic-table thead {
+      border-bottom: 0.08333rem solid #76777b; }
+    .place-hold-control.inline .nypl-basic-table th {
+      text-transform: uppercase;
+      width: 25%; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
