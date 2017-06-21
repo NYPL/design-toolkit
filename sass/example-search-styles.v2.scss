@@ -217,6 +217,10 @@ body {
 
 .nypl-item-details {
 
+  h1 {
+    margin-bottom: 3rem;
+  }
+
   .nypl-item-info {
     @include item-info ($border-width: 0);
     padding-left: 0;
@@ -285,10 +289,20 @@ body {
     }
   }
 
+// this the table version for multiple items
+
   &.inline {
     border: 0;
-    border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
-    border-top: $general-border-width / 1.5 solid $nypl-gray-cool;
     margin-bottom: 1rem;
+    padding-left: 0;
+
+    .nypl-basic-table thead {
+      border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
+    }
+
+    .nypl-basic-table th {
+      text-transform: uppercase;
+      width: 25%;
+    }
   }
 }
