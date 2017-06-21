@@ -3,6 +3,10 @@
 @import "header";
 @import "footer";
 
+body {
+  filter: grayscale(1);
+}
+
 .nypl-header {
   @include header;
 }
@@ -72,10 +76,10 @@
   $font-weight: 100,
   $type-color: $nypl-red);
   margin-bottom: 0;
-  height: 14rem;
+  height: 19rem;
 
   @include media($mobile-breakpoint) {
-    height: 17rem;
+    height: 15rem;
   }
 }
 
@@ -130,6 +134,7 @@
     background: $nypl-white;
     // margin-top: 0.5rem;
     position: relative;
+    width: 62.1%;
     top: -0.475rem;
     // width: 78%;
     @include media($mobile-breakpoint) {
@@ -143,10 +148,11 @@
     border-radius: 0.0625rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    float: right;
     height: 3rem;
     position: relative;
     top: -0.95rem;
-    //width: 20%;
+    width: 15%;
 
     @include media($mobile-breakpoint) {
       width: 25.55%;
@@ -251,7 +257,7 @@
   padding: 1rem;
 
   h3 {
-    font-weight: 100;
+    font-weight: 400;
     margin: 0;
   }
 
@@ -277,5 +283,12 @@
     @include media($mobile-breakpoint) {
       display: inline-block;
     }
+  }
+
+  &.inline {
+    border: 0;
+    border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
+    border-top: $general-border-width / 1.5 solid $nypl-gray-cool;
+    margin-bottom: 1rem;
   }
 }

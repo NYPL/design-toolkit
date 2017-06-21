@@ -3663,6 +3663,9 @@ button:focus {
     .nypl-views-table.collapses .resouce-description {
       width: 65%; } }
 
+body {
+  filter: grayscale(1); }
+
 .nypl-header .horizontal {
   display: table-cell;
   float: right;
@@ -4461,7 +4464,7 @@ button:focus {
 .nypl-page-header {
   background-color: #fafaf9;
   margin-bottom: 0;
-  height: 14rem; }
+  height: 19rem; }
   .nypl-page-header h2 {
     color: #d0343a;
     font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4472,7 +4475,7 @@ button:focus {
         margin-top: 0; } }
   @media (max-width: 965px) {
     .nypl-page-header {
-      height: 17rem; } }
+      height: 15rem; } }
 
 .nypl-omnisearch {
   background-color: #fff;
@@ -4510,6 +4513,7 @@ button:focus {
   .nypl-omnisearch input[type=text] {
     background: #fff;
     position: relative;
+    width: 62.1%;
     top: -0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch input[type=text] {
@@ -4520,9 +4524,11 @@ button:focus {
     border-radius: 0.0625rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    float: right;
     height: 3rem;
     position: relative;
-    top: -0.95rem; }
+    top: -0.95rem;
+    width: 15%; }
     @media (max-width: 965px) {
       .nypl-omnisearch input[type=submit] {
         width: 25.55%; } }
@@ -4627,7 +4633,7 @@ button:focus {
   border: solid #776e64 0.08333rem;
   padding: 1rem; }
   .place-hold-control h3 {
-    font-weight: 100;
+    font-weight: 400;
     margin: 0; }
   .place-hold-control p {
     margin: 0; }
@@ -4676,5 +4682,10 @@ button:focus {
     @media (max-width: 965px) {
       .place-hold-control button {
         display: inline-block; } }
+  .place-hold-control.inline {
+    border: 0;
+    border-bottom: 0.08333rem solid #76777b;
+    border-top: 0.08333rem solid #76777b;
+    margin-bottom: 1rem; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
