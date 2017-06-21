@@ -105,7 +105,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 3rem;
-    width: auto;
+    width: 20%;
 
     &:hover {
       background-color: $nypl-white;
@@ -130,7 +130,7 @@
   }
 // needs a better name, this widget is the remains of the breadcrumbs & save record button below the search field...
 .search-control {
-  font-size: 0.8rem;
+  // font-size: 0.8rem;
   margin-top: 3.25rem;
   text-transform: uppercase;
 
@@ -145,13 +145,13 @@
     height: 2rem;
     position: relative;
     width: 0.5625rem;
-    top: 0.7rem;
+    top: 0.6rem;
   }
 
   ////// Save Record button
   .save-record-button {
     @include basic-button ($text-color: $nypl-dark-gray, $background-color: $nypl-white, $border-width: $general-border-width / 1.5);
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
     float: right;
     margin-top: 0.75rem;
     margin-right: 0.65rem;
@@ -162,6 +162,7 @@
 
 
 // item info / the full item record
+
 .nypl-item-details {
 
   .nypl-item-info {
@@ -171,7 +172,7 @@
 
   dl {
     border-left: 0;
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
     padding-left: 0;
 
     dt {
