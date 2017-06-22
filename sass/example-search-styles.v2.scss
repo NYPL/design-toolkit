@@ -3,10 +3,6 @@
 @import "header";
 @import "footer";
 
-body {
-  filter: grayscale(1);
-}
-
 .nypl-header {
   @include header;
 }
@@ -48,7 +44,9 @@ body {
 // Overriding pretty much all of the toolkit styles here...
 //////////////////////////////
 // header section
-
+// Probably need to make the orignal mixin more flexible so
+// we dont have to write a whole separate one... and since we
+// cant use @extend... ¯\_(ツ)_/¯
 @mixin page-header-2(
   $background-color: $nypl-blue,
   $font-family: $sans-serif-stack,
@@ -60,10 +58,9 @@ body {
     color: $type-color;
     font-family: 'Milo-Light', $font-family;
     font-weight: $font-weight;
-    margin: 3rem 0 1.5rem;
+    margin: 2rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
-      // font-size: 5rem  ;
       margin-top: 0;
     }
   }
@@ -75,11 +72,12 @@ body {
   $background-color: lighten($nypl-light-gray, 15%),
   $font-weight: 100,
   $type-color: $nypl-red);
+  border-bottom: $general-border-width / 1.5 solid darken($nypl-light-gray, 15%);
   margin-bottom: 0;
-  height: 19rem;
+  height: 16rem;
 
   @include media($mobile-breakpoint) {
-    height: 15rem;
+    height: 12rem;
   }
 }
 
@@ -87,9 +85,9 @@ body {
 .nypl-omnisearch {
   background-color: $nypl-white;
   border: solid 0.0625rem $nypl-gray;
-  border-radius: $general-border-radius / 1.5;
+  border-radius: $general-border-radius;
   font-weight: 200;
-  height: 3.9rem;
+  //height: 3.9rem;
   //margin-top: 1rem;
   padding: 0;
   //width: 47%;
@@ -99,14 +97,17 @@ body {
   }
 
   legend {
-    border-bottom: $general-border-width / 1.5 solid $nypl-gray;
-    padding: 0 1rem 0.25rem 0;
-    position: relative;
-    top: -0.95rem;
-
-    @include media($mobile-breakpoint) {
-      //top: -0.95rem;
-    }
+    display: none;
+    height: 0;
+    width: 0;
+    // border-bottom: $general-border-width / 1.5 solid $nypl-gray;
+    // padding: 0 1rem 0.25rem 0;
+    // position: relative;
+    // top: -0.95rem;
+    //
+    // @include media($mobile-breakpoint) {
+    //   top: -0.95rem;
+    // }
   }
 
   .nypl-omni-fields {
@@ -115,7 +116,7 @@ body {
     // margin-top: 0.5rem;
     margin-left: 1rem;
     position: relative;
-    top: -0.475rem;
+    top: 0.475rem;
     width: 17%;
 
     @include media($mobile-breakpoint) {
@@ -135,7 +136,7 @@ body {
     // margin-top: 0.5rem;
     position: relative;
     width: 62.1%;
-    top: -0.475rem;
+    top: 0.475rem;
     // width: 78%;
     @include media($mobile-breakpoint) {
       width: 48%;
@@ -151,7 +152,7 @@ body {
     float: right;
     height: 3rem;
     position: relative;
-    top: -0.95rem;
+    //top: 0.95rem;
     width: 15%;
 
     @include media($mobile-breakpoint) {
@@ -181,8 +182,11 @@ body {
   }
 // needs a better name, this widget is the remains of the breadcrumbs & save record button below the search field...
 .search-control {
-  // font-size: 0.8rem;
-  margin-top: 3.25rem;
+  color: $nypl-dark-gray;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  margin-top: 1.75rem;
   padding-left: 0.75rem;
   text-transform: uppercase;
 
@@ -193,13 +197,22 @@ body {
   ///// Back to results link
   ////// svg back arrow
   svg {
-    fill: $nypl-blue-dark;
+    fill: $nypl-gray-cool;
     height: 2rem;
     position: relative;
     width: 0.5625rem;
-    top: 0.6rem;
+    top: 0.7rem;
   }
 
+  a {
+    color: $nypl-dark-gray;
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
   ////// Save Record button
   .save-record-button {
     @include basic-button ($text-color: $nypl-dark-gray, $background-color: $nypl-white, $border-width: $general-border-width / 1.5);
@@ -219,6 +232,7 @@ body {
 
   h1 {
     margin-bottom: 3rem;
+    line-height: 1.5625;
   }
 
   .nypl-item-info {
@@ -228,12 +242,13 @@ body {
 
   dl {
     border-left: 0;
-    // font-size: 0.8rem;
+    font-size: 0.8rem;
     padding-left: 0;
 
     dt {
       color: $nypl-dark-gray;
       font-weight: 700;
+      letter-spacing: 0.04rem;
       margin: 0 0.5rem 1rem 0;
       text-transform: uppercase;
       width: 20%;
@@ -246,6 +261,7 @@ body {
     }
 
     dd {
+      font-size: 0.95rem;
       margin-bottom: 1rem;
       width: 70%;
 
@@ -282,12 +298,19 @@ body {
       $border-color: $nypl-green-ally,
       $border-radius: $general-border-radius / 1.5,
       $border-width: $general-border-width / 1.5,
+      $font-size: 0.8rem,
+      $letter-spacing: 0.06rem,
       $text-transform: uppercase);
     margin-top: 1.5rem;
     width: 100%;
 
     @include media($mobile-breakpoint) {
       display: inline-block;
+    }
+
+    &:hover {
+      border-color: $nypl-green-ally;
+      color: $nypl-green-ally;
     }
   }
 
