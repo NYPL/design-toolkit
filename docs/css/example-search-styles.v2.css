@@ -4693,7 +4693,17 @@ body {
     .place-hold-control.inline .nypl-basic-table thead {
       border-bottom: 0.08333rem solid #76777b; }
     .place-hold-control.inline .nypl-basic-table th {
+      border: 0;
+      padding-bottom: 1rem;
       text-transform: uppercase;
       width: 25%; }
+    .place-hold-control.inline .nypl-basic-table td {
+      border: 0;
+      padding-top: 1rem; }
+    .place-hold-control.inline .nypl-basic-table tbody tr:last-child {
+      border-bottom: 0; }
+    .place-hold-control.inline .nypl-basic-table button {
+      margin-top: 0;
+      width: 85%; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
