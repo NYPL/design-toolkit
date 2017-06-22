@@ -4638,7 +4638,7 @@ body {
   padding: 1rem; }
   .place-hold-control h3 {
     font-weight: 400;
-    margin: 0; }
+    margin: 0 0 1rem; }
   .place-hold-control p {
     margin: 0; }
     @media (max-width: 965px) {
