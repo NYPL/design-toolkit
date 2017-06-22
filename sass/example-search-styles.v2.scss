@@ -298,13 +298,32 @@ body {
     margin-bottom: 1rem;
     padding-left: 0;
 
-    .nypl-basic-table thead {
-      border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
-    }
+    .nypl-basic-table {
 
-    .nypl-basic-table th {
-      text-transform: uppercase;
-      width: 25%;
+      thead {
+        border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
+      }
+
+      th {
+        border: 0;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        width: 25%;
+      }
+
+      td {
+        border: 0;
+        padding-top: 1rem;
+      }
+
+      tbody tr:last-child {
+        border-bottom: 0;
+      }
+
+      button {
+        margin-top: 0;
+        width: 85%;
+      }
     }
   }
 }

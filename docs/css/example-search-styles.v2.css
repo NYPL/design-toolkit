@@ -4491,10 +4491,7 @@ body {
     border-bottom: 0.08333rem solid #776e64;
     padding: 0 1rem 0.25rem 0;
     position: relative;
-    top: -1rem; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch legend {
-        top: -0.95rem; } }
+    top: -0.95rem; }
   .nypl-omnisearch .nypl-omni-fields {
     border-right: 0.08333rem solid #080807;
     padding-right: 1rem;
