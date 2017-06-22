@@ -438,7 +438,7 @@ h5,
 h6,
 p,
 li {
-  max-width: 30em;
+  max-width: 35rem;
   word-wrap: break-word; }
 
 h1 {
@@ -468,7 +468,7 @@ ol {
   padding: 0; }
 
 li {
-  margin-left: 1.5rem; }
+  margin-left: 0.5rem; }
 
 code,
 pre {

@@ -2,14 +2,16 @@
 title: Development Checklist
 description:
 ---
-## Resource note
-**NOTE**: This page is currently in draft mode. The content, layout, and formatting are incoplete and liable to change.
+
+**Resource Note**: This page is currently in draft mode. The content, layout, and formatting are incomplete and will likely change.
+
+
+## Development Checklist
 
 The following is a non-exhaustive list of concrete elements which help *create a foundation* for accessible design. Intended to for use during active development in parallel with the wider design toolkit resources. While pulled in part from WCAG 2.0 AA, not all success criteria are represented and for those that are sometimes only a part of the criteria are represented.  
 
-## Checklist  
+### Checklist for All Pages
 
-### All Pages  
 
 ####  HTML is valid.
 **Standard**: [4.1.1 | Parsing](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html)  
@@ -129,7 +131,9 @@ If skip to main content link is used, link should be visible when keyboard navig
 **Rule**: Across product pages, components performing the same action and function have the same visual formatting and semantic labelling.    
 **Test**:   
 
------
+## Component and Format Specific Checklists
+
+These checklists apply to the specific component and formats being described.
 
 ### Frames  
 ####  Frames have a `title` element
