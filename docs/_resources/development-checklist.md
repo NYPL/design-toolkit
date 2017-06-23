@@ -88,15 +88,7 @@ Exceptions to this rule are proper names, technical terms, words which are part 
 
 ####  Semantic headings
 **Standards**: [1.3.1 | Info and Relationships](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html) // [1.3.2 | Meaningful Sequence](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html)   
-**Rule**: Heading structure is represented with semantic markup. The structure begins wih `h1` and increases by *only one* level at a time. For example, `h2` cannot be followed by `h4`. Multiple levels can be skipped when moving from header with a higher level to a lower one. For example, the following sequence is acceptable:  
-<pre><code class="html">
-<h1>Heading Level One</h1>
-<h2>Heading Level Two</h2>
-<h3>Heading Level Three</h3>
-<h1>Heading Level One</h1>
-<h2>Heading Level Two</h2>
-</code></pre>  
-
+**Rule**: Heading structure is represented with semantic markup. The structure begins wih `h1` and increases by *only one* level at a time. For example, `h2` cannot be followed by `h4`. Multiple levels can be skipped when moving from header with a higher level to a lower one. For example, the following sequence is acceptable: `<h1>`, `<h2>`, `<h3>`, `<h1>`, `<h2>`  
 **Test**:   
 
 ####  Headings and Labels are descriptive and mostly unique
