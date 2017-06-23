@@ -37,36 +37,6 @@
   }
 }
 
-
-//////////////////////////////
-// based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
-//           specifically: Discovery_home_v4a.psd
-// Overriding pretty much all of the toolkit styles here...
-//////////////////////////////
-// header section
-// Probably need to make the orignal mixin more flexible so
-// we dont have to write a whole separate one... and since we
-// cant use @extend... ¯\_(ツ)_/¯
-@mixin page-header-2(
-  $background-color: $nypl-blue,
-  $font-family: $sans-serif-stack,
-  $font-weight: 400,
-  $type-color: "") {
-  background-color: $background-color;
-
-  h2 {
-    color: $type-color;
-    font-family: 'Milo-Light', $font-family;
-    font-weight: $font-weight;
-    margin: 1rem 0 1.5rem;
-
-    @include media($mobile-breakpoint) {
-      margin-top: 0;
-    }
-  }
-}
-// /page-header-2
-
 .nypl-page-header {
   @include page-header-2(
   $background-color: lighten($nypl-light-gray, 15%),
