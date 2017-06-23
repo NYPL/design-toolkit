@@ -438,7 +438,7 @@ h5,
 h6,
 p,
 li {
-  max-width: 30em;
+  max-width: 35rem;
   word-wrap: break-word; }
 
 h1 {
@@ -468,7 +468,7 @@ ol {
   padding: 0; }
 
 li {
-  margin-left: 1.5rem; }
+  margin-left: 0.5rem; }
 
 code,
 pre {
@@ -4481,12 +4481,12 @@ button:focus {
   background-color: #fafaf9;
   border-bottom: 0.08333rem solid #b4aea6;
   margin-bottom: 0;
-  height: 16rem; }
+  height: 14rem; }
   .nypl-page-header h2 {
     color: #d0343a;
     font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 100;
-    margin: 2rem 0 1.5rem; }
+    margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
         margin-top: 0; } }
@@ -4722,16 +4722,24 @@ button:focus {
     padding-left: 0; }
     .place-hold-control.inline .nypl-basic-table thead {
       border-bottom: 0.08333rem solid #76777b; }
-    .place-hold-control.inline .nypl-basic-table th {
-      border: 0;
-      padding-bottom: 1rem;
-      text-transform: uppercase;
-      width: 25%; }
+      .place-hold-control.inline .nypl-basic-table thead th {
+        border: 0;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        width: 25%; }
+      @media (max-width: 965px) {
+        .place-hold-control.inline .nypl-basic-table thead th:first-child,
+        .place-hold-control.inline .nypl-basic-table thead th:last-child {
+          display: none; } }
     .place-hold-control.inline .nypl-basic-table td {
       border: 0;
       padding-top: 1rem; }
     .place-hold-control.inline .nypl-basic-table tbody tr:last-child {
       border-bottom: 0; }
+    @media (max-width: 965px) {
+      .place-hold-control.inline .nypl-basic-table tbody td:first-child,
+      .place-hold-control.inline .nypl-basic-table tbody td:last-child {
+        display: none; } }
     .place-hold-control.inline .nypl-basic-table button {
       margin-top: 0;
       width: 85%; }
