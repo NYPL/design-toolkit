@@ -949,7 +949,7 @@ button:focus {
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  letter-spacing: "";
+  letter-spacing: normal;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
   text-transform: none;
@@ -988,7 +988,7 @@ button:focus {
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  letter-spacing: "";
+  letter-spacing: normal;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
   text-transform: none;
@@ -1034,7 +1034,7 @@ button:focus {
   font-size: 1rem;
   font-weight: normal;
   height: auto;
-  letter-spacing: "";
+  letter-spacing: normal;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
   text-transform: none;
@@ -1094,7 +1094,7 @@ button:focus {
   font-size: 0.8rem;
   font-weight: normal;
   height: auto;
-  letter-spacing: "";
+  letter-spacing: normal;
   padding: 0 0.5rem;
   text-decoration: none;
   text-transform: none;
@@ -1140,7 +1140,7 @@ button:focus {
   font-size: 0.7rem;
   font-weight: normal;
   height: auto;
-  letter-spacing: "";
+  letter-spacing: normal;
   padding: 0 0.5rem;
   text-decoration: none;
   text-transform: none;
@@ -1186,7 +1186,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -1271,7 +1271,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -1356,7 +1356,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -2127,7 +2127,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: 2rem;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -2424,7 +2424,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -3080,7 +3080,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0 0;
     text-decoration: none;
     text-transform: none;
@@ -3232,7 +3232,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.25em 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -3860,7 +3860,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0 0.5rem;
     text-decoration: none;
     text-transform: none;
@@ -3905,7 +3905,7 @@ button:focus {
       font-size: 0.8rem;
       font-weight: normal;
       height: auto;
-      letter-spacing: "";
+      letter-spacing: normal;
       padding: 0 0.5rem;
       text-decoration: none;
       text-transform: none;
@@ -3950,7 +3950,7 @@ button:focus {
     font-size: 0.8rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0 0.5rem;
     text-decoration: none;
     text-transform: none;
@@ -4036,7 +4036,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -4101,7 +4101,7 @@ button:focus {
       font-size: 0.7rem;
       font-weight: normal;
       height: auto;
-      letter-spacing: "";
+      letter-spacing: normal;
       padding: 0 0.5rem;
       text-decoration: none;
       text-transform: none;
@@ -4187,7 +4187,7 @@ button:focus {
     font-size: 0.7rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0 0.5rem;
     text-decoration: none;
     text-transform: none;
@@ -4309,7 +4309,7 @@ button:focus {
     font-size: inherit;
     font-weight: normal;
     height: 2rem;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0 0.75rem;
     text-decoration: none;
     text-transform: none;
@@ -4589,7 +4589,7 @@ button:focus {
     font-size: 1rem;
     font-weight: normal;
     height: auto;
-    letter-spacing: "";
+    letter-spacing: normal;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
     text-transform: none;
