@@ -347,7 +347,8 @@ dl dt.list-mulit-control {
 
 // This style block styles the table set in the <dl>
 // TODO: Combine this layout w/ the one above
-.mulit-item-list {
+dl dd.mulit-item-list {
+  width: 100%;
 
   .nypl-basic-table {
 
