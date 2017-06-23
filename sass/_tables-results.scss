@@ -321,7 +321,10 @@ $sorter-width: 11em;
   font-style: italic;
 }
 
-@mixin item-info ($border-width: 0.5rem, $border-type: solid, $border-color: $nypl-gray) {
+@mixin item-info (
+  $border-width: 0.5rem,
+  $border-type: solid,
+  $border-color: $nypl-gray) {
   border-left: $border-width $border-type $border-color;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
