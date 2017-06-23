@@ -350,6 +350,13 @@
         border-bottom: 0;
       }
 
+      @include media($mobile-breakpoint) {
+        tbody td:first-child,
+        tbody td:last-child {
+          display: none;
+      }
+    }
+
       button {
         margin-top: 0;
         width: 85%;
