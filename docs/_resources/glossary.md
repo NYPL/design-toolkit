@@ -9,7 +9,7 @@ The digital department’s accessibility working group is open to all members of
 
 ### Andrew Heiskell  
 The [Andrew Heiskell Braille and Talking Book Library](https://www.nypl.org/locations/heiskell) is a branch library which
-provides talking books and magazines and braille for people who are blind, visually impaired, or are otherwise physically unable to read standard print. The library serves residents who live in New York City and Long Island and is regional library for the [NLS](https://www.loc.gov/nls/).  
+provides talking books and magazines and braille for people who are blind, visually impaired, or are otherwise physically unable to read standard print. The library serves residents who live in New York City and Long Island and is regional library for the [NLS](https://nypl.github.io/design-toolkit/resources/glossary.html#nls).  
 
 For more information on the history of the Andrew Heiskell branch and the services offered there, visit the [About Page](https://www.nypl.org/about/locations/heiskell).  
 
@@ -22,19 +22,26 @@ Braille and Audio Download service for active Talking Book patrons registered wi
 
 ### Bookshare    
 
-### PAWs    
-The Andrew Heiskell collection is served through a separate discovery layer called [PAWs](https://webopac.klas.com/ny1aopac/).  
+### National Library Service for the Blind and Physically Handicapped (NLS)  
+[NLS](https://www.loc.gov/nls/). provides braille and audio materials to eligible borrowers across the United States. Material is distributed through the mail from network libraries. NYPL's Andrew Heiskell branch is a network library serving NYC, Long Island, and greater New York.  
+
+### klas    
+A portion of the Andrew Heiskell collection is served through a separate discovery layer called [Klas](https://webopac.klas.com/ny1aopac/).  
 
 ### Section 508   
+
+
 
 ### VPATs  
 Voluntary Product Accessibility Templates (VPATS) document a product's conformance and interpretation of accessibility standards; in the case of NYPL, these standards are WCAG 2.0 AA and Section 508 standards. They can be used as a rubric for evaluating products during development, generating issues to resolve compliance conflicts, and documenting any subjective decisions made. For example, see [Standard 3.1.2 in the Maps by Decade VPAT](https://docs.google.com/document/d/1xHhy6qQfZhWq-KktV__cWSfCnPQtTe0fhapS_Ka2HWs/edit). Product teams are responsible for maintaining VPATs.  
 
-* [NYPL VPAT template](https://docs.google.com/document/d/1JxTySA028qTS_PyPG4mDzKiTJag2YBvYgjfYIeNMHLU/edit)  
-* [NYPL VPAT directory](https://drive.google.com/drive/folders/0B1OkN0lSKMbTMFIxZ3NpWm9VN0E)  
-
 ### WCAG 2.0   
-The Web Content Accessibility Guidelines were created by the Web Accessibility Initiative (WAI) of W3C. These standards are considered the commonly accepted compliance standards for web accessibility.  
+
+WCAG 2.0 is composed of 4 principles and 12 Guidelines; each guideline has a set of testable success criteria organized into three levels A, AA, AAA. Level AA includes all level A criteria and level AAA includes all criteria from A and AA. We're strive for compliance with level AA. This is typical and, it should be noted, level AAA is explicilty only applicaple in certain instances whereas AA should conform across all. This means was must make sure that we adhere to the 12 guidelines, but how is determined by the level AA.
+
+The four principles are perceivable, operable, understandable, and robust. <b>Principle 1: Perceivable</b> has 4 guidelines at the AA level.
+
+The Web Content Accessibility Guidelines were created by the Web Accessibility Initiative (WAI) of W3C. These standards are globally treated as the compliance standards for web accessibility. <!--note about how countries have their own additional standards & that there are different standards for reading services, web authoring services, etc.-->   
 
 The standard is organized by 4 principles: Perceivable, Operable, Operable, Robust. Summaries of each principle, [found here](https://www.w3.org/WAI/WCAG20/glance/) are a good place to start for understanding how the technical specifications of these accessibility guidelines map to the four principles. For a more in-depth mapping of specific guidelines and the four guiding principles, visit this [quick reference sheet](https://www.w3.org/WAI/WCAG20/quickref/).  
 
