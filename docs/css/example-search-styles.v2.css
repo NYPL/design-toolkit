@@ -4751,71 +4751,73 @@ dl dt.list-mulit-control {
     margin: 0 0 1rem;
     width: 100%; }
 
-.mulit-item-list .nypl-basic-table thead {
-  border-bottom: 0.08333rem solid #76777b; }
-  .mulit-item-list .nypl-basic-table thead th {
+dl dd.mulit-item-list {
+  width: 100%; }
+  dl dd.mulit-item-list .nypl-basic-table thead {
+    border-bottom: 0.08333rem solid #76777b; }
+    dl dd.mulit-item-list .nypl-basic-table thead th {
+      border: 0;
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+      width: 25%; }
+    @media (max-width: 965px) {
+      dl dd.mulit-item-list .nypl-basic-table thead th:first-child,
+      dl dd.mulit-item-list .nypl-basic-table thead th:last-child {
+        display: none; } }
+  dl dd.mulit-item-list .nypl-basic-table td {
     border: 0;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-    width: 25%; }
+    padding-top: 1rem; }
+  dl dd.mulit-item-list .nypl-basic-table tbody tr:last-child {
+    border-bottom: 0; }
   @media (max-width: 965px) {
-    .mulit-item-list .nypl-basic-table thead th:first-child,
-    .mulit-item-list .nypl-basic-table thead th:last-child {
+    dl dd.mulit-item-list .nypl-basic-table tbody td:first-child,
+    dl dd.mulit-item-list .nypl-basic-table tbody td:last-child {
       display: none; } }
-.mulit-item-list .nypl-basic-table td {
-  border: 0;
-  padding-top: 1rem; }
-.mulit-item-list .nypl-basic-table tbody tr:last-child {
-  border-bottom: 0; }
-@media (max-width: 965px) {
-  .mulit-item-list .nypl-basic-table tbody td:first-child,
-  .mulit-item-list .nypl-basic-table tbody td:last-child {
-    display: none; } }
-.mulit-item-list .nypl-basic-table button {
-  background-color: #008918;
-  border: 0.08333rem solid #008918;
-  border-radius: 0.13333rem;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: normal;
-  height: auto;
-  letter-spacing: 0.06rem;
-  padding: 0.2rem 0.75rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  -webkit-transition: all 0.1s ease-in 0s;
-  -moz-transition: all 0.1s ease-in 0s;
-  -o-transition: all 0.1s ease-in 0s;
-  transition: all 0.1s ease-in 0s;
-  margin-top: 0;
-  width: 85%; }
-  .mulit-item-list .nypl-basic-table button:link, .mulit-item-list .nypl-basic-table button:visited {
-    color: #fff; }
-  .mulit-item-list .nypl-basic-table button:hover, .mulit-item-list .nypl-basic-table button:hover:visited, .mulit-item-list .nypl-basic-table button.active {
-    border-color: #776e64;
-    background-color: #fff;
-    color: #776e64; }
-  .mulit-item-list .nypl-basic-table button:focus {
-    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-    box-shadow: inset 0 0 0 0.125rem #ffb81d;
-    outline: none; }
-  .mulit-item-list .nypl-basic-table button.disabled, .mulit-item-list .nypl-basic-table button[disabled="disabled"], .mulit-item-list .nypl-basic-table button[disabled="true"], .mulit-item-list .nypl-basic-table button[disabled], .mulit-item-list .nypl-basic-table button[disabled=true] {
-    background-color: #d7d4d0;
-    border-color: #fff;
-    cursor: default; }
-    .mulit-item-list .nypl-basic-table button.disabled:hover, .mulit-item-list .nypl-basic-table button[disabled="disabled"]:hover, .mulit-item-list .nypl-basic-table button[disabled="true"]:hover, .mulit-item-list .nypl-basic-table button[disabled]:hover, .mulit-item-list .nypl-basic-table button[disabled=true]:hover {
+  dl dd.mulit-item-list .nypl-basic-table button {
+    background-color: #008918;
+    border: 0.08333rem solid #008918;
+    border-radius: 0.13333rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: 0.06rem;
+    padding: 0.2rem 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    margin-top: 0;
+    width: 85%; }
+    dl dd.mulit-item-list .nypl-basic-table button:link, dl dd.mulit-item-list .nypl-basic-table button:visited {
+      color: #fff; }
+    dl dd.mulit-item-list .nypl-basic-table button:hover, dl dd.mulit-item-list .nypl-basic-table button:hover:visited, dl dd.mulit-item-list .nypl-basic-table button.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+    dl dd.mulit-item-list .nypl-basic-table button:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    dl dd.mulit-item-list .nypl-basic-table button.disabled, dl dd.mulit-item-list .nypl-basic-table button[disabled="disabled"], dl dd.mulit-item-list .nypl-basic-table button[disabled="true"], dl dd.mulit-item-list .nypl-basic-table button[disabled], dl dd.mulit-item-list .nypl-basic-table button[disabled=true] {
       background-color: #d7d4d0;
       border-color: #fff;
-      color: #fff; }
-  @media (max-width: 965px) {
-    .mulit-item-list .nypl-basic-table button {
-      display: inline-block; } }
-  .mulit-item-list .nypl-basic-table button:hover {
-    border-color: #008918;
-    color: #008918; }
+      cursor: default; }
+      dl dd.mulit-item-list .nypl-basic-table button.disabled:hover, dl dd.mulit-item-list .nypl-basic-table button[disabled="disabled"]:hover, dl dd.mulit-item-list .nypl-basic-table button[disabled="true"]:hover, dl dd.mulit-item-list .nypl-basic-table button[disabled]:hover, dl dd.mulit-item-list .nypl-basic-table button[disabled=true]:hover {
+        background-color: #d7d4d0;
+        border-color: #fff;
+        color: #fff; }
+    @media (max-width: 965px) {
+      dl dd.mulit-item-list .nypl-basic-table button {
+        display: inline-block; } }
+    dl dd.mulit-item-list .nypl-basic-table button:hover {
+      border-color: #008918;
+      color: #008918; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
