@@ -285,7 +285,7 @@
   }
 
 // this the table version for multiple items
-
+// This style block styles the table set in the <aside>
   &.inline {
     border: 0;
     margin-bottom: 1rem;
@@ -345,6 +345,8 @@ dl dt.list-mulit-control {
   }
 }
 
+// This style block styles the table set in the <dl>
+// TODO: Combine this layout w/ the one above
 .mulit-item-list {
 
   .nypl-basic-table {
