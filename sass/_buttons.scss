@@ -36,7 +36,8 @@
   $collapsible: false,
   $padding-horizontal: 0.75rem,
   $padding-vertical: 0.2rem,
-  $text-transform: none, $letter-spacing: "") {
+  $text-transform: none,
+  $letter-spacing: normal) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
