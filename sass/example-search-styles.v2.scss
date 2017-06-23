@@ -74,7 +74,7 @@
   $type-color: $nypl-red);
   border-bottom: $general-border-width / 1.5 solid darken($nypl-light-gray, 15%);
   margin-bottom: 0;
-  height: 16rem;
+  height: 14rem;
 
   @include media($mobile-breakpoint) {
     height: 12rem;
