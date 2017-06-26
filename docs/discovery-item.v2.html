@@ -51,7 +51,14 @@
           <legend>Catalog Search</legend>
           <span class="nypl-omni-fields">
             <label for="search-by-field">Search in</label>
-            <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
+            <select id="search-by-field">
+              <option value="all">All fields</option>
+              <option value="title">Title</option>
+              <option value="contributor">Author/Contributor</option>
+              <option value="subject">Subject</option>
+              <option value="series">Series</option>
+              <option value="call_number">Call number</option>
+            </select>
           </span>
           <!-- <label for="nypl-omni-button">Search</label> -->
           <input type="text" aria-labelledby="nypl-omni-button" value="" />
@@ -120,12 +127,12 @@
       <!-- </div> -->
       <!-- end bordered div -->
 
-    </div>
+
     <!-- end item detail div -->
     <!-- column for extra item info -->
-    <div class="nypl-column-three-quarters">
 
-      <div class="nypl-item-details">
+
+      <!-- <div class="nypl-item-details"> -->
         <dl>
           <dt>format</dt>
           <dd>Text / Monograph in Catalán</dd>
@@ -150,6 +157,53 @@
             </ul>
           </dd>
 
+        <dt class="list-mulit-control">
+            <h3>Availability</h3>
+        </dt>
+        <dd class="multi-item-list">
+              <table class="nypl-basic-table">
+              <thead>
+                <tr>
+                  <th scope="col">location</th>
+                  <th scope="col">call number</th>
+                  <th scope="col">status</th>
+                  <th scope="col">message</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Schomburg Center -Research &amp; Reference</td>
+                  <td>JFE 16-9729</td>
+                  <td><button type="button" name="button">request</button></td>
+                  <td>use in library</td>
+                </tr>
+                <tr>
+                  <td>Schomburg Center -Research &amp; Reference</td>
+                  <td>JFE 16-9729</td>
+                  <td><button type="button" name="button">request</button></td>
+                  <td>use in library</td>
+                </tr>
+                <tr>
+                  <td>Schomburg Center -Research &amp; Reference</td>
+                  <td>JFE 16-9729</td>
+                  <td><button type="button" name="button">request</button></td>
+                  <td>use in library</td>
+                </tr>
+                <tr>
+                  <td>Schomburg Center -Research &amp; Reference</td>
+                  <td>JFE 16-9729</td>
+                  <td><button type="button" name="button">request</button></td>
+                  <td>use in library</td>
+                </tr>
+                <tr>
+                  <td>Schomburg Center -Research &amp; Reference</td>
+                  <td>JFE 16-9729</td>
+                  <td><button type="button" name="button">request</button></td>
+                  <td>use in library</td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
           <dt>Contents</dt>
           <dd>
             <!-- paragraph per-note -->
@@ -195,17 +249,9 @@
         </ul>
       </div> -->
       <!-- end column for item holds -->
-    </div>
+
     <!-- end column for extra item info -->
   </div>
-  <aside class="nypl-column-one-quarter">
-    <div class="place-hold-control">
-      <h3>Availability</h3>
-      <p >Call Number</p>
-      <p>JFE 16-9729</p>
-      <button type="button" name="button">request</button>
-    </div>
-  </aside>
 </div>
 <!-- end row for the basic item info -->
 
@@ -226,9 +272,7 @@
 ////////////////////////////////////
 -->
     </div>
-
   </div>
-
 </main>
 
 <footer role="contentinfo" class="nypl-footer">

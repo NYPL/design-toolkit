@@ -44,11 +44,6 @@
   $type-color: $nypl-red);
   border-bottom: $general-border-width / 1.5 solid darken($nypl-light-gray, 15%);
   margin-bottom: 0;
-  height: 14rem;
-
-  @include media($mobile-breakpoint) {
-    height: 12rem;
-  }
 }
 
 //// Search Bar
@@ -57,10 +52,7 @@
   border: solid 0.0625rem $nypl-gray;
   border-radius: $general-border-radius;
   font-weight: 200;
-  //height: 3.9rem;
-  //margin-top: 1rem;
   padding: 0;
-  //width: 47%;
 
   @include media($mobile-breakpoint) {
     width: 97%;
@@ -70,20 +62,11 @@
     display: none;
     height: 0;
     width: 0;
-    // border-bottom: $general-border-width / 1.5 solid $nypl-gray;
-    // padding: 0 1rem 0.25rem 0;
-    // position: relative;
-    // top: -0.95rem;
-    //
-    // @include media($mobile-breakpoint) {
-    //   top: -0.95rem;
-    // }
   }
 
   .nypl-omni-fields {
     border-right: $general-border-width / 1.5 solid $nypl-dark-gray;
     padding-right: 1rem;
-    // margin-top: 0.5rem;
     margin-left: 1rem;
     position: relative;
     top: 0.475rem;
@@ -103,11 +86,9 @@
 
   input[type=text] {
     background: $nypl-white;
-    // margin-top: 0.5rem;
     position: relative;
     width: 62.1%;
     top: 0.475rem;
-    // width: 78%;
     @include media($mobile-breakpoint) {
       width: 48%;
     }
@@ -122,11 +103,10 @@
     float: right;
     height: 3rem;
     position: relative;
-    //top: 0.95rem;
     width: 15%;
 
     @include media($mobile-breakpoint) {
-      width: 25.55%;
+      width: 20%;
     }
 
     &:hover {
@@ -144,10 +124,6 @@
     position: relative;
     top: -1.9rem;
     width: 0.9375rem;
-
-    // &:hover {
-    //   fill: $nypl-red;
-    // }
     }
   }
 // needs a better name, this widget is the remains of the breadcrumbs & save record button below the search field...
@@ -186,7 +162,6 @@
   ////// Save Record button
   .save-record-button {
     @include basic-button ($text-color: $nypl-dark-gray, $background-color: $nypl-white, $border-width: $general-border-width / 1.5);
-    // font-size: 0.8rem;
     float: right;
     margin-top: 0.75rem;
     margin-right: 0.65rem;
@@ -194,10 +169,7 @@
   }
 }
 ////// Title
-
-
 // item info / the full item record
-
 .nypl-item-details {
 
   h1 {
@@ -264,8 +236,8 @@
   button {
     @include basic-button(
       $text-color: $nypl-white,
-      $background-color: $nypl-green-ally,
-      $border-color: $nypl-green-ally,
+      $background-color: $nypl-green-bright,
+      $border-color: $nypl-green-bright,
       $border-radius: $general-border-radius / 1.5,
       $border-width: $general-border-width / 1.5,
       $font-size: 0.8rem,
@@ -279,8 +251,8 @@
     }
 
     &:hover {
-      border-color: $nypl-green-ally;
-      color: $nypl-green-ally;
+      border-color: $nypl-green-bright;
+      color: $nypl-green-bright;
     }
   }
 
@@ -347,7 +319,7 @@ dl dt.list-mulit-control {
 
 // This style block styles the table set in the <dl>
 // TODO: Combine this layout w/ the one above
-dl dd.mulit-item-list {
+dl dd.multi-item-list {
   width: 100%;
 
   .nypl-basic-table {
@@ -389,8 +361,8 @@ dl dd.mulit-item-list {
     button {
       @include basic-button(
         $text-color: $nypl-white,
-        $background-color: $nypl-green-ally,
-        $border-color: $nypl-green-ally,
+        $background-color: $nypl-green-bright,
+        $border-color: $nypl-green-bright,
         $border-radius: $general-border-radius / 1.5,
         $border-width: $general-border-width / 1.5,
         $font-size: 0.8rem,
@@ -404,8 +376,8 @@ dl dd.mulit-item-list {
       }
 
       &:hover {
-        border-color: $nypl-green-ally;
-        color: $nypl-green-ally;
+        border-color: $nypl-green-bright;
+        color: $nypl-green-bright;
       }
     }
   }
