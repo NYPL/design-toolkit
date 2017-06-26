@@ -18,6 +18,11 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.19
+- adding new visual design
+- adding new design pattern
+- new example page
+
 ### v0.1.18
 - added additional nypl colors
 - added nypl color accessibiliy index page
