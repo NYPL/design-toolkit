@@ -4751,15 +4751,15 @@ dl dd.multi-item-list {
   width: 100%; }
   dl dd.multi-item-list .nypl-basic-table thead {
     border-bottom: 0.08333rem solid #76777b; }
-    dl dd.multi-item-list .nypl-basic-table thead th {
-      border: 0;
-      padding-bottom: 1rem;
-      text-transform: uppercase;
-      width: 25%; }
-    @media (max-width: 965px) {
-      dl dd.multi-item-list .nypl-basic-table thead th:first-child,
-      dl dd.multi-item-list .nypl-basic-table thead th:last-child {
-        display: none; } }
+  dl dd.multi-item-list .nypl-basic-table th {
+    border: 0;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    width: 25%; }
+  @media (max-width: 965px) {
+    dl dd.multi-item-list .nypl-basic-table th:first-child,
+    dl dd.multi-item-list .nypl-basic-table th:last-child {
+      display: none; } }
   dl dd.multi-item-list .nypl-basic-table td {
     border: 0;
     padding-top: 1rem; }
