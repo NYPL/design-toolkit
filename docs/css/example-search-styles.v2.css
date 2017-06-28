@@ -4512,7 +4512,10 @@ button:focus {
     width: 17%; }
     @media (max-width: 965px) {
       .nypl-omnisearch .nypl-omni-fields {
-        margin-left: 0.25rem; } }
+        font-size: 0.9rem;
+        margin-left: 0.25rem;
+        padding-right: 0.25rem;
+        width: 28%; } }
     .nypl-omnisearch .nypl-omni-fields select {
       border-radius: 0;
       border: 0;
@@ -4525,7 +4528,7 @@ button:focus {
     top: 0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch input[type=text] {
-        width: 48%; } }
+        width: 45%; } }
   .nypl-omnisearch input[type=submit] {
     background: #d0343a;
     border: 0;
