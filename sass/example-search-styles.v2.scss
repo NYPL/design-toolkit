@@ -47,12 +47,14 @@
 }
 
 //// Search Bar
+
 .nypl-omnisearch {
-  background-color: $nypl-white;
-  border: solid 0.0625rem $nypl-gray;
-  border-radius: $general-border-radius;
+  @include omnisearch(
+  $background-color: $nypl-white,
+  $border: solid 0.0625rem $nypl-dark-gray,
+  $border-radius: $general-border-radius,
+  $padding: 0);
   font-weight: 200;
-  padding: 0;
 
   @include media($mobile-breakpoint) {
     width: 97%;
@@ -128,8 +130,8 @@
     position: relative;
     top: -1.9rem;
     width: 0.9375rem;
-    }
   }
+}
 // needs a better name, this widget is the remains of the breadcrumbs & save record button below the search field...
 .search-control {
   color: $nypl-dark-gray;

@@ -271,11 +271,15 @@ $form-padding: 0.5rem;
   @include simple-radiobutton;
 }
 
-@mixin omnisearch ($background-color: $nypl-search-color) {
+@mixin omnisearch (
+  $background-color: $nypl-search-color,
+  $border: 0,
+  $border-radius: ($general-border-radius * 2),
+  $padding: $form-padding) {
   background-color: $background-color;
-  border: 0;
-  border-radius: ($general-border-radius * 2);
-  padding: $form-padding;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
 
   button,
   .nypl-omni-fields,
@@ -337,7 +341,7 @@ $form-padding: 0.5rem;
       padding: 0;
     }
   }
-} // /omnisearch
+} // /omnisearch v1
 
 @mixin facet-toggle {
   background-color: $nypl-search-color-dark;
