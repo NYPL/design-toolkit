@@ -73,7 +73,10 @@
     width: 17%;
 
     @include media($mobile-breakpoint) {
+      font-size: 0.9rem;
       margin-left: 0.25rem;
+      padding-right: 0.25rem;
+      width: 28%;
     }
 
     select {
@@ -89,8 +92,9 @@
     position: relative;
     width: 62.1%;
     top: 0.475rem;
+
     @include media($mobile-breakpoint) {
-      width: 48%;
+      width: 45%;
     }
   }
 
