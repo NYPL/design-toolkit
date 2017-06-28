@@ -1,0 +1,102 @@
+$form-padding: 0.5rem;
+////////////////////////////////////////////////////////////
+//// OG Omni ///////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+@mixin omnisearch ($background-color: $nypl-search-color) {
+  background-color: $background-color;
+  border: 0;
+  border-radius: ($general-border-radius * 2);
+  padding: $form-padding;
+
+  button,
+  .nypl-omni-fields,
+  input {
+    display: block;
+    float: left;
+    height: 2rem;
+  }
+
+  .nypl-omni-fields {
+    width: 20%;
+
+    label {
+      @include screenreader-only;
+    }
+
+    select {
+      @include select;
+    }
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=number] {
+    @include input;
+    border-radius: $general-border-radius;
+    margin: 0 1%;
+    text-indent: $form-padding;
+    width: 58%;
+  }
+
+  button,
+  input[type=button],
+  input[type=submit] {
+    @include basic-button($height: 2rem);
+    line-height: 0;
+    width: 20%;
+  }
+
+  @include media($mobile-breakpoint) {
+    .nypl-omni-fields {
+      width: 30%;
+
+      select {
+        padding-left: 0.125rem;
+        padding-right: 20%;
+      }
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+      width: 48%;
+    }
+
+    button,
+    input[type=button],
+    input[type=submit] {
+      padding: 0;
+    }
+  }
+} // /omnisearch
+
+@mixin omnisearch-again($version) {
+  @if $version == version-1 {
+    @content; // put the @mga version here...
+  } @else if $version == version-2 {
+      @content; // put the @reg version here...
+  }
+}
+
+@mixin og-omni {
+  html {
+    background: $page-color;
+  }
+}
+
+@mixin v2-omni {
+  html {
+    background: lighten($page-color, 15%);
+  }
+}
+// This verison is from the original develeped by @mga
+@include omnisearch-again(version-1) {
+  @include omnisearch;
+}
+
+@include omnisearch-again(version-2) {
+  @include v2-omni;
+  .the-class {
+    border: 1px solid $nypl-blue;
+  }
+}
