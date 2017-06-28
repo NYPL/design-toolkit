@@ -21,9 +21,9 @@ Braille and Audio Download service for active Talking Book patrons registered wi
 [For more FAQs](https://www.nypl.org/node/83979).  
 
 ### Bookshare    
-
+  
 ### National Library Service for the Blind and Physically Handicapped (NLS)  
-[NLS](https://www.loc.gov/nls/). provides braille and audio materials to eligible borrowers across the United States. Material is distributed through the mail from network libraries. NYPL's Andrew Heiskell branch is a network library serving NYC, Long Island, and greater New York.  
+[NLS](https://www.loc.gov/nls/). provides braille and audio materials to eligible borrowers across the United States. Material is distributed through the mail from network libraries. NYPL's Andrew Heiskell branch is a network library serving NYC, Long Island, and greater New York.   
 
 ### klas    
 A portion of the Andrew Heiskell collection is served through a separate discovery layer called [Klas](https://webopac.klas.com/ny1aopac/).  
@@ -36,13 +36,7 @@ A portion of the Andrew Heiskell collection is served through a separate discove
 Voluntary Product Accessibility Templates (VPATS) document a product's conformance and interpretation of accessibility standards; in the case of NYPL, these standards are WCAG 2.0 AA and Section 508 standards. They can be used as a rubric for evaluating products during development, generating issues to resolve compliance conflicts, and documenting any subjective decisions made. For example, see [Standard 3.1.2 in the Maps by Decade VPAT](https://docs.google.com/document/d/1xHhy6qQfZhWq-KktV__cWSfCnPQtTe0fhapS_Ka2HWs/edit). Product teams are responsible for maintaining VPATs.  
 
 ### WCAG 2.0   
+The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/intro/wcag) is a [global standard](https://www.w3.org/TR/WCAG20/) for web accessibility created by the Web Accessibility Initiative (WAI) of W3C.
 
-WCAG 2.0 is composed of 4 principles and 12 Guidelines; each guideline has a set of testable success criteria organized into three levels A, AA, AAA. Level AA includes all level A criteria and level AAA includes all criteria from A and AA. We're strive for compliance with level AA. This is typical and, it should be noted, level AAA is explicilty only applicaple in certain instances whereas AA should conform across all. This means was must make sure that we adhere to the 12 guidelines, but how is determined by the level AA.
+Twelve guidelines are arranged by the standard’s four principles: [Perceivable, Operable, Operable, Robust](https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head). Three levels of conformance are judged by success criteria. The library strives for compliance with level AA.  
 
-The four principles are perceivable, operable, understandable, and robust. <b>Principle 1: Perceivable</b> has 4 guidelines at the AA level.
-
-The Web Content Accessibility Guidelines were created by the Web Accessibility Initiative (WAI) of W3C. These standards are globally treated as the compliance standards for web accessibility. <!--note about how countries have their own additional standards & that there are different standards for reading services, web authoring services, etc.-->   
-
-The standard is organized by 4 principles: Perceivable, Operable, Operable, Robust. Summaries of each principle, [found here](https://www.w3.org/WAI/WCAG20/glance/) are a good place to start for understanding how the technical specifications of these accessibility guidelines map to the four principles. For a more in-depth mapping of specific guidelines and the four guiding principles, visit this [quick reference sheet](https://www.w3.org/WAI/WCAG20/quickref/).  
-
-Within the technical specifications, the WCAG 2.0 standard has three levels: A, AA, AAA. By design, not all content can be made compliant with AAA. **The library uses compliance with level AA and, where applicable, level AAA, as a measure of web accessibility. Compliance with WCAG 2.0 is not the definition of accessible; it is an base lining, assessment tool.**  
