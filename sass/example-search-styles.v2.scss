@@ -166,6 +166,8 @@
     text-decoration: underline;
   }
   ////// Save Record button
+  ////// Deprecated & removed from design
+  // TODO: get rid of this rule set
   .save-record-button {
     @include basic-button ($text-color: $nypl-dark-gray, $background-color: $nypl-white, $border-width: $general-border-width / 1.5);
     float: right;
