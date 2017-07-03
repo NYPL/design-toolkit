@@ -4930,9 +4930,9 @@ button:focus {
       margin-top: 0;
       width: 85%; }
 
-dl dt.list-mulit-control {
+dl dt.list-multi-control {
   width: 100%; }
-  dl dt.list-mulit-control h3 {
+  dl dt.list-multi-control h3 {
     font-weight: 400;
     margin: 0 0 1rem;
     width: 100%; }
