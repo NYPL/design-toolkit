@@ -568,7 +568,7 @@ button:focus {
   .nypl-omnisearch.style-2 input[type=text] {
     background: #fff;
     position: relative;
-    width: 62.1%;
+    width: 58%;
     top: 0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch.style-2 input[type=text] {
@@ -925,7 +925,7 @@ button:focus {
   .nypl-omnisearch.style-2 input[type=text] {
     background: #fff;
     position: relative;
-    width: 62.1%;
+    width: 58%;
     top: 0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch.style-2 input[type=text] {
