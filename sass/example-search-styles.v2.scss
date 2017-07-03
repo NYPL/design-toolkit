@@ -94,6 +94,7 @@
 
 }
 // Right rail / column hold button &
+// TODO: remove the Right Rail pattern as its been deprecated.
 .place-hold-control {
   border: solid $nypl-gray $general-border-width / 1.5;
   padding: 1rem;
@@ -114,7 +115,7 @@
   button {
     @include basic-button(
       $text-color: $nypl-white,
-      $background-color: $nypl-green-bright,
+      $background-color: $nypl-red,
       $border-color: $nypl-green-bright,
       $border-radius: $general-border-radius / 1.5,
       $border-width: $general-border-width / 1.5,
@@ -129,8 +130,8 @@
     }
 
     &:hover {
-      border-color: $nypl-green-bright;
-      color: $nypl-green-bright;
+      border-color: $nypl-red;
+      color: $nypl-red;
     }
   }
 
@@ -197,6 +198,7 @@ dl dt.list-multi-control {
 
 // This style block styles the table set in the <dl>
 // TODO: Combine this layout w/ the one above
+// TODO: refactor code to address nested style depth being too deep.
 dl dd.multi-item-list {
   width: 100%;
 
@@ -239,8 +241,8 @@ dl dd.multi-item-list {
     button {
       @include basic-button(
         $text-color: $nypl-white,
-        $background-color: $nypl-green-bright,
-        $border-color: $nypl-green-bright,
+        $background-color: $nypl-red,
+        $border-color: $nypl-red,
         $border-radius: $general-border-radius / 1.5,
         $border-width: $general-border-width / 1.5,
         $font-size: 0.8rem,
@@ -254,8 +256,8 @@ dl dd.multi-item-list {
       }
 
       &:hover {
-        border-color: $nypl-green-bright;
-        color: $nypl-green-bright;
+        border-color: $nypl-red;
+        color: $nypl-red;
       }
     }
   }
