@@ -5,13 +5,13 @@ $form-padding: 0.5rem;
 
 @mixin omnisearch-style($version) {
   @if $version == style-1 {
-    @content; // put the @mga version here...
+    @content; // calls the @mga version here...
   } @else if $version == style-2 {
-    @content; // put the @ricardoom version here...
+    @content; // calls the @ricardoom version here...
   }
 }
 
-// Omnisearch itself now is its own mixin without the accompanying styles. We add those in via the @content directive above and
+// Omnisearch itself now is its own mixin without the accompanying styles. We add those in via the @content directive above w/ the @if statement to keep them from conflicting / overwritting one another.
 @mixin omnisearch (
   $background-color: $nypl-search-color,
   $border: 0,
