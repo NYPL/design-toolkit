@@ -52,7 +52,27 @@ description: Form fields and user input.
       <input type="submit" id="nypl-omni-button" value="Search">
     </fieldset>
 </div>
-
+<pre><code class="scss">
+.nypl-omnisearch.style-2
+.nypl-omni-fields
+</code></pre>
+  <pre><code class="html">
+&lt;fieldset class=&quot;nypl-omnisearch style-2&quot;&gt;
+  &lt;span class=&quot;nypl-omni-fields&quot;&gt;
+    &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
+    &lt;select id=&quot;search-by-field&quot;&gt;
+      &lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;
+      &lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;
+      &lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;
+      &lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;
+      &lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;
+      &lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/span&gt;
+  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot; /&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button&quot; value=&quot;Search&quot;&gt;
+&lt;/fieldset&gt;
+</code></pre>
 
     <h3 id="textFields">Text Fields</h3>
 
