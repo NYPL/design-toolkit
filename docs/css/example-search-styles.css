@@ -710,13 +710,14 @@ legend {
   display: table; }
 
 a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-decoration-style: dotted; }
   a:link {
-    color: #176e91; }
+    color: #1b7fa7; }
   a:visited {
-    color: #104d65; }
+    color: #145e7b; }
   a:hover, a:visited:hover {
-    color: #1f90bd;
+    color: #176e91;
     text-decoration: none; }
   a.inverted:link {
     color: #fff; }
@@ -1377,7 +1378,7 @@ button:focus {
 .nypl-link-button {
   background: none;
   border: 0;
-  color: #176e91;
+  color: #1b7fa7;
   cursor: pointer;
   font: inherit;
   padding: 0;
@@ -3511,7 +3512,7 @@ button:focus {
     width: 1em;
     speak: none;
     display: block;
-    fill: #176e91;
+    fill: #1b7fa7;
     float: right;
     height: 2rem;
     margin-top: 0.4rem;
@@ -4618,7 +4619,7 @@ button:focus {
   -o-transition: all 0.1s ease-out 0s;
   transition: all 0.1s ease-out 0s; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
-    background-color: #176e91;
+    background-color: #1b7fa7;
     border: 0 solid #776e64;
     border-radius: 0.2rem;
     color: #fff;
@@ -4775,7 +4776,7 @@ button:focus {
 #skip a {
   background-color: #fff;
   border: 0;
-  color: #176e91;
+  color: #1b7fa7;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -4788,7 +4789,7 @@ button:focus {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #176e91;
+    border: 5px solid #1b7fa7;
     height: auto;
     left: 7px;
     outline: 0;
