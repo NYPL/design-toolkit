@@ -66,9 +66,9 @@ $highlight-color: $nypl-red;
 $alert-color: $nypl-yellow;
 
 // Hyper-link colors
-$link-color: darken($nypl-blue, 5%);
+$link-color: $nypl-blue;
 $link-visited-color: darken($link-color, 10%);
-$link-hover-color: lighten($link-color, 10%);
+$link-hover-color: darken($link-color, 5%);
 $inverted-link-color: $nypl-white;
 $inverted-link-visited-color: darken($inverted-link-color, 10%);
 
