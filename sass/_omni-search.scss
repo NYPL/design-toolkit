@@ -1,15 +1,13 @@
 @import "general-mixins";
 @import "media-queries";
 $form-padding: 0.5rem;
-////////////////
-//// @mga Omni /
-////////////////
+
 
 @mixin omnisearch-style($version) {
   @if $version == style-1 {
     @content; // put the @mga version here...
   } @else if $version == style-2 {
-    @content; // put the @reg version here...
+    @content; // put the @ricardoom version here...
   }
 }
 
@@ -23,16 +21,17 @@ $form-padding: 0.5rem;
   border: $border;
   border-radius: $border-radius;
   padding: $padding;
-  //@content;
   }
 
-// This verison is from the original develeped by @mga
+  ////////////////
+  //// @mga Omni /
+  ////////////////
 @include omnisearch-style(style-1) {
 
   .nypl-omnisearch {
     @include omnisearch;
 
-    // @content stuff below...
+    // @content from the mixin below:
     button,
     .nypl-omni-fields,
     input {
