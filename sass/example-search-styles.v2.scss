@@ -114,9 +114,9 @@
 
   button {
     @include basic-button(
-      $text-color: $nypl-white,
-      $background-color: $nypl-red,
-      $border-color: $nypl-green-bright,
+      $text-color: $nypl-red,
+      $background-color: $nypl-white,
+      $border-color: $nypl-red,
       $border-radius: $general-border-radius / 1.5,
       $border-width: $general-border-width / 1.5,
       $font-size: 0.8rem,
@@ -130,8 +130,9 @@
     }
 
     &:hover {
+      background-color: $nypl-red;
       border-color: $nypl-red;
-      color: $nypl-red;
+      color: $nypl-white;
     }
   }
 
@@ -240,12 +241,13 @@ dl dd.multi-item-list {
 
     button {
       @include basic-button(
-        $text-color: $nypl-white,
-        $background-color: $nypl-red,
+        $text-color: $nypl-red,
+        $background-color: $nypl-white,
         $border-color: $nypl-red,
         $border-radius: $general-border-radius / 1.5,
         $border-width: $general-border-width / 1.5,
         $font-size: 0.8rem,
+        $height: 2.5rem,
         $letter-spacing: 0.06rem,
         $text-transform: uppercase);
       margin-top: 0;
@@ -253,11 +255,13 @@ dl dd.multi-item-list {
 
       @include media($mobile-breakpoint) {
         display: inline-block;
+        width: 65%;
       }
 
       &:hover {
+        background-color: $nypl-red;
         border-color: $nypl-red;
-        color: $nypl-red;
+        color: $nypl-white;
       }
     }
   }
