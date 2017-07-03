@@ -4857,7 +4857,7 @@ button:focus {
       .place-hold-control p {
         display: inline-block; } }
   .place-hold-control button {
-    background-color: #008918;
+    background-color: #d0343a;
     border: 0.08333rem solid #008918;
     border-radius: 0.13333rem;
     color: #fff;
@@ -4900,8 +4900,8 @@ button:focus {
       .place-hold-control button {
         display: inline-block; } }
     .place-hold-control button:hover {
-      border-color: #008918;
-      color: #008918; }
+      border-color: #d0343a;
+      color: #d0343a; }
   .place-hold-control.inline {
     border: 0;
     margin-bottom: 1rem;
@@ -4960,8 +4960,8 @@ dl dd.multi-item-list {
     dl dd.multi-item-list .nypl-basic-table tbody td:last-child {
       display: none; } }
   dl dd.multi-item-list .nypl-basic-table button {
-    background-color: #008918;
-    border: 0.08333rem solid #008918;
+    background-color: #d0343a;
+    border: 0.08333rem solid #d0343a;
     border-radius: 0.13333rem;
     color: #fff;
     cursor: pointer;
@@ -5003,7 +5003,7 @@ dl dd.multi-item-list {
       dl dd.multi-item-list .nypl-basic-table button {
         display: inline-block; } }
     dl dd.multi-item-list .nypl-basic-table button:hover {
-      border-color: #008918;
-      color: #008918; }
+      border-color: #d0343a;
+      color: #d0343a; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
