@@ -710,13 +710,14 @@ legend {
   display: table; }
 
 a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-decoration-style: dotted; }
   a:link {
-    color: #176e91; }
+    color: #1b7fa7; }
   a:visited {
-    color: #104d65; }
+    color: #145e7b; }
   a:hover, a:visited:hover {
-    color: #1f90bd;
+    color: #176e91;
     text-decoration: none; }
   a.inverted:link {
     color: #fff; }
@@ -1377,7 +1378,7 @@ button:focus {
 .nypl-link-button {
   background: none;
   border: 0;
-  color: #176e91;
+  color: #1b7fa7;
   cursor: pointer;
   font: inherit;
   padding: 0;
@@ -3511,7 +3512,7 @@ button:focus {
     width: 1em;
     speak: none;
     display: block;
-    fill: #176e91;
+    fill: #1b7fa7;
     float: right;
     height: 2rem;
     margin-top: 0.4rem;
@@ -4618,7 +4619,7 @@ button:focus {
   -o-transition: all 0.1s ease-out 0s;
   transition: all 0.1s ease-out 0s; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
-    background-color: #176e91;
+    background-color: #1b7fa7;
     border: 0 solid #776e64;
     border-radius: 0.2rem;
     color: #fff;
@@ -4775,7 +4776,7 @@ button:focus {
 #skip a {
   background-color: #fff;
   border: 0;
-  color: #176e91;
+  color: #1b7fa7;
   display: block;
   font-size: 13px;
   height: 1px;
@@ -4788,7 +4789,7 @@ button:focus {
   width: 1px;
   z-index: 1000; }
   #skip a:focus {
-    border: 5px solid #176e91;
+    border: 5px solid #1b7fa7;
     height: auto;
     left: 7px;
     outline: 0;
@@ -4857,10 +4858,10 @@ button:focus {
       .place-hold-control p {
         display: inline-block; } }
   .place-hold-control button {
-    background-color: #d0343a;
-    border: 0.08333rem solid #008918;
+    background-color: #fff;
+    border: 0.08333rem solid #d0343a;
     border-radius: 0.13333rem;
-    color: #fff;
+    color: #d0343a;
     cursor: pointer;
     display: inline-block;
     font-size: 0.8rem;
@@ -4878,7 +4879,7 @@ button:focus {
     margin-top: 1.5rem;
     width: 100%; }
     .place-hold-control button:link, .place-hold-control button:visited {
-      color: #fff; }
+      color: #d0343a; }
     .place-hold-control button:hover, .place-hold-control button:hover:visited, .place-hold-control button.active {
       border-color: #776e64;
       background-color: #fff;
@@ -4895,13 +4896,14 @@ button:focus {
       .place-hold-control button.disabled:hover, .place-hold-control button[disabled="disabled"]:hover, .place-hold-control button[disabled="true"]:hover, .place-hold-control button[disabled]:hover, .place-hold-control button[disabled=true]:hover {
         background-color: #d7d4d0;
         border-color: #fff;
-        color: #fff; }
+        color: #d0343a; }
     @media (max-width: 965px) {
       .place-hold-control button {
         display: inline-block; } }
     .place-hold-control button:hover {
+      background-color: #d0343a;
       border-color: #d0343a;
-      color: #d0343a; }
+      color: #fff; }
   .place-hold-control.inline {
     border: 0;
     margin-bottom: 1rem;
@@ -4960,15 +4962,15 @@ dl dd.multi-item-list {
     dl dd.multi-item-list .nypl-basic-table tbody td:last-child {
       display: none; } }
   dl dd.multi-item-list .nypl-basic-table button {
-    background-color: #d0343a;
+    background-color: #fff;
     border: 0.08333rem solid #d0343a;
     border-radius: 0.13333rem;
-    color: #fff;
+    color: #d0343a;
     cursor: pointer;
     display: inline-block;
     font-size: 0.8rem;
     font-weight: normal;
-    height: auto;
+    height: 2.55rem;
     letter-spacing: 0.06rem;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
@@ -4981,7 +4983,7 @@ dl dd.multi-item-list {
     margin-top: 0;
     width: 85%; }
     dl dd.multi-item-list .nypl-basic-table button:link, dl dd.multi-item-list .nypl-basic-table button:visited {
-      color: #fff; }
+      color: #d0343a; }
     dl dd.multi-item-list .nypl-basic-table button:hover, dl dd.multi-item-list .nypl-basic-table button:hover:visited, dl dd.multi-item-list .nypl-basic-table button.active {
       border-color: #776e64;
       background-color: #fff;
@@ -4998,12 +5000,14 @@ dl dd.multi-item-list {
       dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="true"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled=true]:hover {
         background-color: #d7d4d0;
         border-color: #fff;
-        color: #fff; }
+        color: #d0343a; }
     @media (max-width: 965px) {
       dl dd.multi-item-list .nypl-basic-table button {
-        display: inline-block; } }
+        display: inline-block;
+        width: 65%; } }
     dl dd.multi-item-list .nypl-basic-table button:hover {
+      background-color: #d0343a;
       border-color: #d0343a;
-      color: #d0343a; }
+      color: #fff; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
