@@ -274,23 +274,32 @@ dl dd.multi-item-list {
     $border: 0,
     $text-transform: uppercase);
 
-  // TODO: make reusable mixin here:
+  // TODO: make use of current mixin(s) here:
   .nypl-results-sorter {
     button {
+      border-color: lighten($nypl-gray-cool, 15%);
       border-width: $general-border-width / 2;
       font-size: 0.85rem;
+      padding-left: ($general-padding * 1.75);
+      padding-right: ($general-padding * 2);
       text-transform: uppercase;
 
       &:hover {
         background-color: $page-color;
         color: $page-background-color;
         } // /:hover
+
+      .nypl-icon {
+        fill: lighten($nypl-gray-cool, 15%);
+        }
       } // /button
     } // / .nypl-results-sorter
   } // /nypl-results-sorting-controls.style-2
 
 .nypl-results-list {
+
   .nypl-results-item {
+    border-bottom: 0;
 
     h2 {
       margin-bottom: 0;

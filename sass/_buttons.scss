@@ -141,7 +141,7 @@
       color: $text-color;
     }
   }
-}
+} // /"basic" button
 
 @mixin primary-button {
   @include basic-button ($text-color: $nypl-white, $border-color: $nypl-blue, $background-color: $nypl-blue, $border-radius: 0.25rem);
