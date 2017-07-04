@@ -3529,8 +3529,11 @@ button:focus {
         margin-left: 100%; } }
 
 .nypl-results-sorting-controls {
+  border: 0;
   border-bottom: 0.25rem solid #080807;
-  margin-bottom: 1rem; }
+  margin: 0;
+  margin-bottom: 1rem;
+  text-transform: none; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
     display: table; }

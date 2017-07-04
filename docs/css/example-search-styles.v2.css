@@ -3529,8 +3529,11 @@ button:focus {
         margin-left: 100%; } }
 
 .nypl-results-sorting-controls {
+  border: 0;
   border-bottom: 0.25rem solid #080807;
-  margin-bottom: 1rem; }
+  margin: 0;
+  margin-bottom: 1rem;
+  text-transform: none; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
     display: table; }
@@ -5008,6 +5011,25 @@ dl dd.multi-item-list {
     dl dd.multi-item-list .nypl-basic-table button:hover {
       background-color: #d0343a;
       border-color: #d0343a;
+      color: #fff; }
+
+.nypl-results-sorting-controls.style-2 {
+  border: 0;
+  border-bottom: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+  .nypl-results-sorting-controls.style-2::before, .nypl-results-sorting-controls.style-2::after {
+    content: "";
+    display: table; }
+  .nypl-results-sorting-controls.style-2::after {
+    clear: both; }
+  .nypl-results-sorting-controls.style-2 .nypl-results-sorter button {
+    border-width: 0.0625rem;
+    font-size: 0.85rem;
+    text-transform: uppercase; }
+    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover {
+      background-color: #080807;
       color: #fff; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
