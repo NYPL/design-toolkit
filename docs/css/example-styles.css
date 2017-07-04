@@ -3727,6 +3727,7 @@ button:focus {
   display: inline-block;
   margin-right: 1rem;
   color: #776e64;
+  font-size: 1rem;
   font-weight: bold; }
 
 .nypl-results-use {
