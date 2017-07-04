@@ -299,7 +299,8 @@ dl dd.multi-item-list {
 .nypl-results-list {
 
   .nypl-results-item {
-    border-bottom: 0;
+    @include results-item;
+    border: 0;
 
     h2 {
       margin-bottom: 0;
@@ -322,3 +323,8 @@ dl dd.multi-item-list {
     } // /.nypl-results-room
   } // /.nypl-results-item
 }
+
+// numbered pager:
+.nypl-numbered-pager {
+  @include numbered-pager;
+} // .nypl-results-pagination
