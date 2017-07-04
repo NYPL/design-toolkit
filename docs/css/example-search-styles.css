@@ -710,8 +710,7 @@ legend {
   display: table; }
 
 a {
-  text-decoration: underline;
-  text-decoration-style: dotted; }
+  text-decoration: underline; }
   a:link {
     color: #1b7fa7; }
   a:visited {
