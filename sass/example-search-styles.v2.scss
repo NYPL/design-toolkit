@@ -274,9 +274,8 @@ dl dd.multi-item-list {
     $border: 0,
     $text-transform: uppercase);
 
-  // TODO: make reusable mixin:
+  // TODO: make reusable mixin here:
   .nypl-results-sorter {
-
     button {
       border-width: $general-border-width / 2;
       font-size: 0.85rem;
@@ -285,8 +284,32 @@ dl dd.multi-item-list {
       &:hover {
         background-color: $page-color;
         color: $page-background-color;
+        } // /:hover
+      } // /button
+    } // / .nypl-results-sorter
+  } // /nypl-results-sorting-controls.style-2
 
-        }
-      }
+.nypl-results-list {
+  .nypl-results-item {
+
+    h2 {
+      margin-bottom: 0;
     }
-  }
+
+    .nypl-results-media {
+      @include results-media(
+        $color: $nypl-dark-gray,
+        $font-size: 0.85rem,
+        $font-weight: 400);
+    } // /.nypl-results-media
+
+    // TODO: find a more elegant way of writing this:
+    .nypl-results-room,
+    .nypl-results-place,
+    .nypl-results-publisher,
+    .nypl-results-date,
+    .nypl-results-info {
+      font-size: 0.85rem;
+    } // /.nypl-results-room
+  } // /.nypl-results-item
+}
