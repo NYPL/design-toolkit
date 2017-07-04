@@ -327,14 +327,12 @@ $sorter-width: 11em;
   margin-right: 1rem;
 }
 
-// default values for mixin:
 @mixin results-media(
-  $color: $nypl-gray,
-  $font-size: 1rem,
-  $font-weight: bold) {
+$color: $nypl-gray,
+$font-size: "",
+$font-weight: bold) {
   @include results-info;
   color: $color;
-  font-size: $font-size;
   font-weight: $font-weight;
 }
 
