@@ -197,7 +197,7 @@ dl dt.list-multi-control {
   }
 }
 
-// This style block styles the table set in the <dl>
+// This block styles the table set in the <dl>
 // TODO: Combine this layout w/ the one above
 // TODO: refactor code to address nested style depth being too deep.
 dl dd.multi-item-list {
@@ -266,3 +266,27 @@ dl dd.multi-item-list {
     }
   }
 }
+
+////
+// Styles for docs/discovery-search.v3.html
+.nypl-results-sorting-controls.style-2 {
+  @include results-sorting-controls(
+    $border: 0,
+    $text-transform: uppercase);
+
+  // TODO: make reusable mixin:
+  .nypl-results-sorter {
+
+    button {
+      border-width: $general-border-width / 2;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $page-color;
+        color: $page-background-color;
+
+        }
+      }
+    }
+  }
