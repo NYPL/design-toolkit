@@ -335,17 +335,44 @@ dl dd.multi-item-list {
   @include numbered-pager;
   position: relative;
 
-  .pager-previous,
-  .pager-next {
-    @include media($mobile-breakpoint) {
-      position: absolute;
-      top: 2.5rem;
-    }
+  @include media($mobile-breakpoint) {
+    height: 7.75rem;
+  }
+
+  .pager {
+
+    .pages {
+      @include clearfix;
+      @include media($mobile-breakpoint) {
+        padding: 6% 6% 8%;
+      }
+
+      border: ($general-border-width / 1.5);
+
+      .pager-item {
+        margin: 0.5rem 0 0.5rem 9%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      } // /.pager-item
+  }
+
+    .pager-previous,
+    .pager-next {
+      @include media($mobile-breakpoint) {
+        padding: 0 2%;
+        position: absolute;
+        top: 5rem;
+      }
+    } // /.pager-previous / .pager-next
 
     .pager-next {
       @include media($mobile-breakpoint) {
+        right: 1rem;
         text-align: right;
       }
-    }
+    } // /.pager-next
   }
 } // /.nypl-numbered-pager-2
