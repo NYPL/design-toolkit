@@ -5131,17 +5131,36 @@ dl dd.multi-item-list {
     padding: 1rem;
     position: relative;
     width: auto; }
-    .nypl-numbered-pager ul li {
-      display: inline-block;
-      text-align: center;
-      width: 2rem; }
-      .nypl-numbered-pager ul li a {
-        float: none; }
+    @media (max-width: 965px) {
+      .nypl-numbered-pager ul {
+        font-size: 0.85rem;
+        padding-left: 0;
+        padding-right: 0; } }
     .nypl-numbered-pager ul .pager-previous {
       border-right: 0.08333rem solid #776e64;
       width: 12%; }
+      @media (max-width: 965px) {
+        .nypl-numbered-pager ul .pager-previous {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; } }
     .nypl-numbered-pager ul .pager-next {
       border-left: 0.08333rem solid #776e64;
       width: 12%; }
+      @media (max-width: 965px) {
+        .nypl-numbered-pager ul .pager-next {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; } }
+  .nypl-numbered-pager li {
+    border: 1px dotted #d0343a;
+    display: inline-block;
+    text-align: center;
+    width: 2rem; }
+    @media (max-width: 965px) {
+      .nypl-numbered-pager li {
+        margin-left: 0; } }
+    .nypl-numbered-pager li a {
+      float: none; }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
