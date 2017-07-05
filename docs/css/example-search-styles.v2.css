@@ -5163,4 +5163,57 @@ dl dd.multi-item-list {
     .nypl-numbered-pager li a {
       float: none; }
 
+.nypl-numbered-pager-2 {
+  border: #d7d4d0 solid 0.08333rem;
+  border-radius: 0.2rem;
+  position: relative; }
+  .nypl-numbered-pager-2 ul {
+    font-size: 1rem;
+    list-style: none;
+    margin: auto;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+    width: auto; }
+    @media (max-width: 965px) {
+      .nypl-numbered-pager-2 ul {
+        font-size: 0.85rem;
+        padding-left: 0;
+        padding-right: 0; } }
+    .nypl-numbered-pager-2 ul .pager-previous {
+      border-right: 0.08333rem solid #776e64;
+      width: 12%; }
+      @media (max-width: 965px) {
+        .nypl-numbered-pager-2 ul .pager-previous {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; } }
+    .nypl-numbered-pager-2 ul .pager-next {
+      border-left: 0.08333rem solid #776e64;
+      width: 12%; }
+      @media (max-width: 965px) {
+        .nypl-numbered-pager-2 ul .pager-next {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; } }
+  .nypl-numbered-pager-2 li {
+    border: 1px dotted #d0343a;
+    display: inline-block;
+    text-align: center;
+    width: 2rem; }
+    @media (max-width: 965px) {
+      .nypl-numbered-pager-2 li {
+        margin-left: 0; } }
+    .nypl-numbered-pager-2 li a {
+      float: none; }
+  @media (max-width: 965px) {
+    .nypl-numbered-pager-2 .pager-previous,
+    .nypl-numbered-pager-2 .pager-next {
+      position: absolute;
+      top: 2.5rem; } }
+  @media (max-width: 965px) {
+    .nypl-numbered-pager-2 .pager-previous .pager-next,
+    .nypl-numbered-pager-2 .pager-next .pager-next {
+      text-align: right; } }
+
 /*# sourceMappingURL=example-search-styles.v2.css.map */

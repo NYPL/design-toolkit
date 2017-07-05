@@ -314,6 +314,7 @@ dl dd.multi-item-list {
     } // /.nypl-results-media
 
     // TODO: find a more elegant way of writing this:
+    // Posibly a for/in thing...
     .nypl-results-room,
     .nypl-results-place,
     .nypl-results-publisher,
@@ -324,7 +325,27 @@ dl dd.multi-item-list {
   } // /.nypl-results-item
 }
 
-// numbered pager:
+// numbered pager -approach 1:
 .nypl-numbered-pager {
   @include numbered-pager;
 } // .nypl-results-pagination
+
+// numbered pager -approach 2:
+.nypl-numbered-pager-2 {
+  @include numbered-pager;
+  position: relative;
+
+  .pager-previous,
+  .pager-next {
+    @include media($mobile-breakpoint) {
+      position: absolute;
+      top: 2.5rem;
+    }
+
+    .pager-next {
+      @include media($mobile-breakpoint) {
+        text-align: right;
+      }
+    }
+  }
+} // /.nypl-numbered-pager-2
