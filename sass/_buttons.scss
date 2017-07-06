@@ -23,21 +23,21 @@
 }
 
 @mixin basic-button (
-  $text-color: $button-text-color,
   $border-color: $nypl-search-color-dark,
   $background-color: $nypl-search-color-dark,
-  $hover-text-color: $nypl-search-color-dark,
-  $hover-background-color: $button-text-color,
   $border-radius: $general-border-radius,
   $border-width: $general-border-width,
+  $collapsible: false,
   $disabled-color: $nypl-light-gray,
   $font-size: 1rem,
+  $hover-text-color: $nypl-search-color-dark,
+  $hover-background-color: $button-text-color,
   $height: auto,
-  $collapsible: false,
+  $letter-spacing: normal,
   $padding-horizontal: 0.75rem,
   $padding-vertical: 0.2rem,
-  $text-transform: none,
-  $letter-spacing: normal) {
+  $text-color: $button-text-color,
+  $text-transform: none) {
   background-color: $background-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
