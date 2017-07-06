@@ -205,6 +205,7 @@ dl dt.list-multi-control {
 }
 
 // This block styles the table set in the <dl>
+//
 // TODO: Combine this layout w/ the one above
 // TODO: refactor code to address nested style depth being too deep.
 // TODO: refactor so the table is not dependent on being embedded in the <dl>
@@ -222,7 +223,7 @@ dl dd.multi-item-list,
     th {
       border: 0;
       font-size: 0.85rem;
-      padding-bottom: 1rem;
+      padding-bottom: 0.5rem;
       text-transform: uppercase;
       width: 25%;
     }
@@ -237,6 +238,10 @@ dl dd.multi-item-list,
     td {
       border: 0;
       padding-top: 1rem;
+    }
+
+    tbody tr:first-child {
+      line-height: 1.2;
     }
 
     tbody tr:last-child {
@@ -268,7 +273,7 @@ dl dd.multi-item-list,
         display: inline-block;
         width: 65%;
       }
-
+      // TODO: Make use of the built-in hovering...
       &:hover {
         background-color: $nypl-red;
         border-color: $nypl-red;
@@ -281,6 +286,7 @@ dl dd.multi-item-list,
 ////
 // Styles for docs/discovery-search.v3.html
 .nypl-results-sorting-controls.style-2 {
+
   @include results-sorting-controls(
     $border: 0,
     $text-transform: uppercase);
@@ -309,12 +315,22 @@ dl dd.multi-item-list,
 
 .nypl-results-list {
 
+  // override the default spacing between items here:
+  .nypl-results-item-description {
+    @include results-item-description($item-margin-bottom: 1.2rem);
+  }
+
   .nypl-results-item {
     @include results-item;
     border: 0;
 
     h2 {
       margin-bottom: 0;
+    }
+
+    // If there is a request table inline in the results, add the class
+    &.has-request {
+      margin-bottom: 3rem;
     }
 
     .nypl-results-media {
@@ -336,12 +352,16 @@ dl dd.multi-item-list,
   } // /.nypl-results-item
 }
 
+//
 // numbered pager -approach 1:
+//
 .nypl-numbered-pager {
   @include numbered-pager;
 } // .nypl-results-pagination
 
+//
 // numbered pager -approach 2:
+//
 .nypl-numbered-pager-2 {
   @include numbered-pager;
   position: relative;

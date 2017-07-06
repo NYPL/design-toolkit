@@ -4956,7 +4956,7 @@ dl dd.multi-item-list,
   .nypl-results-item .nypl-basic-table th {
     border: 0;
     font-size: 0.85rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     text-transform: uppercase;
     width: 25%; }
   @media (max-width: 965px) {
@@ -4969,6 +4969,9 @@ dl dd.multi-item-list,
   .nypl-results-item .nypl-basic-table td {
     border: 0;
     padding-top: 1rem; }
+  dl dd.multi-item-list .nypl-basic-table tbody tr:first-child,
+  .nypl-results-item .nypl-basic-table tbody tr:first-child {
+    line-height: 1.2; }
   dl dd.multi-item-list .nypl-basic-table tbody tr:last-child,
   .nypl-results-item .nypl-basic-table tbody tr:last-child {
     border-bottom: 0; }
@@ -5070,6 +5073,8 @@ dl dd.multi-item-list,
     .nypl-results-sorting-controls.style-2 .nypl-results-sorter button .nypl-icon {
       fill: #9d9ea1; }
 
+.nypl-results-list .nypl-results-item-description {
+  margin-bottom: 1.2rem; }
 .nypl-results-list .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
@@ -5142,6 +5147,8 @@ dl dd.multi-item-list,
     max-width: none; }
   .nypl-results-list .nypl-results-item h2 {
     margin-bottom: 0; }
+  .nypl-results-list .nypl-results-item.has-request {
+    margin-bottom: 3rem; }
   .nypl-results-list .nypl-results-item .nypl-results-media {
     display: inline-block;
     margin-right: 1rem;
