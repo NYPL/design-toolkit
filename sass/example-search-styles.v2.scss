@@ -62,11 +62,12 @@
 
   dl {
     border-left: 0;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     padding-left: 0;
 
     dt {
       color: $nypl-dark-gray;
+      font-size: 0.85rem;
       font-weight: 700;
       letter-spacing: 0.04rem;
       margin: 0 0.5rem 1rem 0;
@@ -81,13 +82,17 @@
     }
 
     dd {
-      font-size: 0.95rem;
+      //font-size: 0.95rem;
       margin-bottom: 1rem;
       width: 70%;
 
       @include media($mobile-breakpoint) {
         margin-bottom: 1.25rem;
         width: 100%;
+      }
+
+      &.subject-listing a {
+        display: block;
       }
     }
   }
@@ -150,6 +155,7 @@
 
         th {
           border: 0;
+          font-size: 0.85rem;
           padding-bottom: 1rem;
           text-transform: uppercase;
           width: 25%;
@@ -193,6 +199,7 @@ dl dt.list-multi-control {
   h3 {
     font-weight: 400;
     margin: 0 0 1rem;
+    text-transform: none;
     width: 100%;
   }
 }
@@ -214,6 +221,7 @@ dl dd.multi-item-list,
 
     th {
       border: 0;
+      font-size: 0.85rem;
       padding-bottom: 1rem;
       text-transform: uppercase;
       width: 25%;
