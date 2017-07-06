@@ -200,7 +200,10 @@ dl dt.list-multi-control {
 // This block styles the table set in the <dl>
 // TODO: Combine this layout w/ the one above
 // TODO: refactor code to address nested style depth being too deep.
-dl dd.multi-item-list {
+// TODO: refactor so the table is not dependent on being embedded in the <dl>
+
+dl dd.multi-item-list,
+.nypl-results-item {
   width: 100%;
 
   .nypl-basic-table {
