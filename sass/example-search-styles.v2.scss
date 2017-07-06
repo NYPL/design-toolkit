@@ -291,26 +291,35 @@ dl dd.multi-item-list,
     $border: 0,
     $text-transform: uppercase);
 
-  // TODO: make use of current mixin(s) here:
   .nypl-results-sorter {
+
     button {
-      border-color: lighten($nypl-gray-cool, 15%);
-      border-width: $general-border-width / 2;
-      font-size: 0.85rem;
-      padding-left: ($general-padding * 1.75);
-      padding-right: ($general-padding * 2);
+      @include basic-button(
+        $background-color: $nypl-white,
+        $border-color: lighten($nypl-gray-cool, 15%),
+        $border-width: ($general-border-width / 2),
+        $collapsible: true,
+        $font-size: 0.85rem,
+        $hover-background-color: $nypl-white,
+        $padding-vertical: ($general-padding * 0.4),
+        $text-color: $nypl-dark-gray);
+      padding-right: 1.75rem;
       text-transform: uppercase;
 
-      &:hover {
-        background-color: $page-color;
-        color: $page-background-color;
-        } // /:hover
-
       .nypl-icon {
-        fill: lighten($nypl-gray-cool, 15%);
+        right: 0.5rem;
         }
       } // /button
     } // / .nypl-results-sorter
+
+  ul {
+    background: $nypl-white;
+    border: ($general-border-width / 1.5) solid lighten($nypl-gray-cool, 15%);
+    border-radius: 0;
+    // TODO: Bring this drop shadow into a mixin, for the global snazz...
+    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
+    width: 14rem;
+    }
   } // /nypl-results-sorting-controls.style-2
 
 .nypl-results-list {
