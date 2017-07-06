@@ -3726,6 +3726,7 @@ button:focus {
   display: inline-block;
   margin-right: 1rem;
   color: #776e64;
+  font-size: "";
   font-weight: bold; }
 
 .nypl-results-use {
@@ -4941,29 +4942,39 @@ dl dt.list-multi-control {
     margin: 0 0 1rem;
     width: 100%; }
 
-dl dd.multi-item-list {
+dl dd.multi-item-list,
+.nypl-results-item {
   width: 100%; }
-  dl dd.multi-item-list .nypl-basic-table thead {
+  dl dd.multi-item-list .nypl-basic-table thead,
+  .nypl-results-item .nypl-basic-table thead {
     border-bottom: 0.08333rem solid #76777b; }
-  dl dd.multi-item-list .nypl-basic-table th {
+  dl dd.multi-item-list .nypl-basic-table th,
+  .nypl-results-item .nypl-basic-table th {
     border: 0;
     padding-bottom: 1rem;
     text-transform: uppercase;
     width: 25%; }
   @media (max-width: 965px) {
     dl dd.multi-item-list .nypl-basic-table th:first-child,
-    dl dd.multi-item-list .nypl-basic-table th:last-child {
+    dl dd.multi-item-list .nypl-basic-table th:last-child,
+    .nypl-results-item .nypl-basic-table th:first-child,
+    .nypl-results-item .nypl-basic-table th:last-child {
       display: none; } }
-  dl dd.multi-item-list .nypl-basic-table td {
+  dl dd.multi-item-list .nypl-basic-table td,
+  .nypl-results-item .nypl-basic-table td {
     border: 0;
     padding-top: 1rem; }
-  dl dd.multi-item-list .nypl-basic-table tbody tr:last-child {
+  dl dd.multi-item-list .nypl-basic-table tbody tr:last-child,
+  .nypl-results-item .nypl-basic-table tbody tr:last-child {
     border-bottom: 0; }
   @media (max-width: 965px) {
     dl dd.multi-item-list .nypl-basic-table tbody td:first-child,
-    dl dd.multi-item-list .nypl-basic-table tbody td:last-child {
+    dl dd.multi-item-list .nypl-basic-table tbody td:last-child,
+    .nypl-results-item .nypl-basic-table tbody td:first-child,
+    .nypl-results-item .nypl-basic-table tbody td:last-child {
       display: none; } }
-  dl dd.multi-item-list .nypl-basic-table button {
+  dl dd.multi-item-list .nypl-basic-table button,
+  .nypl-results-item .nypl-basic-table button {
     background-color: #fff;
     border: 0.08333rem solid #d0343a;
     border-radius: 0.13333rem;
@@ -4984,30 +4995,48 @@ dl dd.multi-item-list {
     transition: all 0.1s ease-in 0s;
     margin-top: 0;
     width: 85%; }
-    dl dd.multi-item-list .nypl-basic-table button:link, dl dd.multi-item-list .nypl-basic-table button:visited {
+    dl dd.multi-item-list .nypl-basic-table button:link, dl dd.multi-item-list .nypl-basic-table button:visited,
+    .nypl-results-item .nypl-basic-table button:link,
+    .nypl-results-item .nypl-basic-table button:visited {
       color: #d0343a; }
-    dl dd.multi-item-list .nypl-basic-table button:hover, dl dd.multi-item-list .nypl-basic-table button:hover:visited, dl dd.multi-item-list .nypl-basic-table button.active {
+    dl dd.multi-item-list .nypl-basic-table button:hover, dl dd.multi-item-list .nypl-basic-table button:hover:visited, dl dd.multi-item-list .nypl-basic-table button.active,
+    .nypl-results-item .nypl-basic-table button:hover,
+    .nypl-results-item .nypl-basic-table button:hover:visited,
+    .nypl-results-item .nypl-basic-table button.active {
       border-color: #776e64;
       background-color: #fff;
       color: #776e64; }
-    dl dd.multi-item-list .nypl-basic-table button:focus {
+    dl dd.multi-item-list .nypl-basic-table button:focus,
+    .nypl-results-item .nypl-basic-table button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    dl dd.multi-item-list .nypl-basic-table button.disabled, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"], dl dd.multi-item-list .nypl-basic-table button[disabled="true"], dl dd.multi-item-list .nypl-basic-table button[disabled], dl dd.multi-item-list .nypl-basic-table button[disabled=true] {
+    dl dd.multi-item-list .nypl-basic-table button.disabled, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"], dl dd.multi-item-list .nypl-basic-table button[disabled="true"], dl dd.multi-item-list .nypl-basic-table button[disabled], dl dd.multi-item-list .nypl-basic-table button[disabled=true],
+    .nypl-results-item .nypl-basic-table button.disabled,
+    .nypl-results-item .nypl-basic-table button[disabled="disabled"],
+    .nypl-results-item .nypl-basic-table button[disabled="true"],
+    .nypl-results-item .nypl-basic-table button[disabled],
+    .nypl-results-item .nypl-basic-table button[disabled=true] {
       background-color: #d7d4d0;
       border-color: #fff;
       cursor: default; }
-      dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="true"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled=true]:hover {
+      dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="true"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled=true]:hover,
+      .nypl-results-item .nypl-basic-table button.disabled:hover,
+      .nypl-results-item .nypl-basic-table button[disabled="disabled"]:hover,
+      .nypl-results-item .nypl-basic-table button[disabled="true"]:hover,
+      .nypl-results-item .nypl-basic-table button[disabled]:hover,
+      .nypl-results-item .nypl-basic-table button[disabled=true]:hover {
         background-color: #d7d4d0;
         border-color: #fff;
         color: #d0343a; }
     @media (max-width: 965px) {
-      dl dd.multi-item-list .nypl-basic-table button {
+      dl dd.multi-item-list .nypl-basic-table button,
+      .nypl-results-item .nypl-basic-table button {
         display: inline-block;
         width: 65%; } }
-    dl dd.multi-item-list .nypl-basic-table button:hover {
+    dl dd.multi-item-list .nypl-basic-table button:hover,
+    .nypl-results-item .nypl-basic-table button:hover {
       background-color: #d0343a;
       border-color: #d0343a;
       color: #fff; }
@@ -5112,6 +5141,7 @@ dl dd.multi-item-list {
     display: inline-block;
     margin-right: 1rem;
     color: #080807;
+    font-size: 0.85rem;
     font-weight: 400; }
   .nypl-results-list .nypl-results-item .nypl-results-room,
   .nypl-results-list .nypl-results-item .nypl-results-place,
