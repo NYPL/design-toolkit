@@ -85,7 +85,11 @@ $results-item-border-width: 0.0625rem;
 
     button {
       // the button inside a facet
-      @include basic-button($border-radius: 2rem, $padding-vertical: 0, $padding-horizontal: 0, $border-width: 0);
+      @include basic-button(
+      $border-radius: 2rem,
+      $padding-vertical: 0,
+      $padding-horizontal: 0,
+      $border-width: 0);
       margin: 0.25rem 0 0.25rem 0.25rem;
       vertical-align: bottom;
 
@@ -94,14 +98,20 @@ $results-item-border-width: 0.0625rem;
       }
 
       .nypl-icon {
-        @include nypl-icon($fill: $button-text-color, $background-color: $nypl-search-color-dark, $border-radius: 1rem);
+        @include nypl-icon(
+        $fill: $button-text-color,
+        $background-color: $nypl-search-color-dark,
+        $border-radius: 1rem);
         display: block;
         margin: 0;
       }
 
       &:hover {
         .nypl-icon {
-          @include nypl-icon($background-color: $button-text-color, $fill: $nypl-search-color-dark, $border-radius: 1rem);
+          @include nypl-icon(
+          $background-color: $button-text-color,
+          $fill: $nypl-search-color-dark,
+          $border-radius: 1rem);
           display: block;
           margin: 0;
         }
