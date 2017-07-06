@@ -333,6 +333,7 @@ $font-size: "",
 $font-weight: bold) {
   @include results-info;
   color: $color;
+  font-size: $font-size;
   font-weight: $font-weight;
 }
 
