@@ -312,6 +312,12 @@ dl dd.multi-item-list,
         }
 
       } // /.pager-item
+
+      .current {
+        background-color: $nypl-blue-dark;
+        color: $nypl-white;
+        border-radius: $general-border-radius;
+      }
   }
 
     .previous,
@@ -329,12 +335,30 @@ dl dd.multi-item-list,
       width: 20%;
 
     } // /.pager-previous / .pager-next
+    .previous {
+      @include media($mobile-breakpoint) {
+        border: 0;
+        padding: 1%;
+      }
+
+      border-right: ($general-border-width / 1.5) solid $nypl-light-gray;
+      margin-right: 2rem;
+      padding: 1rem 2rem;
+      width: 10%;
+    }
 
     .next {
       @include media($mobile-breakpoint) {
+        border: 0;
+        padding: 0;
         right: 1rem;
         text-align: right;
       }
+
+      border-left: ($general-border-width / 1.5) solid $nypl-light-gray;
+      padding: 1rem 0;
+      text-align: right;
+      width: 10%;
     } // /.pager-next
   }
 } // /.nypl-numbered-pager-2
