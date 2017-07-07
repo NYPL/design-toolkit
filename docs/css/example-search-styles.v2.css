@@ -5228,12 +5228,12 @@ dl dd.multi-item-list,
       float: none; }
   @media (max-width: 965px) {
     .nypl-numbered-pager-2 {
-      padding: 0 4% 4rem; } }
+      padding: 0 0 3rem; } }
   .nypl-numbered-pager-2 .pager .pages {
-    border: 0.08333rem;
     float: left;
     padding: 1rem 0;
-    width: 64%; }
+    text-align: center;
+    width: 62%; }
     .nypl-numbered-pager-2 .pager .pages::before, .nypl-numbered-pager-2 .pager .pages::after {
       content: "";
       display: table; }
@@ -5241,6 +5241,7 @@ dl dd.multi-item-list,
       clear: both; }
     @media (max-width: 965px) {
       .nypl-numbered-pager-2 .pager .pages {
+        border-bottom: 0.08333rem solid #d7d4d0;
         float: none;
         padding: 2% 0;
         width: 100%; } }
@@ -5267,18 +5268,18 @@ dl dd.multi-item-list,
       .nypl-numbered-pager-2 .pager .previous,
       .nypl-numbered-pager-2 .pager .next {
         float: none;
-        padding: 0 2%;
+        padding: 4% 2rem;
         position: absolute;
-        top: 4rem; } }
+        top: 47%; } }
   .nypl-numbered-pager-2 .pager .previous {
     border-right: 0.08333rem solid #d7d4d0;
-    margin-right: 2rem;
+    margin-right: 1rem;
     padding: 1rem 2rem;
     width: 10%; }
     @media (max-width: 965px) {
       .nypl-numbered-pager-2 .pager .previous {
         border: 0;
-        padding: 1%; } }
+        padding: 2.75% 0 0 2rem; } }
   .nypl-numbered-pager-2 .pager .next {
     border-left: 0.08333rem solid #d7d4d0;
     padding: 1rem 0;
@@ -5287,7 +5288,7 @@ dl dd.multi-item-list,
     @media (max-width: 965px) {
       .nypl-numbered-pager-2 .pager .next {
         border: 0;
-        padding: 0;
+        padding: 2.75% 6% 0 0;
         right: 1rem;
         text-align: right; } }
 
