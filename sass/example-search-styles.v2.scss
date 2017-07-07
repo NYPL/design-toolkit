@@ -279,7 +279,7 @@ dl dd.multi-item-list,
   position: relative;
 
   @include media($mobile-breakpoint) {
-    padding: 0 4% 4rem;
+    padding: 0 0 3rem;
   }
 
   .pager {
@@ -287,15 +287,16 @@ dl dd.multi-item-list,
     .pages {
       @include clearfix;
       @include media($mobile-breakpoint) {
+        border-bottom: ($general-border-width / 1.5) solid $nypl-light-gray;
         float: none;
         padding: 2% 0;
+        text-align: center;
         width: 100%;
       }
 
-      border: ($general-border-width / 1.5);
       float: left;
       padding: 1rem 0;
-      width: 64%;
+      width: 62%;
 
       .pager-item {
         @include media($mobile-breakpoint) {
@@ -325,9 +326,11 @@ dl dd.multi-item-list,
 
       @include media($mobile-breakpoint) {
         float: none;
-        padding: 0 2%;
+        padding: 4% 2rem;
         position: absolute;
-        top: 4rem;
+        // Keep the rule below for a mintue
+        // top: 3rem;
+        top: 47%;
       }
 
       float: left;
@@ -338,11 +341,11 @@ dl dd.multi-item-list,
     .previous {
       @include media($mobile-breakpoint) {
         border: 0;
-        padding: 1%;
+        padding: 2.75% 0 0 2rem;
       }
 
       border-right: ($general-border-width / 1.5) solid $nypl-light-gray;
-      margin-right: 2rem;
+      margin-right: 1.75rem;
       padding: 1rem 2rem;
       width: 10%;
     }
@@ -350,7 +353,7 @@ dl dd.multi-item-list,
     .next {
       @include media($mobile-breakpoint) {
         border: 0;
-        padding: 0;
+        padding: 2.75% 6% 0 0;
         right: 1rem;
         text-align: right;
       }
