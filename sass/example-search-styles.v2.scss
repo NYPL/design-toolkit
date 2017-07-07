@@ -175,11 +175,11 @@ dl dd.multi-item-list,
         $letter-spacing: 0.06rem,
         $text-transform: uppercase);
       margin-top: 0;
-      width: 85%;
+      width: 8rem;
 
       @include media($mobile-breakpoint) {
         display: inline-block;
-        width: 65%;
+        // width: 65%;
       } // /$mobile-breakpoint
     } // /button
   } // /.nypl-basic-table
@@ -294,7 +294,7 @@ dl dd.multi-item-list,
       }
 
       float: left;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       text-align: center;
       width: 62%;
 
@@ -346,7 +346,7 @@ dl dd.multi-item-list,
 
       border-right: ($general-border-width / 1.5) solid $nypl-light-gray;
       margin-right: 1rem;
-      padding: 1rem 2rem;
+      padding: 0.5rem 2rem;
       width: 10%;
     }
 
@@ -359,7 +359,7 @@ dl dd.multi-item-list,
       }
 
       border-left: ($general-border-width / 1.5) solid $nypl-light-gray;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       text-align: right;
       width: 10%;
     } // /.pager-next
