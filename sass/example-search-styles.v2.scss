@@ -290,12 +290,12 @@ dl dd.multi-item-list,
         border-bottom: ($general-border-width / 1.5) solid $nypl-light-gray;
         float: none;
         padding: 2% 0;
-        text-align: center;
         width: 100%;
       }
 
       float: left;
       padding: 1rem 0;
+      text-align: center;
       width: 62%;
 
       .pager-item {
@@ -345,7 +345,7 @@ dl dd.multi-item-list,
       }
 
       border-right: ($general-border-width / 1.5) solid $nypl-light-gray;
-      margin-right: 1.75rem;
+      margin-right: 1rem;
       padding: 1rem 2rem;
       width: 10%;
     }
