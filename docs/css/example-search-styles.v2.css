@@ -5232,7 +5232,8 @@ dl dd.multi-item-list,
   .nypl-numbered-pager-2 .pager .pages {
     border: 0.08333rem;
     float: left;
-    width: 60%; }
+    padding: 1rem 0;
+    width: 64%; }
     .nypl-numbered-pager-2 .pager .pages::before, .nypl-numbered-pager-2 .pager .pages::after {
       content: "";
       display: table; }
@@ -5248,8 +5249,15 @@ dl dd.multi-item-list,
       padding: 0.25em 1.66667%;
       text-align: center;
       width: 10%; }
+      @media (max-width: 965px) {
+        .nypl-numbered-pager-2 .pager .pages .pager-item {
+          margin-right: 5.5%; } }
       .nypl-numbered-pager-2 .pager .pages .pager-item:last-child {
         margin-right: 0; }
+    .nypl-numbered-pager-2 .pager .pages .current {
+      background-color: #135772;
+      color: #fff;
+      border-radius: 0.2rem; }
   .nypl-numbered-pager-2 .pager .previous,
   .nypl-numbered-pager-2 .pager .next {
     float: left;
@@ -5262,9 +5270,25 @@ dl dd.multi-item-list,
         padding: 0 2%;
         position: absolute;
         top: 4rem; } }
-  @media (max-width: 965px) {
-    .nypl-numbered-pager-2 .pager .next {
-      right: 1rem;
-      text-align: right; } }
+  .nypl-numbered-pager-2 .pager .previous {
+    border-right: 0.08333rem solid #d7d4d0;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    width: 10%; }
+    @media (max-width: 965px) {
+      .nypl-numbered-pager-2 .pager .previous {
+        border: 0;
+        padding: 1%; } }
+  .nypl-numbered-pager-2 .pager .next {
+    border-left: 0.08333rem solid #d7d4d0;
+    padding: 1rem 0;
+    text-align: right;
+    width: 10%; }
+    @media (max-width: 965px) {
+      .nypl-numbered-pager-2 .pager .next {
+        border: 0;
+        padding: 0;
+        right: 1rem;
+        text-align: right; } }
 
 /*# sourceMappingURL=example-search-styles.v2.css.map */
