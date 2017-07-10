@@ -5051,7 +5051,7 @@ dl dd.multi-item-list,
     width: 14rem; }
 
 .nypl-results-list .nypl-results-item-description {
-  margin-bottom: 1.2rem; }
+  margin-bottom: 0.25rem; }
 .nypl-results-list .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
@@ -5138,6 +5138,8 @@ dl dd.multi-item-list,
   .nypl-results-list .nypl-results-item .nypl-results-date,
   .nypl-results-list .nypl-results-item .nypl-results-info {
     font-size: 0.85rem; }
+  .nypl-results-list .nypl-results-item .nypl-results-publisher {
+    margin-right: 0.25rem; }
 
 .nypl-numbered-pager {
   border: #d7d4d0 solid 0.08333rem;
