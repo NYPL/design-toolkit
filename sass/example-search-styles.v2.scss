@@ -261,6 +261,10 @@ dl dd.multi-item-list,
     .nypl-results-info {
       font-size: 0.85rem;
     } // /.nypl-results-room
+    // Special case where we need the the publisher & published date closer to one another:
+    .nypl-results-publisher {
+      margin-right: 0.25rem;
+    }
   } // /.nypl-results-item
 }
 
