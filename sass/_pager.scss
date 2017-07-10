@@ -1,0 +1,75 @@
+// Tradional numbered pager
+@mixin pager-item(
+  $width: ($general-padding * 2)) {
+  li {
+    border: 1px dotted $nypl-red;
+    display: inline-block;
+    text-align: center;
+    width: $width;
+
+    @include media($mobile-breakpoint) {
+      margin-left: 0;
+    }
+
+    a {
+      float: none;
+    }
+  }
+}
+
+@mixin pager-items(
+  $border: ($general-border-width / 1.5) solid $nypl-gray,
+  $font-size: 1rem) {
+  ul {
+    //display: inline-block;
+    font-size: $font-size;
+    list-style: none;
+    margin: auto;
+    overflow: hidden;
+    padding: $general-padding;
+    position: relative;
+    width: auto;
+
+    @include media($mobile-breakpoint) {
+      font-size: ($font-size * 0.85);
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .pager-previous {
+      border-right: $border;
+      width: 12%;
+
+      @include media($mobile-breakpoint) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .pager-next {
+      border-left: $border;
+      width: 12%;
+
+      @include media($mobile-breakpoint) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @include pager-item;
+} // /pager-items
+
+@mixin numbered-pager(
+  $border-color: $nypl-light-gray,
+  $border-width: ($general-border-width / 1.5),
+  $border-radius: $general-border-radius) {
+  // container
+  border: $border-color solid $border-width;
+  border-radius: $border-radius;
+  // numbers
+  // forward-backward arrows
+  @include pager-items;
+}

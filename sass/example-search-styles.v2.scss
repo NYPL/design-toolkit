@@ -46,7 +46,7 @@
   margin-bottom: 0;
 }
 
-////// Title
+// discovery-item.v2.html
 // item info / the full item record
 .nypl-item-details {
 
@@ -97,101 +97,7 @@
     }
   }
 
-}
-// Right rail / column hold button &
-// TODO: remove the Right Rail pattern as its been deprecated.
-.place-hold-control {
-  border: solid $nypl-gray $general-border-width / 1.5;
-  padding: 1rem;
-
-  h3 {
-    font-weight: 400;
-    margin: 0 0 1rem;
-  }
-
-  p {
-    margin: 0;
-
-    @include media($mobile-breakpoint) {
-      display: inline-block;
-    }
-  }
-
-  button {
-    @include basic-button(
-      $text-color: $nypl-red,
-      $background-color: $nypl-white,
-      $border-color: $nypl-red,
-      $border-radius: $general-border-radius / 1.5,
-      $border-width: $general-border-width / 1.5,
-      $font-size: 0.8rem,
-      $letter-spacing: 0.06rem,
-      $text-transform: uppercase);
-    margin-top: 1.5rem;
-    width: 100%;
-
-    @include media($mobile-breakpoint) {
-      display: inline-block;
-    }
-
-    &:hover {
-      background-color: $nypl-red;
-      border-color: $nypl-red;
-      color: $nypl-white;
-    }
-  }
-
-// this the table version for multiple items
-// This style block styles the table set in the <aside>
-  &.inline {
-    border: 0;
-    margin-bottom: 1rem;
-    padding-left: 0;
-
-    .nypl-basic-table {
-
-      thead {
-        border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
-
-        th {
-          border: 0;
-          font-size: 0.85rem;
-          padding-bottom: 1rem;
-          text-transform: uppercase;
-          width: 25%;
-        }
-
-        @include media($mobile-breakpoint) {
-          th:first-child,
-          th:last-child {
-            display: none;
-          }
-        }
-      }
-
-      td {
-        border: 0;
-        padding-top: 1rem;
-      }
-
-      tbody tr:last-child {
-        border-bottom: 0;
-      }
-
-      @include media($mobile-breakpoint) {
-        tbody td:first-child,
-        tbody td:last-child {
-          display: none;
-      }
-    }
-
-      button {
-        margin-top: 0;
-        width: 85%;
-      }
-    }
-  }
-}
+} // /.nypl-item-details
 
 dl dt.list-multi-control {
   width: 100%;
@@ -204,10 +110,14 @@ dl dt.list-multi-control {
   }
 }
 
-// This style block styles the table set in the <dl>
+// This block styles the table set in the <dl>
+//
 // TODO: Combine this layout w/ the one above
-// TODO: refactor code to address nested style depth being too deep.
-dl dd.multi-item-list {
+// TODO: refactor code below to address nested style depth being too deep.
+// TODO: refactor so the table is not dependent on being embedded in the <dl>
+
+dl dd.multi-item-list,
+.nypl-results-item {
   width: 100%;
 
   .nypl-basic-table {
@@ -219,7 +129,7 @@ dl dd.multi-item-list {
     th {
       border: 0;
       font-size: 0.85rem;
-      padding-bottom: 1rem;
+      padding-bottom: 0.5rem;
       text-transform: uppercase;
       width: 25%;
     }
@@ -234,6 +144,10 @@ dl dd.multi-item-list {
     td {
       border: 0;
       padding-top: 1rem;
+    }
+
+    tbody tr:first-child {
+      line-height: 1.2;
     }
 
     tbody tr:last-child {
@@ -252,25 +166,206 @@ dl dd.multi-item-list {
         $text-color: $nypl-red,
         $background-color: $nypl-white,
         $border-color: $nypl-red,
-        $border-radius: $general-border-radius / 1.5,
-        $border-width: $general-border-width / 1.5,
+        $border-radius: ($general-border-radius / 1.5),
+        $border-width: ($general-border-width / 1.5),
         $font-size: 0.8rem,
         $height: 2.5rem,
+        $hover-text-color: $nypl-white,
+        $hover-background-color: $nypl-red,
         $letter-spacing: 0.06rem,
         $text-transform: uppercase);
       margin-top: 0;
-      width: 85%;
+      width: 8rem;
 
       @include media($mobile-breakpoint) {
         display: inline-block;
-        width: 65%;
+        // width: 65%;
+      } // /$mobile-breakpoint
+    } // /button
+  } // /.nypl-basic-table
+}
+
+////
+// Styles for docs/discovery-search.v3.html
+////
+.nypl-results-sorting-controls.style-2 {
+
+  @include results-sorting-controls(
+    $border: 0,
+    $text-transform: uppercase);
+
+  .nypl-results-sorter {
+
+    button {
+      @include basic-button(
+        $background-color: $nypl-white,
+        $border-color: lighten($nypl-gray-cool, 15%),
+        $border-width: ($general-border-width / 2),
+        $collapsible: true,
+        $font-size: 0.85rem,
+        $hover-background-color: $nypl-white,
+        $padding-vertical: ($general-padding * 0.4),
+        $text-color: $nypl-dark-gray);
+      padding-right: 1.75rem;
+      text-transform: uppercase;
+
+      .nypl-icon {
+        right: 0.5rem;
+        }
+      } // /button
+    } // / .nypl-results-sorter
+
+  ul {
+    background: $nypl-white;
+    border: ($general-border-width / 1.5) solid lighten($nypl-gray-cool, 15%);
+    border-radius: 0;
+    // TODO: Bring this drop shadow into a mixin, for the global snazz...
+    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
+    width: 14rem;
+    }
+  } // /nypl-results-sorting-controls.style-2
+
+.nypl-results-list {
+
+  // override the default spacing between items here:
+  .nypl-results-item-description {
+    @include results-item-description($item-margin-bottom: 0.25rem);
+  }
+
+  .nypl-results-item {
+    @include results-item;
+    border: 0;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    // If there is a request table inline in the results, add the class
+    &.has-request {
+      margin-bottom: 3rem;
+    }
+
+    .nypl-results-media {
+      @include results-media(
+        $color: $nypl-dark-gray,
+        $font-size: 0.85rem,
+        $font-weight: 400);
+    } // /.nypl-results-media
+
+    // TODO: find a more elegant way of writing this:
+    // Posibly a for/in thing...
+    .nypl-results-room,
+    .nypl-results-place,
+    .nypl-results-publisher,
+    .nypl-results-date,
+    .nypl-results-info {
+      font-size: 0.85rem;
+    } // /.nypl-results-room
+    // Special case where we need the the publisher & published date closer to one another:
+    .nypl-results-publisher {
+      margin-right: 0.25rem;
+    }
+  } // /.nypl-results-item
+}
+
+//
+// numbered pager -approach 1:
+//
+.nypl-numbered-pager {
+  @include numbered-pager;
+} // .nypl-results-pagination
+
+//
+// numbered pager -approach 2:
+//
+.nypl-numbered-pager-2 {
+  @include numbered-pager;
+  position: relative;
+
+  @include media($mobile-breakpoint) {
+    padding: 0 0 3rem;
+  }
+
+  .pager {
+
+    .pages {
+      @include clearfix;
+      @include media($mobile-breakpoint) {
+        border-bottom: ($general-border-width / 1.5) solid $nypl-light-gray;
+        float: none;
+        padding: 2% 0;
+        width: 100%;
       }
 
-      &:hover {
-        background-color: $nypl-red;
-        border-color: $nypl-red;
+      float: left;
+      padding: 0.5rem 0;
+      text-align: center;
+      width: 62%;
+
+      .pager-item {
+        @include media($mobile-breakpoint) {
+          margin-right: 5.5%;
+        }
+
+        margin-right: 6.5%;
+        padding: 0.25em 1.66667%;
+        text-align: center;
+        width: 10%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      } // /.pager-item
+
+      .current {
+        background-color: $nypl-blue-dark;
         color: $nypl-white;
+        border-radius: $general-border-radius;
       }
-    }
   }
-}
+
+    .previous,
+    .next {
+
+      @include media($mobile-breakpoint) {
+        float: none;
+        padding: 4% 2rem;
+        position: absolute;
+        // Keep the rule below for a mintue
+        // top: 3rem;
+        top: 47%;
+      }
+
+      float: left;
+      position: static;
+      width: 20%;
+
+    } // /.pager-previous / .pager-next
+    .previous {
+      @include media($mobile-breakpoint) {
+        border: 0;
+        padding: 2.75% 0 0 2rem;
+      }
+
+      border-right: ($general-border-width / 1.5) solid $nypl-light-gray;
+      margin-right: 1rem;
+      padding: 0.5rem 2rem;
+      width: 10%;
+    }
+
+    .next {
+      @include media($mobile-breakpoint) {
+        border: 0;
+        padding: 2.75% 6% 0 0;
+        right: 1rem;
+        text-align: right;
+      }
+
+      border-left: ($general-border-width / 1.5) solid $nypl-light-gray;
+      padding: 0.5rem 0;
+      text-align: right;
+      width: 10%;
+    } // /.pager-next
+  }
+} // /.nypl-numbered-pager-2

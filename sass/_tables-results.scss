@@ -85,7 +85,11 @@ $results-item-border-width: 0.0625rem;
 
     button {
       // the button inside a facet
-      @include basic-button($border-radius: 2rem, $padding-vertical: 0, $padding-horizontal: 0, $border-width: 0);
+      @include basic-button(
+      $border-radius: 2rem,
+      $padding-vertical: 0,
+      $padding-horizontal: 0,
+      $border-width: 0);
       margin: 0.25rem 0 0.25rem 0.25rem;
       vertical-align: bottom;
 
@@ -94,14 +98,20 @@ $results-item-border-width: 0.0625rem;
       }
 
       .nypl-icon {
-        @include nypl-icon($fill: $button-text-color, $background-color: $nypl-search-color-dark, $border-radius: 1rem);
+        @include nypl-icon(
+        $fill: $button-text-color,
+        $background-color: $nypl-search-color-dark,
+        $border-radius: 1rem);
         display: block;
         margin: 0;
       }
 
       &:hover {
         .nypl-icon {
-          @include nypl-icon($background-color: $button-text-color, $fill: $nypl-search-color-dark, $border-radius: 1rem);
+          @include nypl-icon(
+          $background-color: $button-text-color,
+          $fill: $nypl-search-color-dark,
+          $border-radius: 1rem);
           display: block;
           margin: 0;
         }
@@ -176,9 +186,18 @@ $results-item-border-width: 0.0625rem;
   }
 }
 
-@mixin results-sorting-controls {
-  border-bottom: 0.25rem solid $page-color;
-  margin-bottom: 1rem;
+//
+// Sorting controls
+//
+@mixin results-sorting-controls(
+  $border: ($general-border-width * 2) solid $page-color,
+  $margin: 1rem,
+  $text-transform: none) {
+  border: 0;
+  border-bottom: $border;
+  margin: 0;
+  margin-bottom: $general-margin;
+  text-transform: $text-transform;
   @include clearfix;
 }
 
@@ -190,12 +209,17 @@ $sorter-width: 11em;
   position: relative;
 
   button {
-    @include basic-button($collapsible: true, $border-width: 0, $background-color: $page-background-color, $text-color: $page-color, $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
+    @include basic-button(
+    $collapsible: true,
+    $border-width: 0,
+    $background-color: $page-background-color,
+    $text-color: $page-color,
+    $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
 
     strong {
       font-weight: bold;
     }
-  }
+  } // /results-sorter
 
   ul {
     background-color: $nypl-search-color-light;
@@ -224,9 +248,12 @@ $sorter-width: 11em;
       font-weight: bold;
     }
   }
-}
+} // /resuts-sorter
 
-@mixin item-definition-list($item-margin-bottom: 0.5rem, $dt-width: 7.6rem, $dd-width: auto) {
+@mixin item-definition-list(
+  $item-margin-bottom: 0.5rem,
+  $dt-width: 7.6rem,
+  $dd-width: auto) {
   dl {
     @include clearfix;
     margin-bottom: 1rem;
@@ -270,8 +297,10 @@ $sorter-width: 11em;
   }
 }
 
-@mixin results-item {
-  border-bottom: $results-item-border-width solid $nypl-light-gray;
+@mixin results-item(
+  $border-width: $results-item-border-width,
+  $border-color: $nypl-light-gray) {
+  border-bottom: $border-width solid $border-color;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
@@ -303,15 +332,19 @@ $sorter-width: 11em;
   margin-bottom: $item-margin-bottom;
 }
 
-@mixin results-info {
+@mixin results-info($margin: 1rem) {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: $margin;
 }
 
-@mixin results-media {
+@mixin results-media(
+$color: $nypl-gray,
+$font-size: "",
+$font-weight: bold) {
   @include results-info;
-  color: $nypl-gray;
-  font-weight: bold;
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
 }
 
 @mixin results-use {

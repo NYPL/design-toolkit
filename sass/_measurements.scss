@@ -24,6 +24,7 @@ $two-thirds: ($full-width) - ($one-third);
 $three-quarters: ($full-width) - ($one-quarter);
 $gutter: 0.5rem;
 $general-padding: 1rem;
+$general-margin: $general-padding;
 $general-border-radius: 0.2rem;
 $general-border-width: ($simple-border * 2);
 
@@ -38,4 +39,3 @@ $logo-height-raw: $logo-width-raw * $logo-ratio;
 $logo-height: $logo-height-raw * 1rem;
 $collapsed-service-height: 10px;
 $collapsed-nav-height: 30px;
-
