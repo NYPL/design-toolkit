@@ -229,7 +229,7 @@ dl dd.multi-item-list,
 
   // override the default spacing between items here:
   .nypl-results-item-description {
-    @include results-item-description($item-margin-bottom: 1.2rem);
+    @include results-item-description($item-margin-bottom: 0.25rem);
   }
 
   .nypl-results-item {
