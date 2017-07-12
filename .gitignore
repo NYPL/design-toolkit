@@ -13,3 +13,5 @@
 *.map
 
 _site
+
+npm-debug.log
