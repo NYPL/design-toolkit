@@ -1,6 +1,6 @@
 {
   "name": "@nypl/design-toolkit",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "NYPL Design Toolkit",
   "author": "NYPL Digital",
   "contributors": [
@@ -13,7 +13,7 @@
       "email": "rafaelhernandez@nypl.org"
     },
     {
-      "name": "Ricardo Galvez",
+      "name": "Ricardo E. Galvez",
       "email": "ricardogalvez@nypl.org"
     }
   ],
