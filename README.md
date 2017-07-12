@@ -18,7 +18,7 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
-### v0.1.19
+### v0.1.20
 - Updates to design patterns
 - added traditional pager for search results
 - comments to `sass` to enhance readbility
