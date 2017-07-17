@@ -133,10 +133,6 @@ $results-item-border-width: 0.0625rem;
   margin-bottom: 3rem;
   @include clearfix;
 
-  span {
-    width: 32%;
-  }
-
   .page-count,
   a {
     display: block;
@@ -151,13 +147,13 @@ $results-item-border-width: 0.0625rem;
   }
 
   .page-count {
-    padding-bottom: ($general-padding * 0.75);
-    padding-top: ($general-padding * 0.75);
+    padding: ($general-padding * 0.75);
     text-align: center;
-    width: 32%;
+    width: 20%;
 
     @include media($mobile-breakpoint) {
       font-size: 1rem;
+      padding-top: ($general-padding * 0.25);
       width: 42%;
     }
   }
