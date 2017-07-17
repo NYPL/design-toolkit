@@ -3467,7 +3467,7 @@ button:focus {
   clear: both; }
 
 .nypl-results-pagination {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem; }
   .nypl-results-pagination::before, .nypl-results-pagination::after {
@@ -3480,7 +3480,7 @@ button:focus {
     display: block;
     float: left;
     text-decoration: none;
-    width: 30%; }
+    width: 15%; }
     .nypl-results-pagination .page-count::before, .nypl-results-pagination .page-count::after,
     .nypl-results-pagination a::before,
     .nypl-results-pagination a::after {
@@ -3492,6 +3492,8 @@ button:focus {
   .nypl-results-pagination .page-count.first {
     margin-left: 30%; }
   .nypl-results-pagination .page-count {
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
     text-align: center;
     width: 40%; }
     @media (max-width: 965px) {
@@ -3499,33 +3501,39 @@ button:focus {
         font-size: 1rem; } }
   .nypl-results-pagination a:last-child {
     float: right;
-    text-align: right; }
+    text-align: right;
+    width: 3rem; }
   .nypl-results-pagination a:first-child svg {
     float: left; }
-  .nypl-results-pagination a svg {
-    background-color: #fff;
-    border-radius: 0;
-    display: inline-block;
-    fill: #080807;
-    height: 1em;
-    width: 1em;
-    speak: none;
-    display: block;
-    fill: #1b7fa7;
-    float: right;
-    height: 2rem;
-    margin-top: 0.4rem;
-    width: 2rem; }
-    .nypl-results-pagination a svg.reversed {
-      background-color: inherit;
-      fill: #fff; }
-  @media (max-width: 965px) {
-    .nypl-results-pagination a {
-      line-height: 1.3; }
-      .nypl-results-pagination a:first-child svg {
-        float: none; }
-      .nypl-results-pagination a:last-child svg {
-        margin-left: 100%; } }
+  .nypl-results-pagination a {
+    border: 0.08333rem solid #d7d4d0;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    padding: 0.75rem;
+    text-align: center; }
+    .nypl-results-pagination a svg {
+      background-color: #fff;
+      border-radius: 0;
+      display: inline-block;
+      fill: #080807;
+      height: 1rem;
+      width: 1rem;
+      speak: none;
+      display: block;
+      fill: #1b7fa7;
+      float: right;
+      margin-top: 0.4rem; }
+      .nypl-results-pagination a svg.reversed {
+        background-color: inherit;
+        fill: #fff; }
+    @media (max-width: 965px) {
+      .nypl-results-pagination a {
+        padding: 0.25rem;
+        width: 5rem; }
+        .nypl-results-pagination a:first-child svg {
+          display: none; }
+        .nypl-results-pagination a:last-child svg {
+          display: none; } }
 
 .nypl-results-sorting-controls {
   border: 0;
@@ -4034,10 +4042,10 @@ button:focus {
     text-align: right;
     text-decoration: none; }
     .nypl-header .main-menu-toggle .nypl-icon {
-      background-color: #d0343a;
-      border-radius: 0;
+      background-color: #fff;
+      border-radius: #d0343a;
       display: inline-block;
-      fill: #fff;
+      fill: #080807;
       height: 1.5em;
       width: 1.5em;
       speak: none;
