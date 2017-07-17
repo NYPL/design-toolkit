@@ -3475,8 +3475,6 @@ button:focus {
     display: table; }
   .nypl-results-pagination::after {
     clear: both; }
-  .nypl-results-pagination span {
-    width: 32%; }
   .nypl-results-pagination .page-count,
   .nypl-results-pagination a {
     display: block;
@@ -3494,13 +3492,14 @@ button:focus {
   .nypl-results-pagination .page-count.first {
     margin-left: 15%; }
   .nypl-results-pagination .page-count {
-    padding-bottom: 0.75rem;
-    padding-top: 0.75rem;
+    padding: 0.75rem;
     text-align: center;
-    width: 32%; }
+    width: 20%; }
     @media (max-width: 965px) {
       .nypl-results-pagination .page-count {
         font-size: 1rem;
+        padding: 0;
+        padding-top: 0.25rem;
         width: 42%; } }
   .nypl-results-pagination a:last-child {
     text-align: center; }

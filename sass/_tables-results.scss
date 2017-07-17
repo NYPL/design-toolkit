@@ -153,6 +153,7 @@ $results-item-border-width: 0.0625rem;
 
     @include media($mobile-breakpoint) {
       font-size: 1rem;
+      padding: 0;
       padding-top: ($general-padding * 0.25);
       width: 42%;
     }
