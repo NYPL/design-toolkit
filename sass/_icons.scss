@@ -1,4 +1,10 @@
-@mixin nypl-icon($fill: $page-text-color, $background-color: $nypl-white, $inverted-color: $inverted-link-color, $width: 1em, $height: 1em, $border-radius: 0) {
+@mixin nypl-icon(
+  $background-color: $nypl-white,
+  $border-radius: 0,
+  $fill: $page-text-color,
+  $height: 1em,
+  $inverted-color: $inverted-link-color,
+  $width: 1em) {
   background-color: $background-color;
   border-radius: $border-radius;
   display: inline-block;
