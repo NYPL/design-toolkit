@@ -3475,6 +3475,8 @@ button:focus {
     display: table; }
   .nypl-results-pagination::after {
     clear: both; }
+  .nypl-results-pagination span {
+    width: 32%; }
   .nypl-results-pagination .page-count,
   .nypl-results-pagination a {
     display: block;
@@ -3490,25 +3492,27 @@ button:focus {
     .nypl-results-pagination a::after {
       clear: both; }
   .nypl-results-pagination .page-count.first {
-    margin-left: 30%; }
+    margin-left: 15%; }
   .nypl-results-pagination .page-count {
     padding-bottom: 0.75rem;
     padding-top: 0.75rem;
     text-align: center;
-    width: 40%; }
+    width: 32%; }
     @media (max-width: 965px) {
       .nypl-results-pagination .page-count {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        width: 42%; } }
   .nypl-results-pagination a:last-child {
-    float: right;
-    text-align: right;
-    width: 3rem; }
+    text-align: center; }
+    @media (max-width: 965px) {
+      .nypl-results-pagination a:last-child {
+        width: 3rem; } }
   .nypl-results-pagination a:first-child svg {
     float: left; }
   .nypl-results-pagination a {
     border: 0.08333rem solid #d7d4d0;
     border-radius: 0.2rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0.75rem;
     text-align: center; }
     .nypl-results-pagination a svg {
@@ -3528,7 +3532,8 @@ button:focus {
         fill: #fff; }
     @media (max-width: 965px) {
       .nypl-results-pagination a {
-        padding: 0.25rem;
+        font-size: 0.9rem;
+        padding: 0.2rem;
         width: 5rem; }
         .nypl-results-pagination a:first-child svg {
           display: none; }
