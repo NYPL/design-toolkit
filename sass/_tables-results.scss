@@ -161,10 +161,6 @@ $results-item-border-width: 0.0625rem;
 
   a:last-child {
     text-align: center;
-
-    // @include media($mobile-breakpoint) {
-    //   width: 3.25rem;
-    // }
   }
 
   a:first-child svg {
