@@ -380,6 +380,10 @@ function toggleSort(e) {
     </p>
     <p><strong>Important:</strong> The first page <code>page-count</code> span should also have a class of <code>first</code> to properly center itself in the pagination.</p>
 
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An additional <code>aria-label</code> is added to the <code>nav</code> element to increase the operabilty of screen readers to recognize the pager as navigational control by indicating that there are more results avaiable for consideration.</p>
+
+    <p class="nypl-a11y-note"><strong>Accessibility note:</strong> An additional <code>aria-live="polite"</code> is added to the <code>span</code> with the class <code>page-count</code> to inform the user of the changes to the interface with respect to the current page.</p>
+
   <div class="nypl-toolkit-example">
     <span class="nypl-example-text">Example</span>
     <nav class="nypl-results-pagination" aria-label="More results">
@@ -389,7 +393,7 @@ function toggleSort(e) {
           <polygon points="7.563 15.125 0 7.562 7.563 0 8.97 1.407 2.815 7.562 8.97 13.717 7.563 15.125" />
         </svg>
       Previous</a>
-    <span class="page-count">Page 2 of 404</span>
+    <span class="page-count" aria-live="polite">Page 4 of 404</span>
       <a href="/page/3" rel="next">
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 8.97 15.126">
           <title>Wedge Right Arrow</title>
@@ -399,7 +403,7 @@ function toggleSort(e) {
     </nav>
 
     <nav class="nypl-results-pagination" aria-label="More results">
-      <span class="page-count first">Page 1 of 404</span>
+      <span class="page-count first" aria-live="polite">Page 1 of 404</span>
       <a href="/page/3" rel="next">
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 32 32">
           <title>Right arrow</title>
@@ -415,7 +419,7 @@ function toggleSort(e) {
           <polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
         </svg>
         Previous</a>
-      <span class="page-count">Page 404 of 404</span>
+      <span class="page-count" aria-live="polite">Page 404 of 404</span>
     </nav>
   </div>
     <pre><code class="scss">
@@ -429,7 +433,7 @@ function toggleSort(e) {
       &lt;polygon points=&quot;7.563 15.125 0 7.562 7.563 0 8.97 1.407 2.815 7.562 8.97 13.717 7.563 15.125&quot; /&gt;
     &lt;/svg&gt;
     Previous&lt;/a&gt;
-    &lt;span class=&quot;page-count&quot;&gt;Page 2 of 404&lt;/span&gt;
+    &lt;span class=&quot;page-count&quot; aria-live=&quot;polite&quot;&gt;Page 2 of 404&lt;/span&gt;
     &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 8.97 15.126&quot;&gt;
       &lt;title&gt;Wedge Right Arrow&lt;/title&gt;
@@ -439,7 +443,7 @@ function toggleSort(e) {
 &lt;/nav&gt;
 
 &lt;nav class=&quot;nypl-results-pagination&quot; aria-label=&quot;More results&quot;&gt;
-  &lt;span class=&quot;page-count first&quot;&gt;Page 1 of 404&lt;/span&gt;
+  &lt;span class=&quot;page-count first&quot; aria-live=&quot;polite&quot;&gt;Page 1 of 404&lt;/span&gt;
     &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
       &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
         &lt;title&gt;Right arrow&lt;/title&gt;
@@ -455,6 +459,6 @@ function toggleSort(e) {
       &lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
     &lt;/svg&gt;
   Previous&lt;/a&gt;
-&lt;span class=&quot;page-count&quot;&gt;Page 404 of 404&lt;/span&gt;
+&lt;span class=&quot;page-count&quot; aria-live=&quot;polite&quot;&gt;Page 404 of 404&lt;/span&gt;
 &lt;/nav&gt;
     </code></pre>
