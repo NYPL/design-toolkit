@@ -3505,7 +3505,7 @@ button:focus {
     text-align: center; }
     @media (max-width: 965px) {
       .nypl-results-pagination a:last-child {
-        width: 3rem; } }
+        width: 3.25rem; } }
   .nypl-results-pagination a:first-child svg {
     float: left; }
   .nypl-results-pagination a {
