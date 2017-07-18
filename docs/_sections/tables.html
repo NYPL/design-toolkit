@@ -380,89 +380,81 @@ function toggleSort(e) {
     </p>
     <p><strong>Important:</strong> The first page <code>page-count</code> span should also have a class of <code>first</code> to properly center itself in the pagination.</p>
 
-    <div class="nypl-toolkit-example">
-      <span class="nypl-example-text">Example</span>
-<div class="nypl-results-pagination">
-  <a href="/page/1" rel="prev">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 8.97 15.125">
-      <title>Wedge Left Arrow</title>
-      <polygon points="7.563 15.125 0 7.562 7.563 0 8.97 1.407 2.815 7.562 8.97 13.717 7.563 15.125" />
-    </svg>
-    Previous
-  </a>
-  <span class="page-count">Page 2 of 404</span>
-  <a href="/page/3" rel="next">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 8.97 15.126">
-      <title>Wedge Right Arrow</title>
-      <polygon points="1.407 0 8.97 7.563 1.407 15.126 0 13.718 6.155 7.563 0 1.408 1.407 0"/>
-    </svg>
-    Next
-  </a>
-</div>
+  <div class="nypl-toolkit-example">
+    <span class="nypl-example-text">Example</span>
+    <nav class="nypl-results-pagination" aria-label="More results">
+      <a href="/page/1" rel="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 8.97 15.125">
+          <title>Wedge Left Arrow</title>
+          <polygon points="7.563 15.125 0 7.562 7.563 0 8.97 1.407 2.815 7.562 8.97 13.717 7.563 15.125" />
+        </svg>
+      Previous</a>
+    <span class="page-count">Page 2 of 404</span>
+      <a href="/page/3" rel="next">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 8.97 15.126">
+          <title>Wedge Right Arrow</title>
+          <polygon points="1.407 0 8.97 7.563 1.407 15.126 0 13.718 6.155 7.563 0 1.408 1.407 0"/>
+        </svg>
+      Next</a>
+    </nav>
 
-<div class="nypl-results-pagination">
-  <span class="page-count first">Page 1 of 404</span>
-  <a href="/page/3" rel="next">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-<title>Right arrow</title>
-<polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
-    </svg>
-    Next
-  </a>
-</div>
+    <nav class="nypl-results-pagination" aria-label="More results">
+      <span class="page-count first">Page 1 of 404</span>
+      <a href="/page/3" rel="next">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 32 32">
+          <title>Right arrow</title>
+            <polygon points="16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998" />
+        </svg>
+      Next</a>
+    </nav>
 
-<div class="nypl-results-pagination">
-  <a href="/page/1" rel="prev">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 32 32">
-<title>Left arrow</title>
-<polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
-    </svg>
-    Previous
-  </a>
-  <span class="page-count">Page 404 of 404</span>
-</div>
-    </div>
+    <nav class="nypl-results-pagination" aria-label="More results">
+      <a href="/page/1" rel="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 32 32">
+          <title>Left arrow</title>
+          <polygon points="16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065" />
+        </svg>
+        Previous</a>
+      <span class="page-count">Page 404 of 404</span>
+    </nav>
+  </div>
     <pre><code class="scss">
 .nypl-results-pagination
     </code></pre>
     <pre><code class="html">
-&lt;div class=&quot;nypl-results-pagination&quot;&gt;
+&lt;nav class=&quot;nypl-results-pagination&quot; aria-label=&quot;More results&quot;&gt;
   &lt;a href=&quot;/page/1&quot; rel=&quot;prev&quot;&gt;
-    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-&lt;title&gt;Left arrow&lt;/title&gt;
-&lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 8.97 15.125&quot;&gt;
+      &lt;title&gt;Wedge Left Arrow&lt;/title&gt;
+      &lt;polygon points=&quot;7.563 15.125 0 7.562 7.563 0 8.97 1.407 2.815 7.562 8.97 13.717 7.563 15.125&quot; /&gt;
     &lt;/svg&gt;
-    Previous page
-  &lt;/a&gt;
-  &lt;span class=&quot;page-count&quot;&gt;Page 2 of 404&lt;/span&gt;
-  &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
-    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-&lt;title&gt;Right arrow&lt;/title&gt;
-&lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
+    Previous&lt;/a&gt;
+    &lt;span class=&quot;page-count&quot;&gt;Page 2 of 404&lt;/span&gt;
+    &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 8.97 15.126&quot;&gt;
+      &lt;title&gt;Wedge Right Arrow&lt;/title&gt;
+      &lt;polygon points=&quot;1.407 0 8.97 7.563 1.407 15.126 0 13.718 6.155 7.563 0 1.408 1.407 0&quot;/&gt;
     &lt;/svg&gt;
-    Next page
-  &lt;/a&gt;
-&lt;/div&gt;
+    Next&lt;/a&gt;
+&lt;/nav&gt;
 
-&lt;div class=&quot;nypl-results-pagination&quot;&gt;
+&lt;nav class=&quot;nypl-results-pagination&quot; aria-label=&quot;More results&quot;&gt;
   &lt;span class=&quot;page-count first&quot;&gt;Page 1 of 404&lt;/span&gt;
-  &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
-    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-&lt;title&gt;Right arrow&lt;/title&gt;
-&lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
-    &lt;/svg&gt;
-    Next page
-  &lt;/a&gt;
-&lt;/div&gt;
+    &lt;a href=&quot;/page/3&quot; rel=&quot;next&quot;&gt;
+      &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+        &lt;title&gt;Right arrow&lt;/title&gt;
+        &lt;polygon points=&quot;16.959 25.998 27.298 15.707 16.959 5.417 15.026 7.397 22.08 14.548 4.688 14.548 4.687 16.963 22.08 16.963 15.026 24.065 16.959 25.998&quot; /&gt;
+        &lt;/svg&gt;
+    Next&lt;/a&gt;
+&lt;/nav&gt;
 
-&lt;div class=&quot;nypl-results-pagination&quot;&gt;
+&lt;nav class=&quot;nypl-results-pagination&quot; aria-label=&quot;More results&quot;&gt;
   &lt;a href=&quot;/page/1&quot; rel=&quot;prev&quot;&gt;
-    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
-&lt;title&gt;Left arrow&lt;/title&gt;
-&lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-hidden=&quot;true&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+      &lt;title&gt;Left arrow&lt;/title&gt;
+      &lt;polygon points=&quot;16.959 24.065 9.905 16.963 27.298 16.963 27.298 14.548 9.905 14.548 16.959 7.397 15.026 5.417 4.688 15.707 15.026 25.998 16.959 24.065&quot; /&gt;
     &lt;/svg&gt;
-    Previous page
-  &lt;/a&gt;
-  &lt;span class=&quot;page-count&quot;&gt;Page 404 of 404&lt;/span&gt;
-&lt;/div&gt;
+  Previous&lt;/a&gt;
+&lt;span class=&quot;page-count&quot;&gt;Page 404 of 404&lt;/span&gt;
+&lt;/nav&gt;
     </code></pre>
