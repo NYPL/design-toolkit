@@ -153,18 +153,18 @@ $results-item-border-width: 0.0625rem;
 
     @include media($mobile-breakpoint) {
       font-size: 1rem;
-      padding: 0;
+      padding: 0 0.2rem;
       padding-top: ($general-padding * 0.25);
-      width: 42%;
+      width: 35%;
     }
   }
 
   a:last-child {
     text-align: center;
 
-    @include media($mobile-breakpoint) {
-      width: 3.25rem;
-    }
+    // @include media($mobile-breakpoint) {
+    //   width: 3.25rem;
+    // }
   }
 
   a:first-child svg {
