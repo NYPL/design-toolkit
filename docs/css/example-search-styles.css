@@ -3498,14 +3498,11 @@ button:focus {
     @media (max-width: 965px) {
       .nypl-results-pagination .page-count {
         font-size: 1rem;
-        padding: 0;
+        padding: 0 0.2rem;
         padding-top: 0.25rem;
-        width: 42%; } }
+        width: 35%; } }
   .nypl-results-pagination a:last-child {
     text-align: center; }
-    @media (max-width: 965px) {
-      .nypl-results-pagination a:last-child {
-        width: 3.25rem; } }
   .nypl-results-pagination a:first-child svg {
     float: left; }
   .nypl-results-pagination a {
