@@ -176,8 +176,8 @@ $results-item-border-width: 0.0625rem;
 
     svg {
       @include nypl-icon(
-      $height: 1rem,
-      $width: 1rem);
+        $height: 1rem,
+        $width: 1rem);
       display: block;
       fill: $link-color;
       float: right;
@@ -312,11 +312,12 @@ $sorter-width: 11em;
 }
 
 @mixin results-item(
-  $border-width: $results-item-border-width,
-  $border-color: $nypl-light-gray) {
+    $border-width: $results-item-border-width,
+    $border-color: $nypl-light-gray,
+    $margin-bottom: 2rem) {
   border-bottom: $border-width solid $border-color;
   list-style-type: none;
-  margin-bottom: 2rem;
+  margin-bottom: $margin-bottom;
   margin-left: 0;
   max-width: none;
 

@@ -233,7 +233,8 @@ dl dd.multi-item-list,
   }
 
   .nypl-results-item {
-    @include results-item;
+    @include results-item(
+      $margin-bottom: 3rem);
     border: 0;
 
     h2 {
@@ -242,7 +243,7 @@ dl dd.multi-item-list,
 
     // If there is a request table inline in the results, add the class
     &.has-request {
-      margin-bottom: 3rem;
+      margin-bottom: 3.25rem;
     }
 
     .nypl-results-media {
