@@ -980,100 +980,6 @@ button:focus {
   .search-control a:hover {
     text-decoration: underline; }
 
-.nypl-results-sorting-controls.style-2 {
-  border: 0;
-  border-bottom: 0;
-  margin: 0;
-  margin-bottom: 1rem;
-  text-transform: uppercase; }
-  .nypl-results-sorting-controls.style-2::before, .nypl-results-sorting-controls.style-2::after {
-    content: "";
-    display: table; }
-  .nypl-results-sorting-controls.style-2::after {
-    clear: both; }
-  .nypl-results-sorting-controls.style-2 .nypl-results-sorter button {
-    background-color: #fff;
-    border: 0.0625rem solid #9d9ea1;
-    border-radius: 0.2rem;
-    color: #080807;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.85rem;
-    font-weight: normal;
-    height: auto;
-    letter-spacing: normal;
-    padding: 0.4rem 0.75rem;
-    text-decoration: none;
-    text-transform: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    position: relative;
-    padding-right: 1.5rem;
-    text-align: left;
-    padding-right: 1.75rem;
-    text-transform: uppercase; }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button .nypl-icon {
-      background-color: #fff;
-      border-radius: 0;
-      display: inline-block;
-      fill: #080807;
-      height: 1em;
-      width: 1em;
-      speak: none;
-      -webkit-transition: all 0.1s ease-in 0s;
-      -moz-transition: all 0.1s ease-in 0s;
-      -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s;
-      position: absolute;
-      right: 0.25rem;
-      top: calc(0.3rem + 0.4rem); }
-      .nypl-results-sorting-controls.style-2 .nypl-results-sorter button .nypl-icon.reversed {
-        background-color: inherit;
-        fill: #fff; }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:link, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:visited {
-      color: #080807; }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover:visited, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button.active {
-      border-color: #776e64;
-      background-color: #fff;
-      color: #776e64; }
-      .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover:visited .nypl-icon, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button.active .nypl-icon {
-        background-color: #fff;
-        border-radius: 0;
-        display: inline-block;
-        fill: #776e64;
-        height: 1em;
-        width: 1em;
-        speak: none; }
-        .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover .nypl-icon.reversed, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:hover:visited .nypl-icon.reversed, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button.active .nypl-icon.reversed {
-          background-color: inherit;
-          fill: #fff; }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button.active .nypl-icon {
-      transform: rotate(180deg); }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button.disabled, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled="disabled"], .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled="true"], .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled], .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-results-sorting-controls.style-2 .nypl-results-sorter button.disabled:hover, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled="disabled"]:hover, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled="true"]:hover, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled]:hover, .nypl-results-sorting-controls.style-2 .nypl-results-sorter button[disabled=true]:hover {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        color: #080807; }
-    .nypl-results-sorting-controls.style-2 .nypl-results-sorter button .nypl-icon {
-      right: 0.5rem; }
-  .nypl-results-sorting-controls.style-2 ul {
-    background: #fff;
-    border: 0.08333rem solid #9d9ea1;
-    border-radius: 0;
-    box-shadow: 10px 5px 11px -8px rgba(0, 0, 0, 0.3);
-    width: 14rem; }
-
 .nypl-results-list .nypl-results-item-description {
   margin-bottom: 0.25rem; }
 .nypl-results-list .nypl-results-item {
@@ -3820,10 +3726,9 @@ dl dd.multi-item-list,
 
 .nypl-results-sorting-controls {
   border: 0;
-  border-bottom: 0.25rem solid #080807;
   margin: 0;
   margin-bottom: 1rem;
-  text-transform: none; }
+  text-transform: uppercase; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
     display: table; }
@@ -3836,16 +3741,16 @@ dl dd.multi-item-list,
   position: relative; }
   .nypl-results-sorter button {
     background-color: #fff;
-    border: 0 solid #776e64;
+    border: 0.0625rem solid #9d9ea1;
     border-radius: 0.2rem;
     color: #080807;
     cursor: pointer;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: normal;
     height: auto;
     letter-spacing: normal;
-    padding: 0.25em 0.75rem;
+    padding: 0.4rem 0.75rem;
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
@@ -3855,7 +3760,9 @@ dl dd.multi-item-list,
     transition: all 0.1s ease-in 0s;
     position: relative;
     padding-right: 1.5rem;
-    text-align: left; }
+    text-align: left;
+    padding-right: 1.75rem;
+    text-transform: uppercase; }
     .nypl-results-sorter button .nypl-icon {
       background-color: #fff;
       border-radius: 0;
@@ -3870,7 +3777,7 @@ dl dd.multi-item-list,
       transition: all 0.1s ease-in 0s;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.25em); }
+      top: calc(0.3rem + 0.4rem); }
       .nypl-results-sorter button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
@@ -3878,10 +3785,10 @@ dl dd.multi-item-list,
       color: #080807; }
     .nypl-results-sorter button:hover, .nypl-results-sorter button:hover:visited, .nypl-results-sorter button.active {
       border-color: #776e64;
-      background-color: #d7d4d0;
+      background-color: #fff;
       color: #776e64; }
       .nypl-results-sorter button:hover .nypl-icon, .nypl-results-sorter button:hover:visited .nypl-icon, .nypl-results-sorter button.active .nypl-icon {
-        background-color: #d7d4d0;
+        background-color: #fff;
         border-radius: 0;
         display: inline-block;
         fill: #776e64;
@@ -3900,21 +3807,24 @@ dl dd.multi-item-list,
       outline: none; }
     .nypl-results-sorter button.disabled, .nypl-results-sorter button[disabled="disabled"], .nypl-results-sorter button[disabled="true"], .nypl-results-sorter button[disabled], .nypl-results-sorter button[disabled=true] {
       background-color: #d7d4d0;
-      border-color: #d7d4d0;
+      border-color: #fff;
       cursor: default; }
       .nypl-results-sorter button.disabled:hover, .nypl-results-sorter button[disabled="disabled"]:hover, .nypl-results-sorter button[disabled="true"]:hover, .nypl-results-sorter button[disabled]:hover, .nypl-results-sorter button[disabled=true]:hover {
         background-color: #d7d4d0;
-        border-color: #d7d4d0;
+        border-color: #fff;
         color: #080807; }
-    .nypl-results-sorter button strong {
-      font-weight: bold; }
+    .nypl-results-sorter button .nypl-icon {
+      right: 0.5rem; }
   .nypl-results-sorter ul {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
+    background-color: #fff;
+    border: 0.08333rem solid;
+    border-radius: 0;
+    box-shadow: 10px 5px 11px -8px rgba(0, 0, 0, 0.3);
     list-style: none;
     min-width: 11em;
     position: absolute;
     right: 0;
+    width: 14rem;
     z-index: 1; }
   .nypl-results-sorter li {
     margin-left: 0; }
