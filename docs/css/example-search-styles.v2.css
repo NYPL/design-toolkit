@@ -3036,7 +3036,6 @@ dl dd.multi-item-list,
     clear: both; }
 
 .nypl-column-type {
-  border: 1px solid #d0343a;
   border: 0;
   float: left;
   margin-bottom: 1rem;
@@ -3059,7 +3058,6 @@ dl dd.multi-item-list,
 
 .nypl-column-full,
 .nypl-column-four-quarters {
-  border: 1px solid #d0343a;
   border: 0;
   float: none;
   margin-bottom: 1rem;
@@ -3086,7 +3084,6 @@ dl dd.multi-item-list,
 
 .nypl-column-half,
 .nypl-column-two-quarters {
-  border: 1px solid #d0343a;
   border: 0;
   float: left;
   margin-bottom: 1rem;
@@ -3112,7 +3109,6 @@ dl dd.multi-item-list,
       width: auto; } }
 
 .nypl-column-one-quarter {
-  border: 1px solid #d0343a;
   border: 0;
   float: left;
   margin-bottom: 1rem;
@@ -3134,7 +3130,6 @@ dl dd.multi-item-list,
       width: auto; } }
 
 .nypl-column-one-third {
-  border: 1px solid #d0343a;
   border: 0;
   float: left;
   margin-bottom: 1rem;
@@ -3156,7 +3151,6 @@ dl dd.multi-item-list,
       width: auto; } }
 
 .nypl-column-two-thirds {
-  border: 1px solid #d0343a;
   border: 0;
   float: left;
   margin-bottom: 1rem;
@@ -3178,7 +3172,6 @@ dl dd.multi-item-list,
       width: auto; } }
 
 .nypl-column-three-quarters {
-  border: 1px solid #d0343a;
   border: 0;
   float: left;
   margin-bottom: 1rem;
@@ -3554,8 +3547,8 @@ dl dd.multi-item-list,
   max-width: none; }
 .nypl-results-summary .nypl-results-count {
   float: left;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 400;
   line-height: 1;
   margin-bottom: 0.25rem;
   margin-right: 0.5rem; }
@@ -3726,8 +3719,7 @@ dl dd.multi-item-list,
 
 .nypl-results-sorting-controls {
   border: 0;
-  margin: 0;
-  margin-bottom: 1rem;
+  margin: 2.5rem 0 0;
   text-transform: uppercase; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
@@ -3737,7 +3729,7 @@ dl dd.multi-item-list,
 
 .nypl-results-sorter {
   display: inline-block;
-  float: right;
+  float: left;
   position: relative; }
   .nypl-results-sorter button {
     background-color: #fff;
@@ -3823,7 +3815,7 @@ dl dd.multi-item-list,
     list-style: none;
     min-width: 11em;
     position: absolute;
-    right: 0;
+    left: 0;
     width: 14rem;
     z-index: 1; }
   .nypl-results-sorter li {
@@ -5012,6 +5004,8 @@ dl dd.multi-item-list,
     @media (max-width: 965px) {
       .nypl-page-header h2 {
         margin-top: 0; } }
+  .nypl-page-header .nypl-column-three-quarters {
+    margin-bottom: 0; }
 
 .nypl-item-details h1 {
   margin-bottom: 3rem;
