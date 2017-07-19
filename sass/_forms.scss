@@ -26,7 +26,7 @@ $form-padding: 0.5rem;
 }
 
 @mixin fieldset {
-  background-color: $nypl-search-color-light;
+  background-color: $page-background-color;
   border: 0;
   border-radius: $general-border-radius;
   box-shadow: none;
@@ -48,18 +48,25 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin input {
-  background-color: $nypl-search-color-light;
+//
+// Base input field
+//   from which all others are constructed
+//
+@mixin input(
+    $background-color: $page-background-color,
+    $border-radius: ($general-border-radius * 1.25),
+    $font-size: 1rem,
+    $padding: 0) {
+  background-color: $background-color;
   border: 0;
-  border-radius: $general-border-radius $general-border-radius 0 0;
-  font-size: 1rem;
-  padding: 0;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  padding: $padding;
 }
 
 @mixin text {
   @include input;
-  @include box-shadow(inset 0 0 0 2px $nypl-search-color-light);
-  border-bottom: $general-border-width solid $page-color;
+  @include box-shadow(inset 0 0 0 1px $nypl-dark-gray);
   height: 2rem;
   padding: 1.5rem 0 0;
   text-indent: $form-padding;

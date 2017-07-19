@@ -436,9 +436,9 @@ button:focus {
   .nypl-omnisearch input[type=text],
   .nypl-omnisearch input[type=email],
   .nypl-omnisearch input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;
@@ -793,9 +793,9 @@ button:focus {
   .nypl-omnisearch input[type=text],
   .nypl-omnisearch input[type=email],
   .nypl-omnisearch input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;
@@ -2115,7 +2115,7 @@ dl dd.multi-item-list,
   margin-left: 0.5rem; }
 
 .nypl-fieldset {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2136,14 +2136,14 @@ dl dd.multi-item-list,
     margin-left: 0.5rem; }
 
 .nypl-input {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
-  border-radius: 0.2rem 0.2rem 0 0;
+  border-radius: 0.25rem;
   font-size: 1rem;
   padding: 0; }
 
 .nypl-text-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2172,15 +2172,14 @@ dl dd.multi-item-list,
   .nypl-text-field input[type=email],
   .nypl-text-field input[type=date],
   .nypl-text-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
     height: 2rem;
     padding: 1.5rem 0 0;
     text-indent: 0.5rem;
@@ -2210,7 +2209,7 @@ dl dd.multi-item-list,
     padding-left: 0.5rem; }
 
 .nypl-year-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2239,15 +2238,14 @@ dl dd.multi-item-list,
   .nypl-year-field input[type=email],
   .nypl-year-field input[type=date],
   .nypl-year-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
     height: 2rem;
     padding: 1.5rem 0 0;
     text-indent: 0.5rem;
@@ -2286,15 +2284,14 @@ dl dd.multi-item-list,
 .nypl-text-field-with-label input[type=email],
 .nypl-text-field-with-label input[type=date],
 .nypl-text-field-with-label input[type=number] {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
-  border-radius: 0.2rem 0.2rem 0 0;
+  border-radius: 0.25rem;
   font-size: 1rem;
   padding: 0;
-  -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-  -moz-box-shadow: inset 0 0 0 2px #efedeb;
-  box-shadow: inset 0 0 0 2px #efedeb;
-  border-bottom: 0.125rem solid #080807;
+  -webkit-box-shadow: inset 0 0 0 1px #080807;
+  -moz-box-shadow: inset 0 0 0 1px #080807;
+  box-shadow: inset 0 0 0 1px #080807;
   height: 2rem;
   padding: 1.5rem 0 0;
   text-indent: 0.5rem;
@@ -2324,7 +2321,7 @@ dl dd.multi-item-list,
   padding-left: 0.5rem; }
 
 .nypl-name-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2359,15 +2356,14 @@ dl dd.multi-item-list,
   .nypl-name-field input[type=email],
   .nypl-name-field input[type=date],
   .nypl-name-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
     height: 2rem;
     padding: 1.5rem 0 0;
     text-indent: 0.5rem;
@@ -2412,7 +2408,7 @@ dl dd.multi-item-list,
           margin-bottom: 0; } }
 
 .nypl-address-fieldset {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2442,15 +2438,14 @@ dl dd.multi-item-list,
   .nypl-address-fieldset input[type=email],
   .nypl-address-fieldset input[type=date],
   .nypl-address-fieldset input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
     height: 2rem;
     padding: 1.5rem 0 0;
     text-indent: 0.5rem;
@@ -2491,7 +2486,7 @@ dl dd.multi-item-list,
       position: relative; }
 
 .nypl-date-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2521,15 +2516,14 @@ dl dd.multi-item-list,
   .nypl-date-field input[type=email],
   .nypl-date-field input[type=date],
   .nypl-date-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
     height: 2rem;
     padding: 1.5rem 0 0;
     text-indent: 0.5rem;
@@ -2588,7 +2582,7 @@ dl dd.multi-item-list,
   width: 100%; }
 
 .nypl-select-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2662,7 +2656,7 @@ dl dd.multi-item-list,
 
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2759,7 +2753,7 @@ dl dd.multi-item-list,
       fill: #fff; }
 
 .nypl-collapsible-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2787,7 +2781,7 @@ dl dd.multi-item-list,
     transform: rotate(0deg); }
 
 .nypl-searchable-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2836,15 +2830,14 @@ dl dd.multi-item-list,
     .nypl-searchable-field .nypl-facet-search input[type=email],
     .nypl-searchable-field .nypl-facet-search input[type=date],
     .nypl-searchable-field .nypl-facet-search input[type=number] {
-      background-color: #efedeb;
+      background-color: #fff;
       border: 0;
-      border-radius: 0.2rem 0.2rem 0 0;
+      border-radius: 0.25rem;
       font-size: 1rem;
       padding: 0;
-      -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-      -moz-box-shadow: inset 0 0 0 2px #efedeb;
-      box-shadow: inset 0 0 0 2px #efedeb;
-      border-bottom: 0.125rem solid #080807;
+      -webkit-box-shadow: inset 0 0 0 1px #080807;
+      -moz-box-shadow: inset 0 0 0 1px #080807;
+      box-shadow: inset 0 0 0 1px #080807;
       height: 2rem;
       padding: 1.5rem 0 0;
       text-indent: 0.5rem;
@@ -2901,7 +2894,7 @@ dl dd.multi-item-list,
     display: none; }
 
 .nypl-alphabetical-filter {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -4905,9 +4898,9 @@ dl dd.multi-item-list,
   .nypl-header li.nypl-search .nypl-search_main input:focus {
     outline: none; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-form-text {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;
