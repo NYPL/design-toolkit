@@ -55,8 +55,8 @@ $results-item-border-width: 0.0625rem;
 
   .nypl-results-count {
     float: left;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1;
     margin-bottom: 0.25rem;
     margin-right: 0.5rem;
@@ -208,9 +208,7 @@ $results-item-border-width: 0.0625rem;
   $margin: 1rem,
   $text-transform: uppercase) {
   border: 0;
-  //border-bottom: $border;
-  margin: 0;
-  margin-bottom: $general-margin;
+  margin: ($general-margin * 2.5) 0 0;
   text-transform: $text-transform;
   @include clearfix;
 }
@@ -219,7 +217,7 @@ $sorter-width: 11em;
 
 @mixin results-sorter {
   display: inline-block;
-  float: right;
+  float: left;
   position: relative;
 
   button {
@@ -241,14 +239,14 @@ $sorter-width: 11em;
     } // /button
 
   ul {
-    background-color:  $nypl-white;
+    background-color: $nypl-white;
     border: ($general-border-width / 1.5) solid;
     border-radius: 0;
     box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
-    right: 0;
+    left: 0;
     width: 14rem;
     z-index: 1;
   }
