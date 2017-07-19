@@ -294,6 +294,7 @@ function toggleSort(e) {
           </ul>
         </li>
         <li><strong>Optional:</strong> A final <code>p</code> tag with the item usage (for example: In-library use), class <code>.nypl-results-use</code></li>
+        <li>In a large number of cases there will be only one item available of a given bib. The last example demonstrates an embeded table affording the user the option requesting directy w/out visiting the bib page. <strong>Note:</strong> the class <code>.has-request</code> has been added to <code>li</code> item&rsquo;s classes</li>
       </ul>
     </p>
 
@@ -314,25 +315,53 @@ function toggleSort(e) {
   <!-- another item -->
   <li class="nypl-results-item">
     <h2><a href="#">Very Rare Item &ndash; Casasbuenas Gutiérrez, Margarita, 1915-1997</a></h2>
-    <div class="nypl-results-unavailable">Currently not available for use</div>
+    <!-- <div class="nypl-results-unavailable">Currently not available for use</div> -->
     <div class="nypl-results-item-description">
       <p>
         <span class="nypl-results-media">Text</span>
         <span class="nypl-results-place">Buenos Aires</span>
         <span class="nypl-results-publisher">Editorial Planeta</span>
         <span class="nypl-results-date">1972</span>
-        <span class="nypl-results-info">SASB - Rose Main Rdg Rm 315</span>
+        <span class="nypl-results-info">78 items, 2 available</span>
       </p>
-      <p class="nypl-results-use">
+      <!-- <p class="nypl-results-use">
         Item for In-library use
+      </p> -->
+    </div>
+  </li>
+ <!-- an item w/ the embeded request item button & table -->
+  <li class="nypl-results-item has-request">
+    <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a></h2>
+    <div class="nypl-results-item-description">
+      <p>
+        <span class="nypl-results-media">Text</span>
       </p>
     </div>
+    <table class="nypl-basic-table">
+      <thead>
+        <tr>
+          <th scope="col">location</th>
+          <th scope="col">call number</th>
+          <th scope="col">status</th>
+          <th scope="col">message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Schomburg Center &mdash; Research &amp; Reference</td>
+          <td>JFE 16-9729</td>
+          <td><button type="button" name="button">request</button></td>
+          <td>use in library</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
 </ul>
     </div>
     <pre><code class="scss">
 .nypl-results-list
 .nypl-results-item
+.nypl-results-item.has-request
 .nypl-results-unavailable
 .nypl-results-media
 .nypl-results-place
@@ -371,7 +400,35 @@ function toggleSort(e) {
       &lt;/p&gt;
     &lt;/div&gt;
   &lt;/li&gt;
+  &lt;!-- an item w/ the embeded request item button &amp; table --&gt;
+  &lt;li class=&quot;nypl-results-item has-request&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720&quot;&gt;New York Waterways. &amp;ndash; New York State Waterways Association.&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;nypl-results-item-description&quot;&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;nypl-results-media&quot;&gt;Text&lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;table class=&quot;nypl-basic-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;location&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;call number&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;status&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;message&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Schomburg Center &amp;mdash; Research &amp;amp; Reference&lt;/td&gt;
+          &lt;td&gt;JFE 16-9729&lt;/td&gt;
+          &lt;td&gt;&lt;button type=&quot;button&quot; name=&quot;button&quot;&gt;request&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;use in library&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
     </code></pre>
 
     <h3 id="pagination">Search Results Pagination</h3>

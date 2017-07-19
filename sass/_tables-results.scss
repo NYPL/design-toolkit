@@ -55,8 +55,8 @@ $results-item-border-width: 0.0625rem;
 
   .nypl-results-count {
     float: left;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1;
     margin-bottom: 0.25rem;
     margin-right: 0.5rem;
@@ -206,11 +206,9 @@ $results-item-border-width: 0.0625rem;
 @mixin results-sorting-controls(
   $border: ($general-border-width * 2) solid $page-color,
   $margin: 1rem,
-  $text-transform: none) {
+  $text-transform: uppercase) {
   border: 0;
-  border-bottom: $border;
-  margin: 0;
-  margin-bottom: $general-margin;
+  margin: ($general-margin * 2.5) 0 0;
   text-transform: $text-transform;
   @include clearfix;
 }
@@ -219,29 +217,37 @@ $sorter-width: 11em;
 
 @mixin results-sorter {
   display: inline-block;
-  float: right;
+  float: left;
   position: relative;
 
   button {
     @include basic-button(
-    $collapsible: true,
-    $border-width: 0,
-    $background-color: $page-background-color,
-    $text-color: $page-color,
-    $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
+        $background-color: $nypl-white,
+        $border-color: lighten($nypl-gray-cool, 15%),
+        $border-width: ($general-border-width / 2),
+        $collapsible: true,
+        $font-size: 0.85rem,
+        $hover-background-color: $nypl-white,
+        $padding-vertical: ($general-padding * 0.4),
+        $text-color: $nypl-dark-gray);
+    padding-right: 1.75rem;
+    text-transform: uppercase;
 
-    strong {
-      font-weight: bold;
-    }
-  } // /results-sorter
+    .nypl-icon {
+      right: 0.5rem;
+      }
+    } // /button
 
   ul {
-    background-color: $nypl-search-color-light;
-    border-radius: $general-border-radius;
+    background-color: $nypl-white;
+    border: ($general-border-width / 1.5) solid;
+    border-radius: 0;
+    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
-    right: 0;
+    left: 0;
+    width: 14rem;
     z-index: 1;
   }
 
@@ -355,7 +361,7 @@ $sorter-width: 11em;
 @mixin results-media(
 $color: $nypl-gray,
 $font-size: "",
-$font-weight: bold) {
+$font-weight: 400) {
   @include results-info;
   color: $color;
   font-size: $font-size;
@@ -600,4 +606,125 @@ $font-weight: bold) {
     }
   }
 
+}
+
+////
+// Styles for docs/discovery-search.v3.html
+////
+.nypl-results-list {
+
+  // override the default spacing between items here:
+  .nypl-results-item-description {
+    @include results-item-description($item-margin-bottom: 0.25rem);
+  }
+
+  .nypl-results-item {
+    @include results-item(
+      $margin-bottom: 3rem);
+    border: 0;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    // If there is a request table inline in the results, add the class
+    &.has-request {
+      margin-bottom: 3.25rem;
+    }
+
+    .nypl-results-media {
+      @include results-media(
+        $color: $nypl-dark-gray,
+        $font-size: 0.85rem,
+        $font-weight: 400);
+    } // /.nypl-results-media
+
+    // TODO: find a more elegant way of writing this:
+    // Posibly a for/in thing...
+    .nypl-results-room,
+    .nypl-results-place,
+    .nypl-results-publisher,
+    .nypl-results-date,
+    .nypl-results-info {
+      font-size: 0.85rem;
+    } // /.nypl-results-room
+    // Special case where we need the the publisher & published date closer to one another:
+    .nypl-results-publisher {
+      margin-right: 0.25rem;
+    }
+  } // /.nypl-results-item
+}
+// This block styles the table set in the <dl>
+//
+// TODO: Combine this layout w/ the one above
+// TODO: refactor code below to address nested style depth being too deep.
+// TODO: refactor so the table is not dependent on being embedded in the <dl>
+
+dl dd.multi-item-list,
+.nypl-results-item {
+  width: 100%;
+
+  .nypl-basic-table {
+
+    thead {
+      border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
+    } // /thead
+
+    th {
+      border: 0;
+      font-size: 0.85rem;
+      padding-bottom: 0.5rem;
+      text-transform: uppercase;
+      width: 25%;
+    }
+
+    @include media($mobile-breakpoint) {
+      th:first-child,
+      th:last-child {
+        display: none;
+      }
+    }
+
+    td {
+      border: 0;
+      padding-top: 1rem;
+    }
+
+    tbody tr:first-child {
+      line-height: 1.2;
+    }
+
+    tbody tr:last-child {
+      border-bottom: 0;
+    }
+
+    @include media($mobile-breakpoint) {
+      tbody td:first-child,
+      tbody td:last-child {
+        display: none;
+    }
+  }
+
+    button {
+      @include basic-button(
+        $text-color: $nypl-red,
+        $background-color: $nypl-white,
+        $border-color: $nypl-red,
+        $border-radius: ($general-border-radius / 1.5),
+        $border-width: ($general-border-width / 1.5),
+        $font-size: 0.8rem,
+        $height: 2.5rem,
+        $hover-text-color: $nypl-white,
+        $hover-background-color: $nypl-red,
+        $letter-spacing: 0.06rem,
+        $text-transform: uppercase);
+      margin-top: 0;
+      width: 8rem;
+
+      @include media($mobile-breakpoint) {
+        display: inline-block;
+        // width: 65%;
+      } // /$mobile-breakpoint
+    } // /button
+  } // /.nypl-basic-table
 }

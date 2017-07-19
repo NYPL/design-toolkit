@@ -104,11 +104,15 @@
   @include clearfix;
 }
 
-@mixin column-type($float: left, $width: auto) {
-  border: 1px solid $nypl-red;
-  border: 0;
+@mixin column-type(
+    $border: 0,
+    $float: left,
+    $margin-bottom: 1rem,
+    $width: auto) {
+  //border: 1px solid $nypl-red;
+  border: $border;
   float: $float;
-  margin-bottom: 1rem;
+  margin-bottom: $margin-bottom;
   min-height: 1rem;
   padding: 0 0.5rem;
   width: $width;
