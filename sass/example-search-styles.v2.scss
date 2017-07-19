@@ -44,6 +44,10 @@
   $type-color: $nypl-red);
   border-bottom: $general-border-width / 1.5 solid darken($nypl-light-gray, 15%);
   margin-bottom: 0;
+
+  .nypl-column-three-quarters {
+    margin-bottom: 0;
+  }
 }
 
 // discovery-item.v2.html
