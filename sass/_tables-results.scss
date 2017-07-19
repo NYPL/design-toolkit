@@ -206,9 +206,9 @@ $results-item-border-width: 0.0625rem;
 @mixin results-sorting-controls(
   $border: ($general-border-width * 2) solid $page-color,
   $margin: 1rem,
-  $text-transform: none) {
+  $text-transform: uppercase) {
   border: 0;
-  border-bottom: $border;
+  //border-bottom: $border;
   margin: 0;
   margin-bottom: $general-margin;
   text-transform: $text-transform;
@@ -224,24 +224,32 @@ $sorter-width: 11em;
 
   button {
     @include basic-button(
-    $collapsible: true,
-    $border-width: 0,
-    $background-color: $page-background-color,
-    $text-color: $page-color,
-    $hover-background-color: $page-color-light, $padding-vertical: 0.25em);
+        $background-color: $nypl-white,
+        $border-color: lighten($nypl-gray-cool, 15%),
+        $border-width: ($general-border-width / 2),
+        $collapsible: true,
+        $font-size: 0.85rem,
+        $hover-background-color: $nypl-white,
+        $padding-vertical: ($general-padding * 0.4),
+        $text-color: $nypl-dark-gray);
+    padding-right: 1.75rem;
+    text-transform: uppercase;
 
-    strong {
-      font-weight: bold;
-    }
-  } // /results-sorter
+    .nypl-icon {
+      right: 0.5rem;
+      }
+    } // /button
 
   ul {
-    background-color: $nypl-search-color-light;
-    border-radius: $general-border-radius;
+    background-color:  $nypl-white;
+    border: ($general-border-width / 1.5) solid;
+    border-radius: 0;
+    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
     right: 0;
+    width: 14rem;
     z-index: 1;
   }
 
@@ -605,42 +613,42 @@ $font-weight: 400) {
 ////
 // Styles for docs/discovery-search.v3.html
 ////
-.nypl-results-sorting-controls.style-2 {
-
-  @include results-sorting-controls(
-    $border: 0,
-    $text-transform: uppercase);
-
-  .nypl-results-sorter {
-
-    button {
-      @include basic-button(
-        $background-color: $nypl-white,
-        $border-color: lighten($nypl-gray-cool, 15%),
-        $border-width: ($general-border-width / 2),
-        $collapsible: true,
-        $font-size: 0.85rem,
-        $hover-background-color: $nypl-white,
-        $padding-vertical: ($general-padding * 0.4),
-        $text-color: $nypl-dark-gray);
-      padding-right: 1.75rem;
-      text-transform: uppercase;
-
-      .nypl-icon {
-        right: 0.5rem;
-        }
-      } // /button
-    } // / .nypl-results-sorter
-
-  ul {
-    background: $nypl-white;
-    border: ($general-border-width / 1.5) solid lighten($nypl-gray-cool, 15%);
-    border-radius: 0;
-    // TODO: Bring this drop shadow into a mixin, for the global snazz...
-    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
-    width: 14rem;
-    }
-  } // /nypl-results-sorting-controls.style-2
+// .nypl-results-sorting-controls-2 {
+//
+//   @include results-sorting-controls(
+//     $border: 0,
+//     $text-transform: uppercase);
+//
+//   .nypl-results-sorter {
+//
+//     button {
+//       @include basic-button(
+//         $background-color: $nypl-white,
+//         $border-color: lighten($nypl-gray-cool, 15%),
+//         $border-width: ($general-border-width / 2),
+//         $collapsible: true,
+//         $font-size: 0.85rem,
+//         $hover-background-color: $nypl-white,
+//         $padding-vertical: ($general-padding * 0.4),
+//         $text-color: $nypl-dark-gray);
+//       padding-right: 1.75rem;
+//       text-transform: uppercase;
+//
+//       .nypl-icon {
+//         right: 0.5rem;
+//         }
+//       } // /button
+//     } // / .nypl-results-sorter
+//
+//   ul {
+//     background: $nypl-white;
+//     border: ($general-border-width / 1.5) solid lighten($nypl-gray-cool, 15%);
+//     border-radius: 0;
+//     // TODO: Bring this drop shadow into a mixin, for the global snazz...
+//     box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
+//     width: 14rem;
+//     }
+//   } // /nypl-results-sorting-controls.style-2
 
 
 .nypl-results-list {
