@@ -355,7 +355,7 @@ $sorter-width: 11em;
 @mixin results-media(
 $color: $nypl-gray,
 $font-size: "",
-$font-weight: bold) {
+$font-weight: 400) {
   @include results-info;
   color: $color;
   font-size: $font-size;
