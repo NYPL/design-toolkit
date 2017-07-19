@@ -18,11 +18,19 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.21
+- Updates to design patterns for search results
+  - added inline table for requests on single items
+  - sorting button Updated
+  - new pagination
+- Updates Toolkit docs
+  - the above design patterns codified in the docs
+
 ### v0.1.20
 - Updates to design patterns
 - added traditional pager for search results
 - comments to `sass` to enhance readbility
--
+
 
 ### v0.1.19
 - adding new visual design
