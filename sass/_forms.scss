@@ -79,7 +79,7 @@ $form-padding: 0.5rem;
 
   &:focus {
     background-color: $nypl-white;
-    @include box-shadow(inset 0 0 0 4px $focus-color);
+    @include box-shadow(inset 0 0 0 $focus-width $focus-color);
     color: $page-color;
     outline: none;
   }
@@ -374,14 +374,16 @@ $form-padding: 0.5rem;
   }
 
   .nypl-icon {
-    @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
+    @include nypl-icon(
+      $fill: $page-background-color,
+      $background-color: $nypl-search-color-dark);
     @include transition(all, $hover-time, ease-in);
     position: absolute;
     right: 0.5rem;
     top: 0.65rem;
     transform: rotate(180deg);
   }
-}
+} // /facet-toggle
 
 @mixin collapsible-field($is-searchable: false) {
   @include fieldset;
@@ -428,6 +430,7 @@ $form-padding: 0.5rem;
 
     input[type="radio"],
     input[type="checkbox"] {
+      box-sizing: border-box;
       display: inline-block;
     }
 
@@ -496,5 +499,18 @@ $form-padding: 0.5rem;
     }
   }
 }
+
+// replace the native radio button w/ svg...
+// hide native:
+//   input[type="radio"] {
+//   top: auto;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+// }
+
+// place svg
+
+
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";
