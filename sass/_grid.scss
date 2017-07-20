@@ -7,9 +7,34 @@
 @warn "remove magic numbers";
 
 // Basic Page header V1
-@mixin page-header($background-color: lighten($page-color-light, 10%)) {
+// @mixin page-header(
+// $background-color: lighten($page-color-light, 10%)) {
+//   background-color: $background-color;
+//   margin-bottom: 1rem;
+//
+//   h1,
+//   h2 {
+//     font-size: 2rem;
+//     margin: 0;
+//   }
+//
+//   h2 { // when it's a secondary title (real title is inside content below)
+//     line-height: 1;
+//   }
+// }
+// / page-header
+
+// Basic Page header V2
+//////////////////////////////
+// based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
+// specifically: Discovery_home_v4a.psd
+//
+@mixin page-header(
+  $background-color: lighten($page-color-light, 10%),
+  $font-family: $sans-serif-stack,
+  $font-weight: 400,
+  $type-color: $nypl-dark-gray) {
   background-color: $background-color;
-  margin-bottom: 1rem;
 
   h1,
   h2 {
@@ -20,20 +45,6 @@
   h2 { // when it's a secondary title (real title is inside content below)
     line-height: 1;
   }
-}
-// / page-header
-
-// Basic Page header V2
-//////////////////////////////
-// based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
-// specifically: Discovery_home_v4a.psd
-//
-@mixin page-header-2(
-  $background-color: lighten($page-color-light, 10%),
-  $font-family: $sans-serif-stack,
-  $font-weight: 400,
-  $type-color: $nypl-dark-gray) {
-  background-color: $background-color;
 
   h2 {
     color: $type-color;
