@@ -69,7 +69,7 @@ $bullet-size: 0.5rem;
 }
 
 @mixin spinner-element {
-  $bar-color: transparentize($nypl-white, 0.5);
+  $bar-color: transparentize($nypl-light-gray, 0.5);
   $spinner-time: 1.5s;
 
   @keyframes spinner-right {
