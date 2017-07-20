@@ -232,8 +232,12 @@ $form-padding: 0.5rem;
   padding-left: 1rem;
 }
 
-@mixin simple-radiobutton {
+@mixin simple-radiobutton(
+    $border-radius: 0,
+    $border-width: 0,
+    $border-color: $nypl-dark-gray) {
   border-radius: $general-border-radius;
+  border: $border-color solid $border-width;
 
   span.nypl-label {
     @include label;

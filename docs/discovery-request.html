@@ -63,53 +63,31 @@
           <br >DS731.M87Z48 2011</div>
         </div>
       </div>
-      <form class="place-hold-form form" action="/hold/request/b7169745-i6582985" method="POST">
-        <!-- <h4>Confirm account</h4>
-        <p class="loggedInInstruction">
-          You are currently logged in as
-          <strong>GALVEZ, RICARDO E</strong>. If this is not you, please<a href="https://isso.nypl.org/auth/logout">Log out</a> and sign in using your library card.
-        </p> -->
+      <form action="/hold/request/b7169745-i6582985" method="POST">
+
         <h4>Choose a delvery option or location</h4>
-        <!-- <p>When this item is ready, you will use it in the following location:</p> -->
-        <fieldset class="select-edd-fieldset">
-          <legend class="visuallyHidden">Select Electronic Document Delivery</legend>
-          <div class="group selected">
-            <input name="delivery-location" id="location0" value="Electronic Document Delivery" type="radio">
-            <label for="location0">
-              <span class="col location">Have up to 50 pages scanned and sent to you via electronic mail</span>
+
+        <div class="nypl-radiobutton-field">
+          <fieldset>
+            <legend class="visuallyHidden" id="radiobutton-edd">Select Electronic Document Delivery</legend>
+            <label id="radiobutton-edd" for="edd">
+              <input aria-labelledby="radiobutton-edd" id="edd" type="radio" name="electronic-delivery" value="electronic-delivery" />Have up to 50 pages scanned and sent to you via electronic mail.
             </label>
-          </div>
-        </fieldset>
-        <fieldset class="select-location-fieldset">
-          <legend class="visuallyHidden">Select a pickup location</legend>
-          <div class="group selected">
-            <input name="delivery-location" id="location0" value="Stephen A. Schwarzman Building" type="radio">
-            <label for="location0">
-              <span class="col location">
-              Stephen A. Schwarzman Building 476 Fifth Avenue (42nd St and Fifth Ave) Stephen A. Schwarzman Building - Rose Main Reading Room 315</span>
-          </label>
-          </div>
-          <div class="group selected">
-            <input name="delivery-location" id="location0" value="Stephen A. Schwarzman Building" type="radio">
-            <label for="location0">
-              <span class="col location">
-              Stephen A. Schwarzman Building 476 Fifth Avenue (42nd St and Fifth Ave) Stephen A. Schwarzman Building - Rose Main Reading Room 315</span>
-              <span class="col" ><small >Call number:</small>
-              <br >DS731.M87Z48 2011</span>
-          </label>
-          </div>
-          <div class="group selected">
-            <input name="delivery-location" id="location0" value="Stephen A. Schwarzman Building" type="radio">
-            <label for="location0">
-              <span class="col location">
-              Stephen A. Schwarzman Building 476 Fifth Avenue (42nd St and Fifth Ave) Stephen A. Schwarzman Building - Rose Main Reading Room 315</span>
-              <span class="col" ><small >Call number:</small>
-              <br >DS731.M87Z48 2011</span>
-          </label>
-          </div>
-        </fieldset>
-        <input name="pickupLocation" value="test" type="hidden">
-        <button type="submit" class="large">Submit your item hold request</button>
+          </fieldset>
+          <fieldset>
+            <legend class="visuallyHidden" id="radiobutton-group1">Select a pickup location</legend>
+            <label id="radiobutton-group1_every" for="available-every">
+              <input aria-labelledby="radiobutton-group1 radiobutton-group1_every" id="available-Room 315" type="radio" name="available" value="Room 315" />Stephen A. Schwarzman Building 476 Fifth Avenue (42nd St and Fifth Ave) Stephen A. Schwarzman Building - Art and Architecture - Room 300
+            </label>
+            <label id="radiobutton-group1_home" for="available-home">
+              <input aria-labelledby="radiobutton-group1 radiobutton-group1_home" id="available-Room 308" type="radio" name="available" value="Room 308" />Stephen A. Schwarzman Building 476 Fifth Avenue (42nd St and Fifth Ave) Stephen A. Schwarzman Building - Room 308
+            </label>
+            <label id="radiobutton-group1_library" for="available-library">
+              <input aria-labelledby="radiobutton-group1 radiobutton-group1_library" id="available-Room 319" type="radio" name="available" value="Room 319" />Stephen A. Schwarzman Building 476 Fifth Avenue (42nd St and Fifth Ave) Stephen A. Schwarzman Building - Carl H. Pforzheimer Collection of Shelley and His Circle - Room 319
+            </label>
+          </fieldset>
+        </div>
+        <button type="submit" class="nypl-request-button">Submit</button>
       </form>
     </div></div>
     </div>
