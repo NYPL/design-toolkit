@@ -21,8 +21,8 @@ $form-padding: 0.5rem;
 @mixin label {
   color: $page-text-color;
   display: block;
-  font-weight: bold;
-  margin-left: $form-padding;
+  font-weight: 400;
+  margin-bottom: ($form-padding / 2);
 }
 
 @mixin fieldset {
@@ -67,8 +67,8 @@ $form-padding: 0.5rem;
 @mixin text {
   @include input;
   @include box-shadow(inset 0 0 0 1px $nypl-dark-gray);
-  height: 2rem;
-  padding: 1.5rem 0 0;
+  height: 1.5rem;
+  padding: 0.5rem 0;
   text-indent: $form-padding;
   transition: all 0.2s ease-out;
   width: 100%;
@@ -90,8 +90,8 @@ $form-padding: 0.5rem;
     background-color: transparent;
     color: $page-text-color;
     display: block;
-    font-weight: bold;
-    position: absolute;
+    font-weight: 400;
+    //position: absolute;
   }
 
   input[type=text],
@@ -107,7 +107,7 @@ $form-padding: 0.5rem;
     display: block;
     font-size: 0.8rem;
     line-height: 1.5;
-    padding-left: $form-padding;
+    padding-top: $form-padding;
   }
 }
 
@@ -116,7 +116,7 @@ $form-padding: 0.5rem;
 
   input[type=text] {
     background-color: $nypl-red-error;
-    border-bottom: 0.125rem $nypl-red-dark solid;
+    border: ($general-border-width / 2) $nypl-red-dark solid;
     box-shadow: none;
   }
 
@@ -124,7 +124,7 @@ $form-padding: 0.5rem;
     background: $page-background-color;
     color: $nypl-red;
   }
-}
+} // /field-error
 
 @mixin text-field {
   @include fieldset;
@@ -197,7 +197,7 @@ $form-padding: 0.5rem;
 @mixin required-field {
   color: darken($highlight-color, 10%);
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @mixin select {
@@ -242,7 +242,7 @@ $form-padding: 0.5rem;
   label {
     background-color: $nypl-search-color-light;
     border-radius: $general-border-radius;
-    font-weight: normal;
+    font-weight: 400;
     padding: 0.1875rem 0;
   }
 
@@ -259,7 +259,7 @@ $form-padding: 0.5rem;
   padding-left: 0.5rem;
 
   label {
-    font-weight: normal;
+    font-weight: 400;
     padding: 0.1875rem 0;
   }
 
