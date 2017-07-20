@@ -374,7 +374,7 @@ a {
 a:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 input {
   border-radius: 0; }
@@ -382,7 +382,7 @@ input {
 input:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 select {
   border-radius: 0; }
@@ -390,7 +390,7 @@ select {
 select:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 button {
   border-radius: 0; }
@@ -398,7 +398,7 @@ button {
 button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 .nypl-omnisearch {
   background-color: #d7d4d0;
@@ -673,7 +673,8 @@ h2 {
   line-height: 1.1; }
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: 400; }
 
 p {
   margin-top: 0;
@@ -681,7 +682,7 @@ p {
 
 h4 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0; }
 
@@ -731,7 +732,7 @@ a {
 a:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 input {
   border-radius: 0; }
@@ -739,7 +740,7 @@ input {
 input:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 select {
   border-radius: 0; }
@@ -747,7 +748,7 @@ select {
 select:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 button {
   border-radius: 0; }
@@ -755,7 +756,7 @@ button {
 button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 .nypl-omnisearch {
   background-color: #d7d4d0;
@@ -2083,8 +2084,8 @@ dl dd.multi-item-list,
   .nypl-spinner-button.spinning::after,
   .nypl-spinner-field.spinning::after {
     animation: spinner-right 1.5s linear infinite;
-    background: -moz-repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(255, 255, 255, 0.5) 2.1rem);
-    background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(255, 255, 255, 0.5) 2.1rem);
+    background: -moz-repeating-linear-gradient(to right, rgba(215, 212, 208, 0.5), rgba(215, 212, 208, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(215, 212, 208, 0.5) 2.1rem);
+    background: repeating-linear-gradient(to right, rgba(215, 212, 208, 0.5), rgba(215, 212, 208, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(215, 212, 208, 0.5) 2.1rem);
     content: "";
     display: block;
     height: 100%;
@@ -2194,9 +2195,9 @@ dl dd.multi-item-list,
     .nypl-text-field input[type=date]:focus,
     .nypl-text-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-text-field .nypl-field-status {
@@ -2259,9 +2260,9 @@ dl dd.multi-item-list,
     .nypl-year-field input[type=date]:focus,
     .nypl-year-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-year-field .nypl-field-status {
@@ -2304,9 +2305,9 @@ dl dd.multi-item-list,
   .nypl-text-field-with-label input[type=date]:focus,
   .nypl-text-field-with-label input[type=number]:focus {
     background-color: #fff;
-    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-    box-shadow: inset 0 0 0 4px #ffb81d;
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
     color: #080807;
     outline: none; }
 .nypl-text-field-with-label .nypl-field-status {
@@ -2375,9 +2376,9 @@ dl dd.multi-item-list,
     .nypl-name-field input[type=date]:focus,
     .nypl-name-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-name-field .nypl-field-status {
@@ -2456,9 +2457,9 @@ dl dd.multi-item-list,
     .nypl-address-fieldset input[type=date]:focus,
     .nypl-address-fieldset input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-address-fieldset .nypl-field-status {
@@ -2533,9 +2534,9 @@ dl dd.multi-item-list,
     .nypl-date-field input[type=date]:focus,
     .nypl-date-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-date-field .nypl-field-status {
@@ -2633,7 +2634,7 @@ dl dd.multi-item-list,
   .nypl-simple-radiobutton input[type=radio],
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
 
 .nypl-terms-checkbox {
   border-left: 0.5rem solid #776e64;
@@ -2690,7 +2691,7 @@ dl dd.multi-item-list,
   .nypl-checkbox-field input[type=radio],
   .nypl-checkbox-field input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
 
 .nypl-omnisearch {
   background-color: #d7d4d0;
@@ -2811,7 +2812,7 @@ dl dd.multi-item-list,
   .nypl-searchable-field input[type=radio],
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
   .nypl-searchable-field .nypl-facet-search {
     position: relative; }
     .nypl-searchable-field .nypl-facet-search label {
@@ -2846,9 +2847,9 @@ dl dd.multi-item-list,
       .nypl-searchable-field .nypl-facet-search input[type=date]:focus,
       .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
         background-color: #fff;
-        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-        box-shadow: inset 0 0 0 4px #ffb81d;
+        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        box-shadow: inset 0 0 0 0.125rem #ffb81d;
         color: #080807;
         outline: none; }
     .nypl-searchable-field .nypl-facet-search .nypl-field-status {
@@ -2874,6 +2875,7 @@ dl dd.multi-item-list,
         clear: both; }
     .nypl-searchable-field .nypl-facet-list input[type="radio"],
     .nypl-searchable-field .nypl-facet-list input[type="checkbox"] {
+      box-sizing: border-box;
       display: inline-block; }
     .nypl-searchable-field .nypl-facet-list .nypl-facet-count {
       color: #776e64;
@@ -2971,14 +2973,21 @@ dl dd.multi-item-list,
   border: 0; }
 
 .nypl-page-header {
-  background-color: #efedeb;
-  margin-bottom: 1rem; }
+  background-color: #efedeb; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
     font-size: 2rem;
     margin: 0; }
   .nypl-page-header h2 {
     line-height: 1; }
+  .nypl-page-header h2 {
+    color: #080807;
+    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .nypl-page-header h2 {
+        margin-top: 0; } }
 
 .nypl-breadcrumbs {
   list-style-type: none;
@@ -4880,7 +4889,7 @@ dl dd.multi-item-list,
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
-      margin: 0 0.25rem 0 0; }
+      margin: 0 0.5rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.selected {
       background-color: #efedeb;
       color: #080807; }
@@ -4982,6 +4991,12 @@ dl dd.multi-item-list,
   background-color: #fafaf9;
   border-bottom: 0.08333rem solid #b4aea6;
   margin-bottom: 0; }
+  .nypl-page-header h1,
+  .nypl-page-header h2 {
+    font-size: 2rem;
+    margin: 0; }
+  .nypl-page-header h2 {
+    line-height: 1; }
   .nypl-page-header h2 {
     color: #d0343a;
     font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
