@@ -1,4 +1,4 @@
-<svg width="16" height="16" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
   <title>radioButton.icon.inactive</title>
   <path d="M7.96875,1A6.96875,6.96875,0,1,1,1,7.96875,6.97663,6.97663,0,0,1,7.96875,1m0-1A7.96875,7.96875,0,1,0,15.9375,7.96875,7.96873,7.96873,0,0,0,7.96875,0Z"/>
 </svg>
