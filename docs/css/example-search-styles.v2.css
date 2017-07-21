@@ -605,7 +605,6 @@ button:focus {
   font-weight: 700;
   letter-spacing: 0.04rem;
   margin-top: 1.75rem;
-  padding-left: 0.75rem;
   text-transform: uppercase; }
   @media (max-width: 965px) {
     .search-control {
@@ -963,7 +962,6 @@ button:focus {
   font-weight: 700;
   letter-spacing: 0.04rem;
   margin-top: 1.75rem;
-  padding-left: 0.75rem;
   text-transform: uppercase; }
   @media (max-width: 965px) {
     .search-control {
