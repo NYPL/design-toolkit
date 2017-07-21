@@ -71,10 +71,20 @@
   @include results-button;
 }
 
-.nypl-request-button, // for background compatibility support
+ // for background compatibility support
 .nypl-primary-button {
   @include primary-button;
 }
+
+// item requests
+.nypl-request-button {
+  @include request-button;
+}
+
+.nypl-request-item-summary {
+  @include request-item-summary;
+}
+
 
 .nypl-service-button {
   @include service-button;
@@ -175,6 +185,10 @@
   @include terms-checkbox;
 }
 
+.nypl-request-radiobutton-field {
+  @include item-holds-radiobutton-field;
+}
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   @include radiobutton-field;
@@ -214,6 +228,10 @@
 
 .nypl-page-header {
   @include page-header;
+}
+
+.nypl-request-page-header {
+  @include request-page-header;
 }
 
 .nypl-breadcrumbs {

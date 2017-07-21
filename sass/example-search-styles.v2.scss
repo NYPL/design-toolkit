@@ -38,7 +38,7 @@
 }
 
 .nypl-page-header {
-  @include page-header-2(
+  @include page-header(
   $background-color: lighten($nypl-light-gray, 15%),
   $font-weight: 100,
   $type-color: $nypl-red);
