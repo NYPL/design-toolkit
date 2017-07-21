@@ -265,7 +265,7 @@ $form-padding: 0.5rem;
 } // /simple-radiobutton
 
 //
-// Special case to extend the defualt to the Item Holds screen
+// Special case to extend the default to the Item Holds screen
 //
 @mixin item-holds-radiobutton-field {
   @include fieldset;

@@ -6,25 +6,7 @@
 
 @warn "remove magic numbers";
 
-// Basic Page header V1
-// @mixin page-header(
-// $background-color: lighten($page-color-light, 10%)) {
-//   background-color: $background-color;
-//   margin-bottom: 1rem;
-//
-//   h1,
-//   h2 {
-//     font-size: 2rem;
-//     margin: 0;
-//   }
-//
-//   h2 { // when it's a secondary title (real title is inside content below)
-//     line-height: 1;
-//   }
-// }
-// / page-header
-
-// Basic Page header V2
+// Basic Page header
 //////////////////////////////
 // based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
 // specifically: Discovery_home_v4a.psd
