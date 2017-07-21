@@ -232,22 +232,30 @@ $form-padding: 0.5rem;
   padding-left: 1rem;
 }
 
+//
+// not-so-simple-radiobutton
+//
 @mixin simple-radiobutton(
+    $background-color: $nypl-light-gray,
     $border-radius: 0,
     $border-width: 0,
-    $border-color: $nypl-dark-gray) {
-  border-radius: $general-border-radius;
-  border: $border-color solid $border-width;
+    $border-color: $nypl-dark-gray,
+    $height: auto,
+    $margins: auto) {
+  border-radius: $border-radius;
+  @content;
 
   span.nypl-label {
     @include label;
   }
 
   label {
-    background-color: $nypl-search-color-light;
-    border-radius: $general-border-radius;
+    background-color: $background-color;
+    border: $border-color solid $border-width;
+    border-radius: 0;
     font-weight: 400;
-    padding: 0.1875rem 0;
+    height: $height;
+    // padding: 0.1875rem 0;
   }
 
   input[type=radio],
@@ -255,6 +263,50 @@ $form-padding: 0.5rem;
     height: initial;
     margin: 0 0.5rem;
   }
+} // /simple-radiobutton
+
+//
+// Special case to extend the defualt to the Item Holds screen
+//
+@mixin item-holds-radiobutton-field {
+  @include fieldset;
+  @include simple-radiobutton(
+    $background-color: $nypl-white,
+    $border-color: $nypl-light-gray,
+    $border-width: ($general-border-width / 2),
+    $height: 5rem,
+    $margins: 0) {
+
+    :first-child {
+      border-top: $nypl-light-gray solid ($general-border-width / 2);
+    }
+
+    label {
+      margin: 0;
+      padding-left: 4rem;
+      padding-top: 0.1875rem;
+
+      &.electronic-delivery {
+        border-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      input[type=radio] {
+        display: block;
+        position: relative;
+        top: 1.25rem;
+        left: -2.75rem;
+      }
+    }
+  }
+}
+
+//
+// radiobutton-field in action
+//
+@mixin radiobutton-field {
+  @include fieldset;
+  @include simple-radiobutton;
 }
 
 @mixin terms-checkbox {
@@ -277,11 +329,7 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin radiobutton-field {
-  @include fieldset;
-  @include simple-radiobutton;
-}
-
+// TODO: sort out which omnisearch search(es) are doing the things...
 @mixin omnisearch (
   $background-color: $nypl-search-color,
   $border: 0,
