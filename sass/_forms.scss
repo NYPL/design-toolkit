@@ -251,7 +251,6 @@ $form-padding: 0.5rem;
 
   label {
     background-color: $background-color;
-    border: $border-color solid $border-width;
     border-radius: 0;
     font-weight: 400;
     height: $height;
@@ -272,21 +271,21 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include simple-radiobutton(
     $background-color: $nypl-white,
-    $border-color: $nypl-light-gray,
-    $border-width: ($general-border-width / 2),
     $height: 5rem,
     $margins: 0) {
 
-    // :first-child {
-    //   border-top: $nypl-light-gray solid ($general-border-width / 2);
-    // }
-
     label {
+      border: $nypl-light-gray solid ($general-border-width / 2);
+      border-bottom: 0;
       margin: 0;
-      padding: 0.1875rem 0 0.1875rem 4rem;
-      //padding-top: 0.1875rem;
+      padding: 0.1875rem 1rem 0.1875rem 4rem;
+
+      &:last-child {
+        border-bottom: $nypl-light-gray solid ($general-border-width / 2);
+      }
 
       &.electronic-delivery {
+        border-bottom: $nypl-light-gray solid ($general-border-width / 2);
         margin-bottom: 1rem;
       }
 
@@ -555,10 +554,9 @@ $form-padding: 0.5rem;
 }
 
 //
-// request form
+// Request form(s)
 //
-//
-// Mixin for Discovery requests
+// Mixins for Discovery requests pages
 //
 @mixin request-item-summary {
   background: $nypl-white;
@@ -571,6 +569,29 @@ $form-padding: 0.5rem;
     } // span
   } // /.call-number-heading
 } // /request-item-summary
+
+@mixin request-page-header {
+  @include page-header(
+  $background-color: lighten($nypl-light-gray, 15%),
+  $font-weight: 100,
+  $type-color: $nypl-red);
+  border-bottom: $general-border-width / 1.5 solid darken($nypl-light-gray, 15%);
+  margin-bottom: 0;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .search-control {
+    margin-top: 0;
+  }
+
+  .nypl-column-three-quarters {
+    margin-bottom: 0;
+  }
+}
+
+
 
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";

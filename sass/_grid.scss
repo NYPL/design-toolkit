@@ -35,6 +35,7 @@
   $font-weight: 400,
   $type-color: $nypl-dark-gray) {
   background-color: $background-color;
+  @content;
 
   h1,
   h2 {
@@ -56,8 +57,7 @@
       margin-top: 0;
     }
   }
-}
-// /page-header-2
+} // /page-header-2
 //////////////////////////////
 
 @mixin breadcrumbs {
