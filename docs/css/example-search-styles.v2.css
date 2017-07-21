@@ -2620,18 +2620,18 @@ dl dd.multi-item-list,
   padding-left: 1rem; }
 
 .nypl-simple-radiobutton {
-  border-radius: 0.2rem;
-  border: #080807 solid 0; }
+  border-radius: 0; }
   .nypl-simple-radiobutton span.nypl-label {
     color: #080807;
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
   .nypl-simple-radiobutton label {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
+    background-color: #d7d4d0;
+    border: #080807 solid 0;
+    border-radius: 0;
     font-weight: 400;
-    padding: 0.1875rem 0; }
+    height: auto; }
   .nypl-simple-radiobutton input[type=radio],
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
@@ -2650,6 +2650,54 @@ dl dd.multi-item-list,
   .nypl-terms-checkbox.checked {
     border-left-color: #799a05; }
 
+.nypl-request-radiobutton-field {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  border-radius: 0; }
+  .nypl-request-radiobutton-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-request-radiobutton-field label,
+  .nypl-request-radiobutton-field legend {
+    color: #080807;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field label {
+    margin: 0;
+    padding-left: 4rem;
+    padding-top: 0.1875rem; }
+    .nypl-request-radiobutton-field label.electronic-delivery {
+      margin-bottom: 1rem; }
+    .nypl-request-radiobutton-field label input[type=radio] {
+      display: block;
+      position: relative;
+      top: 1.25rem;
+      left: -2.75rem; }
+  .nypl-request-radiobutton-field span.nypl-label {
+    color: #080807;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field label {
+    background-color: #fff;
+    border: #d7d4d0 solid 0.0625rem;
+    border-radius: 0;
+    font-weight: 400;
+    height: 5rem; }
+  .nypl-request-radiobutton-field input[type=radio],
+  .nypl-request-radiobutton-field input[type=checkbox] {
+    height: initial;
+    margin: 0 0.5rem; }
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   background-color: #fff;
@@ -2660,8 +2708,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative;
-  border-radius: 0.2rem;
-  border: #080807 solid 0; }
+  border-radius: 0; }
   .nypl-radiobutton-field fieldset,
   .nypl-checkbox-field fieldset {
     border: 0;
@@ -2684,10 +2731,11 @@ dl dd.multi-item-list,
     margin-bottom: 0.25rem; }
   .nypl-radiobutton-field label,
   .nypl-checkbox-field label {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
+    background-color: #d7d4d0;
+    border: #080807 solid 0;
+    border-radius: 0;
     font-weight: 400;
-    padding: 0.1875rem 0; }
+    height: auto; }
   .nypl-radiobutton-field input[type=radio],
   .nypl-radiobutton-field input[type=checkbox],
   .nypl-checkbox-field input[type=radio],
@@ -2787,8 +2835,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   padding-bottom: 0.5rem;
-  border-radius: 0.2rem;
-  border: #080807 solid 0; }
+  border-radius: 0; }
   .nypl-searchable-field fieldset {
     border: 0;
     box-shadow: none;
@@ -2808,10 +2855,11 @@ dl dd.multi-item-list,
     font-weight: 400;
     margin-bottom: 0.25rem; }
   .nypl-searchable-field label {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
+    background-color: #d7d4d0;
+    border: #080807 solid 0;
+    border-radius: 0;
     font-weight: 400;
-    padding: 0.1875rem 0; }
+    height: auto; }
   .nypl-searchable-field input[type=radio],
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
@@ -4869,8 +4917,7 @@ dl dd.multi-item-list,
     white-space: nowrap;
     z-index: 1; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label {
-    border-radius: 0.2rem;
-    border: #080807 solid 0;
+    border-radius: 0;
     color: #efedeb;
     display: inline-block;
     height: 2rem;
@@ -4886,10 +4933,11 @@ dl dd.multi-item-list,
       font-weight: 400;
       margin-bottom: 0.25rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label label {
-      background-color: #efedeb;
-      border-radius: 0.2rem;
+      background-color: #d7d4d0;
+      border: #080807 solid 0;
+      border-radius: 0;
       font-weight: 400;
-      padding: 0.1875rem 0; }
+      height: auto; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
