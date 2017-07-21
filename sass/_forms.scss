@@ -277,9 +277,9 @@ $form-padding: 0.5rem;
     $height: 5rem,
     $margins: 0) {
 
-    :first-child {
-      border-top: $nypl-light-gray solid ($general-border-width / 2);
-    }
+    // :first-child {
+    //   border-top: $nypl-light-gray solid ($general-border-width / 2);
+    // }
 
     label {
       margin: 0;
@@ -287,7 +287,6 @@ $form-padding: 0.5rem;
       padding-top: 0.1875rem;
 
       &.electronic-delivery {
-        border-top: 0;
         margin-bottom: 1rem;
       }
 

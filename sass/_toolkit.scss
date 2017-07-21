@@ -175,6 +175,10 @@
   @include terms-checkbox;
 }
 
+.nypl-request-radiobutton-field {
+  @include item-holds-radiobutton-field;
+}
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   @include radiobutton-field;
