@@ -1747,8 +1747,11 @@ dl dd.multi-item-list,
 .nypl-request-item-summary {
   background: #fff; }
   .nypl-request-item-summary .call-number {
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    font-weight: 100; }
     .nypl-request-item-summary .call-number span {
+      font-weight: 400;
       text-transform: uppercase; }
 
 .nypl-service-button {
