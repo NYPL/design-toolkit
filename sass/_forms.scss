@@ -567,7 +567,7 @@ $form-padding: 0.5rem;
     font-weight: 100;
 
     span {
-      font-weight: 400;;
+      font-weight: 400;
       text-transform: uppercase;
     } // span
   } // /.call-number-heading
@@ -583,16 +583,16 @@ $form-padding: 0.5rem;
 
   h2 {
     margin-bottom: 0;
-  }
+  } // /h2
 
   .search-control {
     margin-top: 0;
-  }
+  } // /.search-control
 
   .nypl-column-three-quarters {
     margin-bottom: 0;
-  }
-}
+  } // /.nypl-column-three-quarters
+} // /request-page-header
 
 
 
