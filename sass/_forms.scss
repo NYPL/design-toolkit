@@ -563,8 +563,11 @@ $form-padding: 0.5rem;
 
   .call-number {
     margin: $general-padding 0;
+    font-size: 0.85rem;
+    font-weight: 100;
 
     span {
+      font-weight: 400;;
       text-transform: uppercase;
     } // span
   } // /.call-number-heading
