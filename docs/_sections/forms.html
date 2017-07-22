@@ -13,37 +13,9 @@ description: Form fields and user input.
 
     <p><strong>NOTE:</strong> The text field is <code>aria-labeledby</code> the button.</p>
 
-    <div class="nypl-toolkit-example">
-      <span class="nypl-example-text">Example</span>
-        <fieldset class="nypl-omnisearch">
-          <span class="nypl-omni-fields">
-            <label for="search-by-field">Search in</label>
-            <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
-          </span>
-          <input type="text" aria-labelledby="nypl-omni-button" value="" />
-          <input type="submit" id="nypl-omni-button" value="Search">
-        </fieldset>
-    </div>
-
-    <pre><code class="scss">
-.nypl-omnisearch
-.nypl-omni-fields
-    </code></pre>
-    <pre><code class="html">
-&lt;fieldset class=&quot;nypl-omnisearch&quot;&gt;
-  &lt;span class=&quot;nypl-omni-fields&quot;&gt;
-    &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
-    &lt;select id=&quot;search-by-field&quot;&gt;&lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;&lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;&lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;&lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;&lt;option value=&quot;series&quot;&gt;Series&lt;/option&gt;&lt;option value=&quot;call_number&quot;&gt;Call number&lt;/option&gt;&lt;/select&gt;
-  &lt;/span&gt;
-  &lt;input type=&quot;text&quot; aria-labelledby=&quot;nypl-omni-button&quot; value=&quot;&quot; /&gt;
-  &lt;input type=&quot;submit&quot; id=&quot;nypl-omni-button&quot; value=&quot;Search&quot;&gt;
-&lt;/fieldset&gt;
-    </code></pre>
-
-<h3 id="omniSearch">Omni Search: Design Pattern 2</h3>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
-    <fieldset class="nypl-omnisearch style-2">
+    <fieldset class="nypl-omnisearch">
       <span class="nypl-omni-fields">
         <label for="search-by-field">Search in</label>
         <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
@@ -53,11 +25,11 @@ description: Form fields and user input.
     </fieldset>
 </div>
 <pre><code class="scss">
-.nypl-omnisearch.style-2
+.nypl-omnisearch
 .nypl-omni-fields
 </code></pre>
   <pre><code class="html">
-&lt;fieldset class=&quot;nypl-omnisearch style-2&quot;&gt;
+&lt;fieldset class=&quot;nypl-omnisearch&quot;&gt;
   &lt;span class=&quot;nypl-omni-fields&quot;&gt;
     &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
     &lt;select id=&quot;search-by-field&quot;&gt;
