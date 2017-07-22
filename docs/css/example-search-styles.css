@@ -2083,8 +2083,8 @@ dl dd.multi-item-list,
   .nypl-spinner-button.spinning::after,
   .nypl-spinner-field.spinning::after {
     animation: spinner-right 1.5s linear infinite;
-    background: -moz-repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(255, 255, 255, 0.5) 2.1rem);
-    background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(255, 255, 255, 0.5) 2.1rem);
+    background: -moz-repeating-linear-gradient(to right, rgba(215, 212, 208, 0.5), rgba(215, 212, 208, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(215, 212, 208, 0.5) 2.1rem);
+    background: repeating-linear-gradient(to right, rgba(215, 212, 208, 0.5), rgba(215, 212, 208, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(215, 212, 208, 0.5) 2.1rem);
     content: "";
     display: block;
     height: 100%;
@@ -2633,7 +2633,7 @@ dl dd.multi-item-list,
   .nypl-simple-radiobutton input[type=radio],
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
 
 .nypl-terms-checkbox {
   border-left: 0.5rem solid #776e64;
@@ -2690,7 +2690,7 @@ dl dd.multi-item-list,
   .nypl-checkbox-field input[type=radio],
   .nypl-checkbox-field input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
 
 .nypl-omnisearch {
   background-color: #d7d4d0;
@@ -2811,7 +2811,7 @@ dl dd.multi-item-list,
   .nypl-searchable-field input[type=radio],
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
   .nypl-searchable-field .nypl-facet-search {
     position: relative; }
     .nypl-searchable-field .nypl-facet-search label {
@@ -4880,7 +4880,7 @@ dl dd.multi-item-list,
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
-      margin: 0 0.25rem 0 0; }
+      margin: 0 0.5rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.selected {
       background-color: #efedeb;
       color: #080807; }
