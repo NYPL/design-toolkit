@@ -79,7 +79,7 @@ $form-padding: 0.5rem;
 
   &:focus {
     background-color: $nypl-white;
-    @include box-shadow(inset 0 0 0 4px $focus-color);
+    @include box-shadow(inset 0 0 0 $focus-width $focus-color);
     color: $page-color;
     outline: none;
   }
@@ -232,18 +232,29 @@ $form-padding: 0.5rem;
   padding-left: 1rem;
 }
 
-@mixin simple-radiobutton {
-  border-radius: $general-border-radius;
+//
+// not-so-simple-radiobutton
+//
+@mixin simple-radiobutton(
+    $background-color: $nypl-light-gray,
+    $border-radius: 0,
+    $border-width: 0,
+    $border-color: $nypl-dark-gray,
+    $height: auto,
+    $margins: auto) {
+  border-radius: $border-radius;
+  @content;
 
   span.nypl-label {
     @include label;
   }
 
   label {
-    background-color: $nypl-search-color-light;
-    border-radius: $general-border-radius;
+    background-color: $background-color;
+    border-radius: 0;
     font-weight: 400;
-    padding: 0.1875rem 0;
+    height: $height;
+    // padding: 0.1875rem 0;
   }
 
   input[type=radio],
@@ -251,6 +262,49 @@ $form-padding: 0.5rem;
     height: initial;
     margin: 0 0.5rem;
   }
+} // /simple-radiobutton
+
+//
+// Special case to extend the default to the Item Holds screen
+//
+@mixin item-holds-radiobutton-field {
+  @include fieldset;
+  @include simple-radiobutton(
+    $background-color: $nypl-white,
+    $height: 5rem,
+    $margins: 0) {
+
+    label {
+      border: $nypl-light-gray solid ($general-border-width / 2);
+      border-bottom: 0;
+      margin: 0;
+      padding: 0.1875rem 1rem 0.1875rem 4rem;
+
+      &:last-child {
+        border-bottom: $nypl-light-gray solid ($general-border-width / 2);
+      }
+
+      &.electronic-delivery {
+        border-bottom: $nypl-light-gray solid ($general-border-width / 2);
+        margin-bottom: 1rem;
+      }
+
+      input[type=radio] {
+        display: block;
+        position: relative;
+        top: 1.25rem;
+        left: -2.75rem;
+      }
+    }
+  }
+}
+
+//
+// radiobutton-field in action
+//
+@mixin radiobutton-field {
+  @include fieldset;
+  @include simple-radiobutton;
 }
 
 @mixin terms-checkbox {
@@ -273,11 +327,7 @@ $form-padding: 0.5rem;
   }
 }
 
-@mixin radiobutton-field {
-  @include fieldset;
-  @include simple-radiobutton;
-}
-
+// TODO: sort out which omnisearch search(es) are doing the things...
 @mixin omnisearch (
   $background-color: $nypl-search-color,
   $border: 0,
@@ -353,7 +403,7 @@ $form-padding: 0.5rem;
 @mixin facet-toggle {
   background-color: $nypl-search-color-dark;
   border: 0;
-  border-radius: $general-border-radius $general-border-radius 0 0;
+  border-radius: 0;
   color: $page-background-color;
   cursor: pointer;
   display: block;
@@ -374,14 +424,16 @@ $form-padding: 0.5rem;
   }
 
   .nypl-icon {
-    @include nypl-icon($fill: $page-background-color, $background-color: $nypl-search-color-dark);
+    @include nypl-icon(
+      $fill: $page-background-color,
+      $background-color: $nypl-search-color-dark);
     @include transition(all, $hover-time, ease-in);
     position: absolute;
     right: 0.5rem;
     top: 0.65rem;
     transform: rotate(180deg);
   }
-}
+} // /facet-toggle
 
 @mixin collapsible-field($is-searchable: false) {
   @include fieldset;
@@ -389,7 +441,7 @@ $form-padding: 0.5rem;
 
   @if ($is-searchable == false) {
     .nypl-collapsible {
-      background-color: darken($nypl-search-color, 10%);
+      background-color: $nypl-white;
       padding-left: $form-padding;
       padding-right: $form-padding;
     }
@@ -428,6 +480,7 @@ $form-padding: 0.5rem;
 
     input[type="radio"],
     input[type="checkbox"] {
+      box-sizing: border-box;
       display: inline-block;
     }
 
@@ -458,7 +511,10 @@ $form-padding: 0.5rem;
   @include fieldset;
 
   button {
-    @include basic-button($background-color: $nypl-search-color-light, $text-color:$page-color, $border-width: 0);
+    @include basic-button(
+      $background-color: $nypl-search-color-light,
+      $text-color:$page-color,
+      $border-width: 0);
     display: inline-block;
     font-weight: normal;
     margin: 0 0 0.5rem 0.5rem;
@@ -496,5 +552,49 @@ $form-padding: 0.5rem;
     }
   }
 }
+
+//
+// Request form(s)
+//
+// Mixins for Discovery requests pages
+//
+@mixin request-item-summary {
+  background: $nypl-white;
+
+  .call-number {
+    margin: $general-padding 0;
+    font-size: 0.85rem;
+    font-weight: 100;
+
+    span {
+      font-weight: 400;
+      text-transform: uppercase;
+    } // span
+  } // /.call-number-heading
+} // /request-item-summary
+
+@mixin request-page-header {
+  @include page-header(
+  $background-color: lighten($nypl-light-gray, 15%),
+  $font-weight: 100,
+  $type-color: $nypl-red);
+  border-bottom: $general-border-width / 1.5 solid darken($nypl-light-gray, 15%);
+  margin-bottom: 0;
+
+  h2 {
+    margin-bottom: 0;
+  } // /h2
+
+  .search-control {
+    margin-top: 0;
+  } // /.search-control
+
+  .nypl-column-three-quarters {
+    margin-bottom: 0;
+  } // /.nypl-column-three-quarters
+} // /request-page-header
+
+
+
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";
