@@ -236,11 +236,11 @@ $form-padding: 0.5rem;
 // not-so-simple-radiobutton
 //
 @mixin simple-radiobutton(
-    $background-color: $nypl-light-gray,
+    $background-color: $nypl-white,
     $border-radius: 0,
     $border-width: 0,
     $border-color: $nypl-dark-gray,
-    $height: auto,
+    $height: 4rem,
     $margins: auto) {
   border-radius: $border-radius;
   @content;
@@ -305,6 +305,18 @@ $form-padding: 0.5rem;
 @mixin radiobutton-field {
   @include fieldset;
   @include simple-radiobutton;
+
+  label {
+    border: ($general-border-width / 3) solid $nypl-light-gray;
+    padding: 1.1875rem 1rem 0 4rem;
+  }
+
+  input[type=radio] {
+    display: block;
+    position: relative;
+    top: 1.15rem;
+    left: -2.75rem;
+  }
 }
 
 @mixin terms-checkbox {
