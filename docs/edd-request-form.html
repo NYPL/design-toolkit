@@ -59,22 +59,104 @@
     <div class="nypl-full-width-wrapper">
       <div class="nypl-row">
         <div class="nypl-column-three-quarters">
-        <div class="item-header">
-          <h3>Research item hold request</h3>
-        </div>
-      <div class="nypl-request-item-summary">
-        <div class="item">
-          <h4>
-            <a href="/bib/b7169745">880-02 Bian yuan, zu qun yu guo jia : Qing mo xi bei Hui min qi yi = Edge, ethnicity and the state : the uprisings of northwest Chinese Muslims in late Qing dynasty / Zhou Yaoming zhu.</a>
-          </h4>
+          <div class="item-header">
+            <h3>Electronic Delivery Request</h3>
+          </div>
+          <div class="nypl-request-item-summary">
+          <div class="item">
+            <h4>
+              <a href="/bib/b7169745">880-02 Bian yuan, zu qun yu guo jia : Qing mo xi bei Hui min qi yi = Edge, ethnicity and the state : the uprisings of northwest Chinese Muslims in late Qing dynasty / Zhou Yaoming zhu.</a>
+            </h4>
           <div class="call-number"><span>Call number:</span></br>
           DS731.M87Z48 2011</div>
+          </div>
         </div>
-      </div>
-
+      </div> <!-- /nypl-column-three-quarters -->
     </div>
+    <form id="id="edd-request"">
+      <div class="nypl-row">
+          <div class="nypl-column-half">
+            <fieldset class="" id="">
+              <h4>Contact Information</h4>
+              <div class="nypl-text-field" id="email-address">
+                <label for="required-field" id="email-address-label">Email Adress
+                  <span class="nypl-required-field">Required</span>
+                </label>
+                <input id="required-field" type="text" required="true" aria-labelledby="email-address-label email-address-status" aria-required="true" placeholder="" />
+                <span class="nypl-field-status" id="email-address-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="nypl-row">
+          <fieldset>
+            <div class="nypl-column-half">
+
+                <h4>Chapter or Article Information</h4>
+              <div class="nypl-text-field" id="article-title">
+                <label for="required-field" id="article-title-label">Chapter / Article Title
+                  <span class="nypl-required-field">Required</span>
+                </label>
+                <input id="required-field" type="text" required="true" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
+                <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Please indicate the title of the chapter or article </span>
+              </div>
+
+          </div><!-- /nypl-column-half -->
+
+        <div class="nypl-column-one-quarter">
+
+            <div class="nypl-text-field">
+            <label for="keyword-text">Article Author</label>
+            <input id="keyword-text" type="text" placeholder="" />
+            <span class="nypl-field-status" id="article-author-status" aria-live="assertive" aria-atomic="true">Please enter the author&rsquo;s name </span>
+          </div>
+
+          <div class="nypl-year-field">
+            <label for="date-from">Date Published</label>
+            <input id="date-from" type="number" min="1895" max="9999" step="1">
+          </div>
+
+          <div class="nypl-text-field">
+            <label for="keyword-text">Volume</label>
+            <input id="keyword-text" type="text" placeholder="" />
+            <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please enter the Volume </span>
+          </div>
+
+          <div class="nypl-text-field">
+            <label for="keyword-text">Issue</label>
+            <input id="keyword-text" type="text" placeholder="" />
+            <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
+          </div>
+        </fieldset>
+        </div>
+
+        <div class="nypl-column-one-half">
+          <h4>Select Page Number Range: Maximum 50 pages </h4>
+        </div>
+        <div class="nypl-column-one-quarter">
+          <div class="nypl-text-field" id="article-title">
+            <label for="required-field" id="article-title-label">Starting Page:
+              <span class="nypl-required-field">Required</span>
+            </label>
+            <input id="required-field" type="text" required="true" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
+            <!-- <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Please indicate the title of the chapter or article </span> -->
+          </div>
+          <div class="nypl-text-field" id="article-title">
+            <label for="required-field" id="article-title-label">Ending Page:
+              <span class="nypl-required-field">Required</span>
+            </label>
+            <input id="required-field" type="text" required="true" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
+            <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Values must be numeric only (No special characters allowed)</span>
+          </div>
+          <label for="additional-notes-textarea">Additional Notes:</label>
+          <textarea form="edd-request" id="additional-notes-textarea" name="Additional Notes:" rows="8" cols="80">
+          </textarea>
+          <button type="submit" class="nypl-request-button">Submit Request</button>
+        </div><!-- /nypl-column-1/4 -->
+      </fieldset>
+      </div>
+    </form>
   </div>
-</div>
 </main>
   <footer role="contentinfo" class="nypl-footer">
     <div class="nypl-full-width-wrapper footer-content">

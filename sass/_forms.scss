@@ -550,6 +550,12 @@ $form-padding: 0.5rem;
   }
 }
 
+@mixin text-area(
+  $border-color: $nypl-dark-gray,
+  $border-width: ($general-border-width / 3)) {
+  border: $border-width solid $border-color;
+}
+
 //
 // Request form(s)
 //
