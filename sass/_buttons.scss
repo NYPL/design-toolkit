@@ -165,7 +165,8 @@
   $text-color: $nypl-white,
   $border-color: $nypl-red,
   $background-color: $nypl-red,
-  $border-radius: 0.25rem);
+  $border-radius: 0.25rem,
+  $text-transform: uppercase);
 
   &:hover {
     background: $nypl-white;

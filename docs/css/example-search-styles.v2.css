@@ -1712,7 +1712,7 @@ dl dd.multi-item-list,
   letter-spacing: normal;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
-  text-transform: none;
+  text-transform: uppercase;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
