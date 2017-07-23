@@ -2662,8 +2662,7 @@ dl dd.multi-item-list,
   .nypl-simple-radiobutton label {
     background-color: #d7d4d0;
     border-radius: 0;
-    font-weight: 400;
-    height: auto; }
+    font-weight: 400; }
   .nypl-simple-radiobutton input[type=radio],
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
@@ -2707,7 +2706,7 @@ dl dd.multi-item-list,
     border: #d7d4d0 solid 0.0625rem;
     border-bottom: 0;
     margin: 0;
-    padding: 0.1875rem 1rem 0.1875rem 4rem; }
+    padding: 1rem 1rem 2rem 4rem; }
     .nypl-request-radiobutton-field label:last-child {
       border-bottom: #d7d4d0 solid 0.0625rem; }
     .nypl-request-radiobutton-field label.electronic-delivery {
@@ -2726,8 +2725,7 @@ dl dd.multi-item-list,
   .nypl-request-radiobutton-field label {
     background-color: #fff;
     border-radius: 0;
-    font-weight: 400;
-    height: 5rem; }
+    font-weight: 400; }
   .nypl-request-radiobutton-field input[type=radio],
   .nypl-request-radiobutton-field input[type=checkbox] {
     height: initial;
@@ -2768,8 +2766,7 @@ dl dd.multi-item-list,
   .nypl-checkbox-field label {
     background-color: #d7d4d0;
     border-radius: 0;
-    font-weight: 400;
-    height: auto; }
+    font-weight: 400; }
   .nypl-radiobutton-field input[type=radio],
   .nypl-radiobutton-field input[type=checkbox],
   .nypl-checkbox-field input[type=radio],
@@ -2891,8 +2888,7 @@ dl dd.multi-item-list,
   .nypl-searchable-field label {
     background-color: #d7d4d0;
     border-radius: 0;
-    font-weight: 400;
-    height: auto; }
+    font-weight: 400; }
   .nypl-searchable-field input[type=radio],
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
@@ -4993,8 +4989,7 @@ dl dd.multi-item-list,
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label label {
       background-color: #d7d4d0;
       border-radius: 0;
-      font-weight: 400;
-      height: auto; }
+      font-weight: 400; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
