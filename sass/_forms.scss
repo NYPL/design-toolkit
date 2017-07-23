@@ -269,14 +269,13 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include simple-radiobutton(
     $background-color: $nypl-white,
-    $height: 5rem,
     $margins: 0) {
 
     label {
       border: $nypl-light-gray solid ($general-border-width / 2);
       border-bottom: 0;
       margin: 0;
-      padding: 0.1875rem 1rem 0.1875rem 4rem;
+      padding: 1rem 1rem 2rem 4rem;
 
       &:last-child {
         border-bottom: $nypl-light-gray solid ($general-border-width / 2);
@@ -293,7 +292,7 @@ $form-padding: 0.5rem;
         top: 1.25rem;
         left: -2.75rem;
       }
-    }
+    } // /label
   }
 }
 
