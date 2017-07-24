@@ -3070,8 +3070,15 @@ dl dd.multi-item-list,
     font-weight: 200;
     max-width: none; }
 
-.nypl-quarter-image {
-  width: 100%; }
+@media (max-width: 965px) {
+  .nypl-quarter-image {
+    background: limegreen; } }
+@media (max-width: 1120px) {
+  .nypl-quarter-image {
+    background: hotpink; } }
+@media (max-width: 483px) {
+  .nypl-quarter-image {
+    background: dodgerblue; } }
 
 .nypl-page-header {
   background-color: #efedeb; }

@@ -9,6 +9,7 @@ $max-width: ($max-width-raw / $basefontraw) * 1rem; // in rems
 // breakpoints
 $intermediate-breakpoint: 1120px;
 $mobile-breakpoint: 965px;
+$xtrasmall-breakpoint: 483px;
 
 // borders
 $focus-width: (2 / $basefontraw) * 1rem;
