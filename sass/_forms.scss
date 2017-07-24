@@ -236,11 +236,11 @@ $form-padding: 0.5rem;
 // not-so-simple-radiobutton
 //
 @mixin simple-radiobutton(
-    $background-color: $nypl-light-gray,
+    $background-color: $nypl-white,
     $border-radius: 0,
     $border-width: 0,
     $border-color: $nypl-dark-gray,
-    $height: auto,
+    $height: 4rem,
     $margins: auto) {
   border-radius: $border-radius;
   @content;
@@ -302,6 +302,18 @@ $form-padding: 0.5rem;
 @mixin radiobutton-field {
   @include fieldset;
   @include simple-radiobutton;
+
+  label {
+    border: ($general-border-width / 3) solid $nypl-light-gray;
+    padding: 1.1875rem 1rem 0 4rem;
+  }
+
+  input[type=radio] {
+    display: block;
+    position: relative;
+    top: 1.15rem;
+    left: -2.75rem;
+  }
 }
 
 @mixin terms-checkbox {
@@ -323,79 +335,6 @@ $form-padding: 0.5rem;
     border-left-color: $nypl-green;
   }
 }
-
-// TODO: sort out which omnisearch search(es) are doing the things...
-@mixin omnisearch (
-  $background-color: $nypl-search-color,
-  $border: 0,
-  $border-radius: ($general-border-radius * 2),
-  $padding: $form-padding) {
-  background-color: $background-color;
-  border: $border;
-  border-radius: $border-radius;
-  padding: $padding;
-
-  button,
-  .nypl-omni-fields,
-  input {
-    display: block;
-    float: left;
-    height: 2rem;
-  }
-
-  .nypl-omni-fields {
-    width: 20%;
-
-    label {
-      @include screenreader-only;
-    }
-
-    select {
-      @include select;
-    }
-  }
-
-  input[type=text],
-  input[type=email],
-  input[type=number] {
-    @include input;
-    border-radius: $general-border-radius;
-    margin: 0 1%;
-    text-indent: $form-padding;
-    width: 58%;
-  }
-
-  button,
-  input[type=button],
-  input[type=submit] {
-    @include basic-button($height: 2rem);
-    line-height: 0;
-    width: 20%;
-  }
-
-  @include media($mobile-breakpoint) {
-    .nypl-omni-fields {
-      width: 30%;
-
-      select {
-        padding-left: 0.125rem;
-        padding-right: 20%;
-      }
-    }
-
-    input[type=text],
-    input[type=email],
-    input[type=number] {
-      width: 48%;
-    }
-
-    button,
-    input[type=button],
-    input[type=submit] {
-      padding: 0;
-    }
-  }
-} // /omnisearch v1
 
 @mixin facet-toggle {
   background-color: $nypl-search-color-dark;

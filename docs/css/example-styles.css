@@ -400,205 +400,6 @@ button:focus {
   outline-style: solid;
   outline-width: 0.125rem; }
 
-.nypl-omnisearch {
-  background-color: #d7d4d0;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 0.5rem; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch .nypl-omni-fields,
-  .nypl-omnisearch input {
-    display: block;
-    float: left;
-    height: 2rem; }
-  .nypl-omnisearch .nypl-omni-fields {
-    width: 20%; }
-    .nypl-omnisearch .nypl-omni-fields label {
-      position: absolute;
-      width: 0.1rem;
-      height: 0.1rem;
-      margin: -0.1rem;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .nypl-omnisearch .nypl-omni-fields select {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
-      border: 0;
-      border-radius: 0.2rem;
-      height: 2rem;
-      padding-right: 7%;
-      padding-left: 0.5rem;
-      width: 100%; }
-  .nypl-omnisearch input[type=text],
-  .nypl-omnisearch input[type=email],
-  .nypl-omnisearch input[type=number] {
-    background-color: #fff;
-    border: 0;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    padding: 0;
-    border-radius: 0.2rem;
-    margin: 0 1%;
-    text-indent: 0.5rem;
-    width: 58%; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch input[type=button],
-  .nypl-omnisearch input[type=submit] {
-    background-color: #776e64;
-    border: 0.04167rem solid #776e64;
-    border-radius: 0.06667rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-    height: 2rem;
-    letter-spacing: normal;
-    padding: 0.2rem 0.75rem;
-    text-decoration: none;
-    text-transform: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    line-height: 0;
-    width: 20%; }
-    .nypl-omnisearch button:link, .nypl-omnisearch button:visited,
-    .nypl-omnisearch input[type=button]:link,
-    .nypl-omnisearch input[type=button]:visited,
-    .nypl-omnisearch input[type=submit]:link,
-    .nypl-omnisearch input[type=submit]:visited {
-      color: #fff; }
-    .nypl-omnisearch button:hover, .nypl-omnisearch button:hover:visited, .nypl-omnisearch button.active,
-    .nypl-omnisearch input[type=button]:hover,
-    .nypl-omnisearch input[type=button]:hover:visited,
-    .nypl-omnisearch input[type=button].active,
-    .nypl-omnisearch input[type=submit]:hover,
-    .nypl-omnisearch input[type=submit]:hover:visited,
-    .nypl-omnisearch input[type=submit].active {
-      border-color: #776e64;
-      background-color: #fff;
-      color: #776e64; }
-    .nypl-omnisearch button:focus,
-    .nypl-omnisearch input[type=button]:focus,
-    .nypl-omnisearch input[type=submit]:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-omnisearch button.disabled, .nypl-omnisearch button[disabled="disabled"], .nypl-omnisearch button[disabled="true"], .nypl-omnisearch button[disabled], .nypl-omnisearch button[disabled=true],
-    .nypl-omnisearch input[type=button].disabled,
-    .nypl-omnisearch input[type=button][disabled="disabled"],
-    .nypl-omnisearch input[type=button][disabled="true"],
-    .nypl-omnisearch input[type=button][disabled],
-    .nypl-omnisearch input[type=button][disabled=true],
-    .nypl-omnisearch input[type=submit].disabled,
-    .nypl-omnisearch input[type=submit][disabled="disabled"],
-    .nypl-omnisearch input[type=submit][disabled="true"],
-    .nypl-omnisearch input[type=submit][disabled],
-    .nypl-omnisearch input[type=submit][disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-omnisearch button.disabled:hover, .nypl-omnisearch button[disabled="disabled"]:hover, .nypl-omnisearch button[disabled="true"]:hover, .nypl-omnisearch button[disabled]:hover, .nypl-omnisearch button[disabled=true]:hover,
-      .nypl-omnisearch input[type=button].disabled:hover,
-      .nypl-omnisearch input[type=button][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=button][disabled="true"]:hover,
-      .nypl-omnisearch input[type=button][disabled]:hover,
-      .nypl-omnisearch input[type=button][disabled=true]:hover,
-      .nypl-omnisearch input[type=submit].disabled:hover,
-      .nypl-omnisearch input[type=submit][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=submit][disabled="true"]:hover,
-      .nypl-omnisearch input[type=submit][disabled]:hover,
-      .nypl-omnisearch input[type=submit][disabled=true]:hover {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        color: #fff; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch .nypl-omni-fields {
-      width: 30%; }
-      .nypl-omnisearch .nypl-omni-fields select {
-        padding-left: 0.125rem;
-        padding-right: 20%; }
-    .nypl-omnisearch input[type=text],
-    .nypl-omnisearch input[type=email],
-    .nypl-omnisearch input[type=number] {
-      width: 48%; }
-    .nypl-omnisearch button,
-    .nypl-omnisearch input[type=button],
-    .nypl-omnisearch input[type=submit] {
-      padding: 0; } }
-
-.nypl-omnisearch.style-2 {
-  background-color: #fff;
-  border: solid 0.0625rem #080807;
-  border-radius: 0.2rem;
-  padding: 0;
-  font-weight: 200; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch.style-2 {
-      width: 97%; } }
-  .nypl-omnisearch.style-2 legend {
-    display: none;
-    height: 0;
-    width: 0; }
-  .nypl-omnisearch.style-2 .nypl-omni-fields {
-    border-right: 0.08333rem solid #080807;
-    padding-right: 1rem;
-    margin-left: 1rem;
-    position: relative;
-    top: 0.475rem;
-    width: 17%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 .nypl-omni-fields {
-        font-size: 0.9rem;
-        margin-left: 0.25rem;
-        padding-right: 0.25rem;
-        width: 28%; } }
-    .nypl-omnisearch.style-2 .nypl-omni-fields select {
-      border-radius: 0;
-      border: 0;
-      border-right: 0.08333rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
-  .nypl-omnisearch.style-2 input[type=text] {
-    background: #fff;
-    position: relative;
-    width: 58%;
-    top: 0.475rem; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=text] {
-        width: 45%; } }
-  .nypl-omnisearch.style-2 input[type=submit] {
-    background: #d0343a;
-    border: 0;
-    border-radius: 0.0625rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    float: right;
-    height: 3rem;
-    position: relative;
-    width: 15%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=submit] {
-        width: 20%; } }
-    .nypl-omnisearch.style-2 input[type=submit]:hover {
-      background-color: #fff;
-      border: solid 0.0625rem #d0343a;
-      color: #d0343a; }
-  .nypl-omnisearch.style-2 svg {
-    display: inline-block;
-    fill: #080807;
-    height: 1.3125rem;
-    margin-left: 93.5%;
-    position: relative;
-    top: -1.9rem;
-    width: 0.9375rem; }
-
 .search-control {
   color: #080807;
   font-size: 0.8rem;
@@ -756,205 +557,6 @@ button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
   outline-width: 0.125rem; }
-
-.nypl-omnisearch {
-  background-color: #d7d4d0;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 0.5rem; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch .nypl-omni-fields,
-  .nypl-omnisearch input {
-    display: block;
-    float: left;
-    height: 2rem; }
-  .nypl-omnisearch .nypl-omni-fields {
-    width: 20%; }
-    .nypl-omnisearch .nypl-omni-fields label {
-      position: absolute;
-      width: 0.1rem;
-      height: 0.1rem;
-      margin: -0.1rem;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .nypl-omnisearch .nypl-omni-fields select {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
-      border: 0;
-      border-radius: 0.2rem;
-      height: 2rem;
-      padding-right: 7%;
-      padding-left: 0.5rem;
-      width: 100%; }
-  .nypl-omnisearch input[type=text],
-  .nypl-omnisearch input[type=email],
-  .nypl-omnisearch input[type=number] {
-    background-color: #fff;
-    border: 0;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    padding: 0;
-    border-radius: 0.2rem;
-    margin: 0 1%;
-    text-indent: 0.5rem;
-    width: 58%; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch input[type=button],
-  .nypl-omnisearch input[type=submit] {
-    background-color: #776e64;
-    border: 0.04167rem solid #776e64;
-    border-radius: 0.06667rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-    height: 2rem;
-    letter-spacing: normal;
-    padding: 0.2rem 0.75rem;
-    text-decoration: none;
-    text-transform: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    line-height: 0;
-    width: 20%; }
-    .nypl-omnisearch button:link, .nypl-omnisearch button:visited,
-    .nypl-omnisearch input[type=button]:link,
-    .nypl-omnisearch input[type=button]:visited,
-    .nypl-omnisearch input[type=submit]:link,
-    .nypl-omnisearch input[type=submit]:visited {
-      color: #fff; }
-    .nypl-omnisearch button:hover, .nypl-omnisearch button:hover:visited, .nypl-omnisearch button.active,
-    .nypl-omnisearch input[type=button]:hover,
-    .nypl-omnisearch input[type=button]:hover:visited,
-    .nypl-omnisearch input[type=button].active,
-    .nypl-omnisearch input[type=submit]:hover,
-    .nypl-omnisearch input[type=submit]:hover:visited,
-    .nypl-omnisearch input[type=submit].active {
-      border-color: #776e64;
-      background-color: #fff;
-      color: #776e64; }
-    .nypl-omnisearch button:focus,
-    .nypl-omnisearch input[type=button]:focus,
-    .nypl-omnisearch input[type=submit]:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-omnisearch button.disabled, .nypl-omnisearch button[disabled="disabled"], .nypl-omnisearch button[disabled="true"], .nypl-omnisearch button[disabled], .nypl-omnisearch button[disabled=true],
-    .nypl-omnisearch input[type=button].disabled,
-    .nypl-omnisearch input[type=button][disabled="disabled"],
-    .nypl-omnisearch input[type=button][disabled="true"],
-    .nypl-omnisearch input[type=button][disabled],
-    .nypl-omnisearch input[type=button][disabled=true],
-    .nypl-omnisearch input[type=submit].disabled,
-    .nypl-omnisearch input[type=submit][disabled="disabled"],
-    .nypl-omnisearch input[type=submit][disabled="true"],
-    .nypl-omnisearch input[type=submit][disabled],
-    .nypl-omnisearch input[type=submit][disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-omnisearch button.disabled:hover, .nypl-omnisearch button[disabled="disabled"]:hover, .nypl-omnisearch button[disabled="true"]:hover, .nypl-omnisearch button[disabled]:hover, .nypl-omnisearch button[disabled=true]:hover,
-      .nypl-omnisearch input[type=button].disabled:hover,
-      .nypl-omnisearch input[type=button][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=button][disabled="true"]:hover,
-      .nypl-omnisearch input[type=button][disabled]:hover,
-      .nypl-omnisearch input[type=button][disabled=true]:hover,
-      .nypl-omnisearch input[type=submit].disabled:hover,
-      .nypl-omnisearch input[type=submit][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=submit][disabled="true"]:hover,
-      .nypl-omnisearch input[type=submit][disabled]:hover,
-      .nypl-omnisearch input[type=submit][disabled=true]:hover {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        color: #fff; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch .nypl-omni-fields {
-      width: 30%; }
-      .nypl-omnisearch .nypl-omni-fields select {
-        padding-left: 0.125rem;
-        padding-right: 20%; }
-    .nypl-omnisearch input[type=text],
-    .nypl-omnisearch input[type=email],
-    .nypl-omnisearch input[type=number] {
-      width: 48%; }
-    .nypl-omnisearch button,
-    .nypl-omnisearch input[type=button],
-    .nypl-omnisearch input[type=submit] {
-      padding: 0; } }
-
-.nypl-omnisearch.style-2 {
-  background-color: #fff;
-  border: solid 0.0625rem #080807;
-  border-radius: 0.2rem;
-  padding: 0;
-  font-weight: 200; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch.style-2 {
-      width: 97%; } }
-  .nypl-omnisearch.style-2 legend {
-    display: none;
-    height: 0;
-    width: 0; }
-  .nypl-omnisearch.style-2 .nypl-omni-fields {
-    border-right: 0.08333rem solid #080807;
-    padding-right: 1rem;
-    margin-left: 1rem;
-    position: relative;
-    top: 0.475rem;
-    width: 17%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 .nypl-omni-fields {
-        font-size: 0.9rem;
-        margin-left: 0.25rem;
-        padding-right: 0.25rem;
-        width: 28%; } }
-    .nypl-omnisearch.style-2 .nypl-omni-fields select {
-      border-radius: 0;
-      border: 0;
-      border-right: 0.08333rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
-  .nypl-omnisearch.style-2 input[type=text] {
-    background: #fff;
-    position: relative;
-    width: 58%;
-    top: 0.475rem; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=text] {
-        width: 45%; } }
-  .nypl-omnisearch.style-2 input[type=submit] {
-    background: #d0343a;
-    border: 0;
-    border-radius: 0.0625rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    float: right;
-    height: 3rem;
-    position: relative;
-    width: 15%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=submit] {
-        width: 20%; } }
-    .nypl-omnisearch.style-2 input[type=submit]:hover {
-      background-color: #fff;
-      border: solid 0.0625rem #d0343a;
-      color: #d0343a; }
-  .nypl-omnisearch.style-2 svg {
-    display: inline-block;
-    fill: #080807;
-    height: 1.3125rem;
-    margin-left: 93.5%;
-    position: relative;
-    top: -1.9rem;
-    width: 0.9375rem; }
 
 .search-control {
   color: #080807;
@@ -2663,7 +2265,7 @@ dl dd.multi-item-list,
     font-weight: 400;
     margin-bottom: 0.25rem; }
   .nypl-simple-radiobutton label {
-    background-color: #d7d4d0;
+    background-color: #fff;
     border-radius: 0;
     font-weight: 400; }
   .nypl-simple-radiobutton input[type=radio],
@@ -2767,7 +2369,7 @@ dl dd.multi-item-list,
     margin-bottom: 0.25rem; }
   .nypl-radiobutton-field label,
   .nypl-checkbox-field label {
-    background-color: #d7d4d0;
+    background-color: #fff;
     border-radius: 0;
     font-weight: 400; }
   .nypl-radiobutton-field input[type=radio],
@@ -2776,12 +2378,118 @@ dl dd.multi-item-list,
   .nypl-checkbox-field input[type=checkbox] {
     height: initial;
     margin: 0 0.5rem; }
+  .nypl-radiobutton-field label,
+  .nypl-checkbox-field label {
+    border: 0.04167rem solid #d7d4d0;
+    padding: 1.1875rem 1rem 0 4rem; }
+  .nypl-radiobutton-field input[type=radio],
+  .nypl-checkbox-field input[type=radio] {
+    display: block;
+    position: relative;
+    top: 1.15rem;
+    left: -2.75rem; }
 
 .nypl-omnisearch {
-  background-color: #d7d4d0;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 0.5rem; }
+  background-color: #fff;
+  border: solid 0.0625rem #080807;
+  border-radius: 0.2rem;
+  padding: 0;
+  font-weight: 200; }
+  @media (max-width: 965px) {
+    .nypl-omnisearch {
+      width: 97%; } }
+  .nypl-omnisearch button,
+  .nypl-omnisearch .nypl-omni-fields,
+  .nypl-omnisearch input {
+    display: block;
+    float: left;
+    height: 2rem; }
+  .nypl-omnisearch legend {
+    display: none;
+    height: 0;
+    width: 0; }
+  .nypl-omnisearch .nypl-omni-fields {
+    border-right: 0.08333rem solid #080807;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 0.475rem;
+    width: 17%; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch .nypl-omni-fields {
+        font-size: 0.9rem;
+        margin-left: 0.25rem;
+        padding-right: 0.25rem;
+        width: 28%; } }
+    .nypl-omnisearch .nypl-omni-fields label {
+      position: absolute;
+      width: 0.1rem;
+      height: 0.1rem;
+      margin: -0.1rem;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; }
+    .nypl-omnisearch .nypl-omni-fields select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
+      border: 0;
+      border-radius: 0.2rem;
+      height: 2rem;
+      padding-right: 7%;
+      padding-left: 0.5rem;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0;
+      border-right: 0.08333rem;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
+  .nypl-omnisearch input[type=text],
+  .nypl-omnisearch input[type=email],
+  .nypl-omnisearch input[type=number] {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 1%;
+    text-indent: 0.5rem; }
+  .nypl-omnisearch input[type=text] {
+    background: #fff;
+    position: relative;
+    width: 58%;
+    top: 0.475rem; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch input[type=text] {
+        width: 45%; } }
+  .nypl-omnisearch input[type=submit] {
+    background: #d0343a;
+    border: 0;
+    border-radius: 0.0625rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #fff;
+    float: right;
+    height: 3rem;
+    position: relative;
+    width: 15%; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch input[type=submit] {
+        font-size: 14.4px;
+        width: 20%; } }
+    .nypl-omnisearch input[type=submit]:hover {
+      background-color: #fff;
+      border: solid 0.0625rem #d0343a;
+      color: #d0343a; }
+  .nypl-omnisearch svg {
+    display: inline-block;
+    fill: #080807;
+    height: 1.3125rem;
+    margin-left: 93.5%;
+    position: relative;
+    top: -1.9rem;
+    width: 0.9375rem; }
 
 .nypl-mobile-refine {
   display: none; }
@@ -2889,7 +2597,7 @@ dl dd.multi-item-list,
     font-weight: 400;
     margin-bottom: 0.25rem; }
   .nypl-searchable-field label {
-    background-color: #d7d4d0;
+    background-color: #fff;
     border-radius: 0;
     font-weight: 400; }
   .nypl-searchable-field input[type=radio],
@@ -4990,7 +4698,7 @@ dl dd.multi-item-list,
       font-weight: 400;
       margin-bottom: 0.25rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label label {
-      background-color: #d7d4d0;
+      background-color: #fff;
       border-radius: 0;
       font-weight: 400; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
