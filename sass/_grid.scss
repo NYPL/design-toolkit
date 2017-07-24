@@ -181,3 +181,10 @@
 @mixin inner-block {
   @warn "deprecated. use row-column pattern instead.";
 }
+
+//
+// Discovery HP Image, H4 & copy section below the Hero
+//TODO: Make a proper toolkit patter for this
+@mixin quarter-image {
+  width: 100%;
+}

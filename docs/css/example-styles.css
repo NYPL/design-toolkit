@@ -3070,6 +3070,9 @@ dl dd.multi-item-list,
     font-weight: 200;
     max-width: none; }
 
+.nypl-quarter-image {
+  width: 100%; }
+
 .nypl-page-header {
   background-color: #efedeb; }
   .nypl-page-header h1,

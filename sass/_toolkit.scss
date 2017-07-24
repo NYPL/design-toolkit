@@ -233,6 +233,10 @@
   @include homepage-hero;
 }
 
+.nypl-quarter-image {
+  @include quarter-image;
+}
+
 .nypl-page-header {
   @include page-header;
 }
