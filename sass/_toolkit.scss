@@ -229,6 +229,10 @@
   @include screenreader-only;
 }
 
+.nypl-homepage-hero {
+  @include homepage-hero;
+}
+
 .nypl-page-header {
   @include page-header;
 }

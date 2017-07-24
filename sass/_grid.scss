@@ -6,8 +6,8 @@
 
 @warn "remove magic numbers";
 
+//
 // Basic Page header:
-//////////////////////////////
 // based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
 // specifically: Discovery_home_v4a.psd
 //
@@ -39,8 +39,35 @@
       margin-top: 0;
     }
   }
-} // /page-header-2
-//////////////////////////////
+} // /page-header
+
+//
+// Home Page Hero
+//
+@mixin homepage-hero(
+  $background-color: lighten($page-color-light, 10%),
+  $font-family: $sans-serif-stack,
+  $font-weight: 400,
+  $type-color: $nypl-red) {
+    background-color: $background-color;
+
+  h1 {
+    color: $type-color;
+    font-family: 'Milo-Light', $font-family;
+    font-size: 3rem;
+    font-weight: $font-weight;
+    margin: 3rem 0 1.5rem;
+
+    @include media($mobile-breakpoint) {
+      margin-top: 0;
+    }
+  } // /h1
+
+  p {
+    font-weight: 200;
+    max-width: none;
+  }
+} // /homepage-hero
 
 @mixin breadcrumbs {
   list-style-type: none;
