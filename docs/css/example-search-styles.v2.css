@@ -1752,6 +1752,9 @@ dl dd.multi-item-list,
       font-weight: 400;
       text-transform: uppercase; }
 
+.nypl-text-area {
+  border: 0.04167rem solid #080807; }
+
 .nypl-service-button {
   background-color: #d0343a;
   border: 0 solid #776e64;

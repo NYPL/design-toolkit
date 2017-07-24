@@ -73,10 +73,11 @@
         </div>
       </div> <!-- /nypl-column-three-quarters -->
     </div>
-    <form id="id="edd-request"">
+    <form id="edd-request">
+      <fieldset>
       <div class="nypl-row">
           <div class="nypl-column-half">
-            <fieldset class="" id="">
+
               <h4>Contact Information</h4>
               <div class="nypl-text-field" id="email-address">
                 <label for="required-field" id="email-address-label">Email Adress
@@ -85,11 +86,12 @@
                 <input id="required-field" type="text" required="true" aria-labelledby="email-address-label email-address-status" aria-required="true" placeholder="" />
                 <span class="nypl-field-status" id="email-address-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
               </div>
-            </fieldset>
+
           </div>
         </div>
-        <div class="nypl-row">
-          <fieldset>
+      </fieldset>
+      <fieldset>
+            <div class="nypl-row">
             <div class="nypl-column-half">
 
                 <h4>Chapter or Article Information</h4>
@@ -102,8 +104,9 @@
               </div>
 
           </div><!-- /nypl-column-half -->
-
-        <div class="nypl-column-one-quarter">
+        </div>
+        <div class="nypl-row">
+          <div class="nypl-column-one-quarter">
 
             <div class="nypl-text-field">
             <label for="keyword-text">Article Author</label>
@@ -127,12 +130,16 @@
             <input id="keyword-text" type="text" placeholder="" />
             <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
           </div>
+        </div>
         </fieldset>
-        </div>
 
-        <div class="nypl-column-one-half">
-          <h4>Select Page Number Range: Maximum 50 pages </h4>
+        <fieldset>
+        <div class="nypl-row">
+          <div class="nypl-column-one-half">
+            <h4>Select Page Number Range: Maximum 50 pages </h4>
+          </div>
         </div>
+        <div class="nypl-row">
         <div class="nypl-column-one-quarter">
           <div class="nypl-text-field" id="article-title">
             <label for="required-field" id="article-title-label">Starting Page:
@@ -149,12 +156,13 @@
             <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Values must be numeric only (No special characters allowed)</span>
           </div>
           <label for="additional-notes-textarea">Additional Notes:</label>
-          <textarea form="edd-request" id="additional-notes-textarea" name="Additional Notes:" rows="8" cols="80">
+          <textarea class="nypl-text-area" form="edd-request" id="additional-notes-textarea" name="Additional Notes:">
           </textarea>
-          <button type="submit" class="nypl-request-button">Submit Request</button>
+
         </div><!-- /nypl-column-1/4 -->
+        </div>
       </fieldset>
-      </div>
+      <button type="submit" class="nypl-request-button">Submit Request</button>
     </form>
   </div>
 </main>

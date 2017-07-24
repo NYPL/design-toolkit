@@ -85,6 +85,9 @@
   @include request-item-summary;
 }
 
+.nypl-text-area {
+  @include text-area;
+}
 
 .nypl-service-button {
   @include service-button;
