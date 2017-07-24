@@ -25,8 +25,8 @@
 @mixin basic-button (
   $border-color: $nypl-search-color-dark,
   $background-color: $nypl-search-color-dark,
-  $border-radius: $general-border-radius,
-  $border-width: $general-border-width,
+  $border-radius: ($general-border-radius / 3),
+  $border-width: ($general-border-width / 3),
   $collapsible: false,
   $disabled-color: $nypl-light-gray,
   $font-size: 1rem,
@@ -144,12 +144,34 @@
 } // /"basic" button
 
 @mixin primary-button {
-  @include basic-button ($text-color: $nypl-white, $border-color: $nypl-blue, $background-color: $nypl-blue, $border-radius: 0.25rem);
+  @include basic-button (
+  $text-color: $nypl-white,
+  $border-color: $nypl-blue,
+  $background-color: $nypl-blue,
+  $border-radius: 0.25rem);
 
   &:hover {
     background: $nypl-white;
     border-color: $nypl-blue;
     color: $nypl-blue;
+  }
+}
+
+//
+// Mixin for the requesting pattern
+//
+@mixin request-button {
+  @include basic-button (
+  $text-color: $nypl-white,
+  $border-color: $nypl-red,
+  $background-color: $nypl-red,
+  $border-radius: 0.25rem,
+  $text-transform: uppercase);
+
+  &:hover {
+    background: $nypl-white;
+    border-color: $nypl-red;
+    color: $nypl-red;
   }
 }
 
