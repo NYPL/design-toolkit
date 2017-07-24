@@ -253,6 +253,7 @@ $form-padding: 0.5rem;
     background-color: $background-color;
     border-radius: 0;
     font-weight: 400;
+    padding: 1rem 1rem 2rem 4rem;
   }
 
   input[type=radio],
@@ -305,7 +306,7 @@ $form-padding: 0.5rem;
 
   label {
     border: ($general-border-width / 3) solid $nypl-light-gray;
-    padding: 1.1875rem 1rem 0 4rem;
+    //padding: 1.1875rem 1rem 0 4rem;
   }
 
   input[type=radio] {
@@ -314,7 +315,7 @@ $form-padding: 0.5rem;
     top: 1.15rem;
     left: -2.75rem;
   }
-}
+} // /radiobutton-field
 
 @mixin terms-checkbox {
   border-left: 0.5rem solid $nypl-gray;
