@@ -2401,8 +2401,8 @@ dl dd.multi-item-list,
     .nypl-omnisearch {
       width: 97%; } }
   .nypl-omnisearch button,
-  .nypl-omnisearch .nypl-omni-fields,
-  .nypl-omnisearch input {
+  .nypl-omnisearch input,
+  .nypl-omnisearch .nypl-omni-fields {
     display: block;
     float: left;
     height: 2rem; }
