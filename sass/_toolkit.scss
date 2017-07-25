@@ -237,6 +237,10 @@
   @include quarter-image;
 }
 
+.nypl-special-title {
+  @include special-title;
+}
+
 .nypl-page-header {
   @include page-header;
 }
