@@ -2,6 +2,8 @@
 $basefontraw: 16;
 $basefont: $basefontraw * 1px;
 
+$small-type: ($basefont * 0.9);
+
 // page measures
 $max-width-raw: 1312;
 $max-width: ($max-width-raw / $basefontraw) * 1rem; // in rems
