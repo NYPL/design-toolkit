@@ -200,10 +200,6 @@
 
   .image-column-one-quarter {
 
-    // @include media($intermediate-breakpoint) {
-    //   // background: $nypl-light-blue;
-    // }
-
     @include media($mobile-breakpoint) {
       float: left;
       margin-bottom: 1rem;
@@ -217,9 +213,6 @@
   }
 
   .image-column-three-quarters {
-    // @include media($intermediate-breakpoint) {
-    //   //background-color: $nypl-light-blue;
-    // }
 
     @include media($mobile-breakpoint) {
       float: left;
