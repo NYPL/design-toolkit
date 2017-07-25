@@ -229,6 +229,18 @@
   @include screenreader-only;
 }
 
+.nypl-homepage-hero {
+  @include homepage-hero;
+}
+
+.nypl-quarter-image {
+  @include quarter-image;
+}
+
+.nypl-special-title {
+  @include special-title;
+}
+
 .nypl-page-header {
   @include page-header;
 }

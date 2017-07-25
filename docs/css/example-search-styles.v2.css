@@ -2766,6 +2766,60 @@ dl dd.multi-item-list,
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+.nypl-homepage-hero {
+  background-color: #efedeb; }
+  .nypl-homepage-hero h1 {
+    color: #d0343a;
+    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 3rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .nypl-homepage-hero h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem; } }
+    @media (max-width: 483px) {
+      .nypl-homepage-hero h1 {
+        margin: 0.5rem 0 0.75rem; } }
+  .nypl-homepage-hero p {
+    font-weight: 200;
+    max-width: none; }
+    @media (max-width: 965px) {
+      .nypl-homepage-hero p {
+        line-height: 2; } }
+
+.nypl-quarter-image {
+  width: 100%; }
+  @media (max-width: 965px) {
+    .nypl-quarter-image .image-column-one-quarter {
+      float: left;
+      margin-bottom: 1rem;
+      padding-right: 0.5rem;
+      width: 25%; } }
+  @media (max-width: 483px) {
+    .nypl-quarter-image .image-column-one-quarter {
+      width: 100%; } }
+  @media (max-width: 965px) {
+    .nypl-quarter-image .image-column-three-quarters {
+      float: left;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+      width: 75%; } }
+  @media (max-width: 483px) {
+    .nypl-quarter-image .image-column-three-quarters {
+      width: 100%;
+      float: none; } }
+
+.nypl-special-title {
+  color: #d0343a;
+  font-size: 2rem;
+  font-weight: 200; }
+  @media (max-width: 965px) {
+    .nypl-special-title {
+      font-size: 1.75rem;
+      margin: 0.85rem 0; } }
+
 .nypl-page-header {
   background-color: #efedeb; }
   .nypl-page-header h1,
@@ -2838,7 +2892,7 @@ dl dd.multi-item-list,
     clear: both; }
   @media (max-width: 965px) {
     .nypl-full-width-wrapper {
-      padding-left: 1rem; } }
+      padding-left: 2rem; } }
 
 .nypl-row {
   margin: 0 -0.5rem;

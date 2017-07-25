@@ -134,29 +134,29 @@ description: Formats for specific information such as library hours, room locati
 
     <p><strong>NOTE:</strong> Make sure to preserve the whitespacing or column offset of the main content (see example below).</p>
 
-    <div class="nypl-toolkit-example">
-      <span class="nypl-example-text">Example</span>
-<div class="nypl-row">
-  <div class="nypl-column-three-quarters nypl-column-offset-one">
-    <h3>Main content here</h3>
-    <p>With some content that is offset one column from the left.</p>
-  </div>
-</div>
-<div class="nypl-row">
-  <div class="nypl-related-links nypl-column-three-quarters nypl-column-offset-one">
-    <h2>Related links</h2>
-  </div>
-  <div class="nypl-column-one-quarter nypl-column-offset-one">
-    One column of related content.
-  </div>
-  <div class="nypl-column-one-quarter">
-    Another column of related content.
-  </div>
-  <div class="nypl-column-one-quarter">
-    A third column of related content. Note that this is aligned with the main content.
-  </div>
-</div>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <div class="nypl-row">
+    <div class="nypl-column-three-quarters nypl-column-offset-one">
+      <h3>Main content here</h3>
+      <p>With some content that is offset one column from the left.</p>
     </div>
+  </div>
+  <div class="nypl-row">
+    <div class="nypl-related-links nypl-column-three-quarters nypl-column-offset-one">
+      <h2>Related links</h2>
+    </div>
+    <div class="nypl-column-one-quarter nypl-column-offset-one">
+      One column of related content.
+    </div>
+    <div class="nypl-column-one-quarter">
+      Another column of related content.
+    </div>
+    <div class="nypl-column-one-quarter">
+      A third column of related content. Note that this is aligned with the main content.
+    </div>
+  </div>
+</div>
     <pre><code class="scss">
 .nypl-related-links
     </code></pre>
@@ -182,3 +182,27 @@ description: Formats for specific information such as library hours, room locati
   &lt;/div&gt;
 &lt;/div&gt;
     </code></pre>
+
+<h3 id="imagesAndText">Images Combined with Text Modules</h3>
+<p>To be used in cases where imagery, headings and text are combined or &ldquo;locked-up&rdquo; into a singular unit.</p>
+<p>This folowing example covers the visual design requirement on the Research Home page where a 1/4 column containing an <code>img</code> is aligned horizontally  next to 3/4 column containing one <code>h4</code> and description text wrapped in a <code>p</code> tag. Further expansion of this <em>type</em> of pattern will be developed as needed.</p>
+<p class="nypl-a11y-note"><strong>Accessibility note:</strong> The image&rsquo;s <code>alt</code> tag should, at bare minimum be left blank (<code>alt=""</code>), but ideally the text should be contextually relevant, informative and suplement the associated headline and body copy of the   </p>
+
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <div class="nypl-row">
+    <div class="nypl-column-one-quarter">
+      <img class="nypl-quarter-image" src="https://d2720ur5668dri.cloudfront.net/sites/default/files/styles/extralarge/public/archives-portal.jpg?itok=-oYtHmeO" alt="" role="img" />
+    </div>
+    <div class="nypl-column-three-quarters">
+      <h4><a href="#">Collections</a></h4>
+      <p>Discover our world-renowned research collections, featuring more than 46 million items.</p>
+    </div>
+  </div>
+</div>
+  <pre><code class="scss">
+.nypl-quarter-image
+  </code></pre>
+  <pre><code class="html">
+&lt;div class=&quot;nypl-row&quot;&gt;&#10;&lt;div class=&quot;nypl-column-one-quarter&quot;&gt;&#10;&lt;img class=&quot;nypl-quarter-image&quot; src=&quot;https://d2720ur5668dri.cloudfront.net/sites/default/files/styles/extralarge/public/archives-portal.jpg?itok=-oYtHmeO&quot; alt=&quot;&quot; role=&quot;img&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;nypl-column-three-quarters&quot;&gt;&#10;&lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Collections&lt;/a&gt;&lt;/h4&gt;&#10;&lt;p&gt;Discover our world-renowned research collections, featuring more than 46 million items.&lt;/p&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;
+  </code></pre>
