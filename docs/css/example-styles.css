@@ -2783,18 +2783,25 @@ dl dd.multi-item-list,
 
 .nypl-quarter-image {
   width: 100%; }
-  @media (max-width: 1120px) {
-    .nypl-quarter-image {
-      background: hotpink;
-      width: 100%; } }
   @media (max-width: 965px) {
-    .nypl-quarter-image {
-      background: limegreen;
+    .nypl-quarter-image .image-column-one-quarter {
+      float: left;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
       width: 25%; } }
   @media (max-width: 483px) {
-    .nypl-quarter-image {
-      background: dodgerblue;
+    .nypl-quarter-image .image-column-one-quarter {
       width: 100%; } }
+  @media (max-width: 965px) {
+    .nypl-quarter-image .image-column-three-quarters {
+      float: left;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+      width: 75%; } }
+  @media (max-width: 483px) {
+    .nypl-quarter-image .image-column-three-quarters {
+      width: 100%;
+      float: none; } }
 
 .nypl-page-header {
   background-color: #efedeb; }

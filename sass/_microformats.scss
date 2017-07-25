@@ -191,22 +191,46 @@
 
 //
 // Discovery HP Image, H4 & copy section below the Hero
-//TODO: Make a proper toolkit patter for this
+// TODO: Make a proper toolkit patter for this
+// TODO: This is a bit hacky to override the toolkit's established grid styles, but in this case for medium sized viewports we need an breakpoint to hanle this layout:
+@warn "many magic numbers & work arounds here";
+
 @mixin quarter-image {
   width: 100%;
 
-  @include media($intermediate-breakpoint) {
-    background: hotpink;
-    width: 100%;
+  .image-column-one-quarter {
+
+    // @include media($intermediate-breakpoint) {
+    //   // background: $nypl-light-blue;
+    // }
+
+    @include media($mobile-breakpoint) {
+      float: left;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+      width: 25%;
+    }
+
+    @include media($xtrasmall-breakpoint) {
+      width: 100%;
+    }
   }
 
-  @include media($mobile-breakpoint) {
-    background: limegreen;
-    width: 25%;
-  }
+  .image-column-three-quarters {
+    // @include media($intermediate-breakpoint) {
+    //   //background-color: $nypl-light-blue;
+    // }
 
-  @include media($xtrasmall-breakpoint) {
-    background: dodgerblue;
-    width: 100%;
+    @include media($mobile-breakpoint) {
+      float: left;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+      width: 75%;
+    }
+
+    @include media($xtrasmall-breakpoint) {
+      width: 100%;
+      float: none;
+    }
   }
 }
