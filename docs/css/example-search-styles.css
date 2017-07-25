@@ -2781,7 +2781,6 @@ dl dd.multi-item-list,
         margin-bottom: 0.25rem; } }
     @media (max-width: 483px) {
       .nypl-homepage-hero h1 {
-        font-size: 1.75rem;
         margin: 0.5rem 0 0.75rem; } }
   .nypl-homepage-hero p {
     font-weight: 200;
