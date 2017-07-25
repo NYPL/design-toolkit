@@ -2781,15 +2781,20 @@ dl dd.multi-item-list,
     font-weight: 200;
     max-width: none; }
 
-@media (max-width: 965px) {
-  .nypl-quarter-image {
-    background: limegreen; } }
-@media (max-width: 1120px) {
-  .nypl-quarter-image {
-    background: hotpink; } }
-@media (max-width: 483px) {
-  .nypl-quarter-image {
-    background: dodgerblue; } }
+.nypl-quarter-image {
+  width: 100%; }
+  @media (max-width: 1120px) {
+    .nypl-quarter-image {
+      background: hotpink;
+      width: 100%; } }
+  @media (max-width: 965px) {
+    .nypl-quarter-image {
+      background: limegreen;
+      width: 25%; } }
+  @media (max-width: 483px) {
+    .nypl-quarter-image {
+      background: dodgerblue;
+      width: 100%; } }
 
 .nypl-page-header {
   background-color: #efedeb; }
