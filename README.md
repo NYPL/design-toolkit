@@ -18,6 +18,16 @@ See [LICENSE](LICENSE)
 
 ## CHANGE LOG
 
+### v0.1.22
+- Design Patterns added
+  - home page example page
+    * created new breakpoint for special classes
+    * created new component for image/text lockups
+  - holds form example page
+  - electronic document delivery example
+  - simplified code
+  -
+
 ### v0.1.21
 - Updates to design patterns for search results
   - added inline table for requests on single items

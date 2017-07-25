@@ -374,7 +374,7 @@ a {
 a:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 input {
   border-radius: 0; }
@@ -382,7 +382,7 @@ input {
 input:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 select {
   border-radius: 0; }
@@ -390,7 +390,7 @@ select {
 select:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 button {
   border-radius: 0; }
@@ -398,206 +398,7 @@ button {
 button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
-
-.nypl-omnisearch {
-  background-color: #d7d4d0;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 0.5rem; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch .nypl-omni-fields,
-  .nypl-omnisearch input {
-    display: block;
-    float: left;
-    height: 2rem; }
-  .nypl-omnisearch .nypl-omni-fields {
-    width: 20%; }
-    .nypl-omnisearch .nypl-omni-fields label {
-      position: absolute;
-      width: 0.1rem;
-      height: 0.1rem;
-      margin: -0.1rem;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .nypl-omnisearch .nypl-omni-fields select {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
-      border: 0;
-      border-radius: 0.2rem;
-      height: 2rem;
-      padding-right: 7%;
-      padding-left: 0.5rem;
-      width: 100%; }
-  .nypl-omnisearch input[type=text],
-  .nypl-omnisearch input[type=email],
-  .nypl-omnisearch input[type=number] {
-    background-color: #efedeb;
-    border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
-    font-size: 1rem;
-    padding: 0;
-    border-radius: 0.2rem;
-    margin: 0 1%;
-    text-indent: 0.5rem;
-    width: 58%; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch input[type=button],
-  .nypl-omnisearch input[type=submit] {
-    background-color: #776e64;
-    border: 0.125rem solid #776e64;
-    border-radius: 0.2rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-    height: 2rem;
-    letter-spacing: normal;
-    padding: 0.2rem 0.75rem;
-    text-decoration: none;
-    text-transform: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    line-height: 0;
-    width: 20%; }
-    .nypl-omnisearch button:link, .nypl-omnisearch button:visited,
-    .nypl-omnisearch input[type=button]:link,
-    .nypl-omnisearch input[type=button]:visited,
-    .nypl-omnisearch input[type=submit]:link,
-    .nypl-omnisearch input[type=submit]:visited {
-      color: #fff; }
-    .nypl-omnisearch button:hover, .nypl-omnisearch button:hover:visited, .nypl-omnisearch button.active,
-    .nypl-omnisearch input[type=button]:hover,
-    .nypl-omnisearch input[type=button]:hover:visited,
-    .nypl-omnisearch input[type=button].active,
-    .nypl-omnisearch input[type=submit]:hover,
-    .nypl-omnisearch input[type=submit]:hover:visited,
-    .nypl-omnisearch input[type=submit].active {
-      border-color: #776e64;
-      background-color: #fff;
-      color: #776e64; }
-    .nypl-omnisearch button:focus,
-    .nypl-omnisearch input[type=button]:focus,
-    .nypl-omnisearch input[type=submit]:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-omnisearch button.disabled, .nypl-omnisearch button[disabled="disabled"], .nypl-omnisearch button[disabled="true"], .nypl-omnisearch button[disabled], .nypl-omnisearch button[disabled=true],
-    .nypl-omnisearch input[type=button].disabled,
-    .nypl-omnisearch input[type=button][disabled="disabled"],
-    .nypl-omnisearch input[type=button][disabled="true"],
-    .nypl-omnisearch input[type=button][disabled],
-    .nypl-omnisearch input[type=button][disabled=true],
-    .nypl-omnisearch input[type=submit].disabled,
-    .nypl-omnisearch input[type=submit][disabled="disabled"],
-    .nypl-omnisearch input[type=submit][disabled="true"],
-    .nypl-omnisearch input[type=submit][disabled],
-    .nypl-omnisearch input[type=submit][disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-omnisearch button.disabled:hover, .nypl-omnisearch button[disabled="disabled"]:hover, .nypl-omnisearch button[disabled="true"]:hover, .nypl-omnisearch button[disabled]:hover, .nypl-omnisearch button[disabled=true]:hover,
-      .nypl-omnisearch input[type=button].disabled:hover,
-      .nypl-omnisearch input[type=button][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=button][disabled="true"]:hover,
-      .nypl-omnisearch input[type=button][disabled]:hover,
-      .nypl-omnisearch input[type=button][disabled=true]:hover,
-      .nypl-omnisearch input[type=submit].disabled:hover,
-      .nypl-omnisearch input[type=submit][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=submit][disabled="true"]:hover,
-      .nypl-omnisearch input[type=submit][disabled]:hover,
-      .nypl-omnisearch input[type=submit][disabled=true]:hover {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        color: #fff; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch .nypl-omni-fields {
-      width: 30%; }
-      .nypl-omnisearch .nypl-omni-fields select {
-        padding-left: 0.125rem;
-        padding-right: 20%; }
-    .nypl-omnisearch input[type=text],
-    .nypl-omnisearch input[type=email],
-    .nypl-omnisearch input[type=number] {
-      width: 48%; }
-    .nypl-omnisearch button,
-    .nypl-omnisearch input[type=button],
-    .nypl-omnisearch input[type=submit] {
-      padding: 0; } }
-
-.nypl-omnisearch.style-2 {
-  background-color: #fff;
-  border: solid 0.0625rem #080807;
-  border-radius: 0.2rem;
-  padding: 0;
-  font-weight: 200; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch.style-2 {
-      width: 97%; } }
-  .nypl-omnisearch.style-2 legend {
-    display: none;
-    height: 0;
-    width: 0; }
-  .nypl-omnisearch.style-2 .nypl-omni-fields {
-    border-right: 0.08333rem solid #080807;
-    padding-right: 1rem;
-    margin-left: 1rem;
-    position: relative;
-    top: 0.475rem;
-    width: 17%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 .nypl-omni-fields {
-        font-size: 0.9rem;
-        margin-left: 0.25rem;
-        padding-right: 0.25rem;
-        width: 28%; } }
-    .nypl-omnisearch.style-2 .nypl-omni-fields select {
-      border-radius: 0;
-      border: 0;
-      border-right: 0.08333rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
-  .nypl-omnisearch.style-2 input[type=text] {
-    background: #fff;
-    position: relative;
-    width: 58%;
-    top: 0.475rem; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=text] {
-        width: 45%; } }
-  .nypl-omnisearch.style-2 input[type=submit] {
-    background: #d0343a;
-    border: 0;
-    border-radius: 0.0625rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    float: right;
-    height: 3rem;
-    position: relative;
-    width: 15%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=submit] {
-        width: 20%; } }
-    .nypl-omnisearch.style-2 input[type=submit]:hover {
-      background-color: #fff;
-      border: solid 0.0625rem #d0343a;
-      color: #d0343a; }
-  .nypl-omnisearch.style-2 svg {
-    display: inline-block;
-    fill: #080807;
-    height: 1.3125rem;
-    margin-left: 93.5%;
-    position: relative;
-    top: -1.9rem;
-    width: 0.9375rem; }
+  outline-width: 0.125rem; }
 
 .search-control {
   color: #080807;
@@ -605,7 +406,6 @@ button:focus {
   font-weight: 700;
   letter-spacing: 0.04rem;
   margin-top: 1.75rem;
-  padding-left: 0.75rem;
   text-transform: uppercase; }
   @media (max-width: 965px) {
     .search-control {
@@ -673,7 +473,8 @@ h2 {
   line-height: 1.1; }
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: 400; }
 
 p {
   margin-top: 0;
@@ -681,7 +482,7 @@ p {
 
 h4 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0; }
 
@@ -731,7 +532,7 @@ a {
 a:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 input {
   border-radius: 0; }
@@ -739,7 +540,7 @@ input {
 input:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 select {
   border-radius: 0; }
@@ -747,7 +548,7 @@ select {
 select:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
+  outline-width: 0.125rem; }
 
 button {
   border-radius: 0; }
@@ -755,206 +556,7 @@ button {
 button:focus {
   outline-color: #ffb81d;
   outline-style: solid;
-  outline-width: 0.1875rem; }
-
-.nypl-omnisearch {
-  background-color: #d7d4d0;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 0.5rem; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch .nypl-omni-fields,
-  .nypl-omnisearch input {
-    display: block;
-    float: left;
-    height: 2rem; }
-  .nypl-omnisearch .nypl-omni-fields {
-    width: 20%; }
-    .nypl-omnisearch .nypl-omni-fields label {
-      position: absolute;
-      width: 0.1rem;
-      height: 0.1rem;
-      margin: -0.1rem;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .nypl-omnisearch .nypl-omni-fields select {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
-      border: 0;
-      border-radius: 0.2rem;
-      height: 2rem;
-      padding-right: 7%;
-      padding-left: 0.5rem;
-      width: 100%; }
-  .nypl-omnisearch input[type=text],
-  .nypl-omnisearch input[type=email],
-  .nypl-omnisearch input[type=number] {
-    background-color: #efedeb;
-    border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
-    font-size: 1rem;
-    padding: 0;
-    border-radius: 0.2rem;
-    margin: 0 1%;
-    text-indent: 0.5rem;
-    width: 58%; }
-  .nypl-omnisearch button,
-  .nypl-omnisearch input[type=button],
-  .nypl-omnisearch input[type=submit] {
-    background-color: #776e64;
-    border: 0.125rem solid #776e64;
-    border-radius: 0.2rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-    height: 2rem;
-    letter-spacing: normal;
-    padding: 0.2rem 0.75rem;
-    text-decoration: none;
-    text-transform: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    line-height: 0;
-    width: 20%; }
-    .nypl-omnisearch button:link, .nypl-omnisearch button:visited,
-    .nypl-omnisearch input[type=button]:link,
-    .nypl-omnisearch input[type=button]:visited,
-    .nypl-omnisearch input[type=submit]:link,
-    .nypl-omnisearch input[type=submit]:visited {
-      color: #fff; }
-    .nypl-omnisearch button:hover, .nypl-omnisearch button:hover:visited, .nypl-omnisearch button.active,
-    .nypl-omnisearch input[type=button]:hover,
-    .nypl-omnisearch input[type=button]:hover:visited,
-    .nypl-omnisearch input[type=button].active,
-    .nypl-omnisearch input[type=submit]:hover,
-    .nypl-omnisearch input[type=submit]:hover:visited,
-    .nypl-omnisearch input[type=submit].active {
-      border-color: #776e64;
-      background-color: #fff;
-      color: #776e64; }
-    .nypl-omnisearch button:focus,
-    .nypl-omnisearch input[type=button]:focus,
-    .nypl-omnisearch input[type=submit]:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-omnisearch button.disabled, .nypl-omnisearch button[disabled="disabled"], .nypl-omnisearch button[disabled="true"], .nypl-omnisearch button[disabled], .nypl-omnisearch button[disabled=true],
-    .nypl-omnisearch input[type=button].disabled,
-    .nypl-omnisearch input[type=button][disabled="disabled"],
-    .nypl-omnisearch input[type=button][disabled="true"],
-    .nypl-omnisearch input[type=button][disabled],
-    .nypl-omnisearch input[type=button][disabled=true],
-    .nypl-omnisearch input[type=submit].disabled,
-    .nypl-omnisearch input[type=submit][disabled="disabled"],
-    .nypl-omnisearch input[type=submit][disabled="true"],
-    .nypl-omnisearch input[type=submit][disabled],
-    .nypl-omnisearch input[type=submit][disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-omnisearch button.disabled:hover, .nypl-omnisearch button[disabled="disabled"]:hover, .nypl-omnisearch button[disabled="true"]:hover, .nypl-omnisearch button[disabled]:hover, .nypl-omnisearch button[disabled=true]:hover,
-      .nypl-omnisearch input[type=button].disabled:hover,
-      .nypl-omnisearch input[type=button][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=button][disabled="true"]:hover,
-      .nypl-omnisearch input[type=button][disabled]:hover,
-      .nypl-omnisearch input[type=button][disabled=true]:hover,
-      .nypl-omnisearch input[type=submit].disabled:hover,
-      .nypl-omnisearch input[type=submit][disabled="disabled"]:hover,
-      .nypl-omnisearch input[type=submit][disabled="true"]:hover,
-      .nypl-omnisearch input[type=submit][disabled]:hover,
-      .nypl-omnisearch input[type=submit][disabled=true]:hover {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        color: #fff; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch .nypl-omni-fields {
-      width: 30%; }
-      .nypl-omnisearch .nypl-omni-fields select {
-        padding-left: 0.125rem;
-        padding-right: 20%; }
-    .nypl-omnisearch input[type=text],
-    .nypl-omnisearch input[type=email],
-    .nypl-omnisearch input[type=number] {
-      width: 48%; }
-    .nypl-omnisearch button,
-    .nypl-omnisearch input[type=button],
-    .nypl-omnisearch input[type=submit] {
-      padding: 0; } }
-
-.nypl-omnisearch.style-2 {
-  background-color: #fff;
-  border: solid 0.0625rem #080807;
-  border-radius: 0.2rem;
-  padding: 0;
-  font-weight: 200; }
-  @media (max-width: 965px) {
-    .nypl-omnisearch.style-2 {
-      width: 97%; } }
-  .nypl-omnisearch.style-2 legend {
-    display: none;
-    height: 0;
-    width: 0; }
-  .nypl-omnisearch.style-2 .nypl-omni-fields {
-    border-right: 0.08333rem solid #080807;
-    padding-right: 1rem;
-    margin-left: 1rem;
-    position: relative;
-    top: 0.475rem;
-    width: 17%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 .nypl-omni-fields {
-        font-size: 0.9rem;
-        margin-left: 0.25rem;
-        padding-right: 0.25rem;
-        width: 28%; } }
-    .nypl-omnisearch.style-2 .nypl-omni-fields select {
-      border-radius: 0;
-      border: 0;
-      border-right: 0.08333rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
-  .nypl-omnisearch.style-2 input[type=text] {
-    background: #fff;
-    position: relative;
-    width: 58%;
-    top: 0.475rem; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=text] {
-        width: 45%; } }
-  .nypl-omnisearch.style-2 input[type=submit] {
-    background: #d0343a;
-    border: 0;
-    border-radius: 0.0625rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    float: right;
-    height: 3rem;
-    position: relative;
-    width: 15%; }
-    @media (max-width: 965px) {
-      .nypl-omnisearch.style-2 input[type=submit] {
-        width: 20%; } }
-    .nypl-omnisearch.style-2 input[type=submit]:hover {
-      background-color: #fff;
-      border: solid 0.0625rem #d0343a;
-      color: #d0343a; }
-  .nypl-omnisearch.style-2 svg {
-    display: inline-block;
-    fill: #080807;
-    height: 1.3125rem;
-    margin-left: 93.5%;
-    position: relative;
-    top: -1.9rem;
-    width: 0.9375rem; }
+  outline-width: 0.125rem; }
 
 .search-control {
   color: #080807;
@@ -962,7 +564,6 @@ button:focus {
   font-weight: 700;
   letter-spacing: 0.04rem;
   margin-top: 1.75rem;
-  padding-left: 0.75rem;
   text-transform: uppercase; }
   @media (max-width: 965px) {
     .search-control {
@@ -1575,8 +1176,8 @@ dl dd.multi-item-list,
 
 .nypl-basic-button {
   background-color: #776e64;
-  border: 0.125rem solid #776e64;
-  border-radius: 0.2rem;
+  border: 0.04167rem solid #776e64;
+  border-radius: 0.06667rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -1614,7 +1215,7 @@ dl dd.multi-item-list,
 
 .nypl-results-button {
   background-color: #fff;
-  border: 0.125rem solid #1b7fa7;
+  border: 0.04167rem solid #1b7fa7;
   border-radius: 0.25rem;
   color: #1b7fa7;
   cursor: pointer;
@@ -1657,10 +1258,9 @@ dl dd.multi-item-list,
     line-height: 1;
     margin-right: 0.25rem; }
 
-.nypl-request-button,
 .nypl-primary-button {
   background-color: #1b7fa7;
-  border: 0.125rem solid #1b7fa7;
+  border: 0.04167rem solid #1b7fa7;
   border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
@@ -1677,51 +1277,90 @@ dl dd.multi-item-list,
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
-  .nypl-request-button:link, .nypl-request-button:visited,
-  .nypl-primary-button:link,
-  .nypl-primary-button:visited {
+  .nypl-primary-button:link, .nypl-primary-button:visited {
     color: #fff; }
-  .nypl-request-button:hover, .nypl-request-button:hover:visited, .nypl-request-button.active,
-  .nypl-primary-button:hover,
-  .nypl-primary-button:hover:visited,
-  .nypl-primary-button.active {
+  .nypl-primary-button:hover, .nypl-primary-button:hover:visited, .nypl-primary-button.active {
     border-color: #776e64;
     background-color: #fff;
     color: #776e64; }
-  .nypl-request-button:focus,
   .nypl-primary-button:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
     outline: none; }
-  .nypl-request-button.disabled, .nypl-request-button[disabled="disabled"], .nypl-request-button[disabled="true"], .nypl-request-button[disabled], .nypl-request-button[disabled=true],
-  .nypl-primary-button.disabled,
-  .nypl-primary-button[disabled="disabled"],
-  .nypl-primary-button[disabled="true"],
-  .nypl-primary-button[disabled],
-  .nypl-primary-button[disabled=true] {
+  .nypl-primary-button.disabled, .nypl-primary-button[disabled="disabled"], .nypl-primary-button[disabled="true"], .nypl-primary-button[disabled], .nypl-primary-button[disabled=true] {
     background-color: #d7d4d0;
     border-color: #fff;
     cursor: default; }
-    .nypl-request-button.disabled:hover, .nypl-request-button[disabled="disabled"]:hover, .nypl-request-button[disabled="true"]:hover, .nypl-request-button[disabled]:hover, .nypl-request-button[disabled=true]:hover,
-    .nypl-primary-button.disabled:hover,
-    .nypl-primary-button[disabled="disabled"]:hover,
-    .nypl-primary-button[disabled="true"]:hover,
-    .nypl-primary-button[disabled]:hover,
-    .nypl-primary-button[disabled=true]:hover {
+    .nypl-primary-button.disabled:hover, .nypl-primary-button[disabled="disabled"]:hover, .nypl-primary-button[disabled="true"]:hover, .nypl-primary-button[disabled]:hover, .nypl-primary-button[disabled=true]:hover {
       background-color: #d7d4d0;
       border-color: #fff;
       color: #fff; }
-  .nypl-request-button:hover,
   .nypl-primary-button:hover {
     background: #fff;
     border-color: #1b7fa7;
     color: #1b7fa7; }
 
+.nypl-request-button {
+  background-color: #d0343a;
+  border: 0.04167rem solid #d0343a;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  letter-spacing: normal;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s; }
+  .nypl-request-button:link, .nypl-request-button:visited {
+    color: #fff; }
+  .nypl-request-button:hover, .nypl-request-button:hover:visited, .nypl-request-button.active {
+    border-color: #776e64;
+    background-color: #fff;
+    color: #776e64; }
+  .nypl-request-button:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-request-button.disabled, .nypl-request-button[disabled="disabled"], .nypl-request-button[disabled="true"], .nypl-request-button[disabled], .nypl-request-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-request-button.disabled:hover, .nypl-request-button[disabled="disabled"]:hover, .nypl-request-button[disabled="true"]:hover, .nypl-request-button[disabled]:hover, .nypl-request-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      color: #fff; }
+  .nypl-request-button:hover {
+    background: #fff;
+    border-color: #d0343a;
+    color: #d0343a; }
+
+.nypl-request-item-summary {
+  background: #fff; }
+  .nypl-request-item-summary .call-number {
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    font-weight: 100; }
+    .nypl-request-item-summary .call-number span {
+      font-weight: 400;
+      text-transform: uppercase; }
+
+.nypl-text-area {
+  border: 0.04167rem solid #080807; }
+
 .nypl-service-button {
   background-color: #d0343a;
   border: 0 solid #776e64;
-  border-radius: 0.2rem;
+  border-radius: 0.06667rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -1767,7 +1406,7 @@ dl dd.multi-item-list,
 .nypl-login-button {
   background-color: #776e64;
   border: 0 solid #776e64;
-  border-radius: 0.2rem;
+  border-radius: 0.06667rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -1812,8 +1451,8 @@ dl dd.multi-item-list,
   position: relative; }
   .nypl-menu-button_left .nypl-menu-button_button {
     background-color: #776e64;
-    border: 0.125rem solid #776e64;
-    border-radius: 0.2rem;
+    border: 0.04167rem solid #776e64;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -1897,8 +1536,8 @@ dl dd.multi-item-list,
   position: relative; }
   .nypl-menu-button_right .nypl-menu-button_button {
     background-color: #776e64;
-    border: 0.125rem solid #776e64;
-    border-radius: 0.2rem;
+    border: 0.04167rem solid #776e64;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -1982,8 +1621,8 @@ dl dd.multi-item-list,
   position: relative; }
   .nypl-navigation-button .nypl-navigation-button_button {
     background-color: #776e64;
-    border: 0.125rem solid #776e64;
-    border-radius: 0.2rem;
+    border: 0.04167rem solid #776e64;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -2083,8 +1722,8 @@ dl dd.multi-item-list,
   .nypl-spinner-button.spinning::after,
   .nypl-spinner-field.spinning::after {
     animation: spinner-right 1.5s linear infinite;
-    background: -moz-repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(255, 255, 255, 0.5) 2.1rem);
-    background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(255, 255, 255, 0.5) 2.1rem);
+    background: -moz-repeating-linear-gradient(to right, rgba(215, 212, 208, 0.5), rgba(215, 212, 208, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(215, 212, 208, 0.5) 2.1rem);
+    background: repeating-linear-gradient(to right, rgba(215, 212, 208, 0.5), rgba(215, 212, 208, 0.5) 1rem, transparent 1.1rem, transparent 2rem, rgba(215, 212, 208, 0.5) 2.1rem);
     content: "";
     display: block;
     height: 100%;
@@ -2111,11 +1750,11 @@ dl dd.multi-item-list,
 .nypl-label {
   color: #080807;
   display: block;
-  font-weight: bold;
-  margin-left: 0.5rem; }
+  font-weight: 400;
+  margin-bottom: 0.25rem; }
 
 .nypl-fieldset {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2132,18 +1771,18 @@ dl dd.multi-item-list,
   .nypl-fieldset legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
 
 .nypl-input {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
-  border-radius: 0.2rem 0.2rem 0 0;
+  border-radius: 0.25rem;
   font-size: 1rem;
   padding: 0; }
 
 .nypl-text-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2160,29 +1799,27 @@ dl dd.multi-item-list,
   .nypl-text-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-text-field label {
     background-color: transparent;
     color: #080807;
     display: block;
-    font-weight: bold;
-    position: absolute; }
+    font-weight: 400; }
   .nypl-text-field input[type=text],
   .nypl-text-field input[type=email],
   .nypl-text-field input[type=date],
   .nypl-text-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
+    height: 1.5rem;
+    padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
@@ -2196,9 +1833,9 @@ dl dd.multi-item-list,
     .nypl-text-field input[type=date]:focus,
     .nypl-text-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-text-field .nypl-field-status {
@@ -2207,10 +1844,10 @@ dl dd.multi-item-list,
     display: block;
     font-size: 0.8rem;
     line-height: 1.5;
-    padding-left: 0.5rem; }
+    padding-top: 0.5rem; }
 
 .nypl-year-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2227,29 +1864,27 @@ dl dd.multi-item-list,
   .nypl-year-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-year-field label {
     background-color: transparent;
     color: #080807;
     display: block;
-    font-weight: bold;
-    position: absolute; }
+    font-weight: 400; }
   .nypl-year-field input[type=text],
   .nypl-year-field input[type=email],
   .nypl-year-field input[type=date],
   .nypl-year-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
+    height: 1.5rem;
+    padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
@@ -2263,9 +1898,9 @@ dl dd.multi-item-list,
     .nypl-year-field input[type=date]:focus,
     .nypl-year-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-year-field .nypl-field-status {
@@ -2274,29 +1909,27 @@ dl dd.multi-item-list,
     display: block;
     font-size: 0.8rem;
     line-height: 1.5;
-    padding-left: 0.5rem; }
+    padding-top: 0.5rem; }
 
 .nypl-text-field-with-label label {
   background-color: transparent;
   color: #080807;
   display: block;
-  font-weight: bold;
-  position: absolute; }
+  font-weight: 400; }
 .nypl-text-field-with-label input[type=text],
 .nypl-text-field-with-label input[type=email],
 .nypl-text-field-with-label input[type=date],
 .nypl-text-field-with-label input[type=number] {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
-  border-radius: 0.2rem 0.2rem 0 0;
+  border-radius: 0.25rem;
   font-size: 1rem;
   padding: 0;
-  -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-  -moz-box-shadow: inset 0 0 0 2px #efedeb;
-  box-shadow: inset 0 0 0 2px #efedeb;
-  border-bottom: 0.125rem solid #080807;
-  height: 2rem;
-  padding: 1.5rem 0 0;
+  -webkit-box-shadow: inset 0 0 0 1px #080807;
+  -moz-box-shadow: inset 0 0 0 1px #080807;
+  box-shadow: inset 0 0 0 1px #080807;
+  height: 1.5rem;
+  padding: 0.5rem 0;
   text-indent: 0.5rem;
   transition: all 0.2s ease-out;
   width: 100%; }
@@ -2310,9 +1943,9 @@ dl dd.multi-item-list,
   .nypl-text-field-with-label input[type=date]:focus,
   .nypl-text-field-with-label input[type=number]:focus {
     background-color: #fff;
-    -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-    -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-    box-shadow: inset 0 0 0 4px #ffb81d;
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
     color: #080807;
     outline: none; }
 .nypl-text-field-with-label .nypl-field-status {
@@ -2321,10 +1954,10 @@ dl dd.multi-item-list,
   display: block;
   font-size: 0.8rem;
   line-height: 1.5;
-  padding-left: 0.5rem; }
+  padding-top: 0.5rem; }
 
 .nypl-name-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2347,29 +1980,27 @@ dl dd.multi-item-list,
   .nypl-name-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-name-field label {
     background-color: transparent;
     color: #080807;
     display: block;
-    font-weight: bold;
-    position: absolute; }
+    font-weight: 400; }
   .nypl-name-field input[type=text],
   .nypl-name-field input[type=email],
   .nypl-name-field input[type=date],
   .nypl-name-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
+    height: 1.5rem;
+    padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
@@ -2383,9 +2014,9 @@ dl dd.multi-item-list,
     .nypl-name-field input[type=date]:focus,
     .nypl-name-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-name-field .nypl-field-status {
@@ -2394,7 +2025,7 @@ dl dd.multi-item-list,
     display: block;
     font-size: 0.8rem;
     line-height: 1.5;
-    padding-left: 0.5rem; }
+    padding-top: 0.5rem; }
   .nypl-name-field > div {
     display: block;
     float: left;
@@ -2412,7 +2043,7 @@ dl dd.multi-item-list,
           margin-bottom: 0; } }
 
 .nypl-address-fieldset {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2430,29 +2061,27 @@ dl dd.multi-item-list,
   .nypl-address-fieldset legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-address-fieldset label {
     background-color: transparent;
     color: #080807;
     display: block;
-    font-weight: bold;
-    position: absolute; }
+    font-weight: 400; }
   .nypl-address-fieldset input[type=text],
   .nypl-address-fieldset input[type=email],
   .nypl-address-fieldset input[type=date],
   .nypl-address-fieldset input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
+    height: 1.5rem;
+    padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
@@ -2466,9 +2095,9 @@ dl dd.multi-item-list,
     .nypl-address-fieldset input[type=date]:focus,
     .nypl-address-fieldset input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-address-fieldset .nypl-field-status {
@@ -2477,7 +2106,7 @@ dl dd.multi-item-list,
     display: block;
     font-size: 0.8rem;
     line-height: 1.5;
-    padding-left: 0.5rem; }
+    padding-top: 0.5rem; }
   .nypl-address-fieldset div {
     margin-bottom: 1rem; }
     .nypl-address-fieldset div::before, .nypl-address-fieldset div::after {
@@ -2491,7 +2120,7 @@ dl dd.multi-item-list,
       position: relative; }
 
 .nypl-date-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2509,29 +2138,27 @@ dl dd.multi-item-list,
   .nypl-date-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-date-field label {
     background-color: transparent;
     color: #080807;
     display: block;
-    font-weight: bold;
-    position: absolute; }
+    font-weight: 400; }
   .nypl-date-field input[type=text],
   .nypl-date-field input[type=email],
   .nypl-date-field input[type=date],
   .nypl-date-field input[type=number] {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
-    -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-    -moz-box-shadow: inset 0 0 0 2px #efedeb;
-    box-shadow: inset 0 0 0 2px #efedeb;
-    border-bottom: 0.125rem solid #080807;
-    height: 2rem;
-    padding: 1.5rem 0 0;
+    -webkit-box-shadow: inset 0 0 0 1px #080807;
+    -moz-box-shadow: inset 0 0 0 1px #080807;
+    box-shadow: inset 0 0 0 1px #080807;
+    height: 1.5rem;
+    padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
     width: 100%; }
@@ -2545,9 +2172,9 @@ dl dd.multi-item-list,
     .nypl-date-field input[type=date]:focus,
     .nypl-date-field input[type=number]:focus {
       background-color: #fff;
-      -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-      -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-      box-shadow: inset 0 0 0 4px #ffb81d;
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
       color: #080807;
       outline: none; }
   .nypl-date-field .nypl-field-status {
@@ -2556,20 +2183,20 @@ dl dd.multi-item-list,
     display: block;
     font-size: 0.8rem;
     line-height: 1.5;
-    padding-left: 0.5rem; }
+    padding-top: 0.5rem; }
   .nypl-date-field input[type=date] {
     -webkit-appearance: none; }
 
 .nypl-required-field {
   color: #aa272c;
   font-size: 0.9rem;
-  font-weight: normal; }
+  font-weight: 400; }
 
 .nypl-field-error {
   background: #fff; }
   .nypl-field-error input[type=text] {
     background-color: #f6d6d8;
-    border-bottom: 0.125rem #97272c solid;
+    border: 0.0625rem #97272c solid;
     box-shadow: none; }
   .nypl-field-error .nypl-field-status {
     background: #fff;
@@ -2588,7 +2215,7 @@ dl dd.multi-item-list,
   width: 100%; }
 
 .nypl-select-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2605,13 +2232,13 @@ dl dd.multi-item-list,
   .nypl-select-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-select-field label {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
     position: relative; }
   .nypl-select-field select {
     -moz-appearance: none;
@@ -2631,28 +2258,28 @@ dl dd.multi-item-list,
   padding-left: 1rem; }
 
 .nypl-simple-radiobutton {
-  border-radius: 0.2rem; }
+  border-radius: 0; }
   .nypl-simple-radiobutton span.nypl-label {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-simple-radiobutton label {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
-    font-weight: normal;
-    padding: 0.1875rem 0; }
+    background-color: #fff;
+    border-radius: 0;
+    font-weight: 400;
+    padding: 1rem 1rem 2rem 4rem; }
   .nypl-simple-radiobutton input[type=radio],
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
 
 .nypl-terms-checkbox {
   border-left: 0.5rem solid #776e64;
   margin-bottom: 1rem;
   padding-left: 0.5rem; }
   .nypl-terms-checkbox label {
-    font-weight: normal;
+    font-weight: 400;
     padding: 0.1875rem 0; }
   .nypl-terms-checkbox input[type=checkbox] {
     height: initial;
@@ -2660,9 +2287,8 @@ dl dd.multi-item-list,
   .nypl-terms-checkbox.checked {
     border-left-color: #799a05; }
 
-.nypl-radiobutton-field,
-.nypl-checkbox-field {
-  background-color: #efedeb;
+.nypl-request-radiobutton-field {
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2670,7 +2296,59 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative;
-  border-radius: 0.2rem; }
+  border-radius: 0; }
+  .nypl-request-radiobutton-field fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-request-radiobutton-field label,
+  .nypl-request-radiobutton-field legend {
+    color: #080807;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field label {
+    border: #d7d4d0 solid 0.0625rem;
+    border-bottom: 0;
+    margin: 0;
+    padding: 1rem 1rem 2rem 4rem; }
+    .nypl-request-radiobutton-field label:last-child {
+      border-bottom: #d7d4d0 solid 0.0625rem; }
+    .nypl-request-radiobutton-field label.electronic-delivery {
+      border-bottom: #d7d4d0 solid 0.0625rem;
+      margin-bottom: 1rem; }
+    .nypl-request-radiobutton-field label input[type=radio] {
+      display: block;
+      position: relative;
+      top: 1.25rem;
+      left: -2.75rem; }
+  .nypl-request-radiobutton-field span.nypl-label {
+    color: #080807;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field label {
+    background-color: #fff;
+    border-radius: 0;
+    font-weight: 400;
+    padding: 1rem 1rem 2rem 4rem; }
+  .nypl-request-radiobutton-field input[type=radio],
+  .nypl-request-radiobutton-field input[type=checkbox] {
+    height: initial;
+    margin: 0 0.5rem; }
+
+.nypl-radiobutton-field,
+.nypl-checkbox-field {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  border-radius: 0; }
   .nypl-radiobutton-field fieldset,
   .nypl-checkbox-field fieldset {
     border: 0;
@@ -2683,32 +2361,137 @@ dl dd.multi-item-list,
   .nypl-checkbox-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-radiobutton-field span.nypl-label,
   .nypl-checkbox-field span.nypl-label {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-radiobutton-field label,
   .nypl-checkbox-field label {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
-    font-weight: normal;
-    padding: 0.1875rem 0; }
+    background-color: #fff;
+    border-radius: 0;
+    font-weight: 400;
+    padding: 1rem 1rem 2rem 4rem; }
   .nypl-radiobutton-field input[type=radio],
   .nypl-radiobutton-field input[type=checkbox],
   .nypl-checkbox-field input[type=radio],
   .nypl-checkbox-field input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
+  .nypl-radiobutton-field label,
+  .nypl-checkbox-field label {
+    border: 0.04167rem solid #d7d4d0; }
+  .nypl-radiobutton-field input[type=radio],
+  .nypl-checkbox-field input[type=radio] {
+    display: block;
+    position: relative;
+    top: 1.15rem;
+    left: -2.75rem; }
 
 .nypl-omnisearch {
-  background-color: #d7d4d0;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 0.5rem; }
+  background-color: #fff;
+  border: solid 0.0625rem #080807;
+  border-radius: 0.2rem;
+  padding: 0;
+  font-weight: 200; }
+  @media (max-width: 965px) {
+    .nypl-omnisearch {
+      width: 97%; } }
+  .nypl-omnisearch button,
+  .nypl-omnisearch input,
+  .nypl-omnisearch .nypl-omni-fields {
+    display: block;
+    float: left;
+    height: 2rem; }
+  .nypl-omnisearch legend {
+    display: none;
+    height: 0;
+    width: 0; }
+  .nypl-omnisearch .nypl-omni-fields {
+    border-right: 0.08333rem solid #080807;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 0.475rem;
+    width: 17%; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch .nypl-omni-fields {
+        font-size: 0.9rem;
+        margin-left: 0.25rem;
+        padding-right: 0.25rem;
+        width: 28%; } }
+    .nypl-omnisearch .nypl-omni-fields label {
+      position: absolute;
+      width: 0.1rem;
+      height: 0.1rem;
+      margin: -0.1rem;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; }
+    .nypl-omnisearch .nypl-omni-fields select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
+      border: 0;
+      border-radius: 0.2rem;
+      height: 2rem;
+      padding-right: 7%;
+      padding-left: 0.5rem;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0;
+      border-right: 0.08333rem;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
+  .nypl-omnisearch input[type=text],
+  .nypl-omnisearch input[type=email],
+  .nypl-omnisearch input[type=number] {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 1%;
+    text-indent: 0.5rem; }
+  .nypl-omnisearch input[type=text] {
+    background: #fff;
+    position: relative;
+    width: 58%;
+    top: 0.475rem; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch input[type=text] {
+        width: 45%; } }
+  .nypl-omnisearch input[type=submit] {
+    background: #d0343a;
+    border: 0;
+    border-radius: 0.0625rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #fff;
+    float: right;
+    height: 3rem;
+    position: relative;
+    width: 15%; }
+    @media (max-width: 965px) {
+      .nypl-omnisearch input[type=submit] {
+        font-size: 14.4px;
+        width: 20%; } }
+    .nypl-omnisearch input[type=submit]:hover {
+      background-color: #fff;
+      border: solid 0.0625rem #d0343a;
+      color: #d0343a; }
+  .nypl-omnisearch svg {
+    display: inline-block;
+    fill: #080807;
+    height: 1.3125rem;
+    margin-left: 93.5%;
+    position: relative;
+    top: -1.9rem;
+    width: 0.9375rem; }
 
 .nypl-mobile-refine {
   display: none; }
@@ -2721,7 +2504,7 @@ dl dd.multi-item-list,
 .nypl-facet-toggle {
   background-color: #776e64;
   border: 0;
-  border-radius: 0.2rem 0.2rem 0 0;
+  border-radius: 0;
   color: #fff;
   cursor: pointer;
   display: block;
@@ -2759,7 +2542,7 @@ dl dd.multi-item-list,
       fill: #fff; }
 
 .nypl-collapsible-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2777,17 +2560,17 @@ dl dd.multi-item-list,
   .nypl-collapsible-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-collapsible-field .nypl-collapsible {
-    background-color: #c0bab4;
+    background-color: #fff;
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
   .nypl-collapsible-field.collapsed .nypl-facet-toggle .nypl-icon {
     transform: rotate(0deg); }
 
 .nypl-searchable-field {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2796,7 +2579,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   padding-bottom: 0.5rem;
-  border-radius: 0.2rem; }
+  border-radius: 0; }
   .nypl-searchable-field fieldset {
     border: 0;
     box-shadow: none;
@@ -2806,47 +2589,45 @@ dl dd.multi-item-list,
   .nypl-searchable-field legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
     transform: rotate(0deg); }
   .nypl-searchable-field span.nypl-label {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-searchable-field label {
-    background-color: #efedeb;
-    border-radius: 0.2rem;
-    font-weight: normal;
-    padding: 0.1875rem 0; }
+    background-color: #fff;
+    border-radius: 0;
+    font-weight: 400;
+    padding: 1rem 1rem 2rem 4rem; }
   .nypl-searchable-field input[type=radio],
   .nypl-searchable-field input[type=checkbox] {
     height: initial;
-    margin: 0 0.25rem 0 0; }
+    margin: 0 0.5rem; }
   .nypl-searchable-field .nypl-facet-search {
     position: relative; }
     .nypl-searchable-field .nypl-facet-search label {
       background-color: transparent;
       color: #080807;
       display: block;
-      font-weight: bold;
-      position: absolute; }
+      font-weight: 400; }
     .nypl-searchable-field .nypl-facet-search input[type=text],
     .nypl-searchable-field .nypl-facet-search input[type=email],
     .nypl-searchable-field .nypl-facet-search input[type=date],
     .nypl-searchable-field .nypl-facet-search input[type=number] {
-      background-color: #efedeb;
+      background-color: #fff;
       border: 0;
-      border-radius: 0.2rem 0.2rem 0 0;
+      border-radius: 0.25rem;
       font-size: 1rem;
       padding: 0;
-      -webkit-box-shadow: inset 0 0 0 2px #efedeb;
-      -moz-box-shadow: inset 0 0 0 2px #efedeb;
-      box-shadow: inset 0 0 0 2px #efedeb;
-      border-bottom: 0.125rem solid #080807;
-      height: 2rem;
-      padding: 1.5rem 0 0;
+      -webkit-box-shadow: inset 0 0 0 1px #080807;
+      -moz-box-shadow: inset 0 0 0 1px #080807;
+      box-shadow: inset 0 0 0 1px #080807;
+      height: 1.5rem;
+      padding: 0.5rem 0;
       text-indent: 0.5rem;
       transition: all 0.2s ease-out;
       width: 100%; }
@@ -2860,9 +2641,9 @@ dl dd.multi-item-list,
       .nypl-searchable-field .nypl-facet-search input[type=date]:focus,
       .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
         background-color: #fff;
-        -webkit-box-shadow: inset 0 0 0 4px #ffb81d;
-        -moz-box-shadow: inset 0 0 0 4px #ffb81d;
-        box-shadow: inset 0 0 0 4px #ffb81d;
+        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        box-shadow: inset 0 0 0 0.125rem #ffb81d;
         color: #080807;
         outline: none; }
     .nypl-searchable-field .nypl-facet-search .nypl-field-status {
@@ -2871,7 +2652,7 @@ dl dd.multi-item-list,
       display: block;
       font-size: 0.8rem;
       line-height: 1.5;
-      padding-left: 0.5rem; }
+      padding-top: 0.5rem; }
     .nypl-searchable-field .nypl-facet-search label {
       font-weight: normal; }
   .nypl-searchable-field .nypl-facet-list {
@@ -2888,6 +2669,7 @@ dl dd.multi-item-list,
         clear: both; }
     .nypl-searchable-field .nypl-facet-list input[type="radio"],
     .nypl-searchable-field .nypl-facet-list input[type="checkbox"] {
+      box-sizing: border-box;
       display: inline-block; }
     .nypl-searchable-field .nypl-facet-list .nypl-facet-count {
       color: #776e64;
@@ -2901,7 +2683,7 @@ dl dd.multi-item-list,
     display: none; }
 
 .nypl-alphabetical-filter {
-  background-color: #efedeb;
+  background-color: #fff;
   border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
@@ -2918,12 +2700,12 @@ dl dd.multi-item-list,
   .nypl-alphabetical-filter legend {
     color: #080807;
     display: block;
-    font-weight: bold;
-    margin-left: 0.5rem; }
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
   .nypl-alphabetical-filter button {
     background-color: #efedeb;
     border: 0 solid #776e64;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #080807;
     cursor: pointer;
     display: inline-block;
@@ -2984,15 +2766,101 @@ dl dd.multi-item-list,
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+.nypl-homepage-hero {
+  background-color: #efedeb; }
+  .nypl-homepage-hero h1 {
+    color: #d0343a;
+    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 3rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .nypl-homepage-hero h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem; } }
+    @media (max-width: 483px) {
+      .nypl-homepage-hero h1 {
+        margin: 0.5rem 0 0.75rem; } }
+  .nypl-homepage-hero p {
+    font-weight: 200;
+    max-width: none; }
+    @media (max-width: 965px) {
+      .nypl-homepage-hero p {
+        line-height: 2; } }
+
+.nypl-quarter-image {
+  width: 100%; }
+  @media (max-width: 965px) {
+    .nypl-quarter-image .image-column-one-quarter {
+      float: left;
+      margin-bottom: 1rem;
+      padding-right: 0.5rem;
+      width: 25%; } }
+  @media (max-width: 483px) {
+    .nypl-quarter-image .image-column-one-quarter {
+      width: 100%; } }
+  @media (max-width: 965px) {
+    .nypl-quarter-image .image-column-three-quarters {
+      float: left;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+      width: 75%; } }
+  @media (max-width: 483px) {
+    .nypl-quarter-image .image-column-three-quarters {
+      width: 100%;
+      float: none; } }
+
+.nypl-special-title {
+  color: #d0343a;
+  font-size: 2rem;
+  font-weight: 200; }
+  @media (max-width: 965px) {
+    .nypl-special-title {
+      font-size: 1.75rem;
+      margin: 0.85rem 0; } }
+
 .nypl-page-header {
-  background-color: #efedeb;
-  margin-bottom: 1rem; }
+  background-color: #efedeb; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
     font-size: 2rem;
     margin: 0; }
   .nypl-page-header h2 {
     line-height: 1; }
+  .nypl-page-header h2 {
+    color: #080807;
+    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .nypl-page-header h2 {
+        margin-top: 0; } }
+
+.nypl-request-page-header {
+  background-color: #fafaf9;
+  border-bottom: 0.08333rem solid #b4aea6;
+  margin-bottom: 0; }
+  .nypl-request-page-header h1,
+  .nypl-request-page-header h2 {
+    font-size: 2rem;
+    margin: 0; }
+  .nypl-request-page-header h2 {
+    line-height: 1; }
+  .nypl-request-page-header h2 {
+    color: #d0343a;
+    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 100;
+    margin: 1rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .nypl-request-page-header h2 {
+        margin-top: 0; } }
+  .nypl-request-page-header h2 {
+    margin-bottom: 0; }
+  .nypl-request-page-header .search-control {
+    margin-top: 0; }
+  .nypl-request-page-header .nypl-column-three-quarters {
+    margin-bottom: 0; }
 
 .nypl-breadcrumbs {
   list-style-type: none;
@@ -3024,7 +2892,7 @@ dl dd.multi-item-list,
     clear: both; }
   @media (max-width: 965px) {
     .nypl-full-width-wrapper {
-      padding-left: 1rem; } }
+      padding-left: 2rem; } }
 
 .nypl-row {
   margin: 0 -0.5rem;
@@ -3734,7 +3602,7 @@ dl dd.multi-item-list,
   .nypl-results-sorter button {
     background-color: #fff;
     border: 0.0625rem solid #9d9ea1;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #080807;
     cursor: pointer;
     display: inline-block;
@@ -4368,7 +4236,7 @@ dl dd.multi-item-list,
   .nypl-header .service-buttons li > a {
     background-color: #d0343a;
     border: 0 solid #776e64;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -4413,7 +4281,7 @@ dl dd.multi-item-list,
     .nypl-header .service-buttons li > a.donate {
       background-color: #fff;
       border: 0 solid #776e64;
-      border-radius: 0.2rem;
+      border-radius: 0.06667rem;
       color: #d0343a;
       cursor: pointer;
       display: inline-block;
@@ -4458,7 +4326,7 @@ dl dd.multi-item-list,
   .nypl-header .service-buttons button.collapsible {
     background-color: #d0343a;
     border: 0 solid #776e64;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -4544,7 +4412,7 @@ dl dd.multi-item-list,
   .nypl-header .email-toggle .subscribe-button {
     background-color: #776e64;
     border: 0.0625rem solid #fff;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -4609,7 +4477,7 @@ dl dd.multi-item-list,
     .nypl-header .login-toggle button.collapsible {
       background-color: #776e64;
       border: 0 solid #776e64;
-      border-radius: 0.2rem;
+      border-radius: 0.06667rem;
       color: #fff;
       cursor: pointer;
       display: inline-block;
@@ -4695,7 +4563,7 @@ dl dd.multi-item-list,
   .nypl-header .login-toggle > a {
     background-color: #776e64;
     border: 0 solid #776e64;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -4817,7 +4685,7 @@ dl dd.multi-item-list,
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_button {
     background-color: #1b7fa7;
     border: 0 solid #776e64;
-    border-radius: 0.2rem;
+    border-radius: 0.06667rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -4871,7 +4739,7 @@ dl dd.multi-item-list,
     white-space: nowrap;
     z-index: 1; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label {
-    border-radius: 0.2rem;
+    border-radius: 0;
     color: #efedeb;
     display: inline-block;
     height: 2rem;
@@ -4884,17 +4752,17 @@ dl dd.multi-item-list,
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label span.nypl-label {
       color: #080807;
       display: block;
-      font-weight: bold;
-      margin-left: 0.5rem; }
+      font-weight: 400;
+      margin-bottom: 0.25rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label label {
-      background-color: #efedeb;
-      border-radius: 0.2rem;
-      font-weight: normal;
-      padding: 0.1875rem 0; }
+      background-color: #fff;
+      border-radius: 0;
+      font-weight: 400;
+      padding: 1rem 1rem 2rem 4rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=radio],
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input[type=checkbox] {
       height: initial;
-      margin: 0 0.25rem 0 0; }
+      margin: 0 0.5rem; }
     .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.selected {
       background-color: #efedeb;
       color: #080807; }
@@ -4905,9 +4773,9 @@ dl dd.multi-item-list,
   .nypl-header li.nypl-search .nypl-search_main input:focus {
     outline: none; }
   .nypl-header li.nypl-search .nypl-search_main .nypl-form-text {
-    background-color: #efedeb;
+    background-color: #fff;
     border: 0;
-    border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.25rem;
     font-size: 1rem;
     padding: 0;
     border-radius: 0.2rem;

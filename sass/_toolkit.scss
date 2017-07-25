@@ -71,9 +71,22 @@
   @include results-button;
 }
 
-.nypl-request-button, // for background compatibility support
+ // for background compatibility support
 .nypl-primary-button {
   @include primary-button;
+}
+
+// item requests
+.nypl-request-button {
+  @include request-button;
+}
+
+.nypl-request-item-summary {
+  @include request-item-summary;
+}
+
+.nypl-text-area {
+  @include text-area;
 }
 
 .nypl-service-button {
@@ -175,13 +188,17 @@
   @include terms-checkbox;
 }
 
+.nypl-request-radiobutton-field {
+  @include item-holds-radiobutton-field;
+}
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   @include radiobutton-field;
 }
 
 .nypl-omnisearch {
-  @include omnisearch;
+  @include nypl-omnisearch;
 }
 
 .nypl-mobile-refine {
@@ -212,8 +229,24 @@
   @include screenreader-only;
 }
 
+.nypl-homepage-hero {
+  @include homepage-hero;
+}
+
+.nypl-quarter-image {
+  @include quarter-image;
+}
+
+.nypl-special-title {
+  @include special-title;
+}
+
 .nypl-page-header {
   @include page-header;
+}
+
+.nypl-request-page-header {
+  @include request-page-header;
 }
 
 .nypl-breadcrumbs {
