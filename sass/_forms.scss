@@ -493,13 +493,16 @@ $form-padding: 0.5rem;
 
 @mixin text-area(
   $border-color: $nypl-dark-gray,
-  $border-width: ($general-border-width / 3)) {
+  $border-width: ($general-border-width / 3),
+  $width: 100%,
+  $height: 4rem) {
   border: $border-width solid $border-color;
+  height: $height;
+  width: $width;
 }
 
 //
 // Request form(s)
-//
 // Mixins for Discovery requests pages
 //
 @mixin request-item-summary {
@@ -516,6 +519,13 @@ $form-padding: 0.5rem;
     } // span
   } // /.call-number-heading
 } // /request-item-summary
+
+@mixin electronic-delivery-form {
+  fieldset {
+    border: 0;
+  }
+}
+
 
 @mixin request-page-header {
   @include page-header(

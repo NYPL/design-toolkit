@@ -1354,8 +1354,13 @@ dl dd.multi-item-list,
       font-weight: 400;
       text-transform: uppercase; }
 
+.nypl-electronic-delivery-form fieldset {
+  border: 0; }
+
 .nypl-text-area {
-  border: 0.04167rem solid #080807; }
+  border: 0.04167rem solid #080807;
+  height: 4rem;
+  width: 100%; }
 
 .nypl-service-button {
   background-color: #d0343a;
