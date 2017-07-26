@@ -25,9 +25,10 @@ $form-padding: 0.5rem;
   margin-bottom: ($form-padding / 2);
 }
 
-@mixin fieldset {
+@mixin fieldset(
+    $border: 0) {
   background-color: $page-background-color;
-  border: 0;
+  border: $border;
   border-radius: $general-border-radius;
   box-shadow: none;
   display: block;
@@ -36,7 +37,7 @@ $form-padding: 0.5rem;
   position: relative;
 
   fieldset {
-    border: 0;
+    border: $border;
     box-shadow: none;
     margin: 0;
     padding: 0;
