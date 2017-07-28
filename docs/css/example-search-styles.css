@@ -607,31 +607,12 @@ button:focus {
       margin-bottom: 1rem; }
     .nypl-results-list .nypl-results-item dl li {
       list-style-type: none;
-      padding-left: 1rem;
       position: relative;
       list-style-type: none;
       margin-left: 0; }
       @media (max-width: 965px) {
         .nypl-results-list .nypl-results-item dl li {
           margin-left: 0; } }
-      .nypl-results-list .nypl-results-item dl li::before {
-        background-color: #d7d4d0;
-        content: "";
-        display: block;
-        height: 0.5rem;
-        left: 0;
-        position: absolute;
-        top: 0.6rem;
-        width: 0.5rem;
-        -webkit-border-radius: 0.25rem;
-        -moz-border-radius: 0.25rem;
-        border-radius: 0.25rem;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box; }
-        @media (max-width: 965px) {
-          .nypl-results-list .nypl-results-item dl li::before {
-            display: none; } }
   .nypl-results-list .nypl-results-item dt,
   .nypl-results-list .nypl-results-item dd {
     float: left;
@@ -1126,29 +1107,10 @@ dl dd.multi-item-list,
 
 .nypl-custom-list li {
   list-style-type: none;
-  padding-left: 1rem;
   position: relative; }
   @media (max-width: 965px) {
     .nypl-custom-list li {
       margin-left: 0; } }
-  .nypl-custom-list li::before {
-    background-color: #d7d4d0;
-    content: "";
-    display: block;
-    height: 0.5rem;
-    left: 0;
-    position: absolute;
-    top: 0.6rem;
-    width: 0.5rem;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    border-radius: 0.25rem;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; }
-    @media (max-width: 965px) {
-      .nypl-custom-list li::before {
-        display: none; } }
 
 .nypl-collapsible {
   -webkit-transition: all 0.5s ease-out 0s;
@@ -3293,31 +3255,12 @@ dl dd.multi-item-list,
         margin-bottom: 1rem; }
       .nypl-holds-table td dl li {
         list-style-type: none;
-        padding-left: 1rem;
         position: relative;
         list-style-type: none;
         margin-left: 0; }
         @media (max-width: 965px) {
           .nypl-holds-table td dl li {
             margin-left: 0; } }
-        .nypl-holds-table td dl li::before {
-          background-color: #d7d4d0;
-          content: "";
-          display: block;
-          height: 0.5rem;
-          left: 0;
-          position: absolute;
-          top: 0.6rem;
-          width: 0.5rem;
-          -webkit-border-radius: 0.25rem;
-          -moz-border-radius: 0.25rem;
-          border-radius: 0.25rem;
-          -moz-background-clip: padding;
-          -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
-          @media (max-width: 965px) {
-            .nypl-holds-table td dl li::before {
-              display: none; } }
     .nypl-holds-table td dt,
     .nypl-holds-table td dd {
       float: left;
@@ -3725,31 +3668,12 @@ dl dd.multi-item-list,
       margin-bottom: 1rem; }
     .nypl-results-item dl li {
       list-style-type: none;
-      padding-left: 1rem;
       position: relative;
       list-style-type: none;
       margin-left: 0; }
       @media (max-width: 965px) {
         .nypl-results-item dl li {
           margin-left: 0; } }
-      .nypl-results-item dl li::before {
-        background-color: #d7d4d0;
-        content: "";
-        display: block;
-        height: 0.5rem;
-        left: 0;
-        position: absolute;
-        top: 0.6rem;
-        width: 0.5rem;
-        -webkit-border-radius: 0.25rem;
-        -moz-border-radius: 0.25rem;
-        border-radius: 0.25rem;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box; }
-        @media (max-width: 965px) {
-          .nypl-results-item dl li::before {
-            display: none; } }
   .nypl-results-item dt,
   .nypl-results-item dd {
     float: left;
@@ -3869,31 +3793,12 @@ dl dd.multi-item-list,
     margin-bottom: 1rem; }
   .nypl-item-details dl li {
     list-style-type: none;
-    padding-left: 1rem;
     position: relative;
     list-style-type: none;
     margin-left: 0; }
     @media (max-width: 965px) {
       .nypl-item-details dl li {
         margin-left: 0; } }
-    .nypl-item-details dl li::before {
-      background-color: #d7d4d0;
-      content: "";
-      display: block;
-      height: 0.5rem;
-      left: 0;
-      position: absolute;
-      top: 0.6rem;
-      width: 0.5rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      border-radius: 0.25rem;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box; }
-      @media (max-width: 965px) {
-        .nypl-item-details dl li::before {
-          display: none; } }
 .nypl-item-details dt,
 .nypl-item-details dd {
   float: left;
@@ -3931,31 +3836,12 @@ dl dd.multi-item-list,
     margin-bottom: 1rem; }
   .nypl-item-external-links dl li {
     list-style-type: none;
-    padding-left: 1rem;
     position: relative;
     list-style-type: none;
     margin-left: 0; }
     @media (max-width: 965px) {
       .nypl-item-external-links dl li {
         margin-left: 0; } }
-    .nypl-item-external-links dl li::before {
-      background-color: #d7d4d0;
-      content: "";
-      display: block;
-      height: 0.5rem;
-      left: 0;
-      position: absolute;
-      top: 0.6rem;
-      width: 0.5rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      border-radius: 0.25rem;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box; }
-      @media (max-width: 965px) {
-        .nypl-item-external-links dl li::before {
-          display: none; } }
 .nypl-item-external-links dt,
 .nypl-item-external-links dd {
   float: left;
