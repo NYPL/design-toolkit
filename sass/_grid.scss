@@ -24,6 +24,11 @@
     font-size: 2rem;
     margin: 0;
   }
+  h1 {
+    font-family: 'Milo-Light';
+    font-weight: $font-weight;
+    margin: 1rem 0 1.5rem;
+  }
 
   h2 { // when it's a secondary title (real title is inside content below)
     line-height: 1;
@@ -31,9 +36,8 @@
 
   h2 {
     color: $type-color;
-    font-family: 'Milo-Light', $font-family;
+    font-family: $font-family;
     font-weight: $font-weight;
-    margin: 1rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
       margin-top: 0;

@@ -445,7 +445,7 @@ $font-weight: 400) {
 @mixin item-details {
   @include item-definition-list($item-margin-bottom: 0.5rem);
 
-  h1 {
+  h2 {
     font-size: 1.6rem;
     font-weight: normal;
   }
