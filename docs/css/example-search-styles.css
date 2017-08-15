@@ -1322,12 +1322,13 @@ dl dd.multi-item-list,
 
 .nypl-request-item-summary {
   background: #fff; }
+  .nypl-request-item-summary h2 {
+    font-weight: 400; }
   .nypl-request-item-summary .call-number {
     margin: 1rem 0;
-    font-size: 0.85rem;
-    font-weight: 100; }
+    font-size: 1rem;
+    font-weight: 400; }
     .nypl-request-item-summary .call-number span {
-      font-weight: 400;
       text-transform: uppercase; }
 
 .nypl-text-area {
@@ -2314,6 +2315,10 @@ dl dd.multi-item-list,
     height: initial;
     margin: 0 0.5rem; }
 
+.nypl-request-form-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400; }
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   background-color: #fff;
@@ -2802,13 +2807,16 @@ dl dd.multi-item-list,
   .nypl-page-header h2 {
     font-size: 2rem;
     margin: 0; }
+  .nypl-page-header h1 {
+    font-family: 'Milo-Light';
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
   .nypl-page-header h2 {
     line-height: 1; }
   .nypl-page-header h2 {
     color: #080807;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 400;
-    margin: 1rem 0 1.5rem; }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
         margin-top: 0; } }
@@ -2821,13 +2829,16 @@ dl dd.multi-item-list,
   .nypl-request-page-header h2 {
     font-size: 2rem;
     margin: 0; }
+  .nypl-request-page-header h1 {
+    font-family: 'Milo-Light';
+    font-weight: 100;
+    margin: 1rem 0 1.5rem; }
   .nypl-request-page-header h2 {
     line-height: 1; }
   .nypl-request-page-header h2 {
     color: #d0343a;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 100;
-    margin: 1rem 0 1.5rem; }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 100; }
     @media (max-width: 965px) {
       .nypl-request-page-header h2 {
         margin-top: 0; } }
@@ -3811,7 +3822,7 @@ dl dd.multi-item-list,
   @media (max-width: 965px) {
     .nypl-item-details dd {
       width: 55%; } }
-.nypl-item-details h1 {
+.nypl-item-details h2 {
   font-size: 1.6rem;
   font-weight: normal; }
 .nypl-item-details dl {
