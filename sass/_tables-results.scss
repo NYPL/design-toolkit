@@ -284,7 +284,6 @@ $sorter-width: 11em;
     }
 
     li {
-      @include custom-list-bullet;
       list-style-type: none;
       margin-left: 0;
     }
