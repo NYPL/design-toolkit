@@ -4,7 +4,7 @@
 @import "microformats";
 @import "media-queries";
 
-@warn "remove magic numbers";
+//@warn "remove magic numbers";
 
 //
 // Basic Page header:
@@ -13,7 +13,7 @@
 //
 @mixin page-header(
   $background-color: lighten($page-color-light, 10%),
-  $font-family: $sans-serif-stack,
+  $font-family: 'Milo-Light',
   $font-weight: 400,
   $type-color: $nypl-dark-gray) {
   background-color: $background-color;
@@ -21,11 +21,12 @@
 
   h1,
   h2 {
+    font-family: $font-family;
     font-size: 2rem;
     margin: 0;
   }
+
   h1 {
-    font-family: 'Milo-Light';
     font-weight: $font-weight;
     margin: 1rem 0 1.5rem;
   }
@@ -38,6 +39,7 @@
     color: $type-color;
     font-family: $font-family;
     font-weight: $font-weight;
+    margin: 1rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
       margin-top: 0;
@@ -94,6 +96,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    a {
+      border-radius: $general-border-radius;
+      color: $nypl-dark-gray;
+      padding: 0.25rem 0.45rem;
+
+      &:hover {
+        background: $nypl-light-gray;
+      }
+
+      &:visited {
+        color: lighten($nypl-dark-gray, 20%);
+      }
+    }
+
+
 
     @include media($mobile-breakpoint) {
       max-width: 90vw;
@@ -192,6 +210,6 @@
   }
 }
 
-@mixin inner-block {
-  @warn "deprecated. use row-column pattern instead.";
-}
+// @mixin inner-block {
+//   @warn "deprecated. use row-column pattern instead.";
+// }

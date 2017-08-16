@@ -1,10 +1,10 @@
 @import "buttons";
-@warn "omnisearch mixin is a the bottom of this file";
+//@warn "omnisearch mixin is a the bottom of this file";
 // overriding focus borders to make them stand out
 
 $form-padding: 0.5rem;
 
-@warn "lots of magic numbers here";
+//@warn "lots of magic numbers here";
 
 @each $tag in a, input, select, button {
   #{$tag} {
