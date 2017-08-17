@@ -515,7 +515,7 @@ a {
   a:link {
     color: #1b7fa7; }
   a:visited {
-    color: #145e7b; }
+    color: #104d65; }
   a:hover, a:visited:hover {
     color: #176e91;
     text-decoration: none; }
@@ -1322,12 +1322,13 @@ dl dd.multi-item-list,
 
 .nypl-request-item-summary {
   background: #fff; }
+  .nypl-request-item-summary h2 {
+    font-weight: 400; }
   .nypl-request-item-summary .call-number {
     margin: 1rem 0;
-    font-size: 0.85rem;
-    font-weight: 100; }
+    font-size: 1rem;
+    font-weight: 400; }
     .nypl-request-item-summary .call-number span {
-      font-weight: 400;
       text-transform: uppercase; }
 
 .nypl-text-area {
@@ -2314,6 +2315,10 @@ dl dd.multi-item-list,
     height: initial;
     margin: 0 0.5rem; }
 
+.nypl-request-form-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400; }
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   background-color: #fff;
@@ -2372,7 +2377,7 @@ dl dd.multi-item-list,
   border: solid 0.0625rem #080807;
   border-radius: 0.2rem;
   padding: 0;
-  font-weight: 200; }
+  font-weight: 400; }
   @media (max-width: 965px) {
     .nypl-omnisearch {
       width: 97%; } }
@@ -2382,17 +2387,21 @@ dl dd.multi-item-list,
     display: block;
     float: left;
     height: 2rem; }
+  .nypl-omnisearch ::placeholder {
+    color: #080807;
+    opacity: 1; }
   .nypl-omnisearch legend {
     display: none;
     height: 0;
     width: 0; }
   .nypl-omnisearch .nypl-omni-fields {
+    background-color: #fff;
     border-right: 0.08333rem solid #080807;
-    padding-right: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.25rem;
+    padding-right: 0.25rem;
     position: relative;
     top: 0.475rem;
-    width: 17%; }
+    width: 28%; }
     @media (max-width: 965px) {
       .nypl-omnisearch .nypl-omni-fields {
         font-size: 0.9rem;
@@ -2419,10 +2428,11 @@ dl dd.multi-item-list,
       padding-right: 7%;
       padding-left: 0.5rem;
       width: 100%;
-      background-color: #fff;
       border-radius: 0;
       border-right: 0.08333rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff;
+      background-color: #fff;
+      text-overflow: ellipsis; }
   .nypl-omnisearch input[type=text],
   .nypl-omnisearch input[type=email],
   .nypl-omnisearch input[type=number] {
@@ -2436,7 +2446,6 @@ dl dd.multi-item-list,
   .nypl-omnisearch input[type=text] {
     background: #fff;
     position: relative;
-    width: 58%;
     top: 0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch input[type=text] {
@@ -2800,13 +2809,17 @@ dl dd.multi-item-list,
   background-color: #efedeb; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
+    font-family: "Milo-Light";
     font-size: 2rem;
     margin: 0; }
+  .nypl-page-header h1 {
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
   .nypl-page-header h2 {
     line-height: 1; }
   .nypl-page-header h2 {
     color: #080807;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Milo-Light";
     font-weight: 400;
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
@@ -2819,13 +2832,17 @@ dl dd.multi-item-list,
   margin-bottom: 0; }
   .nypl-request-page-header h1,
   .nypl-request-page-header h2 {
+    font-family: "Milo-Light";
     font-size: 2rem;
     margin: 0; }
+  .nypl-request-page-header h1 {
+    font-weight: 100;
+    margin: 1rem 0 1.5rem; }
   .nypl-request-page-header h2 {
     line-height: 1; }
   .nypl-request-page-header h2 {
     color: #d0343a;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Milo-Light";
     font-weight: 100;
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
@@ -2848,6 +2865,14 @@ dl dd.multi-item-list,
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
+    .nypl-breadcrumbs li a {
+      border-radius: 0.2rem;
+      color: #080807;
+      padding: 0.25rem 0.45rem; }
+      .nypl-breadcrumbs li a:hover {
+        background: #d7d4d0; }
+      .nypl-breadcrumbs li a:visited {
+        color: #403b35; }
     @media (max-width: 965px) {
       .nypl-breadcrumbs li {
         max-width: 90vw; } }
@@ -3811,7 +3836,7 @@ dl dd.multi-item-list,
   @media (max-width: 965px) {
     .nypl-item-details dd {
       width: 55%; } }
-.nypl-item-details h1 {
+.nypl-item-details h2 {
   font-size: 1.6rem;
   font-weight: normal; }
 .nypl-item-details dl {

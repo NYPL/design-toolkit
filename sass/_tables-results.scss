@@ -4,7 +4,7 @@
 @import "microformats";
 @import "media-queries";
 
-@warn "refactor mixins and remove magic numbers";
+//@warn "refactor mixins and remove magic numbers";
 
 $results-item-border-width: 0.0625rem;
 
@@ -445,7 +445,7 @@ $font-weight: 400) {
 @mixin item-details {
   @include item-definition-list($item-margin-bottom: 0.5rem);
 
-  h1 {
+  h2 {
     font-size: 1.6rem;
     font-weight: normal;
   }
@@ -465,7 +465,7 @@ $font-weight: 400) {
 }
 
 @mixin views-table {
-  @warn "this mixin is not used";
+  //@warn "this mixin is not used";
 
   display: table;
   border-collapse: collapse;
