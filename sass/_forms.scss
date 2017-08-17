@@ -35,7 +35,8 @@ $form-padding: 0.5rem;
   padding: 0;
   position: relative;
 
-  fieldset {
+  fieldset,
+  div {
     border: 0;
     box-shadow: none;
     margin: 0;
