@@ -20,6 +20,7 @@ $form-padding: 0.5rem;
     $border-radius: $general-border-radius,
     $padding: 0);
   font-weight: 400;
+  height: 3rem;
 
   @include media($mobile-breakpoint) {
     width: 97%;
@@ -165,3 +166,19 @@ $form-padding: 0.5rem;
     text-decoration: underline;
   }
 } // /nypl-omnisearch
+
+
+
+// Override for the omnisearch div to work as a fieldset and
+// allow focus on the search button.
+// TODO: Integrate this a little better
+div.nypl-omnisearch {
+
+  &.nypl-spinner-field {
+    overflow: inherit;
+  }
+
+  &.spinning {
+    overflow: hidden;
+  }
+}
