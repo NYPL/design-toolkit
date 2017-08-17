@@ -423,6 +423,11 @@ button:focus {
   .search-control a:hover {
     text-decoration: underline; }
 
+div.nypl-omnisearch.nypl-spinner-field {
+  overflow: inherit; }
+div.nypl-omnisearch.spinning {
+  overflow: hidden; }
+
 body {
   color: #080807; }
 
@@ -580,6 +585,11 @@ button:focus {
     text-decoration: none; }
   .search-control a:hover {
     text-decoration: underline; }
+
+div.nypl-omnisearch.nypl-spinner-field {
+  overflow: inherit; }
+div.nypl-omnisearch.spinning {
+  overflow: hidden; }
 
 .nypl-results-list .nypl-results-item-description {
   margin-bottom: 0.25rem; }
@@ -1739,7 +1749,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-fieldset fieldset {
+  .nypl-fieldset fieldset,
+  .nypl-fieldset div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1767,7 +1778,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-text-field fieldset {
+  .nypl-text-field fieldset,
+  .nypl-text-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1832,7 +1844,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-year-field fieldset {
+  .nypl-year-field fieldset,
+  .nypl-year-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1948,7 +1961,8 @@ dl dd.multi-item-list,
     display: table; }
   .nypl-name-field::after {
     clear: both; }
-  .nypl-name-field fieldset {
+  .nypl-name-field fieldset,
+  .nypl-name-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2029,7 +2043,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-address-fieldset fieldset {
+  .nypl-address-fieldset fieldset,
+  .nypl-address-fieldset div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2106,7 +2121,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   min-width: 12rem; }
-  .nypl-date-field fieldset {
+  .nypl-date-field fieldset,
+  .nypl-date-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2200,7 +2216,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-select-field fieldset {
+  .nypl-select-field fieldset,
+  .nypl-select-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2274,7 +2291,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   border-radius: 0; }
-  .nypl-request-radiobutton-field fieldset {
+  .nypl-request-radiobutton-field fieldset,
+  .nypl-request-radiobutton-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2331,7 +2349,9 @@ dl dd.multi-item-list,
   position: relative;
   border-radius: 0; }
   .nypl-radiobutton-field fieldset,
-  .nypl-checkbox-field fieldset {
+  .nypl-radiobutton-field div,
+  .nypl-checkbox-field fieldset,
+  .nypl-checkbox-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2377,7 +2397,8 @@ dl dd.multi-item-list,
   border: solid 0.0625rem #080807;
   border-radius: 0.2rem;
   padding: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 3rem; }
   @media (max-width: 965px) {
     .nypl-omnisearch {
       width: 97%; } }
@@ -2537,7 +2558,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   padding-bottom: 0.5rem; }
-  .nypl-collapsible-field fieldset {
+  .nypl-collapsible-field fieldset,
+  .nypl-collapsible-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2566,7 +2588,8 @@ dl dd.multi-item-list,
   position: relative;
   padding-bottom: 0.5rem;
   border-radius: 0; }
-  .nypl-searchable-field fieldset {
+  .nypl-searchable-field fieldset,
+  .nypl-searchable-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2677,7 +2700,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-alphabetical-filter fieldset {
+  .nypl-alphabetical-filter fieldset,
+  .nypl-alphabetical-filter div {
     border: 0;
     box-shadow: none;
     margin: 0;
