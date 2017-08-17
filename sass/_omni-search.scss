@@ -85,7 +85,7 @@ $form-padding: 0.5rem;
   input[type=text] {
     background: $nypl-white;
     position: relative;
-    //width: 53%;
+    width: 50%;
     top: 0.475rem;
 
     @include media($mobile-breakpoint) {
