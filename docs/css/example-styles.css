@@ -2446,6 +2446,7 @@ dl dd.multi-item-list,
   .nypl-omnisearch input[type=text] {
     background: #fff;
     position: relative;
+    width: 50%;
     top: 0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch input[type=text] {
