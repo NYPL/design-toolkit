@@ -3,7 +3,7 @@
 $form-padding: 0.5rem;
 
 @mixin basic-omnisearch (
-  $background-color: $nypl-search-color,
+  $background-color: $nypl-white,
   $border: 0,
   $border-radius: ($general-border-radius * 2),
   $padding: $form-padding) {
@@ -19,7 +19,7 @@ $form-padding: 0.5rem;
     $border: solid 0.0625rem $nypl-dark-gray,
     $border-radius: $general-border-radius,
     $padding: 0);
-  font-weight: 200;
+  font-weight: 400;
 
   @include media($mobile-breakpoint) {
     width: 97%;
@@ -33,6 +33,11 @@ $form-padding: 0.5rem;
     height: 2rem;
   }
 
+  ::placeholder {
+    color: $nypl-dark-gray;
+    opacity: 1;
+  }
+
   legend {
     display: none;
     height: 0;
@@ -40,12 +45,13 @@ $form-padding: 0.5rem;
   }
 
   .nypl-omni-fields {
+    background-color: $nypl-white;
     border-right: $general-border-width / 1.5 solid $nypl-dark-gray;
-    padding-right: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.25rem;
+    padding-right: 0.25rem;
     position: relative;
     top: 0.475rem;
-    width: 17%;
+    width: 28%;
 
     @include media($mobile-breakpoint) {
       font-size: 0.9rem;
@@ -60,10 +66,11 @@ $form-padding: 0.5rem;
 
     select {
       @include select;
-      background-color: $page-background-color;
       border-radius: 0;
       border-right: $general-border-width / 1.5;
       background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% $nypl-white;
+      background-color: $nypl-white;
+      text-overflow: ellipsis;
   }
 } // /.nypl-omni-fields
 
@@ -78,7 +85,7 @@ $form-padding: 0.5rem;
   input[type=text] {
     background: $nypl-white;
     position: relative;
-    width: 58%;
+    width: 50%;
     top: 0.475rem;
 
     @include media($mobile-breakpoint) {

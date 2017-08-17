@@ -35,7 +35,15 @@
       <div class="nypl-row">
         <div class="nypl-full-width-wrapper">
           <div class="nypl-column-three-quarters">
-            <h2>New York Public Library Research Catalog</h2>
+            <nav aria-label="Breadcrumbs" class="nypl-breadcrumbs">
+              <span class="nypl-screenreader-only">You are here:</span>
+                <ol>
+                  <li><a href="#">Shared Collection Catalog</a></li>
+                  <li><a href="#">Search Results</a></li>
+                  <li>Item Details</li>
+                </ol>
+            </nav>
+            <h1>Research item hold request</h1>
             <!-- <span>
               <span class="nypl-screenreader-only" >You are here:</span>
               <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
@@ -59,21 +67,18 @@
     <div class="nypl-full-width-wrapper">
       <div class="nypl-row">
         <div class="nypl-column-three-quarters">
-        <div class="item-header">
-          <h3>Research item hold request</h3>
-        </div>
       <div class="nypl-request-item-summary">
         <div class="item">
-          <h4>
+          <h2>
             <a href="/bib/b7169745">880-02 Bian yuan, zu qun yu guo jia : Qing mo xi bei Hui min qi yi = Edge, ethnicity and the state : the uprisings of northwest Chinese Muslims in late Qing dynasty / Zhou Yaoming zhu.</a>
-          </h4>
+          </h2>
           <div class="call-number"><span>Call number:</span></br>
           DS731.M87Z48 2011</div>
         </div>
       </div>
       <form action="/hold/request/b7169745-i6582985" method="POST">
 
-        <h4>Choose a delvery option or location</h4>
+        <h2 class="nypl-request-form-title">Choose a delvery option or location</h2>
 
         <div class="nypl-request-radiobutton-field">
           <fieldset>

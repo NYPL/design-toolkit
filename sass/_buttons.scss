@@ -5,8 +5,8 @@
 //TODO: move button style in _forms.scss to this partial
 //      add in styles for request button
 
-@warn "use 'default' in default names (from colors.scss i suppose)";
-@warn "some magic numbers";
+//@warn "use 'default' in default names (from colors.scss i suppose)";
+//@warn "some magic numbers";
 
 @mixin link-button {
   background: none;
@@ -130,7 +130,7 @@
   &[disabled],
   &[disabled=true] {
 
-    @warn "set universal disabled style";
+    //@warn "set universal disabled style";
     background-color: $disabled-color;
     border-color: $the-background-color;
     cursor: default;
