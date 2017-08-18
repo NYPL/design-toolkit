@@ -196,6 +196,10 @@
   @include item-holds-radiobutton-field;
 }
 
+.nypl-request-form-title {
+  @include request-form-title;
+}
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   @include radiobutton-field;

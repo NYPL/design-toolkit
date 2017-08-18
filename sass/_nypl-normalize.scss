@@ -7,7 +7,7 @@
 @import "forms";
 @import "buttons";
 
-@warn "remove magic numbers and convert to mixins?";
+//@warn "remove magic numbers and convert to mixins?";
 
 body {
   color: $page-text-color;
@@ -28,7 +28,7 @@ html {
   @include font-settings;
   background-color: $page-background-color;
 
-  @warn "hard-coded filter to make page grayscale. make mixin?";
+  //@warn "hard-coded filter to make page grayscale. make mixin?";
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   -webkit-filter: none;

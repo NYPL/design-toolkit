@@ -35,21 +35,24 @@
       <div class="nypl-full-width-wrapper">
         <div class="nypl-row">
           <div class="nypl-column-three-quarters">
-            <h2>New York Public Library Research Catalog</h2>
+            <nav aria-label="Breadcrumbs" class="nypl-breadcrumbs">
+              <span class="nypl-screenreader-only">You are here:</span>
+                <ol>
+                  <li><a href="#">Shared Collection Catalog</a></li>
+                  <li>Search Results</li>
+                </ol>
+            </nav>
+            <h1>Search Results</h1>
             <form>
-              <fieldset class="nypl-omnisearch style-2">
-                <legend>Catalog Search</legend>
+              <div class="nypl-omnisearch">
                 <span class="nypl-omni-fields">
-  <label for="search-by-field">Search in</label>
-  <select id="search-by-field">
-    <option value="all">All fields</option>
-    <option value="title">Title</option>
-    <option value="contributor">Author/Contributor</option>
-    <option value="subject">Subject</option>
-    <option value="series">Series</option>
-    <option value="call_number">Call number</option>
-  </select>
-</span>
+                  <label for="search-by-field">Search in</label>
+                  <select id="search-by-field">
+                    <option value="all">All fields</option>
+                    <option value="title">Title</option>
+                    <option value="contributor">Author/Contributor</option>
+                  </select>
+                </span>
                 <!-- <label for="nypl-omni-button">Search</label> -->
                 <input type="text" aria-labelledby="nypl-omni-button" value="" placeholder="Keyword, title, name, or id" />
                 <input type="submit" id="nypl-omni-button" value="Search">
@@ -57,8 +60,13 @@
     <title id="search-icon">search</title>
     <path d="M.35944,19.1961a.85555.85555,0,0,0,1.19271-.2011l3.81409-5.36107A7.21,7.21,0,1,0,3.93352,12.697L.15834,18.00339A.85553.85553,0,0,0,.35944,19.1961ZM8.5473,12.668a5.47881,5.47881,0,1,1,5.47881-5.47881A5.485,5.485,0,0,1,8.5473,12.668Z"/>
   </svg> -->
-              </fieldset>
+              </div>
             </form>
+            <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
+              <h2>
+                <span class="nypl-results-count">Displaying 1-50 of 843 results for keyword "New York Waterways"</span>
+              </h2>
+            </div>
             <div class="nypl-results-sorting-controls">
               <div class="nypl-results-sorter">
                 <button aria-expanded="false">
@@ -86,11 +94,6 @@ Sort by <strong>relevance</strong>
       <!-- results column -->
       <div class="nypl-row">
         <div class="nypl-column-three-quarters" id="mainContent">
-          <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
-            <h2>
-<span class="nypl-results-count">9,478 results  </span>
-</h2>
-          </div>
           <!-- results list -->
           <ul id="results-list" class="nypl-results-list">
             <li class="nypl-results-item">

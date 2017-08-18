@@ -1,4 +1,4 @@
-@warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to prefix nypl automatically to each variable...";
+//@warn "_colors.scss now using set from Marketing. Probably do some magic for eaching to prefix nypl automatically to each variable...";
 // nypl _colors.scss
 
 // NYPL Reds
@@ -67,7 +67,7 @@ $alert-color: $nypl-yellow;
 
 // Hyper-link colors
 $link-color: $nypl-blue;
-$link-visited-color: darken($link-color, 10%);
+$link-visited-color: darken($link-color, 15%);
 $link-hover-color: darken($link-color, 5%);
 $inverted-link-color: $nypl-white;
 $inverted-link-visited-color: darken($inverted-link-color, 10%);
