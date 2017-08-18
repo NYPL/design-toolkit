@@ -17,6 +17,10 @@ Design toolkit (SASS) for the NYPL Digital team
 See [LICENSE](LICENSE)
 
 ## CHANGE LOG
+### v0.1.23
+- Fixes: #201, #199, #195, #194, #183, #181, #180
+- Fixes: discover #692, #679, #676, #675, #674, #673
+
 
 ### v0.1.22
 - Design Patterns added
