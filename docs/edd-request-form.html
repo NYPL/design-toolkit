@@ -72,19 +72,19 @@
               </div>
             </div>
           </div>
-        </div>
-      </div> <!-- /nypl-column-three-quarters -->
-    </div>
-    <form id="edd-request" class="nypl-electronic-delivery-form">
+        </div> <!-- /nypl-column-three-quarters -->
+      </div>
+      <form id="edd-request">
       <fieldset>
-        <div class="nypl-row">
+      <div class="nypl-row">
           <div class="nypl-column-half">
-            <h4>Contact Information</h4>
-            <div class="nypl-text-field" id="email-address">
-              <label for="required-email-field" id="email-address-label">Email Adress
-                <span class="nypl-required-field">Required</span>
-              </label>
-              <input id="required-email-field" type="text" aria-labelledby="email-address-label email-address-status" aria-required="true" placeholder="" />
+
+              <h4>Contact Information</h4>
+              <div class="nypl-text-field" id="email-address">
+                <label for="required-field" id="email-address-label">Email Adress
+                  <span class="nypl-required-field">Required</span>
+                </label>
+                <input id="required-field" type="text" required="true" aria-labelledby="email-address-label email-address-status" aria-required="true" placeholder="" />
                 <span class="nypl-field-status" id="email-address-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
               </div>
 
@@ -92,48 +92,47 @@
         </div>
       </fieldset>
       <fieldset>
-        <div class="nypl-row">
-          <div class="nypl-column-half">
-            <h4>Chapter or Article Information</h4>
-            <div class="nypl-text-field" id="article-title">
-              <label for="required-article-title-field" id="article-title-label">Chapter / Article Title
-                <span class="nypl-required-field">Required</span>
-              </label>
-              <input id="required-article-title-field" type="text" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
-              <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Please indicate the title of the chapter or article </span>
+            <div class="nypl-row">
+            <div class="nypl-column-half">
+
+                <h4>Chapter or Article Information</h4>
+              <div class="nypl-text-field" id="article-title">
+                <label for="required-field" id="article-title-label">Chapter / Article Title
+                  <span class="nypl-required-field">Required</span>
+                </label>
+                <input id="required-field" type="text" required="true" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
+                <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Please indicate the title of the chapter or article </span>
               </div>
+
           </div><!-- /nypl-column-half -->
         </div>
         <div class="nypl-row">
           <div class="nypl-column-one-quarter">
+
             <div class="nypl-text-field">
-            <label for="article-autor-text">Article Author</label>
-            <input id="article-autor-text" type="text" placeholder="" />
+            <label for="keyword-text">Article Author</label>
+            <input id="keyword-text" type="text" placeholder="" />
             <span class="nypl-field-status" id="article-author-status" aria-live="assertive" aria-atomic="true">Please enter the author&rsquo;s name </span>
           </div>
 
           <div class="nypl-year-field">
             <label for="date-from">Date Published</label>
             <input id="date-from" type="number" min="1895" max="9999" step="1">
-            <span class="nypl-field-status" id="issue-status" aria-live="assertive" aria-atomic="true">Please indicate the date published</span>
           </div>
 
           <div class="nypl-text-field">
-            <label for="volume-text">Volume</label>
-            <input id="volume-text" type="text" placeholder="" />
-            <span class="nypl-field-status" id="volume-text volume-status" aria-live="assertive" aria-atomic="true">Please enter the Volume </span>
+            <label for="keyword-text">Volume</label>
+            <input id="keyword-text" type="text" placeholder="" />
+            <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please enter the Volume </span>
           </div>
 
           <div class="nypl-text-field">
-            <label for="issue-text-label">Issue</label>
-
-            <input id="issue-text" type="text" aria-labelledby="issue-text-label issue-status" placeholder="" />
-
-            <span class="nypl-field-status" id="issue-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
-          </div>
+            <label for="keyword-text">Issue</label>
+            <input id="keyword-text" type="text" placeholder="" />
+            <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
           </div>
         </div>
-      </fieldset>
+        </fieldset>
 
         <fieldset>
         <div class="nypl-row">
@@ -143,27 +142,23 @@
         </div>
         <div class="nypl-row">
         <div class="nypl-column-one-quarter">
-          <div class="nypl-text-field" id="article-start-page">
-            <label for="required-start-page-field" id="article-start-page-label">Starting Page:
+          <div class="nypl-text-field" id="article-title">
+            <label for="required-field" id="article-title-label">Starting Page:
               <span class="nypl-required-field">Required</span>
             </label>
-
-            <input id="required-start-page-field" type="text" aria-labelledby="article-start-page-label article-start-page-status" aria-required="true" placeholder="" />
-
-            <span class="nypl-field-status" id="article-start-page-status" aria-live="assertive" aria-atomic="true">Values must be numeric only (No special characters allowed)</span>
+            <input id="required-field" type="text" required="true" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
+            <!-- <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Please indicate the title of the chapter or article </span> -->
           </div>
-          <div class="nypl-text-field" id="article-end-page">
-            <label for="required-end-page-field" id="article-end-page-label">Ending Page:
+          <div class="nypl-text-field" id="article-title">
+            <label for="required-field" id="article-title-label">Ending Page:
               <span class="nypl-required-field">Required</span>
             </label>
-            <input id="required-end-page-field" type="text" aria-labelledby="article-end-page-label article-end-page-status" aria-required="true" placeholder="" />
-            <span class="nypl-field-status" id="article-end-page-status" aria-live="assertive" aria-atomic="true">Values must be numeric only (No special characters allowed)</span>
+            <input id="required-field" type="text" required="true" aria-labelledby="article-title-label article-title-status" aria-required="true" placeholder="" />
+            <span class="nypl-field-status" id="article-title-status" aria-live="assertive" aria-atomic="true">Values must be numeric only (No special characters allowed)</span>
           </div>
-          <div class="nypl-text-field ">
-            <label for="additional-notes-textarea">Additional Notes:</label>
-            <textarea class="nypl-text-area" form="edd-request" id="additional-notes-textarea" name="Additional Notes:">
-            </textarea>
-          </div>
+          <label for="additional-notes-textarea">Additional Notes:</label>
+          <textarea class="nypl-text-area" form="edd-request" id="additional-notes-textarea" name="Additional Notes:">
+          </textarea>
 
         </div><!-- /nypl-column-1/4 -->
         </div>
