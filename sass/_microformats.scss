@@ -1,4 +1,4 @@
-@warn "remove magic numbers";
+//@warn "remove magic numbers";
 
 @mixin banner-alert() {
   background-color: $alert-color;
@@ -152,7 +152,7 @@
 
 
 
-@warn "Move these mixins out of the microformats partial since they effect the entire style guide...";
+//@warn "Move these mixins out of the microformats partial since they effect the entire style guide...";
 
 @mixin related-links {
   border-top: $related-links-border-width solid $nypl-gray;
@@ -193,7 +193,7 @@
 // Discovery HP Image, H4 & copy section below the Hero
 // TODO: Make a proper toolkit patter for this
 // TODO: This is a bit hacky to override the toolkit's established grid styles, but in this case for medium sized viewports we need an breakpoint to hanle this layout:
-@warn "many magic numbers & work arounds here";
+//@warn "many magic numbers & work arounds here";
 
 // Special case where there is an h3 that has special styling. here it is:
 

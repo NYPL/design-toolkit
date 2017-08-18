@@ -1,10 +1,10 @@
 @import "buttons";
-@warn "omnisearch mixin is a the bottom of this file";
+//@warn "omnisearch mixin is a the bottom of this file";
 // overriding focus borders to make them stand out
 
 $form-padding: 0.5rem;
 
-@warn "lots of magic numbers here";
+//@warn "lots of magic numbers here";
 
 @each $tag in a, input, select, button {
   #{$tag} {
@@ -508,13 +508,16 @@ $form-padding: 0.5rem;
 @mixin request-item-summary {
   background: $nypl-white;
 
+  h2 {
+    font-weight: 400;
+  }
+
   .call-number {
     margin: $general-padding 0;
-    font-size: 0.85rem;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 400;
 
     span {
-      font-weight: 400;
       text-transform: uppercase;
     } // span
   } // /.call-number-heading
@@ -548,7 +551,15 @@ $form-padding: 0.5rem;
   } // /.nypl-column-three-quarters
 } // /request-page-header
 
-
+// Need a title styling for forms so this might expand in the future
+// In this case the class is being used by an h2, but there is probably a
+// more Toolkity way of doing things:
+@mixin request-form-title(
+  $font-weight: 400,
+  $font-family: $sans-serif-stack) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+} // /request-form-title
 
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";
