@@ -25,9 +25,10 @@ $form-padding: 0.5rem;
   margin-bottom: ($form-padding / 2);
 }
 
-@mixin fieldset {
+@mixin fieldset(
+    $border: 0) {
   background-color: $page-background-color;
-  border: 0;
+  border: $border;
   border-radius: $general-border-radius;
   box-shadow: none;
   display: block;
@@ -35,9 +36,8 @@ $form-padding: 0.5rem;
   padding: 0;
   position: relative;
 
-  fieldset,
-  div {
-    border: 0;
+  fieldset {
+    border: $border;
     box-shadow: none;
     margin: 0;
     padding: 0;
@@ -493,13 +493,16 @@ $form-padding: 0.5rem;
 
 @mixin text-area(
   $border-color: $nypl-dark-gray,
-  $border-width: ($general-border-width / 3)) {
+  $border-width: ($general-border-width / 3),
+  $width: 100%,
+  $height: 12rem) {
   border: $border-width solid $border-color;
+  height: $height;
+  width: $width;
 }
 
 //
 // Request form(s)
-//
 // Mixins for Discovery requests pages
 //
 @mixin request-item-summary {
@@ -519,6 +522,13 @@ $form-padding: 0.5rem;
     } // span
   } // /.call-number-heading
 } // /request-item-summary
+
+@mixin electronic-delivery-form {
+  fieldset {
+    border: 0;
+  }
+}
+
 
 @mixin request-page-header {
   @include page-header(

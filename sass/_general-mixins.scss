@@ -12,9 +12,10 @@
 
 $bullet-size: 0.5rem;
 
-@mixin custom-list-bullet($color: $nypl-light-gray, $hides-on-mobile: true) {
+@mixin custom-list-bullet(
+    $color: $nypl-light-gray,
+    $hides-on-mobile: true) {
   list-style-type: none;
-  padding-left: ($bullet-size * 2);
   position: relative;
 
   @if ($hides-on-mobile == true) {
@@ -22,32 +23,15 @@ $bullet-size: 0.5rem;
       margin-left: 0;
     }
   }
-
-  &::before {
-    background-color: $color;
-    content: "";
-    display: block;
-    height: $bullet-size;
-    left: 0;
-    position: absolute;
-    top: ($bullet-size + 0.1);
-    width: $bullet-size;
-    @include border-radius($bullet-size * 0.5);
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-
-    @if ($hides-on-mobile == true) {
-      @include media($mobile-breakpoint) {
-        display: none;
-      }
-    }
-  }
 }
 
-@mixin custom-list($color: $nypl-light-gray, $hides-on-mobile: true) {
+@mixin custom-list(
+    $color: $nypl-light-gray,
+    $hides-on-mobile: true) {
   li {
-    @include custom-list-bullet($color: $nypl-light-gray, $hides-on-mobile: true);
+    @include custom-list-bullet(
+      $color: $nypl-light-gray,
+      $hides-on-mobile: true);
   }
 }
 
