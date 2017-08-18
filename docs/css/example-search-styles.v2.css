@@ -423,6 +423,11 @@ button:focus {
   .search-control a:hover {
     text-decoration: underline; }
 
+div.nypl-omnisearch.nypl-spinner-field {
+  overflow: inherit; }
+div.nypl-omnisearch.spinning {
+  overflow: hidden; }
+
 body {
   color: #080807; }
 
@@ -515,7 +520,7 @@ a {
   a:link {
     color: #1b7fa7; }
   a:visited {
-    color: #145e7b; }
+    color: #104d65; }
   a:hover, a:visited:hover {
     color: #176e91;
     text-decoration: none; }
@@ -581,6 +586,11 @@ button:focus {
   .search-control a:hover {
     text-decoration: underline; }
 
+div.nypl-omnisearch.nypl-spinner-field {
+  overflow: inherit; }
+div.nypl-omnisearch.spinning {
+  overflow: hidden; }
+
 .nypl-results-list .nypl-results-item-description {
   margin-bottom: 0.25rem; }
 .nypl-results-list .nypl-results-item {
@@ -607,31 +617,7 @@ button:focus {
       margin-bottom: 1rem; }
     .nypl-results-list .nypl-results-item dl li {
       list-style-type: none;
-      padding-left: 1rem;
-      position: relative;
-      list-style-type: none;
       margin-left: 0; }
-      @media (max-width: 965px) {
-        .nypl-results-list .nypl-results-item dl li {
-          margin-left: 0; } }
-      .nypl-results-list .nypl-results-item dl li::before {
-        background-color: #d7d4d0;
-        content: "";
-        display: block;
-        height: 0.5rem;
-        left: 0;
-        position: absolute;
-        top: 0.6rem;
-        width: 0.5rem;
-        -webkit-border-radius: 0.25rem;
-        -moz-border-radius: 0.25rem;
-        border-radius: 0.25rem;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box; }
-        @media (max-width: 965px) {
-          .nypl-results-list .nypl-results-item dl li::before {
-            display: none; } }
   .nypl-results-list .nypl-results-item dt,
   .nypl-results-list .nypl-results-item dd {
     float: left;
@@ -1346,12 +1332,13 @@ dl dd.multi-item-list,
 
 .nypl-request-item-summary {
   background: #fff; }
+  .nypl-request-item-summary h2 {
+    font-weight: 400; }
   .nypl-request-item-summary .call-number {
     margin: 1rem 0;
-    font-size: 0.85rem;
-    font-weight: 100; }
+    font-size: 1rem;
+    font-weight: 400; }
     .nypl-request-item-summary .call-number span {
-      font-weight: 400;
       text-transform: uppercase; }
 
 .nypl-text-area {
@@ -1762,7 +1749,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-fieldset fieldset {
+  .nypl-fieldset fieldset,
+  .nypl-fieldset div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1790,7 +1778,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-text-field fieldset {
+  .nypl-text-field fieldset,
+  .nypl-text-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1855,7 +1844,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-year-field fieldset {
+  .nypl-year-field fieldset,
+  .nypl-year-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1971,7 +1961,8 @@ dl dd.multi-item-list,
     display: table; }
   .nypl-name-field::after {
     clear: both; }
-  .nypl-name-field fieldset {
+  .nypl-name-field fieldset,
+  .nypl-name-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2052,7 +2043,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-address-fieldset fieldset {
+  .nypl-address-fieldset fieldset,
+  .nypl-address-fieldset div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2129,7 +2121,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   min-width: 12rem; }
-  .nypl-date-field fieldset {
+  .nypl-date-field fieldset,
+  .nypl-date-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2223,7 +2216,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-select-field fieldset {
+  .nypl-select-field fieldset,
+  .nypl-select-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2297,7 +2291,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   border-radius: 0; }
-  .nypl-request-radiobutton-field fieldset {
+  .nypl-request-radiobutton-field fieldset,
+  .nypl-request-radiobutton-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2338,6 +2333,10 @@ dl dd.multi-item-list,
     height: initial;
     margin: 0 0.5rem; }
 
+.nypl-request-form-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400; }
+
 .nypl-radiobutton-field,
 .nypl-checkbox-field {
   background-color: #fff;
@@ -2350,7 +2349,9 @@ dl dd.multi-item-list,
   position: relative;
   border-radius: 0; }
   .nypl-radiobutton-field fieldset,
-  .nypl-checkbox-field fieldset {
+  .nypl-radiobutton-field div,
+  .nypl-checkbox-field fieldset,
+  .nypl-checkbox-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2396,7 +2397,8 @@ dl dd.multi-item-list,
   border: solid 0.0625rem #080807;
   border-radius: 0.2rem;
   padding: 0;
-  font-weight: 200; }
+  font-weight: 400;
+  height: 3rem; }
   @media (max-width: 965px) {
     .nypl-omnisearch {
       width: 97%; } }
@@ -2406,17 +2408,21 @@ dl dd.multi-item-list,
     display: block;
     float: left;
     height: 2rem; }
+  .nypl-omnisearch ::placeholder {
+    color: #080807;
+    opacity: 1; }
   .nypl-omnisearch legend {
     display: none;
     height: 0;
     width: 0; }
   .nypl-omnisearch .nypl-omni-fields {
+    background-color: #fff;
     border-right: 0.08333rem solid #080807;
-    padding-right: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.25rem;
+    padding-right: 0.25rem;
     position: relative;
     top: 0.475rem;
-    width: 17%; }
+    width: 28%; }
     @media (max-width: 965px) {
       .nypl-omnisearch .nypl-omni-fields {
         font-size: 0.9rem;
@@ -2443,10 +2449,11 @@ dl dd.multi-item-list,
       padding-right: 7%;
       padding-left: 0.5rem;
       width: 100%;
-      background-color: #fff;
       border-radius: 0;
       border-right: 0.08333rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff; }
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjY5OTA1IiBoZWlnaHQ9IjMuOTg3MTMiIHZpZXdCb3g9IjAgMCA3LjY5OTA1IDMuOTg3MTMiPgogIDx0aXRsZT5kb3duLjIud2VkZ2U8L3RpdGxlPgogIDxwb2x5bGluZSBwb2ludHM9IjcuMzk1IDAuMzYgMy44NSAzLjM3IDAuMzA0IDAuMzU4IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMyMzFmMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIwLjk0MDUiLz4KPC9zdmc+) no-repeat 95% #fff;
+      background-color: #fff;
+      text-overflow: ellipsis; }
   .nypl-omnisearch input[type=text],
   .nypl-omnisearch input[type=email],
   .nypl-omnisearch input[type=number] {
@@ -2460,7 +2467,7 @@ dl dd.multi-item-list,
   .nypl-omnisearch input[type=text] {
     background: #fff;
     position: relative;
-    width: 58%;
+    width: 50%;
     top: 0.475rem; }
     @media (max-width: 965px) {
       .nypl-omnisearch input[type=text] {
@@ -2551,7 +2558,8 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   padding-bottom: 0.5rem; }
-  .nypl-collapsible-field fieldset {
+  .nypl-collapsible-field fieldset,
+  .nypl-collapsible-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2580,7 +2588,8 @@ dl dd.multi-item-list,
   position: relative;
   padding-bottom: 0.5rem;
   border-radius: 0; }
-  .nypl-searchable-field fieldset {
+  .nypl-searchable-field fieldset,
+  .nypl-searchable-field div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2691,7 +2700,8 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-alphabetical-filter fieldset {
+  .nypl-alphabetical-filter fieldset,
+  .nypl-alphabetical-filter div {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2824,13 +2834,19 @@ dl dd.multi-item-list,
   background-color: #efedeb; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
+    font-family: "Milo-Light";
     font-size: 2rem;
     margin: 0; }
+  .nypl-page-header h1 {
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+  .nypl-page-header h1.item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400; }
   .nypl-page-header h2 {
     line-height: 1; }
   .nypl-page-header h2 {
-    color: #080807;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
@@ -2843,14 +2859,20 @@ dl dd.multi-item-list,
   margin-bottom: 0; }
   .nypl-request-page-header h1,
   .nypl-request-page-header h2 {
+    font-family: "Milo-Light";
     font-size: 2rem;
     margin: 0; }
+  .nypl-request-page-header h1 {
+    font-weight: 100;
+    margin: 1rem 0 1.5rem; }
+  .nypl-request-page-header h1.item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400; }
   .nypl-request-page-header h2 {
     line-height: 1; }
   .nypl-request-page-header h2 {
-    color: #d0343a;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-request-page-header h2 {
@@ -2864,7 +2886,7 @@ dl dd.multi-item-list,
 
 .nypl-breadcrumbs {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 -0.5rem;
   padding-left: 0; }
   .nypl-breadcrumbs li {
     display: inline-block;
@@ -2872,11 +2894,19 @@ dl dd.multi-item-list,
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
+    .nypl-breadcrumbs li a {
+      border-radius: 0.2rem;
+      color: #080807;
+      padding: 0.25rem 0.45rem; }
+      .nypl-breadcrumbs li a:hover {
+        background: #d7d4d0; }
+      .nypl-breadcrumbs li a:visited {
+        color: #403b35; }
     @media (max-width: 965px) {
       .nypl-breadcrumbs li {
         max-width: 90vw; } }
     .nypl-breadcrumbs li::before {
-      content: "> "; }
+      content: " > "; }
     .nypl-breadcrumbs li:first-child::before {
       content: ""; }
 
@@ -3288,31 +3318,7 @@ dl dd.multi-item-list,
         margin-bottom: 1rem; }
       .nypl-holds-table td dl li {
         list-style-type: none;
-        padding-left: 1rem;
-        position: relative;
-        list-style-type: none;
         margin-left: 0; }
-        @media (max-width: 965px) {
-          .nypl-holds-table td dl li {
-            margin-left: 0; } }
-        .nypl-holds-table td dl li::before {
-          background-color: #d7d4d0;
-          content: "";
-          display: block;
-          height: 0.5rem;
-          left: 0;
-          position: absolute;
-          top: 0.6rem;
-          width: 0.5rem;
-          -webkit-border-radius: 0.25rem;
-          -moz-border-radius: 0.25rem;
-          border-radius: 0.25rem;
-          -moz-background-clip: padding;
-          -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
-          @media (max-width: 965px) {
-            .nypl-holds-table td dl li::before {
-              display: none; } }
     .nypl-holds-table td dt,
     .nypl-holds-table td dd {
       float: left;
@@ -3415,7 +3421,7 @@ dl dd.multi-item-list,
   max-width: none; }
 .nypl-results-summary .nypl-results-count {
   float: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 0.25rem;
@@ -3720,31 +3726,7 @@ dl dd.multi-item-list,
       margin-bottom: 1rem; }
     .nypl-results-item dl li {
       list-style-type: none;
-      padding-left: 1rem;
-      position: relative;
-      list-style-type: none;
       margin-left: 0; }
-      @media (max-width: 965px) {
-        .nypl-results-item dl li {
-          margin-left: 0; } }
-      .nypl-results-item dl li::before {
-        background-color: #d7d4d0;
-        content: "";
-        display: block;
-        height: 0.5rem;
-        left: 0;
-        position: absolute;
-        top: 0.6rem;
-        width: 0.5rem;
-        -webkit-border-radius: 0.25rem;
-        -moz-border-radius: 0.25rem;
-        border-radius: 0.25rem;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box; }
-        @media (max-width: 965px) {
-          .nypl-results-item dl li::before {
-            display: none; } }
   .nypl-results-item dt,
   .nypl-results-item dd {
     float: left;
@@ -3864,31 +3846,7 @@ dl dd.multi-item-list,
     margin-bottom: 1rem; }
   .nypl-item-details dl li {
     list-style-type: none;
-    padding-left: 1rem;
-    position: relative;
-    list-style-type: none;
     margin-left: 0; }
-    @media (max-width: 965px) {
-      .nypl-item-details dl li {
-        margin-left: 0; } }
-    .nypl-item-details dl li::before {
-      background-color: #d7d4d0;
-      content: "";
-      display: block;
-      height: 0.5rem;
-      left: 0;
-      position: absolute;
-      top: 0.6rem;
-      width: 0.5rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      border-radius: 0.25rem;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box; }
-      @media (max-width: 965px) {
-        .nypl-item-details dl li::before {
-          display: none; } }
 .nypl-item-details dt,
 .nypl-item-details dd {
   float: left;
@@ -3907,7 +3865,7 @@ dl dd.multi-item-list,
   @media (max-width: 965px) {
     .nypl-item-details dd {
       width: 55%; } }
-.nypl-item-details h1 {
+.nypl-item-details h2 {
   font-size: 1.6rem;
   font-weight: normal; }
 .nypl-item-details dl {
@@ -3926,31 +3884,7 @@ dl dd.multi-item-list,
     margin-bottom: 1rem; }
   .nypl-item-external-links dl li {
     list-style-type: none;
-    padding-left: 1rem;
-    position: relative;
-    list-style-type: none;
     margin-left: 0; }
-    @media (max-width: 965px) {
-      .nypl-item-external-links dl li {
-        margin-left: 0; } }
-    .nypl-item-external-links dl li::before {
-      background-color: #d7d4d0;
-      content: "";
-      display: block;
-      height: 0.5rem;
-      left: 0;
-      position: absolute;
-      top: 0.6rem;
-      width: 0.5rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      border-radius: 0.25rem;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box; }
-      @media (max-width: 965px) {
-        .nypl-item-external-links dl li::before {
-          display: none; } }
 .nypl-item-external-links dt,
 .nypl-item-external-links dd {
   float: left;
@@ -4866,14 +4800,20 @@ dl dd.multi-item-list,
   margin-bottom: 0; }
   .nypl-page-header h1,
   .nypl-page-header h2 {
+    font-family: "Milo-Light";
     font-size: 2rem;
     margin: 0; }
+  .nypl-page-header h1 {
+    font-weight: 100;
+    margin: 1rem 0 1.5rem; }
+  .nypl-page-header h1.item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400; }
   .nypl-page-header h2 {
     line-height: 1; }
   .nypl-page-header h2 {
-    color: #d0343a;
-    font-family: "Milo-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {

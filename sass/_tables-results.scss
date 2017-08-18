@@ -4,7 +4,7 @@
 @import "microformats";
 @import "media-queries";
 
-@warn "refactor mixins and remove magic numbers";
+//@warn "refactor mixins and remove magic numbers";
 
 $results-item-border-width: 0.0625rem;
 
@@ -55,7 +55,7 @@ $results-item-border-width: 0.0625rem;
 
   .nypl-results-count {
     float: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 0.25rem;
@@ -284,7 +284,6 @@ $sorter-width: 11em;
     }
 
     li {
-      @include custom-list-bullet;
       list-style-type: none;
       margin-left: 0;
     }
@@ -446,7 +445,7 @@ $font-weight: 400) {
 @mixin item-details {
   @include item-definition-list($item-margin-bottom: 0.5rem);
 
-  h1 {
+  h2 {
     font-size: 1.6rem;
     font-weight: normal;
   }
@@ -466,7 +465,7 @@ $font-weight: 400) {
 }
 
 @mixin views-table {
-  @warn "this mixin is not used";
+  //@warn "this mixin is not used";
 
   display: table;
   border-collapse: collapse;
