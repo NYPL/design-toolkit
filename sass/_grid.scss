@@ -31,14 +31,18 @@
     margin: 1rem 0 1.5rem;
   }
 
+  h1.item-title {
+    font-family: $sans-serif-stack;
+    font-weight: 400;
+  }
+
   h2 { // when it's a secondary title (real title is inside content below)
     line-height: 1;
   }
 
   h2 {
-    color: $type-color;
-    font-family: $font-family;
-    font-weight: $font-weight;
+    font-family: $sans-serif-stack;
+    font-weight: 400;
     margin: 1rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
@@ -87,7 +91,7 @@
 
 @mixin breadcrumbs {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 -0.5rem;
   padding-left: 0;
 
   li {
@@ -118,7 +122,7 @@
     }
 
     &::before {
-      content: "> ";
+      content: " > ";
     }
 
     &:first-child::before {
