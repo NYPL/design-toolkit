@@ -35,7 +35,14 @@
       <div class="nypl-full-width-wrapper">
         <div class="nypl-row">
           <div class="nypl-column-three-quarters">
-            <h2>Shared Collection Catalog</h2>
+            <nav aria-label="Breadcrumbs" class="nypl-breadcrumbs">
+              <span class="nypl-screenreader-only">You are here:</span>
+                <ol>
+                  <li><a href="#">Shared Collection Catalog</a></li>
+                  <li>Search Results</li>
+                </ol>
+            </nav>
+            <h1>Search Results</h1>
             <form>
               <div class="nypl-omnisearch">
                 <span class="nypl-omni-fields">
@@ -55,6 +62,11 @@
   </svg> -->
               </div>
             </form>
+            <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
+              <h2>
+                <span class="nypl-results-count">Displaying 1-50 of 843 results for keyword "New York Waterways"</span>
+              </h2>
+            </div>
             <div class="nypl-results-sorting-controls">
               <div class="nypl-results-sorter">
                 <button aria-expanded="false">
@@ -82,11 +94,6 @@ Sort by <strong>relevance</strong>
       <!-- results column -->
       <div class="nypl-row">
         <div class="nypl-column-three-quarters" id="mainContent">
-          <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
-            <h2>
-<span class="nypl-results-count">9,478 results  </span>
-</h2>
-          </div>
           <!-- results list -->
           <ul id="results-list" class="nypl-results-list">
             <li class="nypl-results-item">
