@@ -668,7 +668,7 @@ dl dd.multi-item-list,
   .nypl-basic-table {
 
     thead {
-      border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
+      border-bottom: ($general-border-width / 1.25) solid lighten($nypl-light-gray, 15%);
     } // /thead
 
     th {
