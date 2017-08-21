@@ -85,6 +85,10 @@
   @include request-item-summary;
 }
 
+.nypl-electronic-delivery-form {
+  @include electronic-delivery-form;
+}
+
 .nypl-text-area {
   @include text-area;
 }

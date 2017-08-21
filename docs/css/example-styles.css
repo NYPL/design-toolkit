@@ -596,7 +596,7 @@ div.nypl-omnisearch.spinning {
 .nypl-results-list .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   margin-left: 0;
   max-width: none;
   border: 0; }
@@ -1112,29 +1112,10 @@ dl dd.multi-item-list,
 
 .nypl-custom-list li {
   list-style-type: none;
-  padding-left: 1rem;
   position: relative; }
   @media (max-width: 965px) {
     .nypl-custom-list li {
       margin-left: 0; } }
-  .nypl-custom-list li::before {
-    background-color: #d7d4d0;
-    content: "";
-    display: block;
-    height: 0.5rem;
-    left: 0;
-    position: absolute;
-    top: 0.6rem;
-    width: 0.5rem;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    border-radius: 0.25rem;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; }
-    @media (max-width: 965px) {
-      .nypl-custom-list li::before {
-        display: none; } }
 
 .nypl-collapsible {
   -webkit-transition: all 0.5s ease-out 0s;
@@ -1341,8 +1322,13 @@ dl dd.multi-item-list,
     .nypl-request-item-summary .call-number span {
       text-transform: uppercase; }
 
+.nypl-electronic-delivery-form fieldset {
+  border: 0; }
+
 .nypl-text-area {
-  border: 0.04167rem solid #080807; }
+  border: 0.04167rem solid #080807;
+  height: 12rem;
+  width: 100%; }
 
 .nypl-service-button {
   background-color: #d0343a;
@@ -1749,8 +1735,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-fieldset fieldset,
-  .nypl-fieldset div {
+  .nypl-fieldset fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1778,8 +1763,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-text-field fieldset,
-  .nypl-text-field div {
+  .nypl-text-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1844,8 +1828,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-year-field fieldset,
-  .nypl-year-field div {
+  .nypl-year-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1961,8 +1944,7 @@ dl dd.multi-item-list,
     display: table; }
   .nypl-name-field::after {
     clear: both; }
-  .nypl-name-field fieldset,
-  .nypl-name-field div {
+  .nypl-name-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2043,8 +2025,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-address-fieldset fieldset,
-  .nypl-address-fieldset div {
+  .nypl-address-fieldset fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2121,8 +2102,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   min-width: 12rem; }
-  .nypl-date-field fieldset,
-  .nypl-date-field div {
+  .nypl-date-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2216,8 +2196,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-select-field fieldset,
-  .nypl-select-field div {
+  .nypl-select-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2291,8 +2270,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   border-radius: 0; }
-  .nypl-request-radiobutton-field fieldset,
-  .nypl-request-radiobutton-field div {
+  .nypl-request-radiobutton-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2349,9 +2327,7 @@ dl dd.multi-item-list,
   position: relative;
   border-radius: 0; }
   .nypl-radiobutton-field fieldset,
-  .nypl-radiobutton-field div,
-  .nypl-checkbox-field fieldset,
-  .nypl-checkbox-field div {
+  .nypl-checkbox-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2558,8 +2534,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   padding-bottom: 0.5rem; }
-  .nypl-collapsible-field fieldset,
-  .nypl-collapsible-field div {
+  .nypl-collapsible-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2588,8 +2563,7 @@ dl dd.multi-item-list,
   position: relative;
   padding-bottom: 0.5rem;
   border-radius: 0; }
-  .nypl-searchable-field fieldset,
-  .nypl-searchable-field div {
+  .nypl-searchable-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2700,8 +2674,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-alphabetical-filter fieldset,
-  .nypl-alphabetical-filter div {
+  .nypl-alphabetical-filter fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
