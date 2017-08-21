@@ -46,7 +46,7 @@
     margin: 1rem 0 1.5rem;
 
     @include media($mobile-breakpoint) {
-      margin-top: 0;
+      margin-top: 0.5rem;
     }
   }
 } // /page-header

@@ -2824,7 +2824,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
 
 .nypl-request-page-header {
   background-color: #fafaf9;
@@ -2849,7 +2849,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-request-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
   .nypl-request-page-header h2 {
     margin-bottom: 0; }
   .nypl-request-page-header .search-control {
@@ -4790,7 +4790,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
   .nypl-page-header .nypl-column-three-quarters {
     margin-bottom: 0; }
 
