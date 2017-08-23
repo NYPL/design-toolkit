@@ -600,7 +600,8 @@ div.nypl-omnisearch.spinning {
   margin-left: 0;
   max-width: none;
   border: 0; }
-  .nypl-results-list .nypl-results-item h2 {
+  .nypl-results-list .nypl-results-item h2,
+  .nypl-results-list .nypl-results-item h3 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -639,7 +640,8 @@ div.nypl-omnisearch.spinning {
   .nypl-results-list .nypl-results-item p {
     margin-bottom: 0;
     max-width: none; }
-  .nypl-results-list .nypl-results-item h2 {
+  .nypl-results-list .nypl-results-item h2,
+  .nypl-results-list .nypl-results-item h3 {
     margin-bottom: 0; }
   .nypl-results-list .nypl-results-item.has-request {
     margin-bottom: 3.25rem; }
@@ -663,7 +665,7 @@ dl dd.multi-item-list,
   width: 100%; }
   dl dd.multi-item-list .nypl-basic-table thead,
   .nypl-results-item .nypl-basic-table thead {
-    border-bottom: 0.08333rem solid #76777b; }
+    border-bottom: 0.1rem solid #fafaf9; }
   dl dd.multi-item-list .nypl-basic-table th,
   .nypl-results-item .nypl-basic-table th {
     border: 0;
@@ -2824,7 +2826,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
 
 .nypl-request-page-header {
   background-color: #fafaf9;
@@ -2849,7 +2851,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-request-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
   .nypl-request-page-header h2 {
     margin-bottom: 0; }
   .nypl-request-page-header .search-control {
@@ -3682,7 +3684,8 @@ dl dd.multi-item-list,
   margin-bottom: 2rem;
   margin-left: 0;
   max-width: none; }
-  .nypl-results-item h2 {
+  .nypl-results-item h2,
+  .nypl-results-item h3 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
