@@ -5,7 +5,7 @@
   <title>“new york waterways” | Search results | NYPL</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/example-search-styles.v2.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/example-search-styles.css" media="screen" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
@@ -69,20 +69,19 @@
             </div>
             <div class="nypl-results-sorting-controls">
               <div class="nypl-results-sorter">
-                <button aria-expanded="false">
-Sort by <strong>relevance</strong>
-  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-    <title>wedge down icon</title>
-    <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-  </svg>
-</button>
-                <ul class="hidden" role="menu">
-                  <li><a href="?sort=relevance" class="active">relevance</a></li>
-                  <li><a href="?sort=A-Z">title A-Z</a></li>
-                  <li><a href="?sort=Z-A">title Z-A</a></li>
-                  <li><a href="?sort=old">date (old to new)</a></li>
-                  <li><a href="?sort=new">date (new to old)</a></li>
-                </ul>
+
+                <div class="nypl-select-field-results">
+                  <form action="#" method="POST">
+                  <span class="nypl-omni-fields"><label for="sort-by-label">Sort by</label>
+                    <strong>
+                      <select id="sort-by-label" name="sort_scope">
+                        <option selected="" value="relevance">relevance</option>
+                      <option value="title_asc">title (a - z)</option><option value="title_desc">title (z - a)</option>
+                      <option value="date_asc">date (old to new)</option>
+                      <option value="date_desc">date (new to old)</option>
+                    </select>
+                    </strong>
+                </div>
               </div>
             </div>
           </div>
