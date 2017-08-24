@@ -2869,7 +2869,6 @@ dl dd.multi-item-list,
   .nypl-breadcrumbs li {
     display: inline-block;
     margin-left: 0;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
     .nypl-breadcrumbs li a {
@@ -3689,10 +3688,11 @@ dl dd.multi-item-list,
   display: block;
   margin: 1rem 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  margin-top: 0; }
   .nypl-select-field-results form {
-    width: 15rem;
-    padding: 0.65rem; }
+    width: 16rem;
+    padding: 0.25rem; }
   .nypl-select-field-results fieldset {
     border: 0;
     box-shadow: none;
@@ -3708,7 +3708,8 @@ dl dd.multi-item-list,
     color: #080807;
     display: inline-block;
     font-weight: 400;
-    margin-bottom: 0.25rem; }
+    margin-bottom: 0.25rem;
+    margin: 0 0.25rem 0 0.5rem; }
   .nypl-select-field-results select {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -3721,7 +3722,8 @@ dl dd.multi-item-list,
     padding-right: 7%;
     padding-left: 0.5rem;
     width: inherit;
-    display: inline-block; }
+    display: inline-block;
+    padding-left: 0; }
 
 .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
