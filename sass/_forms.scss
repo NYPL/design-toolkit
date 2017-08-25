@@ -6,7 +6,7 @@ $form-padding: 0.5rem;
 
 //@warn "lots of magic numbers here";
 
-@each $tag in a, input, select, button {
+@each $tag in a, input, select, button, textarea {
   #{$tag} {
     border-radius: 0;
   }

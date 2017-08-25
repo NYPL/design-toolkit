@@ -400,6 +400,14 @@ button:focus {
   outline-style: solid;
   outline-width: 0.125rem; }
 
+textarea {
+  border-radius: 0; }
+
+textarea:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.125rem; }
+
 .search-control {
   color: #080807;
   font-size: 0.8rem;
@@ -559,6 +567,14 @@ button {
   border-radius: 0; }
 
 button:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.125rem; }
+
+textarea {
+  border-radius: 0; }
+
+textarea:focus {
   outline-color: #ffb81d;
   outline-style: solid;
   outline-width: 0.125rem; }
