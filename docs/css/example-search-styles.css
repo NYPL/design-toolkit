@@ -3745,6 +3745,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-select-field-results legend h3 {
+    margin: 0; }
   .nypl-select-field-results label {
     color: #080807;
     display: inline-block;
