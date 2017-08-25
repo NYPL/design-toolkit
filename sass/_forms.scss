@@ -47,6 +47,10 @@ $form-padding: 0.5rem;
   legend {
     @include label;
   }
+  // Special Case where we have <h3-4> in a legend
+  legend h3 {
+    margin: 0;
+  }
 }
 
 //

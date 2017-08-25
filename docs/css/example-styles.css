@@ -1764,6 +1764,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-fieldset legend h3 {
+    margin: 0; }
 
 .nypl-input {
   background-color: #fff;
@@ -1792,6 +1794,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-text-field legend h3 {
+    margin: 0; }
   .nypl-text-field label {
     background-color: transparent;
     color: #080807;
@@ -1857,6 +1861,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-year-field legend h3 {
+    margin: 0; }
   .nypl-year-field label {
     background-color: transparent;
     color: #080807;
@@ -1973,6 +1979,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-name-field legend h3 {
+    margin: 0; }
   .nypl-name-field label {
     background-color: transparent;
     color: #080807;
@@ -2054,6 +2062,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-address-fieldset legend h3 {
+    margin: 0; }
   .nypl-address-fieldset label {
     background-color: transparent;
     color: #080807;
@@ -2131,6 +2141,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-date-field legend h3 {
+    margin: 0; }
   .nypl-date-field label {
     background-color: transparent;
     color: #080807;
@@ -2225,6 +2237,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-select-field legend h3 {
+    margin: 0; }
   .nypl-select-field label {
     color: #080807;
     display: block;
@@ -2299,6 +2313,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field legend h3 {
+    margin: 0; }
   .nypl-request-radiobutton-field label {
     border: #d7d4d0 solid 0.0625rem;
     border-bottom: 0;
@@ -2358,6 +2374,9 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-radiobutton-field legend h3,
+  .nypl-checkbox-field legend h3 {
+    margin: 0; }
   .nypl-radiobutton-field span.nypl-label,
   .nypl-checkbox-field span.nypl-label {
     color: #080807;
@@ -2563,6 +2582,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-collapsible-field legend h3 {
+    margin: 0; }
   .nypl-collapsible-field .nypl-collapsible {
     background-color: #fff;
     padding-left: 0.5rem;
@@ -2592,6 +2613,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-searchable-field legend h3 {
+    margin: 0; }
   .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
     transform: rotate(0deg); }
   .nypl-searchable-field span.nypl-label {
@@ -2703,6 +2726,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-alphabetical-filter legend h3 {
+    margin: 0; }
   .nypl-alphabetical-filter button {
     background-color: #efedeb;
     border: 0 solid #776e64;
