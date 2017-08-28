@@ -413,8 +413,7 @@ textarea:focus {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04rem;
-  margin-top: 1.75rem;
-  text-transform: uppercase; }
+  margin-top: 1.75rem; }
   @media (max-width: 965px) {
     .search-control {
       margin-top: 0.5rem; } }
@@ -584,8 +583,7 @@ textarea:focus {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04rem;
-  margin-top: 1.75rem;
-  text-transform: uppercase; }
+  margin-top: 1.75rem; }
   @media (max-width: 965px) {
     .search-control {
       margin-top: 0.5rem; } }
@@ -687,7 +685,6 @@ dl dd.multi-item-list,
     border: 0;
     font-size: 0.85rem;
     padding-bottom: 0.5rem;
-    text-transform: uppercase;
     width: 25%; }
   @media (max-width: 965px) {
     dl dd.multi-item-list .nypl-basic-table th:first-child,
@@ -725,7 +722,7 @@ dl dd.multi-item-list,
     letter-spacing: 0.06rem;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -1299,7 +1296,7 @@ dl dd.multi-item-list,
   letter-spacing: normal;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1337,8 +1334,6 @@ dl dd.multi-item-list,
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 400; }
-    .nypl-request-item-summary .call-number span {
-      text-transform: uppercase; }
 
 .nypl-electronic-delivery-form fieldset {
   border: 0; }
@@ -1372,7 +1367,6 @@ dl dd.multi-item-list,
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-transform: uppercase;
   white-space: nowrap; }
   .nypl-service-button:link, .nypl-service-button:visited {
     color: #fff; }
@@ -3243,7 +3237,6 @@ dl dd.multi-item-list,
     left: 0;
     padding: 0.3rem 1rem;
     position: absolute;
-    text-transform: uppercase;
     top: 0; }
 
 .nypl-toolkit-example-dark {
@@ -3262,7 +3255,6 @@ dl dd.multi-item-list,
     left: 0;
     padding: 0.3rem 1rem;
     position: absolute;
-    text-transform: uppercase;
     top: 0; }
   .nypl-toolkit-example-dark::before {
     background-color: #fff; }
@@ -3611,8 +3603,7 @@ dl dd.multi-item-list,
 
 .nypl-results-sorting-controls {
   border: 0;
-  margin: 2.5rem 0 0;
-  text-transform: uppercase; }
+  margin: 2.5rem 0 0; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
     display: table; }
@@ -3645,8 +3636,7 @@ dl dd.multi-item-list,
     position: relative;
     padding-right: 1.5rem;
     text-align: left;
-    padding-right: 1.75rem;
-    text-transform: uppercase; }
+    padding-right: 1.75rem; }
     .nypl-results-sorter button .nypl-icon {
       background-color: #fff;
       border-radius: 0;
@@ -3745,6 +3735,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-select-field-results legend h3 {
+    margin: 0; }
   .nypl-select-field-results label {
     color: #080807;
     display: inline-block;
@@ -4008,8 +4000,7 @@ dl dd.multi-item-list,
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top; }
   .nypl-views-table .channel-title {
-    color: #d0343a;
-    text-transform: uppercase; }
+    color: #d0343a; }
   .nypl-views-table .signup-method {
     color: #d0343a; }
   .nypl-views-table .resource-title {
@@ -4193,8 +4184,7 @@ dl dd.multi-item-list,
     font-size: 12px;
     font-weight: bold;
     position: absolute;
-    right: 1rem;
-    text-transform: uppercase; }
+    right: 1rem; }
   .nypl-header.collapsed .logo {
     height: 30px;
     overflow: hidden; }
@@ -4208,8 +4198,7 @@ dl dd.multi-item-list,
     font-size: 0;
     font-weight: bold;
     height: 30px;
-    margin-top: 0;
-    text-transform: uppercase; }
+    margin-top: 0; }
     .nypl-header.collapsed .nav-buttons li {
       box-shadow: none; }
     .nypl-header.collapsed .nav-buttons a {
@@ -4218,8 +4207,7 @@ dl dd.multi-item-list,
       display: none; }
 .nypl-header .service-buttons {
   font-size: 0.8rem;
-  padding: 0;
-  text-transform: uppercase; }
+  padding: 0; }
   @media (max-width: 965px) {
     .nypl-header .service-buttons {
       display: none;
@@ -4255,7 +4243,6 @@ dl dd.multi-item-list,
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap; }
     .nypl-header .service-buttons li > a:link, .nypl-header .service-buttons li > a:visited {
       color: #fff; }
@@ -4300,7 +4287,6 @@ dl dd.multi-item-list,
       font-weight: bold;
       overflow: hidden;
       text-overflow: ellipsis;
-      text-transform: uppercase;
       white-space: nowrap; }
       .nypl-header .service-buttons li > a.donate:link, .nypl-header .service-buttons li > a.donate:visited {
         color: #d0343a; }
@@ -4348,7 +4334,6 @@ dl dd.multi-item-list,
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap; }
     .nypl-header .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
@@ -4470,84 +4455,82 @@ dl dd.multi-item-list,
   position: absolute;
   right: 0;
   top: 1.5rem; }
-  .nypl-header .login-toggle button {
+  .nypl-header .login-toggle button.collapsible {
+    background-color: #776e64;
+    border: 0 solid #776e64;
+    border-radius: 0.06667rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: normal;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    position: relative;
+    padding-right: 1.5rem;
+    text-align: left;
+    border-radius: 0;
+    display: block;
+    font-weight: bold;
     text-transform: uppercase; }
-    .nypl-header .login-toggle button.collapsible {
+    .nypl-header .login-toggle button.collapsible .nypl-icon {
       background-color: #776e64;
-      border: 0 solid #776e64;
-      border-radius: 0.06667rem;
-      color: #fff;
-      cursor: pointer;
+      border-radius: 0;
       display: inline-block;
-      font-size: 0.7rem;
-      font-weight: normal;
-      height: auto;
-      letter-spacing: normal;
-      padding: 0 0.5rem;
-      text-decoration: none;
-      text-transform: none;
-      white-space: nowrap;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
       transition: all 0.1s ease-in 0s;
-      position: relative;
-      padding-right: 1.5rem;
-      text-align: left;
-      border-radius: 0;
-      display: block;
-      font-weight: bold;
-      text-transform: uppercase; }
-      .nypl-header .login-toggle button.collapsible .nypl-icon {
-        background-color: #776e64;
+      position: absolute;
+      right: 0.25rem;
+      top: 0.3rem; }
+      .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+    .nypl-header .login-toggle button.collapsible:link, .nypl-header .login-toggle button.collapsible:visited {
+      color: #fff; }
+    .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible:hover:visited, .nypl-header .login-toggle button.collapsible.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+      .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
+        background-color: #fff;
         border-radius: 0;
         display: inline-block;
-        fill: #fff;
+        fill: #776e64;
         height: 1em;
         width: 1em;
-        speak: none;
-        -webkit-transition: all 0.1s ease-in 0s;
-        -moz-transition: all 0.1s ease-in 0s;
-        -o-transition: all 0.1s ease-in 0s;
-        transition: all 0.1s ease-in 0s;
-        position: absolute;
-        right: 0.25rem;
-        top: 0.3rem; }
-        .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
+        speak: none; }
+        .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
-      .nypl-header .login-toggle button.collapsible:link, .nypl-header .login-toggle button.collapsible:visited {
-        color: #fff; }
-      .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible:hover:visited, .nypl-header .login-toggle button.collapsible.active {
-        border-color: #776e64;
-        background-color: #fff;
-        color: #776e64; }
-        .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
-          background-color: #fff;
-          border-radius: 0;
-          display: inline-block;
-          fill: #776e64;
-          height: 1em;
-          width: 1em;
-          speak: none; }
-          .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
-            background-color: inherit;
-            fill: #fff; }
-      .nypl-header .login-toggle button.collapsible.active .nypl-icon {
-        transform: rotate(180deg); }
-      .nypl-header .login-toggle button.collapsible:focus {
-        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        outline: none; }
-      .nypl-header .login-toggle button.collapsible.disabled, .nypl-header .login-toggle button.collapsible[disabled="disabled"], .nypl-header .login-toggle button.collapsible[disabled="true"], .nypl-header .login-toggle button.collapsible[disabled], .nypl-header .login-toggle button.collapsible[disabled=true] {
+    .nypl-header .login-toggle button.collapsible.active .nypl-icon {
+      transform: rotate(180deg); }
+    .nypl-header .login-toggle button.collapsible:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .nypl-header .login-toggle button.collapsible.disabled, .nypl-header .login-toggle button.collapsible[disabled="disabled"], .nypl-header .login-toggle button.collapsible[disabled="true"], .nypl-header .login-toggle button.collapsible[disabled], .nypl-header .login-toggle button.collapsible[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-header .login-toggle button.collapsible.disabled:hover, .nypl-header .login-toggle button.collapsible[disabled="disabled"]:hover, .nypl-header .login-toggle button.collapsible[disabled="true"]:hover, .nypl-header .login-toggle button.collapsible[disabled]:hover, .nypl-header .login-toggle button.collapsible[disabled=true]:hover {
         background-color: #d7d4d0;
         border-color: #fff;
-        cursor: default; }
-        .nypl-header .login-toggle button.collapsible.disabled:hover, .nypl-header .login-toggle button.collapsible[disabled="disabled"]:hover, .nypl-header .login-toggle button.collapsible[disabled="true"]:hover, .nypl-header .login-toggle button.collapsible[disabled]:hover, .nypl-header .login-toggle button.collapsible[disabled=true]:hover {
-          background-color: #d7d4d0;
-          border-color: #fff;
-          color: #fff; }
+        color: #fff; }
   .nypl-header .login-toggle div {
     background-color: #776e64;
     color: #fff;
@@ -4907,7 +4890,6 @@ dl dd.multi-item-list,
     font-weight: 700;
     letter-spacing: 0.04rem;
     margin: 0 0.5rem 1rem 0;
-    text-transform: uppercase;
     width: 20%; }
     @media (max-width: 965px) {
       .nypl-item-details dl dt {

@@ -150,7 +150,7 @@
       font-weight: bold;
       position: absolute;
       right: 1rem;
-      text-transform: uppercase;
+      //text-transform: uppercase;
     }
 
     .logo {
@@ -177,7 +177,7 @@
       font-weight: bold;
       height: $collapsed-nav-height;
       margin-top: 0;
-      text-transform: uppercase;
+      //text-transform: uppercase;
 
       li {
         box-shadow: none;
@@ -197,7 +197,7 @@
   .service-buttons {
     font-size: 0.8rem;
     padding: 0;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 
     @include media($mobile-breakpoint) {
       display: none;
@@ -296,7 +296,7 @@
     top: 1.5rem;
 
     button {
-      text-transform: uppercase;
+      //text-transform: uppercase;
 
       &.collapsible {
         @include login-button($collapsible: true);
