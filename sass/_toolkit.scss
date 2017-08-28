@@ -368,6 +368,10 @@
   @include results-sorter;
 }
 
+.nypl-select-field-results {
+  @include select-field-results;
+}
+
 .nypl-results-item {
   @include results-item;
 }

@@ -400,6 +400,14 @@ button:focus {
   outline-style: solid;
   outline-width: 0.125rem; }
 
+textarea {
+  border-radius: 0; }
+
+textarea:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.125rem; }
+
 .search-control {
   color: #080807;
   font-size: 0.8rem;
@@ -559,6 +567,14 @@ button {
   border-radius: 0; }
 
 button:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.125rem; }
+
+textarea {
+  border-radius: 0; }
+
+textarea:focus {
   outline-color: #ffb81d;
   outline-style: solid;
   outline-width: 0.125rem; }
@@ -1748,6 +1764,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-fieldset legend h3 {
+    margin: 0; }
 
 .nypl-input {
   background-color: #fff;
@@ -1776,6 +1794,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-text-field legend h3 {
+    margin: 0; }
   .nypl-text-field label {
     background-color: transparent;
     color: #080807;
@@ -1841,6 +1861,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-year-field legend h3 {
+    margin: 0; }
   .nypl-year-field label {
     background-color: transparent;
     color: #080807;
@@ -1957,6 +1979,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-name-field legend h3 {
+    margin: 0; }
   .nypl-name-field label {
     background-color: transparent;
     color: #080807;
@@ -2038,6 +2062,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-address-fieldset legend h3 {
+    margin: 0; }
   .nypl-address-fieldset label {
     background-color: transparent;
     color: #080807;
@@ -2115,6 +2141,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-date-field legend h3 {
+    margin: 0; }
   .nypl-date-field label {
     background-color: transparent;
     color: #080807;
@@ -2183,6 +2211,7 @@ dl dd.multi-item-list,
   appearance: none;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
   border: 0;
+  border-color: none;
   border-radius: 0.2rem;
   height: 2rem;
   padding-right: 7%;
@@ -2209,6 +2238,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-select-field legend h3 {
+    margin: 0; }
   .nypl-select-field label {
     color: #080807;
     display: block;
@@ -2221,6 +2252,7 @@ dl dd.multi-item-list,
     appearance: none;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
     border: 0;
+    border-color: none;
     border-radius: 0.2rem;
     height: 2rem;
     padding-right: 7%;
@@ -2283,6 +2315,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field legend h3 {
+    margin: 0; }
   .nypl-request-radiobutton-field label {
     border: #d7d4d0 solid 0.0625rem;
     border-bottom: 0;
@@ -2342,6 +2376,9 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-radiobutton-field legend h3,
+  .nypl-checkbox-field legend h3 {
+    margin: 0; }
   .nypl-radiobutton-field span.nypl-label,
   .nypl-checkbox-field span.nypl-label {
     color: #080807;
@@ -2422,6 +2459,7 @@ dl dd.multi-item-list,
       appearance: none;
       background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
       border: 0;
+      border-color: none;
       border-radius: 0.2rem;
       height: 2rem;
       padding-right: 7%;
@@ -2547,6 +2585,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-collapsible-field legend h3 {
+    margin: 0; }
   .nypl-collapsible-field .nypl-collapsible {
     background-color: #fff;
     padding-left: 0.5rem;
@@ -2576,6 +2616,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-searchable-field legend h3 {
+    margin: 0; }
   .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
     transform: rotate(0deg); }
   .nypl-searchable-field span.nypl-label {
@@ -2687,6 +2729,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-alphabetical-filter legend h3 {
+    margin: 0; }
   .nypl-alphabetical-filter button {
     background-color: #efedeb;
     border: 0 solid #776e64;
@@ -2866,7 +2910,6 @@ dl dd.multi-item-list,
   .nypl-breadcrumbs li {
     display: inline-block;
     margin-left: 0;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
     .nypl-breadcrumbs li a {
@@ -3677,6 +3720,51 @@ dl dd.multi-item-list,
     .nypl-results-sorter a.active, .nypl-results-sorter a:hover, .nypl-results-sorter a:focus {
       color: #080807;
       font-weight: bold; }
+
+.nypl-select-field-results {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  margin-top: 0; }
+  .nypl-select-field-results form {
+    width: 16rem;
+    padding: 0.25rem; }
+  .nypl-select-field-results fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-select-field-results label,
+  .nypl-select-field-results legend {
+    color: #080807;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
+  .nypl-select-field-results label {
+    color: #080807;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    margin: 0 0.25rem 0 0.5rem; }
+  .nypl-select-field-results select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #fff;
+    border: 0;
+    border-color: none;
+    border-radius: 0.2rem;
+    height: 2rem;
+    padding-right: 7%;
+    padding-left: 0.5rem;
+    width: inherit;
+    display: inline-block;
+    padding-left: 0; }
 
 .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;

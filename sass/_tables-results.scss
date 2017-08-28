@@ -204,6 +204,7 @@ $results-item-border-width: 0.0625rem;
 // Sorting controls
 //
 @mixin results-sorting-controls(
+  $background-color: $nypl-white,
   $border: ($general-border-width * 2) solid $page-color,
   $margin: 1rem,
   $text-transform: uppercase) {
@@ -215,10 +216,12 @@ $results-item-border-width: 0.0625rem;
 
 $sorter-width: 11em;
 
+
 @mixin results-sorter {
   display: inline-block;
   float: left;
   position: relative;
+
 
   button {
     @include basic-button(
@@ -242,7 +245,7 @@ $sorter-width: 11em;
     background-color: $nypl-white;
     border: ($general-border-width / 1.5) solid;
     border-radius: 0;
-    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
+    box-shadow: 10px 5px 11px -8px rgba(0, 0, 0, 0.3);
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
