@@ -19,7 +19,7 @@ See [LICENSE](LICENSE)
 ## CHANGE LOG
 ### v0.1.24
 - Fixes: #214, #213, #210, #209, #208, #206, #192, #196
-- Fixes: [DIS-118(https://jira.nypl.org/browse/DIS-118)], [DIS-119(https://jira.nypl.org/browse/DIS-119)]
+- Fixes: [DIS-118](https://jira.nypl.org/browse/DIS-118), [DIS-119](https://jira.nypl.org/browse/DIS-119)
 
 ### v0.1.23
 - Fixes: #201, #199, #195, #194, #183, #181, #180
