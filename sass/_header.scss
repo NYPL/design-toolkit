@@ -150,7 +150,6 @@
       font-weight: bold;
       position: absolute;
       right: 1rem;
-      text-transform: uppercase;
     }
 
     .logo {
@@ -177,7 +176,6 @@
       font-weight: bold;
       height: $collapsed-nav-height;
       margin-top: 0;
-      text-transform: uppercase;
 
       li {
         box-shadow: none;
@@ -197,7 +195,6 @@
   .service-buttons {
     font-size: 0.8rem;
     padding: 0;
-    text-transform: uppercase;
 
     @include media($mobile-breakpoint) {
       display: none;
@@ -266,25 +263,6 @@
       margin: 0;
     }
 
-    // fieldset {
-    //   border: 0;
-    //   color: $page-text-color;
-    //   margin: 1rem 0 0.5rem;
-    //   padding: 0;
-    //   position: relative;
-    // }
-
-    // label {
-    //   display: block;
-    //   font-weight: bold;
-    //   margin-left: 0.5rem;
-    //   position: absolute;
-    // }
-
-    // input[type=text] {
-    //   @include text-field;
-    // }
-
     .links {
       margin: 1rem 0 0;
     }
@@ -296,7 +274,6 @@
     top: 1.5rem;
 
     button {
-      text-transform: uppercase;
 
       &.collapsible {
         @include login-button($collapsible: true);
