@@ -204,21 +204,22 @@ $results-item-border-width: 0.0625rem;
 // Sorting controls
 //
 @mixin results-sorting-controls(
+  $background-color: $nypl-white,
   $border: ($general-border-width * 2) solid $page-color,
-  $margin: 1rem,
-  $text-transform: uppercase) {
+  $margin: 1rem) {
   border: 0;
   margin: ($general-margin * 2.5) 0 0;
-  text-transform: $text-transform;
   @include clearfix;
 }
 
 $sorter-width: 11em;
 
+
 @mixin results-sorter {
   display: inline-block;
   float: left;
   position: relative;
+
 
   button {
     @include basic-button(
@@ -231,7 +232,6 @@ $sorter-width: 11em;
         $padding-vertical: ($general-padding * 0.4),
         $text-color: $nypl-dark-gray);
     padding-right: 1.75rem;
-    text-transform: uppercase;
 
     .nypl-icon {
       right: 0.5rem;
@@ -242,7 +242,7 @@ $sorter-width: 11em;
     background-color: $nypl-white;
     border: ($general-border-width / 1.5) solid;
     border-radius: 0;
-    box-shadow: 10px 5px 11px -8px rgba(0,0,0,0.3);
+    box-shadow: 10px 5px 11px -8px rgba(0, 0, 0, 0.3);
     list-style: none;
     min-width: $sorter-width;
     position: absolute;
@@ -326,7 +326,8 @@ $sorter-width: 11em;
   margin-left: 0;
   max-width: none;
 
-  h2 {
+  h2,
+  h3 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -528,7 +529,6 @@ $font-weight: 400) {
 
   .channel-title {
     color: $highlight-color;
-    text-transform: uppercase;
   }
 
   .signup-method {
@@ -619,10 +619,11 @@ $font-weight: 400) {
 
   .nypl-results-item {
     @include results-item(
-      $margin-bottom: 3rem);
+      $margin-bottom: 4rem);
     border: 0;
 
-    h2 {
+    h2,
+    h3 {
       margin-bottom: 0;
     }
 
@@ -666,14 +667,13 @@ dl dd.multi-item-list,
   .nypl-basic-table {
 
     thead {
-      border-bottom: $general-border-width / 1.5 solid $nypl-gray-cool;
+      border-bottom: ($general-border-width / 1.25) solid lighten($nypl-light-gray, 15%);
     } // /thead
 
     th {
       border: 0;
       font-size: 0.85rem;
       padding-bottom: 0.5rem;
-      text-transform: uppercase;
       width: 25%;
     }
 
@@ -715,8 +715,7 @@ dl dd.multi-item-list,
         $height: 2.5rem,
         $hover-text-color: $nypl-white,
         $hover-background-color: $nypl-red,
-        $letter-spacing: 0.06rem,
-        $text-transform: uppercase);
+        $letter-spacing: 0.06rem);
       margin-top: 0;
       width: 8rem;
 

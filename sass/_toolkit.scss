@@ -85,6 +85,10 @@
   @include request-item-summary;
 }
 
+.nypl-electronic-delivery-form {
+  @include electronic-delivery-form;
+}
+
 .nypl-text-area {
   @include text-area;
 }
@@ -362,6 +366,10 @@
 
 .nypl-results-sorter {
   @include results-sorter;
+}
+
+.nypl-select-field-results {
+  @include select-field-results;
 }
 
 .nypl-results-item {

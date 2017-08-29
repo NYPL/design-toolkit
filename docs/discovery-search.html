@@ -5,7 +5,7 @@
   <title>“new york waterways” | Search results | NYPL</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/example-search-styles.v2.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/example-search-styles.css" media="screen" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
@@ -48,7 +48,7 @@
                 <span class="nypl-omni-fields">
                   <label for="search-by-field">Search in</label>
                   <select id="search-by-field">
-                    <option value="all">All fields</option>
+                    <option value="all" selected="selected">All fields</option>
                     <option value="title">Title</option>
                     <option value="contributor">Author/Contributor</option>
                   </select>
@@ -63,26 +63,25 @@
               </div>
             </form>
             <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
-              <h2>
+              <h3>
                 <span class="nypl-results-count">Displaying 1-50 of 843 results for keyword "New York Waterways"</span>
-              </h2>
+              </h3>
             </div>
             <div class="nypl-results-sorting-controls">
               <div class="nypl-results-sorter">
-                <button aria-expanded="false">
-Sort by <strong>relevance</strong>
-  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-    <title>wedge down icon</title>
-    <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-  </svg>
-</button>
-                <ul class="hidden" role="menu">
-                  <li><a href="?sort=relevance" class="active">relevance</a></li>
-                  <li><a href="?sort=A-Z">title A-Z</a></li>
-                  <li><a href="?sort=Z-A">title Z-A</a></li>
-                  <li><a href="?sort=old">date (old to new)</a></li>
-                  <li><a href="?sort=new">date (new to old)</a></li>
-                </ul>
+
+                <div class="nypl-select-field-results">
+                  <form action="#" method="POST">
+                  <span class="nypl-omni-fields"><label for="sort-by-label">Sort by</label>
+                    <strong>
+                      <select id="sort-by-label" name="sort_scope">
+                      <option selected="selected" value="relevance">relevance</option>
+                      <option value="title_asc">title (a - z)</option><option value="title_desc">title (z - a)</option>
+                      <option value="date_asc">date (old to new)</option>
+                      <option value="date_desc">date (new to old)</option>
+                    </select>
+                    </strong>
+                </div>
               </div>
             </div>
           </div>
@@ -97,7 +96,7 @@ Sort by <strong>relevance</strong>
           <!-- results list -->
           <ul id="results-list" class="nypl-results-list">
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -106,7 +105,7 @@ Sort by <strong>relevance</strong>
               </div>
             </li>
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Audio</span>
@@ -119,7 +118,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -131,7 +130,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item has-request">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson, &ndash; Freeman, Lewis R. (Lewis Ransome), b. 1878.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson, &ndash; Freeman, Lewis R. (Lewis Ransome), b. 1878.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -143,17 +142,17 @@ Sort by <strong>relevance</strong>
               <table class="nypl-basic-table">
                 <thead>
                   <tr>
-                    <th scope="col">location</th>
-                    <th scope="col">call number</th>
-                    <th scope="col">status</th>
-                    <th scope="col">message</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Call Number</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Message</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Schomburg Center &mdash; Research &amp; Reference</td>
                     <td>JFE 16-9729</td>
-                    <td><button type="button" name="button">request</button></td>
+                    <td><button type="button" name="button">Request</button></td>
                     <td>use in library</td>
                   </tr>
                 </tbody>
@@ -161,7 +160,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10990334">Waterways. &ndash; Ten Penny Players.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10990334">Waterways. &ndash; Ten Penny Players.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -173,7 +172,7 @@ Sort by <strong>relevance</strong>
               </div>
             </li>
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h3>
               <!-- <div class="nypl-results-unavailable">Currently not available for use</div> -->
               <div class="nypl-results-item-description">
                 <p>
@@ -185,7 +184,7 @@ Sort by <strong>relevance</strong>
               </div>
             </li>
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Audio</span>
@@ -197,7 +196,7 @@ Sort by <strong>relevance</strong>
               </div>
             </li>
             <li class="nypl-results-item has-request">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -206,17 +205,17 @@ Sort by <strong>relevance</strong>
               <table class="nypl-basic-table">
                 <thead>
                   <tr>
-                    <th scope="col">location</th>
-                    <th scope="col">call number</th>
-                    <th scope="col">status</th>
-                    <th scope="col">message</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Call Number</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Message</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Schomburg Center &mdash; Research &amp; Reference</td>
                     <td>JFE 16-9729</td>
-                    <td><button type="button" name="button">request</button></td>
+                    <td><button type="button" name="button">Request</button></td>
                     <td>use in library</td>
                   </tr>
                 </tbody>
@@ -224,7 +223,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Audio</span>
@@ -237,7 +236,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h3>
               <!-- <div class="nypl-results-unavailable">Currently not available for use</div> -->
               <div class="nypl-results-item-description">
                 <p>
@@ -250,7 +249,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson, &ndash; Freeman, Lewis R. (Lewis Ransome), b. 1878.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson, &ndash; Freeman, Lewis R. (Lewis Ransome), b. 1878.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -263,7 +262,7 @@ Sort by <strong>relevance</strong>
             </li>
 
             <li class="nypl-results-item">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10990334">Waterways. &ndash; Ten Penny Players.</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10990334">Waterways. &ndash; Ten Penny Players.</a></h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
@@ -275,7 +274,7 @@ Sort by <strong>relevance</strong>
               </div>
             </li>
             <li class="nypl-results-item has-request">
-              <h2><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h2>
+              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h3>
               <!-- <div class="nypl-results-unavailable">Currently not available for use</div> -->
               <div class="nypl-results-item-description">
                 <p>
@@ -287,10 +286,10 @@ Sort by <strong>relevance</strong>
               <table class="nypl-basic-table">
                 <thead>
                   <tr>
-                    <th scope="col">location</th>
-                    <th scope="col">call number</th>
-                    <th scope="col">status</th>
-                    <th scope="col">message</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Call Number</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Message</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -400,13 +400,20 @@ button:focus {
   outline-style: solid;
   outline-width: 0.125rem; }
 
+textarea {
+  border-radius: 0; }
+
+textarea:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.125rem; }
+
 .search-control {
   color: #080807;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04rem;
-  margin-top: 1.75rem;
-  text-transform: uppercase; }
+  margin-top: 1.75rem; }
   @media (max-width: 965px) {
     .search-control {
       margin-top: 0.5rem; } }
@@ -563,13 +570,20 @@ button:focus {
   outline-style: solid;
   outline-width: 0.125rem; }
 
+textarea {
+  border-radius: 0; }
+
+textarea:focus {
+  outline-color: #ffb81d;
+  outline-style: solid;
+  outline-width: 0.125rem; }
+
 .search-control {
   color: #080807;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04rem;
-  margin-top: 1.75rem;
-  text-transform: uppercase; }
+  margin-top: 1.75rem; }
   @media (max-width: 965px) {
     .search-control {
       margin-top: 0.5rem; } }
@@ -596,11 +610,12 @@ div.nypl-omnisearch.spinning {
 .nypl-results-list .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   margin-left: 0;
   max-width: none;
   border: 0; }
-  .nypl-results-list .nypl-results-item h2 {
+  .nypl-results-list .nypl-results-item h2,
+  .nypl-results-list .nypl-results-item h3 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -639,7 +654,8 @@ div.nypl-omnisearch.spinning {
   .nypl-results-list .nypl-results-item p {
     margin-bottom: 0;
     max-width: none; }
-  .nypl-results-list .nypl-results-item h2 {
+  .nypl-results-list .nypl-results-item h2,
+  .nypl-results-list .nypl-results-item h3 {
     margin-bottom: 0; }
   .nypl-results-list .nypl-results-item.has-request {
     margin-bottom: 3.25rem; }
@@ -663,13 +679,12 @@ dl dd.multi-item-list,
   width: 100%; }
   dl dd.multi-item-list .nypl-basic-table thead,
   .nypl-results-item .nypl-basic-table thead {
-    border-bottom: 0.08333rem solid #76777b; }
+    border-bottom: 0.1rem solid #fafaf9; }
   dl dd.multi-item-list .nypl-basic-table th,
   .nypl-results-item .nypl-basic-table th {
     border: 0;
     font-size: 0.85rem;
     padding-bottom: 0.5rem;
-    text-transform: uppercase;
     width: 25%; }
   @media (max-width: 965px) {
     dl dd.multi-item-list .nypl-basic-table th:first-child,
@@ -707,7 +722,7 @@ dl dd.multi-item-list,
     letter-spacing: 0.06rem;
     padding: 0.2rem 0.75rem;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     white-space: nowrap;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
@@ -1112,29 +1127,10 @@ dl dd.multi-item-list,
 
 .nypl-custom-list li {
   list-style-type: none;
-  padding-left: 1rem;
   position: relative; }
   @media (max-width: 965px) {
     .nypl-custom-list li {
       margin-left: 0; } }
-  .nypl-custom-list li::before {
-    background-color: #d7d4d0;
-    content: "";
-    display: block;
-    height: 0.5rem;
-    left: 0;
-    position: absolute;
-    top: 0.6rem;
-    width: 0.5rem;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    border-radius: 0.25rem;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; }
-    @media (max-width: 965px) {
-      .nypl-custom-list li::before {
-        display: none; } }
 
 .nypl-collapsible {
   -webkit-transition: all 0.5s ease-out 0s;
@@ -1300,7 +1296,7 @@ dl dd.multi-item-list,
   letter-spacing: normal;
   padding: 0.2rem 0.75rem;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -1338,11 +1334,14 @@ dl dd.multi-item-list,
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 400; }
-    .nypl-request-item-summary .call-number span {
-      text-transform: uppercase; }
+
+.nypl-electronic-delivery-form fieldset {
+  border: 0; }
 
 .nypl-text-area {
-  border: 0.04167rem solid #080807; }
+  border: 0.04167rem solid #080807;
+  height: 12rem;
+  width: 100%; }
 
 .nypl-service-button {
   background-color: #d0343a;
@@ -1368,7 +1367,6 @@ dl dd.multi-item-list,
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-transform: uppercase;
   white-space: nowrap; }
   .nypl-service-button:link, .nypl-service-button:visited {
     color: #fff; }
@@ -1749,8 +1747,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-fieldset fieldset,
-  .nypl-fieldset div {
+  .nypl-fieldset fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1761,6 +1758,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-fieldset legend h3 {
+    margin: 0; }
 
 .nypl-input {
   background-color: #fff;
@@ -1778,8 +1777,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-text-field fieldset,
-  .nypl-text-field div {
+  .nypl-text-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1790,6 +1788,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-text-field legend h3 {
+    margin: 0; }
   .nypl-text-field label {
     background-color: transparent;
     color: #080807;
@@ -1844,8 +1844,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-year-field fieldset,
-  .nypl-year-field div {
+  .nypl-year-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1856,6 +1855,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-year-field legend h3 {
+    margin: 0; }
   .nypl-year-field label {
     background-color: transparent;
     color: #080807;
@@ -1961,8 +1962,7 @@ dl dd.multi-item-list,
     display: table; }
   .nypl-name-field::after {
     clear: both; }
-  .nypl-name-field fieldset,
-  .nypl-name-field div {
+  .nypl-name-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -1973,6 +1973,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-name-field legend h3 {
+    margin: 0; }
   .nypl-name-field label {
     background-color: transparent;
     color: #080807;
@@ -2043,8 +2045,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   background-color: #fff; }
-  .nypl-address-fieldset fieldset,
-  .nypl-address-fieldset div {
+  .nypl-address-fieldset fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2055,6 +2056,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-address-fieldset legend h3 {
+    margin: 0; }
   .nypl-address-fieldset label {
     background-color: transparent;
     color: #080807;
@@ -2121,8 +2124,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   min-width: 12rem; }
-  .nypl-date-field fieldset,
-  .nypl-date-field div {
+  .nypl-date-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2133,6 +2135,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-date-field legend h3 {
+    margin: 0; }
   .nypl-date-field label {
     background-color: transparent;
     color: #080807;
@@ -2201,6 +2205,7 @@ dl dd.multi-item-list,
   appearance: none;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
   border: 0;
+  border-color: none;
   border-radius: 0.2rem;
   height: 2rem;
   padding-right: 7%;
@@ -2216,8 +2221,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-select-field fieldset,
-  .nypl-select-field div {
+  .nypl-select-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2228,6 +2232,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-select-field legend h3 {
+    margin: 0; }
   .nypl-select-field label {
     color: #080807;
     display: block;
@@ -2240,6 +2246,7 @@ dl dd.multi-item-list,
     appearance: none;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
     border: 0;
+    border-color: none;
     border-radius: 0.2rem;
     height: 2rem;
     padding-right: 7%;
@@ -2291,8 +2298,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   border-radius: 0; }
-  .nypl-request-radiobutton-field fieldset,
-  .nypl-request-radiobutton-field div {
+  .nypl-request-radiobutton-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2303,6 +2309,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-request-radiobutton-field legend h3 {
+    margin: 0; }
   .nypl-request-radiobutton-field label {
     border: #d7d4d0 solid 0.0625rem;
     border-bottom: 0;
@@ -2349,9 +2357,7 @@ dl dd.multi-item-list,
   position: relative;
   border-radius: 0; }
   .nypl-radiobutton-field fieldset,
-  .nypl-radiobutton-field div,
-  .nypl-checkbox-field fieldset,
-  .nypl-checkbox-field div {
+  .nypl-checkbox-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2364,6 +2370,9 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-radiobutton-field legend h3,
+  .nypl-checkbox-field legend h3 {
+    margin: 0; }
   .nypl-radiobutton-field span.nypl-label,
   .nypl-checkbox-field span.nypl-label {
     color: #080807;
@@ -2444,6 +2453,7 @@ dl dd.multi-item-list,
       appearance: none;
       background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #efedeb;
       border: 0;
+      border-color: none;
       border-radius: 0.2rem;
       height: 2rem;
       padding-right: 7%;
@@ -2558,8 +2568,7 @@ dl dd.multi-item-list,
   padding: 0;
   position: relative;
   padding-bottom: 0.5rem; }
-  .nypl-collapsible-field fieldset,
-  .nypl-collapsible-field div {
+  .nypl-collapsible-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2570,6 +2579,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-collapsible-field legend h3 {
+    margin: 0; }
   .nypl-collapsible-field .nypl-collapsible {
     background-color: #fff;
     padding-left: 0.5rem;
@@ -2588,8 +2599,7 @@ dl dd.multi-item-list,
   position: relative;
   padding-bottom: 0.5rem;
   border-radius: 0; }
-  .nypl-searchable-field fieldset,
-  .nypl-searchable-field div {
+  .nypl-searchable-field fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2600,6 +2610,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-searchable-field legend h3 {
+    margin: 0; }
   .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
     transform: rotate(0deg); }
   .nypl-searchable-field span.nypl-label {
@@ -2700,8 +2712,7 @@ dl dd.multi-item-list,
   margin: 1rem 0;
   padding: 0;
   position: relative; }
-  .nypl-alphabetical-filter fieldset,
-  .nypl-alphabetical-filter div {
+  .nypl-alphabetical-filter fieldset {
     border: 0;
     box-shadow: none;
     margin: 0;
@@ -2712,6 +2723,8 @@ dl dd.multi-item-list,
     display: block;
     font-weight: 400;
     margin-bottom: 0.25rem; }
+  .nypl-alphabetical-filter legend h3 {
+    margin: 0; }
   .nypl-alphabetical-filter button {
     background-color: #efedeb;
     border: 0 solid #776e64;
@@ -2851,7 +2864,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
 
 .nypl-request-page-header {
   background-color: #fafaf9;
@@ -2876,7 +2889,7 @@ dl dd.multi-item-list,
     margin: 1rem 0 1.5rem; }
     @media (max-width: 965px) {
       .nypl-request-page-header h2 {
-        margin-top: 0; } }
+        margin-top: 0.5rem; } }
   .nypl-request-page-header h2 {
     margin-bottom: 0; }
   .nypl-request-page-header .search-control {
@@ -2891,7 +2904,6 @@ dl dd.multi-item-list,
   .nypl-breadcrumbs li {
     display: inline-block;
     margin-left: 0;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
     .nypl-breadcrumbs li a {
@@ -3225,7 +3237,6 @@ dl dd.multi-item-list,
     left: 0;
     padding: 0.3rem 1rem;
     position: absolute;
-    text-transform: uppercase;
     top: 0; }
 
 .nypl-toolkit-example-dark {
@@ -3244,7 +3255,6 @@ dl dd.multi-item-list,
     left: 0;
     padding: 0.3rem 1rem;
     position: absolute;
-    text-transform: uppercase;
     top: 0; }
   .nypl-toolkit-example-dark::before {
     background-color: #fff; }
@@ -3593,8 +3603,7 @@ dl dd.multi-item-list,
 
 .nypl-results-sorting-controls {
   border: 0;
-  margin: 2.5rem 0 0;
-  text-transform: uppercase; }
+  margin: 2.5rem 0 0; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
     display: table; }
@@ -3627,8 +3636,7 @@ dl dd.multi-item-list,
     position: relative;
     padding-right: 1.5rem;
     text-align: left;
-    padding-right: 1.75rem;
-    text-transform: uppercase; }
+    padding-right: 1.75rem; }
     .nypl-results-sorter button .nypl-icon {
       background-color: #fff;
       border-radius: 0;
@@ -3703,13 +3711,61 @@ dl dd.multi-item-list,
       color: #080807;
       font-weight: bold; }
 
+.nypl-select-field-results {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+  margin-top: 0; }
+  .nypl-select-field-results form {
+    width: 16rem;
+    padding: 0.25rem; }
+  .nypl-select-field-results fieldset {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+  .nypl-select-field-results label,
+  .nypl-select-field-results legend {
+    color: #080807;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.25rem; }
+  .nypl-select-field-results legend h3 {
+    margin: 0; }
+  .nypl-select-field-results label {
+    color: #080807;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    margin: 0 0.25rem 0 0.5rem; }
+  .nypl-select-field-results select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==) no-repeat 99% #fff;
+    border: 0;
+    border-color: none;
+    border-radius: 0.2rem;
+    height: 2rem;
+    padding-right: 7%;
+    padding-left: 0.5rem;
+    width: inherit;
+    display: inline-block;
+    padding-left: 0; }
+
 .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
   margin-bottom: 2rem;
   margin-left: 0;
   max-width: none; }
-  .nypl-results-item h2 {
+  .nypl-results-item h2,
+  .nypl-results-item h3 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -3944,8 +4000,7 @@ dl dd.multi-item-list,
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top; }
   .nypl-views-table .channel-title {
-    color: #d0343a;
-    text-transform: uppercase; }
+    color: #d0343a; }
   .nypl-views-table .signup-method {
     color: #d0343a; }
   .nypl-views-table .resource-title {
@@ -4129,8 +4184,7 @@ dl dd.multi-item-list,
     font-size: 12px;
     font-weight: bold;
     position: absolute;
-    right: 1rem;
-    text-transform: uppercase; }
+    right: 1rem; }
   .nypl-header.collapsed .logo {
     height: 30px;
     overflow: hidden; }
@@ -4144,8 +4198,7 @@ dl dd.multi-item-list,
     font-size: 0;
     font-weight: bold;
     height: 30px;
-    margin-top: 0;
-    text-transform: uppercase; }
+    margin-top: 0; }
     .nypl-header.collapsed .nav-buttons li {
       box-shadow: none; }
     .nypl-header.collapsed .nav-buttons a {
@@ -4154,8 +4207,7 @@ dl dd.multi-item-list,
       display: none; }
 .nypl-header .service-buttons {
   font-size: 0.8rem;
-  padding: 0;
-  text-transform: uppercase; }
+  padding: 0; }
   @media (max-width: 965px) {
     .nypl-header .service-buttons {
       display: none;
@@ -4191,7 +4243,6 @@ dl dd.multi-item-list,
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap; }
     .nypl-header .service-buttons li > a:link, .nypl-header .service-buttons li > a:visited {
       color: #fff; }
@@ -4236,7 +4287,6 @@ dl dd.multi-item-list,
       font-weight: bold;
       overflow: hidden;
       text-overflow: ellipsis;
-      text-transform: uppercase;
       white-space: nowrap; }
       .nypl-header .service-buttons li > a.donate:link, .nypl-header .service-buttons li > a.donate:visited {
         color: #d0343a; }
@@ -4284,7 +4334,6 @@ dl dd.multi-item-list,
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap; }
     .nypl-header .service-buttons button.collapsible .nypl-icon {
       background-color: #d0343a;
@@ -4406,84 +4455,82 @@ dl dd.multi-item-list,
   position: absolute;
   right: 0;
   top: 1.5rem; }
-  .nypl-header .login-toggle button {
+  .nypl-header .login-toggle button.collapsible {
+    background-color: #776e64;
+    border: 0 solid #776e64;
+    border-radius: 0.06667rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: normal;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+    position: relative;
+    padding-right: 1.5rem;
+    text-align: left;
+    border-radius: 0;
+    display: block;
+    font-weight: bold;
     text-transform: uppercase; }
-    .nypl-header .login-toggle button.collapsible {
+    .nypl-header .login-toggle button.collapsible .nypl-icon {
       background-color: #776e64;
-      border: 0 solid #776e64;
-      border-radius: 0.06667rem;
-      color: #fff;
-      cursor: pointer;
+      border-radius: 0;
       display: inline-block;
-      font-size: 0.7rem;
-      font-weight: normal;
-      height: auto;
-      letter-spacing: normal;
-      padding: 0 0.5rem;
-      text-decoration: none;
-      text-transform: none;
-      white-space: nowrap;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
       transition: all 0.1s ease-in 0s;
-      position: relative;
-      padding-right: 1.5rem;
-      text-align: left;
-      border-radius: 0;
-      display: block;
-      font-weight: bold;
-      text-transform: uppercase; }
-      .nypl-header .login-toggle button.collapsible .nypl-icon {
-        background-color: #776e64;
+      position: absolute;
+      right: 0.25rem;
+      top: 0.3rem; }
+      .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+    .nypl-header .login-toggle button.collapsible:link, .nypl-header .login-toggle button.collapsible:visited {
+      color: #fff; }
+    .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible:hover:visited, .nypl-header .login-toggle button.collapsible.active {
+      border-color: #776e64;
+      background-color: #fff;
+      color: #776e64; }
+      .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
+        background-color: #fff;
         border-radius: 0;
         display: inline-block;
-        fill: #fff;
+        fill: #776e64;
         height: 1em;
         width: 1em;
-        speak: none;
-        -webkit-transition: all 0.1s ease-in 0s;
-        -moz-transition: all 0.1s ease-in 0s;
-        -o-transition: all 0.1s ease-in 0s;
-        transition: all 0.1s ease-in 0s;
-        position: absolute;
-        right: 0.25rem;
-        top: 0.3rem; }
-        .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
+        speak: none; }
+        .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
-      .nypl-header .login-toggle button.collapsible:link, .nypl-header .login-toggle button.collapsible:visited {
-        color: #fff; }
-      .nypl-header .login-toggle button.collapsible:hover, .nypl-header .login-toggle button.collapsible:hover:visited, .nypl-header .login-toggle button.collapsible.active {
-        border-color: #776e64;
-        background-color: #fff;
-        color: #776e64; }
-        .nypl-header .login-toggle button.collapsible:hover .nypl-icon, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon, .nypl-header .login-toggle button.collapsible.active .nypl-icon {
-          background-color: #fff;
-          border-radius: 0;
-          display: inline-block;
-          fill: #776e64;
-          height: 1em;
-          width: 1em;
-          speak: none; }
-          .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
-            background-color: inherit;
-            fill: #fff; }
-      .nypl-header .login-toggle button.collapsible.active .nypl-icon {
-        transform: rotate(180deg); }
-      .nypl-header .login-toggle button.collapsible:focus {
-        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        outline: none; }
-      .nypl-header .login-toggle button.collapsible.disabled, .nypl-header .login-toggle button.collapsible[disabled="disabled"], .nypl-header .login-toggle button.collapsible[disabled="true"], .nypl-header .login-toggle button.collapsible[disabled], .nypl-header .login-toggle button.collapsible[disabled=true] {
+    .nypl-header .login-toggle button.collapsible.active .nypl-icon {
+      transform: rotate(180deg); }
+    .nypl-header .login-toggle button.collapsible:focus {
+      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      outline: none; }
+    .nypl-header .login-toggle button.collapsible.disabled, .nypl-header .login-toggle button.collapsible[disabled="disabled"], .nypl-header .login-toggle button.collapsible[disabled="true"], .nypl-header .login-toggle button.collapsible[disabled], .nypl-header .login-toggle button.collapsible[disabled=true] {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      cursor: default; }
+      .nypl-header .login-toggle button.collapsible.disabled:hover, .nypl-header .login-toggle button.collapsible[disabled="disabled"]:hover, .nypl-header .login-toggle button.collapsible[disabled="true"]:hover, .nypl-header .login-toggle button.collapsible[disabled]:hover, .nypl-header .login-toggle button.collapsible[disabled=true]:hover {
         background-color: #d7d4d0;
         border-color: #fff;
-        cursor: default; }
-        .nypl-header .login-toggle button.collapsible.disabled:hover, .nypl-header .login-toggle button.collapsible[disabled="disabled"]:hover, .nypl-header .login-toggle button.collapsible[disabled="true"]:hover, .nypl-header .login-toggle button.collapsible[disabled]:hover, .nypl-header .login-toggle button.collapsible[disabled=true]:hover {
-          background-color: #d7d4d0;
-          border-color: #fff;
-          color: #fff; }
+        color: #fff; }
   .nypl-header .login-toggle div {
     background-color: #776e64;
     color: #fff;
@@ -4809,8 +4856,7 @@ dl dd.multi-item-list,
     padding: 0.5rem 0.5rem 3rem 0;
     vertical-align: top; }
   .views-table .channel-title {
-    color: #d0343a;
-    text-transform: uppercase; }
+    color: #d0343a; }
   .views-table .signup-method {
     color: #d0343a; }
   .views-table .resource-title {
