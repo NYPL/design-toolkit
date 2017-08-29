@@ -18,7 +18,14 @@ description: Form fields and user input.
     <fieldset class="nypl-omnisearch">
       <span class="nypl-omni-fields">
         <label for="search-by-field">Search in</label>
-        <select id="search-by-field"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
+        <select id="search-by-field">
+          <option value="all" selected="selected">All fields</option>
+          <option value="title">Title</option>
+          <option value="contributor">Author/Contributor</option>
+          <option value="subject">Subject</option>
+          <option value="series">Series</option>
+          <option value="call_number">Call number</option>
+        </select>
       </span>
       <input type="text" aria-labelledby="nypl-omni-button" value="" placeholder="Keyword, title, name, or id" />
       <input type="submit" id="nypl-omni-button" value="Search">
@@ -33,7 +40,7 @@ description: Form fields and user input.
   &lt;span class=&quot;nypl-omni-fields&quot;&gt;
     &lt;label for=&quot;search-by-field&quot;&gt;Search in&lt;/label&gt;
     &lt;select id=&quot;search-by-field&quot;&gt;
-      &lt;option value=&quot;all&quot;&gt;All fields&lt;/option&gt;
+      &lt;option value=&quot;all&quot; selected=&quot;selected&quot;&gt;All fields&lt;/option&gt;
       &lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;
       &lt;option value=&quot;contributor&quot;&gt;Author/Contributor&lt;/option&gt;
       &lt;option value=&quot;subject&quot;&gt;Subject&lt;/option&gt;
@@ -198,7 +205,7 @@ $("#username1 #required-field").change(function (e) {
   <div class="nypl-select-field">
     <label for="topics">Topics</label>
     <select id="topics" name="topics">
-      <option value="1">One</option>
+      <option value="1" selected="selected">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
       <option value="…">…</option>
@@ -213,7 +220,7 @@ $("#username1 #required-field").change(function (e) {
 &lt;div class=&quot;nypl-select-field&quot;&gt;
   &lt;label for=&quot;topics&quot;&gt;Topics&lt;/label&gt;
   &lt;select id=&quot;topics&quot; name=&quot;topics&quot;&gt;
-    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;One&lt;/option&gt;
     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
     &lt;option value=&quot;…&quot;&gt;…&lt;/option&gt;
@@ -670,7 +677,14 @@ $("#email1 #email-field").blur(function (e) {
 <fieldset class="nypl-omnisearch nypl-spinner-field">
   <span class="nypl-omni-fields">
     <label for="search-by-field1">Search in</label>
-    <select id="search-by-field1"><option value="all">All fields</option><option value="title">Title</option><option value="contributor">Author/Contributor</option><option value="subject">Subject</option><option value="series">Series</option><option value="call_number">Call number</option></select>
+    <select id="search-by-field1">
+      <option value="all" selected="selected">All fields</option>
+      <option value="title">Title</option>
+      <option value="contributor">Author/Contributor</option>
+      <option value="subject">Subject</option>
+      <option value="series">Series</option>
+      <option value="call_number">Call number</option>
+    </select>
   </span>
   <input type="text" aria-labelledby="nypl-omni-button1" value="" />
   <input type="submit" id="nypl-omni-button1" value="Search">
@@ -685,7 +699,7 @@ $("#email1 #email-field").blur(function (e) {
 <div class="nypl-select-field nypl-spinner-field">
   <label for="topics2">Topics</label>
   <select id="topics2" name="topics">
-    <option value="1">One</option>
+    <option value="1" selected="selected">One</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
     <option value="…">…</option>
