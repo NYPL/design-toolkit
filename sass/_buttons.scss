@@ -166,7 +166,6 @@
   $border-color: $nypl-red,
   $background-color: $nypl-red,
   $border-radius: 0.25rem
-  //$text-transform: uppercase
   );
 
   &:hover {
@@ -180,12 +179,6 @@
 @mixin results-button {
   @include basic-button ($text-color: $nypl-blue, $border-color: $nypl-blue, $background-color: $nypl-white, $hover-text-color: $nypl-white, $hover-background-color: $nypl-blue, $border-radius: 0.25rem);
   margin: 0.5rem 0;
-
-  // &:hover {
-  //   background: $nypl-blue;
-  //   border-color: $nypl-white;
-  //   color: $nypl-white;
-  // }
 
   span {
     display: block;
@@ -202,7 +195,6 @@
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
-  //text-transform: uppercase;
   white-space: nowrap;
 }
 

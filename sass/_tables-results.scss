@@ -206,12 +206,9 @@ $results-item-border-width: 0.0625rem;
 @mixin results-sorting-controls(
   $background-color: $nypl-white,
   $border: ($general-border-width * 2) solid $page-color,
-  $margin: 1rem
-  // $text-transform: uppercase
-  ) {
+  $margin: 1rem) {
   border: 0;
   margin: ($general-margin * 2.5) 0 0;
-  //text-transform: $text-transform;
   @include clearfix;
 }
 
@@ -235,7 +232,6 @@ $sorter-width: 11em;
         $padding-vertical: ($general-padding * 0.4),
         $text-color: $nypl-dark-gray);
     padding-right: 1.75rem;
-    //text-transform: uppercase;
 
     .nypl-icon {
       right: 0.5rem;
@@ -533,7 +529,6 @@ $font-weight: 400) {
 
   .channel-title {
     color: $highlight-color;
-    //text-transform: uppercase;
   }
 
   .signup-method {
@@ -679,7 +674,6 @@ dl dd.multi-item-list,
       border: 0;
       font-size: 0.85rem;
       padding-bottom: 0.5rem;
-      //text-transform: uppercase;
       width: 25%;
     }
 
@@ -721,9 +715,7 @@ dl dd.multi-item-list,
         $height: 2.5rem,
         $hover-text-color: $nypl-white,
         $hover-background-color: $nypl-red,
-        $letter-spacing: 0.06rem
-        // $text-transform: uppercase
-        );
+        $letter-spacing: 0.06rem);
       margin-top: 0;
       width: 8rem;
 
