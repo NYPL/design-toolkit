@@ -18,7 +18,7 @@ Design toolkit (SASS) for the NYPL Digital team
 See [LICENSE](LICENSE)
 
 ## CHANGE LOG
-### v0.1.24
+### v0.1.24.2
 - Fixes: #214, #213, #210, #209, #208, #206, #192, #196
 - Fixes: [DIS-118](https://jira.nypl.org/browse/DIS-118), [DIS-119](https://jira.nypl.org/browse/DIS-119)
 
