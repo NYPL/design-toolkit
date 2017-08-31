@@ -18,4 +18,4 @@ exclude:
   - README.md
 
 #custom variables
-current-version: 0.1.24.2
+current-version: 0.1.25

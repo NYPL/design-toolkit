@@ -5,62 +5,60 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href={{ "/css/example-styles.css" | relative_url }} media="screen" rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href={{ "/js/googlecode.css" | relative_url }}>
-<script src={{ "/js/highlight.pack.js" | relative_url }}></script>
-
+  <link rel="stylesheet" href={{ "/js/googlecode.css" | relative_url }}>
+  <script src={{ "/js/highlight.pack.js" | relative_url }}></script>
   <link href={{ "/css/docs.css" | relative_url }} media="screen" rel="stylesheet" type="text/css">
-
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src={{ "/js/toc.js" | relative_url }}></script>
-<script type="text/javascript" src={{ "/js/header.js" | relative_url }}></script>
-
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src={{ "/js/toc.js" | relative_url }}></script>
+  <script type="text/javascript" src={{ "/js/header.js" | relative_url }}></script>
 </head>
-<body>
-
-<div id="skip" tabindex="-1"><a href="#main">Skip to Main Content</a></div>
-
-<main class="main-page">
-
-
-  <div class="nypl-page-header">
+<body class="toolkit">
+  <div id="skip" tabindex="-1"><a href="#main">Skip to Main Content</a></div>
+  <main class="main-page">
+    <div class="nypl-page-header">
+      <div class="nypl-full-width-wrapper">
+        <span class="nypl-screenreader-only">You are here:</span>
+        <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
+          <li><a href={{ "./" | relative_url }}>Toolkit Documentation Home</a></li>
+          <li>{{ page.title }}</li>
+        </ol>
+        <h2>NYPL Design Toolkit</h2><span>Version: {{ site.current-version }}</span>
+      </div>
+    </div>
     <div class="nypl-full-width-wrapper">
-      <span class="nypl-screenreader-only">You are here:</span>
-      <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
-        <li><a href={{ "./" | relative_url }}>Toolkit Documentation Home</a></li>
-        <li>{{ page.title }}</li>
-      </ol>
-      <h2>NYPL Design Toolkit</h2>Version: {{ site.current-version }}</span>
+      <div class="nypl-column-one-quarter">
+        {% include left-nav.html %}
+      </div>
+      <div id="main" class="nypl-column-three-quarters">
+        <h1>{{ page.title }}</h1>
+        <div id="toc" class="toc"></div>
+        {{ content }}
+      </div>
     </div>
-  </div>
-
-  <div class="nypl-full-width-wrapper">
-
-    <div class="nypl-column-one-quarter">
-{% include left-nav.html %}
+  </main>
+  <footer>
+    <div class="nypl-full-width-wrapper">
+      <div class="nypl-column-three-quarters nypl-column-offset-one">insert some kind of colophon or whathave you here...</div>
     </div>
-
-    <div id="main" class="nypl-column-three-quarters">
-
-      <h1>{{ page.title }}</h1>
-
-      <div id="toc" class="toc"></div>
-
-{{ content }}
-
-    </div>
-
-  </div>
-
-</main>
-
-<script>
-hljs.configure({languages:['html', 'scss', 'js']})
-hljs.initHighlightingOnLoad();
-$(document).ready(function() {
-    $('#toc').toc({ title: '<h2>Table of contents</h2>', listType: 'ul', classes: { list: 'nypl-custom-list', item: '' }, headers: 'h3,h4', showSpeed: 0 });
-});
-</script>
+  </footer>
+  <script>
+    hljs.configure({
+      languages: ['html', 'scss', 'js']
+    })
+    hljs.initHighlightingOnLoad();
+    $(document).ready(function() {
+      $('#toc').toc({
+        title: '<h2>Table of contents</h2>',
+        listType: 'ul',
+        classes: {
+          list: 'nypl-custom-list',
+          item: ''
+        },
+        headers: 'h3,h4',
+        showSpeed: 0
+      });
+    });
+  </script>
 </body>
 </html>
