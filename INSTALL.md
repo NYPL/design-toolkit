@@ -2,7 +2,11 @@
 
 You can install the toolkit using NPM and as a Ruby gem. See below for instructions on each method.
 
-## Installing with npm and using a Node-based asset pipeline
+1. [Node](#node)
+2. [Ruby](#ruby)
+3. [Accessiblity Testing w/ pa11y](#pa11y)
+
+## <a name="node"><a>Installing with npm and using a Node-based asset pipeline
 
 1. Add nypl-toolkit as a dependency:
 
@@ -62,7 +66,7 @@ You can install the toolkit using NPM and as a Ruby gem. See below for instructi
   @import "nypl-normalize";
   ```
 
-## Installing as a Ruby gem
+## <a name="ruby"></a>Installing as a Ruby gem
 
 This instructions are mainly for Rails-based apps but should also cover other Ruby-based applications. Please let us know if it doesn't by opening an issue.
 
@@ -101,3 +105,5 @@ Avoid using the `*= require_self`, `*= require_tree .`, and `*= require` stateme
   ```
 
 **Important:** Make sure the file has `.scss` extension (or `.sass` for Sass syntax).
+
+## <a name="pa11y"></a>Accessiblity Testing with pa11y
