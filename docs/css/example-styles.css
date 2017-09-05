@@ -677,15 +677,14 @@ div.nypl-omnisearch.spinning {
 dl dd.multi-item-list .nypl-basic-table,
 .nypl-results-item .nypl-basic-table {
   display: table;
-  width: auto; }
+  width: 100%; }
   @media (max-width: 965px) {
     dl dd.multi-item-list .nypl-basic-table,
     .nypl-results-item .nypl-basic-table {
       overflow: auto;
       overflow-y: hidden;
       overflow-x: auto;
-      display: block;
-      width: 100%; } }
+      display: block; } }
   dl dd.multi-item-list .nypl-basic-table thead,
   .nypl-results-item .nypl-basic-table thead {
     border-bottom: 0.1rem solid #fafaf9; }
