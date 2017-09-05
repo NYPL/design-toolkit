@@ -664,14 +664,13 @@ dl dd.multi-item-list,
 
   .nypl-basic-table {
     display: table;
-    width: auto;
+    width: 100%;
 
    @include media($mobile-breakpoint) {
      overflow: auto;
      overflow-y: hidden;
      overflow-x: auto;
      display: block;
-     width: 100%;
    }
 
     thead {

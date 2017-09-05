@@ -18,6 +18,9 @@ Design toolkit (SASS) for the NYPL Digital team
 See [LICENSE](LICENSE)
 
 ## CHANGE LOG
+### v0.1.25.1
+- Improves table layout for item records in search results and item pages
+
 ### v0.1.25
 - fixes: #158
 
