@@ -1,7 +1,7 @@
 # Installing the toolkit
 
 You can install the toolkit using NPM and as a Ruby gem. See below for instructions on each method.
-
+Additionally, If you are contributing to the Toolkit you will need follow the commands outlined below.
 1. [Node](#node)
 2. [Ruby](#ruby)
 3. [Accessiblity Testing w/ pa11y](#pa11y)

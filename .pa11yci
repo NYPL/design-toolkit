@@ -3,7 +3,6 @@
 		"timeout": 15000
 	},
 	"urls": [
-		"http://127.0.0.1:4000/design-toolkit/discovery-holds.html",
 		"http://127.0.0.1:4000/design-toolkit/discovery-item.html"
 	]
 }
