@@ -166,13 +166,34 @@ h1 {
 .nypl-ally-table th {
   text-align: left; }
 
-.toolkit .nypl-page-header {
+.toolkit .nypl-toolkit-header {
+  background-color: #efedeb;
   background-color: #caeaf7; }
-  .toolkit .nypl-page-header h2 {
+  .toolkit .nypl-toolkit-header h1,
+  .toolkit .nypl-toolkit-header h2 {
+    font-family: "Milo-Light";
+    font-size: 2rem;
+    margin: 0; }
+  .toolkit .nypl-toolkit-header h1 {
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+  .toolkit .nypl-toolkit-header h1.item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400; }
+  .toolkit .nypl-toolkit-header h2 {
+    line-height: 1; }
+  .toolkit .nypl-toolkit-header h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .toolkit .nypl-toolkit-header h2 {
+        margin-top: 0.5rem; } }
+  .toolkit .nypl-toolkit-header h2 {
     color: #135772;
     margin-bottom: 0.25rem;
     text-shadow: 1px 1px 0 #6fc5e8; }
-    .toolkit .nypl-page-header h2 + span {
+    .toolkit .nypl-toolkit-header h2 + span {
       color: #135772;
       font-style: italic; }
 .toolkit .main-page h3::before {

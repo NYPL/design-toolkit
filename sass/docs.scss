@@ -1,6 +1,10 @@
+@import "typography";
+@import "grid";
 @import "general-mixins";
 @import "measurements";
 @import "colors";
+
+
 
 .hljs-selector-class {
   color: $highlight-color; // overriding highlightjs which has low contrast in css class highlighting
@@ -172,7 +176,8 @@ $colors: (
 // adding a toolkit class to the body tag
 // Some of this stuff is purely cosmetic. deal with it.
 .toolkit {
-  .nypl-page-header {
+  .nypl-toolkit-header {
+    @include page-header;
     background-color: lighten($nypl-light-blue, 20%);
 
     h2 {
