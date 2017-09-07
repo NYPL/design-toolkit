@@ -14,7 +14,7 @@ Additionally, If you are contributing to the Toolkit you will need follow the co
   npm install --save @nypl/design-toolkit
   ```
 
-2. If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
+2. If you’re using [Eyeglass](https://www.npmjs.com/package/eyeglass), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
 
   ##### Webpack Example
 
