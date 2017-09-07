@@ -1,5 +1,5 @@
 language: node_js
 node_js:
   - 4
-install: npm install
+#install: npm install
 script: npm run test-pa11y
