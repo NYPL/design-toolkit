@@ -1,7 +1,6 @@
 install:
   - gem install jekyll bundler
   - npm install
-
 matrix:
   include:
     language: ruby
