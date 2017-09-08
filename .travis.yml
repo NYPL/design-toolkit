@@ -6,10 +6,11 @@
 #       - cd ./docs
 #     script:
 #       - bundle install
-# include:
+#
+#   include:
 language: node_js
-  node_js:
-    - 6
+node_js:
+  - 6
 install:
   - gem install jekyll bundler
   - npm install
