@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - 6
 install: gem install jekyll bundler; npm install
-script: bundle exec jekyll serve; npm run test-pa11y
+script: cd ./docs; bundle exec jekyll serve; npm run test-pa11y
