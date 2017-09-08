@@ -107,3 +107,4 @@ Avoid using the `*= require_self`, `*= require_tree .`, and `*= require` stateme
 **Important:** Make sure the file has `.scss` extension (or `.sass` for Sass syntax).
 
 ## <a name="pa11y"></a>Accessiblity Testing with pa11y
+As of this writing the pa11y tests are running against the set of example page URLs (see `.pa11yci` for the complete list) . For example, pa11y is calling `http://127.0.0.1:4000/design-toolkit/discovery-item.html` and running its tests on that URL, not the Toolkit Documentation itself.
