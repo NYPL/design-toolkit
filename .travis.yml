@@ -2,7 +2,8 @@ matrix:
   include:
     language: ruby
     cache: bundler
-    before_script: cd ./docs
+    before_script:
+      - cd ./docs
     script:
       - bundle install
   include:
