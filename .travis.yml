@@ -1,5 +1,15 @@
 language: node_js
 node_js:
   - 6
-install: gem install jekyll bundler; npm install
-script: cd ./docs; bundle install; jekyll serve; npm run test-pa11y
+install:
+  - gem install jekyll bundler
+  - npm install
+script:
+  - cd ./docs; bundle install
+  - jekyll serve
+  - npm run test-pa11y
+# matrix:
+#   include:
+#     language: ruby
+#     cache: bundler
+#   before_script:
