@@ -1,18 +1,20 @@
-matrix:
-  include:
-    language: ruby
-    cache: bundler
-  include:
-    language: node_js
-      node_js:
-        - 6
-
 install:
   - gem install jekyll bundler
   - npm install
 
+matrix:
+  include:
+    language: ruby
+    cache: bundler
+    before_script: cd ./docs
+    script:
+      - bundle install
+  include:
+    language: node_js
+      node_js:
+        - 6
 script:
-  - cd ./docs
-  - bundle install
+#  - cd ./docs
+#  - bundle install
   - jekyll serve
   - npm run test-pa11y
