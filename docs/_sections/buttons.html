@@ -78,10 +78,11 @@ $(".nypl-spinner-button").on("click touchend", function(e) {
 </code></pre>
 <!-- ////// -->
 <h3 id="cancelFilters">Cancel Filter Button</h3>
-  <p>In a scenario where we have filters activated, we need to allow the user to unset each filter. </p>
+  <p>In a scenario where we have filters activated, we need to allow the user to unset each filter. The "x" icon is added inline and uses the <code>nypl-icon</code> class. </p>
   <div class="nypl-toolkit-example">
     <span class="nypl-example-text">Example</span>
-      <button class="nypl-unset-filter">Filter <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="svgIcon">
+      <button class="nypl-unset-filter">Filter
+        <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="svgIcon">
         <title>x.close.icon</title>
         <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
       </svg>
@@ -89,9 +90,15 @@ $(".nypl-spinner-button").on("click touchend", function(e) {
   </div>
   <pre><code class="scss">
 .nypl-unset-filter
+.nypl-icon
   </code></pre>
   <pre><code class="html">
-&lt;button class=&quot;nypl-unset-filter&quot;&gt;Filter&lt;/button&gt;
+&lt;button class=&quot;nypl-unset-filter&quot;&gt;Filter
+  &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 32 32&quot; class=&quot;svgIcon&quot;&gt;
+    &lt;title&gt;x.close.icon&lt;/title&gt;
+    &lt;path d=&quot;M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;
   </code></pre>
 <!-- ////// -->
 <h3 id="menuButton">Generic Menu Buttons</h3>

@@ -1171,12 +1171,38 @@ dl dd.multi-item-list .nypl-basic-table,
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
+  .nypl-unset-filter .nypl-icon {
+    background-color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    fill: #080807;
+    height: 1em;
+    width: 1em;
+    speak: none;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    .nypl-unset-filter .nypl-icon.reversed {
+      background-color: inherit;
+      fill: #fff; }
   .nypl-unset-filter:link, .nypl-unset-filter:visited {
     color: #080807; }
   .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
     border-color: #fff;
     background-color: #080807;
     color: #fff; }
+    .nypl-unset-filter:hover .nypl-icon, .nypl-unset-filter:hover:visited .nypl-icon, .nypl-unset-filter.active .nypl-icon {
+      background-color: #080807;
+      border-radius: 0;
+      display: inline-block;
+      fill: #fff;
+      height: 1em;
+      width: 1em;
+      speak: none; }
+      .nypl-unset-filter:hover .nypl-icon.reversed, .nypl-unset-filter:hover:visited .nypl-icon.reversed, .nypl-unset-filter.active .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
   .nypl-unset-filter:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -1190,6 +1216,9 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: #d7d4d0;
       border-color: #080807;
       color: #080807; }
+  .nypl-unset-filter .nypl-icon {
+    position: relative;
+    top: 0.15rem; }
 
 .nypl-basic-button {
   background-color: #776e64;

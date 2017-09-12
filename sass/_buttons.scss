@@ -27,6 +27,7 @@
   $background-color: $nypl-search-color-dark,
   $border-radius: ($general-border-radius / 3),
   $border-width: ($general-border-width / 3),
+  $button-icon: false,
   $collapsible: false,
   $disabled-color: $nypl-light-gray,
   $font-size: 1rem,
@@ -72,7 +73,19 @@
       }
       top: $top;
     }
-  }
+  } // /collapsible
+
+  // Button w/ Icon...
+  // TODO: Refactor $collapsible & $button-icon to be DRYer...
+  @if ($button-icon == true) {
+
+    .nypl-icon {
+      @include nypl-icon(
+      $fill: $text-color,
+      $background-color: $background-color);
+      @include transition(all, $hover-time, ease-in);
+    }
+  } // /button-icon
 
   &:link,
   &:visited {
@@ -105,6 +118,12 @@
 
     @if $collapsible == true {
       // has nypl-icon with down arrow
+      .nypl-icon {
+        @include nypl-icon($fill: $the-text-color, $background-color: $the-background-color);
+      }
+    }
+    @if $button-icon == true {
+      // button has an icon to the left or right:
       .nypl-icon {
         @include nypl-icon($fill: $the-text-color, $background-color: $the-background-color);
       }
@@ -188,8 +207,20 @@
   }
 }
 
-@mixin service-button($collapsible: false, $text-color: $nypl-white, $background-color: $nypl-red) {
-  @include basic-button($font-size: 0.8rem, $text-color: $text-color, $background-color: $background-color, $collapsible: $collapsible, $border-width: 0, $padding-vertical: 0, $padding-horizontal: 0.5rem);
+@mixin service-button(
+  $collapsible: false,
+  $text-color: $nypl-white,
+  $background-color: $nypl-red) {
+
+  @include basic-button(
+    $font-size: 0.8rem,
+    $text-color: $text-color,
+    $background-color:
+    $background-color,
+    $collapsible: $collapsible,
+    $border-width: 0,
+    $padding-vertical: 0,
+    $padding-horizontal: 0.5rem);
   border-radius: 0;
   display: block;
   font-weight: bold;
@@ -269,16 +300,14 @@
   $background-color: $nypl-white,
   $border-color: $nypl-dark-gray,
   $border-radius: 0.25rem,
+  $button-icon: true,
   $hover-text-color: $nypl-white,
   $hover-background-color: $nypl-dark-gray,
   $text-color: $nypl-dark-gray
   );
-
-  // .nypl-icon {
-  //   @include nypl-icon()
-  //   // $fill: $the-text-color,
-  //   // $background-color: $the-background-color);
-  //   height: 1rem;
-  //   width: 1rem;
-  // }
+  // We set the icon's position here and not on the general mixin since we are using a specific icon [x]
+  .nypl-icon {
+    position: relative;
+    top: 0.15rem;
+  }
 }
