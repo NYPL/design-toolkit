@@ -21,4 +21,4 @@ before_script:
 script: npm run test-pa11y
 cache:
   directories:
-- "node_modules"
+    - "node_modules"
