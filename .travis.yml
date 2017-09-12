@@ -17,7 +17,7 @@ install:
 before_script:
     - cd ./docs
     - bundle install
-    - bundle exec jekyll serve
+    - jekyll serve --detach
 script: npm run test-pa11y
 cache:
   directories:
