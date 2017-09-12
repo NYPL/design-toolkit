@@ -1,20 +1,24 @@
+# matrix:
+#   include:
+#     language: ruby
+#     cache: bundler
+#     before_script:
+#       - cd ./docs
+#     script:
+#       - bundle install
+#
+#   include:
+language: node_js
+node_js:
+  - 6
 install:
   - gem install jekyll bundler
   - npm install
-matrix:
-  include:
-    - language: ruby
-      cache: bundler
-      before_script:
-        - cd ./docs
-        - bundle install
-        script:
-          - bundle exec jekyll serve
-    - language: node_js
-      node_js: 6
-      script:
-        - npm run test-pa11y
-
+before_script:
+    - cd ./docs
+    - bundle install
+    - bundle exec jekyll serve --detach
+script: npm run test-pa11y
 cache:
   directories:
-    - "node_modules"
+- "node_modules"
