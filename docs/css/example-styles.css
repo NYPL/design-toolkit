@@ -1152,6 +1152,45 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-link-button:hover {
     text-decoration: none; }
 
+.nypl-unset-filter {
+  background-color: #fff;
+  border: 0.04167rem solid #080807;
+  border-radius: 0.25rem;
+  color: #080807;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  letter-spacing: normal;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s; }
+  .nypl-unset-filter:link, .nypl-unset-filter:visited {
+    color: #080807; }
+  .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
+    border-color: #fff;
+    background-color: #080807;
+    color: #fff; }
+  .nypl-unset-filter:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-unset-filter.disabled, .nypl-unset-filter[disabled="disabled"], .nypl-unset-filter[disabled="true"], .nypl-unset-filter[disabled], .nypl-unset-filter[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #080807;
+    cursor: default; }
+    .nypl-unset-filter.disabled:hover, .nypl-unset-filter[disabled="disabled"]:hover, .nypl-unset-filter[disabled="true"]:hover, .nypl-unset-filter[disabled]:hover, .nypl-unset-filter[disabled=true]:hover {
+      background-color: #d7d4d0;
+      border-color: #080807;
+      color: #080807; }
+
 .nypl-basic-button {
   background-color: #776e64;
   border: 0.04167rem solid #776e64;

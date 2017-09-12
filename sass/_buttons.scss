@@ -263,3 +263,22 @@
     }
   }
 }
+
+@mixin unset-button {
+  @include basic-button(
+  $background-color: $nypl-white,
+  $border-color: $nypl-dark-gray,
+  $border-radius: 0.25rem,
+  $hover-text-color: $nypl-white,
+  $hover-background-color: $nypl-dark-gray,
+  $text-color: $nypl-dark-gray
+  );
+
+  // .nypl-icon {
+  //   @include nypl-icon()
+  //   // $fill: $the-text-color,
+  //   // $background-color: $the-background-color);
+  //   height: 1rem;
+  //   width: 1rem;
+  // }
+}
