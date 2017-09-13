@@ -82,7 +82,7 @@
                     </select>
                     </strong>
                   </form>
-                  <button type="submit" class="nypl-screenreader-only">Submit Query</button>
+                  <button id="sort-submission" type="submit" class="">Submit Query</button>
                 </div>
               </div>
             </div>
@@ -473,7 +473,11 @@ Next</a>
       </div>
     </div>
   </footer>
-
 </body>
 
+<script type="text/javascript">
+(function() {
+  document.querySelector('#sort-submission').className = 'nypl-screenreader-only';
+})();
+</script>
 </html>
