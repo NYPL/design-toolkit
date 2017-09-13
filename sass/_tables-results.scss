@@ -214,28 +214,45 @@ $results-item-border-width: 0.0625rem;
 
 $sorter-width: 11em;
 
+// In some cases we need to expose things to screen readers only:
+// TODO: Move this to the general mixins...
+@mixin submission($visibility) {
+  @if $visibility == visible {
+    @content; // put the visible stuff here:
+  } @else if $visibility == visually-hidden {
+    @content; // put the screenreader-only stuff here...
+  }
+}
+
 @mixin results-sorter {
   display: inline-block;
   float: left;
   position: relative;
 
+  @include submission(visible) {
+    button {
+      @include basic-button(
+          $background-color: $nypl-white,
+          $border-color: lighten($nypl-gray-cool, 15%),
+          $border-width: ($general-border-width / 2),
+          $collapsible: true,
+          $font-size: 0.85rem,
+          $hover-background-color: $nypl-white,
+          $padding-vertical: ($general-padding * 0.4),
+          $text-color: $nypl-dark-gray);
+      padding-right: 1.75rem;
 
-  button {
-    @include basic-button(
-        $background-color: $nypl-white,
-        $border-color: lighten($nypl-gray-cool, 15%),
-        $border-width: ($general-border-width / 2),
-        $collapsible: true,
-        $font-size: 0.85rem,
-        $hover-background-color: $nypl-white,
-        $padding-vertical: ($general-padding * 0.4),
-        $text-color: $nypl-dark-gray);
-    padding-right: 1.75rem;
-
-    .nypl-icon {
-      right: 0.5rem;
+      .nypl-icon {
+        right: 0.5rem;
       }
     } // /button
+  } // /submssion ~ visible
+
+  @include submission(visually-hidden) {
+    button.nypl-screenreader-only {
+      @include screenreader-only;
+    }
+  } // /submssion ~ visually-hidden
 
   ul {
     background-color: $nypl-white;
