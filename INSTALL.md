@@ -108,3 +108,8 @@ Avoid using the `*= require_self`, `*= require_tree .`, and `*= require` stateme
 
 ## <a name="pa11y"></a>Accessiblity Testing with pa11y
 As of this writing the pa11y tests are running against the set of example page URLs (see `.pa11yci` for the complete list) . For example, pa11y is calling `http://127.0.0.1:4000/design-toolkit/discovery-item.html` and running its tests on that URL, not the Toolkit Documentation itself. Testing should be run locally before committing to your your branch.
+
+1. If you haven't already run the install steps from the [README.md](README.md) please do so before proceeding.
+2. `cd` to the `docs/` folder
+3. run this command: `bundle exec jekyll serve` to run the server locally
+4. run this command: `npm run test-pa11y` to run the accessiblity test

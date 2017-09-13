@@ -11,8 +11,8 @@ Design toolkit (SASS) for the NYPL Digital team
 
 1. install [Jekyll](https://jekyllrb.com/) (try: `gem install jekyll bundler`)
 2. go to the `docs/` folder
-2. `bundle install` to install necessary gems
-3. `jekyll serve` (or `bundle exec jekyll serve`) to run the server
+3. `bundle install` to install necessary gems
+4. `jekyll serve` (or `bundle exec jekyll serve`) to run the server
 
 ## [Install the toolkit in your application](INSTALL.md)
 
