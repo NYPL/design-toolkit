@@ -387,7 +387,7 @@ $form-padding: 0.5rem;
   }
 
   label::before {
-    border: 0.0625rem solid;
+    border: ($general-border-width * 0.75) solid;
     height: 1rem;
     left: 0;
     width: 1rem;
@@ -400,23 +400,28 @@ $form-padding: 0.5rem;
     border-left: $general-border-width solid;
     border-bottom: $general-border-width solid;
     transform: rotate(-45deg);
-    left: 0.25rem;
-    top: 0.4375rem;
+    left: 0.32rem;
+    top: 0.5rem;
   }
 // Hide the checkmark by default
   input[type="checkbox"] + label::after {
     content: none;
   }
 
+  input[type="checkbox"]:checked + label::before {
+    background-color: lighten($nypl-green-tint, 35%);
+    border-width: $general-border-width;
+  }
+
   input[type="checkbox"]:checked + label,
   input[type="checkbox"]:checked + label::before {
-    border-color: $nypl-red;
-    color: $nypl-red;
+    border-color: $nypl-green-bright;
+    color: $nypl-green-bright;
   }
 
   input[type="checkbox"]:checked + label::after {
-    border-color: $nypl-red;
-    color: $nypl-red;
+    border-color: $nypl-green-bright;
+    color: $nypl-green-bright;
     content: "";
   }
 // Adding focus styles on the outer-box of the fake checkbox

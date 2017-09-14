@@ -2491,7 +2491,7 @@ dl dd.multi-item-list .nypl-basic-table,
   display: inline-block;
   position: absolute; }
 .nypl-generic-checkbox label::before {
-  border: 0.0625rem solid;
+  border: 0.09375rem solid;
   height: 1rem;
   left: 0;
   width: 1rem;
@@ -2502,17 +2502,20 @@ dl dd.multi-item-list .nypl-basic-table,
   border-left: 0.125rem solid;
   border-bottom: 0.125rem solid;
   transform: rotate(-45deg);
-  left: 0.25rem;
-  top: 0.4375rem; }
+  left: 0.32rem;
+  top: 0.5rem; }
 .nypl-generic-checkbox input[type="checkbox"] + label::after {
   content: none; }
+.nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #f3f6e8;
+  border-width: 0.125rem; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label,
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
-  border-color: #d0343a;
-  color: #d0343a; }
+  border-color: #008918;
+  color: #008918; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::after {
-  border-color: #d0343a;
-  color: #d0343a;
+  border-color: #008918;
+  color: #008918;
   content: ""; }
 .nypl-generic-checkbox input[type="checkbox"]:focus + label::before {
   outline: #ffb81d auto 0.125rem; }
