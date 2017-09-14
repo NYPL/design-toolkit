@@ -1,6 +1,6 @@
 {
   "name": "@nypl/design-toolkit",
-  "version": "0.1.25.1",
+  "version": "0.1.26",
   "description": "NYPL Design Toolkit",
   "author": "NYPL Digital",
   "contributors": [
@@ -29,6 +29,12 @@
   "main": "index.js",
   "dependencies": {
     "node-sass": "3.8"
+  },
+  "devDependencies": {
+    "pa11y-ci": "~1.2.0"
+  },
+  "scripts": {
+    "test-pa11y": "./node_modules/.bin/pa11y-ci"
   },
   "eyeglass": {
     "name": "toolkit",

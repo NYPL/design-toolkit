@@ -1152,6 +1152,214 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-link-button:hover {
     text-decoration: none; }
 
+.nypl-unset-filter {
+  background-color: #fff;
+  border: 0.04167rem solid #080807;
+  border-radius: 0.25rem;
+  color: #080807;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  letter-spacing: normal;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s; }
+  .nypl-unset-filter .nypl-icon {
+    background-color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    fill: #080807;
+    height: 1em;
+    width: 1em;
+    speak: none;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    .nypl-unset-filter .nypl-icon.reversed {
+      background-color: inherit;
+      fill: #fff; }
+  .nypl-unset-filter:link, .nypl-unset-filter:visited {
+    color: #080807; }
+  .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
+    border-color: #fff;
+    background-color: #080807;
+    color: #fff; }
+    .nypl-unset-filter:hover .nypl-icon, .nypl-unset-filter:hover:visited .nypl-icon, .nypl-unset-filter.active .nypl-icon {
+      background-color: #080807;
+      border-radius: 0;
+      display: inline-block;
+      fill: #fff;
+      height: "";
+      width: "";
+      speak: none; }
+      .nypl-unset-filter:hover .nypl-icon.reversed, .nypl-unset-filter:hover:visited .nypl-icon.reversed, .nypl-unset-filter.active .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+  .nypl-unset-filter:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-unset-filter.disabled, .nypl-unset-filter[disabled="disabled"], .nypl-unset-filter[disabled="true"], .nypl-unset-filter[disabled], .nypl-unset-filter[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #080807;
+    cursor: default; }
+    .nypl-unset-filter.disabled:hover, .nypl-unset-filter[disabled="disabled"]:hover, .nypl-unset-filter[disabled="true"]:hover, .nypl-unset-filter[disabled]:hover, .nypl-unset-filter[disabled=true]:hover {
+      background-color: #d7d4d0;
+      border-color: #080807;
+      color: #080807; }
+  .nypl-unset-filter .nypl-icon {
+    position: relative;
+    top: 0.15rem; }
+
+.nypl-short-button {
+  background-color: #fff;
+  border: 0.04167rem solid #080807;
+  border-radius: 0.25rem;
+  color: #080807;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  height: 1.7rem;
+  letter-spacing: normal;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  padding-right: 0.5rem;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s; }
+  .nypl-short-button .nypl-icon {
+    background-color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    fill: #080807;
+    height: 1em;
+    width: 1em;
+    speak: none;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    .nypl-short-button .nypl-icon.reversed {
+      background-color: inherit;
+      fill: #fff; }
+  .nypl-short-button:link, .nypl-short-button:visited {
+    color: #080807; }
+  .nypl-short-button:hover, .nypl-short-button:hover:visited, .nypl-short-button.active {
+    border-color: #fff;
+    background-color: #080807;
+    color: #fff; }
+    .nypl-short-button:hover .nypl-icon, .nypl-short-button:hover:visited .nypl-icon, .nypl-short-button.active .nypl-icon {
+      background-color: #080807;
+      border-radius: 0;
+      display: inline-block;
+      fill: #fff;
+      height: "";
+      width: "";
+      speak: none; }
+      .nypl-short-button:hover .nypl-icon.reversed, .nypl-short-button:hover:visited .nypl-icon.reversed, .nypl-short-button.active .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+  .nypl-short-button:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-short-button.disabled, .nypl-short-button[disabled="disabled"], .nypl-short-button[disabled="true"], .nypl-short-button[disabled], .nypl-short-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #080807;
+    cursor: default; }
+    .nypl-short-button.disabled:hover, .nypl-short-button[disabled="disabled"]:hover, .nypl-short-button[disabled="true"]:hover, .nypl-short-button[disabled]:hover, .nypl-short-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      border-color: #080807;
+      color: #080807; }
+  .nypl-short-button .nypl-icon {
+    margin-left: 1.75rem;
+    position: relative;
+    top: 0.1rem; }
+
+.nypl-x-close-button {
+  background-color: #fff;
+  border: 0 solid #776e64;
+  border-radius: 0.06667rem;
+  color: #d0343a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  letter-spacing: normal;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s; }
+  .nypl-x-close-button .nypl-icon {
+    background-color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    fill: #d0343a;
+    height: 1em;
+    width: 1em;
+    speak: none;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    .nypl-x-close-button .nypl-icon.reversed {
+      background-color: inherit;
+      fill: #fff; }
+  .nypl-x-close-button:link, .nypl-x-close-button:visited {
+    color: #d0343a; }
+  .nypl-x-close-button:hover, .nypl-x-close-button:hover:visited, .nypl-x-close-button.active {
+    border-color: #d0343a;
+    background-color: #fff;
+    color: #d0343a; }
+    .nypl-x-close-button:hover .nypl-icon, .nypl-x-close-button:hover:visited .nypl-icon, .nypl-x-close-button.active .nypl-icon {
+      background-color: #fff;
+      border-radius: 0;
+      display: inline-block;
+      fill: #d0343a;
+      height: "";
+      width: "";
+      speak: none; }
+      .nypl-x-close-button:hover .nypl-icon.reversed, .nypl-x-close-button:hover:visited .nypl-icon.reversed, .nypl-x-close-button.active .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+  .nypl-x-close-button:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-x-close-button.disabled, .nypl-x-close-button[disabled="disabled"], .nypl-x-close-button[disabled="true"], .nypl-x-close-button[disabled], .nypl-x-close-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-x-close-button.disabled:hover, .nypl-x-close-button[disabled="disabled"]:hover, .nypl-x-close-button[disabled="true"]:hover, .nypl-x-close-button[disabled]:hover, .nypl-x-close-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      color: #d0343a; }
+  .nypl-x-close-button .nypl-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    position: relative;
+    top: 0.5rem; }
+
 .nypl-basic-button {
   background-color: #776e64;
   border: 0.04167rem solid #776e64;
@@ -2270,6 +2478,47 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-simple-radiobutton input[type=checkbox] {
     height: initial;
     margin: 0 0.5rem; }
+
+.nypl-generic-checkbox input[type="checkbox"] {
+  opacity: 0; }
+.nypl-generic-checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.75rem; }
+.nypl-generic-checkbox label::after,
+.nypl-generic-checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute; }
+.nypl-generic-checkbox label::before {
+  border: 0.09375rem solid;
+  height: 1rem;
+  left: 0;
+  width: 1rem;
+  top: 0.25rem; }
+.nypl-generic-checkbox label::after {
+  height: 0.375rem;
+  width: 0.5625rem;
+  border-left: 0.125rem solid;
+  border-bottom: 0.125rem solid;
+  transform: rotate(-45deg);
+  left: 0.32rem;
+  top: 0.5rem; }
+.nypl-generic-checkbox input[type="checkbox"] + label::after {
+  content: none; }
+.nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #f3f6e8;
+  border-width: 0.125rem; }
+.nypl-generic-checkbox input[type="checkbox"]:checked + label,
+.nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
+  border-color: #008918;
+  color: #008918; }
+.nypl-generic-checkbox input[type="checkbox"]:checked + label::after {
+  border-color: #008918;
+  color: #008918;
+  content: ""; }
+.nypl-generic-checkbox input[type="checkbox"]:focus + label::before {
+  outline: #ffb81d auto 0.125rem; }
 
 .nypl-terms-checkbox {
   border-left: 0.5rem solid #776e64;
@@ -3685,6 +3934,15 @@ dl dd.multi-item-list .nypl-basic-table,
         color: #080807; }
     .nypl-results-sorter button .nypl-icon {
       right: 0.5rem; }
+  .nypl-results-sorter button.nypl-screenreader-only {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
   .nypl-results-sorter ul {
     background-color: #fff;
     border: 0.08333rem solid;
