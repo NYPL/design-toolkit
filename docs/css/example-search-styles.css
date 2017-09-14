@@ -3723,6 +3723,15 @@ dl dd.multi-item-list .nypl-basic-table,
         color: #080807; }
     .nypl-results-sorter button .nypl-icon {
       right: 0.5rem; }
+  .nypl-results-sorter button.nypl-screenreader-only {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
   .nypl-results-sorter ul {
     background-color: #fff;
     border: 0.08333rem solid;

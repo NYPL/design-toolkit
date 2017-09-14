@@ -16,3 +16,6 @@ collections:
 exclude:
   - Gemfile
   - README.md
+
+#custom variables
+current-version: 0.1.25.1

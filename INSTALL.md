@@ -1,8 +1,12 @@
 # Installing the toolkit
 
 You can install the toolkit using NPM and as a Ruby gem. See below for instructions on each method.
+Additionally, If you are contributing to the Toolkit you will need follow the commands outlined below.
+1. [Node](#node)
+2. [Ruby](#ruby)
+3. [Accessiblity Testing w/ pa11y](#pa11y)
 
-## Installing with npm and using a Node-based asset pipeline
+## <a name="node"><a>Installing with npm and using a Node-based asset pipeline
 
 1. Add nypl-toolkit as a dependency:
 
@@ -10,7 +14,7 @@ You can install the toolkit using NPM and as a Ruby gem. See below for instructi
   npm install --save @nypl/design-toolkit
   ```
 
-2. If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
+2. If you’re using [Eyeglass](https://www.npmjs.com/package/eyeglass), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
 
   ##### Webpack Example
 
@@ -62,7 +66,7 @@ You can install the toolkit using NPM and as a Ruby gem. See below for instructi
   @import "nypl-normalize";
   ```
 
-## Installing as a Ruby gem
+## <a name="ruby"></a>Installing as a Ruby gem
 
 This instructions are mainly for Rails-based apps but should also cover other Ruby-based applications. Please let us know if it doesn't by opening an issue.
 
@@ -101,3 +105,11 @@ Avoid using the `*= require_self`, `*= require_tree .`, and `*= require` stateme
   ```
 
 **Important:** Make sure the file has `.scss` extension (or `.sass` for Sass syntax).
+
+## <a name="pa11y"></a>Accessiblity Testing with pa11y
+As of this writing the pa11y tests are running against the set of example page URLs (see `.pa11yci` for the complete list) . For example, pa11y is calling `http://127.0.0.1:4000/design-toolkit/discovery-item.html` and running its tests on that URL, not the Toolkit Documentation itself. Testing should be run locally before committing to your your branch.
+
+1. If you haven't already run the install steps from the [README.md](README.md) please do so before proceeding.
+2. `cd` to the `docs/` folder
+3. run this command: `bundle exec jekyll serve` to run the server locally
+4. run this command: `npm run test-pa11y` to run the accessiblity test

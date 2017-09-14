@@ -1,6 +1,10 @@
+@import "typography";
+@import "grid";
 @import "general-mixins";
 @import "measurements";
 @import "colors";
+
+
 
 .hljs-selector-class {
   color: $highlight-color; // overriding highlightjs which has low contrast in css class highlighting
@@ -88,6 +92,7 @@ h1 {
     text-decoration: underline;
   }
 }
+
 // Style the Color swatches in color.html
 
 // Create the color swatch classes used in sections/color.html
@@ -166,3 +171,43 @@ $colors: (
     text-align: left;
   }
 }
+
+// Creating Some Styles for the TK Docs themselves
+// adding a toolkit class to the body tag
+// Some of this stuff is purely cosmetic. deal with it.
+.toolkit {
+  .nypl-toolkit-header {
+    @include page-header;
+    background-color: lighten($nypl-light-blue, 20%);
+
+    h2 {
+      color: $nypl-blue-dark;
+      margin-bottom: 0.25rem;
+      text-shadow: 1px 1px 0 darken($nypl-light-blue, 0.8);
+
+      + span {
+        color: $nypl-blue-dark;
+        font-style: italic;
+      }
+    } // h2 block thing...
+  } // /.nypl-page-header
+
+  .main-page {
+    h3 {
+      &::before {
+        background: $nypl-blue-dark;
+        content: "";
+        display: block;
+        height: ($general-border-width * 2);
+        margin-bottom: 0.5rem;
+        width: 5rem;
+      }
+    }
+  }
+
+  footer {
+    background-color: lighten($nypl-light-blue, 20%);
+    color: $nypl-blue-dark;
+    height: 6rem;
+  }
+} // /.toolkit
