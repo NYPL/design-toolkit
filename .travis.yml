@@ -1,13 +1,3 @@
-# matrix:
-#   include:
-#     language: ruby
-#     cache: bundler
-#     before_script:
-#       - cd ./docs
-#     script:
-#       - bundle install
-#
-#   include:
 language: node_js
 node_js:
   - 6
