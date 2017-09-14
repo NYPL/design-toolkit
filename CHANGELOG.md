@@ -1,4 +1,12 @@
 ### Change Log
+### v0.1.26
+- TK Look and feel changes
+- New Changelog
+- Checkbox Updates
+- Button patterns added
+- `pa11y` automated testing w/ travis added
+- Installation instructions added & Updated
+
 ### v0.1.25
 - fixes: #158
 
