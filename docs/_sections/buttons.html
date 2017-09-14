@@ -61,7 +61,7 @@ $(".nypl-spinner-button").on("click touchend", function(e) {
   }, 2000)
 })
   </code></pre>
-
+<!-- ////// -->
 <h3 id="linkButton">Link Button</h3>
 <p>A link-styled button for situations when you want to clearly differentiate the desired/default action from a secondary action (as displayed in the example).</p>
   <div class="nypl-toolkit-example">
@@ -76,7 +76,92 @@ $(".nypl-spinner-button").on("click touchend", function(e) {
 &lt;button class=&quot;nypl-link-button&quot;&gt;Cancel&lt;/button&gt;
 &lt;button class=&quot;nypl-basic-button&quot;&gt;Submit&lt;/button&gt;
 </code></pre>
+<!-- ////// -->
+<h3 id="shortButton">Short Buttons</h3>
+<p>This pattern is for use where the design intent requires a button that is shorter in height than the normal buttons available. In this example we use the <i>Short Button</i> pattern to activate a filter modal.</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <button class="nypl-short-button" type="button" name="button">
+    Filter Results
+    <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
+      <title>filter.icon.3</title>
+      <g>
+        <circle cx="6.65947" cy="2.31986" r="1.31924"/>
+        <circle cx="13.18733" cy="1.31986" r="1.31895"/>
+        <circle cx="9.56477" cy="5.46901" r="1.31927"/>
+        <g>
+          <path d="M7.74355,22.50683a.95047.95047,0,0,1-.95022-.95022V11.28645L.25259,4.23413A.95041.95041,0,1,1,1.64824,2.94366l7.04554,7.598v11.015A.95047.95047,0,0,1,7.74355,22.50683Z"/>
+          <path d="M11.60384,19.73881a.95047.95047,0,0,1-.95022-.95022V10.5478l7.126-7.81485a.95047.95047,0,0,1,1.41049,1.27439l-6.636,7.27293v7.50832A.95047.95047,0,0,1,11.60384,19.73881Z"/>
+        </g>
+      </g>
+    </svg>
+  </button>
+  <pre><code class="scss">.nypl-short-button
+ .nypl-icon</code></pre>
+  <pre><code class="html">
+&lt;button class=&quot;nypl-short-button&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+  Filter Results
+  &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 19 22&quot;&gt;
+    &lt;title&gt;filter.icon.3&lt;/title&gt;
+    &lt;g&gt;
+      &lt;circle cx=&quot;6.65947&quot; cy=&quot;2.31986&quot; r=&quot;1.31924&quot;/&gt;
+      &lt;circle cx=&quot;13.18733&quot; cy=&quot;1.31986&quot; r=&quot;1.31895&quot;/&gt;
+      &lt;circle cx=&quot;9.56477&quot; cy=&quot;5.46901&quot; r=&quot;1.31927&quot;/&gt;
+      &lt;g&gt;
+        &lt;path d=&quot;M7.74355,22.50683a.95047.95047,0,0,1-.95022-.95022V11.28645L.25259,4.23413A.95041.95041,0,1,1,1.64824,2.94366l7.04554,7.598v11.015A.95047.95047,0,0,1,7.74355,22.50683Z&quot;/&gt;
+        &lt;path d=&quot;M11.60384,19.73881a.95047.95047,0,0,1-.95022-.95022V10.5478l7.126-7.81485a.95047.95047,0,0,1,1.41049,1.27439l-6.636,7.27293v7.50832A.95047.95047,0,0,1,11.60384,19.73881Z&quot;/&gt;
+      &lt;/g&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;
+  </code></pre>
+</div>
+<!-- ////// -->
+<h3 id="cancelFilters">Cancel Filter Button</h3>
+  <p>In a scenario where we have filters activated, we need to allow the user to unset each filter. The "x" icon is added inline and uses the <code>nypl-icon</code> class. </p>
+  <div class="nypl-toolkit-example">
+    <span class="nypl-example-text">Example</span>
+      <button class="nypl-unset-filter">Filter
+        <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+        <title>x.close.icon</title>
+        <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
+      </svg>
+    </button>
+  </div>
+<pre><code class="scss">.nypl-unset-filter
+ .nypl-icon</code></pre>
+<pre><code class="html">
+&lt;button class=&quot;nypl-unset-filter&quot;&gt;Filter
+  &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 32 32&quot; class=&quot;svgIcon&quot;&gt;
+    &lt;title&gt;x.close.icon&lt;/title&gt;
+    &lt;path d=&quot;M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;
+  </code></pre>
+<!-- ////// -->
+<h3 id="closeDialog">Dialog / Modal Close Button</h3>
+  <p>For dialogs and modals a user must have the capablitliy to close the dialog or modal without a submission or state changing action to the page or form. The <code>aria-controls</code> attribute should be set to reference the <code>id</code> or appropriate <code>aria-label</code> of the module it is acting upon.</p>
+  <div class="nypl-toolkit-example">
+    <span class="nypl-example-text">Example</span>
 
+      <button type="button" name="close" class="nypl-x-close-button">Close
+        <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" >
+          <title>x-close-rev</title>
+          <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
+        </svg>
+      </button>
+
+  </div>
+<pre><code class="scss">.nypl-x-close-button
+ .nypl-icon</code></pre>
+<pre><code class="html">
+&lt;button type=&quot;button&quot; name=&quot;close&quot; class=&quot;nypl-x-close-button&quot;&gt;Close
+  &lt;svg aria-hidden=&quot;true&quot; aria-controls=&quot;nypl-dialog-or-modal&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 100 100&quot; &gt;
+    &lt;title&gt;x-close-rev&lt;/title&gt;
+    &lt;path d=&quot;M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+<!-- ////// -->
 <h3 id="menuButton">Generic Menu Buttons</h3>
 <p>Generic menu buttons are used for situations where it is desirable to disclose certain information to the user without requiring a page load (for example a newsletter subscription form). The disclosed information should not be excessive (be reasonable). The elements themselves are:</p>
 <ul>

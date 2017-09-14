@@ -266,8 +266,29 @@ $("#username1 #required-field").change(function (e) {
 &lt;/div&gt;
     </code></pre>
 
+    <!-- ///// -->
 
-    <h3 id="optInBox">Terms/Opt-in Checkboxes</h3>
+      <h3 id="genericCheckbox">Generic Checkboxs</h3>
+      <p>We override the native styling of checkboxes. We change its state with <code>css</code> only that allows the label and the box to be clicked to toggle it from checked or unchecked.</p>
+      <div class="nypl-toolkit-example">
+        <span class="nypl-example-text">Example</span>
+        <div class="nypl-generic-checkbox">
+          <input id="book-check-filter" class="switch-input" type="checkbox" name="format" value="Book" />
+          <label for="book-check-filter">The Checkbox Label</label>
+        </div>
+      </div>
+      <pre><code class="scss">
+.nypl-generic-checkbox
+        </code></pre>
+      
+      <pre><code class="html">
+&lt;div class=&quot;nypl-generic-checkbox&quot;&gt;
+  &lt;input id=&quot;book-check-filter&quot; class=&quot;switch-input&quot; type=&quot;checkbox&quot; name=&quot;format&quot; value=&quot;Book&quot; /&gt;
+  &lt;label for=&quot;book-check-filter&quot;&gt;The Checkbox Label&lt;/label&gt;
+&lt;/div&gt;
+        </code></pre>
+    <!-- -->
+    <h3 id="optInBox">Terms / Opt-in Checkboxes</h3>
 
     <p>For situations where the user is requested to accept a terms of service or to opt-in to communications from the Library. When checked, a class of <code>checked</code> should be added to the main element.</p>
 

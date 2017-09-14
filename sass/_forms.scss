@@ -365,6 +365,67 @@ $form-padding: 0.5rem;
   }
 } // /radiobutton-field
 
+//
+// Generic Checkbox Style
+//
+@mixin generic-checkbox {
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  label {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.75rem;
+  }
+
+  label::after,
+  label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+  }
+
+  label::before {
+    border: 0.0625rem solid;
+    height: 1rem;
+    left: 0;
+    width: 1rem;
+    top: 0.25rem;
+  }
+
+  label::after {
+    height: 0.375rem;
+    width: 0.5625rem;
+    border-left: $general-border-width solid;
+    border-bottom: $general-border-width solid;
+    transform: rotate(-45deg);
+    left: 0.25rem;
+    top: 0.4375rem;
+  }
+// Hide the checkmark by default
+  input[type="checkbox"] + label::after {
+    content: none;
+  }
+
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:checked + label::before {
+    border-color: $nypl-red;
+    color: $nypl-red;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    border-color: $nypl-red;
+    color: $nypl-red;
+    content: "";
+  }
+// Adding focus styles on the outer-box of the fake checkbox
+  input[type="checkbox"]:focus + label::before {
+    outline: $nypl-orange auto 0.125rem;
+  }
+} // /generic-checkbox
+
+
 @mixin terms-checkbox {
   border-left: 0.5rem solid $nypl-gray;
   margin-bottom: 1rem;
@@ -383,7 +444,7 @@ $form-padding: 0.5rem;
   &.checked {
     border-left-color: $nypl-green;
   }
-}
+} // /terms-checkbox
 
 @mixin facet-toggle {
   background-color: $nypl-search-color-dark;

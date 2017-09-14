@@ -59,8 +59,21 @@
   @include collapsible;
 }
 
+// Buttons
 .nypl-link-button {
   @include link-button;
+}
+
+.nypl-unset-filter {
+  @include basic-button-icon;
+}
+
+.nypl-short-button {
+  @include short-button;
+}
+
+.nypl-x-close-button {
+  @include close-button;
 }
 
 .nypl-basic-button {
@@ -80,6 +93,7 @@
 .nypl-request-button {
   @include request-button;
 }
+// /Buttons
 
 .nypl-request-item-summary {
   @include request-item-summary;
@@ -186,6 +200,10 @@
 
 .nypl-simple-radiobutton {
   @include simple-radiobutton;
+}
+
+.nypl-generic-checkbox {
+  @include generic-checkbox;
 }
 
 .nypl-terms-checkbox {
