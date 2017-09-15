@@ -16,6 +16,7 @@
 @import "holds-table";
 @import "buttons";
 @import "pager";
+@import "modal";
 
 .hidden { // hacky
   display: none;
@@ -386,6 +387,10 @@
   @include results-sorter;
 }
 
+.nypl-filter-button {
+  @include filter-button;
+}
+
 .nypl-select-field-results {
   @include select-field-results;
 }
@@ -443,4 +448,8 @@
 
 .nypl-views-table {
   @include views-table;
+}
+
+.nypl-popup-container {
+  @include popup;
 }

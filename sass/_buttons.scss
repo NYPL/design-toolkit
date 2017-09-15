@@ -343,19 +343,23 @@
 }
 // A special case where we need to change dimensions of the button:
 // A use case its the "Filter Results"
-@mixin short-button {
+@mixin short-button(
+  // hacky
+  $short-button-height: 2.1rem
+  ) {
   @include basic-button(
     $background-color: $nypl-white,
     $border-color: $nypl-dark-gray,
     $border-radius: 0.25rem,
     $button-icon: true,
     $font-size: 0.85rem,
-    $height: 1.7rem,
+    $height: null,
     $hover-text-color: $nypl-white,
     $hover-background-color: $nypl-dark-gray,
     $padding-vertical: 0,
     $padding-horizontal: 1.5rem,
     $text-color: $nypl-dark-gray) {
+    height: $short-button-height;
     padding-right: 0.5rem;
   }
 

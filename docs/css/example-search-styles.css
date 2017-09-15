@@ -1229,12 +1229,12 @@ dl dd.multi-item-list .nypl-basic-table,
   display: inline-block;
   font-size: 0.85rem;
   font-weight: normal;
-  height: 1.7rem;
   letter-spacing: normal;
   padding: 0 1.5rem;
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  height: 2.1rem;
   padding-right: 0.5rem;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -3965,9 +3965,14 @@ dl dd.multi-item-list .nypl-basic-table,
       color: #080807;
       font-weight: bold; }
 
+.nypl-filter-button {
+  float: left;
+  margin-left: 1.5rem;
+  position: relative; }
+
 .nypl-select-field-results {
   background-color: #fff;
-  border: 0;
+  border: 0.0625rem #080807 solid;
   border-radius: 0.2rem;
   box-shadow: none;
   display: block;
@@ -3976,10 +3981,11 @@ dl dd.multi-item-list .nypl-basic-table,
   position: relative;
   margin-top: 0; }
   .nypl-select-field-results form {
-    width: 16rem;
-    padding: 0.25rem; }
+    font-size: 0.85rem;
+    padding: 0 0.25rem;
+    width: 13rem; }
   .nypl-select-field-results fieldset {
-    border: 0;
+    border: 0.0625rem #080807 solid;
     box-shadow: none;
     margin: 0;
     padding: 0; }
@@ -4300,6 +4306,22 @@ dl dd.multi-item-list .nypl-basic-table,
       width: 25%; }
     .nypl-views-table.collapses .resouce-description {
       width: 65%; } }
+
+.nypl-popup-container .nypl-overlay.active {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2); }
+.nypl-popup-container .nypl-overlay.inactive {
+  display: none; }
+.nypl-popup-container .nypl-popup-menu.active {
+  display: block;
+  z-index: 1000; }
+.nypl-popup-container .nypl-popup-menu.inactive {
+  display: none; }
 
 .nypl-header .horizontal {
   display: table-cell;
