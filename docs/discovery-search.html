@@ -9,6 +9,7 @@
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
+  <script type="text/javascript" src="js/inert.js"></script>
 </head>
 
 <body>
@@ -488,7 +489,7 @@ Next</a>
       </div>
     </div>
   </footer><!--//// start MODAL -->
-  <div class="nypl-popup-container inactive" role="dialog" aria-labelledby="filter-title">
+  <div class="nypl-popup-container active" role="dialog" aria-labelledby="filter-title">
       <div id="filterPopUpMenu" role="menu" class="nypl-popup-filter-menu">
         <form>
           <fieldset>
@@ -496,10 +497,10 @@ Next</a>
               <h3 id="filter-title">Filter Results</h3>
             </legend>
 
-            <fieldset>
+            <fieldset class="nypl-inner-fieldset">
               <legend>Format</legend>
-              <ul>
-                <li class="nypl-generic-checkbox">
+              <ul class="nypl-generic-checkbox">
+                <li>
                 <input id="book-check-filter" class="switch-input" type="checkbox" name="format" value="Book" />
                 <label for="book-check-filter">Book</label>
               </li>
@@ -523,7 +524,7 @@ Next</a>
               </li>
             </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="nypl-inner-fieldset nypl-fieldset-date">
               <legend>Date</legend>
               <div>
                 <label for="start-date">Start Year
@@ -532,56 +533,56 @@ Next</a>
                 <label for="end-date">End Year
                   <input id="end-date" type="number" min="1895" max="9999" step="1" class="form-text" name="end-date" />
                 </label>
-                <span>The Start year cannot be later than the end year</span>
+                <div>The Start year cannot be later than the end year</div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="nypl-inner-fieldset">
               <legend>Language</legend>
-              <ul>
-                <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <ul class="nypl-generic-checkbox">
+                <li>
                 <input id="english-language-filter" type="checkbox" name="language" value="English" />
                 <label for="english-language-filter">English</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                   <input id="spanish-language-filter" type="checkbox" name="language" value="Spanish" />
                   <label for="spanish-language-filter">Spanish</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                   <input id="language-filter-0" type="checkbox" name="language" value="Language" />
                   <label for="language-filter-0">Language</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                 <input id="language-filter-1" type="checkbox" name="language" value="Language" />
                 <label for="language-filter-1">Language</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                   <input id="language-filter-2" type="checkbox" name="language" value="Language" />
                   <label for="language-filter-2">Language</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                   <input id="language-filter-3" type="checkbox" name="language" value="Language" />
                   <label for="language-filter-3">Language</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                   <input id="language-filter-4" type="checkbox" name="language" value="Language" />
                   <label for="language-filter-4">Language</label>
               </li>
-              <li class="nypl-terms-checkbox nypl-generic-checkbox">
+              <li>
                 <input id="language-filter-5" type="checkbox" name="language" value="Language" />
                 <label for="language-filter-5">Language</label>
               </li>
             </ul>
 
             </fieldset>
-            <button type="button" name="Clear-Filters">Apply Filters</button>
-            <button type="button" name="Clear-Filters">Clear Filters</button>
-            <button id="closeModal" type="button" name="Close-Filters">Close
-              <svg width="48" height="48" viewBox="0 0 32 32" class="svgIcon">
-                <title>x.close.icon</title>
-                <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
+            <button class="nypl-filter-button" type="button" name="Clear-Filters">Apply Filters</button>
+            <button class="nypl-filter-button" type="button" name="Clear-Filters">Clear Filters</button>
+            <button type="button" name="close" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters">Close
+              <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" >
+                <title>x-close-rev</title>
+                <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
               </svg>
             </button>
-            <fieldset>
+            <fieldset class="nypl-screenreader-only">
               <legend id="sort-by-group">
                 <h3>Sort</h3>
               </legend>
@@ -608,7 +609,7 @@ Next</a>
                 </li>
               </ul>
             </fieldset>
-            <button type="button" name="Sort-by">Sort</button>
+            <button class="nypl-screenreader-only" type="button" name="Sort-by">Sort</button>
           </fieldset>
         </form>
       </div>
@@ -632,34 +633,38 @@ Next</a>
 //var openTheModal = document.querySelector('#filterButton');
 
 // Get the <span> element that closes the modal
-var closeTheModal = document.querySelector('#closeModal');
+// var closeTheModal = document.querySelector('#closeModal');
 
 // When the user clicks on the button, open the modal
-openTheModal.onclick = function() {
-    modal.className = 'nypl-popup-container active';
-    //overlay.className = 'nypl-overlay active';
-}
+// openTheModal.onclick = function() {
+//     modal.className = 'nypl-popup-container active';
+//     //overlay.className = 'nypl-overlay active';
+// }
 
 // When the user clicks on the close button, close the modal
-closeTheModal.onclick = function() {
-    modal.className = 'nypl-popup-container inactive';
-    //overlay.className = 'nypl-overlay inactive';
-}
+// closeTheModal.onclick = function() {
+//     modal.className = 'nypl-popup-container inactive';
+//     //overlay.className = 'nypl-overlay inactive';
+// }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == overlay) {
-        modal.className = 'nypl-popup-container inactive';
-        //overlay.className = 'nypl-overlay active';
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == overlay) {
+//         modal.className = 'nypl-popup-container inactive';
+//         //overlay.className = 'nypl-overlay active';
+//     }
+// }
+</script>
 
+
+
+<script type="text/javascript">
 // Based on the A11YCast here:
 // https://www.youtube.com/watch?v=JS68faEUduk
 // and employs this: https://github.com/WICG/inert
-addEventListeners() {
-  document.querySelector('#filterButton').addEventListener('click', openModal);
-}
+
+document.querySelector('#filterButton').addEventListener('click', openTheModal);
+
 
 var KEYCODE = {
   ESC: 27
@@ -667,14 +672,57 @@ var KEYCODE = {
 
 var modal = document.querySelector('.nypl-popup-container'); // container
 var filterMenu = document.querySelector('.nypl-popup-filter-menu'); // the filters themselves
-var overlay = document.querySelector('.nypl-popup-filter-overlay'); // the overlay
+var modalOverlay = document.querySelector('.nypl-popup-filter-overlay'); // the overlay or masking
+var modalButton = document.querySelector('#closeModal'); // the close button
 var previousActiveElement;
 
 function openTheModal () {
   // get a ref to the previousActiveElement
   // we restore th is when the dialog is closed...
+
   previousActiveElement = document.activeElement;
-  }
+  console.log(previousActiveElement);
+
+  Array.from(document.body.children).forEach(child => {
+    if (child !== modal)
+    child.inert = true;
+  });
+
+  // make the modal visible
+  modal.classList.remove('inactive');
+  modal.classList.add('active');
+
+  // listen for things to close the modal
+  modal.addEventListener('click', closeModal);
+  filterMenu.querySelector('#closeModal').addEventListener('click', closeModal);
+  document.addEventListener('keydown', checkCloseModal);
+
+  // move focus to the Fieldset legend
+  filterMenu.querySelector('#filter-title').focus();
+
+} // /openTheModal
+
+// ESC Key closes the Modal...
+function checkCloseModal(e) {
+  if (e.keycode === KEYCODE.ESC)
+  closeModal();
+}
+
+  function closeModal() {
+    // Clean up the event listeners...
+    modalOverlay.removeEventListener('click', closeModal);
+    modalButton.querySelector('#closeModal', closeModal);
+    document.removeEventListener('keydown', closeModal);
+
+    Array.from(document.body.children).forEach(child => {
+      if (child !== modal)
+      child.inert = false;
+    });
+
+    modal.classList.remove('active');
+    modal.classList.add('active');
+  } // /closeModal
+
 
 </script>
 </body>

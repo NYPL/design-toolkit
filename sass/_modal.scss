@@ -1,6 +1,6 @@
 //
-// NYPL Modals
-//
+// NYPL Search Results Filter Modal
+// TODO: Too much quick and dirty in here... needs clean up / refactoring
 
 @mixin popup {
 
@@ -12,16 +12,68 @@
     display: block;
 
     .nypl-popup-filter-menu {
+
       background: $nypl-white;
-      left: 50%;
+      left: 0;
       position: fixed;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      // margin: auto 10%;
+      top: 0;
+      width: 100%;
       z-index: 101;
+
+      form {
+        // padding: 0 10%;
+      }
+
+      fieldset {
+        border: 0;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        legend h3 {
+          padding-left: 2rem;
+
+          &:focus {
+            outline-color: $focus-color;
+            outline-style: solid;
+            outline-width: $focus-width;
+          }
+        }
+
+      }
+
+      .nypl-inner-fieldset {
+        border-bottom: ($general-border-width * 0.25) solid lighten($nypl-gray-cool, 15%);
+        padding: $general-padding 10%;
+        }
+
+        fieldset.nypl-inner-fieldset:nth-child(4) {
+          border: 0;
+        }
+
+
+      // .nypl-fieldset-date {
+      // }
+
+
+      .nypl-filter-button {
+        @include basic-button(
+        $background-color: $nypl-red,
+        $border-color: $nypl-red,
+        $text-color: $nypl-white
+        );
+      }
+
+      .nypl-x-close-button {
+        // position: relative;
+        // top: 5rem;
+        // left: 5rem;
+      }
     }
 
     .nypl-popup-filter-overlay {
-      background: transparentize($nypl-white, 0.15);
+      background: transparentize($nypl-white, 0.05);
       bottom: 0;
       left: 0;
       position: fixed;
