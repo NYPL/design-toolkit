@@ -3,29 +3,43 @@
 //
 
 @mixin popup {
-  .nypl-overlay.active {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 1000;
-    background: transparentize($nypl-white, 0.8);
-  }
 
-  .nypl-overlay.inactive {
+  &.inactive {
     display: none;
   }
 
-  .nypl-popup-menu {
+  &.active {
+    display: block;
 
-    &.active {
-      display: block;
-      z-index: 1000;
+    .nypl-popup-filter-menu {
+      background: $nypl-white;
+      left: 50%;
+      position: fixed;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 101;
     }
 
-    &.inactive {
-      display: none;
+    .nypl-popup-filter-overlay {
+      background: transparentize($nypl-white, 0.15);
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 100;
     }
-  }
+  } // /.active
+
+  // .nypl-popup-menu {
+  //
+  //   &.active {
+  //     display: block;
+  //     z-index: 1000;
+  //   }
+  //
+  //   &.inactive {
+  //     display: none;
+  //   }
+  // }
 }

@@ -4307,21 +4307,25 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-views-table.collapses .resouce-description {
       width: 65%; } }
 
-.nypl-popup-container .nypl-overlay.active {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.2); }
-.nypl-popup-container .nypl-overlay.inactive {
+.nypl-popup-container.inactive {
   display: none; }
-.nypl-popup-container .nypl-popup-menu.active {
-  display: block;
-  z-index: 1000; }
-.nypl-popup-container .nypl-popup-menu.inactive {
-  display: none; }
+.nypl-popup-container.active {
+  display: block; }
+  .nypl-popup-container.active .nypl-popup-filter-menu {
+    background: #fff;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101; }
+  .nypl-popup-container.active .nypl-popup-filter-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100; }
 
 .nypl-header .horizontal {
   display: table-cell;
