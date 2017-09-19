@@ -41,18 +41,24 @@
           }
         }
 
+        .nypl-inner-fieldset:nth-child(4) {
+          border: 0;
+        }
+
       }
 
       .nypl-inner-fieldset {
         border-bottom: ($general-border-width * 0.25) solid lighten($nypl-gray-cool, 15%);
         padding: $general-padding 10%;
+
+        legend {
+          font-size: 1.25rem;
         }
+      }
 
-        fieldset.nypl-inner-fieldset:nth-child(4) {
-          border: 0;
-        }
-
-
+      .nypl-name-field div {
+        width: 25%;
+      }
       // .nypl-fieldset-date {
       // }
 

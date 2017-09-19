@@ -526,15 +526,31 @@ Next</a>
             </fieldset>
             <fieldset class="nypl-inner-fieldset nypl-fieldset-date">
               <legend>Date</legend>
+              <!-- <div class="nypl-text-field">
+                <label for="start-date">Start Year
+                  <input id="start-date" type="number" min="1895" max="9999" step="1" name="start-date" class="form-text" />
+                </label>
+              </div>
+              <div class="nypl-text-field">
+                <label for="end-date">End Year
+                  <input class="nypl-text-field" id="end-date" type="number" min="1895" max="9999" step="1" class="form-text" name="end-date" />
+                </label>
+                <div>The Start year cannot be later than the end year</div>
+              </div> -->
+              <div class="nypl-name-field">
               <div>
                 <label for="start-date">Start Year
                   <input id="start-date" type="number" min="1895" max="9999" step="1" name="start-date" class="form-text" />
                 </label>
-                <label for="end-date">End Year
-                  <input id="end-date" type="number" min="1895" max="9999" step="1" class="form-text" name="end-date" />
-                </label>
-                <div>The Start year cannot be later than the end year</div>
               </div>
+              <div>
+                <label for="end-date">End Year
+                  <input class="nypl-text-field" id="end-date" type="number" min="1895" max="9999" step="1" class="form-text" name="end-date" />
+                </label>
+              </div>
+
+            </div>
+            <div>The Start year cannot be later than the end year</div>
             </fieldset>
             <fieldset class="nypl-inner-fieldset">
               <legend>Language</legend>
@@ -574,14 +590,16 @@ Next</a>
             </ul>
 
             </fieldset>
-            <button class="nypl-filter-button" type="button" name="Clear-Filters">Apply Filters</button>
-            <button class="nypl-filter-button" type="button" name="Clear-Filters">Clear Filters</button>
-            <button type="button" name="close" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters">Close
-              <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" >
-                <title>x-close-rev</title>
-                <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
-              </svg>
-            </button>
+            <div class="nypl-filter-button-container">
+              <button class="nypl-filter-button" type="button" name="Clear-Filters">Apply Filters</button>
+              <button class="nypl-filter-button" type="button" name="Clear-Filters">Clear Filters</button>
+              <button type="button" name="close" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters">Close
+                <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" >
+                  <title>x-close-rev</title>
+                  <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
+                </svg>
+              </button>
+            </div>
             <fieldset class="nypl-screenreader-only">
               <legend id="sort-by-group">
                 <h3>Sort</h3>
