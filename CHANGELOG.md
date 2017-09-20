@@ -1,4 +1,9 @@
 ### Change Log
+
+### v0.1.26.1
+- release candidate
+- Simple Modal for filtering. styles and js
+
 ### v0.1.26
 - TK Look and feel changes
 - New Changelog

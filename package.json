@@ -1,6 +1,6 @@
 {
   "name": "@nypl/design-toolkit",
-  "version": "0.1.26",
+  "version": "0.1.26.1",
   "description": "NYPL Design Toolkit",
   "author": "NYPL Digital",
   "contributors": [
@@ -28,7 +28,8 @@
   },
   "main": "index.js",
   "dependencies": {
-    "node-sass": "3.8"
+    "node-sass": "3.8",
+    "wicg-inert": "^1.1.4"
   },
   "devDependencies": {
     "pa11y-ci": "~1.2.0"
