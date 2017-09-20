@@ -2481,7 +2481,7 @@ dl dd.multi-item-list .nypl-basic-table,
 
 .nypl-generic-checkbox > li {
   list-style: none;
-  margin: 0;
+  margin: 0 0 0.35rem -1rem;
   padding: 0; }
 .nypl-generic-checkbox input[type="checkbox"] {
   opacity: 0; }
@@ -4328,8 +4328,7 @@ dl dd.multi-item-list .nypl-basic-table,
       padding-right: 0; }
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
         display: block;
-        margin-left: 3.125rem;
-        width: 100%; }
+        margin-left: 3.125rem; }
         .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
           margin-bottom: 0; }
           .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3:focus {
@@ -4348,7 +4347,7 @@ dl dd.multi-item-list .nypl-basic-table,
         font-size: 1.125rem;
         margin-top: 0.75rem; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
-      margin-bottom: 0; }
+      margin: 0; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
       float: left;
       margin-right: 1.125rem;
@@ -4395,7 +4394,7 @@ dl dd.multi-item-list .nypl-basic-table,
       float: right;
       position: relative;
       margin-right: 1rem;
-      top: -42.5rem; }
+      top: -45rem; }
   .nypl-popup-container.active .nypl-popup-filter-overlay {
     background: rgba(255, 255, 255, 0.95);
     bottom: 0;

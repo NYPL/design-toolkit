@@ -29,7 +29,6 @@
         > legend:first-child {
           display: block;
           margin-left: 3.125rem;
-          width: 100%;
 
           h3 {
             margin-bottom: 0;
@@ -38,7 +37,7 @@
               outline-color: $focus-color;
               outline-style: solid;
               outline-width: $focus-width;
-            }
+          }
         }
       }
 
@@ -63,7 +62,7 @@
       }
 
       .nypl-name-field {
-        margin-bottom: 0;
+        margin: 0;
       }
 
       .nypl-name-field div {
@@ -84,7 +83,7 @@
         float: right;
         position: relative;
         margin-right: $general-margin;
-        top: -42.5rem;
+        top: -45rem;
 
         // left: 5rem;
       }

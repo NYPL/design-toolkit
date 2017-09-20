@@ -392,7 +392,7 @@ $form-padding: 0.5rem;
   // TODO: find a better ,more generic mixin argumenty way of doing this...
   > li {
     list-style: none;
-    margin: 0;
+    margin: 0 0 0.35rem -1rem;
     padding: 0;
   }
 
