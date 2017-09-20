@@ -1229,12 +1229,12 @@ dl dd.multi-item-list .nypl-basic-table,
   display: inline-block;
   font-size: 0.85rem;
   font-weight: normal;
-  height: 1.7rem;
   letter-spacing: normal;
   padding: 0 1.5rem;
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  height: 2.1rem;
   padding-right: 0.5rem;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -2479,6 +2479,10 @@ dl dd.multi-item-list .nypl-basic-table,
     height: initial;
     margin: 0 0.5rem; }
 
+.nypl-generic-checkbox > li {
+  list-style: none;
+  margin: 0 0 0.35rem -1rem;
+  padding: 0; }
 .nypl-generic-checkbox input[type="checkbox"] {
   opacity: 0; }
 .nypl-generic-checkbox label {
@@ -3965,9 +3969,14 @@ dl dd.multi-item-list .nypl-basic-table,
       color: #080807;
       font-weight: bold; }
 
+.nypl-filter-button {
+  float: left;
+  margin-left: 1.5rem;
+  position: relative; }
+
 .nypl-select-field-results {
   background-color: #fff;
-  border: 0;
+  border: 0.0625rem #080807 solid;
   border-radius: 0.2rem;
   box-shadow: none;
   display: block;
@@ -3976,10 +3985,11 @@ dl dd.multi-item-list .nypl-basic-table,
   position: relative;
   margin-top: 0; }
   .nypl-select-field-results form {
-    width: 16rem;
-    padding: 0.25rem; }
+    font-size: 0.85rem;
+    padding: 0 0.25rem;
+    width: 13rem; }
   .nypl-select-field-results fieldset {
-    border: 0;
+    border: 0.0625rem #080807 solid;
     box-shadow: none;
     margin: 0;
     padding: 0; }
@@ -4300,6 +4310,103 @@ dl dd.multi-item-list .nypl-basic-table,
       width: 25%; }
     .nypl-views-table.collapses .resouce-description {
       width: 65%; } }
+
+.nypl-popup-container.inactive {
+  display: none; }
+.nypl-popup-container.active {
+  display: block; }
+  .nypl-popup-container.active .nypl-popup-filter-menu {
+    background: #fff;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2101; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset {
+      border: 0;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
+        display: block;
+        margin-left: 3.125rem; }
+        @media (max-width: 965px) {
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
+            margin-left: 1rem; } }
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
+          margin-bottom: 0; }
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3:focus {
+            outline-color: #ffb81d;
+            outline-style: solid;
+            outline-width: 0.125rem; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset .nypl-inner-fieldset:nth-child(4) {
+        border: 0; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset {
+      border: 0;
+      border-bottom: 0.03125rem solid #9d9ea1;
+      padding: 0 1rem 0 3.125rem; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset legend {
+        font-size: 1.125rem;
+        margin-top: 0.75rem; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
+      padding-bottom: 1.125rem; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
+      margin: 0; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
+      float: left;
+      margin-right: 1.125rem;
+      width: 25%; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button {
+      background-color: #d0343a;
+      border: 0.04167rem solid #d0343a;
+      border-radius: 0.06667rem;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: normal;
+      height: auto;
+      letter-spacing: normal;
+      padding: 0.2rem 0.75rem;
+      text-decoration: none;
+      text-transform: none;
+      white-space: nowrap;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:link, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:visited {
+        color: #fff; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:hover:visited, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button.active {
+        border-color: #776e64;
+        background-color: #fff;
+        color: #776e64; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:focus {
+        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        outline: none; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button.disabled, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="disabled"], .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="true"], .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled], .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled=true] {
+        background-color: #d7d4d0;
+        border-color: #fff;
+        cursor: default; }
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button.disabled:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="disabled"]:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="true"]:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled]:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled=true]:hover {
+          background-color: #d7d4d0;
+          border-color: #fff;
+          color: #fff; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button {
+      float: right;
+      position: relative;
+      margin-right: 1rem;
+      top: -42.65rem; }
+  .nypl-popup-container.active .nypl-popup-filter-overlay {
+    background: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2100; }
 
 .nypl-header .horizontal {
   display: table-cell;

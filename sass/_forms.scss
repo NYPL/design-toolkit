@@ -29,12 +29,19 @@ $form-padding: 0.5rem;
   margin-bottom: $margin-bottom;
 }
 
+//
+// A basic Fielset mixin
+//  Lots of arguments can be set to modify the end result based on it context
+//
+
 @mixin fieldset(
-    $border: 0,
+    $border-width: 0,
+    $border-color: null,
+    $border-style: null,
     $display: block,
     $padding: 0) {
   background-color: $page-background-color;
-  border: $border;
+  border: $border-width $border-color $border-style;
   border-radius: $general-border-radius;
   box-shadow: none;
   display: $display;
@@ -43,7 +50,7 @@ $form-padding: 0.5rem;
   position: relative;
 
   fieldset {
-    border: $border;
+    border: $border-width $border-color $border-style;
     box-shadow: none;
     margin: 0;
     padding: 0;
@@ -244,23 +251,32 @@ $form-padding: 0.5rem;
   select {
     @include select;
   }
-}
+} // /select-field
+
+//
+// Drop down w/ option for sorting...
+// ex: /discovery-search.html
+//
 
 @mixin select-field-results {
 
   form {
-    width: 16rem;
-    padding: ($general-padding * 0.25);
+    font-size: 0.85rem;
+    padding: 0 ($general-padding * 0.25);
+    width: 13rem;
   }
 
-  @include fieldset;
+  @include fieldset(
+    $border-width: ($general-border-width * 0.5),
+    $border-color: $nypl-dark-gray,
+    $border-style: solid
+  );
 
   label { // now has arguments to be applied
     @include label(
     $display: inline-block
     );
     margin: 0 0.25rem 0 0.5rem;
-    //position: relative;
   }
 
   select {
@@ -279,6 +295,8 @@ $form-padding: 0.5rem;
   color: $highlight-color;
   padding-left: 1rem;
 }
+// /select-field-results
+
 
 //
 // not-so-simple-radiobutton
@@ -369,6 +387,15 @@ $form-padding: 0.5rem;
 // Generic Checkbox Style
 //
 @mixin generic-checkbox {
+
+  // If the the checkboxes are in <ul> remove the list stylings
+  // TODO: find a better ,more generic mixin argumenty way of doing this...
+  > li {
+    list-style: none;
+    margin: 0 0 0.35rem -1rem;
+    padding: 0;
+  }
+
   input[type="checkbox"] {
     opacity: 0;
   }
@@ -667,8 +694,8 @@ $form-padding: 0.5rem;
 @mixin request-form-title(
   $font-weight: 400,
   $font-family: $sans-serif-stack) {
-    font-family: $font-family;
-    font-weight: $font-weight;
+  font-family: $font-family;
+  font-weight: $font-weight;
 } // /request-form-title
 
 // TODO: Move this to a more sensible location. Preferably at the top
