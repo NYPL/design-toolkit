@@ -4400,7 +4400,7 @@ dl dd.multi-item-list .nypl-basic-table,
       margin-right: 1rem;
       top: -42.65rem; }
   .nypl-popup-container.active .nypl-popup-filter-overlay {
-    background: rgba(255, 255, 255, 0.85);
+    background: white;
     bottom: 0;
     left: 0;
     position: fixed;
