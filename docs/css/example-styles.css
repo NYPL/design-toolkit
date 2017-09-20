@@ -4318,29 +4318,40 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-popup-container.active .nypl-popup-filter-menu {
     background: #fff;
     left: 0;
-    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 101; }
-    .nypl-popup-container.active .nypl-popup-filter-menu fieldset {
+    z-index: 2101; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset {
       border: 0;
       margin: 0;
       padding-left: 0;
       padding-right: 0; }
-      .nypl-popup-container.active .nypl-popup-filter-menu fieldset legend h3 {
-        padding-left: 2rem; }
-        .nypl-popup-container.active .nypl-popup-filter-menu fieldset legend h3:focus {
-          outline-color: #ffb81d;
-          outline-style: solid;
-          outline-width: 0.125rem; }
-      .nypl-popup-container.active .nypl-popup-filter-menu fieldset .nypl-inner-fieldset:nth-child(4) {
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
+        display: block;
+        margin-left: 3.125rem;
+        width: 100%; }
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
+          margin-bottom: 0; }
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3:focus {
+            outline-color: #ffb81d;
+            outline-style: solid;
+            outline-width: 0.125rem; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset .nypl-inner-fieldset:nth-child(4) {
         border: 0; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
+      padding-bottom: 1rem; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset {
+      border: 0;
       border-bottom: 0.03125rem solid #9d9ea1;
-      padding: 1rem 10%; }
+      padding: 0 1rem 0 3.125rem; }
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset legend {
-        font-size: 1.25rem; }
+        font-size: 1.125rem;
+        margin-top: 0.75rem; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
+      margin-bottom: 0; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
+      float: left;
+      margin-right: 1.125rem;
       width: 25%; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button {
       background-color: #d0343a;
@@ -4380,14 +4391,18 @@ dl dd.multi-item-list .nypl-basic-table,
           background-color: #d7d4d0;
           border-color: #fff;
           color: #fff; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button {
+      float: right;
+      position: relative;
+      margin-right: 1rem;
+      top: -42.5rem; }
   .nypl-popup-container.active .nypl-popup-filter-overlay {
     background: rgba(255, 255, 255, 0.95);
     bottom: 0;
     left: 0;
-    position: fixed;
     right: 0;
     top: 0;
-    z-index: 100; }
+    z-index: 2100; }
 
 .nypl-header .horizontal {
   display: table-cell;
