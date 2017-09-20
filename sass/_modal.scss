@@ -28,7 +28,11 @@
 
         > legend:first-child {
           display: block;
-          margin-left: 3.125rem;
+          margin-left: ($general-margin * 3.125);
+
+            @include media($mobile-breakpoint) {
+              margin-left: $general-margin;
+            }
 
           h3 {
             margin-bottom: 0;

@@ -4329,6 +4329,9 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
         display: block;
         margin-left: 3.125rem; }
+        @media (max-width: 965px) {
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
+            margin-left: 1rem; } }
         .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
           margin-bottom: 0; }
           .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3:focus {
