@@ -4318,6 +4318,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-popup-container.active .nypl-popup-filter-menu {
     background: #fff;
     left: 0;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 2101; }
@@ -4397,11 +4398,12 @@ dl dd.multi-item-list .nypl-basic-table,
       float: right;
       position: relative;
       margin-right: 1rem;
-      top: -45rem; }
+      top: -42.65rem; }
   .nypl-popup-container.active .nypl-popup-filter-overlay {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.85);
     bottom: 0;
     left: 0;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: 2100; }

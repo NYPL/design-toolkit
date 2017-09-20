@@ -489,7 +489,7 @@ Next</a>
       </div>
     </div>
   </footer><!--//// start MODAL -->
-  <div class="nypl-popup-container active" role="dialog" aria-labelledby="filter-title">
+  <div class="nypl-popup-container inactive" role="dialog" aria-labelledby="filter-title">
       <div id="filterPopUpMenu" role="menu" class="nypl-popup-filter-menu">
         <form>
           <fieldset class="nypl-parent-fieldset">
@@ -539,7 +539,7 @@ Next</a>
               </div>
 
             </div>
-            <div>The Start year cannot be later than the end year</div>
+            <!-- <div>The Start year cannot be later than the end year</div> -->
             </fieldset>
             <fieldset class="nypl-inner-fieldset">
               <legend>Language</legend>
@@ -633,34 +633,37 @@ Next</a>
 
 // Basic JS Modal Werks
 // Get the Under/Overlay
-//var overlay = document.querySelector('.nypl-popup-filter-overlay');
-// Get the modal
-//var modal = document.querySelector('.nypl-popup-container');
-// Get the button that opens the modal
-//var openTheModal = document.querySelector('#filterButton');
+var overlay = document.querySelector('.nypl-popup-filter-overlay');
 
-// Get the <span> element that closes the modal
-// var closeTheModal = document.querySelector('#closeModal');
+// Get the modal w/ the filters:
+var modal = document.querySelector('.nypl-popup-container');
+// Get the button that opens the modal
+var openTheModal = document.querySelector('#filterButton');
+
+// Get the element that closes the modal
+var closeTheModal = document.querySelector('#closeModal');
 
 // When the user clicks on the button, open the modal
-// openTheModal.onclick = function() {
-//     modal.className = 'nypl-popup-container active';
-//     //overlay.className = 'nypl-overlay active';
-// }
+openTheModal.onclick = function() {
+    modal.classList.add('active');
+    //overlay.className = 'nypl-overlay active';
+}
 
 // When the user clicks on the close button, close the modal
-// closeTheModal.onclick = function() {
-//     modal.className = 'nypl-popup-container inactive';
-//     //overlay.className = 'nypl-overlay inactive';
-// }
+closeTheModal.onclick = function() {
+    modal.classList.remove('active');
+    modal.classList.add('inactive');
+    //overlay.className = 'nypl-overlay inactive';
+}
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == overlay) {
-//         modal.className = 'nypl-popup-container inactive';
-//         //overlay.className = 'nypl-overlay active';
-//     }
-// }
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == overlay) {
+      modal.classList.remove('active');
+      modal.classList.add('inactive');
+        //overlay.className = 'nypl-overlay active';
+    }
+}
 </script>
 
 
@@ -670,65 +673,65 @@ Next</a>
 // https://www.youtube.com/watch?v=JS68faEUduk
 // and employs this: https://github.com/WICG/inert
 
-document.querySelector('#filterButton').addEventListener('click', openTheModal);
-
-
-var KEYCODE = {
-  ESC: 27
-};
-
-var modal = document.querySelector('.nypl-popup-container'); // container
-var filterMenu = document.querySelector('.nypl-popup-filter-menu'); // the filters themselves
-var modalOverlay = document.querySelector('.nypl-popup-filter-overlay'); // the overlay or masking
-var modalButton = document.querySelector('#closeModal'); // the close button
-var previousActiveElement;
-
-function openTheModal () {
-  // get a ref to the previousActiveElement
-  // we restore th is when the dialog is closed...
-
-  previousActiveElement = document.activeElement;
-  console.log(previousActiveElement);
-
-  Array.from(document.body.children).forEach(child => {
-    if (child !== modal)
-    child.inert = true;
-  });
-
-  // make the modal visible
-  modal.classList.remove('inactive');
-  modal.classList.add('active');
-
-  // listen for things to close the modal
-  modal.addEventListener('click', closeModal);
-  filterMenu.querySelector('#closeModal').addEventListener('click', closeModal);
-  document.addEventListener('keydown', checkCloseModal);
-
-  // move focus to the Fieldset legend
-  filterMenu.querySelector('#filter-title').focus();
-
-} // /openTheModal
-
-// ESC Key closes the Modal...
-function checkCloseModal(e) {
-  if (e.keycode === KEYCODE.ESC)
-  closeModal();
-}
-
-  function closeModal() {
-    // Clean up the event listeners...
-    modalOverlay.removeEventListener('click', closeModal);
-    modalButton.querySelector('#closeModal', closeModal);
-    document.removeEventListener('keydown', closeModal);
-
-    Array.from(document.body.children).forEach(child => {
-      if (child !== modal)
-      child.inert = false;
-    });
-
-    modal.classList.remove('active');
-    modal.classList.add('active');
-  } // /closeModal
+// document.querySelector('#filterButton').addEventListener('click', openTheModal);
+//
+//
+// var KEYCODE = {
+//   ESC: 27
+// };
+//
+// var modal = document.querySelector('.nypl-popup-container'); // container
+// var filterMenu = document.querySelector('.nypl-popup-filter-menu'); // the filters themselves
+// var modalOverlay = document.querySelector('.nypl-popup-filter-overlay'); // the overlay or masking
+// var modalButton = document.querySelector('#closeModal'); // the close button
+// var previousActiveElement;
+//
+// function openTheModal () {
+//   // get a ref to the previousActiveElement
+//   // we restore th is when the dialog is closed...
+//
+//   previousActiveElement = document.activeElement;
+//   console.log(previousActiveElement);
+//
+//   Array.from(document.body.children).forEach(child => {
+//     if (child !== modal)
+//     child.inert = true;
+//   });
+//
+//   // make the modal visible
+//   modal.classList.remove('inactive');
+//   modal.classList.add('active');
+//
+//   // listen for things to close the modal
+//   modal.addEventListener('click', closeModal);
+//   filterMenu.querySelector('#closeModal').addEventListener('click', closeModal);
+//   document.addEventListener('keydown', checkCloseModal);
+//
+//   // move focus to the Fieldset legend
+//   filterMenu.querySelector('#filter-title').focus();
+//
+// } // /openTheModal
+//
+// // ESC Key closes the Modal...
+// function checkCloseModal(e) {
+//   if (e.keycode === KEYCODE.ESC)
+//   closeModal();
+// }
+//
+//   function closeModal() {
+//     // Clean up the event listeners...
+//     modalOverlay.removeEventListener('click', closeModal);
+//     modalButton.querySelector('#closeModal', closeModal);
+//     document.removeEventListener('keydown', closeModal);
+//
+//     Array.from(document.body.children).forEach(child => {
+//       if (child !== modal)
+//       child.inert = false;
+//     });
+//
+//     modal.classList.remove('active');
+//     modal.classList.add('active');
+//   } // /closeModal
 
 
 </script>
