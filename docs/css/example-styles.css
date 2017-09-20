@@ -4340,8 +4340,6 @@ dl dd.multi-item-list .nypl-basic-table,
             outline-width: 0.125rem; }
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset .nypl-inner-fieldset:nth-child(4) {
         border: 0; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
-      padding-bottom: 1rem; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset {
       border: 0;
       border-bottom: 0.03125rem solid #9d9ea1;
@@ -4349,6 +4347,8 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset legend {
         font-size: 1.125rem;
         margin-top: 0.75rem; }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
+      padding-bottom: 1.125rem; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
       margin: 0; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {

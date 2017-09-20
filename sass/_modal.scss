@@ -50,10 +50,6 @@
         }
       }
 
-      .nypl-inner-fieldset-date {
-        padding-bottom: $general-padding;
-      }
-
       .nypl-inner-fieldset {
         border: 0;
         border-bottom: ($general-border-width * 0.25) solid lighten($nypl-gray-cool, 15%);
@@ -63,6 +59,10 @@
           font-size: 1.125rem;
           margin-top: 0.75rem;
         }
+      }
+
+      .nypl-inner-fieldset-date {
+        padding-bottom: ($general-padding * 1.125);
       }
 
       .nypl-name-field {
