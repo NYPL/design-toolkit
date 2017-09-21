@@ -542,7 +542,7 @@ Next</a>
             </fieldset>
             <fieldset class="nypl-inner-fieldset">
               <legend>Language</legend>
-              <ul class="nypl-generic-checkbox">
+              <ul class="nypl-generic-checkbox nypl-generic-columns">
                 <li>
                 <input id="english-language-filter" type="checkbox" name="language" value="English" />
                 <label for="english-language-filter">English</label>
@@ -572,8 +572,23 @@ Next</a>
                   <label for="language-filter-4">Language</label>
               </li>
               <li>
-                <input id="language-filter-5" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-5">Language</label>
+                <input id="language-filter-6" type="checkbox" name="language" value="Language" />
+                <label for="language-filter-6">Language</label>
+              </li>
+              <li>
+                <input id="language-filter-7" type="checkbox" name="language" value="Language" />
+                <label for="language-filter-7">Language</label>
+              </li>
+              <li>
+                <input id="language-filter-8" type="checkbox" name="language" value="Language" />
+                <label for="language-filter-8">Language</label>
+              </li>
+              <li>
+                <input id="language-filter-9" type="checkbox" name="language" value="Language" />
+                <label for="language-filter-9">Language</label>
+              </li><li>
+                <input id="language-filter-10" type="checkbox" name="language" value="Language" />
+                <label for="language-filter-10">Language</label>
               </li>
             </ul>
 
@@ -663,76 +678,6 @@ window.onclick = function(event) {
         //overlay.className = 'nypl-overlay active';
     }
 }
-</script>
-
-
-
-<script type="text/javascript">
-// Based on the A11YCast here:
-// https://www.youtube.com/watch?v=JS68faEUduk
-// and employs this: https://github.com/WICG/inert
-
-// document.querySelector('#filterButton').addEventListener('click', openTheModal);
-//
-//
-// var KEYCODE = {
-//   ESC: 27
-// };
-//
-// var modal = document.querySelector('.nypl-popup-container'); // container
-// var filterMenu = document.querySelector('.nypl-popup-filter-menu'); // the filters themselves
-// var modalOverlay = document.querySelector('.nypl-popup-filter-overlay'); // the overlay or masking
-// var modalButton = document.querySelector('#closeModal'); // the close button
-// var previousActiveElement;
-//
-// function openTheModal () {
-//   // get a ref to the previousActiveElement
-//   // we restore th is when the dialog is closed...
-//
-//   previousActiveElement = document.activeElement;
-//   console.log(previousActiveElement);
-//
-//   Array.from(document.body.children).forEach(child => {
-//     if (child !== modal)
-//     child.inert = true;
-//   });
-//
-//   // make the modal visible
-//   modal.classList.remove('inactive');
-//   modal.classList.add('active');
-//
-//   // listen for things to close the modal
-//   modal.addEventListener('click', closeModal);
-//   filterMenu.querySelector('#closeModal').addEventListener('click', closeModal);
-//   document.addEventListener('keydown', checkCloseModal);
-//
-//   // move focus to the Fieldset legend
-//   filterMenu.querySelector('#filter-title').focus();
-//
-// } // /openTheModal
-//
-// // ESC Key closes the Modal...
-// function checkCloseModal(e) {
-//   if (e.keycode === KEYCODE.ESC)
-//   closeModal();
-// }
-//
-//   function closeModal() {
-//     // Clean up the event listeners...
-//     modalOverlay.removeEventListener('click', closeModal);
-//     modalButton.querySelector('#closeModal', closeModal);
-//     document.removeEventListener('keydown', closeModal);
-//
-//     Array.from(document.body.children).forEach(child => {
-//       if (child !== modal)
-//       child.inert = false;
-//     });
-//
-//     modal.classList.remove('active');
-//     modal.classList.add('active');
-//   } // /closeModal
-
-
 </script>
 </body>
 </html>
