@@ -4348,6 +4348,10 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset legend {
         font-size: 1.125rem;
         margin-top: 0.75rem; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset .nypl-generic-checkbox.nypl-generic-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
       padding-bottom: 1.125rem; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
