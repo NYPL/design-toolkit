@@ -4335,13 +4335,14 @@ dl dd.multi-item-list .nypl-basic-table,
         display: block;
         margin-left: 3.125rem;
         width: 100%; }
-        @media (max-width: 965px) {
+        @media (max-width: 483px) {
           .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
-            margin-left: 1rem; } }
+            margin-left: 1.25rem; } }
         .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
-          margin-bottom: 0;
-          padding-left: 2rem;
-          padding-top: 0.5rem; }
+          margin-bottom: 0; }
+          @media (max-width: 483px) {
+            .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
+              padding-left: 0; } }
           .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3:focus {
             outline-color: #ffb81d;
             outline-style: solid;
@@ -4352,21 +4353,39 @@ dl dd.multi-item-list .nypl-basic-table,
       border: 0;
       border-bottom: 0.03125rem solid #9d9ea1;
       padding: 0 1rem 0 3.125rem; }
+      @media (max-width: 483px) {
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset {
+          padding-left: 1.25rem; } }
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset legend {
         font-size: 1.125rem;
         margin-top: 0.75rem; }
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset .nypl-generic-checkbox.nypl-generic-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2; }
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        max-width: 45rem; }
+        @media (max-width: 483px) {
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset .nypl-generic-checkbox.nypl-generic-columns {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2; } }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
       padding-bottom: 1.125rem; }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
       margin: 0; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
-      float: left;
-      margin-right: 1.125rem;
-      width: 25%; }
+      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
+        float: left;
+        margin-right: 1.125rem;
+        width: 25%; }
+        @media (max-width: 483px) {
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
+            width: 85%; } }
+    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button-container {
+      border-top: 0.03125rem solid #9d9ea1;
+      padding: 1rem 0 0 2rem; }
+      @media (max-width: 483px) {
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button-container {
+          padding-left: 1.125rem; } }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button {
       background-color: #fff;
       border: 0.04167rem solid #080807;
@@ -4434,6 +4453,10 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button .nypl-icon {
         position: relative;
         top: 0.15rem; }
+      @media (max-width: 483px) {
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button {
+          display: block;
+          margin: 0 0.5rem 1rem; } }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button {
       float: right;
       position: relative;
@@ -4441,7 +4464,16 @@ dl dd.multi-item-list .nypl-basic-table,
       top: -42.65rem; }
       @media (max-width: 483px) {
         .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button {
-          top: -46.5rem; } }
+          top: -47.25rem; }
+          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button span {
+            position: absolute;
+            width: 0.1rem;
+            height: 0.1rem;
+            margin: -0.1rem;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0; } }
   .nypl-popup-container.active .nypl-popup-filter-overlay {
     bottom: 0;
     left: 0;
