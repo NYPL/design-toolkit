@@ -4316,9 +4316,13 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-popup-container.active {
   display: block; }
   .nypl-popup-container.active .nypl-popup-filter-menu {
+    -webkit-box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
+    -moz-box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
+    box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
     background: #fff;
+    border-bottom: 0.125rem solid #d7d4d0;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 2101; }
@@ -4329,7 +4333,8 @@ dl dd.multi-item-list .nypl-basic-table,
       padding-right: 0; }
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
         display: block;
-        margin-left: 3.125rem; }
+        margin-left: 3.125rem;
+        width: 100%; }
         @media (max-width: 965px) {
           .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
             margin-left: 1rem; } }
@@ -4403,8 +4408,10 @@ dl dd.multi-item-list .nypl-basic-table,
       position: relative;
       margin-right: 1rem;
       top: -42.65rem; }
+      @media (max-width: 483px) {
+        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button {
+          top: -46.5rem; } }
   .nypl-popup-container.active .nypl-popup-filter-overlay {
-    background: white;
     bottom: 0;
     left: 0;
     position: fixed;

@@ -663,6 +663,7 @@ var closeTheModal = document.querySelector('#closeModal');
 
 // When the user clicks on the button, open the modal
 openTheModal.onclick = function() {
+    modal.classList.remove('inactive')
     modal.classList.add('active');
     //overlay.className = 'nypl-overlay active';
 }

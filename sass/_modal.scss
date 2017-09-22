@@ -1,6 +1,7 @@
 //
 // NYPL Search Results Filter Modal
 // TODO: Too much quick and dirty in here... needs clean up / refactoring
+// TODO: Separate the Modality of this from the specific useage of this particular filtering
 
 @mixin popup {
 
@@ -12,10 +13,12 @@
     display: block;
 
     .nypl-popup-filter-menu {
-
+      $shadow: 0 0.125rem 0.5rem 0.25rem transparentize($nypl-gray-brown, 0.75);
+      @include box-shadow($shadow);
       background: $nypl-white;
+      border-bottom: $general-border-width solid $nypl-light-gray;
       left: 0;
-      position: fixed;
+      position: absolute;
       top: 0;
       width: 100%;
       z-index: 2101;
@@ -29,6 +32,7 @@
         > legend:first-child {
           display: block;
           margin-left: ($general-margin * 3.125);
+          width: 100%;
 
             @include media($mobile-breakpoint) {
               margin-left: $general-margin;
@@ -94,12 +98,18 @@
         margin-right: $general-margin;
         top: -42.65rem;
 
-        // left: 5rem;
+        @include media($xtrasmall-breakpoint) {
+          top: -46.5rem;
+        }
+
+        // @include media($mobile-breakpoint) {
+        //   top: 44rem;
+        // }
       }
     }
 
     .nypl-popup-filter-overlay {
-      background: transparentize($nypl-white, 0);
+      //background: transparentize($nypl-white, 0);
       bottom: 0;
       left: 0;
       position: fixed;
