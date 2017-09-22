@@ -3,7 +3,7 @@
 # NYPL Digital Design Toolkit
 Design toolkit (SASS) for the NYPL Digital team
 
-## Version: 0.1.26.1
+## Version: 0.1.26.2
 
 ## [View documentation](http://nypl.github.io/design-toolkit/)
 

@@ -1,5 +1,8 @@
 ### Change Log
 
+### v0.1.26.2
+- CSS Columns added to filter modal
+
 ### v0.1.26.1
 - release candidate
 - Simple Modal for filtering. styles and js

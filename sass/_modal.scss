@@ -59,7 +59,12 @@
           font-size: 1.125rem;
           margin-top: 0.75rem;
         }
-      }
+
+        // where we have columns needed:
+        & .nypl-generic-checkbox.nypl-generic-columns {
+          @include generic-columns(2);
+        }
+      } // /.nypl-inner-fieldset
 
       .nypl-inner-fieldset-date {
         padding-bottom: ($general-padding * 1.125);
@@ -103,16 +108,4 @@
       z-index: 2100;
     }
   } // /.active
-
-  // .nypl-popup-menu {
-  //
-  //   &.active {
-  //     display: block;
-  //     z-index: 1000;
-  //   }
-  //
-  //   &.inactive {
-  //     display: none;
-  //   }
-  // }
 }

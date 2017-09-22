@@ -1,6 +1,6 @@
 {
   "name": "@nypl/design-toolkit",
-  "version": "0.1.26.1",
+  "version": "0.1.26.2",
   "description": "NYPL Design Toolkit",
   "author": "NYPL Digital",
   "contributors": [
@@ -19,6 +19,10 @@
     {
       "name": "Willa Armstrong",
       "email": "willaarmstrong@nypl.org"
+    },
+    {
+      "name": "Edwin Guzman",
+      "email": "edwinguzman@nypl.org"
     }
   ],
   "license": "MIT",
@@ -28,8 +32,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "node-sass": "3.8",
-    "wicg-inert": "^1.1.4"
+    "node-sass": "3.8"
   },
   "devDependencies": {
     "pa11y-ci": "~1.2.0"

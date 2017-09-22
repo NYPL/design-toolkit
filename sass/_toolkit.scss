@@ -453,3 +453,7 @@
 .nypl-popup-container {
   @include popup;
 }
+
+.nypl-generic-columns {
+  @include generic-columns;
+}

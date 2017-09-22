@@ -88,3 +88,15 @@
   filter: unquote('alpha(opacity=' + ($trans * 100) + ')'); // IE6 to IE8
   opacity: $trans;
 }
+
+//
+// Create generic Columns for a layout
+//
+@mixin generic-columns(
+  $column-count: null,
+  $column-width: null
+) {
+  -webkit-column-count: $column-count $column-width;
+  -moz-column-count: $column-count $column-width;
+  column-count: $column-count $column-width;
+}
