@@ -4393,12 +4393,10 @@ dl dd.multi-item-list .nypl-basic-table,
           padding-left: 1.125rem; } }
     @media (max-width: 965px) {
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-control-buttons {
-        background: #afc269;
         height: 2.5rem;
         width: 20.5rem; } }
     @media (max-width: 483px) {
       .nypl-popup-container.active .nypl-popup-filter-menu .nypl-control-buttons {
-        background: #73c7e8;
         height: 5.5rem;
         width: 9.5rem; } }
     .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button {

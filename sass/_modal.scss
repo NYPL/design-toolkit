@@ -140,13 +140,11 @@
 
       .nypl-control-buttons {
         @include media($mobile-breakpoint) {
-          background: $nypl-green-tint;
           height: 2.5rem;
           width: 20.5rem;
         }
 
         @include media($xtrasmall-breakpoint) {
-          background: $nypl-light-blue;
           height: 5.5rem;
           width: 9.5rem;
         }
