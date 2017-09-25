@@ -121,7 +121,9 @@
     @if $collapsible == true {
       // has nypl-icon with down arrow
       .nypl-icon {
-        @include nypl-icon($fill: $the-text-color, $background-color: $the-background-color);
+        @include nypl-icon(
+        $fill: $the-text-color,
+        $background-color: $the-background-color);
       }
     }
 
@@ -305,7 +307,7 @@
   }
 }
 
-// TODO: A better method for combinging buttons & icons needs to be developed.
+// TODO: A better method for combining buttons & icons needs to be developed.
 
 @mixin basic-button-icon($button-icon: true) {
   @include basic-button(
