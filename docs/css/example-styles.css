@@ -2487,8 +2487,10 @@ dl dd.multi-item-list .nypl-basic-table,
   opacity: 0; }
 .nypl-generic-checkbox label {
   display: inline-block;
+  line-height: 1.2;
   position: relative;
-  padding-left: 1.75rem; }
+  padding-left: 1.75rem;
+  width: 65%; }
 .nypl-generic-checkbox label::after,
 .nypl-generic-checkbox label::before {
   content: "";
@@ -4338,11 +4340,13 @@ dl dd.multi-item-list .nypl-basic-table,
     -moz-box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
     box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
     background: #fefefe;
+    bottom: 0;
     display: block;
     left: 0;
-    height: 95%;
+    height: 100%;
     overflow: scroll;
     position: fixed;
+    right: 0;
     top: 0;
     width: 100%;
     z-index: 1001;
@@ -4376,13 +4380,36 @@ dl dd.multi-item-list .nypl-basic-table,
           border: 0; } }
 
 .nypl-modal-filter-form .inner {
-  padding: 0 1rem 0 3.125rem; }
+  border-bottom: 0.125rem solid #d7d4d0;
+  padding: 0 3.125rem; }
+  .nypl-modal-filter-form .inner:nth-child(4), .nypl-modal-filter-form .inner:nth-child(5) {
+    border-bottom: 0; }
   @media (max-width: 483px) {
     .nypl-modal-filter-form .inner {
       padding-left: 1rem; } }
   .nypl-modal-filter-form .inner legend {
     font-size: 1.125rem;
     margin-top: 0.75rem; }
+  .nypl-modal-filter-form .inner .nypl-filter-date-field > label {
+    display: inline-block;
+    max-width: calc(50% - 5.125rem); }
+    @media (max-width: 483px) {
+      .nypl-modal-filter-form .inner .nypl-filter-date-field > label {
+        display: block;
+        max-width: 100%;
+        width: 100%; } }
+  .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
+    height: 2rem;
+    position: relative;
+    width: 2rem;
+    top: 0.5rem; }
+    @media (max-width: 483px) {
+      .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
+        display: none;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 0; } }
   .nypl-modal-filter-form .inner .nypl-generic-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;

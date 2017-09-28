@@ -525,20 +525,21 @@ Next</a>
             </ul>
             </fieldset><!-- /Format -->
 
-            <fieldset class="nypl-fieldset nypl-inner-fieldset-date inner">
+            <fieldset class="nypl-fieldset inner">
               <legend>Date</legend>
-              <div class="nypl-name-field">
-              <div>
+
+              <div class="nypl-name-field nypl-filter-date-field">
                 <label for="start-date">Start Year
                   <input id="start-date" type="number" min="1895" max="9999" step="1" name="start-date" class="form-text" />
                 </label>
-              </div>
-              <div>
+                <svg viewBox="0 0 98 98" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="dash" role="img">
+                  <title id="dash">dash.icon</title>
+                  <polygon points="72.996 54.95 25.002 54.95 25.003 45.991 72.994 46.011 72.996 54.95"/>
+                </svg>
                 <label for="end-date">End Year
                   <input id="end-date" type="number" min="1895" max="9999" step="1" name="end-date" />
                 </label>
               </div>
-            </div>
             </fieldset>
 
             <fieldset class="nypl-fieldset inner">
@@ -546,19 +547,19 @@ Next</a>
               <ul class="nypl-generic-checkbox nypl-generic-columns">
                 <li>
                   <input id="english-language-filter" type="checkbox" name="language" value="English" />
-                  <label for="english-language-filter">English</label>
+                  <label for="english-language-filter">English (40)</label>
                 </li>
                 <li>
                   <input id="spanish-language-filter" type="checkbox" name="language" value="Spanish" />
-                  <label for="spanish-language-filter">Spanish</label>
+                  <label for="spanish-language-filter">Spanish (5)</label>
                 </li>
                 <li>
                     <input id="language-filter-0" type="checkbox" name="language" value="Language" />
-                    <label for="language-filter-0">Language</label>
+                    <label for="language-filter-0">Language (1)</label>
                 </li>
                 <li>
                   <input id="language-filter-1" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-1">Language</label>
+                  <label for="language-filter-1">Language (90)</label>
                 </li>
                 <li>
                     <input id="language-filter-2" type="checkbox" name="language" value="Language" />
@@ -566,7 +567,7 @@ Next</a>
                 </li>
                 <li>
                     <input id="language-filter-3" type="checkbox" name="language" value="Language" />
-                    <label for="language-filter-3">Language</label>
+                    <label for="language-filter-3">Language (100)</label>
                 </li>
                 <li>
                     <input id="language-filter-4" type="checkbox" name="language" value="Language" />
@@ -574,7 +575,7 @@ Next</a>
                 </li>
                 <li>
                   <input id="language-filter-5" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-5">Language</label>
+                  <label for="language-filter-5">Language (1000)</label>
                 </li>
                 <li>
                   <input id="language-filter-6" type="checkbox" name="language" value="Language" />
@@ -594,7 +595,7 @@ Next</a>
                 </li>
                 <li>
                   <input id="language-filter-10" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-10">Language</label>
+                  <label for="language-filter-10">South American Indian (Other) (1)</label>
                 </li>
               </ul>
             </fieldset>

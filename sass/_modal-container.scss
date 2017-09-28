@@ -35,11 +35,13 @@
     .nypl-modal-content {
       @include box-shadow($shadow);
       background: darken($nypl-white, 0.2);
+      bottom: 0;
       display: block;
       left: 0;
-      height: 95%;
+      height: 100%;
       overflow: scroll;
       position: fixed;
+      right: 0;
       top: 0;
       width: 100%;
       z-index: 1001;
