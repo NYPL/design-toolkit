@@ -2015,7 +2015,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-text-field input[type=text].active,
     .nypl-text-field input[type=email].active,
     .nypl-text-field input[type=date].active,
@@ -2082,7 +2083,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-year-field input[type=text].active,
     .nypl-year-field input[type=email].active,
     .nypl-year-field input[type=date].active,
@@ -2127,7 +2129,8 @@ dl dd.multi-item-list .nypl-basic-table,
   padding: 0.5rem 0;
   text-indent: 0.5rem;
   transition: all 0.2s ease-out;
-  width: 100%; }
+  width: 100%;
+  -webkit-appearance: none; }
   .nypl-text-field-with-label input[type=text].active,
   .nypl-text-field-with-label input[type=email].active,
   .nypl-text-field-with-label input[type=date].active,
@@ -2200,7 +2203,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-name-field input[type=text].active,
     .nypl-name-field input[type=email].active,
     .nypl-name-field input[type=date].active,
@@ -2283,7 +2287,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-address-fieldset input[type=text].active,
     .nypl-address-fieldset input[type=email].active,
     .nypl-address-fieldset input[type=date].active,
@@ -2362,7 +2367,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-date-field input[type=text].active,
     .nypl-date-field input[type=email].active,
     .nypl-date-field input[type=date].active,
@@ -2902,7 +2908,8 @@ dl dd.multi-item-list .nypl-basic-table,
       padding: 0.5rem 0;
       text-indent: 0.5rem;
       transition: all 0.2s ease-out;
-      width: 100%; }
+      width: 100%;
+      -webkit-appearance: none; }
       .nypl-searchable-field .nypl-facet-search input[type=text].active,
       .nypl-searchable-field .nypl-facet-search input[type=email].active,
       .nypl-searchable-field .nypl-facet-search input[type=date].active,
@@ -4439,7 +4446,8 @@ dl dd.multi-item-list .nypl-basic-table,
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  margin-top: 1rem; }
   .nypl-modal-filter-form .nypl-filter-button .nypl-icon {
     background-color: #fff;
     border-radius: 0;
@@ -4490,8 +4498,7 @@ dl dd.multi-item-list .nypl-basic-table,
     top: 0.15rem; }
   @media (max-width: 483px) {
     .nypl-modal-filter-form .nypl-filter-button {
-      clear: both;
-      margin-top: 1rem; }
+      clear: both; }
       .nypl-modal-filter-form .nypl-filter-button::before, .nypl-modal-filter-form .nypl-filter-button::after {
         content: "";
         display: table; }

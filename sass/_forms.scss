@@ -72,7 +72,8 @@ $form-padding: 0.5rem;
 
 //
 // Base input field
-//   from which all others are constructed
+// from which all others are constructed
+//
 
 @mixin input(
     $background-color: $page-background-color,
@@ -94,6 +95,7 @@ $form-padding: 0.5rem;
   text-indent: $form-padding;
   transition: all 0.2s ease-out;
   width: 100%;
+  -webkit-appearance: none;
 
   &.active {
     width: 16rem;
@@ -105,7 +107,7 @@ $form-padding: 0.5rem;
     color: $page-color;
     outline: none;
   }
-}
+} // /text
 
 @mixin text-field-with-label {
   label {
@@ -131,8 +133,13 @@ $form-padding: 0.5rem;
     line-height: 1.5;
     padding-top: $form-padding;
   }
-}
+} // /text-field-with-label
 
+
+
+//
+// Error states for input fields
+//
 @mixin field-error {
   background: $page-background-color;
 
@@ -792,11 +799,12 @@ $form-padding: 0.5rem;
   .nypl-filter-button {
     @include basic-button-icon;
     margin-right: $general-margin;
+    margin-top: $general-margin;
 
     @include media($xtrasmall-breakpoint) {
       @include clearfix;
       clear: both;
-      margin-top: $general-margin;
+      // margin-top: $general-margin;
     }
   }
 } // /.nypl-modal-filter-form

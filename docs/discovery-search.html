@@ -617,9 +617,13 @@ Next</a>
                 <title title="reset">reset.icon</title>
                 <path d="M14.30581,12.04054,25.36758,4.37413A2.4,2.4,0,0,0,22.63242.4296L2.25352,14.553,23.45977,29.54835a2.39954,2.39954,0,1,0,2.77031-3.91875L13.80146,16.84054H43.2v19.2H2.4a2.4,2.4,0,1,0,0,4.8H48v-28.8Z"/>
                 </svg>
-                <span>Reset Filters</span>
+                <span>Clear Filters</span>
               </button>
-              <button class="nypl-filter-button" type="button" name="button">
+              <button id="cancelFiltering" class="nypl-filter-button" type="button" name="button">
+                <svg viewBox="0 0 32 32" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="close">
+                  <title id="close">x.close.icon</title>
+                  <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
+                </svg>
                 <span>Cancel</span>
               </button>
             </div>
@@ -656,6 +660,9 @@ var openTheModal = document.querySelector('#filterButton');
 // Get the element that closes the modal
 var closeTheModal = document.querySelector('#closeModal');
 
+// Get the cancel button that closes the modal
+var cancelTheModal = document.querySelector('#cancelFiltering');
+
 // When the user clicks on the button, open the modal
 openTheModal.onclick = function() {
     modal.classList.remove('inactive')
@@ -664,10 +671,15 @@ openTheModal.onclick = function() {
 }
 
 // When the user clicks on the close button, close the modal
+cancelTheModal.onclick = function() {
+    modal.classList.remove('active');
+    modal.classList.add('inactive');
+}
+
+// When the user clicks on the close button, close the modal
 closeTheModal.onclick = function() {
     modal.classList.remove('active');
     modal.classList.add('inactive');
-    //overlay.className = 'nypl-overlay inactive';
 }
 
 //When the user clicks anywhere outside of the modal, close it
