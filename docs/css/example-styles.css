@@ -2490,7 +2490,7 @@ dl dd.multi-item-list .nypl-basic-table,
   line-height: 1.2;
   position: relative;
   padding-left: 1.75rem;
-  width: 65%; }
+  width: 60%; }
 .nypl-generic-checkbox label::after,
 .nypl-generic-checkbox label::before {
   content: "";
