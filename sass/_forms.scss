@@ -711,11 +711,14 @@ $form-padding: 0.5rem;
 //
 // Filtering Styles for Modals w/ complex filtering controls
 //
-.nypl-modal-filter-form {
+@mixin modal-filter-form {
 
   .inner {
-    // background: $nypl-blue-tint;
     padding: 0 $general-padding 0 ($general-padding * 3.125);
+
+    @include media($xtrasmall-breakpoint) {
+      padding-left: $general-padding;
+    }
 
     legend {
       font-size: 1.125rem;
@@ -723,30 +726,27 @@ $form-padding: 0.5rem;
     }
 
     .nypl-generic-columns {
-
       @include generic-columns(3);
-
       max-width: 100%;
 
-      // @include media($xtrasmall-breakpoint) {
-      //   background: $nypl-blue-tint;
-      //   //@include generic-columns(2);
-      //  } // /$xtrasmall-breakpoint
+      @include media($xtrasmall-breakpoint) {
+        @include generic-columns(2);
+       } // /$xtrasmall-breakpoint
       } // /.nypl-generic-columns
     } // /.inner
 
 
   .nypl-filter-button {
     @include basic-button-icon;
+    margin-right: $general-margin;
+
+    @include media($xtrasmall-breakpoint) {
+      @include clearfix;
+      clear: both;
+      margin-top: $general-margin;
+    }
   }
 } // /.nypl-modal-filter-form
-
-@mixin modal-filter-form {
-  @include media($mobile-breakpoint) {
-    background: $nypl-red;
-  }
-}
-
 
 
 // TODO: Move this to a more sensible location. Preferably at the top

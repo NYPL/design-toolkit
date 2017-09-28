@@ -48,6 +48,10 @@
       h3 {
         margin-bottom: 0;
         margin-left: ($general-margin * 3.125);
+
+        @include media($xtrasmall-breakpoint) {
+          margin-left: $general-margin;
+        }
       }
     } // /.nypl-modal-content
 

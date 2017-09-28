@@ -227,6 +227,7 @@ $sorter-width: 11em;
 @mixin results-sorter {
   display: inline-block;
   float: left;
+  margin-right: ($general-margin * 1.5);
   position: relative;
 
   @include submission(visible) {
@@ -288,8 +289,11 @@ $sorter-width: 11em;
 
 @mixin filter-button {
   float: left;
-  margin-left: 1.5rem;
   position: relative;
+
+  @include media($xtrasmall-breakpoint) {
+    @include clearfix;
+  }
 }
 
 @mixin item-definition-list(

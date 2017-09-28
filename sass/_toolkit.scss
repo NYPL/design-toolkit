@@ -460,7 +460,12 @@
 .nypl-basic-modal-container {
   @include basic-modal;
 }
-
+//
+// Filtering context
+//
+.nypl-modal-filter-form {
+  @include modal-filter-form;
+}
 
 // Text Columns
 .nypl-generic-columns {
