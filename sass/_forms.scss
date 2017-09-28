@@ -723,16 +723,16 @@ $form-padding: 0.5rem;
     }
 
     .nypl-generic-columns {
-      background: $nypl-light-gray;
+
       @include generic-columns(3);
+
       max-width: 100%;
 
       // @include media($xtrasmall-breakpoint) {
       //   background: $nypl-blue-tint;
       //   //@include generic-columns(2);
       //  } // /$xtrasmall-breakpoint
-    } // /.nypl-generic-columns
-
+      } // /.nypl-generic-columns
     } // /.inner
 
 
@@ -741,16 +741,13 @@ $form-padding: 0.5rem;
   }
 } // /.nypl-modal-filter-form
 
+@mixin modal-filter-form {
+  @include media($mobile-breakpoint) {
+    background: $nypl-red;
+  }
+}
+
 
 
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";
-
-@mixin the-thing {
-  background: red;
-  width: 100%;
-
-  @include media($xtrasmall-breakpoint) {
-    background: blue;
-  }
-}

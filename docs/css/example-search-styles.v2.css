@@ -414,7 +414,6 @@ textarea:focus {
     font-size: 1.125rem;
     margin-top: 0.75rem; }
   .nypl-modal-filter-form .inner .nypl-generic-columns {
-    background: #d7d4d0;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -663,7 +662,6 @@ textarea:focus {
     font-size: 1.125rem;
     margin-top: 0.75rem; }
   .nypl-modal-filter-form .inner .nypl-generic-columns {
-    background: #d7d4d0;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
