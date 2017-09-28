@@ -54,6 +54,7 @@
   text-decoration: none;
   text-transform: $text-transform;
   white-space: nowrap;
+  -webkit-appearance: none;
   @content;
 
   @include transition(all, $hover-time, ease-in);
@@ -242,14 +243,24 @@
 }
 
 @mixin login-button($collapsible: false) {
-  @include basic-button($font-size: 0.7rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5rem, $collapsible: $collapsible, $border-width: 0);
+  @include basic-button(
+    $font-size: 0.7rem,
+    $text-color: $nypl-white,
+    $background-color: $nypl-gray,
+    $padding-vertical: 0,
+    $padding-horizontal: 0.5rem,
+    $collapsible: $collapsible,
+    $border-width: 0);
   border-radius: 0;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-@mixin menu-button($attachment: "left", $text-color: $button-text-color, $background-color: $nypl-search-color-dark) {
+@mixin menu-button(
+    $attachment: "left",
+    $text-color: $button-text-color,
+    $background-color: $nypl-search-color-dark) {
   display: inline-block;
   position: relative;
 
@@ -311,13 +322,13 @@
 
 @mixin basic-button-icon($button-icon: true) {
   @include basic-button(
-  $background-color: $nypl-white,
-  $border-color: $nypl-dark-gray,
+  $background-color: $nypl-red,
+  $border-color: $nypl-red,
   $border-radius: 0.25rem,
   $button-icon: true,
-  $hover-text-color: $nypl-white,
-  $hover-background-color: $nypl-dark-gray,
-  $text-color: $nypl-dark-gray
+  $hover-text-color: $nypl-red,
+  $hover-background-color: $nypl-white,
+  $text-color: $nypl-white
   );
   // We set the icon's position here and not on the general mixin since we are using a specific icon [x]
   .nypl-icon {
@@ -363,6 +374,7 @@
     $text-color: $nypl-dark-gray) {
     height: $short-button-height;
     padding-right: 0.5rem;
+    -webkit-appearance: none !important;
   }
 
   .nypl-icon {

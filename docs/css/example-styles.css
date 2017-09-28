@@ -720,6 +720,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -1153,10 +1154,10 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none; }
 
 .nypl-unset-filter {
-  background-color: #fff;
-  border: 0.04167rem solid #080807;
+  background-color: #d0343a;
+  border: 0.04167rem solid #d0343a;
   border-radius: 0.25rem;
-  color: #080807;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -1167,15 +1168,16 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .nypl-unset-filter .nypl-icon {
-    background-color: #fff;
+    background-color: #d0343a;
     border-radius: 0;
     display: inline-block;
-    fill: #080807;
+    fill: #fff;
     height: 1em;
     width: 1em;
     speak: none;
@@ -1187,16 +1189,16 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: inherit;
       fill: #fff; }
   .nypl-unset-filter:link, .nypl-unset-filter:visited {
-    color: #080807; }
-  .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
-    border-color: #fff;
-    background-color: #080807;
     color: #fff; }
+  .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
+    border-color: #d0343a;
+    background-color: #fff;
+    color: #d0343a; }
     .nypl-unset-filter:hover .nypl-icon, .nypl-unset-filter:hover:visited .nypl-icon, .nypl-unset-filter.active .nypl-icon {
-      background-color: #080807;
+      background-color: #fff;
       border-radius: 0;
       display: inline-block;
-      fill: #fff;
+      fill: #d0343a;
       height: "";
       width: "";
       speak: none; }
@@ -1210,12 +1212,12 @@ dl dd.multi-item-list .nypl-basic-table,
     outline: none; }
   .nypl-unset-filter.disabled, .nypl-unset-filter[disabled="disabled"], .nypl-unset-filter[disabled="true"], .nypl-unset-filter[disabled], .nypl-unset-filter[disabled=true] {
     background-color: #d7d4d0;
-    border-color: #080807;
+    border-color: #fff;
     cursor: default; }
     .nypl-unset-filter.disabled:hover, .nypl-unset-filter[disabled="disabled"]:hover, .nypl-unset-filter[disabled="true"]:hover, .nypl-unset-filter[disabled]:hover, .nypl-unset-filter[disabled=true]:hover {
       background-color: #d7d4d0;
-      border-color: #080807;
-      color: #080807; }
+      border-color: #fff;
+      color: #fff; }
   .nypl-unset-filter .nypl-icon {
     position: relative;
     top: 0.15rem; }
@@ -1234,8 +1236,10 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   height: 2.1rem;
   padding-right: 0.5rem;
+  -webkit-appearance: none !important;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1305,6 +1309,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1375,6 +1380,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1414,6 +1420,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1459,6 +1466,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1502,6 +1510,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1562,6 +1571,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1607,6 +1617,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1653,6 +1664,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -1738,6 +1750,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -1823,6 +1836,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -2998,6 +3012,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -3726,6 +3741,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -3888,6 +3904,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4428,10 +4445,10 @@ dl dd.multi-item-list .nypl-basic-table,
         -moz-column-count: 2;
         column-count: 2; } }
 .nypl-modal-filter-form .nypl-filter-button {
-  background-color: #fff;
-  border: 0.04167rem solid #080807;
+  background-color: #d0343a;
+  border: 0.04167rem solid #d0343a;
   border-radius: 0.25rem;
-  color: #080807;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -4442,6 +4459,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -4449,10 +4467,10 @@ dl dd.multi-item-list .nypl-basic-table,
   margin-right: 1rem;
   margin-top: 1rem; }
   .nypl-modal-filter-form .nypl-filter-button .nypl-icon {
-    background-color: #fff;
+    background-color: #d0343a;
     border-radius: 0;
     display: inline-block;
-    fill: #080807;
+    fill: #fff;
     height: 1em;
     width: 1em;
     speak: none;
@@ -4464,16 +4482,16 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: inherit;
       fill: #fff; }
   .nypl-modal-filter-form .nypl-filter-button:link, .nypl-modal-filter-form .nypl-filter-button:visited {
-    color: #080807; }
-  .nypl-modal-filter-form .nypl-filter-button:hover, .nypl-modal-filter-form .nypl-filter-button:hover:visited, .nypl-modal-filter-form .nypl-filter-button.active {
-    border-color: #fff;
-    background-color: #080807;
     color: #fff; }
+  .nypl-modal-filter-form .nypl-filter-button:hover, .nypl-modal-filter-form .nypl-filter-button:hover:visited, .nypl-modal-filter-form .nypl-filter-button.active {
+    border-color: #d0343a;
+    background-color: #fff;
+    color: #d0343a; }
     .nypl-modal-filter-form .nypl-filter-button:hover .nypl-icon, .nypl-modal-filter-form .nypl-filter-button:hover:visited .nypl-icon, .nypl-modal-filter-form .nypl-filter-button.active .nypl-icon {
-      background-color: #080807;
+      background-color: #fff;
       border-radius: 0;
       display: inline-block;
-      fill: #fff;
+      fill: #d0343a;
       height: "";
       width: "";
       speak: none; }
@@ -4487,12 +4505,12 @@ dl dd.multi-item-list .nypl-basic-table,
     outline: none; }
   .nypl-modal-filter-form .nypl-filter-button.disabled, .nypl-modal-filter-form .nypl-filter-button[disabled="disabled"], .nypl-modal-filter-form .nypl-filter-button[disabled="true"], .nypl-modal-filter-form .nypl-filter-button[disabled], .nypl-modal-filter-form .nypl-filter-button[disabled=true] {
     background-color: #d7d4d0;
-    border-color: #080807;
+    border-color: #fff;
     cursor: default; }
     .nypl-modal-filter-form .nypl-filter-button.disabled:hover, .nypl-modal-filter-form .nypl-filter-button[disabled="disabled"]:hover, .nypl-modal-filter-form .nypl-filter-button[disabled="true"]:hover, .nypl-modal-filter-form .nypl-filter-button[disabled]:hover, .nypl-modal-filter-form .nypl-filter-button[disabled=true]:hover {
       background-color: #d7d4d0;
-      border-color: #080807;
-      color: #080807; }
+      border-color: #fff;
+      color: #fff; }
   .nypl-modal-filter-form .nypl-filter-button .nypl-icon {
     position: relative;
     top: 0.15rem; }
@@ -4692,6 +4710,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4736,6 +4755,7 @@ dl dd.multi-item-list .nypl-basic-table,
       text-decoration: none;
       text-transform: none;
       white-space: nowrap;
+      -webkit-appearance: none;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -4780,6 +4800,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4865,6 +4886,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4928,6 +4950,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -5014,6 +5037,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -5136,6 +5160,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
