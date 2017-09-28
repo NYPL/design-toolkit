@@ -16,7 +16,8 @@
 @import "holds-table";
 @import "buttons";
 @import "pager";
-@import "modal";
+// @import "modal";
+@import "modal-container";
 
 .hidden { // hacky
   display: none;
@@ -450,10 +451,18 @@
   @include views-table;
 }
 
-.nypl-popup-container {
-  @include popup;
+
+// Modals & Overlays
+// .nypl-popup-container {
+//   @include popup;
+// }
+
+.nypl-basic-modal-container {
+  @include basic-modal;
 }
 
+
+// Text Columns
 .nypl-generic-columns {
   @include generic-columns;
 }

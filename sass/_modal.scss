@@ -10,7 +10,14 @@
   }
 
   &.active {
+    background: transparentize($nypl-white, 0.2);
     display: block;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2101;
 
     .nypl-popup-filter-menu {
       $shadow: 0 0.125rem 0.5rem 0.25rem transparentize($nypl-gray-brown, 0.75);
@@ -18,10 +25,10 @@
       background: $nypl-white;
       border-bottom: $general-border-width solid $nypl-light-gray;
       left: 0;
-      position: absolute;
+      //position: absolute;
       top: 0;
       width: 100%;
-      z-index: 2101;
+
 
       @include media($xtrasmall-breakpoint) {
         padding-top: ($general-padding * 1.5);
@@ -175,18 +182,21 @@
       } // /.nypl-filter-button
 
       .nypl-x-close-button {
-        float: right;
+        display: block;
+        // float: right;
         position: relative;
-        margin-right: $general-margin;
-        bottom: 43rem;
+        margin-left: calc(93% - 5rem);
+        // margin-right: $general-margin;
+        // bottom: 43rem;
+        top: -43rem;
 
-        @include media($mobile-breakpoint) {
-          bottom: 43.5rem;
-        }
+        // @include media($mobile-breakpoint) {
+        //   bottom: 43.5rem;
+        // }
 
         @include media($xtrasmall-breakpoint) {
-          bottom: 51.75rem;
-          right: 1.25rem;
+          // bottom: 51.75rem;
+          // right: 1.25rem;
 
           span {
             @include screenreader-only;
@@ -195,14 +205,14 @@
       } // /.nypl-x-close-button
     }
 
-    .nypl-popup-filter-overlay {
-      //background: transparentize($nypl-white, 0);
-      bottom: 0;
-      left: 0;
-      position: fixed;
-      right: 0;
-      top: 0;
-      z-index: 2100;
-    }
+    // .nypl-popup-filter-overlay {
+    //   //background: transparentize($nypl-white, 0);
+    //   bottom: 0;
+    //   left: 0;
+    //   position: fixed;
+    //   right: 0;
+    //   top: 0;
+    //   z-index: 2100;
+    // }
   } // /.active
 } // /@mixin popup

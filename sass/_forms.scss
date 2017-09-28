@@ -29,8 +29,10 @@ $form-padding: 0.5rem;
   margin-bottom: $margin-bottom;
 }
 
+
+
 //
-// A basic Fielset mixin
+// A basic Fieldset mixin
 //  Lots of arguments can be set to modify the end result based on it context
 //
 
@@ -64,12 +66,14 @@ $form-padding: 0.5rem;
   legend h3 {
     margin: 0;
   }
-}
+} // /mixin fieldset
+
+
 
 //
 // Base input field
 //   from which all others are constructed
-//
+
 @mixin input(
     $background-color: $page-background-color,
     $border-radius: ($general-border-radius * 1.25),
@@ -181,7 +185,7 @@ $form-padding: 0.5rem;
       }
     }
   }
-}
+} // /name-field
 
 @mixin address-fieldset {
   @include fieldset;
@@ -631,6 +635,9 @@ $form-padding: 0.5rem;
   }
 }
 
+//
+// Basic Text Area
+//
 @mixin text-area(
   $border-color: $nypl-dark-gray,
   $border-width: ($general-border-width / 3),
@@ -640,6 +647,7 @@ $form-padding: 0.5rem;
   height: $height;
   width: $width;
 }
+
 
 //
 // Request form(s)
@@ -698,5 +706,51 @@ $form-padding: 0.5rem;
   font-weight: $font-weight;
 } // /request-form-title
 
+
+
+//
+// Filtering Styles for Modals w/ complex filtering controls
+//
+.nypl-modal-filter-form {
+
+  .inner {
+    // background: $nypl-blue-tint;
+    padding: 0 $general-padding 0 ($general-padding * 3.125);
+
+    legend {
+      font-size: 1.125rem;
+      margin-top: 0.75rem;
+    }
+
+    .nypl-generic-columns {
+      background: $nypl-light-gray;
+      @include generic-columns(3);
+      max-width: 100%;
+
+      // @include media($xtrasmall-breakpoint) {
+      //   background: $nypl-blue-tint;
+      //   //@include generic-columns(2);
+      //  } // /$xtrasmall-breakpoint
+    } // /.nypl-generic-columns
+
+    } // /.inner
+
+
+  .nypl-filter-button {
+    @include basic-button-icon;
+  }
+} // /.nypl-modal-filter-form
+
+
+
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";
+
+@mixin the-thing {
+  background: red;
+  width: 100%;
+
+  @include media($xtrasmall-breakpoint) {
+    background: blue;
+  }
+}
