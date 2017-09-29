@@ -208,7 +208,7 @@ description: Formats for specific information such as library hours, room locati
   </code></pre>
 
 <h3 id="modalsPopups">Simple Modal</h3>
-<p>In the case where a modal is required where a user interaction such as a button or link click by the user.</p>
+<p>Modal patterns should be used sparingly and with great care. </p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
   <button id="filterButton" class="nypl-primary-button" type="button" name="button">
@@ -252,6 +252,50 @@ description: Formats for specific information such as library hours, room locati
 &lt;/div&gt;
 &lt;div class=&quot;nypl-modal-underlay&quot;&gt;&lt;/div&gt;
   </code></pre>
+  <pre><code class="js">
+    // Basic JS Modal
+    // Get the Underlay
+    var underlay = document.querySelector('.nypl-modal-underlay');
+
+    // Get the modal contents
+    var modal = document.querySelector('.nypl-basic-modal-container');
+    // Get the button that opens the modal
+    var openTheModal = document.querySelector('#filterButton');
+
+    // Get the element that closes the modal
+    var closeTheModal = document.querySelector('#closeModal');
+
+    // Get the cancel button that closes the modal
+    var cancelTheModal = document.querySelector('#cancelFiltering');
+
+    // When the user clicks on the button, open the modal
+    openTheModal.onclick = function() {
+        modal.classList.remove('inactive')
+        modal.classList.add('active');
+        //overlay.className = 'nypl-overlay active';
+    }
+
+    // // When the user clicks on the cancel link or button, close the modal
+    // cancelTheModal.onclick = function() {
+    //     modal.classList.remove('active');
+    //     modal.classList.add('inactive');
+    // }
+
+    // When the user clicks on the close button, close the modal
+    closeTheModal.onclick = function() {
+        modal.classList.remove('active');
+        modal.classList.add('inactive');
+    }
+
+    //When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == underlay) {
+          modal.classList.remove('active');
+          modal.classList.add('inactive');
+            //overlay.className = 'nypl-overlay active';
+        }
+    }
+  </code></pre>
 </div><!-- /.toolkit-example -->
 
 <script type="text/javascript">
@@ -277,7 +321,7 @@ openTheModal.onclick = function() {
     //overlay.className = 'nypl-overlay active';
 }
 
-// // When the user clicks on the close button, close the modal
+// // When the user clicks on the cancel link or button, close the modal
 // cancelTheModal.onclick = function() {
 //     modal.classList.remove('active');
 //     modal.classList.add('inactive');
