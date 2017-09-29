@@ -659,10 +659,13 @@ Next</a>
 
 // Basic JS Modal Werks
 // Get the Underlay
+(function() {
+// Get the underlay
 var underlay = document.querySelector('.nypl-modal-underlay');
 
 // Get the modal contents
 var modal = document.querySelector('.nypl-basic-modal-container');
+
 // Get the button that opens the modal
 var openTheModal = document.querySelector('#filterButton');
 
@@ -699,6 +702,10 @@ window.onclick = function(event) {
         //overlay.className = 'nypl-overlay active';
     }
 }
+
+
+
+})();
 </script>
 </body>
 </html>
