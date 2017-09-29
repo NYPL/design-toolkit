@@ -196,7 +196,7 @@ h1 {
     .toolkit .nypl-toolkit-header h2 + span {
       color: #135772;
       font-style: italic; }
-.toolkit .main-page h3::before {
+.toolkit .main-page h3.top-level-header::before {
   background: #135772;
   content: "";
   display: block;
