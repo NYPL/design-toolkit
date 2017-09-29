@@ -206,3 +206,139 @@ description: Formats for specific information such as library hours, room locati
   <pre><code class="html">
 &lt;div class=&quot;nypl-row&quot;&gt;&#10;&lt;div class=&quot;nypl-column-one-quarter&quot;&gt;&#10;&lt;img class=&quot;nypl-quarter-image&quot; src=&quot;https://d2720ur5668dri.cloudfront.net/sites/default/files/styles/extralarge/public/archives-portal.jpg?itok=-oYtHmeO&quot; alt=&quot;&quot; role=&quot;img&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;nypl-column-three-quarters&quot;&gt;&#10;&lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Collections&lt;/a&gt;&lt;/h4&gt;&#10;&lt;p&gt;Discover our world-renowned research collections, featuring more than 46 million items.&lt;/p&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;
   </code></pre>
+
+<h3 id="modalsPopups">Simple Modal</h3>
+<p>Modal patterns should be used sparingly and with great care. </p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <button id="filterButton" class="nypl-primary-button" type="button" name="button">
+    A Simple Modal
+  </button>
+  <div class="nypl-basic-modal-container inactive" role="dialog" aria-labelledby="filter-title" aria-describedby="modal-description">
+    <div class="nypl-modal-content">
+      <p id="modal-description" class="nypl-screenreader-only">Filter search results</p>
+      <h3>The modal&rsquo;s heading here.</h3>
+      <p>The visual style portayed here is not neccessarily the final style, it is only for demonstration purpose. The modal should always have a close button and utilize the escape key to close / exit the modal.</p>
+      <button type="button" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters">
+        <span>Close</span>
+        <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" aria-labelledby="close-modal">
+          <title id="close-modal">x-close-rev</title>
+          <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="nypl-modal-underlay"></div>
+  </div>
+  <pre><code class="scss">
+.nypl-basic-modal-container
+  </code></pre>
+  <pre><code class="html">
+&lt;button id=&quot;filterButton&quot; class=&quot;nypl-primary-button&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+  A Simple Modal
+&lt;/button&gt;
+&lt;div class=&quot;nypl-basic-modal-container inactive&quot; role=&quot;dialog&quot; aria-labelledby=&quot;filter-title&quot; aria-describedby=&quot;modal-description&quot;&gt;
+  &lt;div class=&quot;nypl-modal-content&quot;&gt;
+    &lt;p id=&quot;modal-description&quot; class=&quot;nypl-screenreader-only&quot;&gt;Filter search results&lt;/p&gt;
+    &lt;h3&gt;The modal&amp;rsquo;s heading here.&lt;/h3&gt;
+    &lt;p&gt;The visual style portayed here is not neccessarily the final style, it is only for demonstration purpose. The modal should always have a close button and utilize the escape key to close / exit the modal.&lt;/p&gt;
+    &lt;button type=&quot;button&quot; class=&quot;nypl-x-close-button&quot; id=&quot;closeModal&quot; type=&quot;button&quot; name=&quot;Close-Filters&quot;&gt;
+      &lt;span&gt;Close&lt;/span&gt;
+      &lt;svg aria-hidden=&quot;true&quot; aria-controls=&quot;nypl-dialog-or-modal&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 100 100&quot; aria-labelledby=&quot;close-modal&quot;&gt;
+        &lt;title id=&quot;close-modal&quot;&gt;x-close-rev&lt;/title&gt;
+        &lt;path d=&quot;M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nypl-modal-underlay&quot;&gt;&lt;/div&gt;
+  </code></pre>
+  <pre><code class="js">
+    // Basic JS Modal
+    // Get the Underlay
+    var underlay = document.querySelector('.nypl-modal-underlay');
+
+    // Get the modal contents
+    var modal = document.querySelector('.nypl-basic-modal-container');
+    // Get the button that opens the modal
+    var openTheModal = document.querySelector('#filterButton');
+
+    // Get the element that closes the modal
+    var closeTheModal = document.querySelector('#closeModal');
+
+    // Get the cancel button that closes the modal
+    var cancelTheModal = document.querySelector('#cancelFiltering');
+
+    // When the user clicks on the button, open the modal
+    openTheModal.onclick = function() {
+        modal.classList.remove('inactive')
+        modal.classList.add('active');
+        //overlay.className = 'nypl-overlay active';
+    }
+
+    // // When the user clicks on the cancel link or button, close the modal
+    // cancelTheModal.onclick = function() {
+    //     modal.classList.remove('active');
+    //     modal.classList.add('inactive');
+    // }
+
+    // When the user clicks on the close button, close the modal
+    closeTheModal.onclick = function() {
+        modal.classList.remove('active');
+        modal.classList.add('inactive');
+    }
+
+    //When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == underlay) {
+          modal.classList.remove('active');
+          modal.classList.add('inactive');
+            //overlay.className = 'nypl-overlay active';
+        }
+    }
+  </code></pre>
+</div><!-- /.toolkit-example -->
+
+<script type="text/javascript">
+// Basic JS Modal
+// Get the Underlay
+var underlay = document.querySelector('.nypl-modal-underlay');
+
+// Get the modal contents
+var modal = document.querySelector('.nypl-basic-modal-container');
+// Get the button that opens the modal
+var openTheModal = document.querySelector('#filterButton');
+
+// Get the element that closes the modal
+var closeTheModal = document.querySelector('#closeModal');
+
+// Get the cancel button that closes the modal
+var cancelTheModal = document.querySelector('#cancelFiltering');
+
+// When the user clicks on the button, open the modal
+openTheModal.onclick = function() {
+    modal.classList.remove('inactive')
+    modal.classList.add('active');
+    //overlay.className = 'nypl-overlay active';
+}
+
+// // When the user clicks on the cancel link or button, close the modal
+// cancelTheModal.onclick = function() {
+//     modal.classList.remove('active');
+//     modal.classList.add('inactive');
+// }
+
+// When the user clicks on the close button, close the modal
+closeTheModal.onclick = function() {
+    modal.classList.remove('active');
+    modal.classList.add('inactive');
+}
+
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == underlay) {
+      modal.classList.remove('active');
+      modal.classList.add('inactive');
+        //overlay.className = 'nypl-overlay active';
+    }
+}
+</script>
