@@ -720,6 +720,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -1153,10 +1154,10 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none; }
 
 .nypl-unset-filter {
-  background-color: #fff;
-  border: 0.04167rem solid #080807;
+  background-color: #d0343a;
+  border: 0.04167rem solid #d0343a;
   border-radius: 0.25rem;
-  color: #080807;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -1167,15 +1168,16 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .nypl-unset-filter .nypl-icon {
-    background-color: #fff;
+    background-color: #d0343a;
     border-radius: 0;
     display: inline-block;
-    fill: #080807;
+    fill: #fff;
     height: 1em;
     width: 1em;
     speak: none;
@@ -1187,16 +1189,16 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: inherit;
       fill: #fff; }
   .nypl-unset-filter:link, .nypl-unset-filter:visited {
-    color: #080807; }
-  .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
-    border-color: #fff;
-    background-color: #080807;
     color: #fff; }
+  .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
+    border-color: #d0343a;
+    background-color: #fff;
+    color: #d0343a; }
     .nypl-unset-filter:hover .nypl-icon, .nypl-unset-filter:hover:visited .nypl-icon, .nypl-unset-filter.active .nypl-icon {
-      background-color: #080807;
+      background-color: #fff;
       border-radius: 0;
       display: inline-block;
-      fill: #fff;
+      fill: #d0343a;
       height: "";
       width: "";
       speak: none; }
@@ -1210,12 +1212,12 @@ dl dd.multi-item-list .nypl-basic-table,
     outline: none; }
   .nypl-unset-filter.disabled, .nypl-unset-filter[disabled="disabled"], .nypl-unset-filter[disabled="true"], .nypl-unset-filter[disabled], .nypl-unset-filter[disabled=true] {
     background-color: #d7d4d0;
-    border-color: #080807;
+    border-color: #fff;
     cursor: default; }
     .nypl-unset-filter.disabled:hover, .nypl-unset-filter[disabled="disabled"]:hover, .nypl-unset-filter[disabled="true"]:hover, .nypl-unset-filter[disabled]:hover, .nypl-unset-filter[disabled=true]:hover {
       background-color: #d7d4d0;
-      border-color: #080807;
-      color: #080807; }
+      border-color: #fff;
+      color: #fff; }
   .nypl-unset-filter .nypl-icon {
     position: relative;
     top: 0.15rem; }
@@ -1234,8 +1236,10 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   height: 2.1rem;
   padding-right: 0.5rem;
+  -webkit-appearance: none !important;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1305,6 +1309,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1375,6 +1380,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1414,6 +1420,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1459,6 +1466,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1502,6 +1510,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1562,6 +1571,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1607,6 +1617,7 @@ dl dd.multi-item-list .nypl-basic-table,
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
+  -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
@@ -1653,6 +1664,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -1738,6 +1750,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -1823,6 +1836,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -2015,7 +2029,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-text-field input[type=text].active,
     .nypl-text-field input[type=email].active,
     .nypl-text-field input[type=date].active,
@@ -2082,7 +2097,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-year-field input[type=text].active,
     .nypl-year-field input[type=email].active,
     .nypl-year-field input[type=date].active,
@@ -2127,7 +2143,8 @@ dl dd.multi-item-list .nypl-basic-table,
   padding: 0.5rem 0;
   text-indent: 0.5rem;
   transition: all 0.2s ease-out;
-  width: 100%; }
+  width: 100%;
+  -webkit-appearance: none; }
   .nypl-text-field-with-label input[type=text].active,
   .nypl-text-field-with-label input[type=email].active,
   .nypl-text-field-with-label input[type=date].active,
@@ -2200,7 +2217,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-name-field input[type=text].active,
     .nypl-name-field input[type=email].active,
     .nypl-name-field input[type=date].active,
@@ -2283,7 +2301,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-address-fieldset input[type=text].active,
     .nypl-address-fieldset input[type=email].active,
     .nypl-address-fieldset input[type=date].active,
@@ -2362,7 +2381,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0.5rem 0;
     text-indent: 0.5rem;
     transition: all 0.2s ease-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .nypl-date-field input[type=text].active,
     .nypl-date-field input[type=email].active,
     .nypl-date-field input[type=date].active,
@@ -2487,8 +2507,10 @@ dl dd.multi-item-list .nypl-basic-table,
   opacity: 0; }
 .nypl-generic-checkbox label {
   display: inline-block;
+  line-height: 1.2;
   position: relative;
-  padding-left: 1.75rem; }
+  padding-left: 1.75rem;
+  width: 60%; }
 .nypl-generic-checkbox label::after,
 .nypl-generic-checkbox label::before {
   content: "";
@@ -2900,7 +2922,8 @@ dl dd.multi-item-list .nypl-basic-table,
       padding: 0.5rem 0;
       text-indent: 0.5rem;
       transition: all 0.2s ease-out;
-      width: 100%; }
+      width: 100%;
+      -webkit-appearance: none; }
       .nypl-searchable-field .nypl-facet-search input[type=text].active,
       .nypl-searchable-field .nypl-facet-search input[type=email].active,
       .nypl-searchable-field .nypl-facet-search input[type=date].active,
@@ -2989,6 +3012,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -3717,6 +3741,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -3862,6 +3887,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-results-sorter {
   display: inline-block;
   float: left;
+  margin-right: 1.5rem;
   position: relative; }
   .nypl-results-sorter button {
     background-color: #fff;
@@ -3878,6 +3904,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -3971,8 +3998,13 @@ dl dd.multi-item-list .nypl-basic-table,
 
 .nypl-filter-button {
   float: left;
-  margin-left: 1.5rem;
   position: relative; }
+  @media (max-width: 483px) {
+    .nypl-filter-button::before, .nypl-filter-button::after {
+      content: "";
+      display: table; }
+    .nypl-filter-button::after {
+      clear: both; } }
 
 .nypl-select-field-results {
   background-color: #fff;
@@ -4311,106 +4343,185 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-views-table.collapses .resouce-description {
       width: 65%; } }
 
-.nypl-popup-container.inactive {
-  display: none; }
-.nypl-popup-container.active {
-  display: block; }
-  .nypl-popup-container.active .nypl-popup-filter-menu {
-    background: #fff;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2101; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset {
-      border: 0;
-      margin: 0;
-      padding-left: 0;
-      padding-right: 0; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
-        display: block;
-        margin-left: 3.125rem; }
-        @media (max-width: 965px) {
-          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child {
-            margin-left: 1rem; } }
-        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3 {
-          margin-bottom: 0; }
-          .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset > legend:first-child h3:focus {
-            outline-color: #ffb81d;
-            outline-style: solid;
-            outline-width: 0.125rem; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-parent-fieldset .nypl-inner-fieldset:nth-child(4) {
-        border: 0; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset {
-      border: 0;
-      border-bottom: 0.03125rem solid #9d9ea1;
-      padding: 0 1rem 0 3.125rem; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset legend {
-        font-size: 1.125rem;
-        margin-top: 0.75rem; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset .nypl-generic-checkbox.nypl-generic-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-inner-fieldset-date {
-      padding-bottom: 1.125rem; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field {
-      margin: 0; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-name-field div {
-      float: left;
-      margin-right: 1.125rem;
-      width: 25%; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button {
-      background-color: #d0343a;
-      border: 0.04167rem solid #d0343a;
-      border-radius: 0.06667rem;
-      color: #fff;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 1rem;
-      font-weight: normal;
-      height: auto;
-      letter-spacing: normal;
-      padding: 0.2rem 0.75rem;
-      text-decoration: none;
-      text-transform: none;
-      white-space: nowrap;
-      -webkit-transition: all 0.1s ease-in 0s;
-      -moz-transition: all 0.1s ease-in 0s;
-      -o-transition: all 0.1s ease-in 0s;
-      transition: all 0.1s ease-in 0s; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:link, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:visited {
-        color: #fff; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:hover:visited, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button.active {
-        border-color: #776e64;
-        background-color: #fff;
-        color: #776e64; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button:focus {
-        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        box-shadow: inset 0 0 0 0.125rem #ffb81d;
-        outline: none; }
-      .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button.disabled, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="disabled"], .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="true"], .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled], .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled=true] {
-        background-color: #d7d4d0;
-        border-color: #fff;
-        cursor: default; }
-        .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button.disabled:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="disabled"]:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled="true"]:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled]:hover, .nypl-popup-container.active .nypl-popup-filter-menu .nypl-filter-button[disabled=true]:hover {
-          background-color: #d7d4d0;
-          border-color: #fff;
-          color: #fff; }
-    .nypl-popup-container.active .nypl-popup-filter-menu .nypl-x-close-button {
-      float: right;
-      position: relative;
-      margin-right: 1rem;
-      top: -42.65rem; }
-  .nypl-popup-container.active .nypl-popup-filter-overlay {
-    background: white;
+.nypl-basic-modal-container.inactive {
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
+.nypl-basic-modal-container.active {
+  display: block;
+  opacity: 1;
+  visibility: visible; }
+  .nypl-basic-modal-container.active .nypl-modal-underlay {
+    background: rgba(255, 255, 255, 0.8);
     bottom: 0;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 2100; }
+    z-index: 1000; }
+  .nypl-basic-modal-container.active .nypl-modal-content {
+    -webkit-box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
+    -moz-box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
+    box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(84, 81, 74, 0.25);
+    background: #fefefe;
+    bottom: 0;
+    display: block;
+    left: 0;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    -webkit-overflow-scrolling: none; }
+    .nypl-basic-modal-container.active .nypl-modal-content h3 {
+      margin-bottom: 0;
+      margin-left: 3.125rem; }
+      @media (max-width: 483px) {
+        .nypl-basic-modal-container.active .nypl-modal-content h3 {
+          margin-left: 1rem; } }
+  .nypl-basic-modal-container.active .nypl-x-close-button {
+    display: block;
+    right: 3%;
+    height: 3rem;
+    padding: 0;
+    position: absolute;
+    top: 0.75rem;
+    width: 5rem; }
+    @media (max-width: 483px) {
+      .nypl-basic-modal-container.active .nypl-x-close-button {
+        right: 5%;
+        width: 1.75rem; }
+        .nypl-basic-modal-container.active .nypl-x-close-button span {
+          position: absolute;
+          width: 0.1rem;
+          height: 0.1rem;
+          margin: -0.1rem;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0; } }
+
+.nypl-modal-filter-form .inner {
+  border-bottom: 0.125rem solid #d7d4d0;
+  padding: 0 3.125rem; }
+  .nypl-modal-filter-form .inner:nth-child(4), .nypl-modal-filter-form .inner:nth-child(5) {
+    border-bottom: 0; }
+  @media (max-width: 483px) {
+    .nypl-modal-filter-form .inner {
+      padding-left: 1rem; } }
+  .nypl-modal-filter-form .inner legend {
+    font-size: 1.125rem;
+    margin-top: 0.75rem; }
+  .nypl-modal-filter-form .inner .nypl-filter-date-field > label {
+    display: inline-block;
+    max-width: calc(50% - 5.125rem); }
+    @media (max-width: 483px) {
+      .nypl-modal-filter-form .inner .nypl-filter-date-field > label {
+        display: block;
+        max-width: 100%;
+        width: 100%; } }
+  .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
+    height: 2rem;
+    position: relative;
+    width: 2rem;
+    top: 0.5rem; }
+    @media (max-width: 483px) {
+      .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
+        display: none;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 0; } }
+  .nypl-modal-filter-form .inner .nypl-generic-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    max-width: 100%; }
+    @media (max-width: 483px) {
+      .nypl-modal-filter-form .inner .nypl-generic-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2; } }
+.nypl-modal-filter-form .nypl-filter-button {
+  background-color: #d0343a;
+  border: 0.04167rem solid #d0343a;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: auto;
+  letter-spacing: normal;
+  padding: 0.2rem 0.75rem;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  margin-right: 1rem;
+  margin-top: 1rem; }
+  .nypl-modal-filter-form .nypl-filter-button .nypl-icon {
+    background-color: #d0343a;
+    border-radius: 0;
+    display: inline-block;
+    fill: #fff;
+    height: 1em;
+    width: 1em;
+    speak: none;
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s; }
+    .nypl-modal-filter-form .nypl-filter-button .nypl-icon.reversed {
+      background-color: inherit;
+      fill: #fff; }
+  .nypl-modal-filter-form .nypl-filter-button:link, .nypl-modal-filter-form .nypl-filter-button:visited {
+    color: #fff; }
+  .nypl-modal-filter-form .nypl-filter-button:hover, .nypl-modal-filter-form .nypl-filter-button:hover:visited, .nypl-modal-filter-form .nypl-filter-button.active {
+    border-color: #d0343a;
+    background-color: #fff;
+    color: #d0343a; }
+    .nypl-modal-filter-form .nypl-filter-button:hover .nypl-icon, .nypl-modal-filter-form .nypl-filter-button:hover:visited .nypl-icon, .nypl-modal-filter-form .nypl-filter-button.active .nypl-icon {
+      background-color: #fff;
+      border-radius: 0;
+      display: inline-block;
+      fill: #d0343a;
+      height: "";
+      width: "";
+      speak: none; }
+      .nypl-modal-filter-form .nypl-filter-button:hover .nypl-icon.reversed, .nypl-modal-filter-form .nypl-filter-button:hover:visited .nypl-icon.reversed, .nypl-modal-filter-form .nypl-filter-button.active .nypl-icon.reversed {
+        background-color: inherit;
+        fill: #fff; }
+  .nypl-modal-filter-form .nypl-filter-button:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    outline: none; }
+  .nypl-modal-filter-form .nypl-filter-button.disabled, .nypl-modal-filter-form .nypl-filter-button[disabled="disabled"], .nypl-modal-filter-form .nypl-filter-button[disabled="true"], .nypl-modal-filter-form .nypl-filter-button[disabled], .nypl-modal-filter-form .nypl-filter-button[disabled=true] {
+    background-color: #d7d4d0;
+    border-color: #fff;
+    cursor: default; }
+    .nypl-modal-filter-form .nypl-filter-button.disabled:hover, .nypl-modal-filter-form .nypl-filter-button[disabled="disabled"]:hover, .nypl-modal-filter-form .nypl-filter-button[disabled="true"]:hover, .nypl-modal-filter-form .nypl-filter-button[disabled]:hover, .nypl-modal-filter-form .nypl-filter-button[disabled=true]:hover {
+      background-color: #d7d4d0;
+      border-color: #fff;
+      color: #fff; }
+  .nypl-modal-filter-form .nypl-filter-button .nypl-icon {
+    position: relative;
+    top: 0.15rem; }
+  @media (max-width: 483px) {
+    .nypl-modal-filter-form .nypl-filter-button {
+      clear: both; }
+      .nypl-modal-filter-form .nypl-filter-button::before, .nypl-modal-filter-form .nypl-filter-button::after {
+        content: "";
+        display: table; }
+      .nypl-modal-filter-form .nypl-filter-button::after {
+        clear: both; } }
 
 .nypl-header .horizontal {
   display: table-cell;
@@ -4599,6 +4710,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4643,6 +4755,7 @@ dl dd.multi-item-list .nypl-basic-table,
       text-decoration: none;
       text-transform: none;
       white-space: nowrap;
+      -webkit-appearance: none;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -4687,6 +4800,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4772,6 +4886,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4835,6 +4950,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -4921,6 +5037,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -5043,6 +5160,7 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    -webkit-appearance: none;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;

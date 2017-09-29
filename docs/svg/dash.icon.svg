@@ -1,4 +1,4 @@
-<svg width="48" height="48" viewBox="0 0 32 32" class="wht gray-bg">
-  <title>dash.icon.svg</title>
-  <path d="M24,14H8a2.0025,2.0025,0,0,0,0,4H24A2.0025,2.0025,0,0,0,24,14Z"/>
+<svg viewBox="0 0 98 98" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="dash">
+  <title id="dash">dash.icon</title>
+  <polygon points="72.996 54.95 25.002 54.95 25.003 45.991 72.994 46.011 72.996 54.95"/>
 </svg>
