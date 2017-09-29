@@ -193,7 +193,7 @@ $colors: (
   } // /.nypl-page-header
 
   .main-page {
-    h3 {
+    h3.top-level-header {
       &::before {
         background: $nypl-blue-dark;
         content: "";
