@@ -205,6 +205,26 @@ $colors: (
     }
   }
 
+//
+// Modal Documentation Example:
+//
+  .nypl-toolkit-example {
+
+    .nypl-basic-modal-container {
+
+      .nypl-modal-content {
+        margin: $general-margin;
+        padding: ($general-margin * 2.5);
+        width: 90%;
+      }
+
+      .nypl-modal-underlay {
+        background: transparentize($nypl-white, 0.2);
+      }
+    }
+  }
+
+
   footer {
     background-color: lighten($nypl-light-blue, 20%);
     color: $nypl-blue-dark;
