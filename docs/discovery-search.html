@@ -81,9 +81,8 @@
                 </div>
               </div>
 
-
-              <div id="filterButton" class="nypl-filter-button">
-                <button class="nypl-short-button" type="button" name="button" aria-expanded="false" aria-controls="filter-content">
+              <div class="nypl-filter-button">
+                <button id="filterButton" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
                   Filter Results
                   <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
                     <title>filter.icon.3</title>
@@ -489,7 +488,7 @@ Next</a>
   </footer>
   <!--//// start MODAL -->
   <div class="nypl-basic-modal-container no-js" role="dialog" aria-labelledby="filter-title" aria-describedby="modal-description">
-    <div id="filter-content-no-js" class="nypl-modal-content">
+    <div id="filterContent-no-js" class="nypl-modal-content">
       <p id="modal-description" class="nypl-screenreader-only">Filter search results</p>
       <div class="nypl-modal-filter-form" role="menu">
         <form>
@@ -650,9 +649,7 @@ Next</a>
 })();
 
 (function() {
-  var link = document.getElementById('filterButton').innerHTML;
-  console.log(link);
-  document.getElementById('filter-content-no-js').id = 'filter-content';
+  document.getElementById('filterContent-no-js').id = 'filterContent';
   document.querySelector('.nypl-basic-modal-container').classList.remove('no-js');
   document.querySelector('.nypl-basic-modal-container').classList.add('inactive');
 })();
@@ -680,6 +677,7 @@ openTheModal.onclick = function() {
     modal.classList.remove('inactive')
     modal.classList.add('active');
     //overlay.className = 'nypl-overlay active';
+    document.getElementById('filterButton').setAttribute("aria-expanded", true)
 }
 
 // When the user clicks on the close button, close the modal
@@ -692,6 +690,7 @@ cancelTheModal.onclick = function() {
 closeTheModal.onclick = function() {
     modal.classList.remove('active');
     modal.classList.add('inactive');
+    document.getElementById('filterButton').setAttribute("aria-expanded", false)
 }
 
 //When the user clicks anywhere outside of the modal, close it
