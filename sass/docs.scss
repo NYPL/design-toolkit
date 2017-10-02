@@ -183,7 +183,7 @@ $colors: (
     h2 {
       color: $nypl-blue-dark;
       margin-bottom: 0.25rem;
-      text-shadow: 1px 1px 0 darken($nypl-light-blue, 0.8);
+      //text-shadow: 1px 1px 0 darken($nypl-blue, 0.1);
 
       + span {
         color: $nypl-blue-dark;
