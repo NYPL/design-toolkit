@@ -4439,11 +4439,16 @@ dl dd.multi-item-list .nypl-basic-table,
     -moz-column-count: 3;
     column-count: 3;
     max-width: 100%; }
-    @media (max-width: 483px) {
+    @media (max-width: 965px) {
       .nypl-modal-filter-form .inner .nypl-generic-columns {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2; } }
+    @media (max-width: 483px) {
+      .nypl-modal-filter-form .inner .nypl-generic-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1; } }
 .nypl-modal-filter-form .nypl-filter-button {
   background-color: #d0343a;
   border: 0.04167rem solid #d0343a;
