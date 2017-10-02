@@ -789,8 +789,12 @@ $form-padding: 0.5rem;
       @include generic-columns(3);
       max-width: 100%;
 
-      @include media($xtrasmall-breakpoint) {
+      @include media($mobile-breakpoint) {
         @include generic-columns(2);
+      }
+
+      @include media($xtrasmall-breakpoint) {
+        @include generic-columns(1);
        } // /$xtrasmall-breakpoint
       } // /.nypl-generic-columns
     } // /.inner
