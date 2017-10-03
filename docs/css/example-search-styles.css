@@ -2502,7 +2502,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-generic-checkbox > li {
   list-style: none;
   margin: 0 0 0.35rem -1rem;
-  padding: 0; }
+  padding: 0.25rem 0; }
 .nypl-generic-checkbox input[type="checkbox"] {
   opacity: 0; }
 .nypl-generic-checkbox label {
