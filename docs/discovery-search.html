@@ -656,8 +656,7 @@ document.querySelector('.nypl-basic-modal-container').classList.remove('no-js');
 })();
 
 
-// Basic JS Modal Werks
-// Get the Underlay
+// Basic JS Modal
 // Get the underlay
 var underlay = document.querySelector('.nypl-modal-underlay');
 
@@ -681,7 +680,7 @@ openTheModal.addEventListener('click', function() {
   modal.classList.add('active');
   document.getElementById('filterButton').setAttribute("aria-expanded", true)
 });
-
+// When the user clicks on the "cancel" button
 cancelTheModal.addEventListener('click', function() {
   modal.classList.remove('active');
   modal.classList.add('inactive');
