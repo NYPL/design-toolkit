@@ -23,8 +23,8 @@
 }
 
 @mixin basic-button (
-  $background-color: $nypl-search-color-dark,
-  $border-color: $nypl-search-color-dark,
+  $background-color: $nypl-dark-gray,
+  $border-color: $nypl-dark-gray,
   $border-radius: ($general-border-radius / 3),
   $border-width: ($general-border-width / 3),
   $button-icon: false,
@@ -32,7 +32,7 @@
   $disabled-color: $nypl-light-gray,
   $font-size: 1rem,
   $font-weight: normal,
-  $hover-text-color: $nypl-search-color-dark,
+  $hover-text-color: $nypl-dark-gray,
   $hover-background-color: $button-text-color,
   $height: auto,
   $letter-spacing: normal,
@@ -54,6 +54,7 @@
   text-decoration: none;
   text-transform: $text-transform;
   white-space: nowrap;
+  -webkit-appearance: none;
   @content;
 
   @include transition(all, $hover-time, ease-in);
@@ -121,7 +122,9 @@
     @if $collapsible == true {
       // has nypl-icon with down arrow
       .nypl-icon {
-        @include nypl-icon($fill: $the-text-color, $background-color: $the-background-color);
+        @include nypl-icon(
+        $fill: $the-text-color,
+        $background-color: $the-background-color);
       }
     }
 
@@ -240,14 +243,24 @@
 }
 
 @mixin login-button($collapsible: false) {
-  @include basic-button($font-size: 0.7rem, $text-color: $nypl-white, $background-color: $nypl-gray, $padding-vertical: 0, $padding-horizontal: 0.5rem, $collapsible: $collapsible, $border-width: 0);
+  @include basic-button(
+    $font-size: 0.7rem,
+    $text-color: $nypl-white,
+    $background-color: $nypl-gray,
+    $padding-vertical: 0,
+    $padding-horizontal: 0.5rem,
+    $collapsible: $collapsible,
+    $border-width: 0);
   border-radius: 0;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-@mixin menu-button($attachment: "left", $text-color: $button-text-color, $background-color: $nypl-search-color-dark) {
+@mixin menu-button(
+    $attachment: "left",
+    $text-color: $button-text-color,
+    $background-color: $nypl-search-color-dark) {
   display: inline-block;
   position: relative;
 
@@ -305,17 +318,17 @@
   }
 }
 
-// TODO: A better method for combinging buttons & icons needs to be developed.
+// TODO: A better method for combining buttons & icons needs to be developed.
 
 @mixin basic-button-icon($button-icon: true) {
   @include basic-button(
-  $background-color: $nypl-white,
-  $border-color: $nypl-dark-gray,
+  $background-color: $nypl-red,
+  $border-color: $nypl-red,
   $border-radius: 0.25rem,
   $button-icon: true,
-  $hover-text-color: $nypl-white,
-  $hover-background-color: $nypl-dark-gray,
-  $text-color: $nypl-dark-gray
+  $hover-text-color: $nypl-red,
+  $hover-background-color: $nypl-white,
+  $text-color: $nypl-white
   );
   // We set the icon's position here and not on the general mixin since we are using a specific icon [x]
   .nypl-icon {
@@ -361,6 +374,7 @@
     $text-color: $nypl-dark-gray) {
     height: $short-button-height;
     padding-right: 0.5rem;
+    -webkit-appearance: none !important;
   }
 
   .nypl-icon {

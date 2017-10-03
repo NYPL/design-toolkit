@@ -16,7 +16,7 @@
 @import "holds-table";
 @import "buttons";
 @import "pager";
-@import "modal";
+@import "modal-container";
 
 .hidden { // hacky
   display: none;
@@ -60,7 +60,12 @@
   @include collapsible;
 }
 
+
+
+//
 // Buttons
+//
+
 .nypl-link-button {
   @include link-button;
 }
@@ -96,6 +101,11 @@
 }
 // /Buttons
 
+
+
+//
+// TODO: label / organize this section better
+//
 .nypl-request-item-summary {
   @include request-item-summary;
 }
@@ -450,10 +460,23 @@
   @include views-table;
 }
 
-.nypl-popup-container {
-  @include popup;
+
+// Modals & Overlays
+// .nypl-popup-container {
+//   @include popup;
+// }
+
+.nypl-basic-modal-container {
+  @include basic-modal;
+}
+//
+// Filtering context
+//
+.nypl-modal-filter-form {
+  @include modal-filter-form;
 }
 
+// Text Columns
 .nypl-generic-columns {
   @include generic-columns;
 }

@@ -29,8 +29,10 @@ $form-padding: 0.5rem;
   margin-bottom: $margin-bottom;
 }
 
+
+
 //
-// A basic Fielset mixin
+// A basic Fieldset mixin
 //  Lots of arguments can be set to modify the end result based on it context
 //
 
@@ -64,12 +66,15 @@ $form-padding: 0.5rem;
   legend h3 {
     margin: 0;
   }
-}
+} // /mixin fieldset
+
+
 
 //
 // Base input field
-//   from which all others are constructed
+// from which all others are constructed
 //
+
 @mixin input(
     $background-color: $page-background-color,
     $border-radius: ($general-border-radius * 1.25),
@@ -90,6 +95,7 @@ $form-padding: 0.5rem;
   text-indent: $form-padding;
   transition: all 0.2s ease-out;
   width: 100%;
+  -webkit-appearance: none;
 
   &.active {
     width: 16rem;
@@ -101,7 +107,7 @@ $form-padding: 0.5rem;
     color: $page-color;
     outline: none;
   }
-}
+} // /text
 
 @mixin text-field-with-label {
   label {
@@ -127,8 +133,13 @@ $form-padding: 0.5rem;
     line-height: 1.5;
     padding-top: $form-padding;
   }
-}
+} // /text-field-with-label
 
+
+
+//
+// Error states for input fields
+//
 @mixin field-error {
   background: $page-background-color;
 
@@ -181,7 +192,7 @@ $form-padding: 0.5rem;
       }
     }
   }
-}
+} // /name-field
 
 @mixin address-fieldset {
   @include fieldset;
@@ -383,6 +394,8 @@ $form-padding: 0.5rem;
   }
 } // /radiobutton-field
 
+
+
 //
 // Generic Checkbox Style
 //
@@ -393,7 +406,7 @@ $form-padding: 0.5rem;
   > li {
     list-style: none;
     margin: 0 0 0.35rem -1rem;
-    padding: 0;
+    padding: 0.25rem 0;
   }
 
   input[type="checkbox"] {
@@ -402,8 +415,15 @@ $form-padding: 0.5rem;
 
   label {
     display: inline-block;
+    line-height: 1.2;
     position: relative;
     padding-left: 1.75rem;
+    padding-top: 0.27rem;
+    width: 60%;
+
+    // @include media($xtrasmall-breakpoint) {
+    //   width: 65%;
+    // }
   }
 
   label::after,
@@ -426,6 +446,8 @@ $form-padding: 0.5rem;
     width: 0.5625rem;
     border-left: $general-border-width solid;
     border-bottom: $general-border-width solid;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: 0.32rem;
     top: 0.5rem;
@@ -618,6 +640,11 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
+//
+// Left hand Search field.
+//
 @mixin search-form() {
   // used for left-column searches
   margin: 0 0 1rem;
@@ -631,6 +658,11 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
+//
+// Basic Text Area
+//
 @mixin text-area(
   $border-color: $nypl-dark-gray,
   $border-width: ($general-border-width / 3),
@@ -640,6 +672,8 @@ $form-padding: 0.5rem;
   height: $height;
   width: $width;
 }
+
+
 
 //
 // Request form(s)
@@ -666,7 +700,7 @@ $form-padding: 0.5rem;
   }
 }
 
-
+// The Request page header
 @mixin request-page-header {
   @include page-header(
   $background-color: lighten($nypl-light-gray, 15%),
@@ -697,6 +731,91 @@ $form-padding: 0.5rem;
   font-family: $font-family;
   font-weight: $font-weight;
 } // /request-form-title
+
+
+
+//
+// Filtering Styles for Modals w/ complex filtering controls
+//
+@mixin modal-filter-form {
+
+// body > div.nypl-basic-modal-container.active > div.nypl-modal-content > div > form > fieldset > fieldset:nth-child(4)
+
+  .inner {
+    border-bottom: $general-border-width solid $nypl-light-gray;
+    padding: 0 ($general-padding * 3.125);
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      border-bottom: 0;
+    }
+
+    @include media($xtrasmall-breakpoint) {
+      padding-left: $general-padding;
+    }
+
+    legend {
+      font-size: 1.125rem;
+      margin-top: 0.75rem;
+    }
+
+    .nypl-filter-date-field {
+
+      > label {
+        display: inline-block;
+        max-width: calc(50% - 5.125rem);
+
+        @include media($xtrasmall-breakpoint) {
+          display: block;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      > .nypl-icon {
+        height: 2rem;
+        position: relative;
+        width: 2rem;
+        top: ($general-margin / 2);
+
+        @include media($xtrasmall-breakpoint) {
+          display: none;
+          height: 0;
+          visibility: hidden;
+          opacity: 0;
+          width: 0;
+        }
+      }
+    }
+
+    .nypl-generic-columns {
+      @include generic-columns(3);
+      max-width: 100%;
+
+      @include media($mobile-breakpoint) {
+        @include generic-columns(2);
+      }
+
+      @include media($xtrasmall-breakpoint) {
+        @include generic-columns(1);
+       } // /$xtrasmall-breakpoint
+      } // /.nypl-generic-columns
+    } // /.inner
+
+
+  .nypl-filter-button {
+    @include basic-button-icon;
+    margin-right: $general-margin;
+    margin-top: $general-margin;
+
+    @include media($xtrasmall-breakpoint) {
+      @include clearfix;
+      clear: both;
+      // margin-top: $general-margin;
+    }
+  }
+} // /.nypl-modal-filter-form
+
 
 // TODO: Move this to a more sensible location. Preferably at the top
 @import "omni-search";

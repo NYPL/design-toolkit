@@ -9,7 +9,6 @@
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/header.js"></script>
-  <script type="text/javascript" src="js/inert.js"></script>
 </head>
 
 <body>
@@ -82,9 +81,8 @@
                 </div>
               </div>
 
-
               <div class="nypl-filter-button">
-                <button id="filterButton" class="nypl-short-button" type="button" name="button">
+                <button id="filterButton" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
                   Filter Results
                   <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
                     <title>filter.icon.3</title>
@@ -487,201 +485,226 @@ Next</a>
         <p>© The New York Public Library, 2016</p>
       </div>
     </div>
-  </footer><!--//// start MODAL -->
-  <div class="nypl-popup-container inactive" role="dialog" aria-labelledby="filter-title">
-      <div id="filterPopUpMenu" role="menu" class="nypl-popup-filter-menu">
+  </footer>
+  <!--//// start MODAL -->
+  <div class="nypl-basic-modal-container no-js" role="dialog" aria-labelledby="filter-title" aria-describedby="modal-description">
+    <div id="filterContent-no-js" class="nypl-modal-content">
+      <p id="modal-description" class="nypl-screenreader-only">Filter search results</p>
+      <div class="nypl-modal-filter-form" role="menu">
         <form>
-          <fieldset class="nypl-parent-fieldset">
+          <fieldset class="nypl-fieldset">
             <legend>
               <h3 id="filter-title">Filter Results</h3>
             </legend>
 
-            <fieldset class="nypl-inner-fieldset">
+            <fieldset class="nypl-fieldset inner">
               <legend>Format</legend>
               <ul class="nypl-generic-checkbox">
                 <li>
                 <input id="book-check-filter" class="switch-input" type="checkbox" name="format" value="Book" />
                 <label for="book-check-filter">Book</label>
               </li>
-              <li class="nypl-generic-checkbox">
+              <li>
                 <input id="still-image-check-filter" type="checkbox" name="format" value="Still Image" />
                 <label for="still-image-check-filter">Still Image</label>
               </li>
-              <li class="nypl-generic-checkbox">
+              <li>
                 <input id="audio-check-filter" type="checkbox" name="format" value="Audio" />
                 <label for="audio-check-filter">
                   Audio
                 </label>
               </li>
-              <li class="nypl-generic-checkbox">
+              <li>
                 <input id="music-check-filter" type="checkbox" name="format" value="Notated Music" />
                 <label for="music-check-filter">Notated Music</label>
               </li>
-              <li class="nypl-generic-checkbox">
+              <li>
                 <input id="mixed-check-filter" type="checkbox" name="format" value="Mixed Material" />
                 <label for="mixed-check-filter">Mixed Material</label>
               </li>
             </ul>
-            </fieldset>
-            <fieldset class="nypl-inner-fieldset nypl-inner-fieldset-date">
+            </fieldset><!-- /Format -->
+
+            <fieldset class="nypl-fieldset inner">
               <legend>Date</legend>
-              <div class="nypl-name-field">
-              <div>
+
+              <div class="nypl-name-field nypl-filter-date-field">
                 <label for="start-date">Start Year
                   <input id="start-date" type="number" min="1895" max="9999" step="1" name="start-date" class="form-text" />
                 </label>
-              </div>
-              <div>
+                <svg viewBox="0 0 98 98" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="dash" role="img">
+                  <title id="dash">dash.icon</title>
+                  <polygon points="72.996 54.95 25.002 54.95 25.003 45.991 72.994 46.011 72.996 54.95"/>
+                </svg>
                 <label for="end-date">End Year
                   <input id="end-date" type="number" min="1895" max="9999" step="1" name="end-date" />
                 </label>
+                <p>The end year should be the same year as or later than the start year.</p>
               </div>
-
-            </div>
-            <!-- <div>The Start year cannot be later than the end year</div> -->
             </fieldset>
-            <fieldset class="nypl-inner-fieldset">
+
+            <fieldset class="nypl-fieldset inner">
               <legend>Language</legend>
               <ul class="nypl-generic-checkbox nypl-generic-columns">
                 <li>
-                <input id="english-language-filter" type="checkbox" name="language" value="English" />
-                <label for="english-language-filter">English</label>
-              </li>
-              <li>
+                  <input id="english-language-filter" type="checkbox" name="language" value="English" />
+                  <label for="english-language-filter">English (40)</label>
+                </li>
+                <li>
                   <input id="spanish-language-filter" type="checkbox" name="language" value="Spanish" />
-                  <label for="spanish-language-filter">Spanish</label>
-              </li>
-              <li>
-                  <input id="language-filter-0" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-0">Language</label>
-              </li>
-              <li>
-                <input id="language-filter-1" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-1">Language</label>
-              </li>
-              <li>
-                  <input id="language-filter-2" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-2">Language</label>
-              </li>
-              <li>
-                  <input id="language-filter-3" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-3">Language</label>
-              </li>
-              <li>
-                  <input id="language-filter-4" type="checkbox" name="language" value="Language" />
-                  <label for="language-filter-4">Language</label>
-              </li>
-              <li>
-                <input id="language-filter-5" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-5">Language</label>
-              </li>
-              <li>
-                <input id="language-filter-6" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-6">Language</label>
-              </li>
-              <li>
-                <input id="language-filter-7" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-7">Language</label>
-              </li>
-              <li>
-                <input id="language-filter-8" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-8">Language</label>
-              </li>
-              <li>
-                <input id="language-filter-9" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-9">Language</label>
-              </li><li>
-                <input id="language-filter-10" type="checkbox" name="language" value="Language" />
-                <label for="language-filter-10">Language</label>
-              </li>
-            </ul>
-
-            </fieldset>
-            <div class="nypl-filter-button-container">
-              <button class="nypl-filter-button" type="submit" name="Clear-Filters">Apply Filters</button>
-              <button class="nypl-filter-button" type="button" name="Clear-Filters">Clear Filters</button>
-              <button type="button" name="close" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters">Close
-                <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" >
-                  <title>x-close-rev</title>
-                  <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
-                </svg>
-              </button>
-            </div>
-            <fieldset class="nypl-screenreader-only">
-              <legend id="sort-by-group">
-                <h3>Sort</h3>
-              </legend>
-              <ul>
-                <li>
-                  <input id="sort-by-relevance" aria-labelledby="sort-by-group sort-by-group_relevance" type="radio" name="sorting" value="relevance" checked>
-                  <label id="sort-by-group_relevance" for="sort-by-relevance">Relevance</label>
+                  <label for="spanish-language-filter">Spanish (5)</label>
                 </li>
                 <li>
-                  <input id="sort-by-alpha-asc" aria-labelledby="sort-by-group sort-by-group_alpha_asc" type="radio" name="sorting" value="alpha-asc">
-                  <label id="sort-by-group_alpha_asc" for="sort-by-alpha-asc">Title A &mdash; Z</label>
+                    <input id="language-filter-0" type="checkbox" name="language" value="Language" />
+                    <label for="language-filter-0">Greek, Ancient (to 1453) (318)</label>
                 </li>
                 <li>
-                  <input id="sort-by-alpha-dec" aria-labelledby="sort-by-group sort-by-group_alpha_dec" type="radio" name="sorting" value="any">
-                  <label id="sort-by-group_alpha_dec" for="sort-by-alpha-dec">Title Z &mdash; A</label>
+                  <input id="language-filter-1" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-1">Language (90)</label>
                 </li>
                 <li>
-                  <input id="sort-by-date-new" aria-labelledby="sort-by-group sort-by-group_date_new" type="radio" name="sorting" value="date-new">
-                  <label id="sort-by-group_date_new" for="sort-by-date-new">Date Newest &mdash; Oldest</label>
+                    <input id="language-filter-2" type="checkbox" name="language" value="Language" />
+                    <label for="language-filter-2">Language</label>
                 </li>
                 <li>
-                  <input id="sort-by-date-old" aria-labelledby="sort-by-group sort-by-group_date_old" type="radio" name="sorting" value="date-old">
-                  <label id="sort-by-group_date_old" for="sort-by-date-old">Date Oldest &mdash; Newest</label>
+                    <input id="language-filter-3" type="checkbox" name="language" value="Language" />
+                    <label for="language-filter-3">Austronesian (Other) (64)</label>
+                </li>
+                <li>
+                    <input id="language-filter-4" type="checkbox" name="language" value="Language" />
+                    <label for="language-filter-4">Language</label>
+                </li>
+                <li>
+                  <input id="language-filter-5" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-5">Language (1000)</label>
+                </li>
+                <li>
+                  <input id="language-filter-6" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-6">Language</label>
+                </li>
+                <li>
+                  <input id="language-filter-7" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-7">Language</label>
+                </li>
+                <li>
+                  <input id="language-filter-8" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-8">French, Old (ca. 842-1300) (5)</label>
+                </li>
+                <li>
+                  <input id="language-filter-9" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-9">Creoles and Pidgins, English-based (Other) (3)</label>
+                </li>
+                <li>
+                  <input id="language-filter-10" type="checkbox" name="language" value="Language" />
+                  <label for="language-filter-10">South American Indian (Other) (1)</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="nypl-screenreader-only" type="button" name="Sort-by">Sort</button>
-          </fieldset>
+
+            <div class="inner">
+              <button class="nypl-filter-button" type="submit" name="Clear-Filters">
+                <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="apply" viewBox="0 0 41.66739 49.79988">
+                <title id="apply">apply.v2.icon</title>
+                  <path d="M38.97923,20.60587a3.1833,3.1833,0,0,0-4.332,0L23.33308,31.71167V2.91584C23.33308,1.31208,22.43745,0,20.83369,0s-2.49938,1.31208-2.49938,2.91584V31.71167L7.0202,20.60587a3.05228,3.05228,0,0,0-4.22789,0,2.925,2.925,0,0,0-.05208,4.12374L18.78063,40.796c.0061.0061-.00539.01464.00071.02075a2.92278,2.92278,0,0,0,4.121,0c.0061-.0061.006-.01464.0121-.02075L38.98,24.7296A2.92444,2.92444,0,0,0,38.97923,20.60587Z"/>
+                  <rect x="17.91775" y="26.05024" width="5.83189" height="41.66739" rx="1.16667" ry="1.16667" transform="translate(-26.05024 67.71763) rotate(-90)"/>
+              </svg>
+
+
+                <span>Apply Filters</span>
+              </button>
+              <button class="nypl-filter-button" type="button" name="Clear-Filters">
+                <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 41" aria-hidden="true" aria-labelledby="reset">
+                <title title="reset">reset.icon</title>
+                <path d="M14.30581,12.04054,25.36758,4.37413A2.4,2.4,0,0,0,22.63242.4296L2.25352,14.553,23.45977,29.54835a2.39954,2.39954,0,1,0,2.77031-3.91875L13.80146,16.84054H43.2v19.2H2.4a2.4,2.4,0,1,0,0,4.8H48v-28.8Z"/>
+                </svg>
+                <span>Clear Filters</span>
+              </button>
+              <button id="cancelFiltering" class="nypl-filter-button" type="button" name="button" aria-controls="modal-content">
+                <svg viewBox="0 0 32 32" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="close">
+                  <title id="close">x.close.icon</title>
+                  <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
+                </svg>
+                <span>Cancel</span>
+              </button>
+            </div>
+          </fieldset><!-- parent fieldset -->
         </form>
       </div>
-    <div class="nypl-popup-filter-overlay"></div>
+      <button type="button" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters" aria-expanded="false" aria-controls="modal-content">
+        <span>Close</span>
+        <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" aria-labelledby="close-modal">
+          <title id="close-modal">x-close-rev</title>
+          <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="nypl-modal-underlay"></div>
   </div>
 <!--///// MODAL -->
 
 
 <script type="text/javascript">
-/* This is just a helper script to add nypl-screenreader-only class to the DOM. If JS fails then the sorting submit button will be exposed */
+
 (function() {
-  document.querySelector('#sort-submission').className = 'nypl-screenreader-only';
+// This is just a helper script to add nypl-screenreader-only class to the DOM.
+// If JS fails then the sorting submit button will be exposed
+document.querySelector('#sort-submission').className = 'nypl-screenreader-only';
+
+//
+// remove the default no-js id & class from the DOM
+document.getElementById('filterContent-no-js').id = 'filterContent';
+document.querySelector('.nypl-basic-modal-container').classList.remove('no-js');
 })();
 
-// Basic JS Modal Werks
-// Get the Under/Overlay
-var overlay = document.querySelector('.nypl-popup-filter-overlay');
 
-// Get the modal w/ the filters:
-var modal = document.querySelector('.nypl-popup-container');
+// Basic JS Modal
+// Get the underlay
+var underlay = document.querySelector('.nypl-modal-underlay');
+
+// Get the modal contents
+var modal = document.querySelector('.nypl-basic-modal-container');
+
 // Get the button that opens the modal
-var openTheModal = document.querySelector('#filterButton');
+var openModalButton = document.querySelector('#filterButton');
 
 // Get the element that closes the modal
 var closeTheModal = document.querySelector('#closeModal');
 
-// When the user clicks on the button, open the modal
-openTheModal.onclick = function() {
-    modal.classList.add('active');
-    //overlay.className = 'nypl-overlay active';
-}
+// Get the cancel button that closes the modal
+var cancelTheModal = document.querySelector('#cancelFiltering');
+
+openModalButton.addEventListener('click', function() {
+  modal.classList.remove('inactive');
+  modal.classList.add('active');
+  openModalButton.setAttribute("aria-expanded", true)
+});
+// When the user clicks on the "cancel" button
+cancelTheModal.addEventListener('click', function() {
+  modal.classList.remove('active');
+  modal.classList.add('inactive');
+  openModalButton.setAttribute("aria-expanded", false);
+});
 
 // When the user clicks on the close button, close the modal
-closeTheModal.onclick = function() {
-    modal.classList.remove('active');
-    modal.classList.add('inactive');
-    //overlay.className = 'nypl-overlay inactive';
-}
+closeTheModal.addEventListener('click', function() {
+  modal.classList.remove('active');
+  modal.classList.add('inactive');
+  openModalButton.setAttribute("aria-expanded", false);
+});
 
-//When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == overlay) {
-      modal.classList.remove('active');
-      modal.classList.add('inactive');
-        //overlay.className = 'nypl-overlay active';
-    }
-}
+//
+//
+// Since the modal is full screen this might not be necessary
+// When the user clicks anywhere outside of the modal, close it
+//
+// window.onclick = function(event) {
+//     if (event.target == underlay) {
+//       modal.classList.remove('active');
+//       modal.classList.add('inactive');
+//         //overlay.className = 'nypl-overlay active';
+//     }
+// }
+
 </script>
 </body>
 </html>
