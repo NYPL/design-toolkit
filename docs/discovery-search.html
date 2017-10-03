@@ -643,20 +643,21 @@ Next</a>
 
 
 <script type="text/javascript">
-/* This is just a helper script to add nypl-screenreader-only class to the DOM. If JS fails then the sorting submit button will be exposed */
-(function() {
-  document.querySelector('#sort-submission').className = 'nypl-screenreader-only';
-})();
 
 (function() {
-  document.getElementById('filterContent-no-js').id = 'filterContent';
-  document.querySelector('.nypl-basic-modal-container').classList.remove('no-js');
-  document.querySelector('.nypl-basic-modal-container').classList.add('inactive');
+// This is just a helper script to add nypl-screenreader-only class to the DOM.
+// If JS fails then the sorting submit button will be exposed
+document.querySelector('#sort-submission').className = 'nypl-screenreader-only';
+
+//
+// remove the default no-js id & class from the DOM
+document.getElementById('filterContent-no-js').id = 'filterContent';
+document.querySelector('.nypl-basic-modal-container').classList.remove('no-js');
 })();
+
 
 // Basic JS Modal Werks
 // Get the Underlay
-(function() {
 // Get the underlay
 var underlay = document.querySelector('.nypl-modal-underlay');
 
@@ -672,39 +673,41 @@ var closeTheModal = document.querySelector('#closeModal');
 // Get the cancel button that closes the modal
 var cancelTheModal = document.querySelector('#cancelFiltering');
 
-// When the user clicks on the button, open the modal
-openTheModal.onclick = function() {
-    modal.classList.remove('inactive')
-    modal.classList.add('active');
-    //overlay.className = 'nypl-overlay active';
-    document.getElementById('filterButton').setAttribute("aria-expanded", true)
-}
+var filterButton = document.querySelector('#filterButton');
+
+
+openTheModal.addEventListener('click', function() {
+  modal.classList.remove('inactive');
+  modal.classList.add('active');
+  document.getElementById('filterButton').setAttribute("aria-expanded", true)
+});
+
+cancelTheModal.addEventListener('click', function() {
+  modal.classList.remove('active');
+  modal.classList.add('inactive');
+  document.getElementById('filterButton').setAttribute("aria-expanded", false);
+});
 
 // When the user clicks on the close button, close the modal
-cancelTheModal.onclick = function() {
-    modal.classList.remove('active');
-    modal.classList.add('inactive');
-}
+closeTheModal.addEventListener('click', function() {
+  modal.classList.remove('active');
+  modal.classList.add('inactive');
+  document.getElementById('filterButton').setAttribute("aria-expanded", false);
+});
 
-// When the user clicks on the close button, close the modal
-closeTheModal.onclick = function() {
-    modal.classList.remove('active');
-    modal.classList.add('inactive');
-    document.getElementById('filterButton').setAttribute("aria-expanded", false)
-}
+//
+//
+// Since the modal is full screen this might not be necessary
+// When the user clicks anywhere outside of the modal, close it
+//
+// window.onclick = function(event) {
+//     if (event.target == underlay) {
+//       modal.classList.remove('active');
+//       modal.classList.add('inactive');
+//         //overlay.className = 'nypl-overlay active';
+//     }
+// }
 
-//When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == underlay) {
-      modal.classList.remove('active');
-      modal.classList.add('inactive');
-        //overlay.className = 'nypl-overlay active';
-    }
-}
-
-
-
-})();
 </script>
 </body>
 </html>
