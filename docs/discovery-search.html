@@ -664,7 +664,7 @@ var underlay = document.querySelector('.nypl-modal-underlay');
 var modal = document.querySelector('.nypl-basic-modal-container');
 
 // Get the button that opens the modal
-var openTheModal = document.querySelector('#filterButton');
+var openModalButton = document.querySelector('#filterButton');
 
 // Get the element that closes the modal
 var closeTheModal = document.querySelector('#closeModal');
@@ -672,26 +672,23 @@ var closeTheModal = document.querySelector('#closeModal');
 // Get the cancel button that closes the modal
 var cancelTheModal = document.querySelector('#cancelFiltering');
 
-var filterButton = document.querySelector('#filterButton');
-
-
-openTheModal.addEventListener('click', function() {
+openModalButton.addEventListener('click', function() {
   modal.classList.remove('inactive');
   modal.classList.add('active');
-  document.getElementById('filterButton').setAttribute("aria-expanded", true)
+  openModalButton.setAttribute("aria-expanded", true)
 });
 // When the user clicks on the "cancel" button
 cancelTheModal.addEventListener('click', function() {
   modal.classList.remove('active');
   modal.classList.add('inactive');
-  document.getElementById('filterButton').setAttribute("aria-expanded", false);
+  openModalButton.setAttribute("aria-expanded", false);
 });
 
 // When the user clicks on the close button, close the modal
 closeTheModal.addEventListener('click', function() {
   modal.classList.remove('active');
   modal.classList.add('inactive');
-  document.getElementById('filterButton').setAttribute("aria-expanded", false);
+  openModalButton.setAttribute("aria-expanded", false);
 });
 
 //

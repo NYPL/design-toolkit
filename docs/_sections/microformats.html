@@ -267,7 +267,7 @@ description: Formats for specific information such as library hours, room locati
     var modal = document.querySelector('.nypl-basic-modal-container');
 
     // Get the button that opens the modal
-    var openTheModal = document.querySelector('#filterButton');
+    var openModalButton = document.querySelector('#filterButton');
 
     // Get the element that closes the modal
     var closeTheModal = document.querySelector('#closeModal');
@@ -275,29 +275,18 @@ description: Formats for specific information such as library hours, room locati
     // Get the cancel button that closes the modal
     var cancelTheModal = document.querySelector('#cancelFiltering');
 
-    var filterButton = document.querySelector('#filterButton');
-
-
-    openTheModal.addEventListener('click', function() {
+    openModalButton.addEventListener('click', function() {
       modal.classList.remove('inactive');
       modal.classList.add('active');
-      document.getElementById('filterButton').setAttribute("aria-expanded", true)
+      filterButton.setAttribute("aria-expanded", true)
     });
 
     // When the user clicks on the close button, close the modal
     closeTheModal.addEventListener('click', function() {
       modal.classList.remove('active');
       modal.classList.add('inactive');
-      document.getElementById('filterButton').setAttribute("aria-expanded", false);
+      openModalButton.setAttribute("aria-expanded", false);
     });
-
-    // In a scenario where the underlay will be visible / clickable:
-    window.onclick = function(event) {
-        if (event.target == underlay) {
-          modal.classList.remove('active');
-          modal.classList.add('inactive');
-        }
-      }
 
   </code></pre>
 </div><!-- /.toolkit-example -->
@@ -311,7 +300,7 @@ var underlay = document.querySelector('.nypl-modal-underlay');
 var modal = document.querySelector('.nypl-basic-modal-container');
 
 // Get the button that opens the modal
-var openTheModal = document.querySelector('#filterButton');
+var openModalButton = document.querySelector('#filterButton');
 
 // Get the element that closes the modal
 var closeTheModal = document.querySelector('#closeModal');
@@ -319,27 +308,21 @@ var closeTheModal = document.querySelector('#closeModal');
 // Get the cancel button that closes the modal
 var cancelTheModal = document.querySelector('#cancelFiltering');
 
-var filterButton = document.querySelector('#filterButton');
+// // Get the filter button... again.
+// var filterButton = document.querySelector('#filterButton');
 
 
-openTheModal.addEventListener('click', function() {
+openModalButton.addEventListener('click', function() {
   modal.classList.remove('inactive');
   modal.classList.add('active');
-  document.getElementById('filterButton').setAttribute("aria-expanded", true)
+  openModalButton.setAttribute("aria-expanded", true)
 });
 
 // When the user clicks on the close button, close the modal
 closeTheModal.addEventListener('click', function() {
   modal.classList.remove('active');
   modal.classList.add('inactive');
-  document.getElementById('filterButton').setAttribute("aria-expanded", false);
+  openModalButton.setAttribute("aria-expanded", false);
 });
 
-// In a scenario where the underlay will be visible / clickable:
-window.onclick = function(event) {
-    if (event.target == underlay) {
-      modal.classList.remove('active');
-      modal.classList.add('inactive');
-    }
-  }
 </script>
