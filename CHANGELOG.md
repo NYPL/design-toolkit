@@ -1,5 +1,10 @@
 ### Change Log
 
+### v0.1.26.3
+- improvements to filtering layout
+- added documentation covering Modals
+- created a generic modal pattern, separate from the filtering functions
+
 ### v0.1.26.2
 - CSS Columns added to filter modal
 
