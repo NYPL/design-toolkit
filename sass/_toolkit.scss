@@ -60,7 +60,12 @@
   @include collapsible;
 }
 
+
+
+//
 // Buttons
+//
+
 .nypl-link-button {
   @include link-button;
 }
@@ -96,6 +101,11 @@
 }
 // /Buttons
 
+
+
+//
+// TODO: label / organize this section better
+//
 .nypl-request-item-summary {
   @include request-item-summary;
 }

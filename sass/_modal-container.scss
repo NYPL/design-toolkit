@@ -14,7 +14,8 @@
     visibility: hidden;
   }
 
-  &.active {
+  &.active,
+  &.no-js {
     display: block;
     opacity: 1;
     visibility: visible;

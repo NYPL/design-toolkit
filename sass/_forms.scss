@@ -406,7 +406,7 @@ $form-padding: 0.5rem;
   > li {
     list-style: none;
     margin: 0 0 0.35rem -1rem;
-    padding: 0;
+    padding: 0.25rem 0;
   }
 
   input[type="checkbox"] {
@@ -792,8 +792,12 @@ $form-padding: 0.5rem;
       @include generic-columns(3);
       max-width: 100%;
 
-      @include media($xtrasmall-breakpoint) {
+      @include media($mobile-breakpoint) {
         @include generic-columns(2);
+      }
+
+      @include media($xtrasmall-breakpoint) {
+        @include generic-columns(1);
        } // /$xtrasmall-breakpoint
       } // /.nypl-generic-columns
     } // /.inner

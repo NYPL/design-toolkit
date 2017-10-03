@@ -191,18 +191,23 @@ h1 {
         margin-top: 0.5rem; } }
   .toolkit .nypl-toolkit-header h2 {
     color: #135772;
-    margin-bottom: 0.25rem;
-    text-shadow: 1px 1px 0 #6fc5e8; }
+    margin-bottom: 0.25rem; }
     .toolkit .nypl-toolkit-header h2 + span {
       color: #135772;
       font-style: italic; }
-.toolkit .main-page h3::before {
+.toolkit .main-page h3.top-level-header::before {
   background: #135772;
   content: "";
   display: block;
   height: 0.25rem;
   margin-bottom: 0.5rem;
   width: 5rem; }
+.toolkit .nypl-toolkit-example .nypl-basic-modal-container .nypl-modal-content {
+  margin: 1rem;
+  padding: 2.5rem;
+  width: 90%; }
+.toolkit .nypl-toolkit-example .nypl-basic-modal-container .nypl-modal-underlay {
+  background: rgba(255, 255, 255, 0.8); }
 .toolkit footer {
   background-color: #caeaf7;
   color: #135772;
