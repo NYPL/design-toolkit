@@ -2510,6 +2510,7 @@ dl dd.multi-item-list .nypl-basic-table,
   line-height: 1.2;
   position: relative;
   padding-left: 1.75rem;
+  padding-top: 0.27rem;
   width: 60%; }
 .nypl-generic-checkbox label::after,
 .nypl-generic-checkbox label::before {
@@ -2527,6 +2528,8 @@ dl dd.multi-item-list .nypl-basic-table,
   width: 0.5625rem;
   border-left: 0.125rem solid;
   border-bottom: 0.125rem solid;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: 0.32rem;
   top: 0.5rem; }
