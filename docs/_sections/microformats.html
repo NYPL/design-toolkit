@@ -209,13 +209,12 @@ description: Formats for specific information such as library hours, room locati
 
 <h3 id="modalsPopups">Simple Modal</h3>
 <p>The following describes the usage of modals (popups).</p>
-<p class="nypl-a11y-note"><strong>Accessibility note:</strong> In order for a modal to be fully accessible, the right html attributes and javascript behaviors must be in place. Key to a modal&rsquo;s operabiltiy is to afford the user the use of the escape key on their keyboard. Aria attributes must also being in place and toggle properly between respective states. The example below demonstrates a few key points. Headings, (in this case an <code>&lt;h3&gt;</code>) must recieve focus when the modal is activated, this landmark will help assitive technologies orient the user.</p>
+<p class="nypl-a11y-note"><strong>Accessibility note:</strong> In order for a modal to be fully accessible, the right html attributes and javascript behaviors must be in place. Key to a modal&rsquo;s operabiltiy is to afford the user the use of the escape key on their keyboard and implement a graphical method of closure via a close button or link. Aria attributes must also being in place and toggle properly between respective states. The example below demonstrates a few key points. Headings, (in this case an <code>&lt;h3&gt;</code>) must recieve focus when the modal is activated, this landmark will help assitive technologies orient the user.</p>
 <p>The modal&rsquo;s container should recive the following attributes:
   <ul>
     <li><code>role="dialog"</code></li>
-    <li><code>aria-labelledby="someElementID"</code></li>
-    <li><code>aria-describedby=""</code><br>A brief statement receiving the <code>class="screenreader-only"</code></li>
-    <li>A close button or link</li>
+    <li><code>aria-labelledby="modal-title"</code></li>
+    <li><code>aria-describedby="modal-description"</code><br>A brief statement receiving the <code>class="screenreader-only"</code></li>
     </ul>
   </p>
 <div class="nypl-toolkit-example">
