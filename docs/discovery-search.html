@@ -82,6 +82,21 @@
               </div>
 
               <div class="nypl-filter-button">
+                <a href="#popup-no-js" id="filterButton-link" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
+                  Filter Results
+                  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
+                    <title>filter.icon.3</title>
+                    <g>
+                      <circle cx="6.65947" cy="2.31986" r="1.31924"/>
+                      <circle cx="13.18733" cy="1.31986" r="1.31895"/>
+                      <circle cx="9.56477" cy="5.46901" r="1.31927"/>
+                      <g>
+                        <path d="M7.74355,22.50683a.95047.95047,0,0,1-.95022-.95022V11.28645L.25259,4.23413A.95041.95041,0,1,1,1.64824,2.94366l7.04554,7.598v11.015A.95047.95047,0,0,1,7.74355,22.50683Z"/>
+                        <path d="M11.60384,19.73881a.95047.95047,0,0,1-.95022-.95022V10.5478l7.126-7.81485a.95047.95047,0,0,1,1.41049,1.27439l-6.636,7.27293v7.50832A.95047.95047,0,0,1,11.60384,19.73881Z"/>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
                 <button id="filterButton" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
                   Filter Results
                   <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
@@ -487,7 +502,7 @@ Next</a>
     </div>
   </footer>
   <!--//// start MODAL -->
-  <div class="nypl-basic-modal-container no-js" role="dialog" aria-labelledby="filter-title" aria-describedby="modal-description">
+  <div id="popup-no-js" class="nypl-basic-modal-container no-js" role="dialog" aria-labelledby="filter-title" aria-describedby="modal-description">
     <div id="filterContent-no-js" class="nypl-modal-content">
       <p id="modal-description" class="nypl-screenreader-only">Filter search results</p>
       <div class="nypl-modal-filter-form" role="menu">
@@ -619,6 +634,13 @@ Next</a>
                 </svg>
                 <span>Clear Filters</span>
               </button>
+              <a href="#" id="cancelFiltering-link" class="nypl-filter-button" type="button" name="button" aria-controls="modal-content">
+                <svg viewBox="0 0 32 32" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="close">
+                  <title id="close">x.close.icon</title>
+                  <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
+                </svg>
+                <span>Cancel</span>
+              </a>
               <button id="cancelFiltering" class="nypl-filter-button" type="button" name="button" aria-controls="modal-content">
                 <svg viewBox="0 0 32 32" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="close">
                   <title id="close">x.close.icon</title>
@@ -630,6 +652,13 @@ Next</a>
           </fieldset><!-- parent fieldset -->
         </form>
       </div>
+      <a href="#" class="nypl-x-close-button" id="closeModal-link" name="Close-Filters" aria-expanded="false" aria-controls="modal-content">
+        <span>Close</span>
+        <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" aria-labelledby="close-modal">
+          <title id="close-modal">x-close-rev</title>
+          <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
+        </svg>
+      </a>
       <button type="button" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters" aria-expanded="false" aria-controls="modal-content">
         <span>Close</span>
         <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" aria-labelledby="close-modal">
@@ -654,6 +683,7 @@ document.querySelector('#sort-submission').className = 'nypl-screenreader-only';
 // remove the default no-js id & class from the DOM
 document.getElementById('filterContent-no-js').id = 'filterContent';
 document.querySelector('.nypl-basic-modal-container').classList.remove('no-js');
+// document.querySelector('.nypl-basic-modal-container').classList.remove('active');
 })();
 
 
@@ -667,11 +697,27 @@ var modal = document.querySelector('.nypl-basic-modal-container');
 // Get the button that opens the modal
 var openModalButton = document.querySelector('#filterButton');
 
+// Get the link that opens the modal - no-js
+var openModalButtonLink = document.querySelector('#filterButton-link');
+
 // Get the element that closes the modal
 var closeTheModal = document.querySelector('#closeModal');
 
+// Get the link that closes the modal - no-js
+var closeTheModalLink = document.querySelector('#closeModal-link');
+
 // Get the cancel button that closes the modal
 var cancelTheModal = document.querySelector('#cancelFiltering');
+
+// Get the cancel link that closes the modal - no-js
+var cancelTheModalLink = document.querySelector('#cancelFiltering-link');
+
+openModalButton.setAttribute("style", "display: block;");
+closeTheModal.setAttribute("style", "display: block;");
+cancelTheModal.setAttribute("style", "display: block;");
+closeTheModalLink.setAttribute("style", "display: none;");
+openModalButtonLink.setAttribute("style", "display: none;");
+cancelTheModalLink.setAttribute("style", "display: none;");
 
 openModalButton.addEventListener('click', function() {
   modal.classList.remove('inactive');
@@ -690,6 +736,15 @@ closeTheModal.addEventListener('click', function() {
   modal.classList.remove('active');
   modal.classList.add('inactive');
   openModalButton.setAttribute("aria-expanded", false);
+});
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+  if (keyName === 'Escape') {
+    modal.classList.remove('active');
+    modal.classList.add('inactive');
+    openModalButton.setAttribute("aria-expanded", false);
+  }
 });
 
 //
