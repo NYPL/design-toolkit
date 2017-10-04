@@ -21,7 +21,8 @@
     visibility: visible;
 
     .nypl-modal-underlay {
-      background: transparentize($nypl-white, 0.2);
+      // background: transparentize($nypl-white, 0.2);
+      @include radial-gradient;
       bottom: 0;
       left: 0;
       position: fixed;

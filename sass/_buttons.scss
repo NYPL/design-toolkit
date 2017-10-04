@@ -354,6 +354,33 @@
     top: 0.5rem;
   }
 }
+
+
+
+//
+// Unset a filter pattern
+// Found in search results after setting a filter
+//
+
+@mixin unset-filter-button($button-icon: true) {
+  @include basic-button(
+  $background-color: $nypl-white,
+  $border-color: $nypl-dark-gray,
+  $border-radius: 0.25rem,
+  $button-icon: true,
+  $hover-text-color: $nypl-white,
+  $hover-background-color: $nypl-dark-gray,
+  $text-color: $nypl-dark-gray
+  );
+
+  .nypl-icon {
+    position: relative;
+    top: 0.1rem;
+  }
+}
+
+
+
 // A special case where we need to change dimensions of the button:
 // A use case its the "Filter Results"
 @mixin short-button(

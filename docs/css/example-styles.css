@@ -1154,10 +1154,10 @@ dl dd.multi-item-list .nypl-basic-table,
     text-decoration: none; }
 
 .nypl-unset-filter {
-  background-color: #d0343a;
-  border: 0.04167rem solid #d0343a;
+  background-color: #fff;
+  border: 0.04167rem solid #080807;
   border-radius: 0.25rem;
-  color: #fff;
+  color: #080807;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -1174,10 +1174,10 @@ dl dd.multi-item-list .nypl-basic-table,
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s; }
   .nypl-unset-filter .nypl-icon {
-    background-color: #d0343a;
+    background-color: #fff;
     border-radius: 0;
     display: inline-block;
-    fill: #fff;
+    fill: #080807;
     height: 1em;
     width: 1em;
     speak: none;
@@ -1189,16 +1189,16 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: inherit;
       fill: #fff; }
   .nypl-unset-filter:link, .nypl-unset-filter:visited {
-    color: #fff; }
+    color: #080807; }
   .nypl-unset-filter:hover, .nypl-unset-filter:hover:visited, .nypl-unset-filter.active {
-    border-color: #d0343a;
-    background-color: #fff;
-    color: #d0343a; }
+    border-color: #fff;
+    background-color: #080807;
+    color: #fff; }
     .nypl-unset-filter:hover .nypl-icon, .nypl-unset-filter:hover:visited .nypl-icon, .nypl-unset-filter.active .nypl-icon {
-      background-color: #fff;
+      background-color: #080807;
       border-radius: 0;
       display: inline-block;
-      fill: #d0343a;
+      fill: #fff;
       height: "";
       width: "";
       speak: none; }
@@ -1212,15 +1212,15 @@ dl dd.multi-item-list .nypl-basic-table,
     outline: none; }
   .nypl-unset-filter.disabled, .nypl-unset-filter[disabled="disabled"], .nypl-unset-filter[disabled="true"], .nypl-unset-filter[disabled], .nypl-unset-filter[disabled=true] {
     background-color: #d7d4d0;
-    border-color: #fff;
+    border-color: #080807;
     cursor: default; }
     .nypl-unset-filter.disabled:hover, .nypl-unset-filter[disabled="disabled"]:hover, .nypl-unset-filter[disabled="true"]:hover, .nypl-unset-filter[disabled]:hover, .nypl-unset-filter[disabled=true]:hover {
       background-color: #d7d4d0;
-      border-color: #fff;
-      color: #fff; }
+      border-color: #080807;
+      color: #080807; }
   .nypl-unset-filter .nypl-icon {
     position: relative;
-    top: 0.15rem; }
+    top: 0.1rem; }
 
 .nypl-short-button {
   background-color: #fff;
@@ -4355,7 +4355,11 @@ dl dd.multi-item-list .nypl-basic-table,
   opacity: 1;
   visibility: visible; }
   .nypl-basic-modal-container.active .nypl-modal-underlay, .nypl-basic-modal-container.no-js .nypl-modal-underlay {
-    background: rgba(255, 255, 255, 0.8);
+    background-image: #fff;
+    background-image: -moz-radial-gradient(center, ellipse cover, #fff 0%, #1b7fa7 0%);
+    background-image: -webkit-radial-gradient(center, ellipse cover, #fff, 0%, #1b7fa7 0%);
+    background-image: radial-gradient(ellipse at center, #fff 0%, #1b7fa7 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='to',GradientType=1 );
     bottom: 0;
     left: 0;
     position: fixed;
