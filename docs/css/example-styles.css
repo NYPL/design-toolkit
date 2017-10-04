@@ -4391,7 +4391,8 @@ dl dd.multi-item-list .nypl-basic-table,
     padding: 0;
     position: absolute;
     top: 0.75rem;
-    width: 5rem; }
+    width: 5rem;
+    z-index: 2001; }
     @media (max-width: 483px) {
       .nypl-basic-modal-container.active .nypl-x-close-button, .nypl-basic-modal-container.no-js .nypl-x-close-button {
         right: 5%;

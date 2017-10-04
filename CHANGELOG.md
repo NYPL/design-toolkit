@@ -1,5 +1,8 @@
 ### Change Log
 
+### v0.1.27
+- fixes #236 z-index missing from modal's close Button
+
 ### v0.1.26.3
 - improvements to filtering layout
 - added documentation covering Modals
