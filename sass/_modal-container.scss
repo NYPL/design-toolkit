@@ -66,6 +66,7 @@
       position: absolute;
       top: ($general-margin * 0.75);
       width: 5rem;
+      z-index: 2001;
 
       @include media($xtrasmall-breakpoint) {
         right: 5%;
