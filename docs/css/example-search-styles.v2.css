@@ -4373,7 +4373,11 @@ dl dd.multi-item-list .nypl-basic-table,
   opacity: 1;
   visibility: visible; }
   .nypl-basic-modal-container.no-js:target .nypl-modal-underlay, .nypl-basic-modal-container.active .nypl-modal-underlay {
-    background: rgba(255, 255, 255, 0.8);
+    background-image: #fff;
+    background-image: -moz-radial-gradient(center, ellipse cover, #fff 0%, #1b7fa7 0%);
+    background-image: -webkit-radial-gradient(center, ellipse cover, #fff, 0%, #1b7fa7 0%);
+    background-image: radial-gradient(ellipse at center, #fff 0%, #1b7fa7 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='to',GradientType=1 );
     bottom: 0;
     left: 0;
     position: fixed;

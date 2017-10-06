@@ -58,6 +58,25 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0 ); // IE6 to IE9
 }
 
+
+
+@mixin radial-gradient(
+  $from: $nypl-white,
+  $to: $nypl-blue) {
+// Old browsers
+  background-image: $from;
+// FF3.6-15
+  background-image: -moz-radial-gradient(center, ellipse cover, $from 0%, $to 0%);
+// Chrome10-25,Safari5.1-6
+  background-image: -webkit-radial-gradient(center, ellipse cover, $from, 0%, $to 0%);
+// W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+  background-image: radial-gradient(ellipse at center, $from 0%, $to 0%);
+// IE6-9 fallback on horizontal gradient
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{to}',GradientType=1 );
+}
+
+
+
 @mixin transition($property, $duration, $function, $delay: 0s) {
   -webkit-transition: ($property $duration $function $delay); // Chrome 4.0 to 25.0, Safari 3.1 to 6.0, Mobile Safari 3.2 to 6.1, Android Browser 2.1 to 4.3
      -moz-transition: ($property $duration $function $delay); // Firefox 4.0 to 15.0
