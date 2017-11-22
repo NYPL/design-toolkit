@@ -1,4 +1,6 @@
-<svg width="48" height="48" viewBox="0 0 32 32" class="wht gray-bg">
-  <title>dash.icon.svg</title>
-  <path d="M24,14H8a2.0025,2.0025,0,0,0,0,4H24A2.0025,2.0025,0,0,0,24,14Z"/>
+<svg width="30" height="4" viewBox="0 0 30 4" class="svgIcon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <title>
+        dash.icon
+    </title>
+    <rect y=".003" width="30" height="3.996" rx="1.997" ry="1.997"/>
 </svg>

@@ -4,11 +4,10 @@ description: SVG icon usage.
 ---
 
 
-<h3>NYPL Lion Logo</h3>
+<h3>NYPL Logos</h3>
 <p>The NYPL branding / logos have special use cases. You'll probably have no need to modify the logo other than changing its size. We can use either the <em>logo mark</em> or the <em>logo type</em>. This can be achieved by using <code>css</code> to hide either of these two components.</p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
-
   {% include_relative icons/logoLion.icon.svg %}
 </div>
 <textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/logoLion.icon.svg %}</textarea>
@@ -17,4 +16,17 @@ description: SVG icon usage.
     .nypl-icon {
     @include nypl-icon($height: 9em, $width: 16em);
     }
+</code></pre>
+
+<h3>3 Dots</h3>
+<p>We use these to indicate there is something else to discover</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+
+  {% include_relative icons/3dots.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/3dots.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
 </code></pre>

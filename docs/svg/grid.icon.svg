@@ -1,4 +1,9 @@
-<svg width="32" height="32" viewBox="0 0 32 32">
-  <title>grid.icon.svg</title>
-  <path d="M17,6H6V26H26V6H17ZM8,8h7v7H8V8ZM8,24V17h7v7H8Zm16,0H17V17h7v7Zm-7-9V8h7v7H17Z"/>
+<svg width="47.969" height="47.875" viewBox="0 0 47.969 47.875" class="svgIcon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <title>
+        grid.icon
+    </title>
+    <rect width="21.969" height="21.938" rx="3" ry="3"/>
+    <rect x="25.969" width="22" height="21.938" rx="3" ry="3"/>
+    <rect y="25.938" width="21.969" height="21.938" rx="3" ry="3"/>
+    <rect x="25.969" y="25.938" width="21.906" height="21.938" rx="3" ry="3"/>
 </svg>

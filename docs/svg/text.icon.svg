@@ -1,9 +1,9 @@
 <svg width="48" height="45" viewBox="0 0 48 45" class="svgIcon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
     <title>
-        list.icon
+        text.icon
     </title>
     <rect width="48" height="6" rx="3" ry="3"/>
-    <rect y="13" width="24" height="6" rx="3" ry="3"/>
+    <rect y="13" width="48" height="6" rx="3" ry="3"/>
     <rect y="26" width="48" height="6" rx="3" ry="3"/>
     <rect y="39" width="24" height="6" rx="3" ry="3"/>
 </svg>

@@ -144,6 +144,13 @@ h1 {
     padding-top: 1rem;
     text-align: center; }
 
+textarea {
+  color: #111;
+  font-family: monospace;
+  font-size: 0.85rem;
+  padding: 1rem;
+  width: 95%; }
+
 .nypl-icon.nypl-logo {
   width: 16rem;
   height: 9rem; }

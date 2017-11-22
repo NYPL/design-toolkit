@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <title>tag.icon</title>
-  <path d="M26.45536,26.45536H16.80078L4.92843,14.58216l9.65373-9.65373,11.8732,11.87235v9.65458ZM17.87606,23.859h5.983v-5.983L14.58216,8.5992l-5.983,5.983Z"/>
+<svg width="47.969" height="47.969" viewBox="0 0 47.969 47.969" class="svgIcon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <title>
+        tag.icon
+    </title>
+    <path d="M47.969 47.969H26.457L0 21.512 21.512 0 47.97 26.457zm-19.116-5.784h13.332V28.853L21.512 8.181 8.181 21.512z"/>
 </svg>
