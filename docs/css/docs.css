@@ -152,7 +152,14 @@ textarea {
   width: 95%; }
 
 .nypl-icon.nypl-logo {
-  width: 16rem;
-  height: 9rem; }
+  width: 20rem;
+  height: 13rem; }
+
+.nypl-toolkit-example .svgIcon {
+  background: #fff;
+  border: 0.03125rem #d7d4d0 dotted;
+  height: 1.5rem;
+  padding: 1rem;
+  width: 1.5rem; }
 
 /*# sourceMappingURL=docs.css.map */

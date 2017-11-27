@@ -164,10 +164,18 @@ textarea {
   padding: 1rem;
   width: 95%;
 }
-.nypl-icon.nypl-logo {
-  width: 16rem;
-  height: 9rem;
-}
-.svgIcon {
 
+.nypl-icon.nypl-logo {
+  width: 20rem;
+  height: 13rem;
+}
+.nypl-toolkit-example {
+
+  .svgIcon {
+    background: $nypl-white;
+    border: ($general-border-width * 0.25) $nypl-light-gray dotted;
+    height: 1.5rem;
+    padding: 1rem;
+    width: 1.5rem;
+  }
 }
