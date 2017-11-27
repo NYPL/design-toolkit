@@ -1,0 +1,100 @@
+// Some more complex grid layouts using grid & flexbox.
+
+// yeah.
+
+
+// Some very generic wrappers
+// from https://www.nypl.org/events
+// a masonry setup
+
+.masonry {
+  background-color: $nypl-teal-tint;
+  box-sizing: border-box;
+  padding-left: 18%;
+  width: 100%;
+  .title {
+    background-color: $nypl-white;
+    display: flex;
+  }
+
+  .itemList {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    grid-template-areas:
+    "big-brick nw-brick ne-brick"
+    "big-brick sw-brick se-brick";
+    grid-template-columns: 45% 20% 20%;
+
+    @include media($mobile-breakpoint) {
+      grid-template-areas:
+      "big-brick big-brick"
+      "nw-brick ne-brick"
+      "sw-brick se-brick";
+      grid-template-columns: 50% 50%;
+    }
+
+    @include media($xtrasmall-breakpoint) {
+      grid-template-areas:
+      "big-brick"
+      "nw-brick"
+      "ne-brick"
+      "sw-brick"
+      "se-brick";
+      grid-template-columns: 100%;
+    }
+  } // /.itemList
+
+  .item {
+    background-color: $nypl-white;
+    margin: 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    a:link {
+      color: $nypl-dark-gray;
+    }
+
+    h3 {
+      color: $nypl-dark-gray;
+      font-size: 1.25vw;
+      margin: 1em;
+    }
+
+    &:nth-child(1) {
+    grid-area: big-brick;
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    // grid-row-start: 1;
+    // grid-row-end: 2;
+
+    img {
+      filter: grayscale(1);
+      max-width: 100%;
+    }
+  }
+
+    &:nth-child(2) {
+      grid-area: nw-brick;
+      // grid-column-start: 2;
+      // grid-column-end: 3;
+    }
+
+    &:nth-child(3) {
+      grid-area: ne-brick;
+    }
+
+    &:nth-child(4) {
+      grid-area: sw-brick;
+    }
+
+    &:nth-child(4) {
+      grid-area: se-brick;
+    }
+  } // /.item
+} // /.masonry
