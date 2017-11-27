@@ -45,6 +45,13 @@
           transform: translate($x, $y);
 }
 
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+     -moz-transform: rotate($degrees);
+      -ms-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+
 @mixin gradient($from, $to) {
   // Creates a vertical gradient where $from is the colour at the top of the element
   // and $to is the colour at the bottom. The top colour is used as a background-color

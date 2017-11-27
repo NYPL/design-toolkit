@@ -1,6 +1,7 @@
 @import "general-mixins";
 @import "measurements";
 @import "colors";
+@import "icons";
 
 .hljs-selector-class {
   color: $highlight-color; // overriding highlightjs which has low contrast in css class highlighting
@@ -162,20 +163,20 @@ textarea {
   font-family: monospace;
   font-size: 0.85rem;
   padding: 1rem;
-  width: 95%;
+  width: 96.2%;
 }
 
-.nypl-icon.nypl-logo {
-  width: 20rem;
-  height: 13rem;
-}
 .nypl-toolkit-example {
 
-  .svgIcon {
-    background: $nypl-white;
+  .nypl-icon {
     border: ($general-border-width * 0.25) $nypl-light-gray dotted;
     height: 1.5rem;
     padding: 1rem;
     width: 1.5rem;
+  }
+
+  .nypl-logo {
+      height: 13em;
+      width: 20em;
   }
 }

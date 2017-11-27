@@ -1,6 +1,7 @@
-<svg width="48.022" height="48.022" viewBox="0 0 48.022 48.022" class="svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+<svg width="48" height="47.999" viewBox="0 0 48 47.999" class="svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
     <title>
-        close.circle.icon
+        circle.close.icon
     </title>
-    <path d="M40.981 40.981a24 24 0 1 1 7.041-16.97 23.939 23.939 0 0 1-7.04 16.97zM9.87 9.87a20 20 0 1 0 14.142-5.867A19.944 19.944 0 0 0 9.87 9.869z"/>
+    <path d="M24 47.999a24 24 0 1 1 16.978-7.021A23.939 23.939 0 0 1 24 47.999zm0-44a20 20 0 1 0 14.149 5.852A19.944 19.944 0 0 0 23.999 4z"/>
+    <path d="M26.828 24l7.778-7.779a2 2 0 0 0-2.828-2.828L24 21.17l-7.779-7.778a2 2 0 0 0-2.828 2.828l7.778 7.778-7.778 7.778a2 2 0 0 0 2.828 2.829L24 26.828l7.778 7.778a2 2 0 0 0 2.828-2.829z"/>
 </svg>

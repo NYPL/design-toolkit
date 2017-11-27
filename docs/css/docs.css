@@ -149,17 +149,15 @@ textarea {
   font-family: monospace;
   font-size: 0.85rem;
   padding: 1rem;
-  width: 95%; }
+  width: 96.2%; }
 
-.nypl-icon.nypl-logo {
-  width: 20rem;
-  height: 13rem; }
-
-.nypl-toolkit-example .svgIcon {
-  background: #fff;
+.nypl-toolkit-example .nypl-icon {
   border: 0.03125rem #d7d4d0 dotted;
   height: 1.5rem;
   padding: 1rem;
   width: 1.5rem; }
+.nypl-toolkit-example .nypl-logo {
+  height: 13em;
+  width: 20em; }
 
 /*# sourceMappingURL=docs.css.map */

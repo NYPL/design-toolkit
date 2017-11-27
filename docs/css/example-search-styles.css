@@ -546,9 +546,21 @@ button:focus {
   display: inline-block;
   fill: #080807;
   height: 1em;
-  width: 1em;
-  speak: none; }
+  speak: none;
+  width: 1em; }
   .nypl-icon.reversed {
+    background-color: inherit;
+    fill: #fff; }
+
+.nypl-logo {
+  background-color: #fff;
+  border-radius: 0;
+  display: inline-block;
+  fill: #080807;
+  height: 13em;
+  speak: none;
+  width: 20em; }
+  .nypl-logo.reversed {
     background-color: inherit;
     fill: #fff; }
 
@@ -558,11 +570,17 @@ button:focus {
   display: inline-block;
   fill: #080807;
   height: 2.81667rem;
-  width: 5rem;
-  speak: none; }
+  speak: none;
+  width: 5rem; }
   .nypl-logo-rev.reversed {
     background-color: inherit;
     fill: #fff; }
+
+.nypl-arrow-icon {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 .nypl-bar_1 {
   background: linear-gradient(to right, transparent 0%, transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1)) 100%; }
@@ -1192,8 +1210,8 @@ button:focus {
       display: inline-block;
       fill: #fff;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -1216,8 +1234,8 @@ button:focus {
         display: inline-block;
         fill: #776e64;
         height: 1em;
-        width: 1em;
-        speak: none; }
+        speak: none;
+        width: 1em; }
         .nypl-menu-button_left .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button:hover:visited .nypl-icon.reversed, .nypl-menu-button_left .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -1275,8 +1293,8 @@ button:focus {
       display: inline-block;
       fill: #fff;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -1299,8 +1317,8 @@ button:focus {
         display: inline-block;
         fill: #776e64;
         height: 1em;
-        width: 1em;
-        speak: none; }
+        speak: none;
+        width: 1em; }
         .nypl-menu-button_right .nypl-menu-button_button:hover .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button:hover:visited .nypl-icon.reversed, .nypl-menu-button_right .nypl-menu-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -1358,8 +1376,8 @@ button:focus {
       display: inline-block;
       fill: #fff;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -1382,8 +1400,8 @@ button:focus {
         display: inline-block;
         fill: #776e64;
         height: 1em;
-        width: 1em;
-        speak: none; }
+        speak: none;
+        width: 1em; }
         .nypl-navigation-button .nypl-navigation-button_button:hover .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button:hover:visited .nypl-icon.reversed, .nypl-navigation-button .nypl-navigation-button_button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -2220,8 +2238,8 @@ button:focus {
     display: inline-block;
     fill: #fff;
     height: 1em;
-    width: 1em;
     speak: none;
+    width: 1em;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -2697,8 +2715,8 @@ button:focus {
   display: inline-block;
   fill: #080807;
   height: 1em;
-  width: 1em;
-  speak: none; }
+  speak: none;
+  width: 1em; }
   .nypl-nypl-icon.reversed {
     background-color: inherit;
     fill: #fff; }
@@ -3103,8 +3121,8 @@ button:focus {
       display: inline-block;
       fill: #fff;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       display: block;
       margin: 0; }
       .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
@@ -3116,8 +3134,8 @@ button:focus {
       display: inline-block;
       fill: #776e64;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       display: block;
       margin: 0; }
       .nypl-results-summary .nypl-facet button:hover .nypl-icon.reversed {
@@ -3168,8 +3186,8 @@ button:focus {
     display: inline-block;
     fill: #080807;
     height: 1em;
-    width: 1em;
     speak: none;
+    width: 1em;
     display: block;
     fill: #176e91;
     float: right;
@@ -3226,8 +3244,8 @@ button:focus {
       display: inline-block;
       fill: #080807;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -3250,8 +3268,8 @@ button:focus {
         display: inline-block;
         fill: #776e64;
         height: 1em;
-        width: 1em;
-        speak: none; }
+        speak: none;
+        width: 1em; }
         .nypl-results-sorter button:hover .nypl-icon.reversed, .nypl-results-sorter button:hover:visited .nypl-icon.reversed, .nypl-results-sorter button.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -3688,13 +3706,13 @@ button:focus {
     text-align: right;
     text-decoration: none; }
     .nypl-header .main-menu-toggle .nypl-icon {
-      background-color: #d0343a;
-      border-radius: 0;
+      background-color: #fff;
+      border-radius: #d0343a;
       display: inline-block;
-      fill: #fff;
+      fill: #080807;
       height: 1.5em;
-      width: 1.5em;
       speak: none;
+      width: 1.5em;
       position: relative;
       top: 0.4375rem; }
       .nypl-header .main-menu-toggle .nypl-icon.reversed {
@@ -3945,8 +3963,8 @@ button:focus {
       display: inline-block;
       fill: #fff;
       height: 1em;
-      width: 1em;
       speak: none;
+      width: 1em;
       -webkit-transition: all 0.1s ease-in 0s;
       -moz-transition: all 0.1s ease-in 0s;
       -o-transition: all 0.1s ease-in 0s;
@@ -3969,8 +3987,8 @@ button:focus {
         display: inline-block;
         fill: #776e64;
         height: 1em;
-        width: 1em;
-        speak: none; }
+        speak: none;
+        width: 1em; }
         .nypl-header .service-buttons button.collapsible:hover .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .service-buttons button.collapsible.active .nypl-icon.reversed {
           background-color: inherit;
           fill: #fff; }
@@ -4089,8 +4107,8 @@ button:focus {
         display: inline-block;
         fill: #fff;
         height: 1em;
-        width: 1em;
         speak: none;
+        width: 1em;
         -webkit-transition: all 0.1s ease-in 0s;
         -moz-transition: all 0.1s ease-in 0s;
         -o-transition: all 0.1s ease-in 0s;
@@ -4113,8 +4131,8 @@ button:focus {
           display: inline-block;
           fill: #776e64;
           height: 1em;
-          width: 1em;
-          speak: none; }
+          speak: none;
+          width: 1em; }
           .nypl-header .login-toggle button.collapsible:hover .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible:hover:visited .nypl-icon.reversed, .nypl-header .login-toggle button.collapsible.active .nypl-icon.reversed {
             background-color: inherit;
             fill: #fff; }
