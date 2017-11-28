@@ -1,0 +1,918 @@
+---
+title: SVG Index
+description: An index of all available SVG icons and their usage.
+---
+<h3>Usage</h3>
+<p>Available arguments attached to <code>@mixin nypl-icon</code>: <code>$background-color: $nypl-white,<br>
+$border-radius: 0,<br>
+$fill: $page-text-color,<br>
+$height: 1em,<br>
+$inverted-color: $inverted-link-color,<br>
+$width: 1em</code> </p>
+
+<h3>NYPL Logos</h3>
+<p>The NYPL branding / logos have special use cases. You'll probably have no need to modify the logo other than changing its size. We can use either the <em>logo mark</em> or the <em>logo type</em>. This can be achieved by using <code>css</code> to hide either of these two components.</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/nypl.lockup.logo.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/nypl.lockup.logo.svg %}</textarea>
+<pre><code class="scss">
+    .nypl-icon {
+      @include nypl-icon($height: 13em, $width: 20em);
+    }
+</code></pre>
+<!-- /// -->
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/nypl.reverse.logo.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/nypl.reverse.logo.svg %}</textarea>
+<pre><code class="scss">
+    .nypl-icon {
+      @include nypl-icon($height: 13em, $width: 20em);
+    }
+</code></pre>
+<!-- /// -->
+
+<h3>3 Dots</h3>
+<p>We use these to indicate there is something else to discover</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/3dots.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/3dots.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>3 Dots Vertical</h3>
+<p>An alternate representation of the &rdquo;more&ldquo; signal</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/3dots.vert.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/3dots.vert.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Add icon</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/add.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/add.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Add icon with circle</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/add.circle.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/add.circle.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Add icon with circle reverse</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/add.reverse.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/add.reverse.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Apple icon</h3>
+<p>In cases where an icon and link to an Apple&#8482; property is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/apple.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/apple.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Applied icon</h3>
+<p>Where we have a state or button requiring a visual representation of &ldquo;applied&rdquo; </p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/applied.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/applied.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Arrow icon</h3>
+<p>An arrow icon. Use a custom class (in this case: nypl-arrow-icon) use the <code>rotate</code> mixin to transform the direction as needed.</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/arrow.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/arrow.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+  .nypl-arrow-icon {
+    @include rotate(90deg);
+  }
+</code></pre>
+<!-- /// -->
+<h3>Audio icon</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/audio.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/audio.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Disc disc icon</h3>
+<p>Where a CD-ROM or Music CD needs representing</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/disc.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/disc.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Blueray disc icon</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/blueray.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/blueray.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>CD icon</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/cd.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/cd.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+<!-- /// -->
+<h3>Check icon</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/check.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/check.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Check icon circle</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/check.circle.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/check.circle.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Check icon reverse</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/check.rev.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/check.rev.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Close</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/close.cancel.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/close.cancel.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Close with circle</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/close.circle.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/close.circle.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Close with circle</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/close.cancel.rev.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/close.cancel.rev.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Dash</h3>
+<p>Icon to represent an icomplete set of activated controls</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/dash.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/dash.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Dash with circle</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/dash.circle.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/dash.circle.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Dash with circle reverse</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/dash.rev.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/dash.rev.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Disc</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/disc.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/disc.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>E-Reader</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/e-reader.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/e-reader.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Envelope</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/envelope.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/envelope.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Equal sign</h3>
+<p>could be used in other contexts, such as a handle for drag and drop UI elements</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/equal.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/equal.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Exclaim</h3>
+<p>Could be used in other contexts, such as a handle for drag and drop UI elements</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/exclaim.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/exclaim.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Facebook</h3>
+<p>Where iconography and linkage to the social network is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/facebook.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/facebook.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Fastforward</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/fastforward.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/fastforward.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>File</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/file.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/file.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Filter</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/filter.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/filter.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Grid</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/grid.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/grid.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Hidden</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/hidden.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/hidden.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Instagram</h3>
+<p>Where iconography and linkage to the social network is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/instagram.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/instagram.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Library card</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/libcard.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/libcard.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>List</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/list.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/list.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Logged in</h3>
+<p>An icon representing a logged in state</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/loggedin.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/loggedin.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Log in</h3>
+<p>An icon representing a <i>logged out</i> state</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/login.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/login.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Log out</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/logout.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/logout.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Marker</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/marker.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/marker.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Marker empty</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/marker.empty.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/marker.empty.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Marker small dot</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/marker.smalldot.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/marker.smalldot.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Menu (Burger)</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/menu.burger.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/menu.burger.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+
+<!-- /// -->
+<h3>Library building (neoclassic)</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/neoclassic.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/neoclassic.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Open book</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/openbook.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/openbook.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Pencil</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/pencil.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/pencil.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+
+<!-- /// -->
+<h3>Play</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/play.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/play.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Pushpin</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/pushpin.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/pushpin.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Pyramid</h3>
+<p>This icon should be used as a directional indicator and transformed w/ <code>css</code> to achieve desired position</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/pyramid.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/pyramid.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Radio button active</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/radioButton.active.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/radioButton.active.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Radio button inactive</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/radioButton.inactive.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/radioButton.inactive.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Reset</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/reset.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/reset.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Search</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/search.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/search.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Search with circle</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/search.circle.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/search.circle.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Settings</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/settings.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/settings.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Sound Cloud</h3>
+<p>Where iconography and linkage to the service is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/soundCloud.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/soundCloud.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Tag</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/tag.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/tag.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Text</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/text.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/text.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Trash</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/trash.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/trash.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Tumblr</h3>
+<p>Where iconography and linkage to the social network is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/tumblr.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/tumblr.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Twitter</h3>
+<p>Where iconography and linkage to the social network is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/twitter.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/twitter.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+
+<!-- /// -->
+<h3>Typesize</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/typesize.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/typesize.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Unapplied</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/unapplied.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/unapplied.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Visible</h3>
+<p></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/visible.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/visible.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Wedge</h3>
+<p>This icon should be used as a directional indicator and transformed w/ <code>css</code> to achieve desired position</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/wedge.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/wedge.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Wedge with circle</h3>
+<p>This icon should be used as a directional indicator and transformed w/ <code>css</code> to achieve desired position</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/wedge.circle.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/wedge.circle.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<!-- /// -->
+<h3>Wedge with circle reverse</h3>
+<p>This icon should be used as a directional indicator and transformed w/ <code>css</code> to achieve desired position</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/wedge.circle.rev.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/wedge.circle.rev.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>
+
+<h3>Youtube</h3>
+<p>Where iconography and linkage to the video service is required</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/youtube.icon.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/youtube.icon.svg %}</textarea>
+<pre>
+<code class="scss">
+
+</code></pre>

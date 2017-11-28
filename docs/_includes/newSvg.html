@@ -1,0 +1,21 @@
+
+
+<h3>+++ {{ include.icon.title }} +++</h3>
+<p>{{ svg-meta.usage }}</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  <!-- lets put the raw svg include here -->
+  <!-- {% include rawSvg/logoLion.icon.svg %} -->
+  {{ svg-meta.jekyll-template }}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">svg</textarea>
+<pre>
+<code class="scss">
+    {{ svg-meta.scss-example.class }} {
+    {{ svg-meta.scss-example.include }}
+    }
+</code></pre>
+<pre><code class="xml">
+<!-- insert encodedSvg -->
+<!-- sample svg code -->
+</code></pre>

@@ -26,13 +26,34 @@
   text-align: center;
 }
 
+//
+// SVG Iconography
+//
+
 .nypl-icon {
   @include nypl-icon;
 }
 
-.nypl-logo-rev {
-  @include nypl-icon($height: $logo-height, $width: $logo-width, $background-color: transparent);
+.nypl-logo {
+  @include nypl-icon(
+    $height: 13em,
+    $width: 20em);
 }
+
+.nypl-logo-rev {
+  @include nypl-icon(
+    $height: $logo-height,
+    $width: $logo-width,
+    $background-color: transparent);
+}
+
+
+.nypl-arrow-icon {
+  @include rotate(90deg);
+}
+//
+// Loaders
+//
 
 @for $percent from 1 through 100 {
   .nypl-bar_#{$percent} {

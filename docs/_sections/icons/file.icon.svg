@@ -1,0 +1,9 @@
+<svg width="51.95" height="68" viewBox="0 0 51.95 68" class="svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <title>
+        file.icon
+    </title>
+    <path d="M45 0H22L0 21.439v39.907C0 65.21 3.57 68 7.435 68h37.862a6.425 6.425 0 0 0 6.653-6.654V6.806A6.797 6.797 0 0 0 45 0zM20 9v7c0 1.991-2.009 3-4 3h-6zm26 49a4.317 4.317 0 0 1-4 4H9c-1.991 0-3-2.009-3-4V24h10c3.865 0 9-3 9-8V5h17a4.317 4.317 0 0 1 4 4z"/>
+    <rect x="19" y="28" width="24" height="6" rx="3" ry="3"/>
+    <rect x="19" y="40" width="24" height="6" rx="3" ry="3"/>
+    <rect x="19" y="52" width="24" height="6" rx="3" ry="3"/>
+</svg>
