@@ -2,9 +2,9 @@
   $background-color: $nypl-white,
   $border-radius: 0,
   $fill: $page-text-color,
-  $height: 1em,
+  $height: null,
   $inverted-color: $inverted-link-color,
-  $width: 1em
+  $width: null
   ) {
   background-color: $background-color;
   border-radius: $border-radius;
