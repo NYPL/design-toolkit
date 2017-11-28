@@ -1,0 +1,8 @@
+<svg width="48.07" height="43" viewBox="0 0 48.07 43" class="svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <title>
+        audio.icon
+    </title>
+    <path d="M2.5 33A2.5 2.5 0 0 1 0 30.5v-4.942C0 11.017 10.782 0 24.035 0S48.07 11.017 48.07 24.558l-.05 5.963A2.5 2.5 0 0 1 45.52 33h-.02a2.5 2.5 0 0 1-2.5-2.5V25c0-10.838-8.357-20.097-18.965-20.097C13.428 4.903 5 14.163 5 25v5.5A2.5 2.5 0 0 1 2.5 33z"/>
+    <rect x="7" y="24" width="6" height="19" rx="3" ry="3"/>
+    <rect x="35" y="24" width="6" height="19" rx="3" ry="3"/>
+</svg>

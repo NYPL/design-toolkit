@@ -1,9 +1,0 @@
-<svg width="16" height="16" viewBox="0 0 32 32" class="">
-  <title>circle.empty.small.svg</title>
-  <!--
-  the smaller versions use a different circle path
-  in this case we use a "3px" wide path
-  -->
-  <path d="M16,3A13,13,0,1,1,3,16,13.0147,13.0147,0,0,1,16,3m0-3A16,16,0,1,0,32,16,16,16,0,0,0,16,0h0Z"/>
-  <!-- / 3px path -->
-</svg>

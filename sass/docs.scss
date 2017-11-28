@@ -3,6 +3,7 @@
 @import "general-mixins";
 @import "measurements";
 @import "colors";
+@import "icons";
 
 
 
@@ -172,6 +173,7 @@ $colors: (
   }
 }
 
+
 // Creating Some Styles for the TK Docs themselves
 // adding a toolkit class to the body tag
 // Some of this stuff is purely cosmetic. deal with it.
@@ -231,3 +233,30 @@ $colors: (
     height: 6rem;
   }
 } // /.toolkit
+
+
+
+// SVG Section Specific Styles
+// Fix the way the logo is displayed in the toolkit's svg page.
+textarea {
+  color: $nypl-black;
+  font-family: monospace;
+  font-size: 0.85rem;
+  padding: 1rem;
+  width: 96.2%;
+}
+
+.nypl-toolkit-example {
+
+  .nypl-icon {
+    border: ($general-border-width * 0.25) $nypl-light-gray dotted;
+    // height: 1.5rem;
+    padding: 1rem;
+    // width: 1.5rem;
+  }
+
+  .nypl-logo {
+      height: 13em;
+      width: 20em;
+  }
+}

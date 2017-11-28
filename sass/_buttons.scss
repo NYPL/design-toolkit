@@ -209,7 +209,13 @@
 
 
 @mixin results-button {
-  @include basic-button ($text-color: $nypl-blue, $border-color: $nypl-blue, $background-color: $nypl-white, $hover-text-color: $nypl-white, $hover-background-color: $nypl-blue, $border-radius: 0.25rem);
+  @include basic-button (
+    $text-color: $nypl-blue,
+    $border-color: $nypl-blue,
+    $background-color: $nypl-white,
+    $hover-text-color: $nypl-white,
+    $hover-background-color: $nypl-blue,
+    $border-radius: 0.25rem);
   margin: 0.5rem 0;
 
   span {
@@ -285,7 +291,9 @@
   }
 }
 
-@mixin navigation-button($text-color: $button-text-color, $background-color: $nypl-search-color-dark) {
+@mixin navigation-button(
+  $text-color: $button-text-color,
+  $background-color: $nypl-search-color-dark) {
   display: inline-block;
   position: relative;
 
