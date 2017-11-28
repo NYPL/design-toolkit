@@ -438,7 +438,7 @@ h5,
 h6,
 p,
 li {
-  max-width: 30em;
+  max-width: 35rem;
   word-wrap: break-word; }
 
 h1 {
@@ -450,7 +450,8 @@ h2 {
   line-height: 1.1; }
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: 400; }
 
 p {
   margin-top: 0;
@@ -458,7 +459,7 @@ p {
 
 h4 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0; }
 
@@ -468,7 +469,7 @@ ol {
   padding: 0; }
 
 li {
-  margin-left: 1.5rem; }
+  margin-left: 0.5rem; }
 
 code,
 pre {
