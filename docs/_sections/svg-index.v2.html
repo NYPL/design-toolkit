@@ -14,15 +14,27 @@ $width: 1em</code> </p>
 <p>The NYPL branding / logos have special use cases. You'll probably have no need to modify the logo other than changing its size. We can use either the <em>logo mark</em> or the <em>logo type</em>. This can be achieved by using <code>css</code> to hide either of these two components.</p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
-  {% include_relative icons/logoLion.icon.svg %}
+  {% include_relative icons/nypl.lockup.logo.svg %}
 </div>
-<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/logoLion.icon.svg %}</textarea>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/nypl.lockup.logo.svg %}</textarea>
 <pre><code class="scss">
     .nypl-icon {
       @include nypl-icon($height: 13em, $width: 20em);
     }
 </code></pre>
 <!-- /// -->
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+  {% include_relative icons/nypl.reverse.logo.svg %}
+</div>
+<textarea id="nypl-logoArea" name="code-area" rows="8" cols="40" class="xml">{% include_relative icons/nypl.reverse.logo.svg %}</textarea>
+<pre><code class="scss">
+    .nypl-icon {
+      @include nypl-icon($height: 13em, $width: 20em);
+    }
+</code></pre>
+<!-- /// -->
+
 <h3>3 Dots</h3>
 <p>We use these to indicate there is something else to discover</p>
 <div class="nypl-toolkit-example">
