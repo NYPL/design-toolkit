@@ -1,7 +1,8 @@
 ### Change Log
 
 ### v0.1.28
-- Finally getting the toolkit's svg house in order
+- Finally getting the toolkit's ````svg```` house in order
+- Icons added and the generally made to be consistent from one to the next
 
 ### v0.1.27
 - fixes #236 z-index missing from modal's close Button
