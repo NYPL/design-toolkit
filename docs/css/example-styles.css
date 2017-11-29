@@ -2815,9 +2815,8 @@ dl dd.multi-item-list .nypl-basic-table,
         display: none; } }
 
 .nypl-facet-toggle {
-  background-color: #776e64;
+  background-color: #fff;
   border: 0;
-  border-radius: 0;
   color: #fff;
   cursor: pointer;
   display: block;
@@ -2830,16 +2829,19 @@ dl dd.multi-item-list .nypl-basic-table,
   text-align: left;
   width: 100%; }
   .nypl-facet-toggle h3 {
+    color: #080807;
     font-size: inherit;
     margin: 0;
     padding: 0;
     pointer-events: none; }
   .nypl-facet-toggle .nypl-icon {
-    background-color: #776e64;
+    background-color: #fff;
     border-radius: 0;
     display: inline-block;
-    fill: #fff;
+    fill: #080807;
+    height: 0.75rem;
     speak: none;
+    width: 0.75rem;
     -webkit-transition: all 0.1s ease-in 0s;
     -moz-transition: all 0.1s ease-in 0s;
     -o-transition: all 0.1s ease-in 0s;
@@ -2847,7 +2849,7 @@ dl dd.multi-item-list .nypl-basic-table,
     position: absolute;
     right: 0.5rem;
     top: 0.65rem;
-    transform: rotate(180deg); }
+    transform: rotate(-90deg); }
     .nypl-facet-toggle .nypl-icon.reversed {
       background-color: inherit;
       fill: #fff; }
@@ -2861,7 +2863,9 @@ dl dd.multi-item-list .nypl-basic-table,
   margin: 1rem 0;
   padding: 0;
   position: relative;
-  padding-bottom: 0.5rem; }
+  border: #d7d4d0 solid 0.0625rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem; }
   .nypl-collapsible-field fieldset {
     border: 0;
     box-shadow: none;
@@ -2880,7 +2884,7 @@ dl dd.multi-item-list .nypl-basic-table,
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
   .nypl-collapsible-field.collapsed .nypl-facet-toggle .nypl-icon {
-    transform: rotate(0deg); }
+    transform: rotate(90deg); }
 
 .nypl-searchable-field {
   background-color: #fff;
@@ -2891,7 +2895,9 @@ dl dd.multi-item-list .nypl-basic-table,
   margin: 1rem 0;
   padding: 0;
   position: relative;
+  border: #d7d4d0 solid 0.0625rem;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   border-radius: 0; }
   .nypl-searchable-field fieldset {
     border: 0;
@@ -2907,7 +2913,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-searchable-field legend h3 {
     margin: 0; }
   .nypl-searchable-field.collapsed .nypl-facet-toggle .nypl-icon {
-    transform: rotate(0deg); }
+    transform: rotate(90deg); }
   .nypl-searchable-field span.nypl-label {
     color: #080807;
     display: block;
