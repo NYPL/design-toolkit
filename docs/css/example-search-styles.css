@@ -1713,7 +1713,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.2rem);
+      top: 0.4rem;
       width: 1rem; }
       .nypl-menu-button_left .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
@@ -1797,7 +1797,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.2rem);
+      top: 0.4rem;
       width: 1rem; }
       .nypl-menu-button_right .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
@@ -1881,7 +1881,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.2rem);
+      top: 0.4rem;
       width: 1rem; }
       .nypl-navigation-button .nypl-navigation-button_button .nypl-icon.reversed {
         background-color: inherit;
@@ -3940,7 +3940,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.4rem);
+      top: 0.6rem;
       width: 1rem; }
       .nypl-results-sorter button .nypl-icon.reversed {
         background-color: inherit;
@@ -4852,7 +4852,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: 0.3rem;
+      top: 0.2rem;
       width: 1rem; }
       .nypl-header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
@@ -4998,7 +4998,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: 0.3rem;
+      top: 0.2rem;
       width: 1rem; }
       .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;
