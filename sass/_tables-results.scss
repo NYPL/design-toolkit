@@ -86,6 +86,7 @@ $results-item-border-width: 0.0625rem;
     button {
       // the button inside a facet
       @include basic-button(
+      $background-color: none,
       $border-radius: 2rem,
       $padding-vertical: 0,
       $padding-horizontal: 0,
@@ -99,7 +100,7 @@ $results-item-border-width: 0.0625rem;
 
       .nypl-icon {
         @include nypl-icon(
-        $fill: $nypl-dark-gray,
+        $fill: $nypl-search-color-dark,
         $background-color: $nypl-light-gray,
         $border-radius: 1rem,
         $height: 1rem,

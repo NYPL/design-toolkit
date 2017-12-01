@@ -3754,7 +3754,7 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-results-summary .nypl-facet strong {
         max-width: 7rem; } }
   .nypl-results-summary .nypl-facet button {
-    background-color: #080807;
+    background-color: none;
     border: 0 solid #080807;
     border-radius: 2rem;
     color: #fff;
@@ -3807,7 +3807,7 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: #d7d4d0;
       border-radius: 1rem;
       display: inline-block;
-      fill: #080807;
+      fill: #776e64;
       height: 1rem;
       speak: none;
       width: 1rem;
