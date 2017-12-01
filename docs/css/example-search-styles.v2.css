@@ -3816,17 +3816,6 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
-    .nypl-results-summary .nypl-facet button:hover .nypl-icon {
-      background-color: transparent;
-      border-radius: 1rem;
-      display: inline-block;
-      fill: #d7d4d0;
-      speak: none;
-      display: block;
-      margin: 0; }
-      .nypl-results-summary .nypl-facet button:hover .nypl-icon.reversed {
-        background-color: inherit;
-        fill: #fff; }
 .nypl-results-summary .nypl-clear-results {
   clear: both; }
 

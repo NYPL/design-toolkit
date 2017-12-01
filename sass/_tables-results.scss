@@ -107,17 +107,6 @@ $results-item-border-width: 0.0625rem;
         display: block;
         margin: 0;
       }
-
-      &:hover {
-        .nypl-icon {
-          @include nypl-icon(
-          $background-color: transparent,
-          $fill: $nypl-light-gray,
-          $border-radius: 1rem);
-          display: block;
-          margin: 0;
-        }
-      }
     }
   } // /.facet
 
