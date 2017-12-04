@@ -73,9 +73,9 @@
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      $top: 0.3rem;
+      $top: 0.2rem;
       @if ($padding-vertical != 0) {
-        $top: calc(#{$top} + #{$padding-vertical});
+        $top: ($top + $padding-vertical);
       }
       top: $top;
       width: 1rem;

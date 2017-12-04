@@ -371,7 +371,7 @@ function toggleSort(e) {
       parent.find("li:nth-child("+(selected+1)+") a").focus()
     })
   }
-}
+} // /toggleSort
 
 function hideSort() {
   $(".nypl-results-sorter button").removeClass("active").attr("aria-expanded", false)

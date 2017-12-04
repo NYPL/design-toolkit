@@ -1713,7 +1713,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.2rem);
+      top: 0.4rem;
       width: 1rem; }
       .nypl-menu-button_left .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
@@ -1797,7 +1797,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.2rem);
+      top: 0.4rem;
       width: 1rem; }
       .nypl-menu-button_right .nypl-menu-button_button .nypl-icon.reversed {
         background-color: inherit;
@@ -1881,7 +1881,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.2rem);
+      top: 0.4rem;
       width: 1rem; }
       .nypl-navigation-button .nypl-navigation-button_button .nypl-icon.reversed {
         background-color: inherit;
@@ -3754,7 +3754,7 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-results-summary .nypl-facet strong {
         max-width: 7rem; } }
   .nypl-results-summary .nypl-facet button {
-    background-color: #080807;
+    background-color: none;
     border: 0 solid #080807;
     border-radius: 2rem;
     color: #fff;
@@ -3804,25 +3804,16 @@ dl dd.multi-item-list .nypl-basic-table,
       clip: rect(0, 0, 0, 0);
       border: 0; }
     .nypl-results-summary .nypl-facet button .nypl-icon {
-      background-color: #776e64;
-      border-radius: 1rem;
-      display: inline-block;
-      fill: #fff;
-      speak: none;
-      display: block;
-      margin: 0; }
-      .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
-        background-color: inherit;
-        fill: #fff; }
-    .nypl-results-summary .nypl-facet button:hover .nypl-icon {
-      background-color: #fff;
+      background-color: #d7d4d0;
       border-radius: 1rem;
       display: inline-block;
       fill: #776e64;
+      height: 1rem;
       speak: none;
+      width: 1rem;
       display: block;
       margin: 0; }
-      .nypl-results-summary .nypl-facet button:hover .nypl-icon.reversed {
+      .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
         background-color: inherit;
         fill: #fff; }
 .nypl-results-summary .nypl-clear-results {
@@ -3949,7 +3940,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: calc(0.3rem + 0.4rem);
+      top: 0.6rem;
       width: 1rem; }
       .nypl-results-sorter button .nypl-icon.reversed {
         background-color: inherit;
@@ -3985,7 +3976,10 @@ dl dd.multi-item-list .nypl-basic-table,
         border-color: #fff;
         color: #080807; }
     .nypl-results-sorter button .nypl-icon {
-      right: 0.5rem; }
+      right: 0.5rem;
+      transform: rotate(90deg); }
+    .nypl-results-sorter button.active .nypl-icon {
+      transform: rotate(270deg); }
   .nypl-results-sorter button.nypl-screenreader-only {
     position: absolute;
     width: 0.1rem;
@@ -4858,7 +4852,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: 0.3rem;
+      top: 0.2rem;
       width: 1rem; }
       .nypl-header .service-buttons button.collapsible .nypl-icon.reversed {
         background-color: inherit;
@@ -5004,7 +4998,7 @@ dl dd.multi-item-list .nypl-basic-table,
       height: 1rem;
       position: absolute;
       right: 0.25rem;
-      top: 0.3rem;
+      top: 0.2rem;
       width: 1rem; }
       .nypl-header .login-toggle button.collapsible .nypl-icon.reversed {
         background-color: inherit;
