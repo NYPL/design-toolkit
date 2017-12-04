@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" aria-lablelledby="radio-button-inactive">
+<title id="radio-button-inactive">radioButton.icon.inactive</title>
+<path d="M8,1.4c3.6,0,6.6,2.9,6.6,6.6s-2.9,6.6-6.6,6.6S1.4,11.6,1.4,8C1.4,4.3,4.3,1.4,8,1.4 M8,0.5C3.8,0.5,0.5,3.8,0.5,8
+	s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5C15.5,3.8,12.1,0.5,8,0.5C8,0.5,8,0.5,8,0.5z"/>
+</svg>

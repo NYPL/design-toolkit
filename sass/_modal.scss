@@ -9,6 +9,7 @@
     display: none;
   }
 
+  &.no-js-active,
   &.active {
     background: transparentize($nypl-white, 0.2);
     display: block;

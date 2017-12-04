@@ -99,7 +99,7 @@ description: Displaying search results and tabular data.
       Audience
       <strong>Young Adult
         <button>
-          <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10 10" aria-hidden="true"><title>times.icon</title><polygon points="2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 "/></svg>
+          {% include_relative icons/close.cancel.rev.icon.svg %}
           <span>Remove Young Adult filter</span>
         </button>
       </strong>
@@ -108,7 +108,7 @@ description: Displaying search results and tabular data.
       Genre
       <strong>Fiction
         <button>
-          <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10 10" aria-hidden="true"><title>times.icon</title><polygon points="2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 "/></svg>
+          {% include_relative icons/close.cancel.rev.icon.svg %}
           <span>Remove Fiction filter</span>
         </button>
       </strong>
@@ -134,7 +134,12 @@ description: Displaying search results and tabular data.
       Audience
       &lt;strong&gt;Young Adult
         &lt;button&gt;
-          &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 10 10&quot; aria-hidden=&quot;true&quot;&gt;&lt;title&gt;times.icon&lt;/title&gt;&lt;polygon points=&quot;2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 &quot;/&gt;&lt;/svg&gt;
+        &lt;svg width=&quot;50&quot; height=&quot;50&quot; viewBox=&quot;0 0 50 50&quot; class=&quot;svgIcon nypl-icon&quot; aria-hidden=&quot;true&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
+            &lt;title&gt;
+                close.cancel.rev.icon
+            &lt;/title&gt;
+            &lt;path d=&quot;M40.978 7.02a24 24 0 1 0 0 33.958 24.04 24.04 0 0 0 0-33.957zm-6.372 24.757a2 2 0 1 1-2.828 2.829L24 26.828l-7.779 7.778a2 2 0 0 1-2.828-2.829L21.171 24l-7.778-7.778a2 2 0 0 1 2.828-2.828L24 21.17l7.778-7.778a2 2 0 1 1 2.828 2.828l-7.778 7.778z&quot;/&gt;
+        &lt;/svg&gt;
           &lt;span&gt;Remove Young Adult filter&lt;/span&gt;
         &lt;/button&gt;
       &lt;/strong&gt;
@@ -143,7 +148,12 @@ description: Displaying search results and tabular data.
       Genre
       &lt;strong&gt;Fiction
         &lt;button&gt;
-          &lt;svg class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 10 10&quot; aria-hidden=&quot;true&quot;&gt;&lt;title&gt;times.icon&lt;/title&gt;&lt;polygon points=&quot;2.3,6.8 3.2,7.7 5,5.9 6.8,7.7 7.7,6.8 5.9,5 7.7,3.2 6.8,2.3 5,4.1 3.2,2.3 2.3,3.2 4.1,5 &quot;/&gt;&lt;/svg&gt;
+        &lt;svg width=&quot;50&quot; height=&quot;50&quot; viewBox=&quot;0 0 50 50&quot; class=&quot;svgIcon nypl-icon&quot; aria-hidden=&quot;true&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
+            &lt;title&gt;
+                close.cancel.rev.icon
+            &lt;/title&gt;
+            &lt;path d=&quot;M40.978 7.02a24 24 0 1 0 0 33.958 24.04 24.04 0 0 0 0-33.957zm-6.372 24.757a2 2 0 1 1-2.828 2.829L24 26.828l-7.779 7.778a2 2 0 0 1-2.828-2.829L21.171 24l-7.778-7.778a2 2 0 0 1 2.828-2.828L24 21.17l7.778-7.778a2 2 0 1 1 2.828 2.828l-7.778 7.778z&quot;/&gt;
+        &lt;/svg&gt;
           &lt;span&gt;Remove Fiction filter&lt;/span&gt;
         &lt;/button&gt;
       &lt;/strong&gt;
@@ -166,10 +176,7 @@ description: Displaying search results and tabular data.
   <div class="nypl-results-sorter">
     <button aria-expanded="false">
     Sort by <strong>relevance</strong>
-      <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 68 24">
-        <title>wedge down icon</title>
-        <polygon points="67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0" />
-      </svg>
+      {% include_relative icons/wedge.icon.svg %}
     </button>
     <ul class="hidden" role="menu">
       <li><a href="?sort=relevance" class="active">relevance</a></li>
@@ -192,10 +199,12 @@ description: Displaying search results and tabular data.
   &lt;div class=&quot;nypl-results-sorter&quot;&gt;
     &lt;button aria-expanded=&quot;false&quot;&gt;
     Sort by &lt;strong&gt;relevance&lt;/strong&gt;
-      &lt;svg aria-hidden=&quot;true&quot; class=&quot;nypl-icon&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 68 24&quot;&gt;
-        &lt;title&gt;wedge down icon&lt;/title&gt;
-        &lt;polygon points=&quot;67.938 0 34 24 0 0 10 0 34.1 16.4 58.144 0 67.938 0&quot; /&gt;
-      &lt;/svg&gt;
+    &lt;svg width=&quot;18.428&quot; height=&quot;30.5&quot; viewBox=&quot;0 0 18.428 30.5&quot; class=&quot;svgIcon nypl-icon&quot; aria-hidden=&quot;true&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
+        &lt;title&gt;
+            wedge
+        &lt;/title&gt;
+        &lt;path d=&quot;M17.749 26.818L6.205 15.288 17.832 3.592a2.075 2.075 0 0 0 .01-2.901 2.278 2.278 0 0 0-3.243-.026L0 15.225 14.693 29.87a2.16 2.16 0 0 0 3.065-.016 2.16 2.16 0 0 0-.01-3.036z&quot;/&gt;
+    &lt;/svg&gt;
     &lt;/button&gt;
     &lt;ul class=&quot;hidden&quot; role=&quot;menu&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;?sort=relevance&quot; class=&quot;active&quot;&gt;relevance&lt;/a&gt;&lt;/li&gt;

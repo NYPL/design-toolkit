@@ -501,9 +501,8 @@ $form-padding: 0.5rem;
 } // /terms-checkbox
 
 @mixin facet-toggle {
-  background-color: $nypl-search-color-dark;
+  background-color: $nypl-white;
   border: 0;
-  border-radius: 0;
   color: $page-background-color;
   cursor: pointer;
   display: block;
@@ -517,6 +516,7 @@ $form-padding: 0.5rem;
   width: 100%;
 
   h3 {
+    color: $page-text-color;
     font-size: inherit;
     margin: 0;
     padding: 0;
@@ -525,19 +525,23 @@ $form-padding: 0.5rem;
 
   .nypl-icon {
     @include nypl-icon(
-      $fill: $page-background-color,
-      $background-color: $nypl-search-color-dark);
+      $fill: $page-text-color,
+      $height: 0.75rem,
+      $background-color: $page-background-color,
+      $width: 0.75rem);
     @include transition(all, $hover-time, ease-in);
     position: absolute;
     right: 0.5rem;
     top: 0.65rem;
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
   }
 } // /facet-toggle
 
 @mixin collapsible-field($is-searchable: false) {
   @include fieldset;
+  border: $nypl-light-gray solid ($general-border-width / 2);
   padding-bottom: $form-padding;
+  padding-top: $form-padding;
 
   @if ($is-searchable == false) {
     .nypl-collapsible {
@@ -549,7 +553,7 @@ $form-padding: 0.5rem;
 
   &.collapsed {
     .nypl-facet-toggle .nypl-icon {
-      transform: rotate(0deg);
+      transform: rotate(90deg);
     }
   }
 }

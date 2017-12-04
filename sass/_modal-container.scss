@@ -6,6 +6,24 @@
 //    @include basic-modal;
 //    }
 
+#closeModal {
+  display: none;
+}
+
+#filterButton {
+  display: none;
+}
+
+#cancelFiltering {
+  display: none;
+}
+
+#popup-no-js:target {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 @mixin basic-modal {
 
   &.inactive {
@@ -14,8 +32,14 @@
     visibility: hidden;
   }
 
-  &.active,
   &.no-js {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.no-js:target,
+  &.active {
     display: block;
     opacity: 1;
     visibility: visible;

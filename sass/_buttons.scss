@@ -66,15 +66,19 @@
     text-align: left;
 
     .nypl-icon {
-      @include nypl-icon($fill: $text-color, $background-color: $background-color);
       @include transition(all, $hover-time, ease-in);
+      @include nypl-icon(
+        $fill: $text-color,
+        $background-color: $background-color);
+      height: 1rem;
       position: absolute;
       right: 0.25rem;
-      $top: 0.3rem;
+      $top: 0.2rem;
       @if ($padding-vertical != 0) {
-        $top: calc(#{$top} + #{$padding-vertical});
+        $top: ($top + $padding-vertical);
       }
       top: $top;
+      width: 1rem;
     }
   } // /collapsible
 
@@ -209,7 +213,13 @@
 
 
 @mixin results-button {
-  @include basic-button ($text-color: $nypl-blue, $border-color: $nypl-blue, $background-color: $nypl-white, $hover-text-color: $nypl-white, $hover-background-color: $nypl-blue, $border-radius: 0.25rem);
+  @include basic-button (
+    $text-color: $nypl-blue,
+    $border-color: $nypl-blue,
+    $background-color: $nypl-white,
+    $hover-text-color: $nypl-white,
+    $hover-background-color: $nypl-blue,
+    $border-radius: 0.25rem);
   margin: 0.5rem 0;
 
   span {
@@ -285,7 +295,9 @@
   }
 }
 
-@mixin navigation-button($text-color: $button-text-color, $background-color: $nypl-search-color-dark) {
+@mixin navigation-button(
+  $text-color: $button-text-color,
+  $background-color: $nypl-search-color-dark) {
   display: inline-block;
   position: relative;
 
@@ -332,8 +344,10 @@
   );
   // We set the icon's position here and not on the general mixin since we are using a specific icon [x]
   .nypl-icon {
+    height: 1rem;
     position: relative;
     top: 0.15rem;
+    width: 1rem;
   }
 }
 
@@ -378,8 +392,10 @@
   }
 
   .nypl-icon {
+    height: 1rem;
     margin-left: 1.75rem;
     position: relative;
     top: 0.1rem;
+    width: 1rem;
   }
 }

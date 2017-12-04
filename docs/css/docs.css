@@ -213,4 +213,15 @@ h1 {
   color: #135772;
   height: 6rem; }
 
+textarea {
+  color: #111;
+  font-family: monospace;
+  font-size: 0.85rem;
+  padding: 1rem;
+  width: 96.2%; }
+
+.nypl-toolkit-example .nypl-logo {
+  height: 13em;
+  width: 20em; }
+
 /*# sourceMappingURL=docs.css.map */
