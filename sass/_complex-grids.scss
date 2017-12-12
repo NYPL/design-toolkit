@@ -8,7 +8,7 @@
 // a masonry setup
 
 .masonry {
-  @include box-sizing(border-box);
+  //@include box-sizing(border-box);
   @include media($mobile-breakpoint) {
     padding-left: 18%;
   }

@@ -4549,9 +4549,6 @@ dl dd.multi-item-list .nypl-basic-table,
         clear: both; } }
 
 .masonry {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background-color: #caf8fc;
   width: 100%; }
   @media (max-width: 965px) {
