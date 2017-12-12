@@ -47,7 +47,11 @@
       text-decoration: none;
 
       .nypl-icon {
-        @include nypl-icon($nypl-white, $nypl-red, $width: 1.5em, $height: 1.5em);
+        @include nypl-icon(
+          $nypl-white,
+          $nypl-red,
+          $width: 1.5em,
+          $height: 1.5em);
         position: relative;
         top: 0.4375rem;
       }

@@ -4549,10 +4549,18 @@ dl dd.multi-item-list .nypl-basic-table,
         clear: both; } }
 
 .masonry {
-  background-color: #caf8fc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 18%;
+  background-color: #caf8fc;
   width: 100%; }
+  @media (max-width: 965px) {
+    .masonry {
+      padding-left: 18%; } }
+  @media (max-width: 483px) {
+    .masonry {
+      padding-left: 4.5%;
+      width: 95%; } }
   .masonry .title {
     background-color: #fff;
     display: flex; }
@@ -4560,11 +4568,10 @@ dl dd.multi-item-list .nypl-basic-table,
     display: grid;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    list-style: none;
-    padding: 0;
-    width: 90%;
     grid-template-areas: "big-brick nw-brick ne-brick" "big-brick sw-brick se-brick";
-    grid-template-columns: 45% 20% 20%; }
+    grid-template-columns: 45% 20% 20%;
+    list-style: none;
+    padding: 0; }
     @media (max-width: 965px) {
       .masonry .itemList {
         grid-template-areas: "big-brick big-brick" "nw-brick ne-brick" "sw-brick se-brick";
@@ -4578,12 +4585,11 @@ dl dd.multi-item-list .nypl-basic-table,
     margin: 0; }
     .masonry .item img {
       max-width: 100%; }
-    .masonry .item a:link {
+    .masonry .item a :link {
       color: #080807; }
     .masonry .item h3 {
       color: #080807;
-      font-size: 1.25vw;
-      margin: 1em; }
+      margin: 0.25em 0; }
     .masonry .item:nth-child(1) {
       grid-area: big-brick; }
       .masonry .item:nth-child(1) img {

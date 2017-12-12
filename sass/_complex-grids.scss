@@ -8,9 +8,15 @@
 // a masonry setup
 
 .masonry {
+  @include box-sizing(border-box);
+  @include media($mobile-breakpoint) {
+    padding-left: 18%;
+  }
+  @include media($xtrasmall-breakpoint) {
+    padding-left: 4.5%;
+    width: 95%;
+  }
   background-color: $nypl-teal-tint;
-  box-sizing: border-box;
-  padding-left: 18%;
   width: 100%;
   .title {
     background-color: $nypl-white;
@@ -21,13 +27,13 @@
     display: grid;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    list-style: none;
-    padding: 0;
-    width: 90%;
     grid-template-areas:
     "big-brick nw-brick ne-brick"
     "big-brick sw-brick se-brick";
     grid-template-columns: 45% 20% 20%;
+    list-style: none;
+    padding: 0;
+    //width: 90%;
 
     @include media($mobile-breakpoint) {
       grid-template-areas:
@@ -56,27 +62,29 @@
       max-width: 100%;
     }
 
-    a:link {
-      color: $nypl-dark-gray;
+    a {
+      :link {
+        color: $nypl-dark-gray;
+      }
     }
 
     h3 {
+      //@include responsive-font(2vw, 2em, 150px, 1.3em);
       color: $nypl-dark-gray;
-      font-size: 1.25vw;
-      margin: 1em;
+      margin: 0.25em 0;
     }
 
     &:nth-child(1) {
-    grid-area: big-brick;
-    // grid-column-start: 1;
-    // grid-column-end: 3;
-    // grid-row-start: 1;
-    // grid-row-end: 2;
+      grid-area: big-brick;
+      // grid-column-start: 1;
+      // grid-column-end: 3;
+      // grid-row-start: 1;
+      // grid-row-end: 2;
 
-    img {
-      filter: grayscale(1);
-      max-width: 100%;
-    }
+      img {
+        filter: grayscale(1);
+        max-width: 100%;
+      }
   }
 
     &:nth-child(2) {
