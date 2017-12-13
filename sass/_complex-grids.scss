@@ -2,22 +2,30 @@
 
 // yeah.
 
-
 // Some very generic wrappers
 // from https://www.nypl.org/events
 // a masonry setup
 
 .masonry {
   //@include box-sizing(border-box);
-  @include media($mobile-breakpoint) {
+  @include media($intermediate-breakpoint) {
+    background-color: lighten($nypl-red, 34%);
     padding-left: 18%;
+    width: 82%;
   }
-  @include media($xtrasmall-breakpoint) {
-    padding-left: 4.5%;
+
+  @include media($mobile-breakpoint) {
+    background-color: $nypl-light-gray;
+    padding: 0 2.5%;
     width: 95%;
   }
-  background-color: $nypl-teal-tint;
-  width: 100%;
+
+  @include media($xtrasmall-breakpoint) {
+    background-color: lighten($nypl-green, 15%);
+    padding: 0 2.25%;
+    width: 94.75%;
+    }
+
   .title {
     background-color: $nypl-white;
     display: flex;
@@ -63,6 +71,8 @@
     }
 
     a {
+      color: $nypl-dark-gray;
+
       :link {
         color: $nypl-dark-gray;
       }
