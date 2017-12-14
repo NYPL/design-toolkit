@@ -3,6 +3,8 @@ title: NYPL User Experience & Visual Design Project Index
 description: A project to corral and organize past, present and future design projects at the New York Public Library.
 ---
 
+**Note:** Many of these links lead to Google Drive folders. In order to see them you must be inside the NYPL organization and will need to request permission to view and /or edit them.
+
 ### Accessibilty
 A spread sheet of accessibility tools
 * [Accessibilty Toolset >>](https://docs.google.com/a/nypl.org/spreadsheets/d/1WhV-AJ6Tb6xF7BxI1RBU0f93KqwV1XlymL6Z4jSykEc/edit?usp=sharing)
