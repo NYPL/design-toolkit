@@ -1,5 +1,8 @@
 ### Change Log
 
+### v0.1.29
+- added the ux/visual design index. and index of projects that will eventually fall under sway of the toolkit.
+
 ### v0.1.28
 - Finally getting the toolkit's ````svg```` house in order
 - Icons added and the generally made to be consistent from one to the next
