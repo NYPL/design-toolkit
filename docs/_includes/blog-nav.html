@@ -1,0 +1,6 @@
+      <p><strong>Blogs</strong></p>
+      <ul class="nypl-custom-list">
+{% for section in site.blogs %}
+        <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+{% endfor %}
+      </ul>

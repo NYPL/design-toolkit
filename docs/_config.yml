@@ -12,6 +12,8 @@ collections:
     output: true
   resources:
     output: true
+  blogs:
+    output: true
 
 exclude:
   - Gemfile
