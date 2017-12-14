@@ -168,7 +168,8 @@ h1 {
 
 .toolkit .nypl-toolkit-header {
   background-color: #efedeb;
-  background-color: #caeaf7; }
+  background-color: #caeaf7;
+  border-bottom: solid 0.25rem #135772; }
   .toolkit .nypl-toolkit-header h1,
   .toolkit .nypl-toolkit-header h2 {
     font-family: "Milo-Light";

@@ -12,10 +12,12 @@ collections:
     output: true
   resources:
     output: true
+  blogs:
+    output: true
 
 exclude:
   - Gemfile
   - README.md
 
 #custom variables
-current-version: 0.1.28
+current-version: 0.1.29

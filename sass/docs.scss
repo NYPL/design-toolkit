@@ -181,6 +181,7 @@ $colors: (
   .nypl-toolkit-header {
     @include page-header;
     background-color: lighten($nypl-light-blue, 20%);
+    border-bottom: solid ($general-border-width * 2) $nypl-blue-dark;
 
     h2 {
       color: $nypl-blue-dark;

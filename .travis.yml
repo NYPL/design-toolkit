@@ -1,3 +1,8 @@
+# NYPL Travis Travis
+branches:
+  only:
+  - master
+  - development
 language: node_js
 node_js:
   - 6
