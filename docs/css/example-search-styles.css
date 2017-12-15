@@ -606,20 +606,25 @@ div.nypl-omnisearch.spinning {
   overflow: hidden; }
 
 .nypl-results-list .nypl-results-item-description {
-  margin-bottom: 0.25rem; }
+  margin-bottom: 1rem; }
 .nypl-results-list .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
-  margin-bottom: 4rem;
+  margin-bottom: 2.25em;
   margin-left: 0;
   max-width: none;
-  border: 0; }
+  border: 0;
+  border-bottom: 0.1rem solid #d2d0cb; }
   .nypl-results-list .nypl-results-item h2,
   .nypl-results-list .nypl-results-item h3 {
     font-weight: normal;
     font-size: 1.2rem;
+    line-height: 1.3;
     margin-bottom: 0.5rem;
     max-width: none; }
+    .nypl-results-list .nypl-results-item h2 a,
+    .nypl-results-list .nypl-results-item h3 a {
+      text-decoration: none; }
   .nypl-results-list .nypl-results-item dl {
     margin-bottom: 1rem;
     margin-top: 0; }
@@ -657,54 +662,45 @@ div.nypl-omnisearch.spinning {
   .nypl-results-list .nypl-results-item h2,
   .nypl-results-list .nypl-results-item h3 {
     margin-bottom: 0; }
-  .nypl-results-list .nypl-results-item.has-request {
-    margin-bottom: 3.25rem; }
   .nypl-results-list .nypl-results-item .nypl-results-media {
     display: inline-block;
     margin-right: 1rem;
     color: #080807;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 400; }
-  .nypl-results-list .nypl-results-item .nypl-results-room,
-  .nypl-results-list .nypl-results-item .nypl-results-place,
-  .nypl-results-list .nypl-results-item .nypl-results-publisher,
-  .nypl-results-list .nypl-results-item .nypl-results-date,
-  .nypl-results-list .nypl-results-item .nypl-results-info {
-    font-size: 0.85rem; }
   .nypl-results-list .nypl-results-item .nypl-results-publisher {
     margin-right: 0.25rem; }
 
-dl dd.multi-item-list .nypl-basic-table,
+dl .multi-item-list .nypl-basic-table,
 .nypl-results-item .nypl-basic-table {
   display: table;
   width: 100%; }
   @media (max-width: 965px) {
-    dl dd.multi-item-list .nypl-basic-table,
+    dl .multi-item-list .nypl-basic-table,
     .nypl-results-item .nypl-basic-table {
       overflow: auto;
       overflow-y: hidden;
       overflow-x: auto;
       display: block; } }
-  dl dd.multi-item-list .nypl-basic-table thead,
+  dl .multi-item-list .nypl-basic-table thead,
   .nypl-results-item .nypl-basic-table thead {
     border-bottom: 0.1rem solid #fafaf9; }
-  dl dd.multi-item-list .nypl-basic-table th,
+  dl .multi-item-list .nypl-basic-table th,
   .nypl-results-item .nypl-basic-table th {
     border: 0;
-    font-size: 0.85rem;
-    padding-bottom: 0.5rem;
+    font-size: 1rem;
     width: 25%; }
-  dl dd.multi-item-list .nypl-basic-table td,
+  dl .multi-item-list .nypl-basic-table td,
   .nypl-results-item .nypl-basic-table td {
     border: 0;
     padding-top: 1rem; }
-  dl dd.multi-item-list .nypl-basic-table tbody tr:first-child,
-  .nypl-results-item .nypl-basic-table tbody tr:first-child {
+  dl .multi-item-list .nypl-basic-table tbody tr :first-child,
+  .nypl-results-item .nypl-basic-table tbody tr :first-child {
     line-height: 1.2; }
-  dl dd.multi-item-list .nypl-basic-table tbody tr:last-child,
+  dl .multi-item-list .nypl-basic-table tbody tr:last-child,
   .nypl-results-item .nypl-basic-table tbody tr:last-child {
     border-bottom: 0; }
-  dl dd.multi-item-list .nypl-basic-table button,
+  dl .multi-item-list .nypl-basic-table button,
   .nypl-results-item .nypl-basic-table button {
     background-color: #fff;
     border: 0.08333rem solid #d0343a;
@@ -727,24 +723,24 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.1s ease-in 0s;
     margin-top: 0;
     width: 8rem; }
-    dl dd.multi-item-list .nypl-basic-table button:link, dl dd.multi-item-list .nypl-basic-table button:visited,
+    dl .multi-item-list .nypl-basic-table button:link, dl .multi-item-list .nypl-basic-table button:visited,
     .nypl-results-item .nypl-basic-table button:link,
     .nypl-results-item .nypl-basic-table button:visited {
       color: #d0343a; }
-    dl dd.multi-item-list .nypl-basic-table button:hover, dl dd.multi-item-list .nypl-basic-table button:hover:visited, dl dd.multi-item-list .nypl-basic-table button.active,
+    dl .multi-item-list .nypl-basic-table button:hover, dl .multi-item-list .nypl-basic-table button:hover:visited, dl .multi-item-list .nypl-basic-table button.active,
     .nypl-results-item .nypl-basic-table button:hover,
     .nypl-results-item .nypl-basic-table button:hover:visited,
     .nypl-results-item .nypl-basic-table button.active {
       border-color: #fff;
       background-color: #d0343a;
       color: #fff; }
-    dl dd.multi-item-list .nypl-basic-table button:focus,
+    dl .multi-item-list .nypl-basic-table button:focus,
     .nypl-results-item .nypl-basic-table button:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
       outline: none; }
-    dl dd.multi-item-list .nypl-basic-table button.disabled, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"], dl dd.multi-item-list .nypl-basic-table button[disabled="true"], dl dd.multi-item-list .nypl-basic-table button[disabled], dl dd.multi-item-list .nypl-basic-table button[disabled=true],
+    dl .multi-item-list .nypl-basic-table button.disabled, dl .multi-item-list .nypl-basic-table button[disabled="disabled"], dl .multi-item-list .nypl-basic-table button[disabled="true"], dl .multi-item-list .nypl-basic-table button[disabled], dl .multi-item-list .nypl-basic-table button[disabled=true],
     .nypl-results-item .nypl-basic-table button.disabled,
     .nypl-results-item .nypl-basic-table button[disabled="disabled"],
     .nypl-results-item .nypl-basic-table button[disabled="true"],
@@ -753,7 +749,7 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: #d7d4d0;
       border-color: #d0343a;
       cursor: default; }
-      dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="disabled"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled="true"]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled]:hover, dl dd.multi-item-list .nypl-basic-table button[disabled=true]:hover,
+      dl .multi-item-list .nypl-basic-table button.disabled:hover, dl .multi-item-list .nypl-basic-table button[disabled="disabled"]:hover, dl .multi-item-list .nypl-basic-table button[disabled="true"]:hover, dl .multi-item-list .nypl-basic-table button[disabled]:hover, dl .multi-item-list .nypl-basic-table button[disabled=true]:hover,
       .nypl-results-item .nypl-basic-table button.disabled:hover,
       .nypl-results-item .nypl-basic-table button[disabled="disabled"]:hover,
       .nypl-results-item .nypl-basic-table button[disabled="true"]:hover,
@@ -763,7 +759,7 @@ dl dd.multi-item-list .nypl-basic-table,
         border-color: #d0343a;
         color: #d0343a; }
     @media (max-width: 965px) {
-      dl dd.multi-item-list .nypl-basic-table button,
+      dl .multi-item-list .nypl-basic-table button,
       .nypl-results-item .nypl-basic-table button {
         display: inline-block; } }
 
@@ -3467,7 +3463,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-location-hours thead,
   .nypl-location-hours th {
     border-bottom: 0.0625rem solid #080807;
-    font-weight: bold;
+    font-weight: 500;
     text-align: left; }
   .nypl-location-hours th,
   .nypl-location-hours td {
@@ -3570,7 +3566,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-basic-table thead,
   .nypl-basic-table th {
     border-bottom: 0.0625rem solid #080807;
-    font-weight: bold;
+    font-weight: 500;
     text-align: left; }
   .nypl-basic-table th,
   .nypl-basic-table td {
@@ -3598,7 +3594,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-holds-table thead,
   .nypl-holds-table th {
     border-bottom: 0.0625rem solid #080807;
-    font-weight: bold;
+    font-weight: 500;
     text-align: left; }
   .nypl-holds-table th,
   .nypl-holds-table td {
@@ -4079,6 +4075,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-results-item h3 {
     font-weight: normal;
     font-size: 1.2rem;
+    line-height: 1.3;
     margin-bottom: 0.5rem;
     max-width: none; }
   .nypl-results-item dl {
