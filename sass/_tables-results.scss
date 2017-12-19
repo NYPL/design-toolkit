@@ -643,7 +643,7 @@ $font-weight: 400) {
 
   // override the default spacing between items here:
   .nypl-results-item-description {
-    @include results-item-description($item-margin-bottom: 1rem);
+    @include results-item-description($item-margin-bottom: 2rem);
   }
 
   .nypl-results-item {
@@ -661,6 +661,9 @@ $font-weight: 400) {
     // If there is a request table inline in the results, add the class
     &.has-request {
       //  margin-bottom: 3.25rem;
+      .nypl-results-item-description {
+        margin-bottom: 0.5rem;
+      }
     }
 
     .nypl-results-media {

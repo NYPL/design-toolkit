@@ -16,3 +16,5 @@ _site
 
 npm-debug.log
 node_modules/
+# ingnore sublime project file
+*.sublime-project
