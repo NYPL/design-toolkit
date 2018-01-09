@@ -665,8 +665,12 @@ $font-weight: 400) {
     .nypl-results-media {
       @include results-media(
         $color: $nypl-dark-gray,
-        $font-size: 0.85rem,
+        //$font-size: 0.85rem,
         $font-weight: 400);
+
+        // &::before {
+        //   content: 'Format: ';
+        // }
     } // /.nypl-results-media
 
     //
@@ -678,7 +682,7 @@ $font-weight: 400) {
     .nypl-results-publisher,
     .nypl-results-date,
     .nypl-results-info {
-      font-size: 0.85rem;
+      //font-size: 0.85rem;
     } // /.nypl-results-room
 
     // Special case where we need the the publisher & published date closer to one another:
@@ -717,13 +721,13 @@ dl dd.multi-item-list,
     th {
       border: 0;
       font-size: 0.85rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.5em;
       width: 25%;
     }
 
     td {
       border: 0;
-      padding-top: 1rem;
+      padding-top: 0.25em;
     }
 
     tr {

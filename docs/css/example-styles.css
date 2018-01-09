@@ -666,14 +666,8 @@ div.nypl-omnisearch.spinning {
     display: inline-block;
     margin-right: 1rem;
     color: #080807;
-    font-size: 0.85rem;
+    font-size: "";
     font-weight: 400; }
-  .nypl-results-list .nypl-results-item .nypl-results-room,
-  .nypl-results-list .nypl-results-item .nypl-results-place,
-  .nypl-results-list .nypl-results-item .nypl-results-publisher,
-  .nypl-results-list .nypl-results-item .nypl-results-date,
-  .nypl-results-list .nypl-results-item .nypl-results-info {
-    font-size: 0.85rem; }
   .nypl-results-list .nypl-results-item .nypl-results-publisher {
     margin-right: 0.25rem; }
 
@@ -695,12 +689,12 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-results-item .nypl-basic-table th {
     border: 0;
     font-size: 0.85rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5em;
     width: 25%; }
   dl dd.multi-item-list .nypl-basic-table td,
   .nypl-results-item .nypl-basic-table td {
     border: 0;
-    padding-top: 1rem; }
+    padding-top: 0.25em; }
   dl dd.multi-item-list .nypl-basic-table tr,
   .nypl-results-item .nypl-basic-table tr {
     border-bottom: 0; }
