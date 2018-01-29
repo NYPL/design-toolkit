@@ -53,7 +53,7 @@
   padding: $padding-vertical $padding-horizontal;
   text-decoration: none;
   text-transform: $text-transform;
-  //white-space: nowrap;
+  white-space: normal;
   -webkit-appearance: none;
   @content;
 
