@@ -1,5 +1,8 @@
 ### Change Log
 
+### v0.1.30
+- Setting `whitespace: normal` for buttons and layout changes for Discovery search results.
+
 ### v0.1.29
 - added the ux/visual design index. and index of projects that will eventually fall under sway of the toolkit.
 
