@@ -53,7 +53,7 @@
   padding: $padding-vertical $padding-horizontal;
   text-decoration: none;
   text-transform: $text-transform;
-  white-space: nowrap;
+  white-space: normal;
   -webkit-appearance: none;
   @content;
 
@@ -330,8 +330,13 @@
   }
 }
 
-// TODO: A better method for combining buttons & icons needs to be developed.
 
+
+
+///
+/// TODO: A better method for combining buttons & icons needs to be developed.
+///       Probably undo this mixin mess and make button, buttons with text & icons and buttons with icons only...
+///
 @mixin basic-button-icon($button-icon: true) {
   @include basic-button(
   $background-color: $nypl-red,
@@ -349,9 +354,13 @@
     top: 0.15rem;
     width: 1rem;
   }
-}
+} // /basic-button-icon
 
-// TODO: Hovering w/ different icons needs sorting out.
+
+
+///
+/// TODO: Hovering w/ different icons needs sorting out.
+///
 @mixin close-button($button-icon: true) {
   @include basic-button(
   $background-color: $nypl-white,
@@ -367,9 +376,11 @@
     position: relative;
     top: 0.5rem;
   }
-}
-// A special case where we need to change dimensions of the button:
-// A use case its the "Filter Results"
+} // /close-button
+
+///
+/// A special case where we need to change dimensions of the button:
+/// A use case its the "Filter Results"
 @mixin short-button(
   // hacky
   $short-button-height: 2.1rem
