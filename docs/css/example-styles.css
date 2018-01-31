@@ -2504,6 +2504,11 @@ dl dd.multi-item-list .nypl-basic-table,
   color: #d0343a;
   padding-left: 1rem; }
 
+.nypl-form-success {
+  border-left: 1rem solid #008918;
+  color: #008918;
+  padding-left: 1rem; }
+
 .nypl-simple-radiobutton {
   border-radius: 0; }
   .nypl-simple-radiobutton span.nypl-label {

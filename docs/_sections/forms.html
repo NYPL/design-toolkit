@@ -623,13 +623,13 @@ function toggleFacet(e) {
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-form-error">
-  <h2>Oops! Seems there are some errors in this form!</h2>
-  <ul>
-    <li>The <a href="#">username</a> already exists. Please choose another username.</li>
-    <li>The <a href="#">email</a> is invalid.</li>
-  </ul>
-</div>
+      <div class="nypl-form-error">
+        <h2>Oops! Seems there are some errors in this form!</h2>
+        <ul>
+          <li>The <a href="#">username</a> already exists. Please choose another username.</li>
+          <li>The <a href="#">email</a> is invalid.</li>
+        </ul>
+      </div>
     </div>
     <pre><code class="scss">
     .nypl-form-error
@@ -642,6 +642,27 @@ function toggleFacet(e) {
     &lt;li&gt;The &lt;a href=&quot;#&quot;&gt;email&lt;/a&gt; is invalid.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;    </code></pre>
+
+<!-- //////////////////////////////////// -->
+    <h4 id="formSuccess">Success / Completion messages for the submitted form</h4>
+      <p>In the case were the form has been submitted and the application needs to alert the user that their data or input has been submitted and accepted. Similar to the above error reporting, the components are: a <code>div</code> element of class <code>nypl-form-success</code>, a heading informing the user the their submission has been accepted by the application, either via front-end, server side validation or as the case may be both, and short secondary message with an explantion (optional) wrapped in a <code>p</code>.</p>
+
+      <div class="nypl-toolkit-example">
+        <span class="nypl-example-text">Example</span>
+        <div class="nypl-form-success">
+          <h2>Success!</h2>
+            <p>Your form has been accepted.</p>
+        </div>
+      </div>
+      <pre><code class="scss">
+      .nypl-form-success
+      </code></pre>
+      <pre><code class="html">
+&lt;div class=&quot;nypl-form-success&quot;&gt;
+  &lt;h2&gt;Success!&lt;/h2&gt;
+    &lt;p&gt;Your form has been accepted.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<!-- //////////////////////////////////// -->
 
     <h4 id="fieldErrors">Error state and messages on text fields</h4>
 

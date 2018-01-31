@@ -306,12 +306,23 @@ $form-padding: 0.5rem;
   color: $highlight-color;
   padding-left: 1rem;
 }
+
+///
+/// replaces the error message / status w/ a generic mixin that can be styled for errors, success and inline alert state.
+///
+@mixin form-message(
+  $color: null) {
+  border-left: 1rem solid $color;
+  color: $color;
+  padding-left: 1rem;
+}
+
 // /select-field-results
 
 
-//
-// not-so-simple-radiobutton
-//
+///
+/// Radio Button(s)
+///
 @mixin simple-radiobutton(
     $background-color: $nypl-white,
     $border-radius: 0,
