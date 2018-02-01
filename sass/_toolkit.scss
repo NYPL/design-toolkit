@@ -209,6 +209,10 @@
   @include field-error;
 }
 
+.nypl-field-success {
+  @include field-success;
+}
+
 .nypl-select {
   @include select;
 }

@@ -2484,6 +2484,14 @@ dl dd.multi-item-list .nypl-basic-table,
     background: #fff;
     color: #d0343a; }
 
+.nypl-field-success {
+  background: #fff; }
+  .nypl-field-success input[type=text],
+  .nypl-field-success textarea {
+    background-color: #f3f7e6;
+    border: 0.0625rem #008918 solid;
+    box-shadow: none; }
+
 .nypl-select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2602,7 +2610,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-generic-checkbox input[type="checkbox"] + label::after {
   content: none; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
-  background-color: #f3f6e8;
+  background-color: white;
   border-width: 0.125rem; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label,
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
