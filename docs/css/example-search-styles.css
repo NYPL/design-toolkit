@@ -2422,17 +2422,6 @@ dl dd.multi-item-list .nypl-basic-table,
   font-size: 0.9rem;
   font-weight: 400; }
 
-.nypl-field-error {
-  background: #fff; }
-  .nypl-field-error input[type=text],
-  .nypl-field-error textarea {
-    background-color: #f6d6d8;
-    border: 0.0625rem #97272c solid;
-    box-shadow: none; }
-  .nypl-field-error .nypl-field-status {
-    background: #fff;
-    color: #d0343a; }
-
 .nypl-text-area-with-label label {
   background-color: transparent;
   color: #080807;
@@ -2483,6 +2472,17 @@ dl dd.multi-item-list .nypl-basic-table,
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 12rem;
   width: 100%; }
+
+.nypl-field-error {
+  background: #fff; }
+  .nypl-field-error input[type=text],
+  .nypl-field-error textarea {
+    background-color: #f6d6d8;
+    border: 0.0625rem #97272c solid;
+    box-shadow: none; }
+  .nypl-field-error .nypl-field-status {
+    background: #fff;
+    color: #d0343a; }
 
 .nypl-select {
   -moz-appearance: none;
