@@ -159,7 +159,7 @@ $form-padding: 0.5rem;
     line-height: 1.5;
     padding-top: $form-padding;
   }
-} // /text-field-with-label
+}
 
 
 ///
@@ -180,7 +180,22 @@ $form-padding: 0.5rem;
     background: $page-background-color;
     color: $nypl-red;
   }
-} // /field-error
+}
+
+///
+/// Success states for fields
+///
+
+@mixin field-success {
+  background: $page-background-color;
+
+  input[type=text],
+  textarea {
+    background-color: $nypl-green-tint;
+    border: ($general-border-width / 2) $nypl-green-bright solid;
+    box-shadow: none;
+  }
+}
 
 ///
 /// Text Field
