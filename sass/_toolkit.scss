@@ -201,12 +201,12 @@
   @include required-field;
 }
 
-.nypl-field-error {
-  @include field-error;
-}
-
 .nypl-text-area-with-label {
   @include text-area-with-label;
+}
+
+.nypl-field-error {
+  @include field-error;
 }
 
 .nypl-select {
