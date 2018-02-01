@@ -87,6 +87,11 @@ $form-padding: 0.5rem;
   padding: $padding;
 }
 
+
+///
+/// Text styling for inputs
+///
+
 @mixin text {
   @include input;
   @include box-shadow(inset 0 0 0 1px $nypl-dark-gray);
@@ -107,7 +112,29 @@ $form-padding: 0.5rem;
     color: $page-color;
     outline: none;
   }
-} // /text
+}
+
+
+///
+/// Basic Text Area
+///
+
+@mixin text-area(
+  $width: 100%,
+  $height: 12rem) {
+
+  textarea {
+    // border: 0;
+    box-sizing: border-box;
+    font-family: $sans-serif-stack;
+    height: $height;
+    width: $width;
+    }
+  }
+
+///
+/// Text Fields with labels
+///
 
 @mixin text-field-with-label {
   label {
@@ -115,7 +142,6 @@ $form-padding: 0.5rem;
     color: $page-text-color;
     display: block;
     font-weight: 400;
-    //position: absolute;
   }
 
   input[type=text],
@@ -136,14 +162,15 @@ $form-padding: 0.5rem;
 } // /text-field-with-label
 
 
+///
+/// Error states for input fields
+///
 
-//
-// Error states for input fields
-//
 @mixin field-error {
   background: $page-background-color;
 
-  input[type=text] {
+  input[type=text],
+  textarea {
     background-color: $nypl-red-error;
     border: ($general-border-width / 2) $nypl-red-dark solid;
     box-shadow: none;
@@ -155,6 +182,10 @@ $form-padding: 0.5rem;
   }
 } // /field-error
 
+///
+/// Text Field
+///
+
 @mixin text-field {
   @include fieldset;
   @include text-field-with-label;
@@ -164,6 +195,10 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include text-field-with-label;
 }
+
+///
+/// Name Field(s)
+///
 
 @mixin name-field {
   @include clearfix;
@@ -192,7 +227,20 @@ $form-padding: 0.5rem;
       }
     }
   }
-} // /name-field
+}
+
+///
+/// Basic Text Area Label & help / status text
+///
+
+@mixin text-area-with-label {
+  @include text-field-with-label;
+  @include text-area;
+}
+
+///
+/// Address Field
+///
 
 @mixin address-fieldset {
   @include fieldset;
@@ -213,6 +261,10 @@ $form-padding: 0.5rem;
   }
 }
 
+///
+/// Date Field(s)
+///
+
 @mixin date-field {
   @include fieldset;
   @include text-field-with-label;
@@ -222,6 +274,10 @@ $form-padding: 0.5rem;
     -webkit-appearance: none; // to prevent iOS override
   }
 }
+
+///
+/// Required Fields
+///
 
 @mixin required-field {
   color: darken($highlight-color, 10%);
@@ -385,9 +441,9 @@ $form-padding: 0.5rem;
   }
 }
 
-//
-// radiobutton-field in action
-//
+///
+/// radiobutton-field in action
+///
 @mixin radiobutton-field {
   @include fieldset;
   @include simple-radiobutton;
@@ -431,10 +487,6 @@ $form-padding: 0.5rem;
     padding-left: 1.75rem;
     padding-top: 0.27rem;
     width: 60%;
-
-    // @include media($xtrasmall-breakpoint) {
-    //   width: 65%;
-    // }
   }
 
   label::after,
@@ -674,27 +726,10 @@ $form-padding: 0.5rem;
 }
 
 
-
 ///
-/// Basic Text Area
+/// Request form(s)
+/// Mixins for Discovery requests pages
 ///
-@mixin text-area(
-  $border-color: $nypl-dark-gray,
-  $border-width: ($general-border-width / 3),
-  $width: 100%,
-  $height: 12rem) {
-  border: $border-width solid $border-color;
-  box-sizing: border-box;
-  height: $height;
-  width: $width;
-}
-
-
-
-//
-// Request form(s)
-// Mixins for Discovery requests pages
-//
 @mixin request-item-summary {
   background: $nypl-white;
 

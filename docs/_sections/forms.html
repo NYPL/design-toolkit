@@ -985,17 +985,40 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
 
   </code></pre>
 
-<h3 id="texAreas">Text Areas</h3>
+<h3 id="texAreas">Basic Text Areas</h3>
   <p>In the case where an application form needs a mulitline text-area</p>
   <div class="nypl-toolkit-example">
     <span class="nypl-example-text">Example</span>
-      <label for="textarea1">Text Area Label </label>
-      <textarea class="nypl-text-area" form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+      <div class="nypl-text-area-with-label">
+        <label for="textarea1">Text Area Label </label>
+        <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+        <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">Input some things here.</em></span>
+      </div>
   </div>
   <pre><code class="scss">
-  .nypl-text-area
+  .nypl-text-area-with-label
   </code></pre>
   <pre><code class="html">
 &lt;label for=&quot;textarea1&quot;&gt;Text Area Label &lt;/label&gt;
-&lt;textarea id=&quot;textarea1&quot; class=&quot;nypl-text-area&quot; form=&quot;the-form-title&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+&lt;textarea id=&quot;textarea1&quot; class=&quot;nypl-text-area-with-label&quot; form=&quot;the-form-title&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
   </code></pre>
+
+<h3 id="texAreas">Text Area (Accepted)</h3>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+    <div class="nypl-text-area-with-label field-success">
+      <label for="textarea1">Text Area Label </label>
+      <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+      <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">The input was correct</em></span>
+    </div>
+</div>
+
+<h3 id="texAreas">Text Area (Error)</h3>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+    <div class="nypl-text-area-with-label nypl-field-error">
+      <label for="textarea1">Text Area Label </label>
+      <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+      <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">The input provided has errors and must be corrected before submission can be complete.</em></span>
+    </div>
+</div>
