@@ -1581,6 +1581,7 @@ dl dd.multi-item-list .nypl-basic-table,
 
 .nypl-text-area {
   border: 0.04167rem solid #080807;
+  box-sizing: border-box;
   height: 12rem;
   width: 100%; }
 
@@ -4451,14 +4452,14 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
     height: 2rem;
     position: relative;
-    width: 2rem;
-    top: 0.5rem; }
+    top: 0.5rem;
+    width: 2rem; }
     @media (max-width: 483px) {
       .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
         display: none;
         height: 0;
-        visibility: hidden;
         opacity: 0;
+        visibility: hidden;
         width: 0; } }
   .nypl-modal-filter-form .inner .nypl-generic-columns {
     -webkit-column-count: 3;

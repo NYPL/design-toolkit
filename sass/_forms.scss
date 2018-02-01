@@ -684,6 +684,7 @@ $form-padding: 0.5rem;
   $width: 100%,
   $height: 12rem) {
   border: $border-width solid $border-color;
+  box-sizing: border-box;
   height: $height;
   width: $width;
 }
@@ -749,12 +750,11 @@ $form-padding: 0.5rem;
 
 
 
-//
-// Filtering Styles for Modals w/ complex filtering controls
-//
-@mixin modal-filter-form {
+///
+/// Filtering Styles for Modals w/ complex filtering controls
+///
 
-// body > div.nypl-basic-modal-container.active > div.nypl-modal-content > div > form > fieldset > fieldset:nth-child(4)
+@mixin modal-filter-form {
 
   .inner {
     border-bottom: $general-border-width solid $nypl-light-gray;
@@ -777,29 +777,32 @@ $form-padding: 0.5rem;
     .nypl-filter-date-field {
 
       > label {
-        display: inline-block;
-        max-width: calc(50% - 5.125rem);
 
         @include media($xtrasmall-breakpoint) {
           display: block;
           max-width: 100%;
           width: 100%;
         }
+
+        display: inline-block;
+        max-width: calc(50% - 5.125rem);
       }
 
       > .nypl-icon {
-        height: 2rem;
-        position: relative;
-        width: 2rem;
-        top: ($general-margin / 2);
 
         @include media($xtrasmall-breakpoint) {
           display: none;
           height: 0;
-          visibility: hidden;
           opacity: 0;
+          visibility: hidden;
           width: 0;
         }
+
+        height: 2rem;
+        position: relative;
+        top: ($general-margin / 2);
+        width: 2rem;
+
       }
     }
 
@@ -826,11 +829,12 @@ $form-padding: 0.5rem;
     @include media($xtrasmall-breakpoint) {
       @include clearfix;
       clear: both;
-      // margin-top: $general-margin;
     }
   }
 } // /.nypl-modal-filter-form
 
-
-// TODO: Move this to a more sensible location. Preferably at the top
+///
+/// TODO: Move this to a more sensible location. Preferably at the top
+/// Could use a major refactor in general...
+///
 @import "omni-search";
