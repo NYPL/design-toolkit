@@ -971,7 +971,7 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
       <div class="nypl-text-area-with-label">
         <label for="textarea1">Text Area Label </label>
         <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
-        <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">Input some things here.</em></span>
+        <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">The application is expecting a certain kind of input. The application developer should describe that criteria in this space.</em></span>
       </div>
   </div>
   <pre><code class="scss">
@@ -983,6 +983,7 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
   </code></pre>
 
 <h3 id="texAreas">Text Area (Accepted)</h3>
+<p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsuqo;s input is indeed what the application is expecting.</p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
     <div class="nypl-text-area-with-label nypl-field-success">
@@ -993,6 +994,7 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
 </div>
 
 <h3 id="texAreas">Text Area (Error)</h3>
+<p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsuqo;s input is incorrect and should be corrected before the application will accept submission. Additional reporting of errors should be presetned to the user in the form the <a href="#formErrors">Error Message pattern described above.</a></p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
     <div class="nypl-text-area-with-label nypl-field-error">
