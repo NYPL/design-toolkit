@@ -2022,10 +2022,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-text-field input[type=text],
-  .nypl-text-field input[type=email],
-  .nypl-text-field input[type=date],
-  .nypl-text-field input[type=number] {
+  .nypl-text-field input[type=text], .nypl-text-field input[type=email], .nypl-text-field input[type=date], .nypl-text-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2040,15 +2037,9 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-text-field input[type=text].active,
-    .nypl-text-field input[type=email].active,
-    .nypl-text-field input[type=date].active,
-    .nypl-text-field input[type=number].active {
+    .nypl-text-field input[type=text].active, .nypl-text-field input[type=email].active, .nypl-text-field input[type=date].active, .nypl-text-field input[type=number].active {
       width: 16rem; }
-    .nypl-text-field input[type=text]:focus,
-    .nypl-text-field input[type=email]:focus,
-    .nypl-text-field input[type=date]:focus,
-    .nypl-text-field input[type=number]:focus {
+    .nypl-text-field input[type=text]:focus, .nypl-text-field input[type=email]:focus, .nypl-text-field input[type=date]:focus, .nypl-text-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2090,10 +2081,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-year-field input[type=text],
-  .nypl-year-field input[type=email],
-  .nypl-year-field input[type=date],
-  .nypl-year-field input[type=number] {
+  .nypl-year-field input[type=text], .nypl-year-field input[type=email], .nypl-year-field input[type=date], .nypl-year-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2108,15 +2096,9 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-year-field input[type=text].active,
-    .nypl-year-field input[type=email].active,
-    .nypl-year-field input[type=date].active,
-    .nypl-year-field input[type=number].active {
+    .nypl-year-field input[type=text].active, .nypl-year-field input[type=email].active, .nypl-year-field input[type=date].active, .nypl-year-field input[type=number].active {
       width: 16rem; }
-    .nypl-year-field input[type=text]:focus,
-    .nypl-year-field input[type=email]:focus,
-    .nypl-year-field input[type=date]:focus,
-    .nypl-year-field input[type=number]:focus {
+    .nypl-year-field input[type=text]:focus, .nypl-year-field input[type=email]:focus, .nypl-year-field input[type=date]:focus, .nypl-year-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2136,10 +2118,7 @@ dl dd.multi-item-list .nypl-basic-table,
   color: #080807;
   display: block;
   font-weight: 400; }
-.nypl-text-field-with-label input[type=text],
-.nypl-text-field-with-label input[type=email],
-.nypl-text-field-with-label input[type=date],
-.nypl-text-field-with-label input[type=number] {
+.nypl-text-field-with-label input[type=text], .nypl-text-field-with-label input[type=email], .nypl-text-field-with-label input[type=date], .nypl-text-field-with-label input[type=number] {
   background-color: #fff;
   border: 0;
   border-radius: 0.25rem;
@@ -2154,15 +2133,9 @@ dl dd.multi-item-list .nypl-basic-table,
   transition: all 0.2s ease-out;
   width: 100%;
   -webkit-appearance: none; }
-  .nypl-text-field-with-label input[type=text].active,
-  .nypl-text-field-with-label input[type=email].active,
-  .nypl-text-field-with-label input[type=date].active,
-  .nypl-text-field-with-label input[type=number].active {
+  .nypl-text-field-with-label input[type=text].active, .nypl-text-field-with-label input[type=email].active, .nypl-text-field-with-label input[type=date].active, .nypl-text-field-with-label input[type=number].active {
     width: 16rem; }
-  .nypl-text-field-with-label input[type=text]:focus,
-  .nypl-text-field-with-label input[type=email]:focus,
-  .nypl-text-field-with-label input[type=date]:focus,
-  .nypl-text-field-with-label input[type=number]:focus {
+  .nypl-text-field-with-label input[type=text]:focus, .nypl-text-field-with-label input[type=email]:focus, .nypl-text-field-with-label input[type=date]:focus, .nypl-text-field-with-label input[type=number]:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2210,10 +2183,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-name-field input[type=text],
-  .nypl-name-field input[type=email],
-  .nypl-name-field input[type=date],
-  .nypl-name-field input[type=number] {
+  .nypl-name-field input[type=text], .nypl-name-field input[type=email], .nypl-name-field input[type=date], .nypl-name-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2228,15 +2198,9 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-name-field input[type=text].active,
-    .nypl-name-field input[type=email].active,
-    .nypl-name-field input[type=date].active,
-    .nypl-name-field input[type=number].active {
+    .nypl-name-field input[type=text].active, .nypl-name-field input[type=email].active, .nypl-name-field input[type=date].active, .nypl-name-field input[type=number].active {
       width: 16rem; }
-    .nypl-name-field input[type=text]:focus,
-    .nypl-name-field input[type=email]:focus,
-    .nypl-name-field input[type=date]:focus,
-    .nypl-name-field input[type=number]:focus {
+    .nypl-name-field input[type=text]:focus, .nypl-name-field input[type=email]:focus, .nypl-name-field input[type=date]:focus, .nypl-name-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2294,10 +2258,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-address-fieldset input[type=text],
-  .nypl-address-fieldset input[type=email],
-  .nypl-address-fieldset input[type=date],
-  .nypl-address-fieldset input[type=number] {
+  .nypl-address-fieldset input[type=text], .nypl-address-fieldset input[type=email], .nypl-address-fieldset input[type=date], .nypl-address-fieldset input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2312,15 +2273,9 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-address-fieldset input[type=text].active,
-    .nypl-address-fieldset input[type=email].active,
-    .nypl-address-fieldset input[type=date].active,
-    .nypl-address-fieldset input[type=number].active {
+    .nypl-address-fieldset input[type=text].active, .nypl-address-fieldset input[type=email].active, .nypl-address-fieldset input[type=date].active, .nypl-address-fieldset input[type=number].active {
       width: 16rem; }
-    .nypl-address-fieldset input[type=text]:focus,
-    .nypl-address-fieldset input[type=email]:focus,
-    .nypl-address-fieldset input[type=date]:focus,
-    .nypl-address-fieldset input[type=number]:focus {
+    .nypl-address-fieldset input[type=text]:focus, .nypl-address-fieldset input[type=email]:focus, .nypl-address-fieldset input[type=date]:focus, .nypl-address-fieldset input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2374,10 +2329,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-date-field input[type=text],
-  .nypl-date-field input[type=email],
-  .nypl-date-field input[type=date],
-  .nypl-date-field input[type=number] {
+  .nypl-date-field input[type=text], .nypl-date-field input[type=email], .nypl-date-field input[type=date], .nypl-date-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2392,15 +2344,9 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-date-field input[type=text].active,
-    .nypl-date-field input[type=email].active,
-    .nypl-date-field input[type=date].active,
-    .nypl-date-field input[type=number].active {
+    .nypl-date-field input[type=text].active, .nypl-date-field input[type=email].active, .nypl-date-field input[type=date].active, .nypl-date-field input[type=number].active {
       width: 16rem; }
-    .nypl-date-field input[type=text]:focus,
-    .nypl-date-field input[type=email]:focus,
-    .nypl-date-field input[type=date]:focus,
-    .nypl-date-field input[type=number]:focus {
+    .nypl-date-field input[type=text]:focus, .nypl-date-field input[type=email]:focus, .nypl-date-field input[type=date]:focus, .nypl-date-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2427,10 +2373,7 @@ dl dd.multi-item-list .nypl-basic-table,
   color: #080807;
   display: block;
   font-weight: 400; }
-.nypl-text-area-with-label input[type=text],
-.nypl-text-area-with-label input[type=email],
-.nypl-text-area-with-label input[type=date],
-.nypl-text-area-with-label input[type=number] {
+.nypl-text-area-with-label input[type=text], .nypl-text-area-with-label input[type=email], .nypl-text-area-with-label input[type=date], .nypl-text-area-with-label input[type=number] {
   background-color: #fff;
   border: 0;
   border-radius: 0.25rem;
@@ -2445,15 +2388,9 @@ dl dd.multi-item-list .nypl-basic-table,
   transition: all 0.2s ease-out;
   width: 100%;
   -webkit-appearance: none; }
-  .nypl-text-area-with-label input[type=text].active,
-  .nypl-text-area-with-label input[type=email].active,
-  .nypl-text-area-with-label input[type=date].active,
-  .nypl-text-area-with-label input[type=number].active {
+  .nypl-text-area-with-label input[type=text].active, .nypl-text-area-with-label input[type=email].active, .nypl-text-area-with-label input[type=date].active, .nypl-text-area-with-label input[type=number].active {
     width: 16rem; }
-  .nypl-text-area-with-label input[type=text]:focus,
-  .nypl-text-area-with-label input[type=email]:focus,
-  .nypl-text-area-with-label input[type=date]:focus,
-  .nypl-text-area-with-label input[type=number]:focus {
+  .nypl-text-area-with-label input[type=text]:focus, .nypl-text-area-with-label input[type=email]:focus, .nypl-text-area-with-label input[type=date]:focus, .nypl-text-area-with-label input[type=number]:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
@@ -2987,10 +2924,7 @@ dl dd.multi-item-list .nypl-basic-table,
       color: #080807;
       display: block;
       font-weight: 400; }
-    .nypl-searchable-field .nypl-facet-search input[type=text],
-    .nypl-searchable-field .nypl-facet-search input[type=email],
-    .nypl-searchable-field .nypl-facet-search input[type=date],
-    .nypl-searchable-field .nypl-facet-search input[type=number] {
+    .nypl-searchable-field .nypl-facet-search input[type=text], .nypl-searchable-field .nypl-facet-search input[type=email], .nypl-searchable-field .nypl-facet-search input[type=date], .nypl-searchable-field .nypl-facet-search input[type=number] {
       background-color: #fff;
       border: 0;
       border-radius: 0.25rem;
@@ -3005,15 +2939,9 @@ dl dd.multi-item-list .nypl-basic-table,
       transition: all 0.2s ease-out;
       width: 100%;
       -webkit-appearance: none; }
-      .nypl-searchable-field .nypl-facet-search input[type=text].active,
-      .nypl-searchable-field .nypl-facet-search input[type=email].active,
-      .nypl-searchable-field .nypl-facet-search input[type=date].active,
-      .nypl-searchable-field .nypl-facet-search input[type=number].active {
+      .nypl-searchable-field .nypl-facet-search input[type=text].active, .nypl-searchable-field .nypl-facet-search input[type=email].active, .nypl-searchable-field .nypl-facet-search input[type=date].active, .nypl-searchable-field .nypl-facet-search input[type=number].active {
         width: 16rem; }
-      .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
-      .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
-      .nypl-searchable-field .nypl-facet-search input[type=date]:focus,
-      .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
+      .nypl-searchable-field .nypl-facet-search input[type=text]:focus, .nypl-searchable-field .nypl-facet-search input[type=email]:focus, .nypl-searchable-field .nypl-facet-search input[type=date]:focus, .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
         -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         box-shadow: inset 0 0 0 0.125rem #ffb81d;
