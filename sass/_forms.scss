@@ -87,6 +87,7 @@ $form-padding: 0.5rem;
 }
 
 
+
 ///
 /// Text styling for inputs
 ///
@@ -114,6 +115,7 @@ $form-padding: 0.5rem;
 }
 
 
+
 ///
 /// Basic Text Area
 ///
@@ -134,6 +136,8 @@ $form-padding: 0.5rem;
     }
   }
 
+
+
 ///
 /// Text Fields with labels
 ///
@@ -146,11 +150,13 @@ $form-padding: 0.5rem;
     font-weight: 400;
   }
 
-  input[type=text],
-  input[type=email],
-  input[type=date],
-  input[type=number] {
-    @include text;
+  input {
+    &[type=text],
+    &[type=email],
+    &[type=date],
+    &[type=number] {
+      @include text;
+    }
   }
 
   .nypl-field-status {
@@ -162,6 +168,7 @@ $form-padding: 0.5rem;
     padding-top: $form-padding;
   }
 }
+
 
 
 ///
@@ -184,6 +191,8 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
 ///
 /// Success states for fields
 ///
@@ -199,6 +208,8 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
 ///
 /// Text Field
 ///
@@ -212,6 +223,8 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include text-field-with-label;
 }
+
+
 
 ///
 /// Name Field(s)
@@ -246,6 +259,8 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
 ///
 /// Basic Text Area Label & help / status text
 ///
@@ -254,6 +269,8 @@ $form-padding: 0.5rem;
   @include text-field-with-label;
   @include text-area;
 }
+
+
 
 ///
 /// Address Field
@@ -277,6 +294,8 @@ $form-padding: 0.5rem;
     }
   }
 }
+
+
 
 ///
 /// Date Field(s)
@@ -479,6 +498,8 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
 ///
 /// radiobutton-field in action
 ///
@@ -574,7 +595,8 @@ $form-padding: 0.5rem;
     color: $nypl-green-bright;
     content: "";
   }
-// Adding focus styles on the outer-box of the fake checkbox
+
+  // Adding focus styles on the outer-box of the fake checkbox
   input[type="checkbox"]:focus + label::before {
     outline: $nypl-orange auto 0.125rem;
   }
@@ -659,6 +681,13 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
+
+///
+/// Searchable Field Module
+///
+
 @mixin searchable-field {
   @include collapsible-field($is-searchable: true);
   @include simple-radiobutton;
@@ -712,6 +741,11 @@ $form-padding: 0.5rem;
   }
 }
 
+
+///
+/// Filter by Alpha
+///
+
 @mixin alphabetical-filter {
   @include fieldset;
 
@@ -732,6 +766,12 @@ $form-padding: 0.5rem;
     }
   }
 }
+
+
+
+///
+/// Mobile refine
+///
 
 @mixin mobile-refine {
   display: none;
@@ -768,6 +808,7 @@ $form-padding: 0.5rem;
 /// Request form(s)
 /// Mixins for Discovery requests pages
 ///
+
 @mixin request-item-summary {
   background: $nypl-white;
 
@@ -783,13 +824,24 @@ $form-padding: 0.5rem;
   } // /.call-number-heading
 } // /request-item-summary
 
+
+
+///
+/// Electronic Delivery
+///
+
 @mixin electronic-delivery-form {
   fieldset {
     border: 0;
   }
 }
 
-// The Request page header
+
+
+///
+/// The Request page header
+///
+
 @mixin request-page-header {
   @include page-header(
   $background-color: lighten($nypl-light-gray, 15%),
@@ -810,6 +862,8 @@ $form-padding: 0.5rem;
     margin-bottom: 0;
   } // /.nypl-column-three-quarters
 } // /request-page-header
+
+
 
 // Need a title styling for forms so this might expand in the future
 // In this case the class is being used by an h2, but there is probably a
@@ -896,15 +950,17 @@ $form-padding: 0.5rem;
 
   .nypl-filter-button {
     @include basic-button-icon;
-    margin-right: $general-margin;
-    margin-top: $general-margin;
-
     @include media($xtrasmall-breakpoint) {
       @include clearfix;
       clear: both;
     }
+
+    margin-right: $general-margin;
+    margin-top: $general-margin;
   }
-} // /.nypl-modal-filter-form
+}
+
+
 
 ///
 /// TODO: Move this to a more sensible location. Preferably at the top
