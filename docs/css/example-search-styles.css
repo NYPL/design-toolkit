@@ -2049,10 +2049,10 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-text-field input[type=email]:focus,
     .nypl-text-field input[type=date]:focus,
     .nypl-text-field input[type=number]:focus {
-      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-text-field .nypl-field-status {
@@ -2117,10 +2117,10 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-year-field input[type=email]:focus,
     .nypl-year-field input[type=date]:focus,
     .nypl-year-field input[type=number]:focus {
-      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-year-field .nypl-field-status {
@@ -2163,10 +2163,10 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-text-field-with-label input[type=email]:focus,
   .nypl-text-field-with-label input[type=date]:focus,
   .nypl-text-field-with-label input[type=number]:focus {
-    background-color: #fff;
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    background-color: #fff;
     color: #080807;
     outline: none; }
 .nypl-text-field-with-label .nypl-field-status {
@@ -2237,10 +2237,10 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-name-field input[type=email]:focus,
     .nypl-name-field input[type=date]:focus,
     .nypl-name-field input[type=number]:focus {
-      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-name-field .nypl-field-status {
@@ -2321,10 +2321,10 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-address-fieldset input[type=email]:focus,
     .nypl-address-fieldset input[type=date]:focus,
     .nypl-address-fieldset input[type=number]:focus {
-      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-address-fieldset .nypl-field-status {
@@ -2401,10 +2401,10 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-date-field input[type=email]:focus,
     .nypl-date-field input[type=date]:focus,
     .nypl-date-field input[type=number]:focus {
-      background-color: #fff;
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-date-field .nypl-field-status {
@@ -2454,10 +2454,10 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-text-area-with-label input[type=email]:focus,
   .nypl-text-area-with-label input[type=date]:focus,
   .nypl-text-area-with-label input[type=number]:focus {
-    background-color: #fff;
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    background-color: #fff;
     color: #080807;
     outline: none; }
 .nypl-text-area-with-label .nypl-field-status {
@@ -2468,6 +2468,11 @@ dl dd.multi-item-list .nypl-basic-table,
   line-height: 1.5;
   padding-top: 0.5rem; }
 .nypl-text-area-with-label textarea {
+  -webkit-box-shadow: inset 0 0 0 1px #080807;
+  -moz-box-shadow: inset 0 0 0 1px #080807;
+  box-shadow: inset 0 0 0 1px #080807;
+  border: 0;
+  border-radius: 0.25rem;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 12rem;
@@ -3009,10 +3014,10 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
       .nypl-searchable-field .nypl-facet-search input[type=date]:focus,
       .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
-        background-color: #fff;
         -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        background-color: #fff;
         color: #080807;
         outline: none; }
     .nypl-searchable-field .nypl-facet-search .nypl-field-status {

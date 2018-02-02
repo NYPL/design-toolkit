@@ -1,10 +1,9 @@
 @import "buttons";
-//@warn "omnisearch mixin is a the bottom of this file";
-// overriding focus borders to make them stand out
+/// @warn "omnisearch mixin is a the bottom of this file";
+/// overriding focus borders to make them stand out
+/// @warn "lots of magic numbers here";
 
 $form-padding: 0.5rem;
-
-//@warn "lots of magic numbers here";
 
 @each $tag in a, input, select, button, textarea {
   #{$tag} {
@@ -31,10 +30,10 @@ $form-padding: 0.5rem;
 
 
 
-//
-// A basic Fieldset mixin
-//  Lots of arguments can be set to modify the end result based on it context
-//
+///
+/// A basic Fieldset mixin
+///  Lots of arguments can be set to modify the end result based on it context
+///
 
 @mixin fieldset(
     $border-width: 0,
@@ -62,11 +61,11 @@ $form-padding: 0.5rem;
   legend {
     @include label;
   }
-  // Special Case where we have <h3-4> in a legend
+  /// Special Case where we have <h3-4> in a legend
   legend h3 {
     margin: 0;
   }
-} // /mixin fieldset
+}
 
 
 
@@ -107,8 +106,8 @@ $form-padding: 0.5rem;
   }
 
   &:focus {
-    background-color: $nypl-white;
     @include box-shadow(inset 0 0 0 $focus-width $focus-color);
+    background-color: $nypl-white;
     color: $page-color;
     outline: none;
   }
@@ -120,11 +119,14 @@ $form-padding: 0.5rem;
 ///
 
 @mixin text-area(
+  $border-radius: ($general-border-radius * 1.25),
   $width: 100%,
   $height: 12rem) {
 
   textarea {
-    // border: 0;
+    @include box-shadow(inset 0 0 0 1px $nypl-dark-gray);
+    border: 0;
+    border-radius: $border-radius;
     box-sizing: border-box;
     font-family: $sans-serif-stack;
     height: $height;
@@ -290,6 +292,8 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
 ///
 /// Required Fields
 ///
@@ -299,6 +303,12 @@ $form-padding: 0.5rem;
   font-size: 0.9rem;
   font-weight: 400;
 }
+
+
+
+///
+/// Select (Dropdowns)
+///
 
 @mixin select (
   $background-color: $nypl-search-color-light,
@@ -321,6 +331,11 @@ $form-padding: 0.5rem;
   width: $width;
 }
 
+
+
+///
+/// Select Field
+///
 @mixin select-field {
 
   @include fieldset;
@@ -333,12 +348,15 @@ $form-padding: 0.5rem;
   select {
     @include select;
   }
-} // /select-field
+}
 
-//
-// Drop down w/ option for sorting...
-// ex: /discovery-search.html
-//
+
+
+///
+/// Select Field results
+/// Drop down w/ option for sorting...
+/// ex: /discovery-search.html
+///
 
 @mixin select-field-results {
 
@@ -377,12 +395,14 @@ $form-padding: 0.5rem;
   color: $highlight-color;
   padding-left: 1rem;
 }
-// /select-field-results
 
 
-//
-// not-so-simple-radiobutton
-//
+
+///
+/// Simple Radiobutton
+/// Though, not so Simple
+///
+
 @mixin simple-radiobutton(
     $background-color: $nypl-white,
     $border-radius: 0,
@@ -409,11 +429,14 @@ $form-padding: 0.5rem;
     height: initial;
     margin: 0 0.5rem;
   }
-} // /simple-radiobutton
+}
 
-//
-// Special case to extend the default to the Item Holds screen
-//
+
+
+///
+/// Special case to extend the default to the Item Holds screen
+///
+
 @mixin item-holds-radiobutton-field {
   @include fieldset;
   @include simple-radiobutton(

@@ -978,11 +978,14 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
   .nypl-text-area-with-label
   </code></pre>
   <pre><code class="html">
-&lt;label for=&quot;textarea1&quot;&gt;Text Area Label &lt;/label&gt;
-&lt;textarea id=&quot;textarea1&quot; class=&quot;nypl-text-area-with-label&quot; form=&quot;the-form-title&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
-  </code></pre>
+&lt;div class=&quot;nypl-text-area-with-label&quot;&gt;
+  &lt;label for=&quot;textarea1&quot;&gt;Text Area Label &lt;/label&gt;
+  &lt;textarea form=&quot;the-form-title&quot; id=&quot;textarea1&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;The application is expecting a certain kind of input. The application developer should describe that criteria in this space.&lt;/em&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
 
-<h3 id="texAreas">Text Area (Accepted)</h3>
+<h4 id="texAreas">Text Area (Accepted)</h4>
 <p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsuqo;s input is indeed what the application is expecting.</p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
@@ -992,9 +995,19 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
       <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">The input was correct</em></span>
     </div>
 </div>
+<pre><code class="scss">
+  .nypl-text-area-with-label
+  .nypl-field-success
+</code></pre>
+<pre><code class="html">
+&lt;div class=&quot;nypl-text-area-with-label nypl-field-success&quot;&gt;
+  &lt;label for=&quot;textarea1&quot;&gt;Text Area Label &lt;/label&gt;
+  &lt;textarea form=&quot;the-form-title&quot; id=&quot;textarea1&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;The input was correct&lt;/em&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
 
-<h3 id="texAreas">Text Area (Error)</h3>
-<p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsuqo;s input is incorrect and should be corrected before the application will accept submission. Additional reporting of errors should be presetned to the user in the form the <a href="#formErrors">Error Message pattern described above.</a></p>
+<h4 id="texAreas">Text Area (Error)</h4>
+<p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsuqo;s input is incorrect and should be corrected before the application will accept submission. Additional reporting of errors should be presented to the user in the form the <a href="#formErrors">Error Message pattern described above.</a></p>
 <div class="nypl-toolkit-example">
   <span class="nypl-example-text">Example</span>
     <div class="nypl-text-area-with-label nypl-field-error">
@@ -1003,3 +1016,14 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
       <span class="nypl-field-status"  aria-live="assertive" aria-atomic="true">The input provided has errors and must be corrected before submission can be complete.</em></span>
     </div>
 </div>
+
+<pre><code class="scss">
+.nypl-text-area-with-label
+.nypl-field-error
+</code></pre>
+<pre><code>
+&lt;div class=&quot;nypl-text-area-with-label nypl-field-error&quot;&gt;
+  &lt;label for=&quot;textarea1&quot;&gt;Text Area Label &lt;/label&gt;
+  &lt;textarea form=&quot;the-form-title&quot; id=&quot;textarea1&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+  &lt;span class=&quot;nypl-field-status&quot;  aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;The input provided has errors and must be corrected before submission can be complete.&lt;/em&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
