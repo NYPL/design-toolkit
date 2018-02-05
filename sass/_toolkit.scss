@@ -227,7 +227,11 @@
 }
 
 .nypl-form-error {
-  @include form-error;
+  @include form-message($color: $highlight-color);
+}
+
+.nypl-form-success {
+  @include form-message($color: $success-color);
 }
 
 .nypl-simple-radiobutton {
