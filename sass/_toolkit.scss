@@ -120,23 +120,13 @@
 .nypl-request-button {
   @include request-button;
 }
-// /Buttons
 
-
-
-//
-// TODO: label / organize this section better
-//
 .nypl-request-item-summary {
   @include request-item-summary;
 }
 
 .nypl-electronic-delivery-form {
   @include electronic-delivery-form;
-}
-
-.nypl-text-area {
-  @include text-area;
 }
 
 .nypl-service-button {
@@ -162,17 +152,14 @@
   @include spinner-element;
 }
 
-.nypl-general-note {
-  @include general-note;
-}
-
-.nypl-a11y-note {
-  @include a11y-note;
-}
 
 .nypl-progress-indicator {
   @include progress-indicator;
 }
+
+///
+/// Forms & Fields ~ User Inputs
+///
 
 .nypl-label {
   @include label;
@@ -214,8 +201,16 @@
   @include required-field;
 }
 
+.nypl-text-area-with-label {
+  @include text-area-with-label;
+}
+
 .nypl-field-error {
   @include field-error;
+}
+
+.nypl-field-success {
+  @include field-success;
 }
 
 .nypl-select {
@@ -227,7 +222,11 @@
 }
 
 .nypl-form-error {
-  @include form-error;
+  @include form-message($color: $highlight-color);
+}
+
+.nypl-form-success {
+  @include form-message($color: $success-color);
 }
 
 .nypl-simple-radiobutton {
@@ -283,9 +282,16 @@
   @include search-form;
 }
 
+///
+/// Screen readers only
+///
+
 .nypl-screenreader-only {
   @include screenreader-only;
 }
+///
+/// Page Layout
+///
 
 .nypl-homepage-hero {
   @include homepage-hero;
@@ -361,6 +367,10 @@
   @include column-offset(3);
 }
 
+///
+/// Titles, Text & Icons
+///
+
 .nypl-nypl-icon {
   @include nypl-icon;
 }
@@ -385,6 +395,18 @@
   @include related-links;
 }
 
+///
+/// Toolkit Styles
+/// TODO: Break this out into a separate style sheet that
+/// doesnt get compiled along w/ the rest of the DTK
+.nypl-general-note {
+  @include general-note;
+}
+
+.nypl-a11y-note {
+  @include a11y-note;
+}
+
 .nypl-toolkit-example {
   @include toolkit-example;
 }
@@ -393,6 +415,10 @@
   @include toolkit-example;
   @include toolkit-example-dark;
 }
+
+///
+/// Tables
+///
 
 .nypl-basic-table {
   @include basic-table;

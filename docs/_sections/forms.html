@@ -623,13 +623,13 @@ function toggleFacet(e) {
 
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-form-error">
-  <h2>Oops! Seems there are some errors in this form!</h2>
-  <ul>
-    <li>The <a href="#">username</a> already exists. Please choose another username.</li>
-    <li>The <a href="#">email</a> is invalid.</li>
-  </ul>
-</div>
+      <div class="nypl-form-error">
+        <h2>Oops! Seems there are some errors in this form!</h2>
+        <ul>
+          <li>The <a href="#">username</a> already exists. Please choose another username.</li>
+          <li>The <a href="#">email</a> is invalid.</li>
+        </ul>
+      </div>
     </div>
     <pre><code class="scss">
     .nypl-form-error
@@ -642,6 +642,27 @@ function toggleFacet(e) {
     &lt;li&gt;The &lt;a href=&quot;#&quot;&gt;email&lt;/a&gt; is invalid.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;    </code></pre>
+
+<!-- //////////////////////////////////// -->
+    <h4 id="formSuccess">Success / Completion messages for the submitted form</h4>
+      <p>In the case were the form has been submitted and the application needs to alert the user that their data or input has been submitted and accepted. Similar to the above error reporting, the components are: a <code>div</code> element of class <code>nypl-form-success</code>, a heading informing the user the their submission has been accepted by the application, either via front-end, server side validation or as the case may be both, and short secondary message with an explantion (optional) wrapped in a <code>p</code>.</p>
+
+      <div class="nypl-toolkit-example">
+        <span class="nypl-example-text">Example</span>
+        <div class="nypl-form-success">
+          <h2>Success!</h2>
+            <p>Your form has been accepted.</p>
+        </div>
+      </div>
+      <pre><code class="scss">
+      .nypl-form-success
+      </code></pre>
+      <pre><code class="html">
+&lt;div class=&quot;nypl-form-success&quot;&gt;
+  &lt;h2&gt;Success!&lt;/h2&gt;
+    &lt;p&gt;Your form has been accepted.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<!-- //////////////////////////////////// -->
 
     <h4 id="fieldErrors">Error state and messages on text fields</h4>
 
@@ -963,3 +984,68 @@ $(".nypl-searchable-field.nypl-spinner-field fieldset").change( function(e) {
 })
 
   </code></pre>
+
+<h3 id="texAreas">Basic Text Areas</h3>
+  <p>In the case where an application form needs a mulitline text-area</p>
+  <p><strong>NOTE:</strong> Your application may <em>require</em> this input from the user, in that case, before the closing <code>&lt;/label&gt;</code> add the following <code>&lt;span class="nypl-required-field"&gt;Required&lt;/span&gt;</code>. This adds the existing style for required fields via the <code>.nypl-required-field</code> class.</p>
+  <div class="nypl-toolkit-example">
+    <span class="nypl-example-text">Example</span>
+      <div class="nypl-text-area-with-label">
+        <label for="textarea1">Text Area Label</label>
+        <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+        <span class="nypl-field-status" aria-live="assertive" aria-atomic="true"><em>The application is expecting a certain kind of input. The application developer should describe that criteria in this space.</em></span>
+      </div>
+  </div>
+  <pre><code class="scss">
+  .nypl-text-area-with-label
+  </code></pre>
+  <pre><code class="html">
+    &lt;div class=&quot;nypl-text-area-with-label&quot;&gt;
+      &lt;label for=&quot;textarea1&quot;&gt;Text Area Label&lt;/label&gt;
+      &lt;textarea form=&quot;the-form-title&quot; id=&quot;textarea1&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+      &lt;span class=&quot;nypl-field-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&lt;em&gt;The application is expecting a certain kind of input. The application developer should describe that criteria in this space.&lt;/em&gt;&lt;/span&gt;
+    &lt;/div&gt;
+</code></pre>
+
+<h4 id="texAreas">Text Area (Accepted)</h4>
+<p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsquo;s input is indeed what the application is expecting.</p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+    <div class="nypl-text-area-with-label nypl-field-success">
+      <label for="textarea1">Text Area Label</label>
+      <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+      <span class="nypl-field-status" aria-live="assertive" aria-atomic="true"><em>The input was correct</em></span>
+    </div>
+</div>
+<pre><code class="scss">
+  .nypl-text-area-with-label
+  .nypl-field-success
+</code></pre>
+<pre><code class="html">
+  &lt;div class=&quot;nypl-text-area-with-label nypl-field-success&quot;&gt;
+    &lt;label for=&quot;textarea1&quot;&gt;Text Area Label&lt;/label&gt;
+    &lt;textarea form=&quot;the-form-title&quot; id=&quot;textarea1&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+    &lt;span class=&quot;nypl-field-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&lt;em&gt;The input was correct&lt;/em&gt;&lt;/span&gt;
+  &lt;/div&gt;</code></pre>
+
+<h4 id="texAreas">Text Area (Error)</h4>
+<p>In cases were the application is performing client side validation <code>onblur</code> the text area should confirm that the user&rsuqo;s input is incorrect and should be corrected before the application will accept submission. Additional reporting of errors should be presented to the user in the form the <a href="#formErrors">Error Message pattern described above.</a></p>
+<div class="nypl-toolkit-example">
+  <span class="nypl-example-text">Example</span>
+    <div class="nypl-text-area-with-label nypl-field-error">
+      <label for="textarea1">Text Area Label </label>
+      <textarea form="the-form-title" id="textarea1" name="application-text-area"></textarea>
+      <span class="nypl-field-status" aria-live="assertive" aria-atomic="true"><em>The input provided has errors and must be corrected before submission can be complete.</em></span>
+    </div>
+</div>
+
+<pre><code class="scss">
+.nypl-text-area-with-label
+.nypl-field-error
+</code></pre>
+<pre><code>
+  &lt;div class=&quot;nypl-text-area-with-label nypl-field-error&quot;&gt;
+    &lt;label for=&quot;textarea1&quot;&gt;Text Area Label &lt;/label&gt;
+    &lt;textarea form=&quot;the-form-title&quot; id=&quot;textarea1&quot; name=&quot;application-text-area&quot;&gt;&lt;/textarea&gt;
+    &lt;span class=&quot;nypl-field-status&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&lt;em&gt;The input provided has errors and must be corrected before submission can be complete.&lt;/em&gt;&lt;/span&gt;
+  &lt;/div&gt;</code></pre>

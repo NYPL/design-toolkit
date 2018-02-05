@@ -1,5 +1,12 @@
 ### Change Log
 
+### v0.1.31
+- Added in `textarea` pattern; default ("normal"), successful input, and an error state (Addresses: #254)
+- Added a "Successful" submission message pattern. Kin to the "You have errors" pattern found on form submissions (Fixes: #252)
+- Updated the README.md to be a little more helpful and explicit in instructing on how to install and run this application.
+- Bump Version package.json
+
+
 ### v0.1.30
 - Setting `whitespace: normal` for buttons and layout changes for Discovery search results.
 

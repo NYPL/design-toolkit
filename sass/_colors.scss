@@ -63,6 +63,7 @@ $nypl-footer-color: $nypl-gray-brown;
 
 // Alerting and Highlights
 $highlight-color: $nypl-red;
+$success-color: $nypl-green-bright;
 $alert-color: $nypl-yellow;
 
 // Hyper-link colors
@@ -85,4 +86,4 @@ $nypl-red-tint: tint($nypl-red, 30%);
 $nypl-red-error: tint($nypl-red, 80%);
 $nypl-blue-tint: tint($nypl-blue, 80%);
 $nypl-yellow-tint: tint($nypl-yellow, 50%);
-$nypl-green-tint: tint($nypl-green, 40%);
+$nypl-green-tint: #f3f7e6;
