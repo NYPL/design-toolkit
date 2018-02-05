@@ -146,13 +146,14 @@
 ///
 /// Full Width Wrapper(s) Mixin
 ///
+/// TODO: Find a better way to abstract all this nasty math away from the below calculations...
 
 @mixin full-width-wrapper($in-header: false) {
   @if $in-header == false {
-    max-width: calc(#{$max-width - $general-padding} - (#{$logo-width + $general-padding}));
-    padding: $general-padding $general-padding $general-padding ($logo-width + $general-padding);
+    max-width: calc(#{$max-width - $general-padding} - (#{$logo-width - $logo-type-width - $logo-gap-between + $general-padding}));
+    padding: $general-padding $general-padding $general-padding ($logo-width - $logo-type-width - $logo-gap-between + $general-padding);
   } @else {
-    max-width: calc(#{$max-width} - (#{$general-padding * 2}));
+    max-width: calc(#{$max-width} - (#{$general-padding} * 2));
     padding: 0 $general-padding;
   }
 
