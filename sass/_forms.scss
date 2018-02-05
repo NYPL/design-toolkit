@@ -1,10 +1,9 @@
 @import "buttons";
-//@warn "omnisearch mixin is a the bottom of this file";
-// overriding focus borders to make them stand out
+/// @warn "omnisearch mixin is a the bottom of this file";
+/// overriding focus borders to make them stand out
+/// @warn "lots of magic numbers here";
 
 $form-padding: 0.5rem;
-
-//@warn "lots of magic numbers here";
 
 @each $tag in a, input, select, button, textarea {
   #{$tag} {
@@ -31,10 +30,10 @@ $form-padding: 0.5rem;
 
 
 
-//
-// A basic Fieldset mixin
-//  Lots of arguments can be set to modify the end result based on it context
-//
+///
+/// A basic Fieldset mixin
+///  Lots of arguments can be set to modify the end result based on it context
+///
 
 @mixin fieldset(
     $border-width: 0,
@@ -62,11 +61,11 @@ $form-padding: 0.5rem;
   legend {
     @include label;
   }
-  // Special Case where we have <h3-4> in a legend
+  /// Special Case where we have <h3-4> in a legend
   legend h3 {
     margin: 0;
   }
-} // /mixin fieldset
+}
 
 
 
@@ -87,6 +86,12 @@ $form-padding: 0.5rem;
   padding: $padding;
 }
 
+
+
+///
+/// Text styling for inputs
+///
+
 @mixin text {
   @include input;
   @include box-shadow(inset 0 0 0 1px $nypl-dark-gray);
@@ -102,12 +107,40 @@ $form-padding: 0.5rem;
   }
 
   &:focus {
-    background-color: $nypl-white;
     @include box-shadow(inset 0 0 0 $focus-width $focus-color);
+    background-color: $nypl-white;
     color: $page-color;
     outline: none;
   }
-} // /text
+}
+
+
+
+///
+/// Basic Text Area
+///
+
+@mixin text-area(
+  $border-radius: ($general-border-radius * 1.25),
+  $width: 100%,
+  $height: 12rem) {
+
+  textarea {
+    @include box-shadow(inset 0 0 0 1px $nypl-dark-gray);
+    border: 0;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    font-family: $sans-serif-stack;
+    height: $height;
+    width: $width;
+    }
+  }
+
+
+
+///
+/// Text Fields with labels
+///
 
 @mixin text-field-with-label {
   label {
@@ -115,14 +148,15 @@ $form-padding: 0.5rem;
     color: $page-text-color;
     display: block;
     font-weight: 400;
-    //position: absolute;
   }
 
-  input[type=text],
-  input[type=email],
-  input[type=date],
-  input[type=number] {
-    @include text;
+  input {
+    &[type=text],
+    &[type=email],
+    &[type=date],
+    &[type=number] {
+      @include text;
+    }
   }
 
   .nypl-field-status {
@@ -133,17 +167,19 @@ $form-padding: 0.5rem;
     line-height: 1.5;
     padding-top: $form-padding;
   }
-} // /text-field-with-label
+}
 
 
 
-//
-// Error states for input fields
-//
+///
+/// Error states for input fields
+///
+
 @mixin field-error {
   background: $page-background-color;
 
-  input[type=text] {
+  input[type=text],
+  textarea {
     background-color: $nypl-red-error;
     border: ($general-border-width / 2) $nypl-red-dark solid;
     box-shadow: none;
@@ -153,7 +189,30 @@ $form-padding: 0.5rem;
     background: $page-background-color;
     color: $nypl-red;
   }
-} // /field-error
+}
+
+
+
+///
+/// Success states for fields
+///
+
+@mixin field-success {
+  background: $page-background-color;
+
+  input[type=text],
+  textarea {
+    background-color: $nypl-green-tint;
+    border: ($general-border-width / 2) $nypl-green-bright solid;
+    box-shadow: none;
+  }
+}
+
+
+
+///
+/// Text Field
+///
 
 @mixin text-field {
   @include fieldset;
@@ -164,6 +223,12 @@ $form-padding: 0.5rem;
   @include fieldset;
   @include text-field-with-label;
 }
+
+
+
+///
+/// Name Field(s)
+///
 
 @mixin name-field {
   @include clearfix;
@@ -192,7 +257,24 @@ $form-padding: 0.5rem;
       }
     }
   }
-} // /name-field
+}
+
+
+
+///
+/// Basic Text Area Label & help / status text
+///
+
+@mixin text-area-with-label {
+  @include text-field-with-label;
+  @include text-area;
+}
+
+
+
+///
+/// Address Field
+///
 
 @mixin address-fieldset {
   @include fieldset;
@@ -213,6 +295,12 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
+///
+/// Date Field(s)
+///
+
 @mixin date-field {
   @include fieldset;
   @include text-field-with-label;
@@ -223,11 +311,23 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
+///
+/// Required Fields
+///
+
 @mixin required-field {
   color: darken($highlight-color, 10%);
   font-size: 0.9rem;
   font-weight: 400;
 }
+
+
+
+///
+/// Select (Dropdowns)
+///
 
 @mixin select (
   $background-color: $nypl-search-color-light,
@@ -250,6 +350,11 @@ $form-padding: 0.5rem;
   width: $width;
 }
 
+
+
+///
+/// Select Field
+///
 @mixin select-field {
 
   @include fieldset;
@@ -262,12 +367,15 @@ $form-padding: 0.5rem;
   select {
     @include select;
   }
-} // /select-field
+}
 
-//
-// Drop down w/ option for sorting...
-// ex: /discovery-search.html
-//
+
+
+///
+/// Select Field results
+/// Drop down w/ option for sorting...
+/// ex: /discovery-search.html
+///
 
 @mixin select-field-results {
 
@@ -321,8 +429,10 @@ $form-padding: 0.5rem;
 
 
 ///
-/// Radio Button(s)
+/// Simple Radiobutton
+/// Though, not so Simple
 ///
+
 @mixin simple-radiobutton(
     $background-color: $nypl-white,
     $border-radius: 0,
@@ -349,11 +459,14 @@ $form-padding: 0.5rem;
     height: initial;
     margin: 0 0.5rem;
   }
-} // /simple-radiobutton
+}
 
-//
-// Special case to extend the default to the Item Holds screen
-//
+
+
+///
+/// Special case to extend the default to the Item Holds screen
+///
+
 @mixin item-holds-radiobutton-field {
   @include fieldset;
   @include simple-radiobutton(
@@ -385,9 +498,11 @@ $form-padding: 0.5rem;
   }
 }
 
-//
-// radiobutton-field in action
-//
+
+
+///
+/// radiobutton-field in action
+///
 @mixin radiobutton-field {
   @include fieldset;
   @include simple-radiobutton;
@@ -431,10 +546,6 @@ $form-padding: 0.5rem;
     padding-left: 1.75rem;
     padding-top: 0.27rem;
     width: 60%;
-
-    // @include media($xtrasmall-breakpoint) {
-    //   width: 65%;
-    // }
   }
 
   label::after,
@@ -484,7 +595,8 @@ $form-padding: 0.5rem;
     color: $nypl-green-bright;
     content: "";
   }
-// Adding focus styles on the outer-box of the fake checkbox
+
+  // Adding focus styles on the outer-box of the fake checkbox
   input[type="checkbox"]:focus + label::before {
     outline: $nypl-orange auto 0.125rem;
   }
@@ -569,6 +681,13 @@ $form-padding: 0.5rem;
   }
 }
 
+
+
+
+///
+/// Searchable Field Module
+///
+
 @mixin searchable-field {
   @include collapsible-field($is-searchable: true);
   @include simple-radiobutton;
@@ -622,6 +741,11 @@ $form-padding: 0.5rem;
   }
 }
 
+
+///
+/// Filter by Alpha
+///
+
 @mixin alphabetical-filter {
   @include fieldset;
 
@@ -642,6 +766,12 @@ $form-padding: 0.5rem;
     }
   }
 }
+
+
+
+///
+/// Mobile refine
+///
 
 @mixin mobile-refine {
   display: none;
@@ -674,26 +804,11 @@ $form-padding: 0.5rem;
 }
 
 
+///
+/// Request form(s)
+/// Mixins for Discovery requests pages
+///
 
-//
-// Basic Text Area
-//
-@mixin text-area(
-  $border-color: $nypl-dark-gray,
-  $border-width: ($general-border-width / 3),
-  $width: 100%,
-  $height: 12rem) {
-  border: $border-width solid $border-color;
-  height: $height;
-  width: $width;
-}
-
-
-
-//
-// Request form(s)
-// Mixins for Discovery requests pages
-//
 @mixin request-item-summary {
   background: $nypl-white;
 
@@ -709,13 +824,24 @@ $form-padding: 0.5rem;
   } // /.call-number-heading
 } // /request-item-summary
 
+
+
+///
+/// Electronic Delivery
+///
+
 @mixin electronic-delivery-form {
   fieldset {
     border: 0;
   }
 }
 
-// The Request page header
+
+
+///
+/// The Request page header
+///
+
 @mixin request-page-header {
   @include page-header(
   $background-color: lighten($nypl-light-gray, 15%),
@@ -737,6 +863,8 @@ $form-padding: 0.5rem;
   } // /.nypl-column-three-quarters
 } // /request-page-header
 
+
+
 // Need a title styling for forms so this might expand in the future
 // In this case the class is being used by an h2, but there is probably a
 // more Toolkity way of doing things:
@@ -749,12 +877,11 @@ $form-padding: 0.5rem;
 
 
 
-//
-// Filtering Styles for Modals w/ complex filtering controls
-//
-@mixin modal-filter-form {
+///
+/// Filtering Styles for Modals w/ complex filtering controls
+///
 
-// body > div.nypl-basic-modal-container.active > div.nypl-modal-content > div > form > fieldset > fieldset:nth-child(4)
+@mixin modal-filter-form {
 
   .inner {
     border-bottom: $general-border-width solid $nypl-light-gray;
@@ -777,29 +904,32 @@ $form-padding: 0.5rem;
     .nypl-filter-date-field {
 
       > label {
-        display: inline-block;
-        max-width: calc(50% - 5.125rem);
 
         @include media($xtrasmall-breakpoint) {
           display: block;
           max-width: 100%;
           width: 100%;
         }
+
+        display: inline-block;
+        max-width: calc(50% - 5.125rem);
       }
 
       > .nypl-icon {
-        height: 2rem;
-        position: relative;
-        width: 2rem;
-        top: ($general-margin / 2);
 
         @include media($xtrasmall-breakpoint) {
           display: none;
           height: 0;
-          visibility: hidden;
           opacity: 0;
+          visibility: hidden;
           width: 0;
         }
+
+        height: 2rem;
+        position: relative;
+        top: ($general-margin / 2);
+        width: 2rem;
+
       }
     }
 
@@ -820,17 +950,20 @@ $form-padding: 0.5rem;
 
   .nypl-filter-button {
     @include basic-button-icon;
-    margin-right: $general-margin;
-    margin-top: $general-margin;
-
     @include media($xtrasmall-breakpoint) {
       @include clearfix;
       clear: both;
-      // margin-top: $general-margin;
     }
+
+    margin-right: $general-margin;
+    margin-top: $general-margin;
   }
-} // /.nypl-modal-filter-form
+}
 
 
-// TODO: Move this to a more sensible location. Preferably at the top
+
+///
+/// TODO: Move this to a more sensible location. Preferably at the top
+/// Could use a major refactor in general...
+///
 @import "omni-search";

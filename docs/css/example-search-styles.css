@@ -1579,11 +1579,6 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-electronic-delivery-form fieldset {
   border: 0; }
 
-.nypl-text-area {
-  border: 0.04167rem solid #080807;
-  height: 12rem;
-  width: 100%; }
-
 .nypl-service-button {
   background-color: #d0343a;
   border: 0 solid #080807;
@@ -1959,14 +1954,6 @@ dl dd.multi-item-list .nypl-basic-table,
     transform: skewX(-30deg);
     width: 200%; }
 
-.nypl-general-note {
-  border-left: 1rem solid #776e64;
-  padding-left: 1rem; }
-
-.nypl-a11y-note {
-  border-left: 1rem solid #fee24a;
-  padding-left: 1rem; }
-
 .nypl-progress-indicator {
   color: #776e64;
   margin: 0;
@@ -2035,10 +2022,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-text-field input[type=text],
-  .nypl-text-field input[type=email],
-  .nypl-text-field input[type=date],
-  .nypl-text-field input[type=number] {
+  .nypl-text-field input[type=text], .nypl-text-field input[type=email], .nypl-text-field input[type=date], .nypl-text-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2053,19 +2037,13 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-text-field input[type=text].active,
-    .nypl-text-field input[type=email].active,
-    .nypl-text-field input[type=date].active,
-    .nypl-text-field input[type=number].active {
+    .nypl-text-field input[type=text].active, .nypl-text-field input[type=email].active, .nypl-text-field input[type=date].active, .nypl-text-field input[type=number].active {
       width: 16rem; }
-    .nypl-text-field input[type=text]:focus,
-    .nypl-text-field input[type=email]:focus,
-    .nypl-text-field input[type=date]:focus,
-    .nypl-text-field input[type=number]:focus {
-      background-color: #fff;
+    .nypl-text-field input[type=text]:focus, .nypl-text-field input[type=email]:focus, .nypl-text-field input[type=date]:focus, .nypl-text-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-text-field .nypl-field-status {
@@ -2103,10 +2081,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-year-field input[type=text],
-  .nypl-year-field input[type=email],
-  .nypl-year-field input[type=date],
-  .nypl-year-field input[type=number] {
+  .nypl-year-field input[type=text], .nypl-year-field input[type=email], .nypl-year-field input[type=date], .nypl-year-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2121,19 +2096,13 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-year-field input[type=text].active,
-    .nypl-year-field input[type=email].active,
-    .nypl-year-field input[type=date].active,
-    .nypl-year-field input[type=number].active {
+    .nypl-year-field input[type=text].active, .nypl-year-field input[type=email].active, .nypl-year-field input[type=date].active, .nypl-year-field input[type=number].active {
       width: 16rem; }
-    .nypl-year-field input[type=text]:focus,
-    .nypl-year-field input[type=email]:focus,
-    .nypl-year-field input[type=date]:focus,
-    .nypl-year-field input[type=number]:focus {
-      background-color: #fff;
+    .nypl-year-field input[type=text]:focus, .nypl-year-field input[type=email]:focus, .nypl-year-field input[type=date]:focus, .nypl-year-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-year-field .nypl-field-status {
@@ -2149,10 +2118,7 @@ dl dd.multi-item-list .nypl-basic-table,
   color: #080807;
   display: block;
   font-weight: 400; }
-.nypl-text-field-with-label input[type=text],
-.nypl-text-field-with-label input[type=email],
-.nypl-text-field-with-label input[type=date],
-.nypl-text-field-with-label input[type=number] {
+.nypl-text-field-with-label input[type=text], .nypl-text-field-with-label input[type=email], .nypl-text-field-with-label input[type=date], .nypl-text-field-with-label input[type=number] {
   background-color: #fff;
   border: 0;
   border-radius: 0.25rem;
@@ -2167,19 +2133,13 @@ dl dd.multi-item-list .nypl-basic-table,
   transition: all 0.2s ease-out;
   width: 100%;
   -webkit-appearance: none; }
-  .nypl-text-field-with-label input[type=text].active,
-  .nypl-text-field-with-label input[type=email].active,
-  .nypl-text-field-with-label input[type=date].active,
-  .nypl-text-field-with-label input[type=number].active {
+  .nypl-text-field-with-label input[type=text].active, .nypl-text-field-with-label input[type=email].active, .nypl-text-field-with-label input[type=date].active, .nypl-text-field-with-label input[type=number].active {
     width: 16rem; }
-  .nypl-text-field-with-label input[type=text]:focus,
-  .nypl-text-field-with-label input[type=email]:focus,
-  .nypl-text-field-with-label input[type=date]:focus,
-  .nypl-text-field-with-label input[type=number]:focus {
-    background-color: #fff;
+  .nypl-text-field-with-label input[type=text]:focus, .nypl-text-field-with-label input[type=email]:focus, .nypl-text-field-with-label input[type=date]:focus, .nypl-text-field-with-label input[type=number]:focus {
     -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
     box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    background-color: #fff;
     color: #080807;
     outline: none; }
 .nypl-text-field-with-label .nypl-field-status {
@@ -2223,10 +2183,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-name-field input[type=text],
-  .nypl-name-field input[type=email],
-  .nypl-name-field input[type=date],
-  .nypl-name-field input[type=number] {
+  .nypl-name-field input[type=text], .nypl-name-field input[type=email], .nypl-name-field input[type=date], .nypl-name-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2241,19 +2198,13 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-name-field input[type=text].active,
-    .nypl-name-field input[type=email].active,
-    .nypl-name-field input[type=date].active,
-    .nypl-name-field input[type=number].active {
+    .nypl-name-field input[type=text].active, .nypl-name-field input[type=email].active, .nypl-name-field input[type=date].active, .nypl-name-field input[type=number].active {
       width: 16rem; }
-    .nypl-name-field input[type=text]:focus,
-    .nypl-name-field input[type=email]:focus,
-    .nypl-name-field input[type=date]:focus,
-    .nypl-name-field input[type=number]:focus {
-      background-color: #fff;
+    .nypl-name-field input[type=text]:focus, .nypl-name-field input[type=email]:focus, .nypl-name-field input[type=date]:focus, .nypl-name-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-name-field .nypl-field-status {
@@ -2307,10 +2258,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-address-fieldset input[type=text],
-  .nypl-address-fieldset input[type=email],
-  .nypl-address-fieldset input[type=date],
-  .nypl-address-fieldset input[type=number] {
+  .nypl-address-fieldset input[type=text], .nypl-address-fieldset input[type=email], .nypl-address-fieldset input[type=date], .nypl-address-fieldset input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2325,19 +2273,13 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-address-fieldset input[type=text].active,
-    .nypl-address-fieldset input[type=email].active,
-    .nypl-address-fieldset input[type=date].active,
-    .nypl-address-fieldset input[type=number].active {
+    .nypl-address-fieldset input[type=text].active, .nypl-address-fieldset input[type=email].active, .nypl-address-fieldset input[type=date].active, .nypl-address-fieldset input[type=number].active {
       width: 16rem; }
-    .nypl-address-fieldset input[type=text]:focus,
-    .nypl-address-fieldset input[type=email]:focus,
-    .nypl-address-fieldset input[type=date]:focus,
-    .nypl-address-fieldset input[type=number]:focus {
-      background-color: #fff;
+    .nypl-address-fieldset input[type=text]:focus, .nypl-address-fieldset input[type=email]:focus, .nypl-address-fieldset input[type=date]:focus, .nypl-address-fieldset input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-address-fieldset .nypl-field-status {
@@ -2387,10 +2329,7 @@ dl dd.multi-item-list .nypl-basic-table,
     color: #080807;
     display: block;
     font-weight: 400; }
-  .nypl-date-field input[type=text],
-  .nypl-date-field input[type=email],
-  .nypl-date-field input[type=date],
-  .nypl-date-field input[type=number] {
+  .nypl-date-field input[type=text], .nypl-date-field input[type=email], .nypl-date-field input[type=date], .nypl-date-field input[type=number] {
     background-color: #fff;
     border: 0;
     border-radius: 0.25rem;
@@ -2405,19 +2344,13 @@ dl dd.multi-item-list .nypl-basic-table,
     transition: all 0.2s ease-out;
     width: 100%;
     -webkit-appearance: none; }
-    .nypl-date-field input[type=text].active,
-    .nypl-date-field input[type=email].active,
-    .nypl-date-field input[type=date].active,
-    .nypl-date-field input[type=number].active {
+    .nypl-date-field input[type=text].active, .nypl-date-field input[type=email].active, .nypl-date-field input[type=date].active, .nypl-date-field input[type=number].active {
       width: 16rem; }
-    .nypl-date-field input[type=text]:focus,
-    .nypl-date-field input[type=email]:focus,
-    .nypl-date-field input[type=date]:focus,
-    .nypl-date-field input[type=number]:focus {
-      background-color: #fff;
+    .nypl-date-field input[type=text]:focus, .nypl-date-field input[type=email]:focus, .nypl-date-field input[type=date]:focus, .nypl-date-field input[type=number]:focus {
       -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
       box-shadow: inset 0 0 0 0.125rem #ffb81d;
+      background-color: #fff;
       color: #080807;
       outline: none; }
   .nypl-date-field .nypl-field-status {
@@ -2435,15 +2368,71 @@ dl dd.multi-item-list .nypl-basic-table,
   font-size: 0.9rem;
   font-weight: 400; }
 
+.nypl-text-area-with-label label {
+  background-color: transparent;
+  color: #080807;
+  display: block;
+  font-weight: 400; }
+.nypl-text-area-with-label input[type=text], .nypl-text-area-with-label input[type=email], .nypl-text-area-with-label input[type=date], .nypl-text-area-with-label input[type=number] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0;
+  -webkit-box-shadow: inset 0 0 0 1px #080807;
+  -moz-box-shadow: inset 0 0 0 1px #080807;
+  box-shadow: inset 0 0 0 1px #080807;
+  height: 1.5rem;
+  padding: 0.5rem 0;
+  text-indent: 0.5rem;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  -webkit-appearance: none; }
+  .nypl-text-area-with-label input[type=text].active, .nypl-text-area-with-label input[type=email].active, .nypl-text-area-with-label input[type=date].active, .nypl-text-area-with-label input[type=number].active {
+    width: 16rem; }
+  .nypl-text-area-with-label input[type=text]:focus, .nypl-text-area-with-label input[type=email]:focus, .nypl-text-area-with-label input[type=date]:focus, .nypl-text-area-with-label input[type=number]:focus {
+    -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    box-shadow: inset 0 0 0 0.125rem #ffb81d;
+    background-color: #fff;
+    color: #080807;
+    outline: none; }
+.nypl-text-area-with-label .nypl-field-status {
+  background-color: #fff;
+  color: #776e64;
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding-top: 0.5rem; }
+.nypl-text-area-with-label textarea {
+  -webkit-box-shadow: inset 0 0 0 1px #080807;
+  -moz-box-shadow: inset 0 0 0 1px #080807;
+  box-shadow: inset 0 0 0 1px #080807;
+  border: 0;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 12rem;
+  width: 100%; }
+
 .nypl-field-error {
   background: #fff; }
-  .nypl-field-error input[type=text] {
+  .nypl-field-error input[type=text],
+  .nypl-field-error textarea {
     background-color: #f6d6d8;
     border: 0.0625rem #97272c solid;
     box-shadow: none; }
   .nypl-field-error .nypl-field-status {
     background: #fff;
     color: #d0343a; }
+
+.nypl-field-success {
+  background: #fff; }
+  .nypl-field-success input[type=text],
+  .nypl-field-success textarea {
+    background-color: #f3f7e6;
+    border: 0.0625rem #008918 solid;
+    box-shadow: none; }
 
 .nypl-select {
   -moz-appearance: none;
@@ -2563,7 +2552,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-generic-checkbox input[type="checkbox"] + label::after {
   content: none; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
-  background-color: #f3f6e8;
+  background-color: white;
   border-width: 0.125rem; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label,
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
@@ -2940,10 +2929,7 @@ dl dd.multi-item-list .nypl-basic-table,
       color: #080807;
       display: block;
       font-weight: 400; }
-    .nypl-searchable-field .nypl-facet-search input[type=text],
-    .nypl-searchable-field .nypl-facet-search input[type=email],
-    .nypl-searchable-field .nypl-facet-search input[type=date],
-    .nypl-searchable-field .nypl-facet-search input[type=number] {
+    .nypl-searchable-field .nypl-facet-search input[type=text], .nypl-searchable-field .nypl-facet-search input[type=email], .nypl-searchable-field .nypl-facet-search input[type=date], .nypl-searchable-field .nypl-facet-search input[type=number] {
       background-color: #fff;
       border: 0;
       border-radius: 0.25rem;
@@ -2958,19 +2944,13 @@ dl dd.multi-item-list .nypl-basic-table,
       transition: all 0.2s ease-out;
       width: 100%;
       -webkit-appearance: none; }
-      .nypl-searchable-field .nypl-facet-search input[type=text].active,
-      .nypl-searchable-field .nypl-facet-search input[type=email].active,
-      .nypl-searchable-field .nypl-facet-search input[type=date].active,
-      .nypl-searchable-field .nypl-facet-search input[type=number].active {
+      .nypl-searchable-field .nypl-facet-search input[type=text].active, .nypl-searchable-field .nypl-facet-search input[type=email].active, .nypl-searchable-field .nypl-facet-search input[type=date].active, .nypl-searchable-field .nypl-facet-search input[type=number].active {
         width: 16rem; }
-      .nypl-searchable-field .nypl-facet-search input[type=text]:focus,
-      .nypl-searchable-field .nypl-facet-search input[type=email]:focus,
-      .nypl-searchable-field .nypl-facet-search input[type=date]:focus,
-      .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
-        background-color: #fff;
+      .nypl-searchable-field .nypl-facet-search input[type=text]:focus, .nypl-searchable-field .nypl-facet-search input[type=email]:focus, .nypl-searchable-field .nypl-facet-search input[type=date]:focus, .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
         -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
         box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        background-color: #fff;
         color: #080807;
         outline: none; }
     .nypl-searchable-field .nypl-facet-search .nypl-field-status {
@@ -3526,6 +3506,14 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-related-links {
   border-top: 0.25rem solid #776e64;
   padding-top: 2rem; }
+
+.nypl-general-note {
+  border-left: 1rem solid #776e64;
+  padding-left: 1rem; }
+
+.nypl-a11y-note {
+  border-left: 1rem solid #fee24a;
+  padding-left: 1rem; }
 
 .nypl-toolkit-example {
   border: 0.0625rem solid #d7d4d0;
@@ -4451,14 +4439,14 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
     height: 2rem;
     position: relative;
-    width: 2rem;
-    top: 0.5rem; }
+    top: 0.5rem;
+    width: 2rem; }
     @media (max-width: 483px) {
       .nypl-modal-filter-form .inner .nypl-filter-date-field > .nypl-icon {
         display: none;
         height: 0;
-        visibility: hidden;
         opacity: 0;
+        visibility: hidden;
         width: 0; } }
   .nypl-modal-filter-form .inner .nypl-generic-columns {
     -webkit-column-count: 3;
