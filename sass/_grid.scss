@@ -152,7 +152,6 @@
   @if $in-header == false {
     max-width: calc(#{$final-max-width} - #{$final-logo-offset * 2});
     padding: $general-padding $final-logo-offset $general-padding $final-logo-offset;
-    //border: 1px dotted orange;
   } @else {
     max-width: calc(#{$max-width} - (#{$general-padding} * 2));
     padding: 0 $general-padding;
