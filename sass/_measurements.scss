@@ -62,10 +62,23 @@ $collapsed-nav-height: 30px;
 
 ///
 /// These values are based on the current implementation of the logo in the React App header.
-$logo-type-width-raw: 112 / $basefontraw;
+
+$logo-type-width-raw: 112.53 / $basefontraw;
 $logo-type-width: $logo-type-width-raw * 1rem;
-$logo-mark-width-raw: 96 / $basefontraw;
+$logo-mark-width-raw: 96.37 / $basefontraw;
 $logo-mark-width: $logo-mark-width-raw * 1rem;
 
 /// the gap between the logomark and logotype
 $logo-gap-between: $logo-type-width - $logo-mark-width;
+
+/// More than likely this is the kludgiest way to
+/// do the math that sets up the padding & spacing necessary for nice layout that our grid will consume:
+/// the first value that sets the max-width of the container:
+$final-max-width: $max-width - $general-padding;
+
+/// this gets the width of the logotype and subracts the width of the gap between the mark and the type:
+$logo-offset: $logo-mark-width + $logo-gap-between;
+
+$final-logo-offset: $logo-width - $logo-offset;
+
+$final-offset: $logo-offset + $general-padding;

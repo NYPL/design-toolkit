@@ -3210,8 +3210,9 @@ dl dd.multi-item-list .nypl-basic-table,
       content: ""; }
 
 .nypl-full-width-wrapper {
-  max-width: calc(81.1875rem - (9rem));
-  padding: 1rem 1rem 1rem 9rem;
+  max-width: calc(81.1875rem - 8.96688rem);
+  padding: 1rem 1rem 1rem 8.96688rem;
+  border: 1px dotted orange;
   position: relative;
   margin: 0 auto; }
   .nypl-full-width-wrapper::before, .nypl-full-width-wrapper::after {
