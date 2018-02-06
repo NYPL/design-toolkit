@@ -13,12 +13,14 @@ $small-type: ($basefont * 0.9);
 ///
 /// page measures
 ///
+
 $max-width-raw: 1315;
 $max-width: ($max-width-raw / $basefontraw) * 1rem; // in rems
 
 ///
 /// Breakpoints
 ///
+
 $intermediate-breakpoint: 1120px;
 $mobile-breakpoint: 965px;
 $xtrasmall-breakpoint: 483px;
@@ -26,8 +28,9 @@ $xtrasmall-breakpoint: 483px;
 
 
 ///
-/// borders
+/// Borders
 ///
+
 $focus-width: (2 / $basefontraw) * 1rem;
 $related-links-border-width: 0.25rem;
 $simple-border: (1 / $basefontraw) * 1rem;
@@ -35,8 +38,9 @@ $simple-border: (1 / $basefontraw) * 1rem;
 
 
 ///
-/// grid measures
+/// Grid Measures
 ///
+
 $full-width: 100%;
 $one-quarter: $full-width / 4;
 $one-third: $full-width / 3;
@@ -52,16 +56,19 @@ $general-border-width: ($simple-border * 2);
 
 
 ///
-/// animation timing
+/// Animation timing
 ///
+
 $hover-time: 0.1s;
 
 
 
 ///
-/// header numbers
+/// Header numbers
+///
 /// Be advised that much of the DTK's calculations are based on the Header defined herein, NOT the Global Header React Appliction that is in production
 ///
+
 $logo-ratio: 144 / 257;
 $logo-width-raw: 16;
 $logo-width: $logo-width-raw * 1rem;
