@@ -150,9 +150,9 @@
 
 @mixin full-width-wrapper($in-header: false) {
   @if $in-header == false {
-    max-width: calc(#{$final-max-width} - #{$final-logo-offset});
-    padding: $general-padding $general-padding $general-padding $final-logo-offset;
-    border: 1px dotted orange;
+    max-width: calc(#{$final-max-width} - #{$final-logo-offset * 2});
+    padding: $general-padding $final-logo-offset $general-padding $final-logo-offset;
+    //border: 1px dotted orange;
   } @else {
     max-width: calc(#{$max-width} - (#{$general-padding} * 2));
     padding: 0 $general-padding;
@@ -165,6 +165,7 @@
   @include media($mobile-breakpoint) {
     @if $in-header == false {
       padding-left: ($general-padding * 2);
+      padding-right: ($general-padding * 2);
     } @else {
       margin: 0;
       padding: 0 #{$general-padding * 0.5};

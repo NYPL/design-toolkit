@@ -1,14 +1,24 @@
-// font base values
+/// Measurements
+
+///
+/// font base values
+///
+
 $basefontraw: 16;
+
 $basefont: $basefontraw * 1px;
 
 $small-type: ($basefont * 0.9);
 
-// page measures
+///
+/// page measures
+///
 $max-width-raw: 1315;
 $max-width: ($max-width-raw / $basefontraw) * 1rem; // in rems
 
-// breakpoints
+///
+/// Breakpoints
+///
 $intermediate-breakpoint: 1120px;
 $mobile-breakpoint: 965px;
 $xtrasmall-breakpoint: 483px;
@@ -63,6 +73,7 @@ $collapsed-nav-height: 30px;
 ///
 /// These values are based on the current implementation of the logo in the React App header.
 
+/// Convert the width of each logo element into rems:
 $logo-type-width-raw: 112.53 / $basefontraw;
 $logo-type-width: $logo-type-width-raw * 1rem;
 $logo-mark-width-raw: 96.37 / $basefontraw;

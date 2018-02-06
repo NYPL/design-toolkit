@@ -3210,9 +3210,8 @@ dl dd.multi-item-list .nypl-basic-table,
       content: ""; }
 
 .nypl-full-width-wrapper {
-  max-width: calc(81.1875rem - 8.96688rem);
-  padding: 1rem 1rem 1rem 8.96688rem;
-  border: 1px dotted orange;
+  max-width: calc(81.1875rem - 17.93375rem);
+  padding: 1rem 8.96688rem 1rem 8.96688rem;
   position: relative;
   margin: 0 auto; }
   .nypl-full-width-wrapper::before, .nypl-full-width-wrapper::after {
@@ -3222,7 +3221,8 @@ dl dd.multi-item-list .nypl-basic-table,
     clear: both; }
   @media (max-width: 965px) {
     .nypl-full-width-wrapper {
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 .nypl-row {
   margin: 0 -0.5rem;
