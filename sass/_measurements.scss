@@ -97,6 +97,6 @@ $final-max-width: $max-width - $general-padding;
 /// this gets the width of the logotype and subracts the width of the gap between the mark and the type:
 $logo-offset: $logo-mark-width + $logo-gap-between;
 
-$final-logo-offset: $logo-width - $logo-offset;
+$final-logo-offset: $logo-width - ($logo-offset + 0.5);
 
 $final-offset: $logo-offset + $general-padding;
