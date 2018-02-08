@@ -37,6 +37,10 @@
   }
 }
 
+///
+/// Discovery / ReCAP sub-site Header
+///
+
 .nypl-page-header {
   @include page-header(
   $background-color: lighten($nypl-light-gray, 15%),
@@ -50,7 +54,13 @@
   }
 }
 
-// item info / the full item record
+
+
+
+///
+/// item info / the full item record
+///
+
 .nypl-item-details {
 
   h1 {
@@ -112,16 +122,22 @@ dl dt.list-multi-control {
   }
 }
 
-//
-// numbered pager -approach 1:
-//
+
+
+///
+/// numbered pager -approach 1:
+///
+
 .nypl-numbered-pager {
   @include numbered-pager;
 } // .nypl-results-pagination
 
-//
-// numbered pager -approach 2:
-//
+
+
+///
+/// numbered pager -approach 2:
+///
+
 .nypl-numbered-pager-2 {
   @include numbered-pager;
   position: relative;
