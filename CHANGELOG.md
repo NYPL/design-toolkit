@@ -1,5 +1,9 @@
 ### Change Log
 
+### v0.1.32
+- Layout fixes: #256
+  - alignment to the current header logo see issue #256
+
 ### v0.1.31
 - Added in `textarea` pattern; default ("normal"), successful input, and an error state (Addresses: #254)
 - Added a "Successful" submission message pattern. Kin to the "You have errors" pattern found on form submissions (Fixes: #252)

@@ -6,11 +6,12 @@
 
 //@warn "remove magic numbers";
 
-//
-// Basic Page header:
-// based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
-// specifically: Discovery_home_v4a.psd
-//
+///
+/// Basic Page header:
+/// based on: https://drive.google.com/drive/folders/0B2LQIUUuUDJdUk00VFFLaWJJLU0
+/// specifically: Discovery_home_v4a.psd
+///
+
 @mixin page-header(
   $background-color: lighten($page-color-light, 10%),
   $font-family: 'Milo-Light',
@@ -49,11 +50,14 @@
       margin-top: 0.5rem;
     }
   }
-} // /page-header
+}
 
-//
-// Home Page Hero
-//
+
+
+///
+/// Home Page Hero
+///
+
 @mixin homepage-hero(
     $background-color: lighten($page-color-light, 10%),
     $font-family: $sans-serif-stack,
@@ -88,6 +92,12 @@
     }
   }
 } // /homepage-hero
+
+
+
+///
+/// Breadcrumbs
+///
 
 @mixin breadcrumbs {
   list-style-type: none;
@@ -131,12 +141,19 @@
   }
 }
 
+
+
+///
+/// Full Width Wrapper(s) Mixin
+///
+/// TODO: Find a better way to abstract all this nasty math away from the below calculations...
+
 @mixin full-width-wrapper($in-header: false) {
   @if $in-header == false {
-    max-width: calc(#{$max-width - $general-padding} - (#{$logo-width + $general-padding}));
-    padding: $general-padding $general-padding $general-padding ($logo-width + $general-padding);
+    max-width: calc(#{$final-max-width} - #{$final-logo-offset * 2});
+    padding: $general-padding $final-logo-offset $general-padding $final-logo-offset;
   } @else {
-    max-width: calc(#{$max-width} - (#{$general-padding * 2}));
+    max-width: calc(#{$max-width} - #{$general-padding * 2});
     padding: 0 $general-padding;
   }
 
@@ -147,6 +164,7 @@
   @include media($mobile-breakpoint) {
     @if $in-header == false {
       padding-left: ($general-padding * 2);
+      padding-right: ($general-padding * 2);
     } @else {
       margin: 0;
       padding: 0 #{$general-padding * 0.5};
@@ -154,6 +172,11 @@
   }
 }
 
+
+
+///
+/// Row Mixin
+///
 @mixin row {
   margin: 0 -0.5rem;
   min-height: 1rem;

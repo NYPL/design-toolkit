@@ -1,24 +1,46 @@
-// font base values
+/// Measurements
+
+///
+/// font base values
+///
+
 $basefontraw: 16;
+
 $basefont: $basefontraw * 1px;
 
 $small-type: ($basefont * 0.9);
 
-// page measures
-$max-width-raw: 1312;
+///
+/// page measures
+///
+
+$max-width-raw: 1315;
 $max-width: ($max-width-raw / $basefontraw) * 1rem; // in rems
 
-// breakpoints
+///
+/// Breakpoints
+///
+
 $intermediate-breakpoint: 1120px;
 $mobile-breakpoint: 965px;
 $xtrasmall-breakpoint: 483px;
 
-// borders
+
+
+///
+/// Borders
+///
+
 $focus-width: (2 / $basefontraw) * 1rem;
 $related-links-border-width: 0.25rem;
 $simple-border: (1 / $basefontraw) * 1rem;
 
-// grid measures
+
+
+///
+/// Grid Measures
+///
+
 $full-width: 100%;
 $one-quarter: $full-width / 4;
 $one-third: $full-width / 3;
@@ -31,14 +53,50 @@ $general-margin: $general-padding;
 $general-border-radius: 0.2rem;
 $general-border-width: ($simple-border * 2);
 
-// animation timing
+
+
+///
+/// Animation timing
+///
+
 $hover-time: 0.1s;
 
-// header numbers
-$logo-ratio: 169 / 300;
-$logo-width-raw: 5;
+
+
+///
+/// Header numbers
+///
+/// Be advised that much of the DTK's calculations are based on the Header defined herein, NOT the Global Header React Appliction that is in production
+///
+
+$logo-ratio: 144 / 257;
+$logo-width-raw: 16;
 $logo-width: $logo-width-raw * 1rem;
 $logo-height-raw: $logo-width-raw * $logo-ratio;
 $logo-height: $logo-height-raw * 1rem;
 $collapsed-service-height: 10px;
 $collapsed-nav-height: 30px;
+
+///
+/// These values are based on the current implementation of the logo in the React App header.
+
+/// Convert the width of each logo element into rems:
+$logo-type-width-raw: 112.53 / $basefontraw;
+$logo-type-width: $logo-type-width-raw * 1rem;
+$logo-mark-width-raw: 96.37 / $basefontraw;
+$logo-mark-width: $logo-mark-width-raw * 1rem;
+
+/// the gap between the logomark and logotype
+$logo-gap-between: $logo-type-width - $logo-mark-width;
+
+/// More than likely this is the kludgiest way to
+/// do the math that sets up the padding & spacing necessary for nice layout that our grid will consume:
+/// the first value that sets the max-width of the container:
+$final-max-width: $max-width - $general-padding;
+
+/// this gets the width of the logotype and subracts the width of the gap between the mark and the type:
+$logo-offset: $logo-mark-width + $logo-gap-between;
+
+$final-logo-offset: $logo-width - ($logo-offset + 0.5);
+
+$final-offset: $logo-offset + $general-padding;
