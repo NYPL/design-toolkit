@@ -34,7 +34,7 @@
     <div class="nypl-request-page-header">
       <div class="nypl-row">
         <div class="nypl-full-width-wrapper">
-          <div class="nypl-column-three-quarters">
+          <div class="nypl-column-full">
             <h1>Electronic Delivery Request</h1>
             <!-- <span>
 <span class="nypl-screenreader-only" >You are here:</span>
@@ -57,7 +57,7 @@
     </div>
     <div class="nypl-full-width-wrapper">
       <div class="nypl-row">
-        <div class="nypl-column-three-quarters">
+        <div class="nypl-column-full">
           <!-- <div class="item-header">
 <h3>Electronic Delivery Request</h3>
 </div> -->
@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <!-- /nypl-column-three-quarters -->
+        <!-- /nypl-column-full -->
       </div>
       <form id="edd-request">
       <fieldset class="nypl-fieldset">
@@ -152,8 +152,10 @@
               <input id="issue-detail-input" type="text" placeholder="" />
               <span class="nypl-field-status" id="issue-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
             </div>
-            <label for="additional-notes-textarea">Additional Notes:</label>
-            <textarea id="additional-notes-textarea" class="nypl-text-area" form="edd-request" name="Additional Notes:"></textarea>
+            <div class="nypl-text-area-with-label">
+              <label for="additional-notes-textarea">Additional Notes:</label>
+              <textarea id="additional-notes-textarea" class="nypl-text-area" form="edd-request" name="Additional Notes:"></textarea>
+            </div>
           </div>
         </div>
       </fieldset>

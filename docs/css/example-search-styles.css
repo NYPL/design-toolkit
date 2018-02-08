@@ -814,9 +814,9 @@ dl dd.multi-item-list .nypl-basic-table,
   border-radius: 0;
   display: inline-block;
   fill: #080807;
-  height: 2.81667rem;
+  height: 8.96498rem;
   speak: none;
-  width: 5rem; }
+  width: 16rem; }
   .nypl-logo-rev.reversed {
     background-color: inherit;
     fill: #fff; }
@@ -3210,8 +3210,8 @@ dl dd.multi-item-list .nypl-basic-table,
       content: ""; }
 
 .nypl-full-width-wrapper {
-  max-width: calc(81rem - (6rem));
-  padding: 1rem 1rem 1rem 6rem;
+  max-width: calc(81.1875rem - 17.93375rem);
+  padding: 1rem 8.96688rem 1rem 8.96688rem;
   position: relative;
   margin: 0 auto; }
   .nypl-full-width-wrapper::before, .nypl-full-width-wrapper::after {
@@ -3221,7 +3221,8 @@ dl dd.multi-item-list .nypl-basic-table,
     clear: both; }
   @media (max-width: 965px) {
     .nypl-full-width-wrapper {
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 .nypl-row {
   margin: 0 -0.5rem;
@@ -4604,24 +4605,24 @@ dl dd.multi-item-list .nypl-basic-table,
       float: none;
       margin: 1rem 0.5rem 1.5rem 0;
       position: relative;
-      width: 2.81667rem; } }
+      width: 8.96498rem; } }
 .nypl-header .nypl-logo {
   border: 0;
   display: block;
   font-size: 0;
-  height: 2.81667rem;
+  height: 8.96498rem;
   margin-top: 1rem;
   margin-bottom: 0.1rem;
-  width: 5rem; }
+  width: 16rem; }
   .nypl-header .nypl-logo svg {
-    height: 2.81667rem;
-    width: 5rem; }
+    height: 8.96498rem;
+    width: 16rem; }
   @media (max-width: 965px) {
     .nypl-header .nypl-logo {
       margin: 0;
       margin-right: 0.5rem;
       overflow: hidden;
-      width: 2.81667rem; }
+      width: 8.96498rem; }
       .nypl-header .nypl-logo .wordmark {
         display: none; } }
 .nypl-header .content {
@@ -4645,7 +4646,7 @@ dl dd.multi-item-list .nypl-basic-table,
     display: table;
     width: 100%; } }
 .nypl-header .nypl-full-width-wrapper {
-  max-width: calc(82rem - (2rem));
+  max-width: calc(82.1875rem - 2rem);
   padding: 0 1rem;
   position: relative;
   margin: 0 auto; }
@@ -5102,7 +5103,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-header .nav-buttons {
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-top: calc(2.81667rem + 2rem); }
+  margin-top: calc(8.96498rem + 2rem); }
   .nypl-header .nav-buttons::before, .nypl-header .nav-buttons::after {
     content: "";
     display: table; }
