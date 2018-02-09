@@ -2020,7 +2020,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-text-field label {
     background-color: transparent;
     color: #080807;
-    display: block;
+    display: inline-block;
     font-weight: 400; }
   .nypl-text-field input[type=text], .nypl-text-field input[type=email], .nypl-text-field input[type=date], .nypl-text-field input[type=number] {
     background-color: #fff;
@@ -2079,7 +2079,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-year-field label {
     background-color: transparent;
     color: #080807;
-    display: block;
+    display: inline-block;
     font-weight: 400; }
   .nypl-year-field input[type=text], .nypl-year-field input[type=email], .nypl-year-field input[type=date], .nypl-year-field input[type=number] {
     background-color: #fff;
@@ -2116,7 +2116,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-text-field-with-label label {
   background-color: transparent;
   color: #080807;
-  display: block;
+  display: inline-block;
   font-weight: 400; }
 .nypl-text-field-with-label input[type=text], .nypl-text-field-with-label input[type=email], .nypl-text-field-with-label input[type=date], .nypl-text-field-with-label input[type=number] {
   background-color: #fff;
@@ -2181,7 +2181,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-name-field label {
     background-color: transparent;
     color: #080807;
-    display: block;
+    display: inline-block;
     font-weight: 400; }
   .nypl-name-field input[type=text], .nypl-name-field input[type=email], .nypl-name-field input[type=date], .nypl-name-field input[type=number] {
     background-color: #fff;
@@ -2256,7 +2256,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-address-fieldset label {
     background-color: transparent;
     color: #080807;
-    display: block;
+    display: inline-block;
     font-weight: 400; }
   .nypl-address-fieldset input[type=text], .nypl-address-fieldset input[type=email], .nypl-address-fieldset input[type=date], .nypl-address-fieldset input[type=number] {
     background-color: #fff;
@@ -2327,7 +2327,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-date-field label {
     background-color: transparent;
     color: #080807;
-    display: block;
+    display: inline-block;
     font-weight: 400; }
   .nypl-date-field input[type=text], .nypl-date-field input[type=email], .nypl-date-field input[type=date], .nypl-date-field input[type=number] {
     background-color: #fff;
@@ -2371,7 +2371,7 @@ dl dd.multi-item-list .nypl-basic-table,
 .nypl-text-area-with-label label {
   background-color: transparent;
   color: #080807;
-  display: block;
+  display: inline-block;
   font-weight: 400; }
 .nypl-text-area-with-label input[type=text], .nypl-text-area-with-label input[type=email], .nypl-text-area-with-label input[type=date], .nypl-text-area-with-label input[type=number] {
   background-color: #fff;
@@ -2926,7 +2926,7 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-searchable-field .nypl-facet-search label {
       background-color: transparent;
       color: #080807;
-      display: block;
+      display: inline-block;
       font-weight: 400; }
     .nypl-searchable-field .nypl-facet-search input[type=text], .nypl-searchable-field .nypl-facet-search input[type=email], .nypl-searchable-field .nypl-facet-search input[type=date], .nypl-searchable-field .nypl-facet-search input[type=number] {
       background-color: #fff;
