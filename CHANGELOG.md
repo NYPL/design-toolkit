@@ -1,5 +1,11 @@
 ### Change Log
 
+### v0.1.33
+- fixing #260
+  - better checkbox alignment
+  - removed `em` from `texarea`'s help text
+  - typo
+
 ### v0.1.32
 - Layout fixes: #256
   - alignment to the current header logo see issue #256
