@@ -25,7 +25,7 @@ description: Color Usage
     <div class="nypl-light-blue-swatch reverse">$nypl-light-blue: lighten($nypl-blue, 30%);<br>(calculated hex value: #73c7e8;)</div>
 </li>
 <li class="color-box">
-  <div class="nypl-blue-tint-swatch reverse">$nypl-blue-tint: tint($nypl-blue, 8 0%);<br>(calculated hex value: #d1e5ed)</div>
+  <div class="nypl-blue-tint-swatch reverse">$nypl-blue-tint: tint($nypl-blue, 80%);<br>(calculated hex value: #d1e5ed)</div>
 </li>
 </ul>
 <ul class="swatches">
