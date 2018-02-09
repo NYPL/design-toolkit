@@ -2413,6 +2413,7 @@ dl dd.multi-item-list .nypl-basic-table,
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 12rem;
+  padding: 1rem;
   width: 100%; }
 
 .nypl-field-error {
