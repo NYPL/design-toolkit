@@ -543,9 +543,9 @@ $form-padding: 0.5rem;
     display: inline-block;
     line-height: 1.2;
     position: relative;
-    padding-left: 1.75rem;
+    padding-left: 0.25rem;
     padding-top: 0.27rem;
-    width: 60%;
+    //width: 60%;
   }
 
   label::after,
@@ -556,10 +556,10 @@ $form-padding: 0.5rem;
   }
 
   label::before {
-    border: ($general-border-width * 0.75) solid;
+    border: $general-border-width solid;
     height: 1rem;
-    left: 0;
-    width: 1rem;
+    left: -1.2em;
+    width: 1em;
     top: 0.25rem;
   }
 
@@ -571,8 +571,8 @@ $form-padding: 0.5rem;
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    left: 0.32rem;
-    top: 0.5rem;
+    left: -0.90em;
+    top: 0.5em;
   }
 // Hide the checkmark by default
   input[type="checkbox"] + label::after {

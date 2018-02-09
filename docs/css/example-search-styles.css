@@ -2525,19 +2525,18 @@ dl dd.multi-item-list .nypl-basic-table,
   display: inline-block;
   line-height: 1.2;
   position: relative;
-  padding-left: 1.75rem;
-  padding-top: 0.27rem;
-  width: 60%; }
+  padding-left: 0.25rem;
+  padding-top: 0.27rem; }
 .nypl-generic-checkbox label::after,
 .nypl-generic-checkbox label::before {
   content: "";
   display: inline-block;
   position: absolute; }
 .nypl-generic-checkbox label::before {
-  border: 0.09375rem solid;
+  border: 0.125rem solid;
   height: 1rem;
-  left: 0;
-  width: 1rem;
+  left: -1.2em;
+  width: 1em;
   top: 0.25rem; }
 .nypl-generic-checkbox label::after {
   height: 0.375rem;
@@ -2547,8 +2546,8 @@ dl dd.multi-item-list .nypl-basic-table,
   -moz-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  left: 0.32rem;
-  top: 0.5rem; }
+  left: -0.90em;
+  top: 0.5em; }
 .nypl-generic-checkbox input[type="checkbox"] + label::after {
   content: none; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
