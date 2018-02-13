@@ -57,31 +57,7 @@
                 <input type="submit" id="nypl-omni-button" value="Search">
               </div>
             </form>
-            <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true">
-              <h3>
-                <span class="nypl-results-count">Displaying 1-50 of 843 results for keyword "New York Waterways"</span>
-              </h3>
-            </div>
-            <div class="nypl-results-sorting-controls">
-              <div class="nypl-results-sorter">
-
-                <div class="nypl-select-field-results">
-                  <form action="#" method="POST">
-                    <span class="nypl-omni-fields"><label for="sort-by-label">Sort by</label>
-                    <strong>
-                      <select id="sort-by-label" name="sort_scope">
-                      <option selected="selected" value="relevance">relevance</option>
-                      <option value="title_asc">title (a - z)</option><option value="title_desc">title (z - a)</option>
-                      <option value="date_asc">date (old to new)</option>
-                      <option value="date_desc">date (new to old)</option>
-                    </select>
-                    </strong>
-                  </form>
-                  <button id="sort-submission" type="submit" class="">Submit Query</button>
-                </div>
-              </div>
-
-              <div class="nypl-filter-button">
+              <!-- <div class="nypl-filter-button">
                 <a href="#popup-no-js" id="filterButton-link" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
                   Filter Results
                   <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
@@ -112,13 +88,43 @@
                     </g>
                   </svg>
                 </button>
-              </div>
-
-            </div>
+              </div> -->
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- /nypl-page-header -->
+    <div class="nypl-sorter-row">
+      <div class="nypl-full-width-wrapper">
+        <div class="nypl-row">
+          <div class="nypl-column-full">
+          <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true">
+            <h2>
+              <span class="nypl-results-count">Displaying 1-50 of 843 results for keyword "New York Waterways"</span>
+            </h2>
+          </div>
+          <div class="nypl-results-sorting-controls">
+            <div class="nypl-results-sorter">
+              <div class="nypl-select-field-results">
+                <label for="sort-by-label">Sort by</label>
+                <form action="#" method="POST">
+                  <span class="nypl-omni-fields">
+                    <strong>
+                      <select id="sort-by-label" name="sort_scope">
+                      <option selected="selected" value="relevance">relevance</option>
+                      <option value="title_asc">title (a - z)</option><option value="title_desc">title (z - a)</option>
+                      <option value="date_asc">date (old to new)</option>
+                      <option value="date_desc">date (new to old)</option>
+                    </select>
+                  </strong>
+                </form>
+              <button id="sort-submission" type="submit" class="">Submit Query</button>
+            </div> <!-- nypl-select-field-results -->
+          </div><!-- /nypl-results-sorter -->
+        </div><!-- /nypl-results-sorting-controls -->
+      </div>
+      </div><!-- /nypl-row -->
+    </div><!-- /nypl-full-width-wrapper -->
+  </div><!-- /nypl-sorter-row -->
     <div class="nypl-full-width-wrapper">
       <!-- results column -->
       <div class="nypl-row">
