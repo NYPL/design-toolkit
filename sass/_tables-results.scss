@@ -41,16 +41,33 @@ $results-item-border-width: 0.0625rem;
   }
 }
 
+///
+/// Search Results have a summary this is it.
+///
+
 @mixin results-summary {
   @include clearfix;
+  @include media($xtrasmall-breakpoint) {
+    max-width: 100%;
+    float: none;
+  }
+
+  @include media($mobile-breakpoint) {
+    //max-width: 49%;
+    float: left;
+  }
+
   display: inline-block;
   float: left;
   max-width: 65%;
 
   h2 {
+    @include media($mobile-breakpoint) {
+      margin-top: 1.25em;
+    }
+
     font-size: 1rem;
     font-weight: normal;
-    //line-height: 1.5;
     margin-bottom: 0.5rem;
     margin-top: 1.65rem;
     max-width: none;
@@ -123,9 +140,10 @@ $results-item-border-width: 0.0625rem;
 
 
 
-//
-// Basic Left / Right Arrowed Pagination
-//
+///
+/// Basic Left / Right Arrowed Pagination
+///
+
 @mixin results-pagination {
   font-size: 1.1rem;
   margin-top: 1.5rem;
@@ -210,7 +228,14 @@ $results-item-border-width: 0.0625rem;
   $background-color: $nypl-white,
   $border: ($general-border-width * 2) solid $page-color,
   $margin: 1rem) {
+
   @include clearfix;
+
+  @include media($xtrasmall-breakpoint) {
+    float: none;
+    width: 100%;
+  }
+
   border: 0;
   display: inline-block;
   float: right;
@@ -245,8 +270,12 @@ $sorter-width: 11em;
     }
   } // /submssion ~ visually-hidden
 
+  @include media($xtrasmall-breakpoint) {
+    float: none;
+  }
+
   @include media($mobile-breakpoint) {
-    float: right;
+
   }
 
   @include submission(visible) {
@@ -275,7 +304,6 @@ $sorter-width: 11em;
 
   display: inline-block;
   float: left;
-  //margin-right: ($general-margin * 1.5);
   position: relative;
 
   ul {

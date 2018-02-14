@@ -2443,7 +2443,7 @@ dl dd.multi-item-list .nypl-basic-table,
   border: 0;
   border-color: none;
   border-radius: 0.2rem;
-  height: 2rem;
+  height: 2em;
   padding-right: 7%;
   padding-left: 0.5rem;
   width: 100%; }
@@ -2484,7 +2484,7 @@ dl dd.multi-item-list .nypl-basic-table,
     border: 0;
     border-color: none;
     border-radius: 0.2rem;
-    height: 2rem;
+    height: 2em;
     padding-right: 7%;
     padding-left: 0.5rem;
     width: 100%; }
@@ -2745,7 +2745,7 @@ dl dd.multi-item-list .nypl-basic-table,
       border: 0;
       border-color: none;
       border-radius: 0.2rem;
-      height: 2rem;
+      height: 2em;
       padding-right: 7%;
       padding-left: 0.5rem;
       width: 100%;
@@ -3729,6 +3729,13 @@ dl dd.multi-item-list .nypl-basic-table,
     display: table; }
   .nypl-results-summary::after {
     clear: both; }
+  @media (max-width: 483px) {
+    .nypl-results-summary {
+      max-width: 100%;
+      float: none; } }
+  @media (max-width: 965px) {
+    .nypl-results-summary {
+      float: left; } }
   .nypl-results-summary h2 {
     font-size: 1rem;
     font-weight: normal;
@@ -3736,6 +3743,9 @@ dl dd.multi-item-list .nypl-basic-table,
     margin-top: 1.65rem;
     max-width: none;
     min-height: 1rem; }
+    @media (max-width: 965px) {
+      .nypl-results-summary h2 {
+        margin-top: 1.25em; } }
   .nypl-results-summary .nypl-results-count {
     float: left;
     font-size: 1rem;
@@ -3905,6 +3915,10 @@ dl dd.multi-item-list .nypl-basic-table,
     display: table; }
   .nypl-results-sorting-controls::after {
     clear: both; }
+  @media (max-width: 483px) {
+    .nypl-results-sorting-controls {
+      float: none;
+      width: 100%; } }
 
 .nypl-results-sorter {
   display: inline-block;
@@ -3919,9 +3933,9 @@ dl dd.multi-item-list .nypl-basic-table,
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0; }
-  @media (max-width: 965px) {
+  @media (max-width: 483px) {
     .nypl-results-sorter {
-      float: right; } }
+      float: none; } }
   .nypl-results-sorter button {
     background-color: #fff;
     border: 0.0625rem solid #9d9ea1;
@@ -4073,7 +4087,7 @@ dl dd.multi-item-list .nypl-basic-table,
     border: 0;
     border-color: none;
     border-radius: 0.2rem;
-    height: 2rem;
+    height: 3em;
     padding-right: 7%;
     padding-left: 0.5rem;
     width: inherit;

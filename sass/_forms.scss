@@ -333,7 +333,7 @@ $form-padding: 0.5rem;
 @mixin select (
   $background-color: $nypl-search-color-light,
   $border-color: none,
-  $height: 2rem,
+  $height: 2em,
   $padding-left: $form-padding,
   $padding-right: 7%,
   $width: 100%
@@ -356,6 +356,7 @@ $form-padding: 0.5rem;
 ///
 /// Select Field
 ///
+
 @mixin select-field {
 
   @include fieldset;
@@ -403,6 +404,7 @@ $form-padding: 0.5rem;
   select {
     @include select(
       $background-color: $nypl-white,
+      $height: 3em,
       $width: inherit);
     border: ($general-border-width * 0.5) solid $nypl-dark-gray;
     display: inline-block;
