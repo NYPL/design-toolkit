@@ -3722,7 +3722,6 @@ dl dd.multi-item-list .nypl-basic-table,
 
 .nypl-results-summary {
   display: inline-block;
-  float: left;
   max-width: 65%; }
   .nypl-results-summary::before, .nypl-results-summary::after {
     content: "";
@@ -3733,9 +3732,6 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-results-summary {
       max-width: 100%;
       float: none; } }
-  @media (max-width: 965px) {
-    .nypl-results-summary {
-      float: left; } }
   .nypl-results-summary h2 {
     font-size: 1rem;
     font-weight: normal;
@@ -3743,11 +3739,7 @@ dl dd.multi-item-list .nypl-basic-table,
     margin-top: 1.65rem;
     max-width: none;
     min-height: 1rem; }
-    @media (max-width: 965px) {
-      .nypl-results-summary h2 {
-        margin-top: 1.25em; } }
   .nypl-results-summary .nypl-results-count {
-    float: left;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;

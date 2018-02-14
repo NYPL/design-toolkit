@@ -54,17 +54,17 @@ $results-item-border-width: 0.0625rem;
 
   @include media($mobile-breakpoint) {
     //max-width: 49%;
-    float: left;
+    //float: left;
   }
 
   display: inline-block;
-  float: left;
+  //float: left;
   max-width: 65%;
 
   h2 {
-    @include media($mobile-breakpoint) {
-      margin-top: 1.25em;
-    }
+    // @include media($mobile-breakpoint) {
+    //   margin-top: 1.25em;
+    // }
 
     font-size: 1rem;
     font-weight: normal;
@@ -75,7 +75,7 @@ $results-item-border-width: 0.0625rem;
   }
 
   .nypl-results-count {
-    float: left;
+    //float: left;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;
