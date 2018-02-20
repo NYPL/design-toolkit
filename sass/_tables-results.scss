@@ -228,7 +228,6 @@ $results-item-border-width: 0.0625rem;
 
   @include clearfix;
   @include media($mobile-breakpoint) {
-    //flex-grow: 1;
     min-width: 13.75em;
   }
   @include media($xtrasmall-breakpoint) {

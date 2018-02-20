@@ -3076,12 +3076,8 @@ dl dd.multi-item-list .nypl-basic-table,
       align-items: center;
       display: flex;
       margin-bottom: 0; }
-      @media (max-width: 965px) {
-        .nypl-sorter-row .nypl-full-width-wrapper .nypl-column-full {
-          background: orange; } }
       @media (max-width: 483px) {
         .nypl-sorter-row .nypl-full-width-wrapper .nypl-column-full {
-          background: pink;
           display: block; } }
 
 .nypl-screenreader-only {

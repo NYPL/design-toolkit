@@ -385,7 +385,6 @@ $form-padding: 0.5rem;
     display: inline-block;
     font-size: 0.85rem;
     padding: 0.4rem 0;
-    //width: 13rem;
   }
 
   @include fieldset(
@@ -439,12 +438,11 @@ $form-padding: 0.5rem;
 
     .nypl-column-full {
       @include media($mobile-breakpoint) {
-        background: orange;
-        //display: flex;
+        //background: orange;
       }
 
       @include media($xtrasmall-breakpoint) {
-        background: pink;
+        //background: pink;
         display: block;
       }
       align-items: center;
