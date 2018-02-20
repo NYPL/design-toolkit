@@ -8,7 +8,7 @@
   <link href="css/example-search-styles.css" media="screen" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/header.js"></script>
+  <script src="js/header.js"></script>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           }
         }
       </style>
-      <script type="text/javascript" src="https://header.nypl.org/dgx-header.min.js?urls=absolute" async=""></script>
+      <script src="https://header.nypl.org/dgx-header.min.js?urls=absolute" async=""></script>
     </div>
   </header>
   <main id="mainContent" class="main-page">
@@ -57,38 +57,6 @@
                 <input type="submit" id="nypl-omni-button" value="Search">
               </div>
             </form>
-              <!-- <div class="nypl-filter-button">
-                <a href="#popup-no-js" id="filterButton-link" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
-                  Filter Results
-                  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
-                    <title>filter.icon.3</title>
-                    <g>
-                      <circle cx="6.65947" cy="2.31986" r="1.31924"/>
-                      <circle cx="13.18733" cy="1.31986" r="1.31895"/>
-                      <circle cx="9.56477" cy="5.46901" r="1.31927"/>
-                      <g>
-                        <path d="M7.74355,22.50683a.95047.95047,0,0,1-.95022-.95022V11.28645L.25259,4.23413A.95041.95041,0,1,1,1.64824,2.94366l7.04554,7.598v11.015A.95047.95047,0,0,1,7.74355,22.50683Z"/>
-                        <path d="M11.60384,19.73881a.95047.95047,0,0,1-.95022-.95022V10.5478l7.126-7.81485a.95047.95047,0,0,1,1.41049,1.27439l-6.636,7.27293v7.50832A.95047.95047,0,0,1,11.60384,19.73881Z"/>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                <button id="filterButton" class="nypl-short-button" type="button" name="button" aria-controls="filterContent" aria-haspopup="true">
-                  Filter Results
-                  <svg aria-hidden="true" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 19 22">
-                    <title>filter.icon.3</title>
-                    <g>
-                      <circle cx="6.65947" cy="2.31986" r="1.31924"/>
-                      <circle cx="13.18733" cy="1.31986" r="1.31895"/>
-                      <circle cx="9.56477" cy="5.46901" r="1.31927"/>
-                      <g>
-                        <path d="M7.74355,22.50683a.95047.95047,0,0,1-.95022-.95022V11.28645L.25259,4.23413A.95041.95041,0,1,1,1.64824,2.94366l7.04554,7.598v11.015A.95047.95047,0,0,1,7.74355,22.50683Z"/>
-                        <path d="M11.60384,19.73881a.95047.95047,0,0,1-.95022-.95022V10.5478l7.126-7.81485a.95047.95047,0,0,1,1.41049,1.27439l-6.636,7.27293v7.50832A.95047.95047,0,0,1,11.60384,19.73881Z"/>
-                      </g>
-                    </g>
-                  </svg>
-                </button>
-              </div> -->
           </div>
         </div>
       </div>
@@ -108,12 +76,13 @@
                   <span class="nypl-omni-fields">
                     <strong>
                       <select id="sort-by-label" name="sort_scope">
-                      <option selected="selected" value="relevance">relevance</option>
-                      <option value="title_asc">title (a - z)</option><option value="title_desc">title (z - a)</option>
-                      <option value="date_asc">date (old to new)</option>
-                      <option value="date_desc">date (new to old)</option>
-                    </select>
-                  </strong>
+                        <option selected="selected" value="relevance">relevance</option>
+                        <option value="title_asc">title (a - z)</option><option value="title_desc">title (z - a)</option>
+                        <option value="date_asc">date (old to new)</option>
+                        <option value="date_desc">date (new to old)</option>
+                      </select>
+                    </strong>
+                  </span>
                 </form>
               <button id="sort-submission" type="submit" class="">Submit Query</button>
             </div> <!-- nypl-select-field-results -->
@@ -130,38 +99,43 @@
           <!-- results list -->
           <ul id="results-list" class="nypl-results-list">
             <li class="nypl-results-item">
-              <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a></h3>
+              <h3>
+                <a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10123720">New York Waterways. &ndash; New York State Waterways Association.</a>
+              </h3>
               <div class="nypl-results-item-description">
                 <p>
                   <span class="nypl-results-media">Text</span>
-                    <span class="nypl-results-info">2000 items, all available</span>
-                    </p>
-                </div>
-                </li>
-                <li class="nypl-results-item">
-                  <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a></h3>
-                  <div class="nypl-results-item-description">
-                    <p>
-                      <span class="nypl-results-media">Audio</span>
-                      <span class="nypl-results-place">New York.</span>
-                      <span class="nypl-results-publisher">Ten Penny Players, Inc.,</span>
-                      <span class="nypl-results-date">1979</span>
-                      <span class="nypl-results-info">567 items, 1 available</span>
-                    </p>
-                  </div>
-                </li>
-
-                <li class="nypl-results-item">
-                  <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a></h3>
-                  <div class="nypl-results-item-description">
-                    <p>
-                      <span class="nypl-results-media">Text</span>
-                      <span class="nypl-results-place">New York.</span>
-                      <span class="nypl-results-date">1914</span>
-                      <span class="nypl-results-info">2 items, none available</span>
-                    </p>
-                  </div>
-                </li>
+                  <span class="nypl-results-info">2000 items, all available</span>
+                </p>
+              </div>
+            </li>
+            <li class="nypl-results-item">
+              <h3>
+                <a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b10670898">New York State waterways project. &ndash; Ten Penny Players.</a>
+              </h3>
+              <div class="nypl-results-item-description">
+                <p>
+                  <span class="nypl-results-media">Audio</span>
+                  <span class="nypl-results-place">New York.</span>
+                  <span class="nypl-results-publisher">Ten Penny Players, Inc.,</span>
+                  <span class="nypl-results-date">1979</span>
+                  <span class="nypl-results-info">567 items, 1 available</span>
+                </p>
+              </div>
+            </li>
+            <li class="nypl-results-item">
+              <h3>
+                <a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13885774">The commerce and other business of the waterways of the state of New York ... A tabulation of facts about waterborne trade ... &ndash; Smith, Robert A. C., 1857-</a>
+              </h3>
+              <div class="nypl-results-item-description">
+                <p>
+                  <span class="nypl-results-media">Text</span>
+                  <span class="nypl-results-place">New York.</span>
+                  <span class="nypl-results-date">1914</span>
+                  <span class="nypl-results-info">2 items, none available</span>
+                </p>
+              </div>
+            </li>
 
                 <li class="nypl-results-item has-request">
                   <h3><a href="http://discovery-env-test.us-east-1.elasticbeanstalk.com/item/b13516297">By waterways to Gotham; the account of a two thousand mile voyage by skiff and outboard motor from Milwaukee to New York, through the Great lakes, Trent canal, St. Lawrence, Richelieu, Champlain and Hudson, &ndash; Freeman, Lewis R. (Lewis Ransome), b. 1878.</a></h3>
@@ -344,7 +318,7 @@
                 <nav class="nypl-results-pagination" aria-label="More results">
                   <a href="/page/1" rel="prev" aria-controls="page-count results-list">
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 8.97 15.125">
-<title id="">Wedge Left Arrow</title>
+<title id="Wedge-Left-Arrow">Wedge Left Arrow</title>
 <polygon points="7.563 15.125 0 7.562 7.563 0 8.97 1.407 2.815 7.562 8.97 13.717 7.563 15.125" />
 </svg>
 Previous</a>
@@ -360,13 +334,8 @@ Next</a>
               </div>
             </div>
             <!-- end results column -->
-
           </div>
-
-        </div>
-
   </main>
-
   <footer role="contentinfo" class="nypl-footer">
     <div class="nypl-full-width-wrapper footer-content">
       <ul class="footerLinks">
@@ -633,12 +602,12 @@ Next</a>
               </button>
               <button class="nypl-filter-button" type="button" name="Clear-Filters">
                 <svg class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 41" aria-hidden="true" aria-labelledby="reset">
-                <title title="reset">reset.icon</title>
+                <title id="reset">reset.icon</title>
                 <path d="M14.30581,12.04054,25.36758,4.37413A2.4,2.4,0,0,0,22.63242.4296L2.25352,14.553,23.45977,29.54835a2.39954,2.39954,0,1,0,2.77031-3.91875L13.80146,16.84054H43.2v19.2H2.4a2.4,2.4,0,1,0,0,4.8H48v-28.8Z"/>
                 </svg>
                 <span>Clear Filters</span>
               </button>
-              <a href="#" id="cancelFiltering-link" class="nypl-filter-button" type="button" name="button" aria-controls="modal-content">
+              <a href="#" id="cancelFiltering-link" class="nypl-filter-button" role="button" aria-controls="modal-content">
                 <svg viewBox="0 0 32 32" class="nypl-icon" preserveAspectRatio="xMidYMid meet"  aria-hidden="true" aria-labelledby="close">
                   <title>x.close.icon</title>
                   <path d="M17.91272,15.97339l5.65689-5.65689A1.32622,1.32622,0,0,0,21.694,8.44093L16.04938,14.0856l-5.65082-5.725A1.32671,1.32671,0,1,0,8.51,10.22454l5.66329,5.73712L8.43038,21.7046a1.32622,1.32622,0,1,0,1.87557,1.87557l5.73088-5.73088,5.65074,5.72441a1.32626,1.32626,0,1,0,1.88852-1.86261Z"/>
@@ -663,7 +632,7 @@ Next</a>
           <path d="M82.07922,14.06287a48.0713,48.0713,0,1,0,0,68.01563A48.15148,48.15148,0,0,0,82.07922,14.06287ZM65.06232,60.84845A2.97437,2.97437,0,1,1,60.827,65.0257L48.154,52.18756,35.30133,65.04022a2.97432,2.97432,0,1,1-4.20636-4.2063L43.97473,47.95416,31.27362,35.08746A2.97542,2.97542,0,0,1,35.509,30.90729L48.18213,43.7467,60.84149,31.0874a2.97432,2.97432,0,0,1,4.2063,4.20636L52.36108,47.98047Z"/>
         </svg>
       </a>
-      <button type="button" class="nypl-x-close-button" id="closeModal" type="button" name="Close-Filters" aria-expanded="false" aria-controls="modal-content">
+      <button class="nypl-x-close-button" id="closeModal" name="Close-Filters" aria-expanded="false" aria-controls="modal-content">
         <span>Close</span>
         <svg aria-hidden="true" aria-controls="nypl-dialog-or-modal" class="nypl-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" aria-labelledby="close-modal">
           <title id="close-modal">x-close-rev</title>
@@ -676,7 +645,7 @@ Next</a>
 <!--///// MODAL -->
 
 
-<script type="text/javascript">
+<script>
 
 (function() {
 // This is just a helper script to add nypl-screenreader-only class to the DOM.

@@ -398,7 +398,7 @@ $form-padding: 0.5rem;
     @include label(
     $display: inline-block);
     font-size: 1rem;
-    margin: 0 0.25rem 0 0.5rem;
+    margin: 0 0.25rem 0 0;
   }
 
   select {
@@ -432,15 +432,25 @@ $form-padding: 0.5rem;
 
   //
   // Special case where we need to remove the padding on this module
-  // TODO: this should never really happen
+  //
   .nypl-full-width-wrapper {
     padding-bottom: 0;
     padding-top: 0;
 
-    // Same thing here, this feels hacky and could be better:
     .nypl-column-full {
+      @include media($mobile-breakpoint) {
+        background: orange;
+        //display: flex;
+      }
+
+      @include media($xtrasmall-breakpoint) {
+        background: pink;
+        display: block;
+      }
+      align-items: center;
+      display: flex;
       margin-bottom: 0;
-    }
+    } // /.nypl-column-full
   }
 }
 
