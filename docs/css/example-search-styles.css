@@ -3735,8 +3735,8 @@ dl dd.multi-item-list .nypl-basic-table,
     clear: both; }
   @media (max-width: 483px) {
     .nypl-results-summary {
-      max-width: 100%;
-      float: none; } }
+      float: none;
+      max-width: 100%; } }
   .nypl-results-summary h2 {
     font-size: 1rem;
     font-weight: normal;

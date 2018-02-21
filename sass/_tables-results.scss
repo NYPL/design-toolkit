@@ -47,13 +47,9 @@ $results-item-border-width: 0.0625rem;
 
 @mixin results-summary {
   @include clearfix;
-  @include media($mobile-breakpoint) {
-    //max-width: 50%;
-    // flex-grow: 2;
-  }
   @include media($xtrasmall-breakpoint) {
-    max-width: 100%;
     float: none;
+    max-width: 100%;
   }
   display: inline-block;
   flex-grow: 2;
