@@ -37,6 +37,14 @@
   }
 }
 
+
+
+///
+/// Customized page header
+/// TODO: Make this a proper design pattern and create a set of mixins that make it easier to implement
+/// TODO: Get this out of the example SCSS
+///
+
 .nypl-page-header {
   @include page-header(
   $background-color: lighten($nypl-light-gray, 15%),
@@ -50,7 +58,10 @@
   }
 }
 
-// item info / the full item record
+///
+/// item info / the full item record
+///
+
 .nypl-item-details {
 
   h1 {

@@ -1,7 +1,10 @@
 $is-ie: false !default;
 // $mobile-ie6: true !default;
 
-@mixin media($max-width, $min-width: false, $ignore-for-ie: false) {
+@mixin media(
+  $max-width,
+  $min-width: false,
+  $ignore-for-ie: false) {
   @media (max-width: $max-width) {
     @content;
   }

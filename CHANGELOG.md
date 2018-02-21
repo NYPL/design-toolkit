@@ -1,5 +1,9 @@
 ### Change Log
 
+### v0.1.34
+- fixes #265 & #266
+  - added flex box for better layout of the returned results module 
+
 ### v0.1.33
 - fixing #260
   - better checkbox alignment
