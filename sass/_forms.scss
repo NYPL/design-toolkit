@@ -328,7 +328,8 @@ $form-padding: 0.5rem;
 
 ///
 /// Select (Dropdowns)
-/// TODO: remove data svg and replace w/ inline 
+/// TODO: remove data svg and replace w/ inline
+///
 
 @mixin select (
   $background-color: $nypl-search-color-light,
@@ -387,11 +388,7 @@ $form-padding: 0.5rem;
     padding: 0.4rem 0;
   }
 
-  @include fieldset(
-    //$border-width: ($general-border-width * 0.5),
-    //$border-color: $nypl-dark-gray,
-    //$border-style: solid
-  );
+  @include fieldset;
 
   label { // now has arguments to be applied
     @include label(
@@ -459,7 +456,6 @@ $form-padding: 0.5rem;
   padding-left: 1rem;
 }
 
-// /select-field-results
 
 
 ///
@@ -529,8 +525,8 @@ $form-padding: 0.5rem;
         left: -2.75rem;
       }
     } // /label
-  }
-}
+  } // /simple-radiobutton
+} // /item-holds-radiobutton-field
 
 
 
@@ -543,7 +539,6 @@ $form-padding: 0.5rem;
 
   label {
     border: ($general-border-width / 3) solid $nypl-light-gray;
-    //padding: 1.1875rem 1rem 0 4rem;
   }
 
   input[type=radio] {
@@ -694,6 +689,12 @@ $form-padding: 0.5rem;
   }
 } // /facet-toggle
 
+
+
+///
+/// Collapsible fields
+///
+
 @mixin collapsible-field($is-searchable: false) {
   @include fieldset;
   border: $nypl-light-gray solid ($general-border-width / 2);
@@ -821,9 +822,10 @@ $form-padding: 0.5rem;
 
 
 
-//
-// Left hand Search field.
-//
+///
+/// Left hand Search field.
+///
+
 @mixin search-form() {
   // used for left-column searches
   margin: 0 0 1rem;
@@ -907,7 +909,7 @@ $form-padding: 0.5rem;
   $font-family: $sans-serif-stack) {
   font-family: $font-family;
   font-weight: $font-weight;
-} // /request-form-title
+}
 
 
 
