@@ -328,12 +328,13 @@ $form-padding: 0.5rem;
 
 ///
 /// Select (Dropdowns)
+/// TODO: remove data svg and replace w/ inline
 ///
 
 @mixin select (
   $background-color: $nypl-search-color-light,
   $border-color: none,
-  $height: 2rem,
+  $height: 2em,
   $padding-left: $form-padding,
   $padding-right: 7%,
   $width: 100%
@@ -356,6 +357,7 @@ $form-padding: 0.5rem;
 ///
 /// Select Field
 ///
+
 @mixin select-field {
 
   @include fieldset;
@@ -381,30 +383,28 @@ $form-padding: 0.5rem;
 @mixin select-field-results {
 
   form {
+    display: inline-block;
     font-size: 0.85rem;
-    padding: 0 ($general-padding * 0.25);
-    width: 13rem;
+    padding: 0.4rem 0;
   }
 
-  @include fieldset(
-    $border-width: ($general-border-width * 0.5),
-    $border-color: $nypl-dark-gray,
-    $border-style: solid
-  );
+  @include fieldset;
 
   label { // now has arguments to be applied
     @include label(
-    $display: inline-block
-    );
-    margin: 0 0.25rem 0 0.5rem;
+    $display: inline-block);
+    font-size: 1rem;
+    margin: 0 0.25rem 0 0;
   }
 
   select {
     @include select(
       $background-color: $nypl-white,
+      $height: 3em,
       $width: inherit);
+    border: ($general-border-width * 0.5) solid $nypl-dark-gray;
     display: inline-block;
-    padding-left: 0;
+    padding: 0 ($general-padding * 1.25) 0 ($general-padding * 0.75);
   }
 
   margin-top: 0;
@@ -416,6 +416,36 @@ $form-padding: 0.5rem;
   padding-left: 1rem;
 }
 
+
+
+///
+/// Sorting row pattern
+///
+
+@mixin sorter-row {
+  border-bottom: $general-border-width / 1.5 solid $nypl-dark-gray;
+  border-top: $general-border-width / 1.5 solid $nypl-dark-gray;
+
+  //
+  // Special case where we need to remove the padding on this module
+  //
+  .nypl-full-width-wrapper {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    .nypl-column-full {
+      @include media($xtrasmall-breakpoint) {
+        display: block;
+      }
+      align-items: center;
+      display: flex;
+      margin-bottom: 0;
+    } // /.nypl-column-full
+  }
+}
+
+
+
 ///
 /// replaces the error message / status w/ a generic mixin that can be styled for errors, success and inline alert state.
 ///
@@ -426,7 +456,6 @@ $form-padding: 0.5rem;
   padding-left: 1rem;
 }
 
-// /select-field-results
 
 
 ///
@@ -496,8 +525,8 @@ $form-padding: 0.5rem;
         left: -2.75rem;
       }
     } // /label
-  }
-}
+  } // /simple-radiobutton
+} // /item-holds-radiobutton-field
 
 
 
@@ -510,7 +539,6 @@ $form-padding: 0.5rem;
 
   label {
     border: ($general-border-width / 3) solid $nypl-light-gray;
-    //padding: 1.1875rem 1rem 0 4rem;
   }
 
   input[type=radio] {
@@ -661,6 +689,12 @@ $form-padding: 0.5rem;
   }
 } // /facet-toggle
 
+
+
+///
+/// Collapsible fields
+///
+
 @mixin collapsible-field($is-searchable: false) {
   @include fieldset;
   border: $nypl-light-gray solid ($general-border-width / 2);
@@ -788,9 +822,10 @@ $form-padding: 0.5rem;
 
 
 
-//
-// Left hand Search field.
-//
+///
+/// Left hand Search field.
+///
+
 @mixin search-form() {
   // used for left-column searches
   margin: 0 0 1rem;
@@ -874,7 +909,7 @@ $form-padding: 0.5rem;
   $font-family: $sans-serif-stack) {
   font-family: $font-family;
   font-weight: $font-weight;
-} // /request-form-title
+}
 
 
 

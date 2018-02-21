@@ -80,45 +80,18 @@ description: Displaying search results and tabular data.
 
     <h3 id="summary">Search Results Summary</h3>
 
-    <p>An element of class <code>nypl-results-summary</code> that presents a comma-separated list of search terms or filters along with the number of results. The result count has a special <code>span</code> tag (should be number-formatted e.g.: 1,232) of class <code>nypl-results-count</code>. Each applied facet or term is wrapped by a <code>strong</code> tag and has a <code>button</code> element to remove the facet and refresh the search results. The button contains the remove facet icon (the times “×” icon) as an SVG and the screen-reader-friendly text inside a <code>span</code> tag. A final <code>div</code> of class <code>nypl-clear-results</code> with an <code>nypl-link-button</code> will allow users to clear the current search and start over.
+    <p>An element of class <code>nypl-results-summary</code> that presents a list of search terms. If the results return a number greater than 50, pagination controls at the end of the screen should be implemented. See: <a href="#pagination">Search Results Pagination</a> at the bottom of this page for the accompanying pattern.
     </p>
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> Result count and facets must be wrapped by an <code>h2</code> tag.</p>
 
     <p class="nypl-a11y-note"><strong>Accessibility note:</strong> The main element must include the following attributes when being updated via JavaScript (no page refresh): <code>aria-live="assertive"</code> <code>aria-atomic="true"</code> <code>role="presentation"</code>.</p>
-
-    <p>
-    <strong>NOTE:</strong> <strong>Avoid adding a space</strong> between the facet and the remove button so that it <strong>won't wrap to the next line</strong>.</p>
-
     <div class="nypl-toolkit-example">
       <span class="nypl-example-text">Example</span>
-<div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
-  <h2>
-    <span class="nypl-results-count">1,807</span> resources found for
-    <span class="nypl-facet">
-      Audience
-      <strong>Young Adult
-        <button>
-          {% include_relative icons/close.cancel.rev.icon.svg %}
-          <span>Remove Young Adult filter</span>
-        </button>
-      </strong>
-    </span>,
-    <span class="nypl-facet">
-      Genre
-      <strong>Fiction
-        <button>
-          {% include_relative icons/close.cancel.rev.icon.svg %}
-          <span>Remove Fiction filter</span>
-        </button>
-      </strong>
-    </span>.
-  </h2>
-  <div class="nypl-clear-results">
-    <button class="nypl-link-button">Clear current search query, filters, and sorts</button>
-  </div>
-</div>
+    <div class="nypl-results-summary" aria-live="assertive" aria-atomic="true" role="presentation">
+    <h2>Displaying 1-50 of 766 results for keyword "mahabaratha"</h2>
     </div>
+  </div>
     <pre><code class="scss">
 .nypl-results-summary
 .nypl-results-count
@@ -128,40 +101,7 @@ description: Displaying search results and tabular data.
 
     <pre><code class="html">
 &lt;div class=&quot;nypl-results-summary&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot; role=&quot;presentation&quot;&gt;
-  &lt;h2&gt;
-    &lt;span class=&quot;nypl-results-count&quot;&gt;1,807&lt;/span&gt; resources found for
-    &lt;span class=&quot;nypl-facet&quot;&gt;
-      Audience
-      &lt;strong&gt;Young Adult
-        &lt;button&gt;
-        &lt;svg width=&quot;50&quot; height=&quot;50&quot; viewBox=&quot;0 0 50 50&quot; class=&quot;svgIcon nypl-icon&quot; aria-hidden=&quot;true&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
-            &lt;title&gt;
-                close.cancel.rev.icon
-            &lt;/title&gt;
-            &lt;path d=&quot;M40.978 7.02a24 24 0 1 0 0 33.958 24.04 24.04 0 0 0 0-33.957zm-6.372 24.757a2 2 0 1 1-2.828 2.829L24 26.828l-7.779 7.778a2 2 0 0 1-2.828-2.829L21.171 24l-7.778-7.778a2 2 0 0 1 2.828-2.828L24 21.17l7.778-7.778a2 2 0 1 1 2.828 2.828l-7.778 7.778z&quot;/&gt;
-        &lt;/svg&gt;
-          &lt;span&gt;Remove Young Adult filter&lt;/span&gt;
-        &lt;/button&gt;
-      &lt;/strong&gt;
-    &lt;/span&gt;,
-    &lt;span class=&quot;nypl-facet&quot;&gt;
-      Genre
-      &lt;strong&gt;Fiction
-        &lt;button&gt;
-        &lt;svg width=&quot;50&quot; height=&quot;50&quot; viewBox=&quot;0 0 50 50&quot; class=&quot;svgIcon nypl-icon&quot; aria-hidden=&quot;true&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
-            &lt;title&gt;
-                close.cancel.rev.icon
-            &lt;/title&gt;
-            &lt;path d=&quot;M40.978 7.02a24 24 0 1 0 0 33.958 24.04 24.04 0 0 0 0-33.957zm-6.372 24.757a2 2 0 1 1-2.828 2.829L24 26.828l-7.779 7.778a2 2 0 0 1-2.828-2.829L21.171 24l-7.778-7.778a2 2 0 0 1 2.828-2.828L24 21.17l7.778-7.778a2 2 0 1 1 2.828 2.828l-7.778 7.778z&quot;/&gt;
-        &lt;/svg&gt;
-          &lt;span&gt;Remove Fiction filter&lt;/span&gt;
-        &lt;/button&gt;
-      &lt;/strong&gt;
-    &lt;/span&gt;.
-  &lt;/h2&gt;
-  &lt;div class=&quot;nypl-clear-results&quot;&gt;
-    &lt;button class=&quot;nypl-link-button&quot;&gt;Clear current search query, filters, and sorts&lt;/button&gt;
-  &lt;/div&gt;
+  &lt;h2&gt;Displaying 1-50 of 766 results for keyword &quot;mahabaratha&quot;&lt;/h2&gt;
 &lt;/div&gt;
     </code></pre>
 

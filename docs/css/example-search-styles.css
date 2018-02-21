@@ -2443,7 +2443,7 @@ dl dd.multi-item-list .nypl-basic-table,
   border: 0;
   border-color: none;
   border-radius: 0.2rem;
-  height: 2rem;
+  height: 2em;
   padding-right: 7%;
   padding-left: 0.5rem;
   width: 100%; }
@@ -2484,7 +2484,7 @@ dl dd.multi-item-list .nypl-basic-table,
     border: 0;
     border-color: none;
     border-radius: 0.2rem;
-    height: 2rem;
+    height: 2em;
     padding-right: 7%;
     padding-left: 0.5rem;
     width: 100%; }
@@ -2745,7 +2745,7 @@ dl dd.multi-item-list .nypl-basic-table,
       border: 0;
       border-color: none;
       border-radius: 0.2rem;
-      height: 2rem;
+      height: 2em;
       padding-right: 7%;
       padding-left: 0.5rem;
       width: 100%;
@@ -3065,6 +3065,20 @@ dl dd.multi-item-list .nypl-basic-table,
       display: none; }
       .nypl-search-form.active {
         display: block; } }
+
+.nypl-sorter-row {
+  border-bottom: 0.08333rem solid #080807;
+  border-top: 0.08333rem solid #080807; }
+  .nypl-sorter-row .nypl-full-width-wrapper {
+    padding-bottom: 0;
+    padding-top: 0; }
+    .nypl-sorter-row .nypl-full-width-wrapper .nypl-column-full {
+      align-items: center;
+      display: flex;
+      margin-bottom: 0; }
+      @media (max-width: 483px) {
+        .nypl-sorter-row .nypl-full-width-wrapper .nypl-column-full {
+          display: block; } }
 
 .nypl-screenreader-only {
   position: absolute;
@@ -3711,107 +3725,115 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-holds-table td:nth-of-type(4)::before {
         content: "Options"; } }
 
-.nypl-results-summary::before, .nypl-results-summary::after {
-  content: "";
-  display: table; }
-.nypl-results-summary::after {
-  clear: both; }
-.nypl-results-summary h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
-  max-width: none; }
-.nypl-results-summary .nypl-results-count {
-  float: left;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 0.25rem;
-  margin-right: 0.5rem; }
-.nypl-results-summary .nypl-facet {
-  background-color: #d7d4d0;
-  border-radius: 0.2rem 2rem 2rem 0.2rem;
+.nypl-results-summary {
   display: inline-block;
-  margin-bottom: 0.25rem;
-  margin-left: 0.25rem;
-  padding: 0 0.25rem; }
-  .nypl-results-summary .nypl-facet strong {
-    display: inline-block;
-    max-width: 15rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: bottom;
-    white-space: nowrap; }
-    @media (max-width: 965px) {
-      .nypl-results-summary .nypl-facet strong {
-        max-width: 7rem; } }
-  .nypl-results-summary .nypl-facet button {
-    background-color: none;
-    border: 0 solid #080807;
-    border-radius: 2rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
+  flex-grow: 2; }
+  .nypl-results-summary::before, .nypl-results-summary::after {
+    content: "";
+    display: table; }
+  .nypl-results-summary::after {
+    clear: both; }
+  @media (max-width: 483px) {
+    .nypl-results-summary {
+      float: none;
+      max-width: 100%; } }
+  .nypl-results-summary h2 {
     font-size: 1rem;
     font-weight: normal;
-    height: auto;
-    letter-spacing: normal;
-    padding: 0 0;
-    text-decoration: none;
-    text-transform: none;
-    white-space: normal;
-    -webkit-appearance: none;
-    -webkit-transition: all 0.1s ease-in 0s;
-    -moz-transition: all 0.1s ease-in 0s;
-    -o-transition: all 0.1s ease-in 0s;
-    transition: all 0.1s ease-in 0s;
-    margin: 0.25rem 0 0.25rem 0.25rem;
-    vertical-align: bottom; }
-    .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
-      color: #fff; }
-    .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
-      border-color: #080807;
-      background-color: #fff;
-      color: #080807; }
-    .nypl-results-summary .nypl-facet button:focus {
-      -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      box-shadow: inset 0 0 0 0.125rem #ffb81d;
-      outline: none; }
-    .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
-      background-color: #d7d4d0;
-      border-color: #fff;
-      cursor: default; }
-      .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: none;
+    min-height: 1rem; }
+    @media (max-width: 483px) {
+      .nypl-results-summary h2 {
+        margin-top: 1em; } }
+  .nypl-results-summary .nypl-results-count {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 0.25em; }
+  .nypl-results-summary .nypl-facet {
+    background-color: #d7d4d0;
+    border-radius: 0.2rem 2rem 2rem 0.2rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    margin-left: 0.25rem;
+    padding: 0 0.25rem; }
+    .nypl-results-summary .nypl-facet strong {
+      display: inline-block;
+      max-width: 15rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+      white-space: nowrap; }
+      @media (max-width: 965px) {
+        .nypl-results-summary .nypl-facet strong {
+          max-width: 7rem; } }
+    .nypl-results-summary .nypl-facet button {
+      background-color: none;
+      border: 0 solid #080807;
+      border-radius: 2rem;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: normal;
+      height: auto;
+      letter-spacing: normal;
+      padding: 0 0;
+      text-decoration: none;
+      text-transform: none;
+      white-space: normal;
+      -webkit-appearance: none;
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      margin: 0.25rem 0 0.25rem 0.25rem;
+      vertical-align: bottom; }
+      .nypl-results-summary .nypl-facet button:link, .nypl-results-summary .nypl-facet button:visited {
+        color: #fff; }
+      .nypl-results-summary .nypl-facet button:hover, .nypl-results-summary .nypl-facet button:hover:visited, .nypl-results-summary .nypl-facet button.active {
+        border-color: #080807;
+        background-color: #fff;
+        color: #080807; }
+      .nypl-results-summary .nypl-facet button:focus {
+        -webkit-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        -moz-box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        box-shadow: inset 0 0 0 0.125rem #ffb81d;
+        outline: none; }
+      .nypl-results-summary .nypl-facet button.disabled, .nypl-results-summary .nypl-facet button[disabled="disabled"], .nypl-results-summary .nypl-facet button[disabled="true"], .nypl-results-summary .nypl-facet button[disabled], .nypl-results-summary .nypl-facet button[disabled=true] {
         background-color: #d7d4d0;
         border-color: #fff;
-        color: #fff; }
-    .nypl-results-summary .nypl-facet button span {
-      position: absolute;
-      width: 0.1rem;
-      height: 0.1rem;
-      margin: -0.1rem;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .nypl-results-summary .nypl-facet button .nypl-icon {
-      background-color: #d7d4d0;
-      border-radius: 1rem;
-      display: inline-block;
-      fill: #776e64;
-      height: 1rem;
-      speak: none;
-      width: 1rem;
-      display: block;
-      margin: 0; }
-      .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
-        background-color: inherit;
-        fill: #fff; }
-.nypl-results-summary .nypl-clear-results {
-  clear: both; }
+        cursor: default; }
+        .nypl-results-summary .nypl-facet button.disabled:hover, .nypl-results-summary .nypl-facet button[disabled="disabled"]:hover, .nypl-results-summary .nypl-facet button[disabled="true"]:hover, .nypl-results-summary .nypl-facet button[disabled]:hover, .nypl-results-summary .nypl-facet button[disabled=true]:hover {
+          background-color: #d7d4d0;
+          border-color: #fff;
+          color: #fff; }
+      .nypl-results-summary .nypl-facet button span {
+        position: absolute;
+        width: 0.1rem;
+        height: 0.1rem;
+        margin: -0.1rem;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; }
+      .nypl-results-summary .nypl-facet button .nypl-icon {
+        background-color: #d7d4d0;
+        border-radius: 1rem;
+        display: inline-block;
+        fill: #776e64;
+        height: 1rem;
+        speak: none;
+        width: 1rem;
+        display: block;
+        margin: 0; }
+        .nypl-results-summary .nypl-facet button .nypl-icon.reversed {
+          background-color: inherit;
+          fill: #fff; }
+  .nypl-results-summary .nypl-clear-results {
+    clear: both; }
 
 .nypl-results-pagination {
   font-size: 1.1rem;
@@ -3885,18 +3907,39 @@ dl dd.multi-item-list .nypl-basic-table,
 
 .nypl-results-sorting-controls {
   border: 0;
-  margin: 2.5rem 0 0; }
+  display: inline-block;
+  flex-grow: 1;
+  margin: 1rem 0 0; }
   .nypl-results-sorting-controls::before, .nypl-results-sorting-controls::after {
     content: "";
     display: table; }
   .nypl-results-sorting-controls::after {
     clear: both; }
+  @media (max-width: 965px) {
+    .nypl-results-sorting-controls {
+      min-width: 13.75em; } }
+  @media (max-width: 483px) {
+    .nypl-results-sorting-controls {
+      float: none;
+      width: 100%; } }
 
 .nypl-results-sorter {
   display: inline-block;
-  float: left;
-  margin-right: 1.5rem;
+  float: right;
   position: relative; }
+  .nypl-results-sorter button.nypl-screenreader-only {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  @media (max-width: 483px) {
+    .nypl-results-sorter {
+      float: none;
+      width: 100%; } }
   .nypl-results-sorter button {
     background-color: #fff;
     border: 0.0625rem solid #9d9ea1;
@@ -3974,15 +4017,6 @@ dl dd.multi-item-list .nypl-basic-table,
       transform: rotate(90deg); }
     .nypl-results-sorter button.active .nypl-icon {
       transform: rotate(270deg); }
-  .nypl-results-sorter button.nypl-screenreader-only {
-    position: absolute;
-    width: 0.1rem;
-    height: 0.1rem;
-    margin: -0.1rem;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0; }
   .nypl-results-sorter ul {
     background-color: #fff;
     border: 0.08333rem solid;
@@ -4017,7 +4051,7 @@ dl dd.multi-item-list .nypl-basic-table,
 
 .nypl-select-field-results {
   background-color: #fff;
-  border: 0.0625rem #080807 solid;
+  border: 0;
   border-radius: 0.2rem;
   box-shadow: none;
   display: block;
@@ -4026,11 +4060,11 @@ dl dd.multi-item-list .nypl-basic-table,
   position: relative;
   margin-top: 0; }
   .nypl-select-field-results form {
+    display: inline-block;
     font-size: 0.85rem;
-    padding: 0 0.25rem;
-    width: 13rem; }
+    padding: 0.4rem 0; }
   .nypl-select-field-results fieldset {
-    border: 0.0625rem #080807 solid;
+    border: 0;
     box-shadow: none;
     margin: 0;
     padding: 0; }
@@ -4047,7 +4081,8 @@ dl dd.multi-item-list .nypl-basic-table,
     display: inline-block;
     font-weight: 400;
     margin-bottom: 0.25rem;
-    margin: 0 0.25rem 0 0.5rem; }
+    font-size: 1rem;
+    margin: 0 0.25rem 0 0; }
   .nypl-select-field-results select {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -4056,12 +4091,13 @@ dl dd.multi-item-list .nypl-basic-table,
     border: 0;
     border-color: none;
     border-radius: 0.2rem;
-    height: 2rem;
+    height: 3em;
     padding-right: 7%;
     padding-left: 0.5rem;
     width: inherit;
+    border: 0.0625rem solid #080807;
     display: inline-block;
-    padding-left: 0; }
+    padding: 0 1.25rem 0 0.75rem; }
 
 .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;

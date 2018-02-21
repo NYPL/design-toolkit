@@ -26,9 +26,11 @@
   text-align: center;
 }
 
-//
-// SVG Iconography
-//
+
+
+///
+/// SVG Iconography
+///
 
 .nypl-icon {
   @include nypl-icon;
@@ -51,9 +53,12 @@
 .nypl-arrow-icon {
   @include rotate(90deg);
 }
-//
-// Loaders
-//
+
+
+
+///
+/// Loaders
+///
 
 @for $percent from 1 through 100 {
   .nypl-bar_#{$percent} {
@@ -281,6 +286,11 @@
 .nypl-search-form {
   @include search-form;
 }
+
+.nypl-sorter-row {
+  @include sorter-row;
+}
+
 
 ///
 /// Screen readers only
