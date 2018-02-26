@@ -164,7 +164,7 @@ $form-padding: 0.5rem;
     background-color: $page-background-color;
     color: $nypl-gray;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding-top: $form-padding;
   }
@@ -551,9 +551,10 @@ $form-padding: 0.5rem;
 
 
 
-//
-// Generic Checkbox Style
-//
+///
+/// Not So Generic Checkbox Style
+///
+
 @mixin generic-checkbox {
 
   // If the the checkboxes are in <ul> remove the list stylings
@@ -597,6 +598,7 @@ $form-padding: 0.5rem;
     width: 0.5625rem;
     border-left: $general-border-width solid;
     border-bottom: $general-border-width solid;
+    -ms-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -615,13 +617,13 @@ $form-padding: 0.5rem;
 
   input[type="checkbox"]:checked + label,
   input[type="checkbox"]:checked + label::before {
-    border-color: $nypl-green-bright;
-    color: $nypl-green-bright;
+    border-color: darken($nypl-green-bright, 8%);
+    color: darken($nypl-green-bright, 8%);
   }
 
   input[type="checkbox"]:checked + label::after {
-    border-color: $nypl-green-bright;
-    color: $nypl-green-bright;
+    border-color: darken($nypl-green-bright, 8%);
+    color: darken($nypl-green-bright, 8%);
     content: "";
   }
 
@@ -631,6 +633,11 @@ $form-padding: 0.5rem;
   }
 } // /generic-checkbox
 
+
+///
+/// The other Generic Checkbox pattern
+/// TODO: convert this checkbox to the pattern used above
+///
 
 @mixin terms-checkbox {
   border-left: 0.5rem solid $nypl-gray;
@@ -648,9 +655,15 @@ $form-padding: 0.5rem;
   }
 
   &.checked {
-    border-left-color: $nypl-green;
+    border-left-color: $nypl-green-bright;
   }
 } // /terms-checkbox
+
+
+
+///
+/// Facet toggling
+///
 
 @mixin facet-toggle {
   background-color: $nypl-white;
@@ -718,7 +731,6 @@ $form-padding: 0.5rem;
 
 
 
-
 ///
 /// Searchable Field Module
 ///
@@ -775,6 +787,7 @@ $form-padding: 0.5rem;
 
   }
 }
+
 
 
 ///
@@ -856,9 +869,8 @@ $form-padding: 0.5rem;
     margin: $general-padding 0;
     font-size: 1rem;
     font-weight: 400;
-
-  } // /.call-number-heading
-} // /request-item-summary
+  }
+}
 
 
 

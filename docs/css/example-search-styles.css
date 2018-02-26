@@ -2050,7 +2050,7 @@ dl dd.multi-item-list .nypl-basic-table,
     background-color: #fff;
     color: #776e64;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding-top: 0.5rem; }
 
@@ -2109,7 +2109,7 @@ dl dd.multi-item-list .nypl-basic-table,
     background-color: #fff;
     color: #776e64;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding-top: 0.5rem; }
 
@@ -2146,7 +2146,7 @@ dl dd.multi-item-list .nypl-basic-table,
   background-color: #fff;
   color: #776e64;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   padding-top: 0.5rem; }
 
@@ -2211,7 +2211,7 @@ dl dd.multi-item-list .nypl-basic-table,
     background-color: #fff;
     color: #776e64;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding-top: 0.5rem; }
   .nypl-name-field > div {
@@ -2286,7 +2286,7 @@ dl dd.multi-item-list .nypl-basic-table,
     background-color: #fff;
     color: #776e64;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding-top: 0.5rem; }
   .nypl-address-fieldset div {
@@ -2357,7 +2357,7 @@ dl dd.multi-item-list .nypl-basic-table,
     background-color: #fff;
     color: #776e64;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding-top: 0.5rem; }
   .nypl-date-field input[type=date] {
@@ -2401,7 +2401,7 @@ dl dd.multi-item-list .nypl-basic-table,
   background-color: #fff;
   color: #776e64;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   padding-top: 0.5rem; }
 .nypl-text-area-with-label textarea {
@@ -2544,6 +2544,7 @@ dl dd.multi-item-list .nypl-basic-table,
   width: 0.5625rem;
   border-left: 0.125rem solid;
   border-bottom: 0.125rem solid;
+  -ms-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -2556,11 +2557,11 @@ dl dd.multi-item-list .nypl-basic-table,
   border-width: 0.125rem; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label,
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::before {
-  border-color: #008918;
-  color: #008918; }
+  border-color: #006011;
+  color: #006011; }
 .nypl-generic-checkbox input[type="checkbox"]:checked + label::after {
-  border-color: #008918;
-  color: #008918;
+  border-color: #006011;
+  color: #006011;
   content: ""; }
 .nypl-generic-checkbox input[type="checkbox"]:focus + label::before {
   outline: #ffb81d auto 0.125rem; }
@@ -2576,7 +2577,7 @@ dl dd.multi-item-list .nypl-basic-table,
     height: initial;
     margin: 0 0.25rem 0 0; }
   .nypl-terms-checkbox.checked {
-    border-left-color: #799a05; }
+    border-left-color: #008918; }
 
 .nypl-request-radiobutton-field {
   background-color: #fff;
@@ -2957,7 +2958,7 @@ dl dd.multi-item-list .nypl-basic-table,
       background-color: #fff;
       color: #776e64;
       display: block;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       line-height: 1.5;
       padding-top: 0.5rem; }
     .nypl-searchable-field .nypl-facet-search label {
