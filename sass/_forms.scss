@@ -551,9 +551,10 @@ $form-padding: 0.5rem;
 
 
 
-//
-// Not So Generic Checkbox Style
-//
+///
+/// Not So Generic Checkbox Style
+///
+
 @mixin generic-checkbox {
 
   // If the the checkboxes are in <ul> remove the list stylings
