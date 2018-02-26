@@ -597,6 +597,7 @@ $form-padding: 0.5rem;
     width: 0.5625rem;
     border-left: $general-border-width solid;
     border-bottom: $general-border-width solid;
+    -ms-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
