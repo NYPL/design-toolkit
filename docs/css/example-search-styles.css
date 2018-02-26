@@ -2544,6 +2544,7 @@ dl dd.multi-item-list .nypl-basic-table,
   width: 0.5625rem;
   border-left: 0.125rem solid;
   border-bottom: 0.125rem solid;
+  -ms-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
