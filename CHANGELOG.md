@@ -1,8 +1,13 @@
 ### Change Log
 
+### v0.1.35
+- fixes #270 w/ a micro soft vendor prefix
+- fixes #268 increase type size to 0.9rem (14.4px) for help text
+- fixes #269 changes the foreground color to a darker green
+
 ### v0.1.34
 - fixes #265 & #266
-  - added flex box for better layout of the returned results module 
+  - added flex box for better layout of the returned results module
 
 ### v0.1.33
 - fixing #260
