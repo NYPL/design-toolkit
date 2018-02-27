@@ -464,6 +464,10 @@
 
 .nypl-results-item {
   @include results-item;
+
+  .view-all-items-container {
+    margin-top: 1.5rem;
+  }
 }
 
 .nypl-results-unavailable {
