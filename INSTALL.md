@@ -16,35 +16,111 @@ Additionally, If you are contributing to the Toolkit you will need follow the co
 
 2. If you’re using [Eyeglass](https://www.npmjs.com/package/eyeglass), skip to Step 3. Otherwise, you’ll need to add nypl-toolkit to your node-sass `includePaths` option. `require("@nypl/design-toolkit").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
 
-  ##### Webpack Example
+  ##### Webpack 1.x Example
 
   ```javascript
-   // Assign the sassPaths
-   const sassPaths = require('@nypl/design-toolkit').includePaths.map((sassPath) =>
+  const ROOT_PATH = path.resolve(__dirname);
+  // Assign the sassPaths
+  const sassPaths = require('@nypl/design-toolkit').includePaths.map((sassPath) =>
     `includePaths[]=${sassPath}`
   ).join('&');
 
-  // Using the ExtractText Plugin
-  module: {
-    loaders: [
-      {
-        test: /\.scss$/,
-        include: path.resolve(rootPath, 'src'),
-        loader: ExtractTextPlugin.extract(`css?sourceMap!sass?sourceMap&${sassPaths}`)
-      }
-    ]
-  }
+  // In the `module.exports` object in `webpack.config.js`
+  // Using the ExtractText Plugin - typically when building for production
+  module.exports = {
+    // ...
+    plugins: [
+      new ExtractTextPlugin('styles.css'),
+      // ...
+    ],
+    module: {
+      loaders: [
+        {
+          test: /\.scss$/,
+          include: path.resolve(ROOT_PATH, 'src'),
+          loader: ExtractTextPlugin.extract(`css?sourceMap!sass?sourceMap&${sassPaths}`),
+        },
+      ],
+    },
+  };
 
-  // Using the SASS loader
-  module: {
-    loaders: [
-      {
-        test: /\.scss?$/,
-        loader: `style!css!sass?${sassPaths}`,
-        include: path.resolve(rootPath, 'src')
-      }
-    ]
-  }
+  // Using the SASS loader - typically with the webpack dev server
+  module.exports = {
+    // ...
+    module: {
+      loaders: [
+        {
+          test: /\.scss?$/,
+          loader: `style!css!sass?${sassPaths}`,
+          include: path.resolve(ROOT_PATH, 'src'),
+        },
+      ],
+    },
+  };
+  ```
+
+  ##### Webpack 2.x Example (Tested with 2.7.x)
+
+  ```javascript
+  const ROOT_PATH = path.resolve(__dirname);
+  // Assign the sassPaths
+  const sassPaths = require('@nypl/design-toolkit').includePaths
+    .map((sassPath) => sassPath).join('&');
+  const loaders = [
+    {
+      loader: 'css-loader',
+      options: {
+        sourceMap: true,
+      },
+    },
+    {
+      loader: 'sass-loader',
+      options: {
+        sourceMap: true,
+        includePaths: sassPaths,
+      },
+    },
+  ];
+
+  // In the `module.exports` object in `webpack.config.js`
+  // Using the ExtractText Plugin - typically when building for production
+  module.exports = {
+    // ...
+    plugins: [
+      new ExtractTextPlugin('styles.css'),
+      // ...
+    ],
+    module: {
+      rules: [
+        {
+          test: /\.scss$/,
+          include: path.resolve(ROOT_PATH, 'src'),
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: loaders,
+          }),
+        },
+      ],
+    },
+  };
+
+  // Using the SASS loader - typically with the webpack dev server
+  module.exports = {
+    // ...
+    module: {
+      rules: [
+        {
+          test: /\.scss?$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            `sass-loader?includePaths=${sassPaths}`,
+          ],
+          include: path.resolve(ROOT_PATH, 'src'),
+        },
+      ],
+    },
+  };
   ```
 
 3. Import the NYPL Toolkit SASS library into your Sass files:
