@@ -654,6 +654,8 @@ div.nypl-omnisearch.spinning {
   .nypl-results-list .nypl-results-item p {
     margin-bottom: 0;
     max-width: none; }
+  .nypl-results-list .nypl-results-item .view-all-items-container {
+    margin-top: 1.5rem; }
   .nypl-results-list .nypl-results-item h2,
   .nypl-results-list .nypl-results-item h3 {
     margin-bottom: 0; }
