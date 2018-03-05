@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Example | NYPL design toolkit</title>
+  <title>Request Confirmation | Shared Collection Catalog | NYPL</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
@@ -35,14 +35,16 @@
       <div class="nypl-row">
         <div class="nypl-full-width-wrapper">
           <div class="nypl-column-full">
-            <span>
-              <span class="nypl-screenreader-only" >You are here:</span>
-              <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
-                <li><a href="https://nypl.org">Home</a></li>
-                <li><a href="https://nypl.org/research">Research</a></li>
-                <li>Research Catalog</li>
+            <nav aria-label="Breadcrumbs" class="nypl-breadcrumbs">
+              <span class="nypl-screenreader-only">You are here:</span>
+              <ol>
+                <li><a href="#">Shared Collection Catalog</a></li>
+                <li><a href="#">Search Results</a></li>
+                <li><a href="#">Item Details</a></li>
+                <li><a href="#">Item Request</a></li>
+                <li>Request Confirmation</li>
               </ol>
-            </span>
+            </nav>
             <h1>Request Confirmation</h1>
             <div class="search-control">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="42" viewBox="0 0 25 42" preserveAspectRatio="xMidYMid meet" aria-labelledby="left-arrow" aria-hidden="true">
@@ -61,24 +63,18 @@
         <div class="nypl-column-full">
           <div class="nypl-request-item-summary">
             <div class="item">
-              <h2>Submission Received</h2>
-              <h3>Item Information</h3>
               <p>We've received your request for: <br><a href="/bib/b7169745">880-02 Bian yuan, zu qun yu guo jia : Qing mo xi bei Hui min qi yi = Edge, ethnicity and the state : the uprisings of northwest Chinese Muslims in late Qing dynasty / Zhou Yaoming zhu</a></p>
-              <p>Please check your library account for updates. The item will be listed as Ready under your Holds tab when it is available. You will also receive an email confirmation after your item has arrived. </p>
-              <p>Your item will be delivered to: [location]</p>
-              <p>For off-site materials, requests made before 2:30 PM will be delivered the following business day. Requests made after 2:30 PM on Fridays or over the weekend will be delivered the following Tuesday. We will hold books for up to seven days, so you can request materials up to a week in advance</p>
+              <p>The item will be delivered to: <span>Library for the Performing Arts</span></p>
+              <h3 id="delivery-location">Physical Delivery</h3>
+              <p>Please log into your library account to check for updates. The item will be listed as “Ready for Pickup” under your Holds tab when it is available. You will also receive an email confirmation after your item has arrived.</p>
+              <p>For off-site materials, requests made before 2:30 PM will be delivered the following business day. Requests made after 2:30 PM on Fridays or over the weekend will be delivered the following Tuesday. We will hold books for up to seven days, so you can request materials up to a week in advance.</p>
+              <p>If you would like to cancel your request, or if you have questions, please email us or call 917-ASK-NYPL (917-275-6975).</p>
               <h3>Electronic Delivery</h3>
-              <p>If you selected electronic delivery, you will be notified via email when the item is available.</p>
-              <p>If you would like to cancel your request, or if you have further questions, please contact 917-ASK-NYPL (917-275-6975).</p>
-              <button type="submit" class="nypl-request-button">Back to results</button>
-              <button type="submit" class="nypl-request-button">Start over</button>
+              <p>If you selected electronic delivery, you will receive an email when the item is available to download.</p>
+              <a href="#">Go back to your search results</a> or
+              <a href="#">start a new search</a>.
             </div>
           </div>
-        </div>
-      </div>
-      <div class="nypl-row">
-        <div class="nypl-column-full">
-          <a href="https://www.nypl.org/help/request-research-materials">Learn more about our off-site collections.</a>
         </div>
       </div>
     </div>
