@@ -41,7 +41,7 @@ linters:
     global: ['rem', '%', 's', 'vw', 'em'] # Allow relative units globally
     properties:
       line-height: [] # No units allowed
-      margin: ['rem', '%']
+      margin: ['em', 'rem', '%']
 
   QualifyingElement:
     enabled: false

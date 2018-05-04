@@ -21,3 +21,5 @@ exclude:
 
 #custom variables
 current-version: 0.1.35
+
+exclude: [node_modules, gulpfile.js]

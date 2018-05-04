@@ -1,0 +1,30 @@
+//
+// basic card styles
+//
+@import "colors";
+@import "measurements";
+@import "css3";
+@import "general-mixins";
+@import "microformats";
+@import "media-queries";
+
+.debugger {
+  border: 1px dotted $nypl-green-bright;
+}
+
+//
+// We should not assume all cards will be books
+// types of cards:
+
+$default-card-type: card;
+$book-card-type: book;
+
+.#{$book-card-type}-item {
+  border-bottom: 2px solid $nypl-gray-cool;
+  margin: 0.5em 0.25em 1.5em;
+  padding-bottom: 1em;
+  padding-top: 0.75em;
+  max-width: 100%;
+  @include clearfix;
+}
+
