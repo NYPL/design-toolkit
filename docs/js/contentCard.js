@@ -54,7 +54,7 @@ loadJSON(response => {
       </a>
     </div>
     <div>
-      <p class="book-item-description">${pick.book.text}</p>
+      <p class="book-item-description">${pick.reviews[0].text}</p>
       <p class="book-item-picked-by">
         Staff Pick By: ${pick.reviews[0].reviewerName}, ${pick.reviews[0].reviewerLocation.prefLable}
       </p>

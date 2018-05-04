@@ -15,9 +15,12 @@
 //
 // We should not assume all cards will be books
 // types of cards:
+// TODO: convert this to a mixin where we can include some @if @else logic
+//
 
 $default-card-type: card;
 $book-card-type: book;
+
 
 .#{$book-card-type}-item {
   border-bottom: 2px solid $nypl-gray-cool;
@@ -26,5 +29,9 @@ $book-card-type: book;
   padding-top: 0.75em;
   max-width: 100%;
   @include clearfix;
+
+  &-title {
+    font-weight: 700;
+  }
 }
 
