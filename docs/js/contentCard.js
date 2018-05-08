@@ -22,14 +22,21 @@ loadJSON(response => {
   //console.log(staffPicksJSON.picks);
   
   staffPicksJSON.picks.forEach(pick => {
-    //console.log(pick.book.catalogUrl);
+    
+    const catalogURL = pick.book.catalogUrl;
     const ebookURL = pick.book.ebookUrl;
     const ebookTitle = pick.book.title;
-    //const catalogURL = pick.book.catalogUrl;
-    
-    function checkForURL(){
+  
+      this.classesFromTags = (tag) => {
+        return pick.tags.map(tag => tag.toLowerCase().split(' ').join('-')
+      )};
+
+      const tags = classesFromTags();
+      console.log(tags);
       
-      if (ebookURL != undefined) {
+      function checkForURL(){
+      
+      if (ebookURL && catalogURL) {
         //console.log('this ebook has a url: \n' + ebookURL);
         const itemUrlMarkup = `
         <a href="${pick.book.catalogUrl}" class="catalog-url" aria-label="Request Book: ${ebookTitle}">
@@ -75,7 +82,7 @@ loadJSON(response => {
     //console.log(insertURL);
     
     const cardMarkUp = `
-    <li class="book-item love-stories seriously-good-writing ">
+    <li class="book-item ${tags}">
       <div class="book-item-image-box">
         <img alt="" src="${pick.book.imageUrl}">
       </div>
@@ -106,5 +113,3 @@ listContainer.insertAdjacentHTML('beforeend', cardMarkUp);
 
   });
 });
-
-

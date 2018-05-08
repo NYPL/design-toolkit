@@ -11,15 +11,14 @@
 @import "media-queries";
 
 @mixin debugger() {
-  border: 2px dotted red;
+  border: $general-border-width dotted #d40c3e;
 }
 
 //
 // We should not assume all cards will be books
 // types of cards:
 // TODO: convert this to a mixin where we can include some @if @else logic
-// to so we can "flag" the type of card it is w/ a variable and then have 
-// 
+// to so we can "flag" the type of card it is w/ a variable and then have
 //
 
 $default-card-type: card;
@@ -38,7 +37,7 @@ $book-card-type: book;
     font-weight: 700;
   }
 
-  & a {
+  a {
     //@include debugger;
     @include basic-button(
       $button-icon: true,
@@ -53,6 +52,7 @@ $book-card-type: book;
       .nypl-icon {
         position: relative;
       }
+
       span {
         position: relative;
       }
@@ -60,7 +60,7 @@ $book-card-type: book;
   }
 
   &-image-box {
-    @include debugger;  
+    @include debugger;
   }
 }
 
