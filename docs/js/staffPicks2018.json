@@ -100,10 +100,11 @@
       ],
       "book": {
         "author": "G. Willow Wilson",
-        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb19601853__SAlif%20the%20Unseen__Orightresult__U__X7?lang=eng&suite=def",
-        "imageUrl": "https://imagesc.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780802120205",
         "title": "Alif the Unseen",
-        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb20229551__SAlif%20the%20Unseen__P0%2C2__Orightresult__U__X7?lang=eng&suite=def",
+        "catalogUrl": "",
+        "imageUrl": "https://imagesc.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780802120205",
+        
+        "ebookUrl": "",
         "isbn": "978-0802121226",
         "overdriveId": "1487324"
       },

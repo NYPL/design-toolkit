@@ -36,7 +36,12 @@ loadJSON(response => {
       
       function checkForURL(){
       
-      if (ebookURL && catalogURL) {
+      if (!ebookURL && !catalogURL) {
+        const itemUrlMarkup = `
+          <p><i>There was an error providing the link data...</i></p>
+        `;
+        return itemUrlMarkup;
+      } else if (ebookURL && catalogURL) {
         //console.log('this ebook has a url: \n' + ebookURL);
         const itemUrlMarkup = `
         <a href="${pick.book.catalogUrl}" class="catalog-url" aria-label="Request Book: ${ebookTitle}">
@@ -62,7 +67,7 @@ loadJSON(response => {
         <span>Request E-Book</span>
       </a>`;
         return itemUrlMarkup;
-      } else {
+      } else if (!ebookURL && catalogURL) {
         //console.log('this pick does not have an ebook available: \n' + ebookTitle);
         const itemUrlMarkup = `
         <a href="${pick.book.catalogUrl}" class="catalog-url nypl-primary-button" aria-label="Request Book: ${pick.book.title}">

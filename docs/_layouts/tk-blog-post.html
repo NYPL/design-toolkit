@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NYPL Design toolkit blog post</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href={{ "css/example-styles.css" | relative_url }} media="screen" rel="stylesheet" type="text/css">
+  <link href={{ "css/docs.css" | relative_url }} media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body class="toolkit">
+  <div id="skip" tabindex="-1"><a href="#main">Skip to Main Content</a></div>
+  <main class="main-page">
+    <div class="nypl-toolkit-header">
+      <div class="nypl-full-width-wrapper">
+        <span class="nypl-screenreader-only">You are here:</span>
+        <ol role="navigation" aria-label="breadcrumbs" class="nypl-breadcrumbs">
+          <li>Toolkit Documentation Home</li>
+        </ol>
+        <h2>NYPL Design Toolkit</h2><span class="">Version: {{ site.current-version }}</span>
+      </div>
+    </div>
+    <div class="nypl-full-width-wrapper">
+      <div class="nypl-column-one-quarter">
+        {% include left-nav.html %}
+      </div>
+      <div id="main" class="nypl-column-three-quarters">
+        {{ content }}
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
