@@ -10,15 +10,22 @@
 @import "microformats";
 @import "media-queries";
 
-@mixin debugger() {
-  border: $general-border-width dotted #d40c3e;
+@mixin debugger($is-child: false) {
+  @if $is-child == true {
+    border: $general-border-width dotted #d40c3e;
+    img {
+      border: $general-border-width dotted #a6f80f;  
+      }
+    } @else {
+    border: $general-border-width dotted #d40c3e;
+  }
 }
 
 //
 // We should not assume all cards will be book
 // types of cards:
 // TODO: convert this to a mixin where we can include some @if @else logic
-// to so we can "flag" the type of card it is w/ a variable and then have the styles modify the card based on its content type...
+// so we can "flag" the type of card it is w/ a variable and then have the styles modify the card based on its content type...
 //
 
 $default-card-type: card;
@@ -67,7 +74,7 @@ $book-card-type: book;
   }
 
   &-image-box {
-    @include debugger;
+    @include debugger($is-child: true);
   }
 
   &-tags {
