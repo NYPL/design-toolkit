@@ -26,6 +26,7 @@ $book-card-type: book;
 
 
 .#{$book-card-type}-item {
+  @include debugger;
   border-bottom: 2px solid $nypl-gray-cool;
   list-style-type: none;
   margin: 0.5em 0.25em 1.5em;
@@ -50,12 +51,15 @@ $book-card-type: book;
       $hover-background-color: $nypl-blue,
       $text-color: $nypl-blue
     ) {
+      
       .nypl-icon {
+        @include debugger;
         position: relative;
         top: 0.3em;
       }
 
       span {
+        @include debugger;
         position: relative;
         top: -0.37em;
       }
@@ -63,7 +67,12 @@ $book-card-type: book;
   }
 
   &-image-box {
-    //@include debugger;
+    @include debugger;
+  }
+
+  &-tags {
+    color: $nypl-red;
+    font-size: $small-type;
   }
 }
 

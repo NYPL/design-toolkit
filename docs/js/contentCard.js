@@ -15,27 +15,32 @@ function loadJSON(callback) {
   xobj.send(null);
 }
 
-// Call to function with anonymous callback
+//
+// Call loadJSON function with anonymous callback
+//
 loadJSON(response => {
-  // Do Something with the response
+  // Put the response into a variable we can work with
   const staffPicksJSON = JSON.parse(response);
   //console.log(staffPicksJSON.picks);
   
   staffPicksJSON.picks.forEach(pick => {
+    // convert the tags to classes
+    // 
+    this.classesFromTags = (tag) => {
+      return pick.tags.map(tag => tag.toLowerCase().split(' ').join('-')
+    )};
     
+    this.tagsRaw = (rawTag) => {
+      return pick.tags.map(rawTag => rawTag.replace(/\,/ , ', ')
+     )};
+
+    const tags = classesFromTags();
+    const theRawTags = tagsRaw();
     const catalogURL = pick.book.catalogUrl;
     const ebookURL = pick.book.ebookUrl;
     const ebookTitle = pick.book.title;
-  
-      this.classesFromTags = (tag) => {
-        return pick.tags.map(tag => tag.toLowerCase().split(' ').join('-')
-      )};
-
-      const tags = classesFromTags();
-      console.log(tags);
       
-      function checkForURL(){
-      
+    function checkForURL(){
       if (!ebookURL && !catalogURL) {
         const itemUrlMarkup = `
           <p><i>There was an error providing the link data...</i></p>
@@ -88,28 +93,27 @@ loadJSON(response => {
     
     const cardMarkUp = `
     <li class="book-item ${tags}">
+    <h3 class="book-item-title">${ebookTitle}</h3>
       <div class="book-item-image-box">
         <img alt="" src="${pick.book.imageUrl}">
       </div>
-    <h3 class="book-item-title">${pick.book.title}</h3>
+    
     <p class="book-item-author">${pick.book.author}</p>
-    <div class="book-item-catalog-links">
-      <!-- the url block -->
-      ${insertURL}
-    </div>
+    
     <div>
       <p class="book-item-description">${pick.reviews[0].text}</p>
       <p class="book-item-picked-by">
         Staff Pick By: ${pick.reviews[0].reviewerName}, ${pick.reviews[0].reviewerLocation.prefLable}
       </p>
     </div>
+    <div class="book-item-catalog-links">
+      <!-- the url block -->
+      ${insertURL}
+    </div>
     <p class="book-item-tags visuallyHidden js">
       <span>Tags: </span>
       <span>
-        Love stories,
-      </span>
-      <span>
-        Seriously good writing
+        ${theRawTags}
       </span>
   </p>
 </li>`;
