@@ -15,10 +15,10 @@
 }
 
 //
-// We should not assume all cards will be books
+// We should not assume all cards will be book
 // types of cards:
 // TODO: convert this to a mixin where we can include some @if @else logic
-// to so we can "flag" the type of card it is w/ a variable and then have
+// to so we can "flag" the type of card it is w/ a variable and then have the styles modify the card based on its content type...
 //
 
 $default-card-type: card;
@@ -27,6 +27,7 @@ $book-card-type: book;
 
 .#{$book-card-type}-item {
   border-bottom: 2px solid $nypl-gray-cool;
+  list-style-type: none;
   margin: 0.5em 0.25em 1.5em;
   padding-bottom: 1em;
   padding-top: 0.75em;
@@ -43,7 +44,7 @@ $book-card-type: book;
       $button-icon: true,
       $background-color: $nypl-white,
       $border-color: $nypl-blue,
-      $border-radius: ($general-border-radius * 7),
+      $border-radius: ($general-border-radius * 9),
       $border-width: $general-border-width,
       $hover-text-color: $nypl-white,
       $hover-background-color: $nypl-blue,
@@ -51,16 +52,18 @@ $book-card-type: book;
     ) {
       .nypl-icon {
         position: relative;
+        top: 0.3em;
       }
 
       span {
         position: relative;
+        top: -0.37em;
       }
     }
   }
 
   &-image-box {
-    @include debugger;
+    //@include debugger;
   }
 }
 
