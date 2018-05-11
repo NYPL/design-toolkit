@@ -21,15 +21,6 @@ function loadJSON(callback) {
 loadJSON(response => {
   // Put the response into a variable we can work with
   const staffPicksJSON = JSON.parse(response);
-  //console.log(staffPicksJSON.picks);
-  
-  //
-  // the new check for URL function
-  // function newCheckForURL(ebookLink, catalogLink, title) {
-  //   // get the pick's ebook url
-  //   console.log('The function parameters are: ' + ebookLink + catalogLink + title);
-  //   return;
-  // };
 
   function checkForURL(ebookLink, catalogLink, title){
     if (!ebookLink && !catalogLink) {
@@ -38,7 +29,6 @@ loadJSON(response => {
       `;
       return itemUrlMarkup;
     } else if (ebookLink && catalogLink) {
-      //console.log('this ebook has a url: \n' + ebookLink);
       const itemUrlMarkup = `
       <a href="${catalogLink}" class="catalog-url" aria-label="Request Book: ${title}">
       <svg width="32px" height="32px" viewBox="0 0 32 32" class="book-icon svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
@@ -64,7 +54,6 @@ loadJSON(response => {
     </a>`;
       return itemUrlMarkup;
     } else if (!ebookLink && catalogLink) {
-      //console.log('this pick does not have an ebook available: \n' + ebookTitle);
       const itemUrlMarkup = `
       <a href="${ebookLink}" class="catalog-url nypl-primary-button" aria-label="Request Book: ${title}">
       <svg width="32px" height="32px" viewBox="0 0 32 32" class="book-icon svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
