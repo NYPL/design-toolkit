@@ -22,7 +22,7 @@ loadJSON(response => {
   // Put the response into a variable we can work with
   const staffPicksJSON = JSON.parse(response);
 
-  function checkForURL(ebookLink, catalogLink, title){
+  function checkForURL(ebookLink, catalogLink, title) {
     if (!ebookLink && !catalogLink) {
       const itemUrlMarkup = `
         <p><i>There was an error providing the link data...</i></p>
@@ -68,7 +68,8 @@ loadJSON(response => {
     return itemUrlMarkup;
     }
   };
-
+    
+    //
     // convert the tags to classes
     // 
   this.classesFromTags = (pickTag) => {
@@ -78,6 +79,7 @@ loadJSON(response => {
 
   //
   // remove the commas from the array
+  //
   this.tagsRaw = (rawTag) => {
     return rawTag.join(', ');
   };
