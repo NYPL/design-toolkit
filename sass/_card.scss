@@ -14,7 +14,7 @@
   @if $is-child == true {
     border: $general-border-width dotted #d40c3e;
     img {
-      border: $general-border-width dotted #a6f80f;  
+      border: $general-border-width dotted #f8ae0f;  
       }
     } @else {
     border: $general-border-width dotted #d40c3e;
@@ -60,13 +60,13 @@ $book-card-type: book;
     ) {
       
       .nypl-icon {
-        @include debugger;
+        //@include debugger;
         position: relative;
         top: 0.3em;
       }
 
       span {
-        @include debugger;
+        //@include debugger;
         position: relative;
         top: -0.37em;
       }
