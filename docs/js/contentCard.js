@@ -69,21 +69,23 @@ loadJSON(response => {
     }
   };
 
-  staffPicksJSON.picks.forEach(pick => {
-    
     // convert the tags to classes
     // 
-    this.classesFromTags = (tag) => {
-      return pick.tags.map(tag => tag.toLowerCase().split(' ').join('-')
-    )};
-    //
-    // remove the commas from the array
-    this.tagsRaw = (rawTag) => {
-      return pick.tags.map(rawTag => rawTag.replace(/\,/ , ', ')
-     )};
+  this.classesFromTags = (pickTag) => {
+    const cleanClasses = pickTag.map(pickTag => pickTag.toLowerCase().split(' ').join('-'));
+    return cleanClasses.join(' ')
+  };
 
-    const tags = classesFromTags();
-    const theRawTags = tagsRaw();
+  //
+  // remove the commas from the array
+  this.tagsRaw = (rawTag) => {
+    return rawTag.join(', ');
+  };
+
+  staffPicksJSON.picks.forEach(pick => {
+    const pickTags = pick.tags;
+    const insertTags = classesFromTags(pickTags);
+    const theRawTags = tagsRaw(pickTags);
     
     //
     // links to items in catalog
@@ -99,7 +101,7 @@ loadJSON(response => {
     //
     // construct the card markup
     const cardMarkUp = `
-    <li class="book-item ${tags}">
+    <li class="book-item ${insertTags}">
     <h3 class="book-item-title">${ebookTitle}</h3>
       <div class="book-item-image-box">
         <img alt="" src="${pick.book.imageUrl}">
@@ -120,7 +122,7 @@ loadJSON(response => {
     <p class="book-item-tags visuallyHidden js">
       <span>Tags: </span>
       <span>
-        ${theRawTags}
+      ${theRawTags}
       </span>
   </p>
 </li>`;
