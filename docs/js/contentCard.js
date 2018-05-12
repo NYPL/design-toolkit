@@ -86,7 +86,7 @@ loadJSON(response => {
 
   staffPicksJSON.picks.forEach(pick => {
     const pickTags = pick.tags;
-    const insertTags = classesFromTags(pickTags);
+    const insertClasses = classesFromTags(pickTags);
     const theRawTags = tagsRaw(pickTags);
     
     //
@@ -103,7 +103,7 @@ loadJSON(response => {
     //
     // construct the card markup
     const cardMarkUp = `
-    <li class="book-item ${insertTags}">
+    <li class="book-item ${insertClasses}">
     <h3 class="book-item-title">${ebookTitle}</h3>
       <div class="book-item-image-box">
         <img alt="" src="${pick.book.imageUrl}">
