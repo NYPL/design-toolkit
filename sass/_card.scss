@@ -31,6 +31,9 @@
 $default-card-type: card;
 $book-card-type: book;
 
+.nypl-card-container {
+  //display: flex;  
+}
 
 .#{$book-card-type}-item {
   @include debugger;
@@ -75,6 +78,13 @@ $book-card-type: book;
 
   &-image-box {
     @include debugger($is-child: true);
+    background-color: $nypl-blue-tint;
+    max-width: 35%;
+
+    img {
+      overflow: hidden;
+      width: 100%;
+    }
   }
 
   &-tags {

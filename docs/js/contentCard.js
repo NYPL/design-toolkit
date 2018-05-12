@@ -93,6 +93,7 @@ loadJSON(response => {
     // links to items in catalog
     const catalogURL = pick.book.catalogUrl;
     const ebookURL = pick.book.ebookUrl;
+    const pickReview = pick.reviews[0];
   
     // variable for the title
     const ebookTitle = pick.book.title;
@@ -112,9 +113,9 @@ loadJSON(response => {
     <p class="book-item-author">${pick.book.author}</p>
     
     <div>
-      <p class="book-item-description">${pick.reviews[0].text}</p>
+      <p class="book-item-description">${pickReview.text}</p>
       <p class="book-item-picked-by">
-        Staff Pick By: ${pick.reviews[0].reviewerName}, ${pick.reviews[0].reviewerLocation.prefLable}
+        Staff Pick By: ${pickReview.reviewerName}, ${pickReview.reviewerLocation.prefLable}
       </p>
     </div>
     <div class="book-item-catalog-links">
