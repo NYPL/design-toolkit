@@ -94,6 +94,7 @@ loadJSON(response => {
     const catalogURL = pick.book.catalogUrl;
     const ebookURL = pick.book.ebookUrl;
   
+    //
     // variable for the title
     const ebookTitle = pick.book.title;
     //
