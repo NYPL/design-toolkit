@@ -74,7 +74,7 @@ loadJSON(response => {
     // 
   this.classesFromTags = (pickTag) => {
     const cleanClasses = pickTag.map(pickTag => pickTag.toLowerCase().split(' ').join('-'));
-    return cleanClasses.join(' ')
+    return cleanClasses.join(' ');
   };
 
   //
@@ -88,7 +88,7 @@ loadJSON(response => {
     const pickTags = pick.tags;
     const insertClasses = classesFromTags(pickTags);
     const theRawTags = tagsRaw(pickTags);
-    
+
     //
     // links to items in catalog
     const catalogURL = pick.book.catalogUrl;
@@ -106,11 +106,12 @@ loadJSON(response => {
     // construct the card markup
     const cardMarkUp = `
     <li class="book-item ${insertClasses}">
-    <h3 class="book-item-title">${ebookTitle}</h3>
+    <div class="book-title-image-lockup">
+      <h3 class="book-item-title">${ebookTitle}</h3>
       <div class="book-item-image-box">
         <img alt="" src="${pick.book.imageUrl}">
       </div>
-    
+    </div>
     <p class="book-item-author">${pick.book.author}</p>
     
     <div>
