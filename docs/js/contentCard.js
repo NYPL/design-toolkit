@@ -16,6 +16,16 @@ function loadJSON(callback) {
 }
 
 //
+// SVG Icon for Reviewer's Name
+//
+const pencilIcon = `
+<svg width="48" height="47.923" viewBox="0 0 48 47.923" class="svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet" aria-labelledby="icon-title">
+    <title id="icon-title">Reviewed by Icon</title>
+    <path d="M9.826 45.06l28.026-28.026-6.964-6.964L2.862 38.096 0 47.923l9.826-2.863zM33.409 7.626l2.792-2.792 6.965 6.964-2.793 2.793zM38.243 2.793L41.036 0 48 6.965l-2.792 2.792z"/>
+</svg>
+`;
+
+//
 // Call loadJSON function with anonymous callback
 //
 loadJSON(response => {
@@ -106,30 +116,26 @@ loadJSON(response => {
     // construct the card markup
     const cardMarkUp = `
     <li class="book-item ${insertClasses}">
-    <div class="book-title-image-lockup">
-      <h3 class="book-item-title">${ebookTitle}</h3>
-      <div class="book-item-image-box">
-        <img alt="" src="${pick.book.imageUrl}">
+      <div class="book-title-image-lockup">
+        <h3 class="book-item-title">${ebookTitle}</h3>
+        <p class="book-item-author">${pick.book.author}</p>
+        <div class="book-item-image-box">
+          <img alt="" src="${pick.book.imageUrl}">
+        </div>
       </div>
-    </div>
-    <p class="book-item-author">${pick.book.author}</p>
-    
-    <div>
-      <p class="book-item-description">${pickReview.text}</p>
-      <p class="book-item-picked-by">
-        Staff Pick By: ${pickReview.reviewerName}, ${pickReview.reviewerLocation.prefLable}
+      <div class="book-item-details">
+          <p class="description">${pickReview.text}</p>
+          <p class="picked-by"><span>${pencilIcon}</span>${pickReview.reviewerName},</p>
+          <p class="reviewer-location">${pickReview.reviewerLocation.prefLabel}</p>
+      </div>  
+      <div class="book-item-catalog-links">
+        <!-- the url block -->
+        ${insertURL}
+      </div>
+      <p class="book-item-tags visuallyHidden js">
+        <span>Tags: </span>
+        <span>${theRawTags}</span>
       </p>
-    </div>
-    <div class="book-item-catalog-links">
-      <!-- the url block -->
-      ${insertURL}
-    </div>
-    <p class="book-item-tags visuallyHidden js">
-      <span>Tags: </span>
-      <span>
-      ${theRawTags}
-      </span>
-  </p>
 </li>`;
 
 listContainer.insertAdjacentHTML('beforeend', cardMarkUp);
