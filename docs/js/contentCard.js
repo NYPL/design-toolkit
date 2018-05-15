@@ -116,17 +116,15 @@ loadJSON(response => {
     // construct the card markup
     const cardMarkUp = `
     <li class="book-item ${insertClasses}">
-      <div class="book-title-image-lockup">
-        <h3 class="book-item-title">${ebookTitle}</h3>
-        <p class="book-item-author">${pick.book.author}</p>
-        <div class="book-item-image-box">
-          <img alt="" src="${pick.book.imageUrl}">
-        </div>
+      <h3 class="book-item-title">${ebookTitle}</h3>
+      <p class="book-item-author">${pick.book.author}</p>
+      <div class="book-item-image-box">
+        <img alt="" src="${pick.book.imageUrl}">
       </div>
       <div class="book-item-details">
-          <p class="description">${pickReview.text}</p>
-          <p class="picked-by"><span>${pencilIcon}</span>${pickReview.reviewerName},</p>
-          <p class="reviewer-location">${pickReview.reviewerLocation.prefLabel}</p>
+        <p class="description">${pickReview.text}</p>
+        <p class="picked-by"><span>${pencilIcon}</span>${pickReview.reviewerName},</p>
+        <p class="reviewer-location">${pickReview.reviewerLocation.prefLabel}</p>
       </div>  
       <div class="book-item-catalog-links">
         <!-- the url block -->

@@ -10,6 +10,7 @@
 @import "microformats";
 @import "media-queries";
 
+// TOOD: Move debugger out to a util or higher level so it can be used by other files
 @mixin debugger($is-child: false) {
   @if $is-child == true {
     border: $general-border-width dotted #d40c3e;
@@ -47,29 +48,49 @@ $book-card-type: book;
     background-color: $nypl-green-tint;
     display: block;
   }
+}
 
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 100%;
+.nypl-card-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .#{$book-card-type}-item {
-  //@include debugger;
+  @include debugger;
+  @include clearfix;
+  @include media($mobile-breakpoint) {
+    max-width: 48%;
+
+    &:nth-child(odd) {
+      margin-right: $general-margin;
+    }
+  }
+
   border-bottom: 2px solid $nypl-gray-cool;
+  display: grid;
+  flex: 1 auto;
+  grid-template-areas: "img title title"
+                       "img author author"
+                       "details details details"
+                       "buttons buttons buttons";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-column-gap: $general-margin;
   list-style-type: none;
   margin: 0em 0.25em 1.5em;
-  padding-bottom: 1em;
+  //padding-bottom: 1em;
   //padding-top: 0.75em;
   max-width: 100%;
-  @include clearfix;
 
   &-title {
+    @include debugger();
     @include media($mobile-breakpoint) {
       //background-color: $nypl-blue-tint;
+      grid-area: title;
     }
 
     @include media($xtrasmall-breakpoint) {
-      order: initial;
+      //order: initial;
     }
 
     //flex: 2;
@@ -81,12 +102,14 @@ $book-card-type: book;
 
   &-author {
     @include debugger;
-    //font-weight: bold;
+    font-weight: 400;
+    grid-area: author;
     //flex-basis: 100%;
     //order: 2;
   }
 
   &-details {
+    @include debugger();
     .description {
       font-size: $slightly-larger-type;
       line-height: 1.2;
@@ -109,13 +132,14 @@ $book-card-type: book;
       height: 0.85em;
       width: 0.85em;
     }
-
+    grid-area: details;
     margin-top: $general-margin;
   }
 
   &-catalog-links {
     @include media($mobile-breakpoint) {
-      display: block;
+      // display: block;
+      grid-area: buttons;
     }
 
     background-color: $page-background-color;
@@ -164,8 +188,9 @@ $book-card-type: book;
   }
 
   &-image-box {
-    @include debugger($is-child: true);
+    //@include debugger($is-child: true);
     @include media($intermediate-breakpoint) {
+      grid-area: img;
       height: initial;
       margin: 0;
       overflow: visible;
@@ -176,7 +201,7 @@ $book-card-type: book;
       overflow: hidden;
     }
 
-    background-color: $nypl-blue-tint;
+    background-color: $page-background-color;
     // max-width: 35%; use this as a fall back for non-flex
 
     flex: 1;
@@ -188,7 +213,9 @@ $book-card-type: book;
   }
 
   &-tags {
+    align-self: end;
     color: $nypl-red;
+    grid-area: buttons;
     font-size: $small-type;
   }
 }
