@@ -58,12 +58,22 @@ $book-card-type: book;
 .#{$book-card-type}-item {
   @include debugger;
   @include clearfix;
-  @include media($mobile-breakpoint) {
-    max-width: 48%;
-
-    &:nth-child(odd) {
-      margin-right: $general-margin;
+  @include media($intermediate-breakpoint) {
+    max-width: 45%;
+    background: #c0ffee;
+      &:nth-child(odd) {
+        margin-right: $general-margin;
+      }
     }
+ 
+  @include media($mobile-breakpoint) {
+    max-width: 47%;
+    background: #bada33
+  }
+  
+  @include media($xtrasmall-breakpoint) {
+    max-width: 100%;
+    background: #3fd9ac;
   }
 
   border-bottom: 2px solid $nypl-gray-cool;
@@ -80,7 +90,7 @@ $book-card-type: book;
   margin: 0em 0.25em 1.5em;
   //padding-bottom: 1em;
   //padding-top: 0.75em;
-  max-width: 100%;
+  
 
   &-title {
     @include debugger();
