@@ -56,24 +56,23 @@ $book-card-type: book;
 }
 
 .#{$book-card-type}-item {
-  @include debugger;
+  // @include debugger;
   @include clearfix;
   @include media($intermediate-breakpoint) {
     max-width: 45%;
-    background: #c0ffee;
-
-    &:nth-child(odd) {
-      margin-right: $general-margin;
+    //background: #c0ffee;
+      &:nth-child(odd) {
+        margin-right: $general-margin;
+      }
     }
-  }
-
+ 
   @include media($mobile-breakpoint) {
     max-width: 47%;
-    background: #bada33;
+    //background: hsla(189, 100%, 78%, 0.616)
   }
-
+  
   @include media($xtrasmall-breakpoint) {
-    background: #3fd9ac;
+   // background: #3fd9ac;
     display: block;
     max-width: 100%;
   }
@@ -86,16 +85,20 @@ $book-card-type: book;
                        "details details details"
                        "buttons buttons buttons";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto;
   grid-column-gap: $general-margin;
   list-style-type: none;
   margin: 0em 0.25em 1.5em;
-  //padding-bottom: 1em;
+  padding-bottom: ($general-margin / 1.5);
   //padding-top: 0.75em;
-
+  
 
   &-title {
-    @include debugger();
+    // @include debugger;
+    @include media($intermediate-breakpoint) {
+      grid-area: title;
+    }
+
     @include media($mobile-breakpoint) {
       //background-color: $nypl-blue-tint;
       grid-area: title;
@@ -105,23 +108,20 @@ $book-card-type: book;
       //order: initial;
     }
 
-    //flex: 2;
     font-weight: 700;
     line-height: 1.3;
     margin: 0;
-    //order: 1;
   }
 
   &-author {
-    @include debugger;
+    // @include debugger;
     font-weight: 400;
     grid-area: author;
-    //flex-basis: 100%;
-    //order: 2;
+    line-height: 1.3;
   }
 
   &-details {
-    @include debugger();
+    // @include debugger;
     .description {
       font-size: $slightly-larger-type;
       line-height: 1.2;
@@ -149,6 +149,11 @@ $book-card-type: book;
   }
 
   &-catalog-links {
+    @include media($intermediate-breakpoint) {
+        // display: block;
+        grid-area: buttons;
+    }
+
     @include media($mobile-breakpoint) {
       // display: block;
       grid-area: buttons;
@@ -158,12 +163,8 @@ $book-card-type: book;
     //display: flex;
     justify-content: center;
 
-    a:first-child {
-      @include media($mobile-breakpoint) {
-        margin: ($general-margin / 1.3) 0;
-      }
-
-      margin-right: 1%;
+    a {
+      margin: ($general-margin / 1.3) 1% ($general-margin / 1.3) 0;
     }
 
     a:last-child {
@@ -176,21 +177,21 @@ $book-card-type: book;
       $button-icon: true,
       $background-color: $nypl-white,
       $border-color: $nypl-blue,
-      $border-radius: ($general-border-radius * 9),
-      $border-width: $general-border-width,
+      $border-radius: ($general-border-radius * 3),
+      $border-width: ($general-border-width / 1.5),
       $hover-text-color: $nypl-white,
       $hover-background-color: $nypl-blue,
       $text-color: $nypl-blue
     ) {
 
       .nypl-icon {
-        @include debugger;
+        // @include debugger;
         position: relative;
         top: 0.3em;
       }
 
       span {
-        @include debugger;
+        // @include debugger;
         position: relative;
         top: -0.37em;
       }
@@ -205,7 +206,7 @@ $book-card-type: book;
       grid-area: img;
       height: initial;
       margin: 0;
-      overflow: visible;
+      overflow: hidden;
     }
 
     @include media($xtrasmall-breakpoint) {

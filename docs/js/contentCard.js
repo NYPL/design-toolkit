@@ -80,16 +80,14 @@ loadJSON(response => {
   };
     
     //
-    // convert the tags to classes
-    // 
+    // convert the tags to classes 
   this.classesFromTags = (pickTag) => {
     const cleanClasses = pickTag.map(pickTag => pickTag.toLowerCase().split(' ').join('-'));
     return cleanClasses.join(' ');
   };
 
   //
-  // remove the commas from the array
-  //
+  // Add a space after the comma
   this.tagsRaw = (rawTag) => {
     return rawTag.join(', ');
   };
@@ -108,6 +106,7 @@ loadJSON(response => {
     //
     // variable for the title
     const ebookTitle = pick.book.title;
+
     //
     // insert the urls for buttons function
     const insertURL = checkForURL(ebookURL, catalogURL, ebookTitle);
