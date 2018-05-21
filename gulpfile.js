@@ -29,7 +29,7 @@ const output = 'docs/css';
 // options ot pass:
 const sassOptions = {
   errLogToConsole: true,
-  outputStyle: 'compressed'
+  //outputStyle: 'compressed'
 };
 
 // autoprefixer options

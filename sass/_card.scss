@@ -34,21 +34,23 @@
 $default-card-type: card;
 $book-card-type: book;
 
-.book-title-image-lockup {
-  @include media($intermediate-breakpoint) {
-    background-color: $nypl-red-tint;
-  }
+// Leaving this here for time being, might be useful for falling back
+//
+// .book-title-image-lockup {
+//   @include media($intermediate-breakpoint) {
+//     background-color: $nypl-red-tint;
+//   }
 
-  @include media($mobile-breakpoint) {
-    background-color: $nypl-blue-tint;
-    //flex-flow: wrap;
-  }
+//   @include media($mobile-breakpoint) {
+//     background-color: $nypl-blue-tint;
+//     //flex-flow: wrap;
+//   }
 
-  @include media($xtrasmall-breakpoint) {
-    background-color: $nypl-green-tint;
-    display: block;
-  }
-}
+//   @include media($xtrasmall-breakpoint) {
+//     background-color: $nypl-green-tint;
+//     display: block;
+//   }
+// }
 
 .nypl-card-container {
   display: flex;
@@ -57,45 +59,67 @@ $book-card-type: book;
 
 .#{$book-card-type}-item {
   // @include debugger;
+  @include box-sizing(border-box);
   @include clearfix;
-  @include media($intermediate-breakpoint) {
-    max-width: 45%;
+  @include media($xtralarge-breakpoint, $min-width: true) {
+    //background: orange;
+    display: grid;
+    grid-column-gap: $general-margin;
+    grid-template-areas: "img title title"
+                       "img author author"
+                       "details details details"
+                       "buttons buttons buttons"
+                       "tags tags tags";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto auto;
+    max-width: 47%;
     //background: #c0ffee;
-      &:nth-child(odd) {
-        margin-right: $general-margin;
-      }
+      // &:nth-child(odd) {
+      //   margin-right: $general-margin;
+      // }
     }
  
-  @include media($mobile-breakpoint) {
-    max-width: 47%;
+  @include media($intermediate-breakpoint, $min-width: true) {
+    //background: #c0ee22;
+    display: grid;
+    grid-template-areas: "img title title"
+                        "img author author"
+                        "details details details"
+                        "buttons buttons buttons"
+                        "tags tags tags";
+    grid-template-rows: auto min-content min-content auto auto;
+    //max-width: 45%;
     //background: hsla(189, 100%, 78%, 0.616)
   }
-  
-  @include media($xtrasmall-breakpoint) {
-   // background: #3fd9ac;
+
+  @include media($mobile-breakpoint, $min-width: true) {
+    //background: #722cf567;
+    display: grid;
+    grid-template-areas: "img title title"
+                        "img author author"
+                        "img details details"
+                        "img buttons buttons"
+                        "tags tags tags";
+    grid-template-rows: auto min-content min-content auto auto;
+    max-width: 100%;
+    //background: hsla(189, 100%, 78%, 0.616)
+  }
+  @include media($xtrasmall-breakpoint, $min-width: true) {
+    //background: #3fd9ac;
     display: block;
+    grid-template-areas: unset;
     max-width: 100%;
   }
 
   border-bottom: 2px solid $nypl-gray-cool;
-  display: grid;
   flex: 1 auto;
-  grid-template-areas: "img title title"
-                       "img author author"
-                       "details details details"
-                       "buttons buttons buttons";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr auto auto;
-  grid-column-gap: $general-margin;
   list-style-type: none;
   margin: 0em 0.25em 1.5em;
   padding-bottom: ($general-margin / 1.5);
-  //padding-top: 0.75em;
-  
 
   &-title {
     // @include debugger;
-    @include media($intermediate-breakpoint) {
+    @include media($xtralarge-breakpoint) {
       grid-area: title;
     }
 
@@ -105,7 +129,7 @@ $book-card-type: book;
     }
 
     @include media($xtrasmall-breakpoint) {
-      //order: initial;
+      grid-area: title;
     }
 
     font-weight: 700;
@@ -149,7 +173,7 @@ $book-card-type: book;
   }
 
   &-catalog-links {
-    @include media($intermediate-breakpoint) {
+    @include media($xtralarge-breakpoint) {
         // display: block;
         grid-area: buttons;
     }
@@ -202,7 +226,7 @@ $book-card-type: book;
 
   &-image-box {
     //@include debugger($is-child: true);
-    @include media($intermediate-breakpoint) {
+    @include media($xtralarge-breakpoint) {
       grid-area: img;
       height: initial;
       margin: 0;
@@ -228,7 +252,7 @@ $book-card-type: book;
   &-tags {
     align-self: end;
     color: $nypl-red;
-    grid-area: buttons;
+    grid-area: tags;
     font-size: $small-type;
   }
 }
