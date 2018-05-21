@@ -168,14 +168,15 @@ $book-card-type: book;
       height: 0.85em;
       width: 0.85em;
     }
+
     grid-area: details;
     margin-top: $general-margin;
   }
 
   &-catalog-links {
     @include media($xtralarge-breakpoint) {
-        // display: block;
-        grid-area: buttons;
+      // display: block;
+      grid-area: buttons;
     }
 
     @include media($mobile-breakpoint) {
