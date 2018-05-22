@@ -1,0 +1,847 @@
+{
+  "slug": "staff-picks/2018-01-01",
+  "type": "staff-picks",
+  "date": "2018-01-01",
+  "title": "2018 Winter Staff Picks",
+  "heroImageUrl": "",
+  "picks": [{
+      "tags": [
+        "Biographies & memoirs",
+        "Culturally diverse",
+        "Historical",
+        "Middle grade",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "A fun, fast read that gives deeper insight into the background and motivation of the groundbreaking icon.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Doreen Rappaport",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21308428__S42%20Is%20Not%20Just%20a%20Number%3A%20The%20Odyssey%20of%20Jackie%20Robinson%2C%20American%20Hero__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780763676247",
+        "title": "42 Is Not Just a Number: The Odyssey of Jackie Robinson, American Hero",
+        "isbn": "9780763676247"
+      },
+      "slug": "9780763676247-42-is-not-just-a-number-the-odyssey-of-jackie-robinson-american-hero",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Drama",
+        "On the dark side",
+        "Page-turners",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "The lives of two teens collide in a story of violence, prejudice, and redemption.",
+        "reviewerName": "Best Books for Teens Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Dashka Slater",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21357127__SThe%2057%20Bus__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780374303235",
+        "title": "The 57 Bus",
+        "isbn": "9780374303235"
+      },
+      "slug": "9780374303235-the-57-bus",
+      "ageGroup": "YA"
+    },
+    {
+      "tags": [
+        "Picture books"
+      ],
+      "reviews": [{
+        "text": "After his great fall, will Humpty Dumpty find the courage to climb to new heights?",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Dan Santat",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21316180__SAfter%20the%20Fall%20%28How%20Humpty%20Dumpty%20Got%20Back%20Up%20Again%29__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781626726826",
+        "title": "After the Fall (How Humpty Dumpty Got Back Up Again)",
+        "isbn": "9781626726826"
+      },
+      "slug": "9781626726826-after-the-fall-how-humpty-dumpty-got-back-up-again",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Science fiction",
+        "Haunting",
+        "Mystery & suspense",
+        "Offbeat",
+        "Psychological"
+      ],
+      "reviews": [{
+        "text": "Djinn, superhackers, and holy men clash and team up to protect an ancient text and defend the innocent against a mysterious cybercriminal. It's a thrilling tale exploring the ways we encode knowledge for those who come after us and who should have access to it.",
+        "reviewerName": "Leah Labrecque",
+        "reviewerLocation": {
+          "prefLabel": "58th Street Library"
+        }
+      }],
+      "book": {
+        "author": "G. Willow Wilson",
+        "title": "Alif the Unseen",
+        "catalogUrl": "",
+        "imageUrl": "https://imagesc.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780802120205",
+
+        "ebookUrl": "",
+        "isbn": "978-0802121226",
+        "overdriveId": "1487324"
+      },
+      "slug": "9780802120205-alif-the-unseen",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Drama",
+        "NYC stories",
+        "On the dark side",
+        "Realistic"
+      ],
+      "reviews": [{
+        "text": "When she was seven, Mary murdered a baby. Allegedly. Now 15 and pregnant, she has to prove her innocence to get out of a detention center. What really happened that night?",
+        "reviewerName": "Best Books for Teens Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Tiffany D. Jackson",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21129588__Sallegedly%20jackson__Orightresult__U__X2?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780062422644",
+        "title": "Allegedly",
+        "ebookUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21255489__Sallegedly%20jackson__P0%2C1__Orightresult__U__X2?lang=eng&suite=def",
+        "isbn": "9780062422644",
+        "overdriveId": "2697826"
+      },
+      "slug": "9780062422644-allegedly",
+      "ageGroup": "YA"
+    },
+    {
+      "tags": [
+        "Atmospheric",
+        "Historical",
+        "Society & culture",
+        "Strong sense of place",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Whether it's the man with a sniffle or the archivist's too strong perfume, the modern human condition is as present in an archive as the lives it's preserving. A beautifully written exploration into entering an archive and discovering the secrets within.",
+        "reviewerName": "Jessica Cline",
+        "reviewerLocation": {
+          "prefLabel": "Picture Collection"
+        }
+      }],
+      "book": {
+        "author": "Arlette Farge",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb19968153__Sallure%20of%20the%20Archives%20farge__Orightresult__X2?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780300176735",
+        "title": "The Allure of the Archives",
+        "isbn": "9780300176735"
+      },
+      "slug": "9780300176735-the-allure-of-the-archives",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Funny",
+        "Poetry"
+      ],
+      "reviews": [{
+        "text": "Clever wordplay, madcap illustrations, and a driving rhythm make this jaunty rhyming book.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Bill Richardson, illustrated by Roxanna Bikadoroff",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21182816__SThe%20Alphabet%20Thief__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781554988778",
+        "title": "The Alphabet Thief",
+        "isbn": "9781554988778"
+      },
+      "slug": "9781554988778-the-alphabet-thief",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Biographies & memoirs",
+        "Historical",
+        "Society & culture",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Toobin's account of Patty Hearst's abduction by the Symbionese Liberation Army in 1974 and her subsequent participation as a member of the radical group is strange and captivating tale.",
+        "reviewerName": "Virginia Bartow ",
+        "reviewerLocation": {
+          "prefLabel": "Cataloging"
+        }
+      }],
+      "book": {
+        "author": "Jeffrey Toobin",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21051251__SAmerican%20Heiress%3A%20The%20Wild%20Saga%20of%20the%20Kidnapping%2C%20Crimes%20and%20Trial%20of%20Patty%20Hearst%20__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://imagesb.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780385536714",
+        "title": "American Heiress: The Wild Saga of the Kidnapping, Crimes, and Trial of Patty Hearst",
+        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21055469__SAmerican%20Heiress%3A%20The%20Wild%20Saga%20of%20the%20Kidnapping%2C%20Crimes%20and%20Trial%20of%20Patty%20Hearst%20__P0%2C3__Orightresult__U__X4?lang=eng&suite=def",
+        "isbn": "9780345803153",
+        "overdriveId": "2584547"
+      },
+      "slug": "9780385536714-american-heiress-the-wild-saga-of-the-kidnapping-crimes-and-trial-of-patty-hearst",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Animals",
+        "Biographies & memoirs",
+        "Middle grade",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Racehorse history is made in this winning book that gives an insider's view of a whole team that raised a champion. ",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Shelley Fraser Mickle",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21184178__SAmerican%20Pharoah%3A%20Triple%20Crown%20Champion__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781481480703",
+        "title": "American Pharoah: Triple Crown Champion",
+        "ebookUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21291114__SAmerican%20Pharoah%3A%20Triple%20Crown%20Champion__P0%2C1__Orightresult__U__X4?lang=eng&suite=def",
+        "isbn": "9781481480703"
+      },
+      "slug": "9781481480703-american-pharoah-triple-crown-champion",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Essays & short stories",
+        "Society & culture",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Celebrities! They’re just like us! Right down to their mental illnesses. Kalb brings us into the minds of famous historical figures from Charles Darwin to Betty Ford, breaking down everything from narcissism to borderline personality disorder.",
+        "reviewerName": "Rebecca Kluberdanz",
+        "reviewerLocation": {
+          "prefLabel": "Kingsbridge"
+        }
+      }],
+      "book": {
+        "author": "Claudia Kalb",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb20880125__SAndy%20Warhol%20Was%20a%20Hoarder__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://imagesb.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781426214660",
+        "title": "Andy Warhol Was a Hoarder",
+        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb20903648__SAndy%20Warhol%20Was%20a%20Hoarder__P0%2C1__Orightresult__U__X7?lang=eng&suite=def",
+        "isbn": "978-1426214660",
+        "overdriveId": "2334919"
+      },
+      "slug": "9781426214660-andy-warhol-was-a-hoarder",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Essays & short stories",
+        "Multiple perspectives",
+        "Seriously good writing",
+        "Strong sense of place"
+      ],
+      "reviews": [{
+        "text": "A collection of nine linked stories, each chapter introduces an aging character from the town of Amgash, Illinois. Themes include poverty, class, shame, secrets, and the trauma that is inflicted in families -- even in small towns where everyone seemingly knows their neighbors.",
+        "reviewerName": "Lynn Lobash",
+        "reviewerLocation": {
+          "prefLabel": "Readers Services"
+        }
+      }],
+      "book": {
+        "author": "Elizabeth Strout",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21184550__Sanything%20is%20possible__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://imagesc.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780812989403",
+        "title": "Anything Is Possible",
+        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21258597__Sanything%20is%20possible__P0%2C9__Orightresult__U__X7?lang=eng&suite=def",
+        "isbn": "978-0812989403",
+        "overdriveId": "3027740"
+      },
+      "slug": "9780812989403-anything-is-possible",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Biographies & memoirs",
+        "Historical",
+        "Seriously good writing",
+        "Society & culture",
+        "Strong sense of place",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Shopsin captures the spirit of her illustrious father and vividly illustrates her rapscallion adventures as a child growing up in the West Village. She even includes a shout-out to the wonderful staff at the Library for the Performing Arts.",
+        "reviewerName": "Sherri Machlin",
+        "reviewerLocation": {
+          "prefLabel": "Mulberry Street"
+        }
+      }],
+      "book": {
+        "author": "Tamara Shopsin ",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21270267__SArbitrary%20Stupid%20Goal%20__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://imagesc.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780374105860",
+        "title": "Arbitrary Stupid Goal",
+        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21324204__SArbitrary%20Stupid%20Goal%20__P0%2C1__Orightresult__U__X7?lang=eng&suite=def",
+        "isbn": "978-0374105860"
+      },
+      "slug": "9780374105860-arbitrary-stupid-goal",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Culturally diverse",
+        "Families",
+        "Friendship",
+        "Funny",
+        "Historical",
+        "Middle grade"
+      ],
+      "reviews": [{
+        "text": "Brought together by desegregation in the 1970s, two middle-schoolers unexpectedly form a friendship in this heartfelt and comical coming of age story. ",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Steven B. Frank",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21183692__Sarmstrong%20charlie__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780544826083",
+        "title": "Armstrong & Charlie",
+        "isbn": "9780544826083"
+      },
+      "slug": "9780544826083-armstrong--charlie",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Science fiction",
+        "Haunting",
+        "World-building"
+      ],
+      "reviews": [{
+        "text": "Jazz is a courier with a less than lucrative sideline: smuggling. On the Artemis lunar colony, even the slightest contraband means exile, but when the opportunity of lifetime falls in her lap, Jazz leaps at it and right into danger. For fans of The Expanse or The Martian.",
+        "reviewerName": "Joshua Soule",
+        "reviewerLocation": {
+          "prefLabel": "Spuyten Duyvil"
+        }
+      }],
+      "book": {
+        "author": "Andy Weir",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21352954__SArtemis__P0%2C3__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://imagesa.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780553448122",
+        "title": "Artemis",
+        "isbn": "978-0553448122"
+      },
+      "slug": "9780553448122-artemis",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Fantasy",
+        "Mystery & suspense",
+        "Psychological",
+        "Science fiction",
+        "World-building"
+      ],
+      "reviews": [{
+        "text": "In the first book of the Laundry Files, readers meet Bob Howard, code monkey for a top-secret occult government organization... who is asked to be a hero. Chaos ensues.",
+        "reviewerName": "Kate Fais",
+        "reviewerLocation": {
+          "prefLabel": "Bloomingdale"
+        }
+      }],
+      "book": {
+        "author": "Charles Stross",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb17181077__Satrocity%20archives__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=0441013651",
+        "title": "The Atrocity Archives",
+        "isbn": "9780441013654"
+      },
+      "slug": "0441013651-the-atrocity-archives",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Culturally diverse",
+        "Picture books"
+      ],
+      "reviews": [{
+        "text": "Vendors in a Nigerian market share all sorts of snacks with Baby in this playful counting story with bright and cheerful drawings.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Atinuke, illustrated by Angela Brooksbank",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21363171__SBaby%20Goes%20to%20Market__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780763695705",
+        "title": "Baby Goes to Market",
+        "isbn": "9780763695705"
+      },
+      "slug": "9780763695705-baby-goes-to-market",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Fantasy",
+        "Funny",
+        "Comics & graphic novels",
+        "Love stories"
+      ],
+      "reviews": [{
+        "text": "Jory finds himself in a world of magical doorways and adorable tool-rats, but beware! Danger lurks backstage.",
+        "reviewerName": "Best Books for Teens Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "James Tynion IV, art by Rian Sygh",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21328218__Sbackstagers__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781608869930",
+        "title": "Backstagers, vol. 1",
+        "isbn": "9781608869930"
+      },
+      "slug": "9781608869930-backstagers-vol-1",
+      "ageGroup": "YA"
+    },
+    {
+      "tags": [
+        "Drama",
+        "On the dark side",
+        "Realistic",
+        "Tearjerkers"
+      ],
+      "reviews": [{
+        "text": "Sebastian is struggling to move on from a tragic accident that changed his family forever. Can his newfound passion for pizza-making help him finally rise above it?",
+        "reviewerName": "Best Books for Teens Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Barry Lyga",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21199669__Sbang%20lyga__Orightresult__U__X2?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780316315500",
+        "title": "Bang",
+        "ebookUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21290980__Sbang%20lyga__P0%2C1__Orightresult__U__X2?lang=eng&suite=def",
+        "isbn": "9780316315500"
+      },
+      "slug": "9780316315500-bang",
+      "ageGroup": "YA"
+    },
+    {
+      "tags": [
+        "Animals",
+        "Comics & graphic novels",
+        "Middle grade",
+        "Nature",
+        "STEM"
+      ],
+      "reviews": [{
+        "text": "A fast-paced introduction to the world of bats, perfect for those who love science along with their laughs.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Falynn Koch",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21210547__SBats%3A%20Learning%20to%20Fly__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781626724082",
+        "title": "Bats: Learning to Fly",
+        "isbn": "9781626724082"
+      },
+      "slug": "9781626724082-bats-learning-to-fly",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Early readers",
+        "Historical"
+      ],
+      "reviews": [{
+        "text": "A beautifully illustrated, fictionalized account of a 12-year-old boy's Revolutionary War experience.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Nathaniel Philbrick, illustrated by Wendell Minor",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21252711__Sben%27s%20revolution__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780399166747",
+        "title": "Ben's Revolution: Benjamin Russell and the Battle of Bunker Hill",
+        "isbn": "978-0399166747"
+      },
+      "slug": "9780399166747-bens-revolution-benjamin-russell-and-the-battle-of-bunker-hill",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Early readers",
+        "Friendship",
+        "Nature"
+      ],
+      "reviews": [{
+        "text": "Inviting and immersive colored pencil drawings bring to life a small child's love for an old oak tree. ",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Jacques Goldstyn",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21252712__Sbertolt__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781592702299",
+        "title": "Bertolt",
+        "isbn": "978-1592702299"
+      },
+      "slug": "9781592702299-bertolt",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Families",
+        "Friendship",
+        "Historical",
+        "Middle grade"
+      ],
+      "reviews": [{
+        "text": "Curious and loving Crow is determined to discover the truth about her birth, but will her search lead the family and home she loves into danger? Higher-level readers will appreciate the engaging and atmospheric writing.\n",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Lauren Wolk",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21197169__Sbeyond%20bright%20sea__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=1101994851",
+        "title": "Beyond the Bright Sea",
+        "ebookUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21290833__Sbeyond%20bright%20sea__P0%2C2__Orightresult__U__X7?lang=eng&suite=def",
+        "isbn": "9781101994856"
+      },
+      "slug": "1101994851-beyond-the-bright-sea",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Animals",
+        "Families",
+        "Friendship",
+        "Funny",
+        "Comics & graphic novels",
+        "Middle grade"
+      ],
+      "reviews": [{
+        "text": "What's a fox to do when he can't catch a chicken for dinner? Hatch his own, of course! But this is a lot harder than he thought, especially when they think HE is Mom.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Benjamin Renner",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21299403__SThe%20Big%20Bad%20Fox__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781626723313",
+        "title": "The Big Bad Fox",
+        "isbn": "9781626723313"
+      },
+      "slug": "9781626723313-the-big-bad-fox",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Animals",
+        "Families",
+        "Picture books"
+      ],
+      "reviews": [{
+        "text": "A minimalist illustration style and simple text add poetry to this sweet story about the circle of life.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Elisha Cooper",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21182825__SBig%20Cat%2C%20Little%20Cat__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781626723719",
+        "title": "Big Cat, Little Cat",
+        "isbn": "9781626723719"
+      },
+      "slug": "9781626723719-big-cat-little-cat",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Fantasy",
+        "Psychological",
+        "World-building"
+      ],
+      "reviews": [{
+        "text": "Companion fantasy novellas that explore gender, identity, and fate through dazzling world-building.",
+        "reviewerName": "Judd Karlman",
+        "reviewerLocation": {
+          "prefLabel": "Pelham Bay"
+        }
+      }],
+      "book": {
+        "author": "Jy Yang",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21318537__SYang%2C%20JY%2C__P0%2C1__Orightresult__X4?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780765395412",
+        "title": "The Black Tides of Heaven and The Red Threads of Fortune",
+        "ebookUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21359182__SYang%2C%20JY%20black%20tides__P0%2C1__Orightresult__U__X2?lang=eng&suite=def",
+        "isbn": "9780765395412"
+      },
+      "slug": "9780765395412-the-black-tides-of-heaven-and-the-red-threads-of-fortune",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Adventure",
+        "Fantasy",
+        "Comics & graphic novels",
+        "Picture books"
+      ],
+      "reviews": [{
+        "text": "A man and a boy separated by time and distance are connected by a boat and their dreams. Affecting illustrations draw the reader into this epic journey of imagination.",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Rogério Coelho",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21173152__SBoat%20of%20Dreams__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780884485285",
+        "title": "Boat of Dreams",
+        "isbn": "9780884485285"
+      },
+      "slug": "9780884485285-boat-of-dreams",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Animals",
+        "Fantasy",
+        "Friendship",
+        "Funny",
+        "Comics & graphic novels",
+        "Picture books"
+      ],
+      "reviews": [{
+        "text": "In this ode to NYC, there really IS an antiquities-loving dinosaur living next door to Sybil!",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Sean Rubin",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21358362__SBolivar%20rubin__Orightresult__U__X2?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781684150694",
+        "title": "Bolivar",
+        "isbn": "9781684150694"
+      },
+      "slug": "9781684150694-bolivar",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Picture books"
+      ],
+      "reviews": [{
+        "text": "With pencil, ink, and watercolors, errors become magical moments of opportunity to let your imagination soar in this uplifting tale full of wonderful picture-play. ",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Corinna Luyken",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21252719__SThe%20Book%20of%20Mistakes__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780735227927",
+        "title": "The Book of Mistakes",
+        "isbn": "9780735227927"
+      },
+      "slug": "9780735227927-the-book-of-mistakes",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Society & culture",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Put down the smartphone and read this book... you might never want to pick up your phone again! Zomorodi (host of the Note to Self podcast) discovers the forgotten importance of ennui and offers some sage advice on how to break up with addicting apps and devices.",
+        "reviewerName": "Nancy Aravecz",
+        "reviewerLocation": {
+          "prefLabel": "Jefferson Market"
+        }
+      }],
+      "book": {
+        "author": "Manoush Zomorodi",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21358357__SBored%20and%20Brilliant%3A%20How%20Spacing%20Out%20Can%20Unlock%20Your%20Most%20Productive%20and%20Creative%20Self__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://imagesb.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781250124951",
+        "title": "Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self",
+        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21324150__SBored%20and%20Brilliant%3A%20How%20Spacing%20Out%20Can%20Unlock%20Your%20Most%20Productive%20and%20Creative%20Self__P0%2C2__Orightresult__U__X4?lang=eng&suite=def",
+        "isbn": "978-1250124951"
+      },
+      "slug": "9781250124951-bored-and-brilliant-how-spacing-out-can-unlock-your-most-productive-and-creative-self",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Biographies & memoirs",
+        "Culturally diverse",
+        "Historical",
+        "Poetry",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Striking portraits accompany biographical poems that showcase compelling figures from diverse backgrounds.                                         ",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Margarita Engle, illustrated by Rafael López",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21151940__SBravo%21%20Poems%20About%20Amazing%20Hispanics__Orightresult__U__X4?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780805098761",
+        "title": "Bravo! Poems about Amazing Hispanics",
+        "ebookUrl": "http://browse.nypl.org/iii/encore/record/C__Rb21290983__St%3A%28Bravo%21%20Poems%20About%20Amazing%20Hispanics%29%20f%3Az__Orightresult__U__X4?lang=eng&suite=def",
+        "isbn": "9780805098761"
+      },
+      "slug": "9780805098761-bravo-poems-about-amazing-hispanics",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Historical",
+        "Society & culture",
+        "True stories"
+      ],
+      "reviews": [{
+        "text": "Modern artists are spoiled for color, but there was a time when certain hues were rare and precious treasures. Going all the way back to the beginning of human civilization, this book delves into color's cultural, political, and religious history.  A perfect read for any artist.",
+        "reviewerName": "Althea Georges",
+        "reviewerLocation": {
+          "prefLabel": "Muhlenberg"
+        }
+      }],
+      "book": {
+        "author": "Victoria Finlay",
+        "catalogUrl": "http://browse.nypl.org/iii/encore/record/C__Rb20490900__SThe%20Brilliant%20History%20of%20Color%20in%20Art__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://imagesb.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781606064290",
+        "title": "The Brilliant History of Color in Art",
+        "isbn": "978-1606064290"
+      },
+      "slug": "9781606064290-the-brilliant-history-of-color-in-art",
+      "ageGroup": "Adult"
+    },
+    {
+      "tags": [
+        "Funny",
+        "Historical",
+        "On the dark side",
+        "Page-turners"
+      ],
+      "reviews": [{
+        "text": "Whaddup, readers?/We make no apology/for this Greek mythology./This is the story of the Minotaur/like you've never heard before.",
+        "reviewerName": "Best Books for Teens Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "David Elliott",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21179810__Sbull%20elliott__Orightresult__U__X2?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9780544610606",
+        "title": "Bull",
+        "isbn": "9780544610606"
+      },
+      "slug": "9780544610606-bull",
+      "ageGroup": "YA"
+    },
+    {
+      "tags": [
+        "Adventure",
+        "Animals",
+        "Early readers",
+        "Friendship",
+        "Funny"
+      ],
+      "reviews": [{
+        "text": "A silly, high-stakes adventure ensues when a water-fearing, jam-tart-loving pug follows his nose to the next picnic basket and gets separated from his girl. ",
+        "reviewerName": "Best Books for Kids Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Laura James, illustrated by Églantine Ceulemans",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21182832__Scaptain%20pug__Orightresult__U__X7?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781681193809",
+        "title": "Captain Pug: The Dog Who Sailed the Seas",
+        "isbn": "978-0606403467"
+      },
+      "slug": "9781681193809-captain-pug-the-dog-who-sailed-the-seas",
+      "ageGroup": "Children"
+    },
+    {
+      "tags": [
+        "Funny",
+        "Comics & graphic novels",
+        "Page-turners"
+      ],
+      "reviews": [{
+        "text": "The cells that run our bodies have more adventures than you can possibly imagine. You'll never look at cellular biology the same way again!",
+        "reviewerName": "Best Books for Teens Committee",
+        "reviewerLocation": {
+          "prefLabel": "NYPL"
+        }
+      }],
+      "book": {
+        "author": "Akane Shimizu",
+        "catalogUrl": "https://browse.nypl.org/iii/encore/record/C__Rb21304743__Scells%20work__P0%2C7__Orightresult__U__X2?lang=eng&suite=def",
+        "imageUrl": "https://images.btol.com/ContentCafe/Jacket.aspx?UserID=ContentCafeClient&Password=Client&Return=T&Type=L&Value=9781632363565",
+        "title": "Cells at Work, vols. 1-4",
+        "isbn": "9781632363565"
+      },
+      "slug": "9781632363565-cells-at-work-vols-1-4",
+      "ageGroup": "YA"
+    }
+  ],
+  "previousBookList": {
+    "type": "staff-picks",
+    "date": "2017-09-01",
+    "slug": "staff-picks/2017-09-01"
+  },
+  "nextBookList": {
+    "type": "staff-picks",
+    "date": "2018-03-01",
+    "slug": "staff-picks/2018-03-01"
+  },
+  "@context": "http://dev-platform.nypl.org/api/v0.1/book-lists/context.json"
+}

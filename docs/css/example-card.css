@@ -5643,21 +5643,23 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .book-item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-bottom: 2px solid #76777b;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-flex: 1;
   -webkit-flex: 1 auto;
   -ms-flex: 1 auto;
   flex: 1 auto;
   list-style-type: none;
-  margin: 0em 0.25em 1.5em;
-  padding-bottom: 0.66667rem; }
-
-.book-item::before, .book-item::after {
-  content: "";
-  display: table; }
-
-.book-item::after {
-  clear: both; }
+  grid-column-gap: 1rem;
+  grid-template-areas: "img title title" "img author author" "details details details" "buttons buttons buttons" "tags tags tags";
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto 1fr auto auto auto;
+  grid-template-rows: auto 1fr auto auto auto;
+  margin: 0 0 1.5em;
+  max-width: 50%;
+  padding-bottom: 0.66667rem;
+  padding-right: 1rem; }
 
 @media (max-width: 1315px) {
   .book-item {
@@ -5675,10 +5677,11 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   .book-item {
     display: -ms-grid;
     display: grid;
-    grid-template-areas: "img title title" "img author author" "details details details" "buttons buttons buttons" "tags tags tags";
+    grid-template-areas: "img title title" "img author author" "img details details" "img buttons buttons" "tags tags tags";
     -ms-grid-rows: auto min-content min-content auto auto;
     grid-template-rows: auto -webkit-min-content -webkit-min-content auto auto;
-    grid-template-rows: auto min-content min-content auto auto; } }
+    grid-template-rows: auto min-content min-content auto auto;
+    max-width: 100%; } }
 
 @media (max-width: 965px) {
   .book-item {
@@ -5698,31 +5701,54 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 .book-item-title {
   font-weight: 700;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: title;
   line-height: 1.3;
   margin: 0; }
 
 @media (max-width: 1315px) {
   .book-item-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: title; } }
 
 @media (max-width: 965px) {
   .book-item-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: title; } }
 
 @media (max-width: 483px) {
   .book-item-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: title; } }
 
 .book-item-author {
   font-weight: 400;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: author;
   line-height: 1.3; }
 
 .book-item-details {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: details;
   margin-top: 1rem; }
 
 .book-item-details .description {
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   font-size: 17.92px;
   line-height: 1.2; }
 
@@ -5743,6 +5769,10 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 .book-item-catalog-links {
   background-color: #fff;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: buttons;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -5750,10 +5780,16 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 @media (max-width: 1315px) {
   .book-item-catalog-links {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: buttons; } }
 
 @media (max-width: 965px) {
   .book-item-catalog-links {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: buttons; } }
 
 .book-item-catalog-links a {
@@ -5844,19 +5880,32 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #1b7fa7; }
 
 .book-item-image-box {
-  background-color: #fff;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-right: 1rem; }
+  background-color: #73c7e8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+  height: 12.5em;
+  width: 8.3125em; }
 
 @media (max-width: 1315px) {
   .book-item-image-box {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
     grid-area: img;
-    height: initial;
     margin: 0;
     overflow: hidden; } }
+
+@media (max-width: 1120px) {
+  .book-item-image-box {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+    height: auto;
+    overflow: hidden;
+    width: 100%; } }
 
 @media (max-width: 483px) {
   .book-item-image-box {
@@ -5872,6 +5921,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   -ms-grid-row-align: end;
   align-self: end;
   color: #d0343a;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: tags;
   font-size: 14.4px; }
 
