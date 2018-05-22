@@ -5643,6 +5643,10 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .book-item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
   display: -ms-grid;
   display: grid;
   -webkit-box-flex: 1;
@@ -5656,6 +5660,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 1fr auto auto auto;
   grid-template-rows: auto 1fr auto auto auto;
+  grid-row-gap: 0;
   margin: 0 0 1.5em;
   max-width: 50%;
   padding-bottom: 0.66667rem;
