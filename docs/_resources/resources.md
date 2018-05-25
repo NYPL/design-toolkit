@@ -1,4 +1,4 @@
-\---
+---
 title: Visible Focus
 description: Documentation on resources around visible focus.
 ---
