@@ -5885,7 +5885,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #1b7fa7; }
 
 .book-item-image-box {
-  background-color: #73c7e8;
+  background-color: #fff;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
