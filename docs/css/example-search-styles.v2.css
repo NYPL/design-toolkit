@@ -5446,7 +5446,7 @@ dl dd.multi-item-list .nypl-basic-table,
     @media (max-width: 965px) {
       .nypl-item-details dl dt {
         float: none;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0;
         width: 100%; } }
   .nypl-item-details dl dd {
     margin-bottom: 0;

@@ -89,7 +89,7 @@
 
       @include media($mobile-breakpoint) {
         float: none;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0;
         width: 100%;
       }
     }
