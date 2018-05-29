@@ -1,0 +1,228 @@
+.hljs-selector-class {
+  color: #d0343a; }
+
+#skip a {
+  background-color: #fff;
+  border: 0;
+  color: #1b7fa7;
+  display: block;
+  font-size: 13px;
+  height: 1px;
+  left: -10000px;
+  line-height: 2;
+  overflow: hidden;
+  padding: 5px 10px 3px;
+  position: absolute;
+  top: 7px;
+  width: 1px;
+  z-index: 1000; }
+  #skip a:focus {
+    border: 5px solid #1b7fa7;
+    height: auto;
+    left: 7px;
+    outline: 0;
+    overflow: visible;
+    width: auto; }
+
+.hidden {
+  display: none; }
+
+.centered {
+  text-align: center; }
+
+code {
+  border-radius: 0.2rem;
+  padding: 0; }
+  code::before, code::after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; }
+
+pre {
+  border: 0.0625rem solid #d7d4d0; }
+
+h1 {
+  margin-top: 0; }
+
+.toolkit-svg-icon {
+  border: 1px dotted #d7d4d0;
+  margin-right: 1rem; }
+
+.clickable-header {
+  cursor: pointer; }
+
+.clickable-header:hover {
+  text-decoration: underline; }
+
+.top-level-header {
+  display: inline-block; }
+
+.back-to-top {
+  cursor: pointer;
+  font-style: normal;
+  margin-left: 0.5rem; }
+  .back-to-top:hover {
+    text-decoration: underline; }
+
+.nypl-red-swatch {
+  background-color: #d0343a; }
+
+.nypl-red-dark-swatch {
+  background-color: #97272c; }
+
+.nypl-red-tint-swatch {
+  background-color: #de7175; }
+
+.nypl-blue-swatch {
+  background-color: #1b7fa7; }
+
+.nypl-blue-dark-swatch {
+  background-color: #135772; }
+
+.nypl-light-blue-swatch {
+  background-color: #73c7e8; }
+
+.nypl-blue-tint-swatch {
+  background-color: #d1e5ed; }
+
+.nypl-gray-cool-swatch {
+  background-color: #76777b; }
+
+.nypl-gray-swatch {
+  background-color: #776e64; }
+
+.nypl-gray-brown-swatch {
+  background-color: #54514a; }
+
+.nypl-dark-gray-swatch {
+  background-color: #080807; }
+
+.nypl-light-gray-swatch {
+  background-color: #d7d4d0; }
+
+.nypl-white-swatch {
+  background-color: #fff; }
+
+.nypl-black-swatch {
+  background-color: #111; }
+
+.nypl-yellow-swatch {
+  background-color: #fee24a; }
+
+.nypl-yellow-tint-swatch {
+  background-color: #fff1a5; }
+
+.nypl-orange-swatch {
+  background-color: #ffb81d; }
+
+.nypl-orange-desaturated-swatch {
+  background-color: #d2a74a; }
+
+.nypl-green-swatch {
+  background-color: #799a05; }
+
+.nypl-green-dark-swatch {
+  background-color: #497629; }
+
+.nypl-green-tint-swatch {
+  background-color: #f3f7e6; }
+
+.nypl-purple-swatch {
+  background-color: #72256d; }
+
+.nypl-purple-dark-swatch {
+  background-color: #52174f; }
+
+.nypl-purple-tint-swatch {
+  background-color: #f2d7f0; }
+
+.nypl-teal-swatch {
+  background-color: #07818d; }
+
+.nypl-teal-dark-swatch {
+  background-color: #047074; }
+
+.nypl-teal-tint-swatch {
+  background-color: #caf8fc; }
+
+.swatches {
+  box-sizing: border-box; }
+  .swatches .reverse {
+    color: #111; }
+
+.color-box {
+  list-style: none;
+  padding: 0.25rem;
+  margin-left: 0; }
+  .color-box > .main {
+    height: 8rem;
+    padding-top: 3rem; }
+  .color-box > div {
+    color: #fff;
+    min-height: 4rem;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    text-align: left; }
+
+.nypl-ally-table th {
+  text-align: left; }
+
+.toolkit .nypl-toolkit-header {
+  background-color: #efedeb;
+  background-color: #caeaf7;
+  border-bottom: solid 0.25rem #135772; }
+  .toolkit .nypl-toolkit-header h1,
+  .toolkit .nypl-toolkit-header h2 {
+    font-family: "Milo-Light";
+    font-size: 2rem;
+    margin: 0; }
+  .toolkit .nypl-toolkit-header h1 {
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+  .toolkit .nypl-toolkit-header h1.item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400; }
+  .toolkit .nypl-toolkit-header h2 {
+    line-height: 1; }
+  .toolkit .nypl-toolkit-header h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    margin: 1rem 0 1.5rem; }
+    @media (max-width: 965px) {
+      .toolkit .nypl-toolkit-header h2 {
+        margin-top: 0.5rem; } }
+  .toolkit .nypl-toolkit-header h2 {
+    color: #135772;
+    margin-bottom: 0.25rem; }
+    .toolkit .nypl-toolkit-header h2 + span {
+      color: #135772;
+      font-style: italic; }
+.toolkit .main-page h3.top-level-header::before {
+  background: #135772;
+  content: "";
+  display: block;
+  height: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: 5rem; }
+.toolkit .nypl-toolkit-example .nypl-basic-modal-container .nypl-modal-content {
+  margin: 1rem;
+  padding: 2.5rem;
+  width: 90%; }
+.toolkit .nypl-toolkit-example .nypl-basic-modal-container .nypl-modal-underlay {
+  background: rgba(255, 255, 255, 0.8); }
+.toolkit footer {
+  background-color: #caeaf7;
+  color: #135772;
+  height: 6rem; }
+
+textarea {
+  color: #111;
+  font-family: monospace;
+  font-size: 0.85rem;
+  padding: 1rem;
+  width: 96.2%; }
+
+.nypl-toolkit-example .nypl-logo {
+  height: 13em;
+  width: 20em; }
+
+/*# sourceMappingURL=docs.css.map */

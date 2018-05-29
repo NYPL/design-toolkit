@@ -348,12 +348,12 @@ $sorter-width: 11em;
 }
 
 @mixin item-definition-list(
-  $item-margin-bottom: 0.5rem,
+  $item-margin-bottom: 0,
   $dt-width: 7.6rem,
   $dd-width: auto) {
   dl {
     @include clearfix;
-    margin-bottom: 1rem;
+    margin-bottom:0;
     margin-top: 0;
 
     ul {
@@ -370,7 +370,7 @@ $sorter-width: 11em;
   dd {
     float: left;
     line-height: 1.5;
-    margin: 0 0 $item-margin-bottom;
+    margin: 0;
     width: $dd-width;
   }
 
@@ -402,7 +402,7 @@ $sorter-width: 11em;
 @mixin results-item(
   $border-width: $results-item-border-width,
   $border-color: $nypl-light-gray,
-  $margin-bottom: 2rem,
+  $margin-bottom: 0,
   $padding-bottom: '') {
   border-bottom: $border-width solid $border-color;
   list-style-type: none;
@@ -419,7 +419,8 @@ $sorter-width: 11em;
     max-width: none;
   }
 
-  @include item-definition-list;
+  @include item-definition-list($item-margin-bottom: 0);
+
 
   p {
     margin-bottom: 0;
@@ -438,7 +439,7 @@ $sorter-width: 11em;
   padding-left: 0.5rem;
 }
 
-@mixin results-item-description($item-margin-bottom: 0.5rem) {
+@mixin results-item-description($item-margin-bottom: 0) {
   margin-bottom: $item-margin-bottom;
 }
 
@@ -470,7 +471,7 @@ $font-weight: 400) {
   $border-color: $nypl-gray) {
   border-left: $border-width $border-type $border-color;
   padding-left: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   max-width: none;
 
   p {
@@ -533,7 +534,7 @@ $font-weight: 400) {
 }
 
 @mixin item-details {
-  @include item-definition-list($item-margin-bottom: 0.5rem);
+  @include item-definition-list($item-margin-bottom: 0);
 
   h2 {
     font-size: 1.6rem;
@@ -547,10 +548,11 @@ $font-weight: 400) {
 }
 
 @mixin item-external-links {
-  @include item-definition-list;
+  @include item-definition-list($item-margin-bottom: 0);
+
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 }
 
