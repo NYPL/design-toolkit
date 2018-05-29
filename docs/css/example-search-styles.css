@@ -632,6 +632,7 @@ div.nypl-omnisearch.spinning {
       margin-bottom: 0; }
     .nypl-results-list .nypl-results-item dl li {
       list-style-type: none;
+      margin-bottom: 0;
       margin-left: 0; }
   .nypl-results-list .nypl-results-item dt,
   .nypl-results-list .nypl-results-item dd {
@@ -3643,6 +3644,7 @@ dl dd.multi-item-list .nypl-basic-table,
         margin-bottom: 0; }
       .nypl-holds-table td dl li {
         list-style-type: none;
+        margin-bottom: 0;
         margin-left: 0; }
     .nypl-holds-table td dt,
     .nypl-holds-table td dd {
@@ -4131,6 +4133,7 @@ dl dd.multi-item-list .nypl-basic-table,
       margin-bottom: 0; }
     .nypl-results-item dl li {
       list-style-type: none;
+      margin-bottom: 0;
       margin-left: 0; }
   .nypl-results-item dt,
   .nypl-results-item dd {
@@ -4253,6 +4256,7 @@ dl dd.multi-item-list .nypl-basic-table,
     margin-bottom: 0; }
   .nypl-item-details dl li {
     list-style-type: none;
+    margin-bottom: 0;
     margin-left: 0; }
 .nypl-item-details dt,
 .nypl-item-details dd {
@@ -4291,6 +4295,7 @@ dl dd.multi-item-list .nypl-basic-table,
     margin-bottom: 0; }
   .nypl-item-external-links dl li {
     list-style-type: none;
+    margin-bottom: 0;
     margin-left: 0; }
 .nypl-item-external-links dt,
 .nypl-item-external-links dd {
