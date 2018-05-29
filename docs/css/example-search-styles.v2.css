@@ -5457,6 +5457,8 @@ dl dd.multi-item-list .nypl-basic-table,
         width: 100%; } }
     .nypl-item-details dl dd.subject-listing a {
       display: block; }
+    .nypl-item-details dl dd li {
+      margin-bottom: 0; }
 
 dl dt.list-multi-control {
   width: 100%; }

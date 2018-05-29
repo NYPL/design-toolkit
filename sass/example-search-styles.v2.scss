@@ -107,6 +107,10 @@
       &.subject-listing a {
         display: block;
       }
+      /// all kinds of kludge... there needs to be cleaner and more global way of handling lists and nested lists...
+      li {
+        margin-bottom: 0;
+      }
     }
   }
 
