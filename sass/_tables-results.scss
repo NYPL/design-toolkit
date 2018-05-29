@@ -51,6 +51,7 @@ $results-item-border-width: 0.0625rem;
     float: none;
     max-width: 100%;
   }
+
   display: inline-block;
   flex-grow: 2;
   //max-width: 65%;
@@ -59,6 +60,7 @@ $results-item-border-width: 0.0625rem;
     @include media($xtrasmall-breakpoint) {
       margin-top: 1em;
     }
+
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 0;
@@ -357,7 +359,7 @@ $sorter-width: 11em;
     margin-top: 0;
 
     ul {
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
 
     li {

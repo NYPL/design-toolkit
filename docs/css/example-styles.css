@@ -629,7 +629,7 @@ div.nypl-omnisearch.spinning {
     .nypl-results-list .nypl-results-item dl::after {
       clear: both; }
     .nypl-results-list .nypl-results-item dl ul {
-      margin-bottom: 1rem; }
+      margin-bottom: 0; }
     .nypl-results-list .nypl-results-item dl li {
       list-style-type: none;
       margin-left: 0; }
@@ -3640,7 +3640,7 @@ dl dd.multi-item-list .nypl-basic-table,
       .nypl-holds-table td dl::after {
         clear: both; }
       .nypl-holds-table td dl ul {
-        margin-bottom: 1rem; }
+        margin-bottom: 0; }
       .nypl-holds-table td dl li {
         list-style-type: none;
         margin-left: 0; }
@@ -4128,7 +4128,7 @@ dl dd.multi-item-list .nypl-basic-table,
     .nypl-results-item dl::after {
       clear: both; }
     .nypl-results-item dl ul {
-      margin-bottom: 1rem; }
+      margin-bottom: 0; }
     .nypl-results-item dl li {
       list-style-type: none;
       margin-left: 0; }
@@ -4250,7 +4250,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-item-details dl::after {
     clear: both; }
   .nypl-item-details dl ul {
-    margin-bottom: 1rem; }
+    margin-bottom: 0; }
   .nypl-item-details dl li {
     list-style-type: none;
     margin-left: 0; }
@@ -4288,7 +4288,7 @@ dl dd.multi-item-list .nypl-basic-table,
   .nypl-item-external-links dl::after {
     clear: both; }
   .nypl-item-external-links dl ul {
-    margin-bottom: 1rem; }
+    margin-bottom: 0; }
   .nypl-item-external-links dl li {
     list-style-type: none;
     margin-left: 0; }
