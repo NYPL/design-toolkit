@@ -5433,7 +5433,7 @@ dl dd.multi-item-list .nypl-basic-table,
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.04rem;
-    margin: 0 0.5rem 1rem 0;
+    margin: 0 0.5rem 0 0;
     width: 20%; }
     @media (max-width: 965px) {
       .nypl-item-details dl dt {
@@ -5441,7 +5441,7 @@ dl dd.multi-item-list .nypl-basic-table,
         margin-bottom: 0.75rem;
         width: 100%; } }
   .nypl-item-details dl dd {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     width: 70%; }
     @media (max-width: 965px) {
       .nypl-item-details dl dd {
