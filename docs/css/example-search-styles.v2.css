@@ -658,7 +658,7 @@ div.nypl-omnisearch.spinning {
   max-width: none; }
 
 .nypl-results-list .nypl-results-item dl {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 0; }
 
 .nypl-results-list .nypl-results-item dl::before, .nypl-results-list .nypl-results-item dl::after {
@@ -669,17 +669,18 @@ div.nypl-omnisearch.spinning {
   clear: both; }
 
 .nypl-results-list .nypl-results-item dl ul {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .nypl-results-list .nypl-results-item dl li {
   list-style-type: none;
+  margin-bottom: 0;
   margin-left: 0; }
 
 .nypl-results-list .nypl-results-item dt,
 .nypl-results-list .nypl-results-item dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem;
+  margin: 0;
   width: auto; }
 
 .nypl-results-list .nypl-results-item dt {
@@ -3373,10 +3374,6 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807;
   opacity: 1; }
 
-.nypl-omnisearch ::-moz-placeholder {
-  color: #080807;
-  opacity: 1; }
-
 .nypl-omnisearch :-ms-input-placeholder {
   color: #080807;
   opacity: 1; }
@@ -3935,7 +3932,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   font-weight: 400;
   margin: 1rem 0 1.5rem; }
 
-.nypl-page-header h1.item-title {
+.nypl-page-header h1.item-title,
+.nypl-page-header h2.item-title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400; }
 
@@ -3966,7 +3964,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   font-weight: 100;
   margin: 1rem 0 1.5rem; }
 
-.nypl-request-page-header h1.item-title {
+.nypl-request-page-header h1.item-title,
+.nypl-request-page-header h2.item-title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400; }
 
@@ -4479,7 +4478,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   padding-top: 0.75rem; }
 
 .nypl-holds-table td dl {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 0; }
 
 .nypl-holds-table td dl::before, .nypl-holds-table td dl::after {
@@ -4490,17 +4489,18 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   clear: both; }
 
 .nypl-holds-table td dl ul {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .nypl-holds-table td dl li {
   list-style-type: none;
+  margin-bottom: 0;
   margin-left: 0; }
 
 .nypl-holds-table td dt,
 .nypl-holds-table td dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem;
+  margin: 0;
   width: 90%; }
 
 .nypl-holds-table td dt {
@@ -5060,7 +5060,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-results-item {
   border-bottom: 0.0625rem solid #d7d4d0;
   list-style-type: none;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   margin-left: 0;
   max-width: none;
   padding-bottom: ""; }
@@ -5073,7 +5073,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   max-width: none; }
 
 .nypl-results-item dl {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 0; }
 
 .nypl-results-item dl::before, .nypl-results-item dl::after {
@@ -5084,17 +5084,18 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   clear: both; }
 
 .nypl-results-item dl ul {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .nypl-results-item dl li {
   list-style-type: none;
+  margin-bottom: 0;
   margin-left: 0; }
 
 .nypl-results-item dt,
 .nypl-results-item dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem;
+  margin: 0;
   width: auto; }
 
 .nypl-results-item dt {
@@ -5127,7 +5128,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   padding-left: 0.5rem; }
 
 .nypl-results-item-description {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0; }
 
 .nypl-results-info,
 .nypl-results-place,
@@ -5152,7 +5153,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-item-info {
   border-left: 0.5rem solid #776e64;
   padding-left: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   max-width: none; }
 
 .nypl-item-info p {
@@ -5218,7 +5219,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #d0343a; }
 
 .nypl-item-details dl {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 0; }
 
 .nypl-item-details dl::before, .nypl-item-details dl::after {
@@ -5229,17 +5230,18 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   clear: both; }
 
 .nypl-item-details dl ul {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .nypl-item-details dl li {
   list-style-type: none;
+  margin-bottom: 0;
   margin-left: 0; }
 
 .nypl-item-details dt,
 .nypl-item-details dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem;
+  margin: 0;
   width: auto; }
 
 .nypl-item-details dt {
@@ -5267,7 +5269,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   padding: 0 0.75rem; }
 
 .nypl-item-external-links dl {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 0; }
 
 .nypl-item-external-links dl::before, .nypl-item-external-links dl::after {
@@ -5278,17 +5280,18 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   clear: both; }
 
 .nypl-item-external-links dl ul {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .nypl-item-external-links dl li {
   list-style-type: none;
+  margin-bottom: 0;
   margin-left: 0; }
 
 .nypl-item-external-links dt,
 .nypl-item-external-links dd {
   float: left;
   line-height: 1.5;
-  margin: 0 0 0.5rem;
+  margin: 0;
   width: auto; }
 
 .nypl-item-external-links dt {
@@ -5308,7 +5311,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
     width: 55%; } }
 
 .nypl-item-external-links li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .nypl-views-table {
   display: table;
@@ -6617,7 +6620,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   font-weight: 100;
   margin: 1rem 0 1.5rem; }
 
-.nypl-page-header h1.item-title {
+.nypl-page-header h1.item-title,
+.nypl-page-header h2.item-title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400; }
 
@@ -6643,7 +6647,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-item-details .nypl-item-info {
   border-left: 0 solid #776e64;
   padding-left: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   max-width: none;
   padding-left: 0; }
 
@@ -6661,17 +6665,17 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04rem;
-  margin: 0 0.5rem 1rem 0;
+  margin: 0 0.5rem 0 0;
   width: 20%; }
 
 @media (max-width: 965px) {
   .nypl-item-details dl dt {
     float: none;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
     width: 100%; } }
 
 .nypl-item-details dl dd {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   width: 70%; }
 
 @media (max-width: 965px) {
@@ -6681,6 +6685,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 .nypl-item-details dl dd.subject-listing a {
   display: block; }
+
+.nypl-item-details dl dd li {
+  margin-bottom: 0; }
 
 dl dt.list-multi-control {
   width: 100%; }

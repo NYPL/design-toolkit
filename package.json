@@ -32,7 +32,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "node-sass": "3.8"
+    "node-sass": "4.6.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.3",

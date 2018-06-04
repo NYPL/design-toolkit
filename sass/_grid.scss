@@ -32,7 +32,11 @@
     margin: 1rem 0 1.5rem;
   }
 
-  h1.item-title {
+  ///
+  /// TODO: clean this up so its not dependent upon a specific heading level
+  /// Though its pretty clear at first glance at what its doing...
+  h1.item-title,
+  h2.item-title {
     font-family: $sans-serif-stack;
     font-weight: 400;
   }

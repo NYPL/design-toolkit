@@ -84,19 +84,19 @@
       font-size: 0.85rem;
       font-weight: 700;
       letter-spacing: 0.04rem;
-      margin: 0 0.5rem 1rem 0;
+      margin: 0 0.5rem 0 0;
       width: 20%;
 
       @include media($mobile-breakpoint) {
         float: none;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0;
         width: 100%;
       }
     }
 
     dd {
       //font-size: 0.95rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
       width: 70%;
 
       @include media($mobile-breakpoint) {
@@ -106,6 +106,10 @@
 
       &.subject-listing a {
         display: block;
+      }
+      /// all kinds of kludge... there needs to be cleaner and more global way of handling lists and nested lists...
+      li {
+        margin-bottom: 0;
       }
     }
   }
