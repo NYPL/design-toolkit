@@ -16,16 +16,16 @@ Design toolkit (SASS) for the NYPL Digital team
 5. Navigate your favorite internet browser to http://127.0.0.1:4000/design-toolkit/
 
 ### Compiling SCSS to CSS with Gulp or SASS CLI
-1. To view, edit and complie sass to css:
+1. To view, edit and complie `sass` to `css`:
   
-    a. For `gulp`: Make sure you have [Node.js](http://nodejs.org/) installed and up to date. From the root of the project run `npm i` this will install the `gulp` dependencies.
-    - Once `gulp` is installed, from the root, run `gulp` this will compile your `scss` files to `css` and place them in the correct directory.
-    - You can also run `gulp watch` and this will actively watch and complie files on save.
+    a. For `gulp`: Make sure you have [Node.js](http://nodejs.org/) installed and up to date. From the root of the project run `npm i`. This will install the `gulp` dependencies.
+    - Once `gulp` is installed, from the root, run `gulp`. This will compile your `scss` files to `css` and place them in the correct directory.
+    - You can choose to run `gulp watch`, this command will actively watch the correct directory and complie files on save.
 
-    b. Alternately you can run / compile `sass` directly, via its CLI.
-    - From the root of the project run: `sass --watch sass:css/docs`
+    b. Alternately you can run / compile `sass` directly (no Gulp required), via its CLI.
+    - From the root of the project run: `sass --watch sass:css/docs`.
 
-2. Have a milkshake.
+2. Have a milkshake. 🥛
 
 ## [Install the toolkit in your application](INSTALL.md)
 
