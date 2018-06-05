@@ -105,8 +105,13 @@ $book-card-type: book;
 
   @include media($xtrasmall-breakpoint, $min-width: true) {
     //background: #3fd9ac;
-    display: block;
-    grid-template-areas: unset;
+    display: grid;
+    grid-template-areas: "title title title"
+                         "author author author" 
+                         "img img img" 
+                         "details details details" 
+                         "buttons buttons buttons" 
+                         "tags tags tags";
     max-width: 100%;
   }
 

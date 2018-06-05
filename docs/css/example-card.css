@@ -5703,8 +5703,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 @media (max-width: 483px) {
   .book-item {
-    display: block;
-    grid-template-areas: unset;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "title title title" "author author author"  "img img img"  "details details details"  "buttons buttons buttons"  "tags tags tags";
     max-width: 100%; } }
 
 .book-item-title {
