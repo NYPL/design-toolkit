@@ -4827,6 +4827,10 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-results-pagination .page-count.first {
   margin-left: 15%; }
 
+.nypl-results-pagination .page-count.first:focus {
+  -moz-focusring: none;
+  outline: none; }
+
 .nypl-results-pagination .page-count {
   padding: 0.75rem;
   text-align: center;
