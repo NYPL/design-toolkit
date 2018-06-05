@@ -120,7 +120,7 @@ footer a:focus {
 
   &:focus {
     @include box-shadow(inset 0 0 0 $focus-width $focus-color);
-    background-color: $nypl-white;
+    background-color: lighten($focus-color, 40%);
     color: $page-color;
     outline: none;
   }
@@ -146,6 +146,11 @@ footer a:focus {
     height: $height;
     padding: $general-padding;
     width: $width;
+
+    &:focus {
+      background-color: lighten($focus-color, 40%);
+      border-radius: $border-radius;
+      }
     }
   }
 
