@@ -11,10 +11,15 @@ $form-padding: 0.5rem;
   }
 
   #{$tag}:focus {
+    box-shadow: 1px 1px 2px 2px darken($focus-color, 10%);
     outline-color: $focus-color;
     outline-style: solid;
     outline-width: $focus-width;
   }
+}
+
+a:focus {
+  padding: ($general-padding / 2) 0;
 }
 
 @mixin label(
@@ -600,9 +605,6 @@ $form-padding: 0.5rem;
     width: 0.5625rem;
     border-left: $general-border-width solid;
     border-bottom: $general-border-width solid;
-    -ms-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     left: -0.90em;
     top: 0.5em;

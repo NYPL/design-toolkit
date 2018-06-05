@@ -48,7 +48,7 @@ $nypl-search-color-dark: $nypl-gray;//darken($nypl-search-color, 10%);
 $nypl-search-color-light: lighten($nypl-search-color, 10%);
 
 // Accessible, high contrast orange yellow for focus rings
-$focus-color: $nypl-orange;
+$focus-color: darken($nypl-orange, 5%);
 
 // General Page Styles
 $page-color: $nypl-dark-gray;

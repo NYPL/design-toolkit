@@ -28,11 +28,12 @@
   z-index: 1000;
 
   &:focus {
-    border: 5px solid $link-color;
+    border: 5px solid $focus-color;
     height: auto;
     left: 7px;
     outline: 0;
     overflow: visible;
+    padding: ($general-padding / 2) 0;
     width: auto;
   }
 }
@@ -247,7 +248,7 @@ textarea {
 .nypl-toolkit-example {
 
   .nypl-logo {
-      height: 13em;
-      width: 20em;
+    height: 13em;
+    width: 20em;
   }
 }

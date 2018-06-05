@@ -18,11 +18,12 @@
   z-index: 1000; }
 
 #skip a:focus {
-  border: 5px solid #1b7fa7;
+  border: 5px solid #ffb004;
   height: auto;
   left: 7px;
   outline: 0;
   overflow: visible;
+  padding: 0.5rem 0;
   width: auto; }
 
 .hidden {
