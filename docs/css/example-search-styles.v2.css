@@ -377,6 +377,8 @@ a {
   border-radius: 0; }
 
 a:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -388,6 +390,8 @@ input {
   border-radius: 0; }
 
 input:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -399,6 +403,8 @@ select {
   border-radius: 0; }
 
 select:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -410,6 +416,8 @@ button {
   border-radius: 0; }
 
 button:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -421,6 +429,8 @@ textarea {
   border-radius: 0; }
 
 textarea:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -428,7 +438,8 @@ textarea:focus {
   outline-width: 0.125rem; }
 
 a:focus {
-  padding: 0.5rem 0; }
+  background-color: #fff;
+  display: inline-block; }
 
 .search-control {
   color: #080807;
@@ -580,6 +591,8 @@ a {
   border-radius: 0; }
 
 a:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -591,6 +604,8 @@ input {
   border-radius: 0; }
 
 input:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -602,6 +617,8 @@ select {
   border-radius: 0; }
 
 select:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -613,6 +630,8 @@ button {
   border-radius: 0; }
 
 button:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -624,6 +643,8 @@ textarea {
   border-radius: 0; }
 
 textarea:focus {
+  -webkit-border-radius: 0.13333rem;
+  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
   box-shadow: 1px 1px 2px 2px #d08e00;
   outline-color: #ffb004;
@@ -631,7 +652,8 @@ textarea:focus {
   outline-width: 0.125rem; }
 
 a:focus {
-  padding: 0.5rem 0; }
+  background-color: #fff;
+  display: inline-block; }
 
 .search-control {
   color: #080807;

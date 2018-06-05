@@ -11,6 +11,7 @@ $form-padding: 0.5rem;
   }
 
   #{$tag}:focus {
+    border-radius: ($general-border-radius / 1.5);
     box-shadow: 1px 1px 2px 2px darken($focus-color, 10%);
     outline-color: $focus-color;
     outline-style: solid;
@@ -19,7 +20,13 @@ $form-padding: 0.5rem;
 }
 
 a:focus {
-  padding: ($general-padding / 2) 0;
+  background-color: $nypl-white;
+  display: inline-block;
+  //padding: ($general-padding / 4.5) 0;
+}
+
+footer a:focus {
+  $background-color: $nypl-footer-color;
 }
 
 @mixin label(
