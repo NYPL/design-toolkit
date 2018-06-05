@@ -3527,7 +3527,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
     width: 45%; } }
 
 .nypl-omnisearch input[type=submit] {
-  background: #d0343a;
+  background: #1b7fa7;
   border: 0;
   -webkit-border-radius: 0.0625rem;
   border-radius: 0.0625rem;
@@ -3548,8 +3548,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 .nypl-omnisearch input[type=submit]:hover {
   background-color: #fff;
-  border: solid 0.0625rem #d0343a;
-  color: #d0343a; }
+  border: solid 0.0625rem #1b7fa7;
+  color: #1b7fa7; }
 
 .nypl-omnisearch svg {
   display: inline-block;

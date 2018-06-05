@@ -95,7 +95,7 @@ $form-padding: 0.5rem;
   }
 
   input[type=submit] {
-    background: $nypl-red;
+    background: $nypl-blue;
     border: 0;
     border-radius: 0.0625rem;
     border-top-left-radius: 0;
@@ -113,8 +113,8 @@ $form-padding: 0.5rem;
 
     &:hover {
       background-color: $nypl-white;
-      border: solid 0.0625rem $nypl-red;
-      color: $nypl-red;
+      border: solid 0.0625rem $nypl-blue;
+      color: $nypl-blue;
     }
   }
 
