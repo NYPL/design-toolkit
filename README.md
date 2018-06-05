@@ -25,7 +25,7 @@ Design toolkit (SASS) for the NYPL Digital team
     b. Alternately you can run / compile `sass` directly, via its CLI.
     - From the root of the project run: `sass --watch sass:css/docs`
 
-2. Have a milkshake.
+2. Have a milkshake. 🥛
 
 ## [Install the toolkit in your application](INSTALL.md)
 
