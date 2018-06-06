@@ -379,9 +379,9 @@ a {
 a:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -392,9 +392,9 @@ input {
 input:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -405,9 +405,9 @@ select {
 select:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -418,9 +418,9 @@ button {
 button:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -431,9 +431,9 @@ textarea {
 textarea:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -593,9 +593,9 @@ a {
 a:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -606,9 +606,9 @@ input {
 input:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -619,9 +619,9 @@ select {
 select:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -632,9 +632,9 @@ button {
 button:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -645,9 +645,9 @@ textarea {
 textarea:focus {
   -webkit-border-radius: 0.13333rem;
   border-radius: 0.13333rem;
-  -webkit-box-shadow: 1px 1px 2px 2px #d08e00;
-  box-shadow: 1px 1px 2px 2px #d08e00;
-  outline-color: #ffb004;
+  -webkit-box-shadow: 1px 1px 2px 2px #082530;
+  box-shadow: 1px 1px 2px 2px #082530;
+  outline-color: #0f465c;
   outline-style: solid;
   outline-width: 0.125rem; }
 
@@ -854,8 +854,8 @@ dl dd.multi-item-list .nypl-basic-table button:hover, dl dd.multi-item-list .nyp
 
 dl dd.multi-item-list .nypl-basic-table button:focus,
 .nypl-results-item .nypl-basic-table button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -1671,8 +1671,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   fill: #fff; }
 
 .nypl-unset-filter:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -1753,8 +1753,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   fill: #fff; }
 
 .nypl-short-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -1834,8 +1834,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   fill: #fff; }
 
 .nypl-x-close-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -1885,8 +1885,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-basic-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -1931,8 +1931,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #fff; }
 
 .nypl-results-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -1982,8 +1982,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-primary-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2032,8 +2032,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-request-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2104,8 +2104,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-service-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2154,8 +2154,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-login-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2243,8 +2243,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   transform: rotate(180deg); }
 
 .nypl-menu-button_left .nypl-menu-button_button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2343,8 +2343,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   transform: rotate(180deg); }
 
 .nypl-menu-button_right .nypl-menu-button_button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2443,8 +2443,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   transform: rotate(180deg); }
 
 .nypl-navigation-button .nypl-navigation-button_button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -2621,9 +2621,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-text-field input[type=text]:focus, .nypl-text-field input[type=email]:focus, .nypl-text-field input[type=date]:focus, .nypl-text-field input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -2692,9 +2692,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-year-field input[type=text]:focus, .nypl-year-field input[type=email]:focus, .nypl-year-field input[type=date]:focus, .nypl-year-field input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -2734,9 +2734,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-text-field-with-label input[type=text]:focus, .nypl-text-field-with-label input[type=email]:focus, .nypl-text-field-with-label input[type=date]:focus, .nypl-text-field-with-label input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -2813,9 +2813,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-name-field input[type=text]:focus, .nypl-name-field input[type=email]:focus, .nypl-name-field input[type=date]:focus, .nypl-name-field input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -2904,9 +2904,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-address-fieldset input[type=text]:focus, .nypl-address-fieldset input[type=email]:focus, .nypl-address-fieldset input[type=date]:focus, .nypl-address-fieldset input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -2992,9 +2992,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-date-field input[type=text]:focus, .nypl-date-field input[type=email]:focus, .nypl-date-field input[type=date]:focus, .nypl-date-field input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -3042,9 +3042,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-text-area-with-label input[type=text]:focus, .nypl-text-area-with-label input[type=email]:focus, .nypl-text-area-with-label input[type=date]:focus, .nypl-text-area-with-label input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -3070,7 +3070,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 100%; }
 
 .nypl-text-area-with-label textarea:focus {
-  background-color: #fff0d0;
+  background-color: #55bae3;
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
 
@@ -3744,9 +3744,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 16rem; }
 
 .nypl-searchable-field .nypl-facet-search input[type=text]:focus, .nypl-searchable-field .nypl-facet-search input[type=email]:focus, .nypl-searchable-field .nypl-facet-search input[type=date]:focus, .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
-  -webkit-box-shadow: inset 0 0 0 0.125rem #ffb004;
-  box-shadow: inset 0 0 0 0.125rem #ffb004;
-  background-color: #fff0d0;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
+  box-shadow: inset 0 0 0 0.125rem #0f465c;
+  background-color: #55bae3;
   color: #080807;
   outline: none; }
 
@@ -3861,8 +3861,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-alphabetical-filter button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -4751,8 +4751,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-results-summary .nypl-facet button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -5001,8 +5001,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   transform: rotate(180deg); }
 
 .nypl-results-sorter button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -5671,8 +5671,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   fill: #fff; }
 
 .nypl-modal-filter-form .nypl-filter-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -5955,8 +5955,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-header .service-buttons li > a:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6008,8 +6008,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-header .service-buttons li > a.donate:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6101,8 +6101,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   transform: rotate(180deg); }
 
 .nypl-header .service-buttons button.collapsible:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6160,8 +6160,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-header .email-toggle .subscribe-button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6280,8 +6280,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   transform: rotate(180deg); }
 
 .nypl-header .login-toggle button.collapsible:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6341,8 +6341,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-header .login-toggle > a:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6492,8 +6492,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-header li.nypl-search .nypl-search_main .nypl-search_button:focus {
-  -webkit-box-shadow: inset 0 0 0 0.15rem #ffb004;
-  box-shadow: inset 0 0 0 0.15rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.15rem #0f465c;
+  box-shadow: inset 0 0 0 0.15rem #0f465c;
   border-style: dotted;
   outline: none; }
 
@@ -6564,12 +6564,12 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   color: #080807; }
 
 .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label.focus {
-  -webkit-box-shadow: inset 0 0 0 3px #ffb004;
-  box-shadow: inset 0 0 0 3px #ffb004; }
+  -webkit-box-shadow: inset 0 0 0 3px #0f465c;
+  box-shadow: inset 0 0 0 3px #0f465c; }
 
 .nypl-header li.nypl-search .nypl-search_main .nypl-search_radio-label input:focus {
-  -webkit-box-shadow: 0 0 0 3px #ffb004;
-  box-shadow: 0 0 0 3px #ffb004; }
+  -webkit-box-shadow: 0 0 0 3px #0f465c;
+  box-shadow: 0 0 0 3px #0f465c; }
 
 .nypl-header li.nypl-search .nypl-search_main input:focus {
   outline: none; }
@@ -6597,8 +6597,8 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 
 .nypl-header li.nypl-search .nypl-search_main .nypl-form-text:focus {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 0.25rem #ffb004;
-  box-shadow: inset 0 0 0 0.25rem #ffb004;
+  -webkit-box-shadow: inset 0 0 0 0.25rem #0f465c;
+  box-shadow: inset 0 0 0 0.25rem #0f465c;
   color: #776e64;
   outline: none; }
 
