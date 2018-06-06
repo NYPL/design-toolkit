@@ -377,8 +377,6 @@ a {
   border-radius: 0; }
 
 a:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -390,8 +388,6 @@ input {
   border-radius: 0; }
 
 input:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -403,8 +399,6 @@ select {
   border-radius: 0; }
 
 select:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -416,8 +410,6 @@ button {
   border-radius: 0; }
 
 button:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -429,8 +421,6 @@ textarea {
   border-radius: 0; }
 
 textarea:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -591,8 +581,6 @@ a {
   border-radius: 0; }
 
 a:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -604,8 +592,6 @@ input {
   border-radius: 0; }
 
 input:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -617,8 +603,6 @@ select {
   border-radius: 0; }
 
 select:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -630,8 +614,6 @@ button {
   border-radius: 0; }
 
 button:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -643,8 +625,6 @@ textarea {
   border-radius: 0; }
 
 textarea:focus {
-  -webkit-border-radius: 0.13333rem;
-  border-radius: 0.13333rem;
   -webkit-box-shadow: 1px 1px 2px 2px #082530;
   box-shadow: 1px 1px 2px 2px #082530;
   outline-color: #0f465c;
@@ -2623,7 +2603,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-text-field input[type=text]:focus, .nypl-text-field input[type=email]:focus, .nypl-text-field input[type=date]:focus, .nypl-text-field input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -2694,7 +2674,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-year-field input[type=text]:focus, .nypl-year-field input[type=email]:focus, .nypl-year-field input[type=date]:focus, .nypl-year-field input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -2736,7 +2716,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-text-field-with-label input[type=text]:focus, .nypl-text-field-with-label input[type=email]:focus, .nypl-text-field-with-label input[type=date]:focus, .nypl-text-field-with-label input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -2815,7 +2795,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-name-field input[type=text]:focus, .nypl-name-field input[type=email]:focus, .nypl-name-field input[type=date]:focus, .nypl-name-field input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -2906,7 +2886,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-address-fieldset input[type=text]:focus, .nypl-address-fieldset input[type=email]:focus, .nypl-address-fieldset input[type=date]:focus, .nypl-address-fieldset input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -2994,7 +2974,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-date-field input[type=text]:focus, .nypl-date-field input[type=email]:focus, .nypl-date-field input[type=date]:focus, .nypl-date-field input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -3044,7 +3024,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-text-area-with-label input[type=text]:focus, .nypl-text-area-with-label input[type=email]:focus, .nypl-text-area-with-label input[type=date]:focus, .nypl-text-area-with-label input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 
@@ -3746,7 +3726,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
 .nypl-searchable-field .nypl-facet-search input[type=text]:focus, .nypl-searchable-field .nypl-facet-search input[type=email]:focus, .nypl-searchable-field .nypl-facet-search input[type=date]:focus, .nypl-searchable-field .nypl-facet-search input[type=number]:focus {
   -webkit-box-shadow: inset 0 0 0 0.125rem #0f465c;
   box-shadow: inset 0 0 0 0.125rem #0f465c;
-  background-color: #55bae3;
+  background-color: #f2f2f2;
   color: #080807;
   outline: none; }
 

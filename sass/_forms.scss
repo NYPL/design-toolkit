@@ -11,7 +11,6 @@ $form-padding: 0.5rem;
   }
 
   #{$tag}:focus {
-    border-radius: ($general-border-radius / 1.5);
     box-shadow: 1px 1px 2px 2px darken($focus-color, 10%);
     outline-color: $focus-color;
     outline-style: solid;
@@ -22,7 +21,7 @@ $form-padding: 0.5rem;
 a:focus {
   background-color: $nypl-white;
   display: inline-block;
-  //padding: ($general-padding / 4.5) 0;
+  // padding: ($general-padding / 4.5) 0;
 }
 
 footer a:focus {
@@ -120,7 +119,7 @@ footer a:focus {
 
   &:focus {
     @include box-shadow(inset 0 0 0 $focus-width $focus-color);
-    background-color: lighten($focus-color, 40%);
+    background-color: darken($page-background-color, 5%);
     color: $page-color;
     outline: none;
   }
