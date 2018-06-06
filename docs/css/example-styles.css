@@ -372,6 +372,9 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+*::-moz-focus-inner {
+  border: 0; }
+
 a {
   -webkit-border-radius: 0;
   border-radius: 0; }
@@ -428,8 +431,7 @@ textarea:focus {
   outline-width: 0.125rem; }
 
 a:focus {
-  background-color: #fff;
-  display: inline-block; }
+  background-color: #fff; }
 
 .search-control {
   color: #080807;
@@ -555,6 +557,11 @@ legend {
   display: table; }
 
 a {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0 1px;
   text-decoration: underline; }
 
 a:link {
@@ -575,6 +582,9 @@ a.inverted:visited {
 
 a.inverted:hover, a.inverted:visited:hover {
   color: #fff; }
+
+*::-moz-focus-inner {
+  border: 0; }
 
 a {
   -webkit-border-radius: 0;
@@ -632,8 +642,7 @@ textarea:focus {
   outline-width: 0.125rem; }
 
 a:focus {
-  background-color: #fff;
-  display: inline-block; }
+  background-color: #fff; }
 
 .search-control {
   color: #080807;
