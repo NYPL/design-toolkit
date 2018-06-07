@@ -109,6 +109,7 @@ $black: #000; // for shade lint pass
 /// @param {Color} $color - color to tint
 /// @param {Number} $percentage - percentage of `$color` in returned color
 /// @return {Color}
+
 @function tint($color, $percentage) {
   @return mix($white, $color, $percentage);
 }
@@ -118,6 +119,19 @@ $black: #000; // for shade lint pass
 /// @param {Color} $color - color to shade
 /// @param {Number} $percentage - percentage of `$color` in returned color
 /// @return {Color}
+
 @function shade($color, $percentage) {
   @return mix($black, $color, $percentage);
+}
+
+
+//
+// Focus rings...
+//
+
+@mixin basic-focus {
+  @include box-shadow(inset 0 0 0 0.15rem $focus-color);
+  border-style: solid;
+  outline: none;
+  padding: $focus-padding 0;
 }
