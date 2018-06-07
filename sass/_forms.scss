@@ -152,8 +152,8 @@ footer a:focus {
     width: $width;
 
     &:focus {
-      background-color: lighten($focus-color, 40%);
-      border-radius: $border-radius;
+      background-color: darken($page-background-color, 5%);
+      border-radius: 0;
       }
     }
   }
@@ -205,6 +205,11 @@ footer a:focus {
     background-color: $nypl-red-error;
     border: ($general-border-width / 2) $nypl-red-dark solid;
     box-shadow: none;
+
+    &:focus {
+      background-color: lighten($nypl-red-error, 5%);
+      outline-color: $nypl-red-dark;;
+    }
   }
 
   .nypl-field-status {
@@ -227,6 +232,11 @@ footer a:focus {
     background-color: $nypl-green-tint;
     border: ($general-border-width / 2) $nypl-green-bright solid;
     box-shadow: none;
+
+    &:focus {
+      background-color: lighten($nypl-green-tint, 5%);
+      outline-color: $nypl-green-bright;
+    }
   }
 }
 
@@ -650,7 +660,7 @@ footer a:focus {
 
   // Adding focus styles on the outer-box of the fake checkbox
   input[type="checkbox"]:focus + label::before {
-    outline: $nypl-orange auto 0.125rem;
+    outline: $focus-color auto 0.125rem;
   }
 } // /generic-checkbox
 

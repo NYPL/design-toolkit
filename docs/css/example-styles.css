@@ -3071,9 +3071,9 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   width: 100%; }
 
 .nypl-text-area-with-label textarea:focus {
-  background-color: #55bae3;
-  -webkit-border-radius: 0.25rem;
-  border-radius: 0.25rem; }
+  background-color: #f2f2f2;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
 
 .nypl-field-error {
   background: #fff; }
@@ -3084,6 +3084,11 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   border: 0.0625rem #97272c solid;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+.nypl-field-error input[type=text]:focus,
+.nypl-field-error textarea:focus {
+  background-color: #fbebec;
+  outline-color: #97272c; }
 
 .nypl-field-error .nypl-field-status {
   background: #fff;
@@ -3098,6 +3103,11 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   border: 0.0625rem #008918 solid;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+.nypl-field-success input[type=text]:focus,
+.nypl-field-success textarea:focus {
+  background-color: #fcfdf9;
+  outline-color: #008918; }
 
 .nypl-select {
   -moz-appearance: none;
@@ -3257,7 +3267,7 @@ dl dd.multi-item-list .nypl-basic-table button.disabled:hover, dl dd.multi-item-
   content: ""; }
 
 .nypl-generic-checkbox input[type="checkbox"]:focus + label::before {
-  outline: #ffb81d auto 0.125rem; }
+  outline: #0f465c auto 0.125rem; }
 
 .nypl-terms-checkbox {
   border-left: 0.5rem solid #776e64;
