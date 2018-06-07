@@ -124,10 +124,12 @@ $black: #000; // for shade lint pass
 
 
 //
+// Focus rings...
 //
+
 @mixin basic-focus {
   @include box-shadow(inset 0 0 0 0.15rem $focus-color);
   border-style: solid;
   outline: none;
-  padding: ($general-padding / 2) 0;
+  padding: $focus-padding 0;
 }
