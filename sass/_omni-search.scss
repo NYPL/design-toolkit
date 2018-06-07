@@ -111,7 +111,8 @@ $form-padding: 0.5rem;
       width: 20%;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $nypl-white;
       border: solid 0.0625rem $nypl-blue;
       color: $nypl-blue;
