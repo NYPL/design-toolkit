@@ -1,5 +1,11 @@
 ### Change Log
 
+###v0.1.36
+- Focus ring updates
+- Tighter list layout
+- Now we can use gulp to watch & compile css, gulp is _not_ a requirement for development. See docs for more details
+- 
+
 ### v0.1.35
 - fixes #270 w/ a micro soft vendor prefix
 - fixes #268 increase type size to 0.9rem (14.4px) for help text
