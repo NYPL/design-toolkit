@@ -156,6 +156,11 @@ $results-item-border-width: 0.0625rem;
 
   .page-count.first {
     margin-left: 15%;
+
+    &:focus {
+      -moz-focusring: none;
+      outline: none;
+    }
   }
 
   .page-count {

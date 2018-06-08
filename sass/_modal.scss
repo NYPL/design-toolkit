@@ -64,6 +64,7 @@
               outline-color: $focus-color;
               outline-style: solid;
               outline-width: $focus-width;
+              padding: ($general-padding / 2) 0;
           } // /.:focus
         } // /h3
       } // / > legend:first-child

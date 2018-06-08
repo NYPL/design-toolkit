@@ -116,6 +116,8 @@ legend {
 }
 
 a {
+  display: inline-flex;
+  padding: 0 1px;
   text-decoration: underline;
 
   &:link {

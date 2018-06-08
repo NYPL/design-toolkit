@@ -1,3 +1,4 @@
+
 @import "measurements";
 @import "general-mixins";
 @import "microformats";
@@ -42,6 +43,10 @@
       @include media($mobile-breakpoint) {
         float: none;
         width: auto;
+      }
+
+      a:focus {
+        background-color: transparent;
       }
     }
   }
