@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Example | NYPL design toolkit</title>
+  <title>Electroni Delivery Request | Shared Collections Catalog | NYPL</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/example-styles.css" media="screen" rel="stylesheet" type="text/css">
@@ -35,6 +35,16 @@
       <div class="nypl-row">
         <div class="nypl-full-width-wrapper">
           <div class="nypl-column-full">
+            <nav aria-label="Breadcrumbs" class="nypl-breadcrumbs">
+              <span class="nypl-screenreader-only">You are here:</span>
+              <ol>
+                <li><a href="#">Shared Collection Catalog</a></li>
+                <li><a href="#">Search Results</a></li>
+                <li><a href="#">Item Details</a></li>
+                <li><a href="#">Item Request</a></li>
+                <li>Electronic Delivery Request</li>
+              </ol>
+            </nav>
             <h1>Electronic Delivery Request</h1>
             <!-- <span>
 <span class="nypl-screenreader-only" >You are here:</span>
@@ -63,9 +73,9 @@
 </div> -->
           <div class="nypl-request-item-summary">
             <div class="item">
-              <h4>
+              <h2>
                 <a href="/bib/b7169745">880-02 Bian yuan, zu qun yu guo jia : Qing mo xi bei Hui min qi yi = Edge, ethnicity and the state : the uprisings of northwest Chinese Muslims in late Qing dynasty / Zhou Yaoming zhu.</a>
-              </h4>
+              </h2>
               <div class="call-number"><span>Call Number:</span></br>
                 DS731.M87Z48 2011
               </div>
@@ -75,90 +85,90 @@
         <!-- /nypl-column-full -->
       </div>
       <form id="edd-request">
-      <fieldset class="nypl-fieldset">
-        <legend>
-          <h3>Required Information</h3>
-        </legend>
-        <div class="nypl-row">
-          <div class="nypl-column-half">
-            <fieldset>
-              <legend>
-                <h4>Contact Information</h4>
-              </legend>
-              <div class="nypl-text-field" id="email-address">
-                <label for="email-address-input" id="email-address-label">Email Adress
-                  <span class="nypl-required-field">Required</span>
+        <fieldset class="nypl-fieldset">
+          <legend>
+            <h3>Required Information</h3>
+          </legend>
+          <div class="nypl-row">
+            <div class="nypl-column-half">
+              <fieldset>
+                <legend>
+                  <h4>Contact Information</h4>
+                </legend>
+                <div class="nypl-text-field" id="email-address">
+                  <label for="email-address-input" id="email-address-label">Email Adress
+                    <span class="nypl-required-field">Required</span>
+                  </label>
+                  <input id="email-address-input"  type="text" aria-labelledby="email-address-label email-address-status" aria-required="true" placeholder="" />
+                  <span class="nypl-field-status" id="email-address-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <h4>Pages to Include</h4>
+                </legend>
+                <span>You may request a maximum of 50 pages.</span>
+                <div class="nypl-text-field" id="article-pages-first">
+                  <label for="article-pages-first-input" id="article-pages-first-label">First Page:
+                    <span class="nypl-required-field">Required</span>
+                  </label>
+                  <input id="article-pages-first-input" type="text" aria-labelledby="article-pages-first-label article-pages-first-status" aria-required="true" placeholder="" />
+                  <span class="nypl-field-status" id="article-pages-first-status" aria-live="assertive" aria-atomic="true">Enter the first page of your selection.</span>
+                </div>
+                <div class="nypl-text-field" id="article-pages-last">
+                  <label for="article-pages-last-input" id="article-pages-last-label">Ending Page:
+                    <span class="nypl-required-field">Required</span>
+                  </label>
+                  <input id="article-pages-last-input" type="text" aria-labelledby="article-pages-last-label article-pages-last-status" aria-required="true" placeholder="" />
+                  <span class="nypl-field-status" id="article-pages-last-status" aria-live="assertive" aria-atomic="true">Enter the last page of your selection.</span>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend><h4>Chapter Information</h4></legend>
+                <div class="nypl-text-field" id="chapter-info">
+                  <label for="chapter-info-title-input" id="chapter-info-title-label">Chapter / Article Title
+                    <span class="nypl-required-field">Required</span>
                 </label>
-                <input id="email-address-input"  type="text" aria-labelledby="email-address-label email-address-status" aria-required="true" placeholder="" />
-                <span class="nypl-field-status" id="email-address-status" aria-live="assertive" aria-atomic="true">Email address must use the correct formatting. Example: <em>prudence@example.org</em></span>
+                <input id="chapter-info-title-input" type="text" aria-labelledby="chapter-info-title-label chapter-info-title-label-status" aria-required="true" placeholder="" />
+                <span class="nypl-field-status" id="chapter-info-title-label-status" aria-live="assertive" aria-atomic="true">Enter &ldquo;none&rdquo; if you are requesting an entire item.</span>
               </div>
-            </fieldset>
-            <fieldset>
-              <legend>
-                <h4>Pages to Include</h4>
-              </legend>
-              <span>You may request a maximum of 50 pages.</span>
-              <div class="nypl-text-field" id="article-pages-first">
-                <label for="article-pages-first-input" id="article-pages-first-label">First Page:
-                  <span class="nypl-required-field">Required</span>
-                </label>
-                <input id="article-pages-first-input" type="text" aria-labelledby="article-pages-first-label article-pages-first-status" aria-required="true" placeholder="" />
-                <span class="nypl-field-status" id="article-pages-first-status" aria-live="assertive" aria-atomic="true">Enter the first page of your selection.</span>
-              </div>
-              <div class="nypl-text-field" id="article-pages-last">
-                <label for="article-pages-last-input" id="article-pages-last-label">Ending Page:
-                  <span class="nypl-required-field">Required</span>
-                </label>
-                <input id="article-pages-last-input" type="text" aria-labelledby="article-pages-last-label article-pages-last-status" aria-required="true" placeholder="" />
-                <span class="nypl-field-status" id="article-pages-last-status" aria-live="assertive" aria-atomic="true">Enter the last page of your selection.</span>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend><h4>Chapter Information</h4></legend>
-              <div class="nypl-text-field" id="chapter-info">
-                <label for="chapter-info-title-input" id="chapter-info-title-label">Chapter / Article Title
-                  <span class="nypl-required-field">Required</span>
-              </label>
-              <input id="chapter-info-title-input" type="text" aria-labelledby="chapter-info-title-label chapter-info-title-label-status" aria-required="true" placeholder="" />
-              <span class="nypl-field-status" id="chapter-info-title-label-status" aria-live="assertive" aria-atomic="true">Enter &ldquo;none&rdquo; if you are requesting an entire item.</span>
-            </div>
-            </fieldset>
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="nypl-fieldset">
-        <legend>
-          <h4>Additional Details</h4>
-        </legend>
-        <div class="nypl-row">
-          <div class="nypl-column-half">
-            <span>Feel free to provide more information that could be helpful in processing your request (Additional details are optional and not required.)</span>
-            <div class="nypl-text-field">
-              <label for="author-detail-input">Article Author</label>
-              <input id="author-detail-input" type="text" placeholder="" />
-              <span class="nypl-field-status" id="article-author-status" aria-live="assertive" aria-atomic="true">Please enter the author&rsquo;s name </span>
-            </div>
-            <div class="nypl-year-field">
-              <label for="date-detail-input">Date Published</label>
-              <input id="date-detail-input" type="number" min="1895" max="9999" step="1">
-            </div>
-            <div class="nypl-text-field">
-              <label for="volume-detail-input">Volume</label>
-              <input id="volume-detail-input" type="text" placeholder="" />
-              <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please enter the Volume </span>
-            </div>
-            <div class="nypl-text-field">
-              <label for="issue-detail-input">Issue</label>
-              <input id="issue-detail-input" type="text" placeholder="" />
-              <span class="nypl-field-status" id="issue-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
-            </div>
-            <div class="nypl-text-area-with-label">
-              <label for="additional-notes-textarea">Additional Notes:</label>
-              <textarea id="additional-notes-textarea" class="nypl-text-area" form="edd-request" name="Additional Notes:"></textarea>
+              </fieldset>
             </div>
           </div>
-        </div>
-      </fieldset>
+        </fieldset>
+        <fieldset class="nypl-fieldset">
+          <legend>
+            <h4>Additional Details</h4>
+          </legend>
+          <div class="nypl-row">
+            <div class="nypl-column-half">
+              <span>Feel free to provide more information that could be helpful in processing your request (Additional details are optional and not required.)</span>
+              <div class="nypl-text-field">
+                <label for="author-detail-input">Article Author</label>
+                <input id="author-detail-input" type="text" placeholder="" />
+                <span class="nypl-field-status" id="article-author-status" aria-live="assertive" aria-atomic="true">Please enter the author&rsquo;s name </span>
+              </div>
+              <div class="nypl-year-field">
+                <label for="date-detail-input">Date Published</label>
+                <input id="date-detail-input" type="number" min="1895" max="9999" step="1">
+              </div>
+              <div class="nypl-text-field">
+                <label for="volume-detail-input">Volume</label>
+                <input id="volume-detail-input" type="text" placeholder="" />
+                <span class="nypl-field-status" id="volume-status" aria-live="assertive" aria-atomic="true">Please enter the Volume </span>
+              </div>
+              <div class="nypl-text-field">
+                <label for="issue-detail-input">Issue</label>
+                <input id="issue-detail-input" type="text" placeholder="" />
+                <span class="nypl-field-status" id="issue-status" aria-live="assertive" aria-atomic="true">Please indicate the issue</span>
+              </div>
+              <div class="nypl-text-area-with-label">
+                <label for="additional-notes-textarea">Additional Notes:</label>
+                <textarea id="additional-notes-textarea" class="nypl-text-area" form="edd-request" name="Additional Notes:"></textarea>
+              </div>
+            </div>
+          </div>
+        </fieldset>
         <button type="submit" class="nypl-request-button">Submit Request</button>
       </form>
     </div>

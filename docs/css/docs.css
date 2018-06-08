@@ -16,13 +16,15 @@
   top: 7px;
   width: 1px;
   z-index: 1000; }
-  #skip a:focus {
-    border: 5px solid #1b7fa7;
-    height: auto;
-    left: 7px;
-    outline: 0;
-    overflow: visible;
-    width: auto; }
+
+#skip a:focus {
+  border: 5px solid #0f465c;
+  height: auto;
+  left: 7px;
+  outline: 0;
+  overflow: visible;
+  padding: 0.5rem 0;
+  width: auto; }
 
 .hidden {
   display: none; }
@@ -31,11 +33,13 @@
   text-align: center; }
 
 code {
+  -webkit-border-radius: 0.2rem;
   border-radius: 0.2rem;
   padding: 0; }
-  code::before, code::after {
-    letter-spacing: -0.2em;
-    content: "\00a0"; }
+
+code::before, code::after {
+  letter-spacing: -0.2em;
+  content: "\00a0"; }
 
 pre {
   border: 0.0625rem solid #d7d4d0; }
@@ -60,8 +64,9 @@ h1 {
   cursor: pointer;
   font-style: normal;
   margin-left: 0.5rem; }
-  .back-to-top:hover {
-    text-decoration: underline; }
+
+.back-to-top:hover {
+  text-decoration: underline; }
 
 .nypl-red-swatch {
   background-color: #d0343a; }
@@ -145,23 +150,27 @@ h1 {
   background-color: #caf8fc; }
 
 .swatches {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  .swatches .reverse {
-    color: #111; }
+
+.swatches .reverse {
+  color: #111; }
 
 .color-box {
   list-style: none;
   padding: 0.25rem;
   margin-left: 0; }
-  .color-box > .main {
-    height: 8rem;
-    padding-top: 3rem; }
-  .color-box > div {
-    color: #fff;
-    min-height: 4rem;
-    margin: 0;
-    padding: 1rem 0 1rem 1rem;
-    text-align: left; }
+
+.color-box > .main {
+  height: 8rem;
+  padding-top: 3rem; }
+
+.color-box > div {
+  color: #fff;
+  min-height: 4rem;
+  margin: 0;
+  padding: 1rem 0 1rem 1rem;
+  text-align: left; }
 
 .nypl-ally-table th {
   text-align: left; }
@@ -170,32 +179,42 @@ h1 {
   background-color: #efedeb;
   background-color: #caeaf7;
   border-bottom: solid 0.25rem #135772; }
-  .toolkit .nypl-toolkit-header h1,
+
+.toolkit .nypl-toolkit-header h1,
+.toolkit .nypl-toolkit-header h2 {
+  font-family: "Milo-Light";
+  font-size: 2rem;
+  margin: 0; }
+
+.toolkit .nypl-toolkit-header h1 {
+  font-weight: 400;
+  margin: 1rem 0 1.5rem; }
+
+.toolkit .nypl-toolkit-header h1.item-title,
+.toolkit .nypl-toolkit-header h2.item-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400; }
+
+.toolkit .nypl-toolkit-header h2 {
+  line-height: 1; }
+
+.toolkit .nypl-toolkit-header h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  margin: 1rem 0 1.5rem; }
+
+@media (max-width: 965px) {
   .toolkit .nypl-toolkit-header h2 {
-    font-family: "Milo-Light";
-    font-size: 2rem;
-    margin: 0; }
-  .toolkit .nypl-toolkit-header h1 {
-    font-weight: 400;
-    margin: 1rem 0 1.5rem; }
-  .toolkit .nypl-toolkit-header h1.item-title {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 400; }
-  .toolkit .nypl-toolkit-header h2 {
-    line-height: 1; }
-  .toolkit .nypl-toolkit-header h2 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 400;
-    margin: 1rem 0 1.5rem; }
-    @media (max-width: 965px) {
-      .toolkit .nypl-toolkit-header h2 {
-        margin-top: 0.5rem; } }
-  .toolkit .nypl-toolkit-header h2 {
-    color: #135772;
-    margin-bottom: 0.25rem; }
-    .toolkit .nypl-toolkit-header h2 + span {
-      color: #135772;
-      font-style: italic; }
+    margin-top: 0.5rem; } }
+
+.toolkit .nypl-toolkit-header h2 {
+  color: #135772;
+  margin-bottom: 0.25rem; }
+
+.toolkit .nypl-toolkit-header h2 + span {
+  color: #135772;
+  font-style: italic; }
+
 .toolkit .main-page h3.top-level-header::before {
   background: #135772;
   content: "";
@@ -203,12 +222,15 @@ h1 {
   height: 0.25rem;
   margin-bottom: 0.5rem;
   width: 5rem; }
+
 .toolkit .nypl-toolkit-example .nypl-basic-modal-container .nypl-modal-content {
   margin: 1rem;
   padding: 2.5rem;
   width: 90%; }
+
 .toolkit .nypl-toolkit-example .nypl-basic-modal-container .nypl-modal-underlay {
   background: rgba(255, 255, 255, 0.8); }
+
 .toolkit footer {
   background-color: #caeaf7;
   color: #135772;
