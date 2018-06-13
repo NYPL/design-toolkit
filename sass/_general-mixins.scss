@@ -72,7 +72,7 @@ $bullet-size: 0.5rem;
   &.spinning {
     &::after {
       animation: spinner-right $spinner-time linear infinite;
-      background: -moz-repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
+      // background: -moz-repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
       background: repeating-linear-gradient(to right, $bar-color, $bar-color 1rem, transparent 1.1rem, transparent 2rem, $bar-color 2.1rem);
       content: "";
       display: block;

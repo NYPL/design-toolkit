@@ -19,10 +19,10 @@ body {
   color: $page-background-color;
 }
 
-::-moz-selection {
-  background: $page-text-color;
-  color: $page-background-color;
-}
+// ::-moz-selection {
+//   background: $page-text-color;
+//   color: $page-background-color;
+// }
 
 html {
   @include font-settings;
