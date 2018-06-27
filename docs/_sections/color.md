@@ -32,7 +32,7 @@ description: Color Usage
 <li class="color-box">
   <div class="nypl-gray-cool-swatch main">$nypl-gray-cool: #76777b</div>
 </li><li class="color-box">
-    <div class="nypl-gray-swatch">$nypl-gray: #54514a</div>
+    <div class="nypl-gray-swatch">$nypl-gray: #776e64</div>
 </li><li class="color-box">
   <div class="nypl-gray-brown-swatch">$nypl-gray-brown: #54514a</div>
 </li><li class="color-box">
