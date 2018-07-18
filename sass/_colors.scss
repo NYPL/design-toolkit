@@ -11,7 +11,7 @@ $nypl-blue-dark: #135772;
 $nypl-light-blue: lighten($nypl-blue, 30%);
 
 
-// NYPL Monochromatic
+// NYPL Monochromatic Colors
 $nypl-gray-cool: #76777b;
 $nypl-gray: #776e64;
 $nypl-gray-brown: #54514a;
@@ -21,7 +21,7 @@ $nypl-white: #fff;
 $nypl-black: #111;
 
 
-// NYPL Yellows for Alerts & Focus halos etc.
+// NYPL Yellows for Alerts.
 $nypl-yellow: #fee24a;
 $nypl-orange: #ffb81d;
 $nypl-orange-desaturated: desaturate($nypl-orange, 40%);
@@ -47,7 +47,7 @@ $nypl-search-color: $nypl-light-gray;
 $nypl-search-color-dark: $nypl-gray;//darken($nypl-search-color, 10%);
 $nypl-search-color-light: lighten($nypl-search-color, 10%);
 
-// Accessible, high contrast orange yellow for focus rings
+// Accessible, high contrast dark blue for focus rings
 $focus-color: darken($nypl-blue-dark, 5%);
 
 
