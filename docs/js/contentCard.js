@@ -65,7 +65,7 @@ loadJSON(response => {
       return itemUrlMarkup;
     } else if (!ebookLink && catalogLink) {
       const itemUrlMarkup = `
-      <a href="${ebookLink}" class="catalog-url nypl-primary-button" aria-label="Request Book: ${title}">
+      <a href="${catalogLink}" class="catalog-url nypl-primary-button" aria-label="Request Book: ${title}">
       <svg width="32px" height="32px" viewBox="0 0 32 32" class="book-icon svgIcon nypl-icon" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
         <title>NYPL Book SVG Icon</title>
         <g>
