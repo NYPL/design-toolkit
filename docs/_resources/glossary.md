@@ -28,11 +28,11 @@ Braille and Audio Download service for active Talking Book patrons registered wi
 ### klas    
 A portion of the Andrew Heiskell collection is served through a separate discovery layer called [Klas](https://webopac.klas.com/ny1aopac/).  
 
-### Section 508   
+### Section 508     
 
 
 
-### VPATs  
+### VPATs   
 Voluntary Product Accessibility Templates (VPATS) document a product's conformance and interpretation of accessibility standards; in the case of NYPL, these standards are WCAG 2.0 AA and Section 508 standards. They can be used as a rubric for evaluating products during development, generating issues to resolve compliance conflicts, and documenting any subjective decisions made. For example, see [Standard 3.1.2 in the Maps by Decade VPAT](https://docs.google.com/document/d/1xHhy6qQfZhWq-KktV__cWSfCnPQtTe0fhapS_Ka2HWs/edit). Product teams are responsible for maintaining VPATs.  
 
 ### WCAG 2.0   
