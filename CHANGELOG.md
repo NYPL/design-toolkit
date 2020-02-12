@@ -1,6 +1,10 @@
 ### Change Log
 
-###v0.1.36
+## v0.1.37
+- Updated node and npm engines, as well as node-sass version.
+- Added an `.npmignore` file to not publish unnecessary folders.
+
+## v0.1.36
 - Focus ring updates
 - Tighter list layout
 - Now we can use gulp to watch & compile css, gulp is _not_ a requirement for development. See docs for more details
