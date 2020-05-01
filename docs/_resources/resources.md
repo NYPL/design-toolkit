@@ -1,75 +1,28 @@
 ---
-title: Resources
-description: Information resources, internal documentation, and tools to support universal design.
+title: Visible Focus
+description: Documentation on resources around visible focus.
 ---
+### Considerations    
+* At a minimum we should never use outline: 0, which removes default focus indicators.  
+* Visible focus should work and be tested on smaller viewports as well.  
+* The team could consider setting different focus styles for certain elements. For example changing the background color of inline links on focus.  
+* If we refine the color of the focus indicator, it should have a contrast of 3:1 with the background, see the Standards section for more information on that.
+
+### Standards  
+#### WCAG 2.0, 2.4.7 Focus Visible 
+This is the success criteria requiring visible focus. 
+
+* WCAG Article: [Focus Visible: Understanding SC 2.4.7](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html)  
+
+#### WCAG 2.1, 1.4.11  Non-text Contrast
+WCAG 2.1 set a contrast ratio minimum of 3:1 for user interface components.  
+Reminder, you can test contrast ratios with tools like [WebAIM's Color Contrast Checker](https://webaim.org/resources/contrastchecker/).  
+
+* [WCAG 2.1 Non-text contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast)  
+* [WCAG 2.1 article Understanding Success Criterion 1.4.11: Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)  
 
 ### Resources  
-**[WebAIM](http://webaim.org/)**
-Rich with tutorials, best practices, and studies related to Web Accessibility; this can be a first stop when tackling a new issue. Subscribe to their robust listserv and/or search the listerv archives on the [WebAIM Discussion](http://webaim.org/discussion/) page.  
+Additional resources which may be of interest.
 
-**[HTML5 Dashboard: Accessibility support status of HTML5](http://www.html5accessibility.com/)**
-
-
-<br>
-
-### Validation Tools  
-#### [WAVE](http://wave.webaim.org/)
-Test against WCAG 2.0; created by WebAIM. Also available as an extension for various browsers.  
-
-#### [CynthiaSays](http://cynthiasays.com/)
-Test for compliance with Section 508, WCAG 2.0 A, WCAG 2.0 AA, or WCAG 2.0 AAA  
-
-#### pa11y
-[pa11y github](https://github.com/pa11y)<br>
-[main pa11y website](http://pa11y.org/)<br>
-A range of free and open source tools to help designers and developers make their web pages more accessible
-
-#### aXe
-Main aXe github repo<br>
-[aXe](https://github.com/dequelabs)
-Open-source accessibility testing tools. CL & Browser plugin options available
-
-
-
-<br>
-### Assistive Technology  
-#### Screen Readers  
-Screen readers are software which render web content through a voice synthesizer or braille display. These depend on well formatted html both for clear navigation of the content and because the software will render non-visual components of the html, ex. alt and longdesc tags containing descriptions of page images.
-
-* For more information on the popularity of various AT and commonly used browsers, visit WebAIM’s [Screen Reader User Survey](http://webaim.org/projects/screenreadersurvey6/) from 2015.
-* The majority of users of screen readers are PC.
-* All NYPL pc's have MAGic (screen magnification) and JAWs (voiceover) installed on them. Each PC also has [orientation materials](https://docs.google.com/document/d/1nWjt7NakMjhuc8yWblkuxIZJ4RxPlJ0WV5JzSPmttB8/edit?ts=582a2490) for patrons and staff for how to get started with this software.
-* Screen readers rely on a number of common keyboard commands, so keep that in mind if selecting shortcuts for your product.
-* Likewise, be sure to check functionality of common shortcuts when building new pages.
-* JAWS stands for Job Access With Speech. It is one of the most common screen readers and **all Library PCs have JAWS installed**.
-<br>
-<table class="nypl-basic-table">
-  <thead>
-    <tr>
-      <th>Screenreader</th>
-      <th>Cost</th>
-      <th>Tutorial</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>JAWS</td>
-      <td>$1,000</td>
-      <td><a href="http://webaim.org/articles/jaws/">Primer</a></td>
-      <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/JAWSKeystrokes.htm">List of JAWs shortcuts</a></td>
-    </tr>
-    <tr>
-      <td>NVDA</td>
-      <td><a href="http://www.nvaccess.org/">Free download</a></td>
-      <td><a href="http://webaim.org/articles/nvda/">Primer</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Voiceover</td>
-      <td>Free with iOS</td>
-      <td><a href="http://webaim.org/articles/voiceover/">Primer</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+* Paciello article around backwards compatibility [:focus-visible and backwards compatibility](https://developer.paciellogroup.com/blog/2018/03/focus-visible-and-backwards-compatibility/)  
+* Deque article with general intro to focus indicators [Give Your Site Some Focus! Tips for Designing Useful and Usable Focus Indicators](https://www.deque.com/blog/give-site-focus-tips-designing-usable-focus-indicators/)  
